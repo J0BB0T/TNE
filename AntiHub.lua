@@ -635,15 +635,8 @@ G2L["2e"]["Position"] = UDim2.new(0.875, 0, 0.5, 0);
 G2L["2f"] = Instance.new("UICorner", G2L["2e"]);
 G2L["2f"]["CornerRadius"] = UDim.new(0.125, 0);
 
-
--- StarterGui.Antihub.LocalScript
-G2L["30"] = Instance.new("LocalScript", G2L["1"]);
-
-
-
 -- StarterGui.Antihub.LocalScript
 local function C_30()
-local script = G2L["30"];
 	local AntiHub = G2L[1]
 	local Visible = true
 	local VisWait = false
