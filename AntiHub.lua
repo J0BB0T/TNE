@@ -88,7 +88,7 @@ Collapse.TextWrapped = true
 UICorner_4.CornerRadius = UDim.new(0.125, 0)
 UICorner_4.Parent = Collapse
 
-local SGUI = script.Parent
+local AntiHub = script.Parent
 local Visible = true
 local VisWait = false
 local MenWait = false
@@ -96,11 +96,11 @@ local Keybind = "R"
 local UIPos = UDim2.new(0, 0, 0, 0)
 local Expanded = true
 local Menu = "PrisonLife"
-local Chat = SGUI:WaitForChild("TitleBar"):WaitForChild("Container"):WaitForChild("Container"):WaitForChild("Menus"):WaitForChild("Chat")
-local PrisonLife = SGUI.TitleBar.Container.Container.Menus.PrisonLife
-local Universal = SGUI.TitleBar.Container.Container.Menus.Universal
-local Logs = SGUI.TitleBar.Container.Container.Menus.Logs
-local AntiCheat = SGUI.TitleBar.Container.Container.Menus.AntiCheat
+local Chat = AntiHub:WaitForChild("TitleBar"):WaitForChild("Container"):WaitForChild("Container"):WaitForChild("Menus"):WaitForChild("Chat")
+local PrisonLife = AntiHub.TitleBar.Container.Container.Menus.PrisonLife
+local Universal = AntiHub.TitleBar.Container.Container.Menus.Universal
+local Logs = AntiHub.TitleBar.Container.Container.Menus.Logs
+local AntiCheat = AntiHub.TitleBar.Container.Container.Menus.AntiCheat
 local HidChat = game:GetService("Players").Chat
 local function HubChat(msg)
 	HidChat(game.Players, "TNEChatAH".. msg)
@@ -110,7 +110,7 @@ function GetCurrentTime()
 	return DateTime.now():ToLocalTime().Hour.. ":".. DateTime.now():ToLocalTime().Minute.. ":".. DateTime.now():ToLocalTime().Second
 end
 
-SGUI:WaitForChild("TitleBar").Draggable = true
+AntiHub:WaitForChild("TitleBar").Draggable = true
 
 game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
 	if proc then return end
@@ -120,59 +120,59 @@ game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
 		VisWait = true
 		Visible = not Visible
 		if Visible then
-			game:GetService("TweenService"):Create(SGUI.TitleBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {["Position"] = UIPos, ["Size"] = UDim2.new(0.5, 0, 0.05, 0)}):Play()
+			game:GetService("TweenService"):Create(AntiHub.TitleBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {["Position"] = UIPos, ["Size"] = UDim2.new(0.5, 0, 0.05, 0)}):Play()
 			task.wait(0.25)
 			if Expanded then
-				game:GetService("TweenService"):Create(SGUI.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 4.75, 0), ["Size"] = UDim2.new(1, 0, 9.5, 0)}):Play()
+				game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 4.75, 0), ["Size"] = UDim2.new(1, 0, 9.5, 0)}):Play()
 			end
 		else
-			UIPos = SGUI.TitleBar.Position
+			UIPos = AntiHub.TitleBar.Position
 			if Expanded then
-				game:GetService("TweenService"):Create(SGUI.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 0.5, 0), ["Size"] = UDim2.new(1, 0, 1, 0)}):Play()
+				game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 0.5, 0), ["Size"] = UDim2.new(1, 0, 1, 0)}):Play()
 			end
 			task.wait(0.25)
-			game:GetService("TweenService"):Create(SGUI.TitleBar, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Position"] = UIPos - UDim2.new(0.25, 0, 0, 0), ["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
+			game:GetService("TweenService"):Create(AntiHub.TitleBar, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Position"] = UIPos - UDim2.new(0.25, 0, 0, 0), ["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 		end
 		task.wait(0.25)
 		VisWait = false
 	end
 end)
 
-SGUI.TitleBar:WaitForChild("Close").Activated:Connect(function()
+AntiHub.TitleBar:WaitForChild("Close").Activated:Connect(function()
 	if VisWait then return end
 	VisWait = true
 	Visible = false
-	UIPos = SGUI.TitleBar.Position
+	UIPos = AntiHub.TitleBar.Position
 	if Expanded then
-		game:GetService("TweenService"):Create(SGUI.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 0.5, 0), ["Size"] = UDim2.new(1, 0, 1, 0)}):Play()
+		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 0.5, 0), ["Size"] = UDim2.new(1, 0, 1, 0)}):Play()
 	end
 	task.wait(0.25)
-	game:GetService("TweenService"):Create(SGUI.TitleBar, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Position"] = UIPos - UDim2.new(0.25, 0, 0, 0), ["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
+	game:GetService("TweenService"):Create(AntiHub.TitleBar, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Position"] = UIPos - UDim2.new(0.25, 0, 0, 0), ["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 	VisWait = false
 end)
 
-SGUI.TitleBar.Collapse.Activated:Connect(function()
+AntiHub.TitleBar.Collapse.Activated:Connect(function()
 	if VisWait then return end
 	Expanded = not Expanded
 	VisWait = true
 	if Expanded then
-		game:GetService("TweenService"):Create(SGUI.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 4.75, 0), ["Size"] = UDim2.new(1, 0, 9.5, 0)}):Play()
+		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 4.75, 0), ["Size"] = UDim2.new(1, 0, 9.5, 0)}):Play()
 	else
-		game:GetService("TweenService"):Create(SGUI.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 0, 0), ["Size"] = UDim2.new(1, 0, 0, 0)}):Play()
+		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 0, 0), ["Size"] = UDim2.new(1, 0, 0, 0)}):Play()
 	end
 	task.wait(0.2)
 	VisWait = false
 end)
 
-for i, v in SGUI.TitleBar.Container.Container.List:GetChildren() do
+for i, v in AntiHub.TitleBar.Container.Container.List:GetChildren() do
 	v.Activated:Connect(function()
 		if Menu == v.Name then return end
 		if MenWait then return end
 		MenWait = true
-		print(SGUI.TitleBar.Container.Container.Menus[Menu])
-		game:GetService("TweenService"):Create(SGUI.TitleBar.Container.Container.Menus[Menu], TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
+		print(AntiHub.TitleBar.Container.Container.Menus[Menu])
+		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container.Container.Menus[Menu], TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
 		Menu = v.Name
-		game:GetService("TweenService"):Create(SGUI.TitleBar.Container.Container.Menus[Menu], TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
+		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container.Container.Menus[Menu], TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
 		task.wait(0.1)
 		MenWait = false
 	end)
