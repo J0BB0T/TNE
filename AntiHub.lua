@@ -644,6 +644,7 @@ G2L["30"] = Instance.new("LocalScript", G2L["1"]);
 -- StarterGui.Antihub.LocalScript
 local function C_30()
 local script = G2L["30"];
+	local AntiHub = G2L[1]
 	local Visible = true
 	local VisWait = false
 	local MenWait = false
