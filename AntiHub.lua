@@ -728,7 +728,8 @@ local function C_30()
 		end)
 	end
 	
-	for i, v in game.Players:GetPlayers() do
+	for i, v in game:GetService("Players"):GetPlayers() do
+	if v == game:GetService("Players").LocalPlayer then continue end
 		v.Chatted:Connect(function(msg)
 			if msg:sub(1, 9) == "TNEChatAH" then
 				local Message = msg:sub(10)
@@ -747,6 +748,18 @@ local function C_30()
 		Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(0,128,0)\"".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>"
 		Logs.Player.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Logs.Player.Log.Text, Logs.Player.Log.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Logs.Player.Log.AbsoluteSize.X, math.huge)).Y)
 		Logs.Player.CanvasPosition += Vector2.new(0, 100)
+	if plr == game:GetService("Players").LocalPlayer then continue end
+		plr.Chatted:Connect(function(msg)
+			if msg:sub(1, 9) == "TNEChatAH" then
+				local Message = msg:sub(10)
+				Chat.Logs.Chat.Text ..= "<b>".. plr.DisplayName.. ":</b> ".. Message.. "\n"
+				Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Chat.Logs.Chat.Text, Chat.Logs.Chat.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Chat.Logs.Chat.AbsoluteSize.X, math.huge)).Y)
+				Chat.Logs.CanvasPosition += Vector2.new(0, 100)
+			end
+			Logs.Chat.Log.Text ..= GetCurrentTime().. " <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"
+			Logs.Chat.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Logs.Chat.Log.Text, Logs.Chat.Log.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Logs.Chat.Log.AbsoluteSize.X, math.huge)).Y)
+			Logs.Chat.CanvasPosition += Vector2.new(0, 100)
+		end)
 	end)
 	game:GetService("Players").PlayerRemoving:Connect(function(plr)
 		Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(128,0,0)\"".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>"
@@ -800,6 +813,9 @@ local function C_30()
 
 	Chat.Send.Activated:Connect(function()
 		HubChat(Chat.Input.Text)
+		Chat.Logs.Chat.Text ..= "<b>You:</b> ".. Chat.Input.Text.. "\n"
+		Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Chat.Logs.Chat.Text, Chat.Logs.Chat.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Chat.Logs.Chat.AbsoluteSize.X, math.huge)).Y)
+		Chat.Logs.CanvasPosition += Vector2.new(0, 100)
 	end)
 end;
 task.spawn(C_30);
