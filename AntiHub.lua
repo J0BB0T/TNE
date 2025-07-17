@@ -637,7 +637,7 @@ G2L["2f"]["CornerRadius"] = UDim.new(0.125, 0);
 
 -- StarterGui.Antihub.LocalScript
 local function C_30()
-	local AntiHub = G2L[1]
+	local AntiHub = G2L["1"]
 	local Visible = true
 	local VisWait = false
 	local MenWait = false
