@@ -130,7 +130,7 @@ G2L["9"]["Name"] = [[Logs]];
 G2L["9"]["Position"] = UDim2.new(0.5, 0, 0.425, 0);
 
 
--- StarterGui.Antihub.TitleBar.Container.Container.List.Anticheat
+-- StarterGui.Antihub.TitleBar.Container.Container.List.AntiCheat
 G2L["a"] = Instance.new("TextButton", G2L["6"]);
 G2L["a"]["TextWrapped"] = true;
 G2L["a"]["BorderSizePixel"] = 0;
@@ -144,7 +144,7 @@ G2L["a"]["BackgroundTransparency"] = 0.5;
 G2L["a"]["Size"] = UDim2.new(1, 0, 0.15, 0);
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a"]["Text"] = [[AntiCheat]];
-G2L["a"]["Name"] = [[Anticheat]];
+G2L["a"]["Name"] = [[AntiCheat]];
 G2L["a"]["Position"] = UDim2.new(0.5, 0, 0.6, 0);
 
 
@@ -647,23 +647,24 @@ local function C_30()
 	local Menu = "PrisonLife"
 	local Chat = AntiHub:WaitForChild("TitleBar"):WaitForChild("Container"):WaitForChild("Container"):WaitForChild("Menus"):WaitForChild("Chat")
 	local PrisonLife = AntiHub.TitleBar.Container.Container.Menus.PrisonLife
-	local Universal = AntiHub.TitleBawair.Container.Container.Menus.Universal
+	local Universal = AntiHub.TitleBar.Container.Container.Menus.Universal
 	local Logs = AntiHub.TitleBar.Container.Container.Menus.Logs
 	local AntiCheat = AntiHub.TitleBar.Container.Container.Menus.AntiCheat
 	local HidChat = game:GetService("Players").Chat
 	local function HubChat(msg)
 		HidChat(game.Players, "TNEChatAH".. msg)
 	end
-	
-	function GetCurrentTime()
+
+	local function GetCurrentTime()
 		return DateTime.now():ToLocalTime().Hour.. ":".. DateTime.now():ToLocalTime().Minute.. ":".. DateTime.now():ToLocalTime().Second
 	end
 	
-	AntiHub:WaitForChild("TitleBar").Draggable = true
-	
+	AntiHub:WaitForChild("TitleBar").Active = true
+	AntiHub.TitleBar.Draggable = true
+
 	game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
 		if proc then return end
-		
+
 		if inp.KeyCode == Enum.KeyCode:FromName(Keybind) then
 			if VisWait then return end
 			VisWait = true
@@ -686,7 +687,7 @@ local function C_30()
 			VisWait = false
 		end
 	end)
-	
+
 	AntiHub.TitleBar:WaitForChild("Close").Activated:Connect(function()
 		if VisWait then return end
 		VisWait = true
@@ -699,7 +700,7 @@ local function C_30()
 		game:GetService("TweenService"):Create(AntiHub.TitleBar, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Position"] = UIPos - UDim2.new(0.25, 0, 0, 0), ["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 		VisWait = false
 	end)
-	
+
 	AntiHub.TitleBar.Collapse.Activated:Connect(function()
 		if VisWait then return end
 		Expanded = not Expanded
@@ -712,7 +713,7 @@ local function C_30()
 		task.wait(0.2)
 		VisWait = false
 	end)
-	
+
 	for i, v in AntiHub.TitleBar.Container.Container.List:GetChildren() do
 		v.Activated:Connect(function()
 			if Menu == v.Name then return end
@@ -727,21 +728,21 @@ local function C_30()
 		end)
 	end
 	
-	game.TextChatService.MessageReceived:Connect(function(msg)
-		if msg.TextSource then
-			print(msg.Text)
-			if msg.Text:sub(1, 9) == "TNEChatAH" then
-				local Message = msg.Text:sub(10)
-				Chat.Logs.Chat.Text ..= "<b>".. game:GetService("Players"):GetPlayerByUserId(msg.TextSource.UserId).DisplayName.. ":</b> ".. Message.. "\n"
+	for i, v in game.Players:GetPlayers() do
+		v.Chatted:Connect(function(msg)
+			if msg:sub(1, 9) == "TNEChatAH" then
+				local Message = msg:sub(10)
+				Chat.Logs.Chat.Text ..= "<b>".. v.DisplayName.. ":</b> ".. Message.. "\n"
 				Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Chat.Logs.Chat.Text, Chat.Logs.Chat.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Chat.Logs.Chat.AbsoluteSize.X, math.huge)).Y)
 				Chat.Logs.CanvasPosition += Vector2.new(0, 100)
 			end
-			Logs.Chat.Log.Text ..= GetCurrentTime().. " <b>".. game:GetService("Players"):GetPlayerByUserId(msg.TextSource.UserId).DisplayName.. ":</b> ".. msg.Text.. "\n"
+			Logs.Chat.Log.Text ..= GetCurrentTime().. " <b>".. v.DisplayName.. ":</b> ".. msg.. "\n"
 			Logs.Chat.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Logs.Chat.Log.Text, Logs.Chat.Log.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Logs.Chat.Log.AbsoluteSize.X, math.huge)).Y)
 			Logs.Chat.CanvasPosition += Vector2.new(0, 100)
-		end
-	end)
-	
+		end)
+	end
+
+
 	game:GetService("Players").PlayerAdded:Connect(function(plr)
 		Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(0,128,0)\"".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>"
 		Logs.Player.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Logs.Player.Log.Text, Logs.Player.Log.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Logs.Player.Log.AbsoluteSize.X, math.huge)).Y)
@@ -752,7 +753,7 @@ local function C_30()
 		Logs.Player.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Logs.Player.Log.Text, Logs.Player.Log.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Logs.Player.Log.AbsoluteSize.X, math.huge)).Y)
 		Logs.Player.CanvasPosition += Vector2.new(0, 100)
 	end)
-	
+
 	PrisonLife.Prizz.Activated:Connect(function()
 		Execution_Runtime = tick()
 		PLadmin_Settings = {
@@ -780,7 +781,7 @@ local function C_30()
 		wait()
 		loadstring(game:HttpGet("https://paste.c-net.org/MailboxScurry",true))()
 	end)
-	
+
 	PrisonLife.H4X.Activated:Connect(function()
 		pcall(function()
 			getgenv().FavoriteColor = Color3.fromRGB(80, 0, 10)
@@ -794,9 +795,9 @@ local function C_30()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
 	end)
 	PrisonLife.Crash.Activated:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/Scripts/refs/heads/main/PLCrash.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Crash.lua"))()
 	end)
-	
+
 	Chat.Send.Activated:Connect(function()
 		HubChat(Chat.Input.Text)
 	end)
