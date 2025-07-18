@@ -2,8 +2,6 @@
 
 	-- Instances:
 
-print("version new")
-
 	local Converted = {
 		["_Antihub"] = Instance.new("ScreenGui");
 		["_TitleBar"] = Instance.new("Frame");
@@ -926,8 +924,8 @@ local function ACTrigger(plr, Reason, Respawn)
 	if plr.Character:WaitForChild("Humanoid").Sit then return end
 	if table.find(Config.AC.CanSend, plr.Name.. " ".. Reason) then return end
 	AntiCheat.Logs.Log.Text ..= GetCurrentTime().. " \"".. plr.Name.. "\" Triggered: ".. Reason
-	AntiCheat.Logs.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(AntiCheat.Logs.Log.Text, AntiCheat.Logs.Log.TextSize, Enum.Font.TitilliumWeb, Vector2.new(AntiCheat.Logs.Log.AbsoluteSize.X, math.huge)).Y)
-	AntiCheat.Logs.CanvasPosition += Vector2.new(0, 100)
+	AntiCheat.Logs.CanvasSize = UDim2.new(0, 0, 0, AntiCheat.Logs.Log.TextBounds.Y)
+	AntiCheat.Logs.CanvasPosition = Vector2.new(0, AntiCheat.Logs.CanvasSize.Y - AntiCheat.Logs.AbsoluteWindowSize.Y)
 	if Config.AC.Toast then
 		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AC - ".. plr.Name, ["Text"] = "Detected ".. Reason, ["Duration"] = 2})
 		task.wait(2)
@@ -945,8 +943,7 @@ local function UpdatePlayerList()
 		end
 	end
 	Players.List.Players.Text = table.concat(List, "\n")
-	Players.List.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Players.List.Players.Text, Players.List.Players.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Players.List.Players.AbsoluteSize.X, math.huge)).Y)
-	Players.List.CanvasPosition += Vector2.new(0, 100)
+	Players.List.CanvasSize = UDim2.new(0, 0, 0, Players.List.Players.TextBounds.Y)
 end
 
 local function UpdateWhitelist()
@@ -959,8 +956,8 @@ local function UpdateWhitelist()
 		end
 	end
 	AntiCheat.Whitelist.Players.Text = String
-	AntiCheat.Whitelist.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(AntiCheat.Whitelist.Players.Text, AntiCheat.Whitelist.Players.TextSize, Enum.Font.TitilliumWeb, Vector2.new(AntiCheat.Whitelist.Players.AbsoluteSize.X, math.huge)).Y)
-	AntiCheat.Whitelist.CanvasPosition += Vector2.new(0, 100)
+	AntiCheat.Whitelist.CanvasSize = UDim2.new(0, 0, 0, AntiCheat.Whitelist.Players.TextBounds.Y)
+	AntiCheat.Whitelist.CanvasPosition = Vector2.new(0, AntiCheat.WhiteList.CanvasSize.Y - AntiCheat.Whitelist.AbsoluteWindowSize.Y)
 	UpdatePlayerList()
 end
 
@@ -969,8 +966,8 @@ local function OnMessage(plr, msg)
 	if msg:sub(1, 9) == "TNEChatAH" then
 		local Message = msg:sub(10)
 		Chat.Logs.Chat.Text ..= "<b>".. plr.DisplayName.. ":</b> ".. Message.. "\n"
-		Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Chat.Logs.Chat.Text, Chat.Logs.Chat.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Chat.Logs.Chat.AbsoluteSize.X, math.huge)).Y)
-		Chat.Logs.CanvasPosition += Vector2.new(0, 100)
+		Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, Chat.Logs.Chat.Text.TextBounds.Y)
+		Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y - Chat.Logs.AbsoluteWindowSize.Y)
 	elseif msg == "TNEListStart" then
 		if not table.find(Team, plr) then
 			table.insert(Team, plr)
@@ -990,8 +987,8 @@ local function OnMessage(plr, msg)
 		end
 	end
 	Logs.Chat.Log.Text ..= GetCurrentTime().. " <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"
-	Logs.Chat.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Logs.Chat.Log.Text, Logs.Chat.Log.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Logs.Chat.Log.AbsoluteSize.X, math.huge)).Y)
-	Logs.Chat.CanvasPosition += Vector2.new(0, 100)
+	Logs.Chat.CanvasSize = UDim2.new(0, 0, 0, Logs.Chat.Log.TextBounds.Y)
+	Logs.Chat.CanvasPosition = Vector2.new(0, Logs.Chat.CanvasSize.Y - Logs.Chat.AbsoluteWindowSize.Y)
 end
 
 HidChat(game:GetService("Players"), "TNEListStart")
@@ -1083,8 +1080,8 @@ end
 
 game:GetService("Players").PlayerAdded:Connect(function(plr)
 	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>"
-	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Logs.Player.Log.Text, Logs.Player.Log.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Logs.Player.Log.AbsoluteSize.X, math.huge)).Y)
-	Logs.Player.CanvasPosition += Vector2.new(0, 100)
+	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
+	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y - Logs.Player.AbsoluteWindowSize.Y)
 	UpdatePlayerList()
 	plr.Chatted:Connect(function(msg)
 		OnMessage(plr, msg)
@@ -1093,8 +1090,8 @@ game:GetService("Players").PlayerAdded:Connect(function(plr)
 end)
 game:GetService("Players").PlayerRemoving:Connect(function(plr)
 	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(128,0,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>"
-	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Logs.Player.Log.Text, Logs.Player.Log.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Logs.Player.Log.AbsoluteSize.X, math.huge)).Y)
-	Logs.Player.CanvasPosition += Vector2.new(0, 100)
+	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
+	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y - logs.Player.AbsoluteWindowSize.Y)
 	if table.find(Config.AC.Whitelist, plr) then
 		table.remove(Config.AC.Whitelist, table.find(Config.AC.Whitelist, plr))
 		UpdateWhitelist()
@@ -1202,8 +1199,8 @@ end)
 Chat.Send.Activated:Connect(function()
 	print("sentClick")
 	Chat.Logs.Chat.Text ..= "<b>You:</b> ".. Chat.Input.Text.. "\n"
-	Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Chat.Logs.Chat.Text, Chat.Logs.Chat.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Chat.Logs.Chat.AbsoluteSize.X, math.huge)).Y)
-	Chat.Logs.CanvasPosition += Vector2.new(0, 100)
+	Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, Chat.Logs.Chat.TextBounds.Y)
+	Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y - Chat.Logs.AbsoluteWindowSize.Y)
 	HubChat(Chat.Input.Text)
 end)
 
@@ -1211,8 +1208,8 @@ Chat.Input.FocusLost:Connect(function(EP)
 	if EP then
 		print("sentEP")
 		Chat.Logs.Chat.Text ..= "<b>You:</b> ".. Chat.Input.Text.. "\n"
-		Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Chat.Logs.Chat.Text, Chat.Logs.Chat.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Chat.Logs.Chat.AbsoluteSize.X, math.huge)).Y)
-		Chat.Logs.CanvasPosition += Vector2.new(0, 100)
+		Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, Chat.Logs.Chat.TextBounds.Y)
+		Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y - Chat.Logs.AbsoluteWindowSize.Y)
 		HubChat(Chat.Input.Text)
 		Chat.Input.Text = ""
 	end
