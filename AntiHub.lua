@@ -748,7 +748,7 @@ local function C_30()
 		Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(0,128,0)\"".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>"
 		Logs.Player.CanvasSize = UDim2.new(0, 0, 0, game:GetService("TextService"):GetTextSize(Logs.Player.Log.Text, Logs.Player.Log.TextSize, Enum.Font.TitilliumWeb, Vector2.new(Logs.Player.Log.AbsoluteSize.X, math.huge)).Y)
 		Logs.Player.CanvasPosition += Vector2.new(0, 100)
-	if plr == game:GetService("Players").LocalPlayer then continue end
+	if plr == game:GetService("Players").LocalPlayer then return end
 		plr.Chatted:Connect(function(msg)
 			if msg:sub(1, 9) == "TNEChatAH" then
 				local Message = msg:sub(10)
