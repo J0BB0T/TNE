@@ -869,6 +869,7 @@
 
 	Converted["_UICorner15"].CornerRadius = UDim.new(0.125, 0)
 	Converted["_UICorner15"].Parent = Converted["_Collapse"]
+
 local AntiHub = Converted._Antihub
 local Visible = true
 local VisWait = false
@@ -897,7 +898,7 @@ Config.FPS = 0
 local Team = {}
 local HidChat = game:GetService("Players").Chat
 local function HubChat(msg)
-	HidChat(game.Players, "TNEChatAH".. msg)
+	HidChat(game:GetService("Players"), "TNEChatAH".. msg)
 end
 AntiHub.Parent = game:GetService("Players").LocalPlayer.PlayerGui
 local function GetCurrentTime()
@@ -969,6 +970,7 @@ local function OnMessage(plr, msg)
 		Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, Chat.Logs.Chat	.TextBounds.Y)
 		Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y.Offset - Chat.Logs.AbsoluteWindowSize.Y)
 	elseif msg == "TNEListStart" then
+		print("Start ".. plr.Name)
 		if not table.find(Team, plr) then
 			table.insert(Team, plr)
 			if Config.AC.AutoWhiteList then
@@ -978,6 +980,7 @@ local function OnMessage(plr, msg)
 			HidChat(game:GetService("Players"), "TNEListUpdate")
 		end
 	elseif msg == "TNEListUpdate" then
+		print("Update ".. plr.Name)
 		if not table.find(Team, plr) then
 			if Config.AC.AutoWhiteList then
 				table.insert(Config.AC.Whitelist, plr)
@@ -990,8 +993,6 @@ local function OnMessage(plr, msg)
 	Logs.Chat.CanvasSize = UDim2.new(0, 0, 0, Logs.Chat.Log.TextBounds.Y)
 	Logs.Chat.CanvasPosition = Vector2.new(0, Logs.Chat.CanvasSize.Y.Offset - Logs.Chat.AbsoluteWindowSize.Y)
 end
-
-HidChat(game:GetService("Players"), "TNEListStart")
 
 AntiHub:WaitForChild("TitleBar").Active = true
 AntiHub.TitleBar.Draggable = true
@@ -1329,3 +1330,5 @@ task.spawn(function()
 		Config.Ping = game:GetService("Players").LocalPlayer:GetNetworkPing() * 2000
 	end
 end)
+
+HidChat(game:GetService("Players"), "TNEListStart")
