@@ -37,7 +37,16 @@ local Converted = {
 	["_Kick"] = Instance.new("TextButton");
 	["_UICorner7"] = Instance.new("UICorner");
 	["_Universal1"] = Instance.new("CanvasGroup");
-	["_TextLabel"] = Instance.new("TextLabel");
+	["_IY"] = Instance.new("TextButton");
+	["_UICorner8"] = Instance.new("UICorner");
+	["_Respawm"] = Instance.new("TextButton");
+	["_UICorner9"] = Instance.new("UICorner");
+	["_DEX"] = Instance.new("TextButton");
+	["_UICorner10"] = Instance.new("UICorner");
+	["_Owl"] = Instance.new("TextButton");
+	["_UICorner11"] = Instance.new("UICorner");
+	["_WOW"] = Instance.new("TextButton");
+	["_UICorner12"] = Instance.new("UICorner");
 	["_Logs2"] = Instance.new("CanvasGroup");
 	["_Chat3"] = Instance.new("ScrollingFrame");
 	["_Log"] = Instance.new("TextLabel");
@@ -53,29 +62,29 @@ local Converted = {
 	["_ACL"] = Instance.new("TextLabel");
 	["_WL"] = Instance.new("TextLabel");
 	["_Clear"] = Instance.new("TextButton");
-	["_UICorner8"] = Instance.new("UICorner");
+	["_UICorner13"] = Instance.new("UICorner");
 	["_AWL"] = Instance.new("TextButton");
-	["_UICorner9"] = Instance.new("UICorner");
+	["_UICorner14"] = Instance.new("UICorner");
 	["_Toggle"] = Instance.new("TextButton");
-	["_UICorner10"] = Instance.new("UICorner");
+	["_UICorner15"] = Instance.new("UICorner");
 	["_Input2"] = Instance.new("TextBox");
 	["_ACToggle"] = Instance.new("TextButton");
-	["_UICorner11"] = Instance.new("UICorner");
+	["_UICorner16"] = Instance.new("UICorner");
 	["_ToastToggle"] = Instance.new("TextButton");
-	["_UICorner12"] = Instance.new("UICorner");
+	["_UICorner17"] = Instance.new("UICorner");
 	["_Players2"] = Instance.new("CanvasGroup");
 	["_List1"] = Instance.new("ScrollingFrame");
 	["_Players3"] = Instance.new("TextLabel");
 	["_Key"] = Instance.new("TextLabel");
 	["_Refresh"] = Instance.new("TextButton");
-	["_UICorner13"] = Instance.new("UICorner");
-	["_UICorner14"] = Instance.new("UICorner");
+	["_UICorner18"] = Instance.new("UICorner");
+	["_UICorner19"] = Instance.new("UICorner");
 	["_Title"] = Instance.new("TextLabel");
-	["_UICorner15"] = Instance.new("UICorner");
+	["_UICorner20"] = Instance.new("UICorner");
 	["_Close"] = Instance.new("TextButton");
-	["_UICorner16"] = Instance.new("UICorner");
+	["_UICorner21"] = Instance.new("UICorner");
 	["_Collapse"] = Instance.new("TextButton");
-	["_UICorner17"] = Instance.new("UICorner");
+	["_UICorner22"] = Instance.new("UICorner");
 }
 
 -- Properties:
@@ -85,7 +94,8 @@ Converted["_AntiHub"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_AntiHub"].ResetOnSpawn = false
 Converted["_AntiHub"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_AntiHub"].Name = "AntiHub"
-Converted["_AntiHub"].Parent = game.StarterGui
+Converted["_AntiHub"].Parent = game:GetService("CoreGui")
+
 Converted["_TitleBar"].Active = true
 Converted["_TitleBar"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_TitleBar"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
@@ -464,20 +474,95 @@ Converted["_Universal1"].Visible = false
 Converted["_Universal1"].Name = "Universal"
 Converted["_Universal1"].Parent = Converted["_Menus"]
 
-Converted["_TextLabel"].Font = Enum.Font.TitilliumWeb
-Converted["_TextLabel"].Text = "Universal In Progress"
-Converted["_TextLabel"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
-Converted["_TextLabel"].TextScaled = true
-Converted["_TextLabel"].TextSize = 14
-Converted["_TextLabel"].TextWrapped = true
-Converted["_TextLabel"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].BackgroundTransparency = 1
-Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel"].BorderSizePixel = 0
-Converted["_TextLabel"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_TextLabel"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_TextLabel"].Parent = Converted["_Universal1"]
+Converted["_IY"].Font = Enum.Font.Nunito
+Converted["_IY"].Text = "Infinite Yield"
+Converted["_IY"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_IY"].TextScaled = true
+Converted["_IY"].TextSize = 14
+Converted["_IY"].TextWrapped = true
+Converted["_IY"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_IY"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_IY"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_IY"].BorderSizePixel = 0
+Converted["_IY"].Position = UDim2.new(0.179979265, 0, 0.224999949, 0)
+Converted["_IY"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_IY"].Name = "IY"
+Converted["_IY"].Parent = Converted["_Universal1"]
+
+Converted["_UICorner8"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner8"].Parent = Converted["_IY"]
+
+Converted["_Respawm"].Font = Enum.Font.Nunito
+Converted["_Respawm"].Text = "Respawn"
+Converted["_Respawm"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Respawm"].TextScaled = true
+Converted["_Respawm"].TextSize = 14
+Converted["_Respawm"].TextWrapped = true
+Converted["_Respawm"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Respawm"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Respawm"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Respawm"].BorderSizePixel = 0
+Converted["_Respawm"].Position = UDim2.new(0.81997931, 0, 0.224999949, 0)
+Converted["_Respawm"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Respawm"].Name = "Respawm"
+Converted["_Respawm"].Parent = Converted["_Universal1"]
+
+Converted["_UICorner9"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner9"].Parent = Converted["_Respawm"]
+
+Converted["_DEX"].Font = Enum.Font.Nunito
+Converted["_DEX"].Text = "DEX Explorer"
+Converted["_DEX"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_DEX"].TextScaled = true
+Converted["_DEX"].TextSize = 14
+Converted["_DEX"].TextWrapped = true
+Converted["_DEX"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_DEX"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_DEX"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_DEX"].BorderSizePixel = 0
+Converted["_DEX"].Position = UDim2.new(0.389979213, 0, 0.224999949, 0)
+Converted["_DEX"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_DEX"].Name = "DEX"
+Converted["_DEX"].Parent = Converted["_Universal1"]
+
+Converted["_UICorner10"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner10"].Parent = Converted["_DEX"]
+
+Converted["_Owl"].Font = Enum.Font.Nunito
+Converted["_Owl"].Text = "OwlHub"
+Converted["_Owl"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Owl"].TextScaled = true
+Converted["_Owl"].TextSize = 14
+Converted["_Owl"].TextWrapped = true
+Converted["_Owl"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Owl"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Owl"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Owl"].BorderSizePixel = 0
+Converted["_Owl"].Position = UDim2.new(0.599979162, 0, 0.224999949, 0)
+Converted["_Owl"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Owl"].Name = "Owl"
+Converted["_Owl"].Parent = Converted["_Universal1"]
+
+Converted["_UICorner11"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner11"].Parent = Converted["_Owl"]
+
+Converted["_WOW"].Font = Enum.Font.Nunito
+Converted["_WOW"].Text = "Walk On Walls"
+Converted["_WOW"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_WOW"].TextScaled = true
+Converted["_WOW"].TextSize = 14
+Converted["_WOW"].TextWrapped = true
+Converted["_WOW"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_WOW"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_WOW"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_WOW"].BorderSizePixel = 0
+Converted["_WOW"].Position = UDim2.new(0.5, 0, 0.349999994, 0)
+Converted["_WOW"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_WOW"].Name = "WOW"
+Converted["_WOW"].Parent = Converted["_Universal1"]
+
+Converted["_UICorner12"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner12"].Parent = Converted["_WOW"]
 
 Converted["_Logs2"].GroupTransparency = 1
 Converted["_Logs2"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -706,8 +791,8 @@ Converted["_Clear"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Clear"].Name = "Clear"
 Converted["_Clear"].Parent = Converted["_AntiCheat1"]
 
-Converted["_UICorner8"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner8"].Parent = Converted["_Clear"]
+Converted["_UICorner13"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner13"].Parent = Converted["_Clear"]
 
 Converted["_AWL"].Font = Enum.Font.Nunito
 Converted["_AWL"].Text = "Disable Auto WL"
@@ -724,8 +809,8 @@ Converted["_AWL"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_AWL"].Name = "AWL"
 Converted["_AWL"].Parent = Converted["_AntiCheat1"]
 
-Converted["_UICorner9"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner9"].Parent = Converted["_AWL"]
+Converted["_UICorner14"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner14"].Parent = Converted["_AWL"]
 
 Converted["_Toggle"].Font = Enum.Font.Nunito
 Converted["_Toggle"].Text = "Toggle User"
@@ -742,8 +827,8 @@ Converted["_Toggle"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Toggle"].Name = "Toggle"
 Converted["_Toggle"].Parent = Converted["_AntiCheat1"]
 
-Converted["_UICorner10"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner10"].Parent = Converted["_Toggle"]
+Converted["_UICorner15"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner15"].Parent = Converted["_Toggle"]
 
 Converted["_Input2"].CursorPosition = -1
 Converted["_Input2"].Font = Enum.Font.TitilliumWeb
@@ -778,8 +863,8 @@ Converted["_ACToggle"].Size = UDim2.new(0.24999997, 0, 0.150000006, 0)
 Converted["_ACToggle"].Name = "ACToggle"
 Converted["_ACToggle"].Parent = Converted["_AntiCheat1"]
 
-Converted["_UICorner11"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner11"].Parent = Converted["_ACToggle"]
+Converted["_UICorner16"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner16"].Parent = Converted["_ACToggle"]
 
 Converted["_ToastToggle"].Font = Enum.Font.Nunito
 Converted["_ToastToggle"].Text = "Enable Toast"
@@ -796,8 +881,8 @@ Converted["_ToastToggle"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_ToastToggle"].Name = "ToastToggle"
 Converted["_ToastToggle"].Parent = Converted["_AntiCheat1"]
 
-Converted["_UICorner12"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner12"].Parent = Converted["_ToastToggle"]
+Converted["_UICorner17"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner17"].Parent = Converted["_ToastToggle"]
 
 Converted["_Players2"].GroupTransparency = 1
 Converted["_Players2"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -844,7 +929,7 @@ Converted["_Players3"].Parent = Converted["_List1"]
 
 Converted["_Key"].Font = Enum.Font.TitilliumWeb
 Converted["_Key"].RichText = true
-Converted["_Key"].Text = "<font color=\"rgb(178,0,0)\">Normal User</font> | <font color=\"rgb(0,178,0)\">AntiHub User</font>"
+Converted["_Key"].Text = "Key added by script so no errors when converting ui to lua."
 Converted["_Key"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
 Converted["_Key"].TextScaled = true
 Converted["_Key"].TextSize = 14
@@ -874,11 +959,11 @@ Converted["_Refresh"].Size = UDim2.new(0.224999994, 0, 0.100000001, 0)
 Converted["_Refresh"].Name = "Refresh"
 Converted["_Refresh"].Parent = Converted["_Players2"]
 
-Converted["_UICorner13"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner13"].Parent = Converted["_Refresh"]
+Converted["_UICorner18"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner18"].Parent = Converted["_Refresh"]
 
-Converted["_UICorner14"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner14"].Parent = Converted["_TitleBar"]
+Converted["_UICorner19"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner19"].Parent = Converted["_TitleBar"]
 
 Converted["_Title"].Font = Enum.Font.Sarpanch
 Converted["_Title"].Text = "AntiHub"
@@ -896,8 +981,8 @@ Converted["_Title"].Size = UDim2.new(0.174999997, 0, 0.800000012, 0)
 Converted["_Title"].Name = "Title"
 Converted["_Title"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner15"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner15"].Parent = Converted["_Title"]
+Converted["_UICorner20"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner20"].Parent = Converted["_Title"]
 
 Converted["_Close"].Font = Enum.Font.Nunito
 Converted["_Close"].Text = "X"
@@ -914,8 +999,8 @@ Converted["_Close"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
 Converted["_Close"].Name = "Close"
 Converted["_Close"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner16"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner16"].Parent = Converted["_Close"]
+Converted["_UICorner21"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner21"].Parent = Converted["_Close"]
 
 Converted["_Collapse"].Font = Enum.Font.Nunito
 Converted["_Collapse"].Text = "-"
@@ -932,9 +1017,8 @@ Converted["_Collapse"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
 Converted["_Collapse"].Name = "Collapse"
 Converted["_Collapse"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner17"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner17"].Parent = Converted["_Collapse"]
-
+Converted["_UICorner22"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner22"].Parent = Converted["_Collapse"]
 
 
 local AntiHub = Converted._AntiHub
@@ -1288,6 +1372,46 @@ end)
 PrisonLife.Kick.Activated:Connect(function()
 	HidChat(game:GetService("Players"), "!kick ".. PrisonLife.Input.Text)
 	PrisonLife.Input.Text = ""
+end)
+
+Universal.IY.Activated:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+Universal.DEX.Activated:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+end)
+Universal.Owl.Activated:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+Universal.Respawn.Activated:Connect(function()
+	local rcdEnabled, wasHidden = false, false
+	if gethidden then
+		rcdEnabled, wasHidden = gethidden(workspace, "RejectCharacterDeletions") ~= Enum.RejectCharacterDeletions.Disabled
+	end
+	if rcdEnabled and replicatesignal then
+		replicatesignal(game:GetService("Players").LocalPlayer.ConnectDiedSignalBackend)
+		task.wait(game:GetService("Players").RespawnTime - 0.1)
+		replicatesignal(game:GetService("Players").LocalPlayer.Kill)
+	elseif rcdEnabled and not replicatesignal then
+		print("INCOMPATIBLE EXPLOIT")
+		Universal.Respawn.Text = "Incompatible Exploit"
+		task.wait(5)
+		Universal.Respawn.Text = "Respawn"
+	else
+		local char = game:GetService("Players").LocalPlayer.Character
+		local hum = char:FindFirstChildWhichIsA("Humanoid")
+		if hum then hum:ChangeState(Enum.HumanoidStateType.Dead) end
+		char:ClearAllChildren()
+		local newChar = Instance.new("Model")
+		newChar.Parent = workspace
+		game:GetService("Players").LocalPlayer.Character = newChar
+		task.wait()
+		game:GetService("Players").LocalPlayer.Character = char
+		newChar:Destroy()
+	end
+end)
+Universal.WOW.Activated:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/wallwalker.lua"))()
 end)
 
 Chat.Send.Activated:Connect(function()
