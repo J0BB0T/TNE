@@ -1009,7 +1009,6 @@ Converted["_KeepShapePlz"].Name = "KeepShapePlz"
 Converted["_KeepShapePlz"].Parent = Converted["_Settings"]
 
 Converted["_Profile"].Image = "rbxasset://textures/glow.png"
-Converted["_Profile"].ImageContent = Content
 Converted["_Profile"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Profile"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Profile"].BackgroundTransparency = 1
