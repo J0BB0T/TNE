@@ -1156,7 +1156,6 @@ Converted["_Stats"].Parent = Converted["_AntiHub"]
 Converted["_UICorner28"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner28"].Parent = Converted["_Stats"]
 
-
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local AntiHub = Converted._AntiHub
 local Visible = true
@@ -1333,6 +1332,31 @@ game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
 		task.wait(0.25)
 		VisWait = false
 	end
+end)
+
+AntiHub:WaitForChild("Stats").Activated:Connect(function()
+	if VisWait then return end
+	VisWait = true
+	Visible = not Visible
+	if Visible then
+		if Menu == "Chat" then
+			Unread = 0
+		end
+		game:GetService("TweenService"):Create(AntiHub.TitleBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {["Position"] = UIPos, ["Size"] = UDim2.new(0.5, 0, 0.05, 0)}):Play()
+		task.wait(0.25)
+		if Expanded then
+			game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 4.75, 0), ["Size"] = UDim2.new(1, 0, 9.5, 0)}):Play()
+		end
+	else
+		UIPos = AntiHub.TitleBar.Position
+		if Expanded then
+			game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 0.5, 0), ["Size"] = UDim2.new(1, 0, 1, 0)}):Play()
+		end
+		task.wait(0.25)
+		game:GetService("TweenService"):Create(AntiHub.TitleBar, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Position"] = UIPos - UDim2.new(0.25, 0, 0, 0), ["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
+	end
+	task.wait(0.25)
+	VisWait = false
 end)
 
 AntiHub.TitleBar:WaitForChild("Close").Activated:Connect(function()
@@ -1689,7 +1713,7 @@ task.spawn(function()
 	end)
 
 	game:GetService("RunService").RenderStepped:Connect(function(DT)
-		Config.FPS = 1 / DT
+		Config.FPS = math.floor(1 / DT)
 	end)
 
 	game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
@@ -1749,7 +1773,8 @@ Players.Key.Text = "<font color=\"rgb(178,0,0)\">Normal User</font> | <font colo
 HidChat(game:GetService("Players"), "TNEListStart")
 
 
-while task.wait(0.05) do
+while task.wait(0.5) do
+	Config.Ping = LocalPlayer:GetNetworkPing() * 2000
 	if Unread == 0 then
 		AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat"
 	else
@@ -1758,6 +1783,13 @@ while task.wait(0.05) do
 		else
 			AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat (".. tostring(Unread).. ")"
 		end
+	end
+	if game:GetService("UserInputService").KeyboardEnabled then
+		if not VisWait then
+			AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Keybind [".. Keybind.. "]"
+		end
+	else
+		AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Keybind [Stats UI]"
 	end
 	AntiHub.Stats.Text = tostring(Config.Ping).. " ms\n".. tostring(Config.FPS).. " FPS"
 end
