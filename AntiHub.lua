@@ -85,7 +85,7 @@ Converted["_AntiHub"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_AntiHub"].ResetOnSpawn = false
 Converted["_AntiHub"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_AntiHub"].Name = "AntiHub"
-Converted["_AntiHub"].Parent = game.StarterGui.AntiHub
+Converted["_AntiHub"].Parent = game.StarterGui
 
 Converted["_TitleBar"].Active = true
 Converted["_TitleBar"].AnchorPoint = Vector2.new(0.5, 0.5)
