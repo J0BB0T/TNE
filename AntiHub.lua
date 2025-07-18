@@ -39,7 +39,7 @@ local Converted = {
 	["_Universal1"] = Instance.new("CanvasGroup");
 	["_IY"] = Instance.new("TextButton");
 	["_UICorner8"] = Instance.new("UICorner");
-	["_Respawm"] = Instance.new("TextButton");
+	["_Respawn"] = Instance.new("TextButton");
 	["_UICorner9"] = Instance.new("UICorner");
 	["_DEX"] = Instance.new("TextButton");
 	["_UICorner10"] = Instance.new("UICorner");
@@ -78,13 +78,29 @@ local Converted = {
 	["_Key"] = Instance.new("TextLabel");
 	["_Refresh"] = Instance.new("TextButton");
 	["_UICorner18"] = Instance.new("UICorner");
+	["_Player1"] = Instance.new("CanvasGroup");
 	["_UICorner19"] = Instance.new("UICorner");
-	["_Title"] = Instance.new("TextLabel");
+	["_Settings"] = Instance.new("ImageButton");
 	["_UICorner20"] = Instance.new("UICorner");
-	["_Close"] = Instance.new("TextButton");
+	["_KeepShapePlz"] = Instance.new("UIAspectRatioConstraint");
+	["_Profile"] = Instance.new("ImageLabel");
 	["_UICorner21"] = Instance.new("UICorner");
-	["_Collapse"] = Instance.new("TextButton");
+	["_Outline"] = Instance.new("UIStroke");
+	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
+	["_Settings1"] = Instance.new("CanvasGroup");
+	["_Keybind"] = Instance.new("TextButton");
 	["_UICorner22"] = Instance.new("UICorner");
+	["_Close"] = Instance.new("TextButton");
+	["_UICorner23"] = Instance.new("UICorner");
+	["_UICorner24"] = Instance.new("UICorner");
+	["_Title"] = Instance.new("TextLabel");
+	["_UICorner25"] = Instance.new("UICorner");
+	["_Close1"] = Instance.new("TextButton");
+	["_UICorner26"] = Instance.new("UICorner");
+	["_Collapse"] = Instance.new("TextButton");
+	["_UICorner27"] = Instance.new("UICorner");
+	["_Stats"] = Instance.new("TextLabel");
+	["_UICorner28"] = Instance.new("UICorner");
 }
 
 -- Properties:
@@ -139,7 +155,7 @@ Converted["_List"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_List"].BorderSizePixel = 0
 Converted["_List"].Position = UDim2.new(0.075000003, 0, 0.5, 0)
 Converted["_List"].Size = UDim2.new(0.150000006, 0, 1, 0)
-Converted["_List"].ZIndex = 3
+Converted["_List"].ZIndex = 2
 Converted["_List"].Name = "List"
 Converted["_List"].Parent = Converted["_Container1"]
 
@@ -492,23 +508,23 @@ Converted["_IY"].Parent = Converted["_Universal1"]
 Converted["_UICorner8"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner8"].Parent = Converted["_IY"]
 
-Converted["_Respawm"].Font = Enum.Font.Nunito
-Converted["_Respawm"].Text = "Respawn"
-Converted["_Respawm"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Respawm"].TextScaled = true
-Converted["_Respawm"].TextSize = 14
-Converted["_Respawm"].TextWrapped = true
-Converted["_Respawm"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Respawm"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Respawm"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Respawm"].BorderSizePixel = 0
-Converted["_Respawm"].Position = UDim2.new(0.81997931, 0, 0.224999949, 0)
-Converted["_Respawm"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
-Converted["_Respawm"].Name = "Respawn"
-Converted["_Respawm"].Parent = Converted["_Universal1"]
+Converted["_Respawn"].Font = Enum.Font.Nunito
+Converted["_Respawn"].Text = "Respawn"
+Converted["_Respawn"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Respawn"].TextScaled = true
+Converted["_Respawn"].TextSize = 14
+Converted["_Respawn"].TextWrapped = true
+Converted["_Respawn"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Respawn"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Respawn"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Respawn"].BorderSizePixel = 0
+Converted["_Respawn"].Position = UDim2.new(0.81997931, 0, 0.224999949, 0)
+Converted["_Respawn"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Respawn"].Name = "Respawn"
+Converted["_Respawn"].Parent = Converted["_Universal1"]
 
 Converted["_UICorner9"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner9"].Parent = Converted["_Respawm"]
+Converted["_UICorner9"].Parent = Converted["_Respawn"]
 
 Converted["_DEX"].Font = Enum.Font.Nunito
 Converted["_DEX"].Text = "DEX Explorer"
@@ -962,8 +978,110 @@ Converted["_Refresh"].Parent = Converted["_Players2"]
 Converted["_UICorner18"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner18"].Parent = Converted["_Refresh"]
 
-Converted["_UICorner19"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner19"].Parent = Converted["_TitleBar"]
+Converted["_Player1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Player1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Player1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Player1"].BorderSizePixel = 0
+Converted["_Player1"].Position = UDim2.new(0.075000003, 0, 0.899999976, 0)
+Converted["_Player1"].Size = UDim2.new(0.150000006, 0, 0.125, 0)
+Converted["_Player1"].ZIndex = 3
+Converted["_Player1"].Name = "Player"
+Converted["_Player1"].Parent = Converted["_Container1"]
+
+Converted["_UICorner19"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner19"].Parent = Converted["_Player1"]
+
+Converted["_Settings"].Image = "rbxassetid://1257503133"
+Converted["_Settings"].ImageContent = Content
+Converted["_Settings"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Settings"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Settings"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Settings"].BorderSizePixel = 0
+Converted["_Settings"].Position = UDim2.new(0.814999998, 0, 0.5, 0)
+Converted["_Settings"].Size = UDim2.new(0.324999988, 0, 0.800000012, 0)
+Converted["_Settings"].Name = "Settings"
+Converted["_Settings"].Parent = Converted["_Player1"]
+
+Converted["_UICorner20"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner20"].Parent = Converted["_Settings"]
+
+Converted["_KeepShapePlz"].AspectRatio = 1.0068495273590088
+Converted["_KeepShapePlz"].Name = "KeepShapePlz"
+Converted["_KeepShapePlz"].Parent = Converted["_Settings"]
+
+Converted["_Profile"].Image = "rbxasset://textures/glow.png"
+Converted["_Profile"].ImageContent = Content
+Converted["_Profile"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Profile"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Profile"].BackgroundTransparency = 1
+Converted["_Profile"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Profile"].BorderSizePixel = 0
+Converted["_Profile"].Position = UDim2.new(0.300000012, 0, 0.5, 0)
+Converted["_Profile"].Size = UDim2.new(0.356291145, 0, 0.87500006, 0)
+Converted["_Profile"].Name = "Profile"
+Converted["_Profile"].Parent = Converted["_Player1"]
+
+Converted["_UICorner21"].CornerRadius = UDim.new(1, 0)
+Converted["_UICorner21"].Parent = Converted["_Profile"]
+
+Converted["_Outline"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_Outline"].Name = "Outline"
+Converted["_Outline"].Parent = Converted["_Profile"]
+
+Converted["_UIAspectRatioConstraint"].AspectRatio = 1.009178876876831
+Converted["_UIAspectRatioConstraint"].Parent = Converted["_Profile"]
+
+Converted["_Settings1"].GroupTransparency = 1
+Converted["_Settings1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Settings1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Settings1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Settings1"].BorderSizePixel = 0
+Converted["_Settings1"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Settings1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Settings1"].Visible = false
+Converted["_Settings1"].ZIndex = 4
+Converted["_Settings1"].Name = "Settings"
+Converted["_Settings1"].Parent = Converted["_Container1"]
+
+Converted["_Keybind"].Font = Enum.Font.TitilliumWeb
+Converted["_Keybind"].Text = "Keybind [Q]"
+Converted["_Keybind"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Keybind"].TextScaled = true
+Converted["_Keybind"].TextSize = 14
+Converted["_Keybind"].TextWrapped = true
+Converted["_Keybind"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Keybind"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Keybind"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Keybind"].BorderSizePixel = 0
+Converted["_Keybind"].Position = UDim2.new(0.174999997, 0, 0.174999997, 0)
+Converted["_Keybind"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Keybind"].Name = "Keybind"
+Converted["_Keybind"].Parent = Converted["_Settings1"]
+
+Converted["_UICorner22"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner22"].Parent = Converted["_Keybind"]
+
+Converted["_Close"].Font = Enum.Font.Nunito
+Converted["_Close"].Text = "X"
+Converted["_Close"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close"].TextScaled = true
+Converted["_Close"].TextSize = 14
+Converted["_Close"].TextWrapped = true
+Converted["_Close"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Close"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close"].BorderSizePixel = 0
+Converted["_Close"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
+Converted["_Close"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+Converted["_Close"].Name = "Close"
+Converted["_Close"].Parent = Converted["_Settings1"]
+
+Converted["_UICorner23"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner23"].Parent = Converted["_Close"]
+
+Converted["_UICorner24"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner24"].Parent = Converted["_TitleBar"]
 
 Converted["_Title"].Font = Enum.Font.Sarpanch
 Converted["_Title"].Text = "AntiHub"
@@ -981,26 +1099,26 @@ Converted["_Title"].Size = UDim2.new(0.174999997, 0, 0.800000012, 0)
 Converted["_Title"].Name = "Title"
 Converted["_Title"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner20"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner20"].Parent = Converted["_Title"]
+Converted["_UICorner25"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner25"].Parent = Converted["_Title"]
 
-Converted["_Close"].Font = Enum.Font.Nunito
-Converted["_Close"].Text = "X"
-Converted["_Close"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close"].TextScaled = true
-Converted["_Close"].TextSize = 14
-Converted["_Close"].TextWrapped = true
-Converted["_Close"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close"].BorderSizePixel = 0
-Converted["_Close"].Position = UDim2.new(0.949999988, 0, 0.5, 0)
-Converted["_Close"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
-Converted["_Close"].Name = "Close"
-Converted["_Close"].Parent = Converted["_TitleBar"]
+Converted["_Close1"].Font = Enum.Font.Nunito
+Converted["_Close1"].Text = "X"
+Converted["_Close1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close1"].TextScaled = true
+Converted["_Close1"].TextSize = 14
+Converted["_Close1"].TextWrapped = true
+Converted["_Close1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Close1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close1"].BorderSizePixel = 0
+Converted["_Close1"].Position = UDim2.new(0.949999988, 0, 0.5, 0)
+Converted["_Close1"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
+Converted["_Close1"].Name = "Close"
+Converted["_Close1"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner21"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner21"].Parent = Converted["_Close"]
+Converted["_UICorner26"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner26"].Parent = Converted["_Close1"]
 
 Converted["_Collapse"].Font = Enum.Font.Nunito
 Converted["_Collapse"].Text = "-"
@@ -1017,12 +1135,37 @@ Converted["_Collapse"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
 Converted["_Collapse"].Name = "Collapse"
 Converted["_Collapse"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner22"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner22"].Parent = Converted["_Collapse"]
+Converted["_UICorner27"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner27"].Parent = Converted["_Collapse"]
 
+Converted["_Stats"].Font = Enum.Font.SciFi
+Converted["_Stats"].Text = "50 ms
+60 fps"
+Converted["_Stats"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_Stats"].TextScaled = true
+Converted["_Stats"].TextSize = 14
+Converted["_Stats"].TextTransparency = 0.5
+Converted["_Stats"].TextWrapped = true
+Converted["_Stats"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Stats"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Stats"].BackgroundTransparency = 0.5
+Converted["_Stats"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Stats"].BorderSizePixel = 0
+Converted["_Stats"].Position = UDim2.new(0.970000029, 0, 0.0350000001, 0)
+Converted["_Stats"].Size = UDim2.new(0.0500000007, 0, 0.0500000007, 0)
+Converted["_Stats"].Name = "Stats"
+Converted["_Stats"].Parent = Converted["_AntiHub"]
+
+Converted["_UICorner28"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner28"].Parent = Converted["_Stats"]
+
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
 local AntiHub = Converted._AntiHub
 local Visible = true
 local VisWait = false
+local SettingsOpen = false
+local SetWait = false
 local MenWait = false
 local Keybind = "G"
 local UIPos = UDim2.new(0, 0, 0, 0)
@@ -1043,7 +1186,7 @@ Config.AC.Enabled = true
 Config.AC.List = {}
 Config.AC.Messages = {}
 Config.AC.CanSend = {}
-Config.AC.Whitelist = {game:GetService("Players").LocalPlayer}
+Config.AC.Whitelist = {LocalPlayer}
 Config.Ping = 0
 Config.FPS = 0
 local Team = {}
@@ -1051,7 +1194,7 @@ local HidChat = game:GetService("Players").Chat
 local function HubChat(msg)
 	HidChat(game:GetService("Players"), "TNEChatAH".. msg)
 end
-AntiHub.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+AntiHub.Parent = LocalPlayer.PlayerGui
 local function GetCurrentTime()
 	return DateTime.now():ToLocalTime().Hour.. ":".. DateTime.now():ToLocalTime().Minute.. ":".. DateTime.now():ToLocalTime().Second
 end
@@ -1117,7 +1260,7 @@ local function UpdateWhitelist()
 end
 
 local function OnMessage(plr, msg)
-	if plr == game:GetService("Players").LocalPlayer then return end
+	if plr == LocalPlayer then return end
 	if msg:sub(1, 9) == "TNEChatAH" then
 		if Visible == false or Menu ~= "Chat" then
 			Unread += 1
@@ -1162,7 +1305,7 @@ local function OnMessage(plr, msg)
 	Logs.Chat.CanvasPosition = Vector2.new(0, Logs.Chat.CanvasSize.Y.Offset - Logs.Chat.AbsoluteWindowSize.Y)
 end
 
-game:GetService("Players").LocalPlayer.PlayerScripts.ClientGunReplicator.Disabled = true
+LocalPlayer.PlayerScripts.ClientGunReplicator.Disabled = true
 
 AntiHub:WaitForChild("TitleBar").Active = true
 AntiHub.TitleBar.Draggable = true
@@ -1248,7 +1391,7 @@ AntiHub.TitleBar.Container.Container.Menus[Menu].GroupTransparency = 0
 
 for i, v in game:GetService("Players"):GetPlayers() do
 	v:GetPropertyChangedSignal("Team"):Connect(UpdatePlayerList)
-	if v == game:GetService("Players").LocalPlayer then continue end
+	if v == LocalPlayer then continue end
 	v.Chatted:Connect(function(msg)
 		OnMessage(v, msg)
 	end)
@@ -1406,24 +1549,24 @@ Universal.Respawn.Activated:Connect(function()
 		rcdEnabled, wasHidden = gethidden(workspace, "RejectCharacterDeletions") ~= Enum.RejectCharacterDeletions.Disabled
 	end
 	if rcdEnabled and replicatesignal then
-		replicatesignal(game:GetService("Players").LocalPlayer.ConnectDiedSignalBackend)
+		replicatesignal(LocalPlayer.ConnectDiedSignalBackend)
 		task.wait(game:GetService("Players").RespawnTime - 0.1)
-		replicatesignal(game:GetService("Players").LocalPlayer.Kill)
+		replicatesignal(LocalPlayer.Kill)
 	elseif rcdEnabled and not replicatesignal then
 		print("INCOMPATIBLE EXPLOIT")
 		Universal.Respawn.Text = "Incompatible Exploit"
 		task.wait(5)
 		Universal.Respawn.Text = "Respawn"
 	else
-		local char = game:GetService("Players").LocalPlayer.Character
+		local char = LocalPlayer.Character
 		local hum = char:FindFirstChildWhichIsA("Humanoid")
 		if hum then hum:ChangeState(Enum.HumanoidStateType.Dead) end
 		char:ClearAllChildren()
 		local newChar = Instance.new("Model")
 		newChar.Parent = workspace
-		game:GetService("Players").LocalPlayer.Character = newChar
+		LocalPlayer.Character = newChar
 		task.wait()
-		game:GetService("Players").LocalPlayer.Character = char
+		LocalPlayer.Character = char
 		newChar:Destroy()
 	end
 end)
@@ -1456,7 +1599,7 @@ end)
 
 task.spawn(function()
 	local function AddAC(plr:Player)
-		if plr == game:GetService("Players").LocalPlayer then return end
+		if plr == LocalPlayer then return end
 		if table.find(Config.AC.List, plr) then return end
 		table.insert(Config.AC.List, plr)
 		local Char = plr.Character or plr.CharacterAdded:Wait()
@@ -1543,7 +1686,7 @@ task.spawn(function()
 		end
 
 		game:GetService("Players").PlayerRemoving:Connect(function(plr)
-			if plr == game:GetService("Players").LocalPlayer then return end
+			if plr == LocalPlayer then return end
 			table.remove(Config.AC.List, table.find(Config.AC.List, plr))
 		end)
 	end)
@@ -1567,11 +1710,39 @@ task.spawn(function()
 		end)
 		task.wait()
 	until suc
-
 	while task.wait() do
-		Config.Ping = game:GetService("Players").LocalPlayer:GetNetworkPing() * 2000
+		Config.Ping = LocalPlayer:GetNetworkPing() * 2000
 	end
 end)
+
+AntiHub.TitleBar.Container.Container.Player.Settings.Activated:Connect(function()
+	if SetWait then return end
+	SetWait = true
+	SettingsOpen = true
+	AntiHub.TitleBar.Container.Container.Settings.Visible = true
+	game:GetService("TweenService"):Create(AntiHub.TitleBar.Container.Container.Settings, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
+	task.wait(0.1)
+	SetWait = false
+end)
+
+AntiHub.TitleBar.Container.Container.Settings.Close.Activated:Connect(function()
+	if SetWait then return end
+	SetWait = true
+	SettingsOpen = false
+	game:GetService("TweenService"):Create(AntiHub.TitleBar.Container.Container.Settings, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
+	task.wait(0.1)
+	AntiHub.TitleBar.Container.Container.Settings.Visible = false
+	SetWait = false
+end)
+
+AntiHub.TitleBar.Container.Container.Settings.Keybind.Activated:Connect(function()
+	if not game:GetService("UserInputService").KeyboardEnabled then return end
+	AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Press Any Key"
+	Keybind = game:GetService("UserInputService").InputBegan:Wait().KeyCode.Name
+	AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Keybind [".. Keybind.. "]"
+end)
+
+AntiHub.TitleBar.Container.Container.Player.Profile.Image = game:GetService("Players"):GetUserThumbnailAsync(LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
 
 Players.Key.Text = "<font color=\"rgb(178,0,0)\">Normal User</font> | <font color=\"rgb(0,178,0)\">AntiHub User</font>"
 
@@ -1588,4 +1759,5 @@ while task.wait(0.05) do
 			AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat (".. tostring(Unread).. ")"
 		end
 	end
+	AntiHub.Stats.Text = tostring(Config.Ping).. " ms\n".. tostring(Config.FPS).. " FPS"
 end
