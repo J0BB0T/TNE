@@ -957,7 +957,7 @@ local function UpdateWhitelist()
 	AntiCheat:WaitForChild("Whitelist")
 	AntiCheat.Whitelist.Players.Text = String
 	AntiCheat.Whitelist.CanvasSize = UDim2.new(0, 0, 0, AntiCheat.Whitelist.Players.TextBounds.Y)
-	AntiCheat.Whitelist.CanvasPosition = Vector2.new(0, AntiCheat.WhiteList.CanvasSize.Y.Offset - AntiCheat.Whitelist.AbsoluteWindowSize.Y)
+	AntiCheat.Whitelist.CanvasPosition = Vector2.new(0, AntiCheat.WhiteList.CanvasSize.Y.Offset - AntiCheat.WhiteList.AbsoluteWindowSize.Y)
 	UpdatePlayerList()
 end
 
