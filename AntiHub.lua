@@ -1157,7 +1157,7 @@ game:GetService("Players").PlayerAdded:Connect(function(plr)
 	if string.len(Logs.Player.Log.Text) + string.len(GetCurrentTime().. plr.Name.. " (".. plr.DisplayName..  ") Joined!") >= 16385 then
 		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len(GetCurrentTime().. plr.Name.. " (".. plr.DisplayName..  ") Joined!"))
 	end
-	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>"
+	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>\n"
 	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
 	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
 	UpdatePlayerList()
@@ -1170,7 +1170,7 @@ game:GetService("Players").PlayerRemoving:Connect(function(plr)
 	if string.len(Logs.Player.Log.Text) + string.len(GetCurrentTime().. plr.Name.. " (".. plr.DisplayName..  ") Left.") >= 16385 then
 		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len(GetCurrentTime().. plr.Name.. " (".. plr.DisplayName..  ") Left."))
 	end
-	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(128,0,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>"
+	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(128,0,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>\n"
 	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
 	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
 	if table.find(Config.AC.Whitelist, plr) then
@@ -1430,4 +1430,3 @@ Players.Key.Text = "<font color=\"rgb(178,0,0)\">Normal User</font> | <font colo
 
 HidChat(game:GetService("Players"), "TNEListStart")
 
-print("AH LOADED VERSION I DONT KNOW THIS IS JUST TEMPORARY")
