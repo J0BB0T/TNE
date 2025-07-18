@@ -1020,12 +1020,11 @@ Converted["_Collapse"].Parent = Converted["_TitleBar"]
 Converted["_UICorner22"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner22"].Parent = Converted["_Collapse"]
 
-
 local AntiHub = Converted._AntiHub
 local Visible = true
 local VisWait = false
 local MenWait = false
-local Keybind = "R"
+local Keybind = "G"
 local UIPos = UDim2.new(0, 0, 0, 0)
 local Expanded = true
 local Menu = "PrisonLife"
@@ -1370,7 +1369,8 @@ PrisonLife.Crash.Activated:Connect(function()
 end)
 
 PrisonLife.Kick.Activated:Connect(function()
-	HidChat(game:GetService("Players"), "!kick ".. PrisonLife.Input.Text)
+	local Target = GetUnshortened(PrisonLife.Input.Text)
+	game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("/w ".. Target.DisplayName.. " !kick ".. Target.Name)
 	PrisonLife.Input.Text = ""
 end)
 
