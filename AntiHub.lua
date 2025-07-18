@@ -992,7 +992,6 @@ Converted["_UICorner19"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner19"].Parent = Converted["_Player1"]
 
 Converted["_Settings"].Image = "rbxassetid://1257503133"
-Converted["_Settings"].ImageContent = Content
 Converted["_Settings"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Settings"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
 Converted["_Settings"].BorderColor3 = Color3.fromRGB(0, 0, 0)
