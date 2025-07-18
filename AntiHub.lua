@@ -869,8 +869,7 @@
 
 	Converted["_UICorner15"].CornerRadius = UDim.new(0.125, 0)
 	Converted["_UICorner15"].Parent = Converted["_Collapse"]
-
-local AntiHub = script.Parent --Converted._Antihub or 
+local AntiHub = Converted._Antihub
 local Visible = true
 local VisWait = false
 local MenWait = false
