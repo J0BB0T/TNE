@@ -966,7 +966,7 @@ local function OnMessage(plr, msg)
 	if msg:sub(1, 9) == "TNEChatAH" then
 		local Message = msg:sub(10)
 		Chat.Logs.Chat.Text ..= "<b>".. plr.DisplayName.. ":</b> ".. Message.. "\n"
-		Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, Chat.Logs.Chat.Text.TextBounds.Y)
+		Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, Chat.Logs.Chat	.TextBounds.Y)
 		Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y.Offset - Chat.Logs.AbsoluteWindowSize.Y)
 	elseif msg == "TNEListStart" then
 		if not table.find(Team, plr) then
@@ -1079,9 +1079,9 @@ end
 
 
 game:GetService("Players").PlayerAdded:Connect(function(plr)
-	Logs.Players.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>"
-	Logs.Players.CanvasSize = UDim2.new(0, 0, 0, Logs.Players.Log.TextBounds.Y)
-	Logs.Players.CanvasPosition = Vector2.new(0, Logs.Players.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
+	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>"
+	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
+	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
 	UpdatePlayerList()
 	plr.Chatted:Connect(function(msg)
 		OnMessage(plr, msg)
