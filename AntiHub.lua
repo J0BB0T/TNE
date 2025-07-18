@@ -1034,6 +1034,7 @@ local Universal = AntiHub.TitleBar.Container.Container.Menus.Universal
 local Logs = AntiHub.TitleBar.Container.Container.Menus.Logs
 local AntiCheat = AntiHub.TitleBar.Container.Container.Menus.AntiCheat
 local Players = AntiHub.TitleBar.Container.Container.Menus.Players
+local Unread = 0
 local Config = {}
 Config.AC = {}
 Config.AC.AutoWhiteList = true
@@ -1118,6 +1119,14 @@ end
 local function OnMessage(plr, msg)
 	if plr == game:GetService("Players").LocalPlayer then return end
 	if msg:sub(1, 9) == "TNEChatAH" then
+		if Visible == false or Menu ~= "Chat" then
+			Unread += 1
+			if string.len(msg) >= 10 then
+				game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat", ["Text"] = "New Message: ".. msg:sub(1, 10).. "...", ["Duration"] = 1})
+			else
+				game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat", ["Text"] = "New Message: ".. msg, ["Duration"] = 1})
+			end
+		end
 		local Message = msg:sub(10)
 		if string.len(Chat.Logs.Chat.Text) + string.len(Message) >= 16385 then
 			Chat.Logs.Chat.Text = Chat.Logs.Chat.Text:sub(1, 	string.len(Chat.Logs.Chat.Text) - string.len(Message))
@@ -1132,11 +1141,13 @@ local function OnMessage(plr, msg)
 				table.insert(Config.AC.Whitelist, plr)
 				UpdateWhitelist()
 			end
+			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Detected", ["Text"] = "User ".. plr.Name.. " Has Joined With AntiHub", ["Duration"] = 5})
 			HidChat(game:GetService("Players"), "TNEListUpdate")
 		end
 	elseif msg == "TNEListUpdate" then
 		if not table.find(Team, plr) then
 			table.insert(Team, plr)
+			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Detected", ["Text"] = "User ".. plr.Name.. " Has Joined With AntiHub", ["Duration"] = 5})
 			if Config.AC.AutoWhiteList then
 				table.insert(Config.AC.Whitelist, plr)
 				UpdateWhitelist()
@@ -1163,6 +1174,9 @@ game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
 		VisWait = true
 		Visible = not Visible
 		if Visible then
+			if Menu == "Chat" then
+				Unread = 0
+			end
 			game:GetService("TweenService"):Create(AntiHub.TitleBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {["Position"] = UIPos, ["Size"] = UDim2.new(0.5, 0, 0.05, 0)}):Play()
 			task.wait(0.25)
 			if Expanded then
@@ -1211,6 +1225,9 @@ for i, v in AntiHub.TitleBar.Container.Container.List:GetChildren() do
 	v.Activated:Connect(function()
 		if Menu == v.Name then return end
 		if MenWait then return end
+		if v.Name == "Chat" then
+			Unread = 0
+		end
 		MenWait = true
 		AntiHub.TitleBar.Container.Container.Menus[v.Name].Visible = true
 		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container.Container.Menus[Menu], TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
@@ -1559,3 +1576,16 @@ end)
 Players.Key.Text = "<font color=\"rgb(178,0,0)\">Normal User</font> | <font color=\"rgb(0,178,0)\">AntiHub User</font>"
 
 HidChat(game:GetService("Players"), "TNEListStart")
+
+
+while task.wait(0.05) do
+	if Unread == 0 then
+		AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat"
+	else
+		if Unread > 99 then
+			AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat (99+)"
+		else
+			AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat (".. tostring(Unread).. ")"
+		end
+	end
+end
