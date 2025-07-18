@@ -1139,8 +1139,7 @@ Converted["_UICorner27"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner27"].Parent = Converted["_Collapse"]
 
 Converted["_Stats"].Font = Enum.Font.SciFi
-Converted["_Stats"].Text = "50 ms
-60 fps"
+Converted["_Stats"].Text = "Added by script for so no errors."
 Converted["_Stats"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
 Converted["_Stats"].TextScaled = true
 Converted["_Stats"].TextSize = 14
