@@ -181,7 +181,7 @@ for i, v in AntiHub.TitleBar.Container.Container.List:GetChildren() do
 		if Menu == v.Name then return end
 		if MenWait then return end
 		MenWait = true
-		AntiHub.TitleBar.Container.Container.Menus[v.Name].Visible = false
+		AntiHub.TitleBar.Container.Container.Menus[v.Name].Visible = true
 		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container.Container.Menus[Menu], TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
 		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container.Container.Menus[v.Name], TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
 		task.wait(0.1)
