@@ -1121,10 +1121,10 @@ local function OnMessage(plr, msg)
 	if msg:sub(1, 9) == "TNEChatAH" then
 		if Visible == false or Menu ~= "Chat" then
 			Unread += 1
-			if string.len(msg) >= 10 then
-				game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat", ["Text"] = "New Message: ".. msg:sub(1, 10).. "...", ["Duration"] = 1})
+			if (string.len(msg) - 9) >= 10 then
+				game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat - ".. plr.Name, ["Text"] = "New Message:\n".. msg:sub(10, 20).. "...", ["Duration"] = 1})
 			else
-				game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat", ["Text"] = "New Message: ".. msg, ["Duration"] = 1})
+				game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat - ".. plr.Name, ["Text"] = "New Message:\n".. msg, ["Duration"] = 1})
 			end
 		end
 		local Message = msg:sub(10)
