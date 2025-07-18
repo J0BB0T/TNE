@@ -958,7 +958,7 @@ local function UpdateWhitelist()
 	AntiCheat:WaitForChild("Whitelist")
 	AntiCheat.Whitelist.Players.Text = String
 	AntiCheat.Whitelist.CanvasSize = UDim2.new(0, 0, 0, AntiCheat.Whitelist.Players.TextBounds.Y)
-	AntiCheat.Whitelist.CanvasPosition = Vector2.new(0, AntiCheat.WhiteList.CanvasSize.Y.Offset - AntiCheat.WhiteList.AbsoluteWindowSize.Y)
+	AntiCheat.Whitelist.CanvasPosition = Vector2.new(0, AntiCheat.Whitelist.CanvasSize.Y.Offset - AntiCheat.Whitelist.AbsoluteWindowSize.Y)
 	UpdatePlayerList()
 end
 
@@ -982,11 +982,11 @@ local function OnMessage(plr, msg)
 	elseif msg == "TNEListUpdate" then
 		print("Update ".. plr.Name)
 		if not table.find(Team, plr) then
+			table.insert(Team, plr)
 			if Config.AC.AutoWhiteList then
 				table.insert(Config.AC.Whitelist, plr)
 				UpdateWhitelist()
 			end
-			table.insert(Team, plr)
 		end
 	end
 	Logs.Chat.Log.Text ..= GetCurrentTime().. " <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"
