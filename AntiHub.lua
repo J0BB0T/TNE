@@ -937,7 +937,7 @@
 	
 
 
-local AntiHub = Converted._Antihub
+local AntiHub = Converted._AntiHub
 local Visible = true
 local VisWait = false
 local MenWait = false
