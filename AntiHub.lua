@@ -1051,14 +1051,20 @@ for i, v in AntiHub.TitleBar.Container.Container.List:GetChildren() do
 		if Menu == v.Name then return end
 		if MenWait then return end
 		MenWait = true
-		print(AntiHub.TitleBar.Container.Container.Menus[Menu])
+		AntiHub.TitleBar.Container.Container.Menus[v.Name].Visible = false
 		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container.Container.Menus[Menu], TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
-		Menu = v.Name
-		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container.Container.Menus[Menu], TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
+		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container.Container.Menus[v.Name], TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
 		task.wait(0.1)
+		AntiHub.TitleBar.Container.Container.Menus[Menu].Visible = false
+		Menu = v.Name
 		MenWait = false
 	end)
 end
+
+for i, v in AntiHub.TitleBar.Container.Container.Menus:GetChildren() do
+	v.Visible = false
+end
+AntiHub.TitleBar.Container.Container.Menus[Menu].Visible = true
 
 for i, v in game:GetService("Players"):GetPlayers() do
 	v:GetPropertyChangedSignal("Team"):Connect(UpdatePlayerList)
