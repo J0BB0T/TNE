@@ -1774,7 +1774,7 @@ HidChat(game:GetService("Players"), "TNEListStart")
 
 
 while task.wait(0.5) do
-	Config.Ping = LocalPlayer:GetNetworkPing() * 2000
+	Config.Ping = math.floor(LocalPlayer:GetNetworkPing() * 2000)
 	if Unread == 0 then
 		AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat"
 	else
