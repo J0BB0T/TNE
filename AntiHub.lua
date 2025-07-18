@@ -1341,8 +1341,8 @@ task.spawn(function()
 		task.spawn(function()
 			while task.wait() do
 				if not table.find(game:GetService("Players"):GetPlayers(), plr) then return end
-				if Config.FPS >= 20 then
-					if (Char:GetPivot().Position - CPos).Magnitude >= math.clamp(Config.Ping / 100, 14, math.huge) then
+				if Config.FPS >= 15 or true then
+					if (Char:GetPivot().Position - CPos).Magnitude >= math.clamp(Config.Ping / 100, 10, math.huge) then
 						if (Char:GetPivot().Position - CPos).Magnitude <= math.clamp(Config.Ping / 10, 35, math.huge) then
 							ACTrigger(plr, "Speed", Respawn)
 						else
@@ -1381,7 +1381,7 @@ task.spawn(function()
 
 		--<[Teams]>--
 		plr:GetPropertyChangedSignal("Team"):Connect(function()
-			if os.time() - TeamTime < 2 then
+			if os.time() - TeamTime < 3 then
 				ACTrigger(plr, "Attempted Mass Kill", Respawn)
 			end
 			TeamTime = os.time()
