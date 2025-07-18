@@ -99,7 +99,7 @@ local Converted = {
 	["_UICorner26"] = Instance.new("UICorner");
 	["_Collapse"] = Instance.new("TextButton");
 	["_UICorner27"] = Instance.new("UICorner");
-	["_Stats"] = Instance.new("TextLabel");
+	["_Stats"] = Instance.new("TextButton");
 	["_UICorner28"] = Instance.new("UICorner");
 }
 
@@ -1734,9 +1734,12 @@ end)
 
 AntiHub.TitleBar.Container.Container.Settings.Keybind.Activated:Connect(function()
 	if not game:GetService("UserInputService").KeyboardEnabled then return end
+	VisWait = true
 	AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Press Any Key"
 	Keybind = game:GetService("UserInputService").InputBegan:Wait().KeyCode.Name
 	AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Keybind [".. Keybind.. "]"
+	task.wait(0.5)
+	VisWait = false
 end)
 
 AntiHub.TitleBar.Container.Container.Player.Profile.Image = game:GetService("Players"):GetUserThumbnailAsync(LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
