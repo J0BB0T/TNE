@@ -2,6 +2,8 @@
 
 	-- Instances:
 
+print("version new")
+
 	local Converted = {
 		["_Antihub"] = Instance.new("ScreenGui");
 		["_TitleBar"] = Instance.new("Frame");
