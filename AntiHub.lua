@@ -1068,6 +1068,8 @@ local function OnMessage(plr, msg)
 	Logs.Chat.CanvasPosition = Vector2.new(0, Logs.Chat.CanvasSize.Y.Offset - Logs.Chat.AbsoluteWindowSize.Y)
 end
 
+game:GetService("Players").LocalPlayer.PlayerScripts.ClientGunReplicator.Disabled = true
+
 AntiHub:WaitForChild("TitleBar").Active = true
 AntiHub.TitleBar.Draggable = true
 
