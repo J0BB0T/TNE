@@ -870,7 +870,7 @@
 	Converted["_UICorner15"].CornerRadius = UDim.new(0.125, 0)
 	Converted["_UICorner15"].Parent = Converted["_Collapse"]
 
-local AntiHub = Converted._Antihub
+local AntiHub = script.Parent --Converted._Antihub or 
 local Visible = true
 local VisWait = false
 local MenWait = false
@@ -925,7 +925,7 @@ local function ACTrigger(plr, Reason, Respawn)
 	if table.find(Config.AC.CanSend, plr.Name.. " ".. Reason) then return end
 	AntiCheat.Logs.Log.Text ..= GetCurrentTime().. " \"".. plr.Name.. "\" Triggered: ".. Reason
 	AntiCheat.Logs.CanvasSize = UDim2.new(0, 0, 0, AntiCheat.Logs.Log.TextBounds.Y)
-	AntiCheat.Logs.CanvasPosition = Vector2.new(0, AntiCheat.Logs.CanvasSize.Y - AntiCheat.Logs.AbsoluteWindowSize.Y)
+	AntiCheat.Logs.CanvasPosition = Vector2.new(0, AntiCheat.Logs.CanvasSize.Y.Offset - AntiCheat.Logs.AbsoluteWindowSize.Y)
 	if Config.AC.Toast then
 		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AC - ".. plr.Name, ["Text"] = "Detected ".. Reason, ["Duration"] = 2})
 		task.wait(2)
@@ -955,9 +955,10 @@ local function UpdateWhitelist()
 			String ..= tostring(i).. ". ".. v.Name.. "\n"
 		end
 	end
+	AntiCheat:WaitForChild("Whitelist")
 	AntiCheat.Whitelist.Players.Text = String
 	AntiCheat.Whitelist.CanvasSize = UDim2.new(0, 0, 0, AntiCheat.Whitelist.Players.TextBounds.Y)
-	AntiCheat.Whitelist.CanvasPosition = Vector2.new(0, AntiCheat.WhiteList.CanvasSize.Y - AntiCheat.Whitelist.AbsoluteWindowSize.Y)
+	AntiCheat.Whitelist.CanvasPosition = Vector2.new(0, AntiCheat.WhiteList.CanvasSize.Y.Offset - AntiCheat.Whitelist.AbsoluteWindowSize.Y)
 	UpdatePlayerList()
 end
 
@@ -967,7 +968,7 @@ local function OnMessage(plr, msg)
 		local Message = msg:sub(10)
 		Chat.Logs.Chat.Text ..= "<b>".. plr.DisplayName.. ":</b> ".. Message.. "\n"
 		Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, Chat.Logs.Chat.Text.TextBounds.Y)
-		Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y - Chat.Logs.AbsoluteWindowSize.Y)
+		Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y.Offset - Chat.Logs.AbsoluteWindowSize.Y)
 	elseif msg == "TNEListStart" then
 		if not table.find(Team, plr) then
 			table.insert(Team, plr)
@@ -988,7 +989,7 @@ local function OnMessage(plr, msg)
 	end
 	Logs.Chat.Log.Text ..= GetCurrentTime().. " <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"
 	Logs.Chat.CanvasSize = UDim2.new(0, 0, 0, Logs.Chat.Log.TextBounds.Y)
-	Logs.Chat.CanvasPosition = Vector2.new(0, Logs.Chat.CanvasSize.Y - Logs.Chat.AbsoluteWindowSize.Y)
+	Logs.Chat.CanvasPosition = Vector2.new(0, Logs.Chat.CanvasSize.Y.Offset - Logs.Chat.AbsoluteWindowSize.Y)
 end
 
 HidChat(game:GetService("Players"), "TNEListStart")
@@ -1079,9 +1080,9 @@ end
 
 
 game:GetService("Players").PlayerAdded:Connect(function(plr)
-	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>"
-	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
-	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y - Logs.Player.AbsoluteWindowSize.Y)
+	Logs.Players.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>"
+	Logs.Players.CanvasSize = UDim2.new(0, 0, 0, Logs.Players.Log.TextBounds.Y)
+	Logs.Players.CanvasPosition = Vector2.new(0, Logs.Players.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
 	UpdatePlayerList()
 	plr.Chatted:Connect(function(msg)
 		OnMessage(plr, msg)
@@ -1091,7 +1092,7 @@ end)
 game:GetService("Players").PlayerRemoving:Connect(function(plr)
 	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(128,0,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>"
 	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
-	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y - logs.Player.AbsoluteWindowSize.Y)
+	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
 	if table.find(Config.AC.Whitelist, plr) then
 		table.remove(Config.AC.Whitelist, table.find(Config.AC.Whitelist, plr))
 		UpdateWhitelist()
@@ -1200,7 +1201,7 @@ Chat.Send.Activated:Connect(function()
 	print("sentClick")
 	Chat.Logs.Chat.Text ..= "<b>You:</b> ".. Chat.Input.Text.. "\n"
 	Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, Chat.Logs.Chat.TextBounds.Y)
-	Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y - Chat.Logs.AbsoluteWindowSize.Y)
+	Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y.Offset - Chat.Logs.AbsoluteWindowSize.Y)
 	HubChat(Chat.Input.Text)
 end)
 
@@ -1209,7 +1210,7 @@ Chat.Input.FocusLost:Connect(function(EP)
 		print("sentEP")
 		Chat.Logs.Chat.Text ..= "<b>You:</b> ".. Chat.Input.Text.. "\n"
 		Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, Chat.Logs.Chat.TextBounds.Y)
-		Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y - Chat.Logs.AbsoluteWindowSize.Y)
+		Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y.Offset - Chat.Logs.AbsoluteWindowSize.Y)
 		HubChat(Chat.Input.Text)
 		Chat.Input.Text = ""
 	end
