@@ -39,7 +39,7 @@ local Converted = {
 	["_Universal1"] = Instance.new("CanvasGroup");
 	["_IY"] = Instance.new("TextButton");
 	["_UICorner8"] = Instance.new("UICorner");
-	["_Respawn"] = Instance.new("TextButton");
+	["_Respawm"] = Instance.new("TextButton");
 	["_UICorner9"] = Instance.new("UICorner");
 	["_DEX"] = Instance.new("TextButton");
 	["_UICorner10"] = Instance.new("UICorner");
@@ -492,23 +492,23 @@ Converted["_IY"].Parent = Converted["_Universal1"]
 Converted["_UICorner8"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner8"].Parent = Converted["_IY"]
 
-Converted["_Respawn"].Font = Enum.Font.Nunito
-Converted["_Respawn"].Text = "Respawn"
-Converted["_Respawn"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Respawn"].TextScaled = true
-Converted["_Respawn"].TextSize = 14
-Converted["_Respawn"].TextWrapped = true
-Converted["_Respawn"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Respawn"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Respawn"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Respawn"].BorderSizePixel = 0
-Converted["_Respawn"].Position = UDim2.new(0.81997931, 0, 0.224999949, 0)
-Converted["_Respawn"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
-Converted["_Respawn"].Name = "Respawn"
-Converted["_Respawn"].Parent = Converted["_Universal1"]
+Converted["_Respawm"].Font = Enum.Font.Nunito
+Converted["_Respawm"].Text = "Respawn"
+Converted["_Respawm"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Respawm"].TextScaled = true
+Converted["_Respawm"].TextSize = 14
+Converted["_Respawm"].TextWrapped = true
+Converted["_Respawm"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Respawm"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Respawm"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Respawm"].BorderSizePixel = 0
+Converted["_Respawm"].Position = UDim2.new(0.81997931, 0, 0.224999949, 0)
+Converted["_Respawm"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Respawm"].Name = "Respawm"
+Converted["_Respawm"].Parent = Converted["_Universal1"]
 
 Converted["_UICorner9"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner9"].Parent = Converted["_Respawn"]
+Converted["_UICorner9"].Parent = Converted["_Respawm"]
 
 Converted["_DEX"].Font = Enum.Font.Nunito
 Converted["_DEX"].Text = "DEX Explorer"
@@ -1444,13 +1444,13 @@ task.spawn(function()
 		table.insert(Config.AC.List, plr)
 		local Char = plr.Character or plr.CharacterAdded:Wait()
 		local Team = plr.Team
-		local TeamTime = os.time()
 		local FlyTime = os.time()
 		local FlyTriggered = false
 		local FloorMaterial = Enum.Material.SmoothPlastic
 		local CPos = Char:GetPivot().Position
 		local Respawn = false
 		local Jumped = false
+		local TeamChanges = 0
 		plr.CharacterAdded:Connect(function(mod)
 			Jumped = false
 			repeat
@@ -1507,11 +1507,15 @@ task.spawn(function()
 
 		--<[Teams]>--
 		plr:GetPropertyChangedSignal("Team"):Connect(function()
-			if os.time() - TeamTime < 3 then
+			TeamChanges += 1
+			if TeamChanges >= 3 then
 				ACTrigger(plr, "Attempted Mass Kill", Respawn)
 			end
-			TeamTime = os.time()
 		end)
+
+		while task.wait(2) do
+			TeamChanges = 0
+		end
 	end
 
 	task.spawn(function()
