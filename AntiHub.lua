@@ -34,7 +34,7 @@
 		["_Crash"] = Instance.new("TextButton");
 		["_UICorner6"] = Instance.new("UICorner");
 		["_Input1"] = Instance.new("TextBox");
-		["_Send1"] = Instance.new("TextButton");
+		["_Kick"] = Instance.new("TextButton");
 		["_UICorner7"] = Instance.new("UICorner");
 		["_Universal1"] = Instance.new("CanvasGroup");
 		["_TextLabel"] = Instance.new("TextLabel");
@@ -434,23 +434,23 @@
 	Converted["_Input1"].Name = "Input"
 	Converted["_Input1"].Parent = Converted["_PrisonLife1"]
 
-	Converted["_Send1"].Font = Enum.Font.TitilliumWeb
-	Converted["_Send1"].Text = "Kick"
-	Converted["_Send1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-	Converted["_Send1"].TextScaled = true
-	Converted["_Send1"].TextSize = 14
-	Converted["_Send1"].TextWrapped = true
-	Converted["_Send1"].AnchorPoint = Vector2.new(0.5, 0.5)
-	Converted["_Send1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-	Converted["_Send1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-	Converted["_Send1"].BorderSizePixel = 0
-	Converted["_Send1"].Position = UDim2.new(0.5, 0, 0.675000012, 0)
-	Converted["_Send1"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
-	Converted["_Send1"].Name = "Send"
-	Converted["_Send1"].Parent = Converted["_PrisonLife1"]
+	Converted["_Kick"].Font = Enum.Font.TitilliumWeb
+	Converted["_Kick"].Text = "Kick"
+	Converted["_Kick"].TextColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_Kick"].TextScaled = true
+	Converted["_Kick"].TextSize = 14
+	Converted["_Kick"].TextWrapped = true
+	Converted["_Kick"].AnchorPoint = Vector2.new(0.5, 0.5)
+	Converted["_Kick"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+	Converted["_Kick"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Converted["_Kick"].BorderSizePixel = 0
+	Converted["_Kick"].Position = UDim2.new(0.5, 0, 0.675000012, 0)
+	Converted["_Kick"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
+	Converted["_Kick"].Name = "Kick"
+	Converted["_Kick"].Parent = Converted["_PrisonLife1"]
 
 	Converted["_UICorner7"].CornerRadius = UDim.new(0.125, 0)
-	Converted["_UICorner7"].Parent = Converted["_Send1"]
+	Converted["_UICorner7"].Parent = Converted["_Kick"]
 
 	Converted["_Universal1"].GroupTransparency = 1
 	Converted["_Universal1"].AnchorPoint = Vector2.new(0.5, 0.5)
