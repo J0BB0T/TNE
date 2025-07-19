@@ -1710,7 +1710,7 @@ task.spawn(function()
 		--<[Teams]>--
 		plr:GetPropertyChangedSignal("Team"):Connect(function()
 			TeamChanges += 1
-			if TeamChanges >= 3 then
+			if TeamChanges >= 2 then
 				ACTrigger(plr, "Attempted Mass Kill", Respawn)
 			end
 		end)
