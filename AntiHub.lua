@@ -1267,8 +1267,8 @@ local function OnMessage(plr, msg)
 			end
 		end
 		local Message = msg:sub(10)
-		if string.len(Chat.Logs.Chat.Text) + string.len(Message) >= 16385 then
-			Chat.Logs.Chat.Text = Chat.Logs.Chat.Text:sub(1, 	string.len(Chat.Logs.Chat.Text) - string.len(Message))
+		if string.len(Chat.Logs.Chat.Text) + string.len("<b>".. plr.DisplayName.. ":</b> ".. Message.. "\n") >= 16385 then
+			Chat.Logs.Chat.Text = Chat.Logs.Chat.Text:sub(1, 	string.len(Chat.Logs.Chat.Text) - string.len("<b>".. plr.DisplayName.. ":</b> ".. Message.. "\n"))
 		end
 		Chat.Logs.Chat.Text ..= "<b>".. plr.DisplayName.. ":</b> ".. Message.. "\n"
 		Chat.Logs.CanvasSize = UDim2.new(0, 0, 0, Chat.Logs.Chat	.TextBounds.Y)
@@ -1293,8 +1293,8 @@ local function OnMessage(plr, msg)
 			end
 		end
 	end
-	if string.len(Logs.Chat.Log.Text) + string.len(" ".. plr.DisplayName.. ": ".. msg.. "\n") >= 16385 then
-		Logs.Chat.Log.Text = Logs.Chat.Log.Text:sub(1, string.len(Logs.Chat.Log.Text) - string.len(" ".. plr.DisplayName.. ": ".. msg.. "\n"))
+	if string.len(Logs.Chat.Log.Text) + string.len(" <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n") >= 16385 then
+		Logs.Chat.Log.Text = Logs.Chat.Log.Text:sub(1, string.len(Logs.Chat.Log.Text) - string.len(" <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"))
 	end
 	Logs.Chat.Log.Text ..= GetCurrentTime().. " <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"
 	Logs.Chat.CanvasSize = UDim2.new(0, 0, 0, Logs.Chat.Log.TextBounds.Y)
@@ -1420,8 +1420,8 @@ end
 
 
 game:GetService("Players").PlayerAdded:Connect(function(plr)
-	if string.len(Logs.Player.Log.Text) + string.len(GetCurrentTime().. plr.Name.. " (".. plr.DisplayName..  ") Joined!") >= 16385 then
-		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len(GetCurrentTime().. plr.Name.. " (".. plr.DisplayName..  ") Joined!"))
+	if string.len(Logs.Player.Log.Text) + string.len("<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>\n") >= 16385 then
+		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len("<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>\n"))
 	end
 	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>\n"
 	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
@@ -1433,8 +1433,8 @@ game:GetService("Players").PlayerAdded:Connect(function(plr)
 	plr:GetPropertyChangedSignal("Team"):Connect(UpdatePlayerList)
 end)
 game:GetService("Players").PlayerRemoving:Connect(function(plr)
-	if string.len(Logs.Player.Log.Text) + string.len(GetCurrentTime().. plr.Name.. " (".. plr.DisplayName..  ") Left.") >= 16385 then
-		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len(GetCurrentTime().. plr.Name.. " (".. plr.DisplayName..  ") Left."))
+	if string.len(Logs.Player.Log.Text) + string.len( GetCurrentTime().. "<font color=\"rgb(128,0,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>\n") >= 16385 then
+		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len( GetCurrentTime().. "<font color=\"rgb(128,0,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>\n"))
 	end
 	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(128,0,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>\n"
 	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
@@ -1564,6 +1564,9 @@ end)
 Universal.Owl.Activated:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 end)
+Universal.Nameless.Activated:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))();
+end)
 Universal.Respawn.Activated:Connect(function()
 	local rcdEnabled, wasHidden = false, false
 	if gethidden then
@@ -1574,23 +1577,41 @@ Universal.Respawn.Activated:Connect(function()
 		task.wait(game:GetService("Players").RespawnTime - 0.1)
 		replicatesignal(LocalPlayer.Kill)
 	elseif rcdEnabled and not replicatesignal then
-		print("INCOMPATIBLE EXPLOIT")
 		Universal.Respawn.Text = "Incompatible Exploit"
 		task.wait(5)
 		Universal.Respawn.Text = "Respawn"
 	else
-		local char = LocalPlayer.Character
-		local hum = char:FindFirstChildWhichIsA("Humanoid")
-		if hum then hum:ChangeState(Enum.HumanoidStateType.Dead) end
-		char:ClearAllChildren()
-		local newChar = Instance.new("Model")
-		newChar.Parent = workspace
-		LocalPlayer.Character = newChar
+		local LocalPlayer = game.Players.LocalPlayer
+		local Char = LocalPlayer.Character
+		local Cam = workspace.CurrentCamera:GetPivot()
+		Char.Archivable = true
+		local Clone = Char:Clone()
+		Clone.Parent = Char.Parent
+		LocalPlayer.Character = Clone
+		workspace.CurrentCamera.CameraSubject = Clone.Humanoid
+		workspace.CurrentCamera:PivotTo(Cam)
+		Clone.Humanoid.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+		task.spawn(function()
+			repeat
+				Char:MoveTo(Vector3.new(0, workspace.FallenPartsDestroyHeight))
+				Char:WaitForChild("Humanoid"):ChangeState(Enum.HumanoidStateType.Dead)
+				task.wait()
+			until Char.Parent == nil
+		end)
+		Clone:WaitForChild("Animate").Disabled = true
 		task.wait()
-		LocalPlayer.Character = char
-		newChar:Destroy()
+		Clone:WaitForChild("Animate").Disabled = false
+		LocalPlayer.Character = LocalPlayer.CharacterAdded:Wait()
+		Cam = workspace.CurrentCamera:GetPivot()
+		Char:Destroy()
+		local CF = Clone:GetPivot()
+		workspace.CurrentCamera.CameraSubject = LocalPlayer.Character
+		Clone:Destroy()
+		LocalPlayer.Character:PivotTo(CF)
+		workspace.CurrentCamera:PivotTo(Cam)
 	end
 end)
+
 Universal.WOW.Activated:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/wallwalker.lua"))()
 end)
@@ -1773,8 +1794,8 @@ Players.Key.Text = "<font color=\"rgb(178,0,0)\">Normal User</font> | <font colo
 HidChat(game:GetService("Players"), "TNEListStart")
 
 
-while task.wait(0.5) do
-	Config.Ping = math.floor(LocalPlayer:GetNetworkPing() * 2000)
+while task.wait(0.05) do
+	Config.Ping = math.floor(LocalPlayer:GetNetworkPing() * 1000)
 	if Unread == 0 then
 		AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat"
 	else
