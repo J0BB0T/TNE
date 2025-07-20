@@ -31,22 +31,74 @@ local Converted = {
 	["_UICorner4"] = Instance.new("UICorner");
 	["_PWare"] = Instance.new("TextButton");
 	["_UICorner5"] = Instance.new("UICorner");
-	["_Crash"] = Instance.new("TextButton");
-	["_UICorner6"] = Instance.new("UICorner");
 	["_Input1"] = Instance.new("TextBox");
 	["_Kick"] = Instance.new("TextButton");
+	["_UICorner6"] = Instance.new("UICorner");
+	["_Neutral"] = Instance.new("TextButton");
 	["_UICorner7"] = Instance.new("UICorner");
+	["_Criminals"] = Instance.new("TextButton");
+	["_UICorner8"] = Instance.new("UICorner");
+	["_Inmates"] = Instance.new("TextButton");
+	["_UICorner9"] = Instance.new("UICorner");
+	["_Guards"] = Instance.new("TextButton");
+	["_UICorner10"] = Instance.new("UICorner");
+	["_Crash"] = Instance.new("TextButton");
+	["_UICorner11"] = Instance.new("UICorner");
+	["_TP"] = Instance.new("TextButton");
+	["_UICorner12"] = Instance.new("UICorner");
+	["_Teleports"] = Instance.new("CanvasGroup");
+	["_Crimbase"] = Instance.new("TextButton");
+	["_UICorner13"] = Instance.new("UICorner");
+	["_Guards1"] = Instance.new("TextButton");
+	["_UICorner14"] = Instance.new("UICorner");
+	["_Yard"] = Instance.new("TextButton");
+	["_UICorner15"] = Instance.new("UICorner");
+	["_Cafe"] = Instance.new("TextButton");
+	["_UICorner16"] = Instance.new("UICorner");
+	["_Mansion"] = Instance.new("TextButton");
+	["_UICorner17"] = Instance.new("UICorner");
+	["_Gate"] = Instance.new("TextButton");
+	["_UICorner18"] = Instance.new("UICorner");
+	["_Trap"] = Instance.new("TextButton");
+	["_UICorner19"] = Instance.new("UICorner");
+	["_Platform"] = Instance.new("TextButton");
+	["_UICorner20"] = Instance.new("UICorner");
+	["_Car"] = Instance.new("TextButton");
+	["_UICorner21"] = Instance.new("UICorner");
+	["_Close"] = Instance.new("TextButton");
+	["_UICorner22"] = Instance.new("UICorner");
+	["_Neutral1"] = Instance.new("TextButton");
+	["_UICorner23"] = Instance.new("UICorner");
+	["_Nexus"] = Instance.new("TextButton");
+	["_UICorner24"] = Instance.new("UICorner");
+	["_YTower"] = Instance.new("TextButton");
+	["_UICorner25"] = Instance.new("UICorner");
 	["_Universal1"] = Instance.new("CanvasGroup");
 	["_IY"] = Instance.new("TextButton");
-	["_UICorner8"] = Instance.new("UICorner");
+	["_UICorner26"] = Instance.new("UICorner");
 	["_Respawn"] = Instance.new("TextButton");
-	["_UICorner9"] = Instance.new("UICorner");
+	["_UICorner27"] = Instance.new("UICorner");
 	["_DEX"] = Instance.new("TextButton");
-	["_UICorner10"] = Instance.new("UICorner");
+	["_UICorner28"] = Instance.new("UICorner");
 	["_Owl"] = Instance.new("TextButton");
-	["_UICorner11"] = Instance.new("UICorner");
+	["_UICorner29"] = Instance.new("UICorner");
 	["_WOW"] = Instance.new("TextButton");
-	["_UICorner12"] = Instance.new("UICorner");
+	["_UICorner30"] = Instance.new("UICorner");
+	["_Nameless"] = Instance.new("TextButton");
+	["_UICorner31"] = Instance.new("UICorner");
+	["_Input2"] = Instance.new("TextBox");
+	["_Fling"] = Instance.new("TextButton");
+	["_UICorner32"] = Instance.new("UICorner");
+	["_UAFling"] = Instance.new("TextButton");
+	["_UICorner33"] = Instance.new("UICorner");
+	["_Goto"] = Instance.new("TextButton");
+	["_UICorner34"] = Instance.new("UICorner");
+	["_Inspect"] = Instance.new("TextButton");
+	["_UICorner35"] = Instance.new("UICorner");
+	["_Bang"] = Instance.new("TextButton");
+	["_UICorner36"] = Instance.new("UICorner");
+	["_Orbit"] = Instance.new("TextButton");
+	["_UICorner37"] = Instance.new("UICorner");
 	["_Logs2"] = Instance.new("CanvasGroup");
 	["_Chat3"] = Instance.new("ScrollingFrame");
 	["_Log"] = Instance.new("TextLabel");
@@ -61,46 +113,66 @@ local Converted = {
 	["_Players1"] = Instance.new("TextLabel");
 	["_ACL"] = Instance.new("TextLabel");
 	["_WL"] = Instance.new("TextLabel");
-	["_Clear"] = Instance.new("TextButton");
-	["_UICorner13"] = Instance.new("UICorner");
 	["_AWL"] = Instance.new("TextButton");
-	["_UICorner14"] = Instance.new("UICorner");
+	["_UICorner38"] = Instance.new("UICorner");
 	["_Toggle"] = Instance.new("TextButton");
-	["_UICorner15"] = Instance.new("UICorner");
-	["_Input2"] = Instance.new("TextBox");
+	["_UICorner39"] = Instance.new("UICorner");
 	["_ACToggle"] = Instance.new("TextButton");
-	["_UICorner16"] = Instance.new("UICorner");
+	["_UICorner40"] = Instance.new("UICorner");
 	["_ToastToggle"] = Instance.new("TextButton");
-	["_UICorner17"] = Instance.new("UICorner");
+	["_UICorner41"] = Instance.new("UICorner");
+	["_Clear"] = Instance.new("CanvasGroup");
+	["_UICorner42"] = Instance.new("UICorner");
+	["_WL1"] = Instance.new("TextButton");
+	["_UICorner43"] = Instance.new("UICorner");
+	["_Logs4"] = Instance.new("TextButton");
+	["_UICorner44"] = Instance.new("UICorner");
+	["_Input3"] = Instance.new("TextBox");
 	["_Players2"] = Instance.new("CanvasGroup");
 	["_List1"] = Instance.new("ScrollingFrame");
 	["_Players3"] = Instance.new("TextLabel");
 	["_Key"] = Instance.new("TextLabel");
 	["_Refresh"] = Instance.new("TextButton");
-	["_UICorner18"] = Instance.new("UICorner");
+	["_UICorner45"] = Instance.new("UICorner");
 	["_Player1"] = Instance.new("CanvasGroup");
-	["_UICorner19"] = Instance.new("UICorner");
+	["_UICorner46"] = Instance.new("UICorner");
 	["_Settings"] = Instance.new("ImageButton");
-	["_UICorner20"] = Instance.new("UICorner");
+	["_UICorner47"] = Instance.new("UICorner");
 	["_KeepShapePlz"] = Instance.new("UIAspectRatioConstraint");
-	["_Profile"] = Instance.new("ImageLabel");
-	["_UICorner21"] = Instance.new("UICorner");
+	["_Profile"] = Instance.new("ImageButton");
+	["_UICorner48"] = Instance.new("UICorner");
 	["_Outline"] = Instance.new("UIStroke");
 	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
 	["_Settings1"] = Instance.new("CanvasGroup");
 	["_Keybind"] = Instance.new("TextButton");
-	["_UICorner22"] = Instance.new("UICorner");
-	["_Close"] = Instance.new("TextButton");
-	["_UICorner23"] = Instance.new("UICorner");
-	["_UICorner24"] = Instance.new("UICorner");
-	["_Title"] = Instance.new("TextLabel");
-	["_UICorner25"] = Instance.new("UICorner");
+	["_UICorner49"] = Instance.new("UICorner");
 	["_Close1"] = Instance.new("TextButton");
-	["_UICorner26"] = Instance.new("UICorner");
+	["_UICorner50"] = Instance.new("UICorner");
+	["_ResetKeybind"] = Instance.new("TextButton");
+	["_UICorner51"] = Instance.new("UICorner");
+	["_NotifyJoin"] = Instance.new("TextButton");
+	["_UICorner52"] = Instance.new("UICorner");
+	["_NotifyUnread"] = Instance.new("TextButton");
+	["_UICorner53"] = Instance.new("UICorner");
+	["_Save"] = Instance.new("TextButton");
+	["_UICorner54"] = Instance.new("UICorner");
+	["_Load"] = Instance.new("TextButton");
+	["_UICorner55"] = Instance.new("UICorner");
+	["_Status"] = Instance.new("TextLabel");
+	["_UICorner56"] = Instance.new("UICorner");
+	["_Buttons"] = Instance.new("Frame");
+	["_UICorner57"] = Instance.new("UICorner");
+	["_Title"] = Instance.new("TextLabel");
+	["_UICorner58"] = Instance.new("UICorner");
+	["_Close2"] = Instance.new("TextButton");
+	["_UICorner59"] = Instance.new("UICorner");
 	["_Collapse"] = Instance.new("TextButton");
-	["_UICorner27"] = Instance.new("UICorner");
+	["_UICorner60"] = Instance.new("UICorner");
 	["_Stats"] = Instance.new("TextButton");
-	["_UICorner28"] = Instance.new("UICorner");
+	["_UICorner61"] = Instance.new("UICorner");
+	["_Inspector"] = Instance.new("BillboardGui");
+	["_Box"] = Instance.new("TextLabel");
+	["_UIStroke"] = Instance.new("UIStroke");
 }
 
 -- Properties:
@@ -109,6 +181,7 @@ Converted["_AntiHub"].IgnoreGuiInset = true
 Converted["_AntiHub"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_AntiHub"].ResetOnSpawn = false
 Converted["_AntiHub"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_AntiHub"].Archivable = false
 Converted["_AntiHub"].Name = "AntiHub"
 Converted["_AntiHub"].Parent = game:GetService("CoreGui")
 
@@ -128,8 +201,8 @@ Converted["_Container"].BackgroundColor3 = Color3.fromRGB(49.00000087916851, 51.
 Converted["_Container"].BackgroundTransparency = 0.10000000149011612
 Converted["_Container"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Container"].BorderSizePixel = 0
-Converted["_Container"].Position = UDim2.new(0.5, 0, 4.74999952, 0)
-Converted["_Container"].Size = UDim2.new(1, 0, 9.50000095, 0)
+Converted["_Container"].Position = UDim2.new(0.5, 0, 5.25000048, 0)
+Converted["_Container"].Size = UDim2.new(1, 0, 8.5, 0)
 Converted["_Container"].ZIndex = 0
 Converted["_Container"].Name = "Container"
 Converted["_Container"].Parent = Converted["_TitleBar"]
@@ -142,8 +215,8 @@ Converted["_Container1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Container1"].BackgroundTransparency = 1
 Converted["_Container1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Container1"].BorderSizePixel = 0
-Converted["_Container1"].Position = UDim2.new(0.5, 0, 0.555000007, 0)
-Converted["_Container1"].Size = UDim2.new(1, 0, 0.899999976, 0)
+Converted["_Container1"].Position = UDim2.new(0.5, 0, 0.506911755, 0)
+Converted["_Container1"].Size = UDim2.new(1, 0, 0.996176541, 0)
 Converted["_Container1"].ZIndex = 3
 Converted["_Container1"].Name = "Container"
 Converted["_Container1"].Parent = Converted["_Container"]
@@ -258,7 +331,6 @@ Converted["_Players"].Parent = Converted["_List"]
 Converted["_Menus"].Name = "Menus"
 Converted["_Menus"].Parent = Converted["_Container1"]
 
-Converted["_Chat1"].GroupTransparency = 1
 Converted["_Chat1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Chat1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Chat1"].BackgroundTransparency = 1
@@ -351,7 +423,7 @@ Converted["_PrisonLife1"].Visible = false
 Converted["_PrisonLife1"].Name = "PrisonLife"
 Converted["_PrisonLife1"].Parent = Converted["_Menus"]
 
-Converted["_Prizz"].Font = Enum.Font.Nunito
+Converted["_Prizz"].Font = Enum.Font.TitilliumWeb
 Converted["_Prizz"].Text = "Prizzlife"
 Converted["_Prizz"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Prizz"].TextScaled = true
@@ -369,7 +441,7 @@ Converted["_Prizz"].Parent = Converted["_PrisonLife1"]
 Converted["_UICorner2"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner2"].Parent = Converted["_Prizz"]
 
-Converted["_H4X"].Font = Enum.Font.Nunito
+Converted["_H4X"].Font = Enum.Font.TitilliumWeb
 Converted["_H4X"].Text = "H4X Admin"
 Converted["_H4X"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_H4X"].TextScaled = true
@@ -387,7 +459,7 @@ Converted["_H4X"].Parent = Converted["_PrisonLife1"]
 Converted["_UICorner3"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner3"].Parent = Converted["_H4X"]
 
-Converted["_Tiger"].Font = Enum.Font.Nunito
+Converted["_Tiger"].Font = Enum.Font.TitilliumWeb
 Converted["_Tiger"].Text = "Tiger Admin"
 Converted["_Tiger"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Tiger"].TextScaled = true
@@ -405,7 +477,7 @@ Converted["_Tiger"].Parent = Converted["_PrisonLife1"]
 Converted["_UICorner4"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner4"].Parent = Converted["_Tiger"]
 
-Converted["_PWare"].Font = Enum.Font.Nunito
+Converted["_PWare"].Font = Enum.Font.TitilliumWeb
 Converted["_PWare"].Text = "PrisonWare"
 Converted["_PWare"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_PWare"].TextScaled = true
@@ -423,24 +495,6 @@ Converted["_PWare"].Parent = Converted["_PrisonLife1"]
 Converted["_UICorner5"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner5"].Parent = Converted["_PWare"]
 
-Converted["_Crash"].Font = Enum.Font.Nunito
-Converted["_Crash"].Text = "Crash Server"
-Converted["_Crash"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Crash"].TextScaled = true
-Converted["_Crash"].TextSize = 14
-Converted["_Crash"].TextWrapped = true
-Converted["_Crash"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Crash"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Crash"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Crash"].BorderSizePixel = 0
-Converted["_Crash"].Position = UDim2.new(0.5, 0, 0.827000022, 0)
-Converted["_Crash"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
-Converted["_Crash"].Name = "Crash"
-Converted["_Crash"].Parent = Converted["_PrisonLife1"]
-
-Converted["_UICorner6"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner6"].Parent = Converted["_Crash"]
-
 Converted["_Input1"].ClearTextOnFocus = false
 Converted["_Input1"].CursorPosition = -1
 Converted["_Input1"].Font = Enum.Font.TitilliumWeb
@@ -455,7 +509,7 @@ Converted["_Input1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.000
 Converted["_Input1"].BackgroundTransparency = 0.5
 Converted["_Input1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Input1"].BorderSizePixel = 0
-Converted["_Input1"].Position = UDim2.new(0.5, 0, 0.550000012, 0)
+Converted["_Input1"].Position = UDim2.new(0.5, 0, 0.949999988, 0)
 Converted["_Input1"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
 Converted["_Input1"].Name = "Input"
 Converted["_Input1"].Parent = Converted["_PrisonLife1"]
@@ -470,15 +524,369 @@ Converted["_Kick"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Kick"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Kick"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Kick"].BorderSizePixel = 0
-Converted["_Kick"].Position = UDim2.new(0.5, 0, 0.675000012, 0)
-Converted["_Kick"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
+Converted["_Kick"].Position = UDim2.new(0.5, 0, 0.800000012, 0)
+Converted["_Kick"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Kick"].Name = "Kick"
 Converted["_Kick"].Parent = Converted["_PrisonLife1"]
 
-Converted["_UICorner7"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner7"].Parent = Converted["_Kick"]
+Converted["_UICorner6"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner6"].Parent = Converted["_Kick"]
 
-Converted["_Universal1"].GroupTransparency = 1
+Converted["_Neutral"].Font = Enum.Font.TitilliumWeb
+Converted["_Neutral"].Text = "Neutral"
+Converted["_Neutral"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_Neutral"].TextScaled = true
+Converted["_Neutral"].TextSize = 14
+Converted["_Neutral"].TextWrapped = true
+Converted["_Neutral"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Neutral"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Neutral"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Neutral"].BorderSizePixel = 0
+Converted["_Neutral"].Position = UDim2.new(0.75, 0, 0.375, 0)
+Converted["_Neutral"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
+Converted["_Neutral"].Name = "Neutral"
+Converted["_Neutral"].Parent = Converted["_PrisonLife1"]
+
+Converted["_UICorner7"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner7"].Parent = Converted["_Neutral"]
+
+Converted["_Criminals"].Font = Enum.Font.TitilliumWeb
+Converted["_Criminals"].Text = "Criminals"
+Converted["_Criminals"].TextColor3 = Color3.fromRGB(255, 0, 0)
+Converted["_Criminals"].TextScaled = true
+Converted["_Criminals"].TextSize = 14
+Converted["_Criminals"].TextWrapped = true
+Converted["_Criminals"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Criminals"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Criminals"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Criminals"].BorderSizePixel = 0
+Converted["_Criminals"].Position = UDim2.new(0.200000003, 0, 0.375, 0)
+Converted["_Criminals"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
+Converted["_Criminals"].Name = "Criminals"
+Converted["_Criminals"].Parent = Converted["_PrisonLife1"]
+
+Converted["_UICorner8"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner8"].Parent = Converted["_Criminals"]
+
+Converted["_Inmates"].Font = Enum.Font.TitilliumWeb
+Converted["_Inmates"].Text = "Inmates"
+Converted["_Inmates"].TextColor3 = Color3.fromRGB(218.00000220537186, 133.00000727176666, 65.0000037252903)
+Converted["_Inmates"].TextScaled = true
+Converted["_Inmates"].TextSize = 14
+Converted["_Inmates"].TextWrapped = true
+Converted["_Inmates"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Inmates"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Inmates"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Inmates"].BorderSizePixel = 0
+Converted["_Inmates"].Position = UDim2.new(0.560000002, 0, 0.375, 0)
+Converted["_Inmates"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
+Converted["_Inmates"].Name = "Inmates"
+Converted["_Inmates"].Parent = Converted["_PrisonLife1"]
+
+Converted["_UICorner9"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner9"].Parent = Converted["_Inmates"]
+
+Converted["_Guards"].Font = Enum.Font.TitilliumWeb
+Converted["_Guards"].Text = "Guards"
+Converted["_Guards"].TextColor3 = Color3.fromRGB(13.000000175088644, 105.00000134110451, 172.00000494718552)
+Converted["_Guards"].TextScaled = true
+Converted["_Guards"].TextSize = 14
+Converted["_Guards"].TextWrapped = true
+Converted["_Guards"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Guards"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Guards"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Guards"].BorderSizePixel = 0
+Converted["_Guards"].Position = UDim2.new(0.38499999, 0, 0.375, 0)
+Converted["_Guards"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
+Converted["_Guards"].Name = "Guards"
+Converted["_Guards"].Parent = Converted["_PrisonLife1"]
+
+Converted["_UICorner10"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner10"].Parent = Converted["_Guards"]
+
+Converted["_Crash"].Font = Enum.Font.TitilliumWeb
+Converted["_Crash"].Text = "Crash"
+Converted["_Crash"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Crash"].TextScaled = true
+Converted["_Crash"].TextSize = 14
+Converted["_Crash"].TextWrapped = true
+Converted["_Crash"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Crash"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Crash"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Crash"].BorderSizePixel = 0
+Converted["_Crash"].Position = UDim2.new(0.125, 0, 0.944999993, 0)
+Converted["_Crash"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Crash"].Name = "Crash"
+Converted["_Crash"].Parent = Converted["_PrisonLife1"]
+
+Converted["_UICorner11"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner11"].Parent = Converted["_Crash"]
+
+Converted["_TP"].Font = Enum.Font.TitilliumWeb
+Converted["_TP"].Text = "Teleports"
+Converted["_TP"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TP"].TextScaled = true
+Converted["_TP"].TextSize = 14
+Converted["_TP"].TextWrapped = true
+Converted["_TP"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_TP"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_TP"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TP"].BorderSizePixel = 0
+Converted["_TP"].Position = UDim2.new(0.875, 0, 0.944999993, 0)
+Converted["_TP"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_TP"].Name = "TP"
+Converted["_TP"].Parent = Converted["_PrisonLife1"]
+
+Converted["_UICorner12"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner12"].Parent = Converted["_TP"]
+
+Converted["_Teleports"].GroupTransparency = 1
+Converted["_Teleports"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Teleports"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Teleports"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Teleports"].BorderSizePixel = 0
+Converted["_Teleports"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Teleports"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Teleports"].Visible = false
+Converted["_Teleports"].ZIndex = 2
+Converted["_Teleports"].Name = "Teleports"
+Converted["_Teleports"].Parent = Converted["_PrisonLife1"]
+
+Converted["_Crimbase"].Font = Enum.Font.TitilliumWeb
+Converted["_Crimbase"].Text = "Criminal Guns"
+Converted["_Crimbase"].TextColor3 = Color3.fromRGB(255, 0, 0)
+Converted["_Crimbase"].TextScaled = true
+Converted["_Crimbase"].TextSize = 14
+Converted["_Crimbase"].TextWrapped = true
+Converted["_Crimbase"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Crimbase"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Crimbase"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Crimbase"].BorderSizePixel = 0
+Converted["_Crimbase"].Position = UDim2.new(0.150000006, 0, 0.125, 0)
+Converted["_Crimbase"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Crimbase"].Name = "Crimbase"
+Converted["_Crimbase"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner13"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner13"].Parent = Converted["_Crimbase"]
+
+Converted["_Guards1"].Font = Enum.Font.TitilliumWeb
+Converted["_Guards1"].Text = "Guard Guns"
+Converted["_Guards1"].TextColor3 = Color3.fromRGB(13.000000175088644, 105.00000134110451, 172.00000494718552)
+Converted["_Guards1"].TextScaled = true
+Converted["_Guards1"].TextSize = 14
+Converted["_Guards1"].TextWrapped = true
+Converted["_Guards1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Guards1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Guards1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Guards1"].BorderSizePixel = 0
+Converted["_Guards1"].Position = UDim2.new(0.850000024, 0, 0.125, 0)
+Converted["_Guards1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Guards1"].Name = "Guards"
+Converted["_Guards1"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner14"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner14"].Parent = Converted["_Guards1"]
+
+Converted["_Yard"].Font = Enum.Font.TitilliumWeb
+Converted["_Yard"].Text = "Yard"
+Converted["_Yard"].TextColor3 = Color3.fromRGB(218.00000220537186, 133.00000727176666, 65.0000037252903)
+Converted["_Yard"].TextScaled = true
+Converted["_Yard"].TextSize = 14
+Converted["_Yard"].TextWrapped = true
+Converted["_Yard"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Yard"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Yard"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Yard"].BorderSizePixel = 0
+Converted["_Yard"].Position = UDim2.new(0.5, 0, 0.125, 0)
+Converted["_Yard"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Yard"].Name = "Yard"
+Converted["_Yard"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner15"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner15"].Parent = Converted["_Yard"]
+
+Converted["_Cafe"].Font = Enum.Font.TitilliumWeb
+Converted["_Cafe"].Text = "Cafeteria"
+Converted["_Cafe"].TextColor3 = Color3.fromRGB(218.00000220537186, 133.00000727176666, 65.0000037252903)
+Converted["_Cafe"].TextScaled = true
+Converted["_Cafe"].TextSize = 14
+Converted["_Cafe"].TextWrapped = true
+Converted["_Cafe"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Cafe"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Cafe"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Cafe"].BorderSizePixel = 0
+Converted["_Cafe"].Position = UDim2.new(0.5, 0, 0.3125, 0)
+Converted["_Cafe"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Cafe"].Name = "Cafe"
+Converted["_Cafe"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner16"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner16"].Parent = Converted["_Cafe"]
+
+Converted["_Mansion"].Font = Enum.Font.TitilliumWeb
+Converted["_Mansion"].Text = "Mansion"
+Converted["_Mansion"].TextColor3 = Color3.fromRGB(255, 0, 0)
+Converted["_Mansion"].TextScaled = true
+Converted["_Mansion"].TextSize = 14
+Converted["_Mansion"].TextWrapped = true
+Converted["_Mansion"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Mansion"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Mansion"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Mansion"].BorderSizePixel = 0
+Converted["_Mansion"].Position = UDim2.new(0.150000006, 0, 0.312999994, 0)
+Converted["_Mansion"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Mansion"].Name = "Mansion"
+Converted["_Mansion"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner17"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner17"].Parent = Converted["_Mansion"]
+
+Converted["_Gate"].Font = Enum.Font.TitilliumWeb
+Converted["_Gate"].Text = "Gate"
+Converted["_Gate"].TextColor3 = Color3.fromRGB(13.000000175088644, 105.00000134110451, 172.00000494718552)
+Converted["_Gate"].TextScaled = true
+Converted["_Gate"].TextSize = 14
+Converted["_Gate"].TextWrapped = true
+Converted["_Gate"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Gate"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Gate"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Gate"].BorderSizePixel = 0
+Converted["_Gate"].Position = UDim2.new(0.850000024, 0, 0.312999994, 0)
+Converted["_Gate"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Gate"].Name = "Gate"
+Converted["_Gate"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner18"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner18"].Parent = Converted["_Gate"]
+
+Converted["_Trap"].Font = Enum.Font.TitilliumWeb
+Converted["_Trap"].Text = "Trap"
+Converted["_Trap"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_Trap"].TextScaled = true
+Converted["_Trap"].TextSize = 14
+Converted["_Trap"].TextWrapped = true
+Converted["_Trap"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Trap"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Trap"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Trap"].BorderSizePixel = 0
+Converted["_Trap"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Trap"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Trap"].Name = "Trap"
+Converted["_Trap"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner19"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner19"].Parent = Converted["_Trap"]
+
+Converted["_Platform"].Font = Enum.Font.TitilliumWeb
+Converted["_Platform"].Text = "Platform"
+Converted["_Platform"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_Platform"].TextScaled = true
+Converted["_Platform"].TextSize = 14
+Converted["_Platform"].TextWrapped = true
+Converted["_Platform"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Platform"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Platform"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Platform"].BorderSizePixel = 0
+Converted["_Platform"].Position = UDim2.new(0.150000006, 0, 0.5, 0)
+Converted["_Platform"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Platform"].Name = "Platform"
+Converted["_Platform"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner20"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner20"].Parent = Converted["_Platform"]
+
+Converted["_Car"].Font = Enum.Font.TitilliumWeb
+Converted["_Car"].Text = "Car"
+Converted["_Car"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_Car"].TextScaled = true
+Converted["_Car"].TextSize = 14
+Converted["_Car"].TextWrapped = true
+Converted["_Car"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Car"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Car"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Car"].BorderSizePixel = 0
+Converted["_Car"].Position = UDim2.new(0.850000024, 0, 0.5, 0)
+Converted["_Car"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Car"].Name = "Car"
+Converted["_Car"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner21"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner21"].Parent = Converted["_Car"]
+
+Converted["_Close"].Font = Enum.Font.Nunito
+Converted["_Close"].Text = "X"
+Converted["_Close"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close"].TextScaled = true
+Converted["_Close"].TextSize = 14
+Converted["_Close"].TextWrapped = true
+Converted["_Close"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Close"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close"].BorderSizePixel = 0
+Converted["_Close"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
+Converted["_Close"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+Converted["_Close"].Name = "Close"
+Converted["_Close"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner22"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner22"].Parent = Converted["_Close"]
+
+Converted["_Neutral1"].Font = Enum.Font.TitilliumWeb
+Converted["_Neutral1"].Text = "Neutral Spawn"
+Converted["_Neutral1"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_Neutral1"].TextScaled = true
+Converted["_Neutral1"].TextSize = 14
+Converted["_Neutral1"].TextWrapped = true
+Converted["_Neutral1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Neutral1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Neutral1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Neutral1"].BorderSizePixel = 0
+Converted["_Neutral1"].Position = UDim2.new(0.150000006, 0, 0.686999977, 0)
+Converted["_Neutral1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Neutral1"].Name = "Neutral"
+Converted["_Neutral1"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner23"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner23"].Parent = Converted["_Neutral1"]
+
+Converted["_Nexus"].Font = Enum.Font.TitilliumWeb
+Converted["_Nexus"].Text = "Nexus"
+Converted["_Nexus"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_Nexus"].TextScaled = true
+Converted["_Nexus"].TextSize = 14
+Converted["_Nexus"].TextWrapped = true
+Converted["_Nexus"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Nexus"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Nexus"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Nexus"].BorderSizePixel = 0
+Converted["_Nexus"].Position = UDim2.new(0.49999994, 0, 0.686999977, 0)
+Converted["_Nexus"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Nexus"].Name = "Nexus"
+Converted["_Nexus"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner24"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner24"].Parent = Converted["_Nexus"]
+
+Converted["_YTower"].Font = Enum.Font.TitilliumWeb
+Converted["_YTower"].Text = "GTower"
+Converted["_YTower"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_YTower"].TextScaled = true
+Converted["_YTower"].TextSize = 14
+Converted["_YTower"].TextWrapped = true
+Converted["_YTower"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_YTower"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_YTower"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_YTower"].BorderSizePixel = 0
+Converted["_YTower"].Position = UDim2.new(0.850000024, 0, 0.686999977, 0)
+Converted["_YTower"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_YTower"].Name = "YTower"
+Converted["_YTower"].Parent = Converted["_Teleports"]
+
+Converted["_UICorner25"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner25"].Parent = Converted["_YTower"]
+
 Converted["_Universal1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Universal1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Universal1"].BackgroundTransparency = 1
@@ -490,7 +898,7 @@ Converted["_Universal1"].Visible = false
 Converted["_Universal1"].Name = "Universal"
 Converted["_Universal1"].Parent = Converted["_Menus"]
 
-Converted["_IY"].Font = Enum.Font.Nunito
+Converted["_IY"].Font = Enum.Font.TitilliumWeb
 Converted["_IY"].Text = "Infinite Yield"
 Converted["_IY"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_IY"].TextScaled = true
@@ -505,10 +913,10 @@ Converted["_IY"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_IY"].Name = "IY"
 Converted["_IY"].Parent = Converted["_Universal1"]
 
-Converted["_UICorner8"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner8"].Parent = Converted["_IY"]
+Converted["_UICorner26"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner26"].Parent = Converted["_IY"]
 
-Converted["_Respawn"].Font = Enum.Font.Nunito
+Converted["_Respawn"].Font = Enum.Font.TitilliumWeb
 Converted["_Respawn"].Text = "Respawn"
 Converted["_Respawn"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Respawn"].TextScaled = true
@@ -523,10 +931,10 @@ Converted["_Respawn"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Respawn"].Name = "Respawn"
 Converted["_Respawn"].Parent = Converted["_Universal1"]
 
-Converted["_UICorner9"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner9"].Parent = Converted["_Respawn"]
+Converted["_UICorner27"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner27"].Parent = Converted["_Respawn"]
 
-Converted["_DEX"].Font = Enum.Font.Nunito
+Converted["_DEX"].Font = Enum.Font.TitilliumWeb
 Converted["_DEX"].Text = "DEX Explorer"
 Converted["_DEX"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_DEX"].TextScaled = true
@@ -541,10 +949,10 @@ Converted["_DEX"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_DEX"].Name = "DEX"
 Converted["_DEX"].Parent = Converted["_Universal1"]
 
-Converted["_UICorner10"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner10"].Parent = Converted["_DEX"]
+Converted["_UICorner28"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner28"].Parent = Converted["_DEX"]
 
-Converted["_Owl"].Font = Enum.Font.Nunito
+Converted["_Owl"].Font = Enum.Font.TitilliumWeb
 Converted["_Owl"].Text = "OwlHub"
 Converted["_Owl"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Owl"].TextScaled = true
@@ -559,10 +967,10 @@ Converted["_Owl"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Owl"].Name = "Owl"
 Converted["_Owl"].Parent = Converted["_Universal1"]
 
-Converted["_UICorner11"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner11"].Parent = Converted["_Owl"]
+Converted["_UICorner29"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner29"].Parent = Converted["_Owl"]
 
-Converted["_WOW"].Font = Enum.Font.Nunito
+Converted["_WOW"].Font = Enum.Font.TitilliumWeb
 Converted["_WOW"].Text = "Walk On Walls"
 Converted["_WOW"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_WOW"].TextScaled = true
@@ -572,15 +980,159 @@ Converted["_WOW"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_WOW"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_WOW"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_WOW"].BorderSizePixel = 0
-Converted["_WOW"].Position = UDim2.new(0.5, 0, 0.349999994, 0)
+Converted["_WOW"].Position = UDim2.new(0.599896252, 0, 0.349999994, 0)
 Converted["_WOW"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_WOW"].Name = "WOW"
 Converted["_WOW"].Parent = Converted["_Universal1"]
 
-Converted["_UICorner12"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner12"].Parent = Converted["_WOW"]
+Converted["_UICorner30"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner30"].Parent = Converted["_WOW"]
 
-Converted["_Logs2"].GroupTransparency = 1
+Converted["_Nameless"].Font = Enum.Font.TitilliumWeb
+Converted["_Nameless"].Text = "Nameless"
+Converted["_Nameless"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Nameless"].TextScaled = true
+Converted["_Nameless"].TextSize = 14
+Converted["_Nameless"].TextWrapped = true
+Converted["_Nameless"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Nameless"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Nameless"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Nameless"].BorderSizePixel = 0
+Converted["_Nameless"].Position = UDim2.new(0.38012448, 0, 0.349999994, 0)
+Converted["_Nameless"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Nameless"].Name = "Nameless"
+Converted["_Nameless"].Parent = Converted["_Universal1"]
+
+Converted["_UICorner31"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner31"].Parent = Converted["_Nameless"]
+
+Converted["_Input2"].ClearTextOnFocus = false
+Converted["_Input2"].CursorPosition = -1
+Converted["_Input2"].Font = Enum.Font.TitilliumWeb
+Converted["_Input2"].PlaceholderText = "Player Name"
+Converted["_Input2"].Text = ""
+Converted["_Input2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input2"].TextScaled = true
+Converted["_Input2"].TextSize = 14
+Converted["_Input2"].TextWrapped = true
+Converted["_Input2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input2"].BackgroundTransparency = 0.5
+Converted["_Input2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input2"].BorderSizePixel = 0
+Converted["_Input2"].Position = UDim2.new(0.5, 0, 0.944999993, 0)
+Converted["_Input2"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
+Converted["_Input2"].Name = "Input"
+Converted["_Input2"].Parent = Converted["_Universal1"]
+
+Converted["_Fling"].Font = Enum.Font.TitilliumWeb
+Converted["_Fling"].Text = "Fling"
+Converted["_Fling"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Fling"].TextScaled = true
+Converted["_Fling"].TextSize = 14
+Converted["_Fling"].TextWrapped = true
+Converted["_Fling"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Fling"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Fling"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Fling"].BorderSizePixel = 0
+Converted["_Fling"].Position = UDim2.new(0.36500001, 0, 0.824999988, 0)
+Converted["_Fling"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Fling"].Name = "Fling"
+Converted["_Fling"].Parent = Converted["_Universal1"]
+
+Converted["_UICorner32"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner32"].Parent = Converted["_Fling"]
+
+Converted["_UAFling"].Font = Enum.Font.TitilliumWeb
+Converted["_UAFling"].Text = "Part Fling"
+Converted["_UAFling"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UAFling"].TextScaled = true
+Converted["_UAFling"].TextSize = 14
+Converted["_UAFling"].TextWrapped = true
+Converted["_UAFling"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_UAFling"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_UAFling"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_UAFling"].BorderSizePixel = 0
+Converted["_UAFling"].Position = UDim2.new(0.63499999, 0, 0.824999988, 0)
+Converted["_UAFling"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_UAFling"].Name = "UAFling"
+Converted["_UAFling"].Parent = Converted["_Universal1"]
+
+Converted["_UICorner33"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner33"].Parent = Converted["_UAFling"]
+
+Converted["_Goto"].Font = Enum.Font.TitilliumWeb
+Converted["_Goto"].Text = "Teleport"
+Converted["_Goto"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Goto"].TextScaled = true
+Converted["_Goto"].TextSize = 14
+Converted["_Goto"].TextWrapped = true
+Converted["_Goto"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Goto"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Goto"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Goto"].BorderSizePixel = 0
+Converted["_Goto"].Position = UDim2.new(0.5, 0, 0.699999988, 0)
+Converted["_Goto"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Goto"].Name = "Goto"
+Converted["_Goto"].Parent = Converted["_Universal1"]
+
+Converted["_UICorner34"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner34"].Parent = Converted["_Goto"]
+
+Converted["_Inspect"].Font = Enum.Font.TitilliumWeb
+Converted["_Inspect"].Text = "Inspect"
+Converted["_Inspect"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Inspect"].TextScaled = true
+Converted["_Inspect"].TextSize = 14
+Converted["_Inspect"].TextWrapped = true
+Converted["_Inspect"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Inspect"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Inspect"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Inspect"].BorderSizePixel = 0
+Converted["_Inspect"].Position = UDim2.new(0.5, 0, 0.474999994, 0)
+Converted["_Inspect"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Inspect"].Name = "Inspect"
+Converted["_Inspect"].Parent = Converted["_Universal1"]
+
+Converted["_UICorner35"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner35"].Parent = Converted["_Inspect"]
+
+Converted["_Bang"].Font = Enum.Font.TitilliumWeb
+Converted["_Bang"].Text = "Bang"
+Converted["_Bang"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Bang"].TextScaled = true
+Converted["_Bang"].TextSize = 14
+Converted["_Bang"].TextWrapped = true
+Converted["_Bang"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Bang"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Bang"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Bang"].BorderSizePixel = 0
+Converted["_Bang"].Position = UDim2.new(0.125, 0, 0.944999993, 0)
+Converted["_Bang"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Bang"].Name = "Bang"
+Converted["_Bang"].Parent = Converted["_Universal1"]
+
+Converted["_UICorner36"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner36"].Parent = Converted["_Bang"]
+
+Converted["_Orbit"].Font = Enum.Font.TitilliumWeb
+Converted["_Orbit"].Text = "Orbit"
+Converted["_Orbit"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Orbit"].TextScaled = true
+Converted["_Orbit"].TextSize = 14
+Converted["_Orbit"].TextWrapped = true
+Converted["_Orbit"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Orbit"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Orbit"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Orbit"].BorderSizePixel = 0
+Converted["_Orbit"].Position = UDim2.new(0.875, 0, 0.944999993, 0)
+Converted["_Orbit"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Orbit"].Name = "Orbit"
+Converted["_Orbit"].Parent = Converted["_Universal1"]
+
+Converted["_UICorner37"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner37"].Parent = Converted["_Orbit"]
+
 Converted["_Logs2"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Logs2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Logs2"].BackgroundTransparency = 1
@@ -686,7 +1238,6 @@ Converted["_Log1"].Size = UDim2.new(1, 0, 1, 0)
 Converted["_Log1"].Name = "Log"
 Converted["_Log1"].Parent = Converted["_Player"]
 
-Converted["_AntiCheat1"].GroupTransparency = 1
 Converted["_AntiCheat1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_AntiCheat1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_AntiCheat1"].BackgroundTransparency = 1
@@ -792,25 +1343,7 @@ Converted["_WL"].Size = UDim2.new(0.300000012, 0, 0.0500000007, 0)
 Converted["_WL"].Name = "WL"
 Converted["_WL"].Parent = Converted["_AntiCheat1"]
 
-Converted["_Clear"].Font = Enum.Font.Nunito
-Converted["_Clear"].Text = "Clear"
-Converted["_Clear"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Clear"].TextScaled = true
-Converted["_Clear"].TextSize = 14
-Converted["_Clear"].TextWrapped = true
-Converted["_Clear"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Clear"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Clear"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Clear"].BorderSizePixel = 0
-Converted["_Clear"].Position = UDim2.new(0.800000012, 0, 0.75, 0)
-Converted["_Clear"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
-Converted["_Clear"].Name = "Clear"
-Converted["_Clear"].Parent = Converted["_AntiCheat1"]
-
-Converted["_UICorner13"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner13"].Parent = Converted["_Clear"]
-
-Converted["_AWL"].Font = Enum.Font.Nunito
+Converted["_AWL"].Font = Enum.Font.TitilliumWeb
 Converted["_AWL"].Text = "Disable Auto WL"
 Converted["_AWL"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_AWL"].TextScaled = true
@@ -825,10 +1358,10 @@ Converted["_AWL"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_AWL"].Name = "AWL"
 Converted["_AWL"].Parent = Converted["_AntiCheat1"]
 
-Converted["_UICorner14"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner14"].Parent = Converted["_AWL"]
+Converted["_UICorner38"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner38"].Parent = Converted["_AWL"]
 
-Converted["_Toggle"].Font = Enum.Font.Nunito
+Converted["_Toggle"].Font = Enum.Font.TitilliumWeb
 Converted["_Toggle"].Text = "Toggle User"
 Converted["_Toggle"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Toggle"].TextScaled = true
@@ -843,28 +1376,10 @@ Converted["_Toggle"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Toggle"].Name = "Toggle"
 Converted["_Toggle"].Parent = Converted["_AntiCheat1"]
 
-Converted["_UICorner15"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner15"].Parent = Converted["_Toggle"]
+Converted["_UICorner39"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner39"].Parent = Converted["_Toggle"]
 
-Converted["_Input2"].CursorPosition = -1
-Converted["_Input2"].Font = Enum.Font.TitilliumWeb
-Converted["_Input2"].PlaceholderText = "Username Here"
-Converted["_Input2"].Text = ""
-Converted["_Input2"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Input2"].TextScaled = true
-Converted["_Input2"].TextSize = 14
-Converted["_Input2"].TextWrapped = true
-Converted["_Input2"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Input2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Input2"].BackgroundTransparency = 0.5
-Converted["_Input2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Input2"].BorderSizePixel = 0
-Converted["_Input2"].Position = UDim2.new(0.200000003, 0, 0.899999976, 0)
-Converted["_Input2"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
-Converted["_Input2"].Name = "Input"
-Converted["_Input2"].Parent = Converted["_AntiCheat1"]
-
-Converted["_ACToggle"].Font = Enum.Font.Nunito
+Converted["_ACToggle"].Font = Enum.Font.TitilliumWeb
 Converted["_ACToggle"].Text = "Disable AntiCheat"
 Converted["_ACToggle"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ACToggle"].TextScaled = true
@@ -879,10 +1394,10 @@ Converted["_ACToggle"].Size = UDim2.new(0.24999997, 0, 0.150000006, 0)
 Converted["_ACToggle"].Name = "ACToggle"
 Converted["_ACToggle"].Parent = Converted["_AntiCheat1"]
 
-Converted["_UICorner16"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner16"].Parent = Converted["_ACToggle"]
+Converted["_UICorner40"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner40"].Parent = Converted["_ACToggle"]
 
-Converted["_ToastToggle"].Font = Enum.Font.Nunito
+Converted["_ToastToggle"].Font = Enum.Font.TitilliumWeb
 Converted["_ToastToggle"].Text = "Enable Toast"
 Converted["_ToastToggle"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ToastToggle"].TextScaled = true
@@ -897,10 +1412,76 @@ Converted["_ToastToggle"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_ToastToggle"].Name = "ToastToggle"
 Converted["_ToastToggle"].Parent = Converted["_AntiCheat1"]
 
-Converted["_UICorner17"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner17"].Parent = Converted["_ToastToggle"]
+Converted["_UICorner41"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner41"].Parent = Converted["_ToastToggle"]
 
-Converted["_Players2"].GroupTransparency = 1
+Converted["_Clear"].Active = true
+Converted["_Clear"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Clear"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 50.000000819563866, 50.000000819563866)
+Converted["_Clear"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Clear"].BorderSizePixel = 0
+Converted["_Clear"].Position = UDim2.new(0.800000012, 0, 0.75, 0)
+Converted["_Clear"].Selectable = true
+Converted["_Clear"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_Clear"].Name = "Clear"
+Converted["_Clear"].Parent = Converted["_AntiCheat1"]
+
+Converted["_UICorner42"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner42"].Parent = Converted["_Clear"]
+
+Converted["_WL1"].Font = Enum.Font.TitilliumWeb
+Converted["_WL1"].Text = "WL"
+Converted["_WL1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_WL1"].TextScaled = true
+Converted["_WL1"].TextSize = 14
+Converted["_WL1"].TextWrapped = true
+Converted["_WL1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_WL1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_WL1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_WL1"].BorderSizePixel = 0
+Converted["_WL1"].Position = UDim2.new(0.75, 0, 0.5, 0)
+Converted["_WL1"].Size = UDim2.new(0.349999994, 0, 0.899999976, 0)
+Converted["_WL1"].Name = "WL"
+Converted["_WL1"].Parent = Converted["_Clear"]
+
+Converted["_UICorner43"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner43"].Parent = Converted["_WL1"]
+
+Converted["_Logs4"].Font = Enum.Font.TitilliumWeb
+Converted["_Logs4"].Text = "Logs"
+Converted["_Logs4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Logs4"].TextScaled = true
+Converted["_Logs4"].TextSize = 14
+Converted["_Logs4"].TextWrapped = true
+Converted["_Logs4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Logs4"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Logs4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Logs4"].BorderSizePixel = 0
+Converted["_Logs4"].Position = UDim2.new(0.25, 0, 0.5, 0)
+Converted["_Logs4"].Size = UDim2.new(0.349999994, 0, 0.899999976, 0)
+Converted["_Logs4"].Name = "Logs"
+Converted["_Logs4"].Parent = Converted["_Clear"]
+
+Converted["_UICorner44"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner44"].Parent = Converted["_Logs4"]
+
+Converted["_Input3"].Font = Enum.Font.TitilliumWeb
+Converted["_Input3"].PlaceholderText = "Username Here"
+Converted["_Input3"].Text = ""
+Converted["_Input3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input3"].TextScaled = true
+Converted["_Input3"].TextSize = 14
+Converted["_Input3"].TextWrapped = true
+Converted["_Input3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input3"].BackgroundTransparency = 0.5
+Converted["_Input3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input3"].BorderSizePixel = 0
+Converted["_Input3"].Position = UDim2.new(0.200000003, 0, 0.899999976, 0)
+Converted["_Input3"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Input3"].Name = "Input"
+Converted["_Input3"].Parent = Converted["_AntiCheat1"]
+
 Converted["_Players2"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Players2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Players2"].BackgroundTransparency = 1
@@ -960,7 +1541,7 @@ Converted["_Key"].Size = UDim2.new(0.649999976, 0, 0.125, 0)
 Converted["_Key"].Name = "Key"
 Converted["_Key"].Parent = Converted["_Players2"]
 
-Converted["_Refresh"].Font = Enum.Font.SourceSans
+Converted["_Refresh"].Font = Enum.Font.TitilliumWeb
 Converted["_Refresh"].Text = "Refresh"
 Converted["_Refresh"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Refresh"].TextScaled = true
@@ -975,8 +1556,8 @@ Converted["_Refresh"].Size = UDim2.new(0.224999994, 0, 0.100000001, 0)
 Converted["_Refresh"].Name = "Refresh"
 Converted["_Refresh"].Parent = Converted["_Players2"]
 
-Converted["_UICorner18"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner18"].Parent = Converted["_Refresh"]
+Converted["_UICorner45"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner45"].Parent = Converted["_Refresh"]
 
 Converted["_Player1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Player1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
@@ -988,10 +1569,9 @@ Converted["_Player1"].ZIndex = 3
 Converted["_Player1"].Name = "Player"
 Converted["_Player1"].Parent = Converted["_Container1"]
 
-Converted["_UICorner19"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner19"].Parent = Converted["_Player1"]
+Converted["_UICorner46"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner46"].Parent = Converted["_Player1"]
 
-Converted["_Settings"].Image = "rbxassetid://1257503133"
 Converted["_Settings"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Settings"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
 Converted["_Settings"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1001,26 +1581,26 @@ Converted["_Settings"].Size = UDim2.new(0.324999988, 0, 0.800000012, 0)
 Converted["_Settings"].Name = "Settings"
 Converted["_Settings"].Parent = Converted["_Player1"]
 
-Converted["_UICorner20"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner20"].Parent = Converted["_Settings"]
+Converted["_UICorner47"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner47"].Parent = Converted["_Settings"]
 
 Converted["_KeepShapePlz"].AspectRatio = 1.0068495273590088
 Converted["_KeepShapePlz"].Name = "KeepShapePlz"
 Converted["_KeepShapePlz"].Parent = Converted["_Settings"]
 
-Converted["_Profile"].Image = "rbxasset://textures/glow.png"
 Converted["_Profile"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Profile"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Profile"].BackgroundTransparency = 1
 Converted["_Profile"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Profile"].BorderSizePixel = 0
 Converted["_Profile"].Position = UDim2.new(0.300000012, 0, 0.5, 0)
-Converted["_Profile"].Size = UDim2.new(0.356291145, 0, 0.87500006, 0)
+Converted["_Profile"].Selectable = false
+Converted["_Profile"].Size = UDim2.new(0.349999994, 0, 0.850000024, 0)
 Converted["_Profile"].Name = "Profile"
 Converted["_Profile"].Parent = Converted["_Player1"]
 
-Converted["_UICorner21"].CornerRadius = UDim.new(1, 0)
-Converted["_UICorner21"].Parent = Converted["_Profile"]
+Converted["_UICorner48"].CornerRadius = UDim.new(1, 0)
+Converted["_UICorner48"].Parent = Converted["_Profile"]
 
 Converted["_Outline"].Color = Color3.fromRGB(255, 255, 255)
 Converted["_Outline"].Name = "Outline"
@@ -1042,7 +1622,7 @@ Converted["_Settings1"].Name = "Settings"
 Converted["_Settings1"].Parent = Converted["_Container1"]
 
 Converted["_Keybind"].Font = Enum.Font.TitilliumWeb
-Converted["_Keybind"].Text = "Keybind [Q]"
+Converted["_Keybind"].Text = "Keybind [G]"
 Converted["_Keybind"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Keybind"].TextScaled = true
 Converted["_Keybind"].TextSize = 14
@@ -1056,30 +1636,149 @@ Converted["_Keybind"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Keybind"].Name = "Keybind"
 Converted["_Keybind"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner22"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner22"].Parent = Converted["_Keybind"]
+Converted["_UICorner49"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner49"].Parent = Converted["_Keybind"]
 
-Converted["_Close"].Font = Enum.Font.Nunito
-Converted["_Close"].Text = "X"
-Converted["_Close"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close"].TextScaled = true
-Converted["_Close"].TextSize = 14
-Converted["_Close"].TextWrapped = true
-Converted["_Close"].TextYAlignment = Enum.TextYAlignment.Bottom
-Converted["_Close"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
-Converted["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close"].BorderSizePixel = 0
-Converted["_Close"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
-Converted["_Close"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
-Converted["_Close"].Name = "Close"
-Converted["_Close"].Parent = Converted["_Settings1"]
+Converted["_Close1"].Font = Enum.Font.Nunito
+Converted["_Close1"].Text = "X"
+Converted["_Close1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close1"].TextScaled = true
+Converted["_Close1"].TextSize = 14
+Converted["_Close1"].TextWrapped = true
+Converted["_Close1"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Close1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Close1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close1"].BorderSizePixel = 0
+Converted["_Close1"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
+Converted["_Close1"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+Converted["_Close1"].Name = "Close"
+Converted["_Close1"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner23"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner23"].Parent = Converted["_Close"]
+Converted["_UICorner50"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner50"].Parent = Converted["_Close1"]
 
-Converted["_UICorner24"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner24"].Parent = Converted["_TitleBar"]
+Converted["_ResetKeybind"].Font = Enum.Font.TitilliumWeb
+Converted["_ResetKeybind"].Text = "Reset keybind"
+Converted["_ResetKeybind"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ResetKeybind"].TextScaled = true
+Converted["_ResetKeybind"].TextSize = 14
+Converted["_ResetKeybind"].TextWrapped = true
+Converted["_ResetKeybind"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_ResetKeybind"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_ResetKeybind"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ResetKeybind"].BorderSizePixel = 0
+Converted["_ResetKeybind"].Position = UDim2.new(0.5, 0, 0.174999997, 0)
+Converted["_ResetKeybind"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_ResetKeybind"].Name = "ResetKeybind"
+Converted["_ResetKeybind"].Parent = Converted["_Settings1"]
+
+Converted["_UICorner51"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner51"].Parent = Converted["_ResetKeybind"]
+
+Converted["_NotifyJoin"].Font = Enum.Font.TitilliumWeb
+Converted["_NotifyJoin"].Text = "Notify Hub Join [T]"
+Converted["_NotifyJoin"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_NotifyJoin"].TextScaled = true
+Converted["_NotifyJoin"].TextSize = 14
+Converted["_NotifyJoin"].TextWrapped = true
+Converted["_NotifyJoin"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_NotifyJoin"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_NotifyJoin"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_NotifyJoin"].BorderSizePixel = 0
+Converted["_NotifyJoin"].Position = UDim2.new(0.824999988, 0, 0.174999997, 0)
+Converted["_NotifyJoin"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_NotifyJoin"].Name = "NotifyJoin"
+Converted["_NotifyJoin"].Parent = Converted["_Settings1"]
+
+Converted["_UICorner52"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner52"].Parent = Converted["_NotifyJoin"]
+
+Converted["_NotifyUnread"].Font = Enum.Font.TitilliumWeb
+Converted["_NotifyUnread"].Text = "Notify Unread [T]"
+Converted["_NotifyUnread"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_NotifyUnread"].TextScaled = true
+Converted["_NotifyUnread"].TextSize = 14
+Converted["_NotifyUnread"].TextWrapped = true
+Converted["_NotifyUnread"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_NotifyUnread"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_NotifyUnread"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_NotifyUnread"].BorderSizePixel = 0
+Converted["_NotifyUnread"].Position = UDim2.new(0.174999997, 0, 0.400000006, 0)
+Converted["_NotifyUnread"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_NotifyUnread"].Name = "NotifyUnread"
+Converted["_NotifyUnread"].Parent = Converted["_Settings1"]
+
+Converted["_UICorner53"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner53"].Parent = Converted["_NotifyUnread"]
+
+Converted["_Save"].Font = Enum.Font.TitilliumWeb
+Converted["_Save"].Text = "Save Config"
+Converted["_Save"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Save"].TextScaled = true
+Converted["_Save"].TextSize = 14
+Converted["_Save"].TextWrapped = true
+Converted["_Save"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Save"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Save"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Save"].BorderSizePixel = 0
+Converted["_Save"].Position = UDim2.new(0.124269605, 0, 0.949999988, 0)
+Converted["_Save"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_Save"].Name = "Save"
+Converted["_Save"].Parent = Converted["_Settings1"]
+
+Converted["_UICorner54"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner54"].Parent = Converted["_Save"]
+
+Converted["_Load"].Font = Enum.Font.TitilliumWeb
+Converted["_Load"].Text = "Load Config"
+Converted["_Load"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Load"].TextScaled = true
+Converted["_Load"].TextSize = 14
+Converted["_Load"].TextWrapped = true
+Converted["_Load"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Load"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Load"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Load"].BorderSizePixel = 0
+Converted["_Load"].Position = UDim2.new(0.400000006, 0, 0.949999988, 0)
+Converted["_Load"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_Load"].Name = "Load"
+Converted["_Load"].Parent = Converted["_Settings1"]
+
+Converted["_UICorner55"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner55"].Parent = Converted["_Load"]
+
+Converted["_Status"].Font = Enum.Font.TitilliumWeb
+Converted["_Status"].RichText = true
+Converted["_Status"].Text = "Text Added By Script So No Error"
+Converted["_Status"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_Status"].TextScaled = true
+Converted["_Status"].TextSize = 14
+Converted["_Status"].TextWrapped = true
+Converted["_Status"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Status"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 50.000000819563866, 50.000000819563866)
+Converted["_Status"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Status"].BorderSizePixel = 0
+Converted["_Status"].Position = UDim2.new(0.800000012, 0, 0.939999998, 0)
+Converted["_Status"].Size = UDim2.new(0.25, 0, 0.109999999, 0)
+Converted["_Status"].Name = "Status"
+Converted["_Status"].Parent = Converted["_Settings1"]
+
+Converted["_UICorner56"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner56"].Parent = Converted["_TitleBar"]
+
+Converted["_Buttons"].Active = true
+Converted["_Buttons"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Buttons"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
+Converted["_Buttons"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Buttons"].BorderSizePixel = 0
+Converted["_Buttons"].Position = UDim2.new(0.5, 0, 0.524999976, 0)
+Converted["_Buttons"].Size = UDim2.new(1, 0, 1.10000002, 0)
+Converted["_Buttons"].Name = "Buttons"
+Converted["_Buttons"].Parent = Converted["_TitleBar"]
+
+Converted["_UICorner57"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner57"].Parent = Converted["_Buttons"]
 
 Converted["_Title"].Font = Enum.Font.Sarpanch
 Converted["_Title"].Text = "AntiHub"
@@ -1095,28 +1794,28 @@ Converted["_Title"].BorderSizePixel = 0
 Converted["_Title"].Position = UDim2.new(0.099737525, 0, 0.5, 0)
 Converted["_Title"].Size = UDim2.new(0.174999997, 0, 0.800000012, 0)
 Converted["_Title"].Name = "Title"
-Converted["_Title"].Parent = Converted["_TitleBar"]
+Converted["_Title"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner25"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner25"].Parent = Converted["_Title"]
+Converted["_UICorner58"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner58"].Parent = Converted["_Title"]
 
-Converted["_Close1"].Font = Enum.Font.Nunito
-Converted["_Close1"].Text = "X"
-Converted["_Close1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close1"].TextScaled = true
-Converted["_Close1"].TextSize = 14
-Converted["_Close1"].TextWrapped = true
-Converted["_Close1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Close1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close1"].BorderSizePixel = 0
-Converted["_Close1"].Position = UDim2.new(0.949999988, 0, 0.5, 0)
-Converted["_Close1"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
-Converted["_Close1"].Name = "Close"
-Converted["_Close1"].Parent = Converted["_TitleBar"]
+Converted["_Close2"].Font = Enum.Font.Nunito
+Converted["_Close2"].Text = "X"
+Converted["_Close2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close2"].TextScaled = true
+Converted["_Close2"].TextSize = 14
+Converted["_Close2"].TextWrapped = true
+Converted["_Close2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Close2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close2"].BorderSizePixel = 0
+Converted["_Close2"].Position = UDim2.new(0.949999988, 0, 0.5, 0)
+Converted["_Close2"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
+Converted["_Close2"].Name = "Close"
+Converted["_Close2"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner26"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner26"].Parent = Converted["_Close1"]
+Converted["_UICorner59"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner59"].Parent = Converted["_Close2"]
 
 Converted["_Collapse"].Font = Enum.Font.Nunito
 Converted["_Collapse"].Text = "-"
@@ -1131,10 +1830,10 @@ Converted["_Collapse"].BorderSizePixel = 0
 Converted["_Collapse"].Position = UDim2.new(0.875, 0, 0.5, 0)
 Converted["_Collapse"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
 Converted["_Collapse"].Name = "Collapse"
-Converted["_Collapse"].Parent = Converted["_TitleBar"]
+Converted["_Collapse"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner27"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner27"].Parent = Converted["_Collapse"]
+Converted["_UICorner60"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner60"].Parent = Converted["_Collapse"]
 
 Converted["_Stats"].Font = Enum.Font.SciFi
 Converted["_Stats"].Text = "Added by script for so no errors."
@@ -1149,19 +1848,60 @@ Converted["_Stats"].BackgroundTransparency = 0.5
 Converted["_Stats"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Stats"].BorderSizePixel = 0
 Converted["_Stats"].Position = UDim2.new(0.970000029, 0, 0.0350000001, 0)
+Converted["_Stats"].Selectable = false
 Converted["_Stats"].Size = UDim2.new(0.0500000007, 0, 0.0500000007, 0)
 Converted["_Stats"].Name = "Stats"
 Converted["_Stats"].Parent = Converted["_AntiHub"]
 
-Converted["_UICorner28"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner28"].Parent = Converted["_Stats"]
+Converted["_UICorner61"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner61"].Parent = Converted["_Stats"]
 
+Converted["_Inspector"].Active = true
+Converted["_Inspector"].AlwaysOnTop = true
+Converted["_Inspector"].ClipsDescendants = true
+Converted["_Inspector"].LightInfluence = 1
+Converted["_Inspector"].Size = UDim2.new(7.5, 0, 7.5, 0)
+Converted["_Inspector"].StudsOffset = Vector3.new(0, 2.5, 2.5)
+Converted["_Inspector"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_Inspector"].Name = "Inspector"
+Converted["_Inspector"].Parent = Converted["_AntiHub"]
+
+Converted["_Box"].Font = Enum.Font.Unknown
+Converted["_Box"].Text = "Hamoudip8"
+Converted["_Box"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Box"].TextScaled = true
+Converted["_Box"].TextSize = 14
+Converted["_Box"].TextWrapped = true
+Converted["_Box"].Active = true
+Converted["_Box"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Box"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Box"].BackgroundTransparency = 1
+Converted["_Box"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Box"].BorderSizePixel = 0
+Converted["_Box"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Box"].Size = UDim2.new(0.949999988, 0, 0.949999988, 0)
+Converted["_Box"].Name = "Box"
+Converted["_Box"].Parent = Converted["_Inspector"]
+
+Converted["_UIStroke"].Thickness = 2
+Converted["_UIStroke"].Parent = Converted["_Box"]
+
+Converted._AntiHub.Enabled = true
+if _G.AHL then
+	Converted._AntiHub:Destroy()
+	warn("AntiHub Already Loaded")
+	Converted._AntiHub.Enabled = false
+	return
+end
+_G.AHL = true
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local AntiHub = Converted._AntiHub
+local Inspector = AntiHub:WaitForChild("Inspector")
 local Visible = true
 local VisWait = false
 local SettingsOpen = false
 local SetWait = false
+local TPWait = false
 local MenWait = false
 local Keybind = "G"
 local UIPos = UDim2.new(0, 0, 0, 0)
@@ -1173,18 +1913,65 @@ local Universal = AntiHub.TitleBar.Container.Container.Menus.Universal
 local Logs = AntiHub.TitleBar.Container.Container.Menus.Logs
 local AntiCheat = AntiHub.TitleBar.Container.Container.Menus.AntiCheat
 local Players = AntiHub.TitleBar.Container.Container.Menus.Players
+local AntiKick = false
 local Unread = 0
+Platform = Instance.new("Part")
+Platform.Name = "AHPlatform"
+Platform.Size = Vector3.new(50, 10, 50)
+Platform.Position = Vector3.new(0, 100000, 0)
+Platform.Anchored = true
+Platform.Parent = workspace
 local Config = {}
-Config.AC = {}
-Config.AC.AutoWhiteList = true
-Config.AC.Toast = false
-Config.AC.Enabled = true
-Config.AC.List = {}
-Config.AC.Messages = {}
-Config.AC.CanSend = {}
-Config.AC.Whitelist = {LocalPlayer}
-Config.Ping = 0
-Config.FPS = 0
+local Loaded, LOut = pcall(function()
+	if isfile("AHConfig.cfg") then
+		Config = game:GetService("HttpService"):JSONDecode(readfile("AHConfig.cfg")).Config
+		Keybind = game:GetService("HttpService"):JSONDecode(readfile("AHConfig.cfg")).Keybind
+	else
+		Config.AC = {}
+		Config.AC.AutoWhiteList = true
+		Config.AC.Toast = false
+		Config.AC.Enabled = true
+		Config.Ping = 0
+		Config.FPS = 0
+		Config.Universal = {}
+		Config.NotifyJoin = true
+		Config.NotifyUnread = true
+	end
+	Config.AC.List = {}
+	Config.AC.Messages = {}
+	Config.AC.CanSend = {}
+	Config.AC.Whitelist = {LocalPlayer}
+	Config.Universal.Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+	Config.Universal.Inspecting = false
+	Config.Universal.Clone = nil
+	Config.Universal.Banging = false
+	Config.Universal.Orbiting = false
+	Config.Universal.Flinging = false
+end)
+if Loaded then
+	print("Loaded Config")
+else
+	warn("Config Error, Loading Default. Error:\n".. LOut)
+	Config.AC = {}
+	Config.AC.AutoWhiteList = true
+	Config.AC.Toast = false
+	Config.AC.Enabled = true
+	Config.Ping = 0
+	Config.FPS = 0
+	Config.Universal = {}
+	Config.NotifyJoin = true
+	Config.NotifyUnread = true
+	Config.AC.List = {}
+	Config.AC.Messages = {}
+	Config.AC.CanSend = {}
+	Config.AC.Whitelist = {LocalPlayer}
+	Config.Universal.Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+	Config.Universal.Inspecting = false
+	Config.Universal.Clone = nil
+	Config.Universal.Banging = false
+	Config.Universal.Orbiting = false
+	Config.Universal.Flinging = false
+end
 local Team = {}
 local HidChat = game:GetService("Players").Chat
 local function HubChat(msg)
@@ -1196,6 +1983,7 @@ local function GetCurrentTime()
 end
 
 local function GetUnshortened(inp)
+	if inp == "" or inp == " " then return nil end
 	local Found = {}
 	local strl = inp:lower()
 	for i,v in pairs(game:FindService("Players"):GetPlayers()) do
@@ -1260,10 +2048,12 @@ local function OnMessage(plr, msg)
 	if msg:sub(1, 9) == "TNEChatAH" then
 		if Visible == false or Menu ~= "Chat" then
 			Unread += 1
-			if (string.len(msg) - 9) >= 10 then
-				game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat - ".. plr.Name, ["Text"] = "New Message:\n".. msg:sub(10, 20).. "...", ["Duration"] = 1})
-			else
-				game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat - ".. plr.Name, ["Text"] = "New Message:\n".. msg, ["Duration"] = 1})
+			if Config.NotifyUnread then
+				if (string.len(msg) - 9) >= 10 then
+					game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat - ".. plr.Name, ["Text"] = "New Message:\n".. msg:sub(10, 20).. "...", ["Duration"] = 1})
+				else
+					game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat - ".. plr.Name, ["Text"] = "New Message:\n".. msg, ["Duration"] = 1})
+				end
 			end
 		end
 		local Message = msg:sub(10)
@@ -1280,18 +2070,23 @@ local function OnMessage(plr, msg)
 				table.insert(Config.AC.Whitelist, plr)
 				UpdateWhitelist()
 			end
-			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Detected", ["Text"] = "User ".. plr.Name.. " Has Joined With AntiHub", ["Duration"] = 5})
+			if Config.NotifyJoin then
+				game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Detected", ["Text"] = "User ".. plr.Name.. " Has Joined With AntiHub.", ["Duration"] = 5})
+			end
 			HidChat(game:GetService("Players"), "TNEListUpdate")
 		end
 	elseif msg == "TNEListUpdate" then
 		if not table.find(Team, plr) then
 			table.insert(Team, plr)
-			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Detected", ["Text"] = "User ".. plr.Name.. " Has Joined With AntiHub", ["Duration"] = 5})
 			if Config.AC.AutoWhiteList then
 				table.insert(Config.AC.Whitelist, plr)
 				UpdateWhitelist()
 			end
 		end
+	elseif msg == "TNEInspectStart" then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Inspect", ["Text"] = "User ".. plr.Name.. " Has Started Inspecting.", ["Duration"] = 5})
+	elseif msg == "TNEInspectEnd" then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Inspect", ["Text"] = "User ".. plr.Name.. " Has Stopped Inspecting.", ["Duration"] = 5})
 	end
 	if string.len(Logs.Chat.Log.Text) + string.len(" <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n") >= 16385 then
 		Logs.Chat.Log.Text = Logs.Chat.Log.Text:sub(1, string.len(Logs.Chat.Log.Text) - string.len(" <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"))
@@ -1301,10 +2096,118 @@ local function OnMessage(plr, msg)
 	Logs.Chat.CanvasPosition = Vector2.new(0, Logs.Chat.CanvasSize.Y.Offset - Logs.Chat.AbsoluteWindowSize.Y)
 end
 
-LocalPlayer.PlayerScripts.ClientGunReplicator.Disabled = true
+local function Bang(Target, Enabled)
+	if game:GetService("Players"):FindFirstChild(Universal.Input.Text) == nil then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\" Does Not Exist", ["Duration"] = 2})
+		return
+	end
+	if game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character == nil then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\"'s Character Does Not Exist", ["Duration"] = 2})
+		return
+	end
+	Config.Universal.Banging = Enabled or not Config.Universal.Banging
+	if Config.Universal.Banging or Enabled then
+		Universal.Bang.Text = "Stop Banging"
+		local humanoid = LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid")
+		bangAnim = Instance.new("Animation")
+		bangAnim.AnimationId = LocalPlayer.Character:FindFirstChildOfClass('Humanoid').RigType ~= Enum.HumanoidRigType.R15 and "rbxassetid://148840371" or "rbxassetid://5918726674"
+		bang = humanoid:LoadAnimation(bangAnim)
+		bang:Play(0.1, 1, 1)
+		bang:AdjustSpeed(3)
+		local bangplr = Target or game:GetService("Players"):FindFirstChild(Universal.Input.Text)
+		bangDied = humanoid.Died:Once(function()
+			bangDied:Disconnect()
+			bang:Stop()
+			bangAnim:Destroy()
+			bangLoop:Disconnect()
+			LocalPlayer.CharacterAdded:Wait()
+			task.wait(0.5)
+			Bang(bangplr, true)
+		end)
+		local bangOffset = CFrame.new(0, 0, 1.1)
+		bangLoop = game:GetService("RunService").Stepped:Connect(function()
+			pcall(function()
+				local otherRoot = bangplr.Character:FindFirstChild("Torso") or bangplr.Character:FindFirstChild("UpperTorso") or bangplr.Character:FindFirstChild("LowerTorso") or bangplr.Character:FindFirstChild("HumanoidRootPart")
+				LocalPlayer.Character.HumanoidRootPart.CFrame = otherRoot.CFrame * bangOffset
+			end)
+		end)
+	else
+		Universal.Bang.Text = "Bang"
+		if bangDied then
+			bangDied:Disconnect()
+			bang:Stop()
+			bangAnim:Destroy()
+			bangLoop:Disconnect()
+		end
+	end
+end
+
+local function Orbit(Target, Enabled)
+	if game:GetService("Players"):FindFirstChild(Universal.Input.Text) == nil then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\ Does Not Exist", ["Duration"] = 2})
+		return
+	end
+	if game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character == nil then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\'s Character Does Not Exist", ["Duration"] = 2})
+		return
+	end
+	Config.Universal.Orbiting = Enabled or not Config.Universal.Orbiting
+	if Config.Universal.Orbiting or Enabled then
+		Universal.Orbit.Text = "Stop Orbiting"
+		if Target == nil then
+			Target = ""
+		end
+		local target = game:GetService("Players"):FindFirstChild(Target) or game:GetService("Players"):FindFirstChild(Universal.Input.Text)
+		local root = LocalPlayer.Character.HumanoidRootPart
+		local humanoid = LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid")
+		if target and target.Character and target.Character.HumanoidRootPart and root and humanoid then
+			local rotation = 0
+			local speed = 5
+			local distance = 6
+			orbit1 = game:GetService("RunService").Heartbeat:Connect(function()
+				pcall(function()
+					rotation = rotation + speed
+					root.CFrame = CFrame.new(target.Character.HumanoidRootPart.Position) * CFrame.Angles(0, math.rad(rotation), 0) * CFrame.new(distance, 0, 0)
+				end)
+			end)
+			orbit2 = game:GetService("RunService").RenderStepped:Connect(function()
+				pcall(function()
+					root.CFrame = CFrame.new(root.Position, target.Character.HumanoidRootPart.Position)
+				end)
+			end)
+			orbit3 = humanoid.Died:Connect(function()
+				if orbit1 then orbit1:Disconnect() end
+				if orbit2 then orbit2:Disconnect() end
+				if orbit3 then orbit3:Disconnect() end
+				if orbit4 then orbit4:Disconnect() end
+				LocalPlayer.CharacterAdded:Wait()
+				task.wait(0.5)
+				Orbit(target.Name, true)
+			end)
+			orbit4 = humanoid.Seated:Connect(function(value) if value then humanoid.Jump = true end end)
+		end
+	else
+		Universal.Orbit.Text = "Orbit"
+		if orbit1 then orbit1:Disconnect() end
+		if orbit2 then orbit2:Disconnect() end
+		if orbit3 then orbit3:Disconnect() end
+		if orbit4 then orbit4:Disconnect() end
+	end
+end
 
 AntiHub:WaitForChild("TitleBar").Active = true
 AntiHub.TitleBar.Draggable = true
+
+AntiHub.TitleBar.Container.Container.Player.Profile.Activated:Connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub", ["Text"] = "Rejoining.", ["Duration"] = 10})
+	if #game:GetService("Players"):GetPlayers() <= 1 then
+		LocalPlayer:Kick("\nRejoining...")
+		task.wait()
+		game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer)
+	else
+		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, LocalPlayer)
+	end
+end)
 
 game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
 	if proc then return end
@@ -1319,7 +2222,7 @@ game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
 			game:GetService("TweenService"):Create(AntiHub.TitleBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {["Position"] = UIPos, ["Size"] = UDim2.new(0.5, 0, 0.05, 0)}):Play()
 			task.wait(0.25)
 			if Expanded then
-				game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 4.75, 0), ["Size"] = UDim2.new(1, 0, 9.5, 0)}):Play()
+				game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 5.25, 0), ["Size"] = UDim2.new(1, 0, 8.5, 0)}):Play()
 			end
 		else
 			UIPos = AntiHub.TitleBar.Position
@@ -1345,7 +2248,7 @@ AntiHub:WaitForChild("Stats").Activated:Connect(function()
 		game:GetService("TweenService"):Create(AntiHub.TitleBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {["Position"] = UIPos, ["Size"] = UDim2.new(0.5, 0, 0.05, 0)}):Play()
 		task.wait(0.25)
 		if Expanded then
-			game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 4.75, 0), ["Size"] = UDim2.new(1, 0, 9.5, 0)}):Play()
+			game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 5.25, 0), ["Size"] = UDim2.new(1, 0, 8.5, 0)}):Play()
 		end
 	else
 		UIPos = AntiHub.TitleBar.Position
@@ -1359,7 +2262,7 @@ AntiHub:WaitForChild("Stats").Activated:Connect(function()
 	VisWait = false
 end)
 
-AntiHub.TitleBar:WaitForChild("Close").Activated:Connect(function()
+AntiHub.TitleBar:WaitForChild("Buttons"):WaitForChild("Close").Activated:Connect(function()
 	if VisWait then return end
 	VisWait = true
 	Visible = false
@@ -1372,12 +2275,12 @@ AntiHub.TitleBar:WaitForChild("Close").Activated:Connect(function()
 	VisWait = false
 end)
 
-AntiHub.TitleBar.Collapse.Activated:Connect(function()
+AntiHub.TitleBar.Buttons.Collapse.Activated:Connect(function()
 	if VisWait then return end
 	Expanded = not Expanded
 	VisWait = true
 	if Expanded then
-		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 4.75, 0), ["Size"] = UDim2.new(1, 0, 9.5, 0)}):Play()
+		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 5.25, 0), ["Size"] = UDim2.new(1, 0, 8.5, 0)}):Play()
 	else
 		game:GetService("TweenService"):Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 0, 0), ["Size"] = UDim2.new(1, 0, 0, 0)}):Play()
 	end
@@ -1416,8 +2319,17 @@ for i, v in game:GetService("Players"):GetPlayers() do
 	v.Chatted:Connect(function(msg)
 		OnMessage(v, msg)
 	end)
+	v.CharacterAdded:Connect(function(mod)
+		if Config.Universal.Inspecting then
+			mod:WaitForChild("HumanoidRootPart").Anchored = true
+			Instance.new("Highlight", mod).Name = "InspectHighlight"
+			mod.InspectHighlight.FillColor = Color3.fromRGB(0, 0, 0)
+			Inspector:Clone().Parent = mod:WaitForChild("Head")
+			mod.Head.Inspector:WaitForChild("Box").Text = v.Name
+			mod.Head.Inspector.Box.TextColor3 = Color3.fromRGB(math.floor(255 * v.TeamColor.r), math.floor(255 * v.TeamColor.g), math.floor(255 * v.TeamColor.b))
+		end
+	end)
 end
-
 
 game:GetService("Players").PlayerAdded:Connect(function(plr)
 	if string.len(Logs.Player.Log.Text) + string.len("<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>\n") >= 16385 then
@@ -1431,6 +2343,16 @@ game:GetService("Players").PlayerAdded:Connect(function(plr)
 		OnMessage(plr, msg)
 	end)
 	plr:GetPropertyChangedSignal("Team"):Connect(UpdatePlayerList)
+	plr.CharacterAdded:Connect(function(mod)
+		if Config.Universal.Inspecting then
+			mod:WaitForChild("HumanoidRootPart").Anchored = true
+			Instance.new("Highlight", mod).Name = "InspectHighlight"
+			mod.InspectHighlight.FillColor = Color3.fromRGB(0, 0, 0)
+			Inspector:Clone().Parent = mod:WaitForChild("Head")
+			mod.Head.Inspector:WaitForChild("Box").Text = plr.Name
+			mod.Head.Inspector.Box.TextColor3 = Color3.fromRGB(math.floor(255 * plr.TeamColor.r), math.floor(255 * plr.TeamColor.g), math.floor(255 * plr.TeamColor.b))
+		end
+	end)
 end)
 game:GetService("Players").PlayerRemoving:Connect(function(plr)
 	if string.len(Logs.Player.Log.Text) + string.len( GetCurrentTime().. "<font color=\"rgb(128,0,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>\n") >= 16385 then
@@ -1463,6 +2385,13 @@ AntiCheat.Input.FocusLost:Connect(function(EP)
 	end
 end)
 
+PrisonLife.Input.FocusLost:Connect(function(EP)
+	if EP then
+		if GetUnshortened(PrisonLife.Input.Text) == nil then return end
+		PrisonLife.Input.Text = GetUnshortened(PrisonLife.Input.Text).Name
+	end
+end)
+
 AntiCheat.Toggle.Activated:Connect(function()
 	if game:GetService("Players"):FindFirstChild(AntiCheat.Input.Text) == nil then return end
 	if table.find(Config.AC.Whitelist, game:GetService("Players"):FindFirstChild(AntiCheat.Input.Text)) then
@@ -1473,9 +2402,15 @@ AntiCheat.Toggle.Activated:Connect(function()
 	UpdateWhitelist()
 end)
 
-AntiCheat.Clear.Activated:Connect(function()
+AntiCheat.Clear.WL.Activated:Connect(function()
 	Config.AC.Whitelist = {}
 	UpdateWhitelist()
+end)
+
+AntiCheat.Clear.Logs.Activated:Connect(function()
+	AntiCheat.Logs.Log.Text = ""
+	AntiCheat.Logs.CanvasSize = UDim2.new(0, 0, 0, AntiCheat.Logs.Log.TextBounds.Y)
+	AntiCheat.Logs.CanvasPosition = Vector2.new(0, AntiCheat.Logs.CanvasSize.Y.Offset - AntiCheat.Logs.AbsoluteWindowSize.Y)
 end)
 
 AntiCheat.AWL.Activated:Connect(function()
@@ -1506,31 +2441,35 @@ AntiCheat.ToastToggle.Activated:Connect(function()
 end)
 
 PrisonLife.Prizz.Activated:Connect(function()
-	Execution_Runtime = tick()
-	PLadmin_Settings = {
-		DefaultPrefix = "?",
-		JoinNotify = false,
-		AutoRespawn = true,
-		AntiVoid = true,
-		AntiTase = false,
-		AntiArrest = false,
-		AntiShoot = false,
-		AntiPunch = false,
-		AntiFling = true,
-		AntiShield = true,
-		AntiBring = true,
-		SilentAim = false,
-		AutoGuns = false,
-		OldItemMethod = false,
-		Fullbright = false,
-		WhitelistRanked = true,
-		RankedNukeCmds = true,
-		RankedMultiCmd = true,
-		RankedOutput = true,
-		WhisperToRanked = true,
-	}
-	wait()
-	loadstring(game:HttpGet("https://paste.c-net.org/MailboxScurry",true))()
+	if AntiKick then
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/devguy100/PrizzLife/main/pladmin.lua'))()
+	else
+		Execution_Runtime = tick()
+		PLadmin_Settings = {
+			DefaultPrefix = "?",
+			JoinNotify = false,
+			AutoRespawn = true,
+			AntiVoid = true,
+			AntiTase = false,
+			AntiArrest = false,
+			AntiShoot = false,
+			AntiPunch = false,
+			AntiFling = true,
+			AntiShield = true,
+			AntiBring = true,
+			SilentAim = false,
+			AutoGuns = false,
+			OldItemMethod = false,
+			Fullbright = false,
+			WhitelistRanked = true,
+			RankedNukeCmds = true,
+			RankedMultiCmd = true,
+			RankedOutput = true,
+			WhisperToRanked = true,
+		}
+		wait()
+		loadstring(game:HttpGet("https://paste.c-net.org/MailboxScurry",true))()
+	end
 end)
 
 PrisonLife.H4X.Activated:Connect(function()
@@ -1553,6 +2492,132 @@ PrisonLife.Kick.Activated:Connect(function()
 	local Target = GetUnshortened(PrisonLife.Input.Text)
 	game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("/w ".. Target.DisplayName.. " !kick ".. Target.Name)
 	PrisonLife.Input.Text = ""
+end)
+
+PrisonLife.Criminals.Activated:Connect(function()
+	local CF = LocalPlayer.Character:GetPivot()
+	local SCF = workspace["Criminals Spawn"].SpawnLocation.CFrame
+	if LocalPlayer.Team == game:GetService("Teams").Neutral then
+		workspace.Remote.TeamEvent:FireServer("Bright orange")
+		LocalPlayer.PlayerGui.Home.intro.Visible = false
+		workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
+		workspace.CurrentCamera.CameraSubject = LocalPlayer.Character:WaitForChild("Humanoid")
+	end
+	workspace["Criminals Spawn"].SpawnLocation.CanCollide = false
+	repeat
+		pcall(function()
+			workspace["Criminals Spawn"].SpawnLocation.CFrame = LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame
+		end)
+		game:GetService("RunService").Stepped:Wait()
+	until LocalPlayer.TeamColor == BrickColor.new("Really red")
+	workspace["Criminals Spawn"].SpawnLocation.CFrame = SCF
+	task.wait(0.25)
+	LocalPlayer.Character:PivotTo(CF)
+end)
+
+PrisonLife.Guards.Activated:Connect(function()
+	local Team = LocalPlayer.Team
+	local CF = LocalPlayer.Character:GetPivot()
+	workspace.Remote.TeamEvent:FireServer("Bright blue")
+	if #game:GetService("Teams").Guards:GetPlayers() > 7 then
+		return
+	end
+	if Team == game:GetService("Teams").Neutral then
+		LocalPlayer.PlayerGui.Home.intro.Visible = false
+		workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
+		workspace.CurrentCamera.CameraSubject = LocalPlayer.Character:WaitForChild("Humanoid")
+	else
+		LocalPlayer.CharacterAdded:Wait()
+		task.wait(0.25)
+		LocalPlayer.Character:PivotTo(CF)
+	end
+end)
+
+PrisonLife.Inmates.Activated:Connect(function()
+	local Team = LocalPlayer.Team
+	local CF = LocalPlayer.Character:GetPivot()
+	workspace.Remote.TeamEvent:FireServer("Bright orange")
+	if Team == game:GetService("Teams").Neutral then
+		LocalPlayer.PlayerGui.Home.intro.Visible = false
+		workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
+		workspace.CurrentCamera.CameraSubject = LocalPlayer.Character:WaitForChild("Humanoid")
+	else
+		LocalPlayer.CharacterAdded:Wait()
+		task.wait(0.25)
+		LocalPlayer.Character:PivotTo(CF)
+	end
+end)
+PrisonLife.Neutral.Activated:Connect(function()
+	workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+end)
+
+PrisonLife.Teleports.Crimbase.Activated:Connect(function()
+	LocalPlayer.Character:MoveTo(Vector3.new(-945, 95, 2065))
+end)
+PrisonLife.Teleports.Yard.Activated:Connect(function()
+	LocalPlayer.Character:PivotTo(CFrame.new(788, 98, 2468))
+end)
+PrisonLife.Teleports.Guards.Activated:Connect(function()
+	LocalPlayer.Character:PivotTo(CFrame.new(836, 100, 2285))
+end)
+PrisonLife.Teleports.Mansion.Activated:Connect(function()
+	LocalPlayer.Character:PivotTo(CFrame.new(-316, 65, 1841))
+end)
+PrisonLife.Teleports.Cafe.Activated:Connect(function()
+	LocalPlayer.Character:PivotTo(CFrame.new(884, 100, 2294))
+end)
+PrisonLife.Teleports.Gate.Activated:Connect(function()
+	local LocalPlayer = game.Players.LocalPlayer
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character:MoveTo(Vector3.new(505, 100, 2250))
+end)
+PrisonLife.Teleports.Platform.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character:MoveTo(Platform.Position + Vector3.new(0, 15, 0))
+end)
+PrisonLife.Teleports.Trap.Activated:Connect(function()
+	LocalPlayer.Character:PivotTo(CFrame.new(-307, 84, 1984))
+end)
+PrisonLife.Teleports.Car.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character:MoveTo(workspace.Prison_ITEMS.buttons["Car Spawner"]["Car Spawner"]:GetPivot().Position + Vector3.new(0, 10, 0))
+end)
+PrisonLife.Teleports.Neutral.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character:PivotTo(CFrame.new(879, 28, 2349))
+end)
+PrisonLife.Teleports.Nexus.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character:PivotTo(CFrame.new(878, 100, 2374))
+end)
+PrisonLife.Teleports.YTower.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character:PivotTo(CFrame.new(787, 125, 2588))
+end)
+
+PrisonLife.TP.Activated:Connect(function()
+	if TPWait then return end
+	TPWait = true
+	PrisonLife.Teleports.GroupTransparency = 1
+	PrisonLife.Teleports.Visible = true
+	game:GetService("TweenService"):Create(PrisonLife.Teleports, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
+	task.wait(0.1)
+	TPWait = false
+end)
+
+PrisonLife.Teleports.Close.Activated:Connect(function()
+	if TPWait then return end
+	TPWait = true
+	game:GetService("TweenService"):Create(PrisonLife.Teleports, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
+	task.wait(0.1)
+	PrisonLife.Teleports.Visible = false
+	TPWait = false
 end)
 
 Universal.IY.Activated:Connect(function()
@@ -1670,8 +2735,8 @@ task.spawn(function()
 			while task.wait() do
 				if not table.find(game:GetService("Players"):GetPlayers(), plr) then return end
 				if Config.FPS >= 15 or true then
-					if (Char:GetPivot().Position - CPos).Magnitude >= math.clamp(Config.Ping / 100, 10, math.huge) then
-						if (Char:GetPivot().Position - CPos).Magnitude <= math.clamp(Config.Ping / 10, 35, math.huge) then
+					if (Char:GetPivot().Position - CPos).Magnitude >= math.clamp(Config.Ping / 100, 8, math.huge) then
+						if (Char:GetPivot().Position - CPos).Magnitude <= math.clamp(Config.Ping / 10, 20, math.huge) then
 							ACTrigger(plr, "Speed", Respawn)
 						else
 							ACTrigger(plr, "Teleport", Respawn)
@@ -1711,7 +2776,9 @@ task.spawn(function()
 		plr:GetPropertyChangedSignal("Team"):Connect(function()
 			TeamChanges += 1
 			if TeamChanges >= 2 then
-				ACTrigger(plr, "Attempted Mass Kill", Respawn)
+				if (plr.Team ~= game:GetService("Teams").Guards and plr.Backpack:FindFirstChild("M9")) or plr.Backpack:FindFirstChild("AK-47") or plr.Backpack:FindFirstChild("Remington 870") or plr.Backpack:FindFirstChild("M4A1") then
+					ACTrigger(plr, "Attempted Mass Kill", false)
+				end
 			end
 		end)
 
@@ -1780,21 +2847,348 @@ end)
 AntiHub.TitleBar.Container.Container.Settings.Keybind.Activated:Connect(function()
 	if not game:GetService("UserInputService").KeyboardEnabled then return end
 	VisWait = true
+	local Old = Keybind
 	AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Press Any Key"
 	Keybind = game:GetService("UserInputService").InputBegan:Wait().KeyCode.Name
+	if Keybind == "Unknown" then
+		Keybind = Old
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Invalid KeyCode", ["Duration"] = 2})
+	end
 	AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Keybind [".. Keybind.. "]"
 	task.wait(0.5)
 	VisWait = false
 end)
 
-AntiHub.TitleBar.Container.Container.Player.Profile.Image = game:GetService("Players"):GetUserThumbnailAsync(LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+AntiHub.TitleBar.Container.Container.Settings.ResetKeybind.Activated:Connect(function()
+	Keybind = "G"
+	AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Keybind [G]"
+end)
+
+AntiHub.TitleBar.Container.Container.Settings.NotifyJoin.Activated:Connect(function()
+	Config.NotifyJoin = not Config.NotifyJoin
+end)
+
+AntiHub.TitleBar.Container.Container.Settings.NotifyUnread.Activated:Connect(function()
+	Config.NotifyUnread = not Config.NotifyUnread
+end)
+
+AntiHub.TitleBar.Container.Container.Settings.Save.Activated:Connect(function()
+	local ToSave = {}
+	local ConfigSave = table.clone(Config)
+	for i, v in ConfigSave do
+		if type(v) == "userdata" then
+			v = "Instance Removed"
+		end
+	end
+	ToSave.Config = table.clone(ConfigSave)
+	ToSave.Keybind = Keybind
+	if ToSave.Keybind == "Unknown" then
+		ToSave.Keybind = "G"
+	end
+	ToSave = game:GetService("HttpService"):JSONEncode(ToSave)
+	writefile("AHConfig.cfg", ToSave)
+end)
+
+AntiHub.TitleBar.Container.Container.Settings.Load.Activated:Connect(function()
+	Loaded, LOut = pcall(function()
+		local Config = {}
+		if isfile("AHConfig.cfg") then
+			Config = game:GetService("HttpService"):JSONDecode(readfile("AHConfig.cfg")).Config
+			Keybind = game:GetService("HttpService"):JSONDecode(readfile("AHConfig.cfg")).Keybind
+		else
+			Config.AC = {}
+			Config.AC.AutoWhiteList = true
+			Config.AC.Toast = false
+			Config.AC.Enabled = true
+			Config.Ping = 0
+			Config.FPS = 0
+			Config.Universal = {}
+			Config.NotifyJoin = true
+		end
+		Config.AC.List = {}
+		Config.AC.Messages = {}
+		Config.AC.CanSend = {}
+		Config.AC.Whitelist = {LocalPlayer}
+		Config.Universal.Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+		Config.Universal.Inspecting = false
+		Config.Universal.Clone = nil
+		Config.Universal.Banging = false
+		Config.Universal.Orbiting = false
+		Config.Universal.Flinging = false
+	end)
+	if Loaded then
+		print("Loaded Config")
+	else
+		warn("Config Error, Loading Default. Error:\n".. LOut)
+	end
+end)
+
+Universal.Inspect.Activated:Connect(function()
+	Config.Universal.Inspecting = not Config.Universal.Inspecting
+	if Config.Universal.Inspecting then
+		if LocalPlayer.Character == nil then
+			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Character Not Loaded.", ["Duration"] = 2})
+			return
+		end
+		if LocalPlayer.Character:WaitForChild("Humanoid"):GetState() == Enum.HumanoidStateType.Dead then
+			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Currently Dead.", ["Duration"] = 2})
+			return
+		end
+		HidChat(game:GetService("Players"), "TNEInspectStart")
+		Config.Universal.InspectTime = os.time()
+		local InspectTime = Config.Universal.InspectTime
+		Universal.Inspect.Text = "Stop Inspecting"
+		Config.Universal.Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+		LocalPlayer.Character.Archivable = true
+		Config.Universal.Clone = LocalPlayer.Character:Clone()
+		task.spawn(function()
+			InspectDied = LocalPlayer.Character:WaitForChild("Humanoid").Died:Connect(function()
+				if Config.Universal.InspectTime ~= InspectTime then return end
+				LocalPlayer.Character = Config.Universal.Clone
+				workspace.CurrentCamera.CameraSubject = LocalPlayer.Character
+			end)
+			InspectAdded = LocalPlayer.CharacterAdded:Connect(function()
+				if Config.Universal.InspectTime ~= InspectTime then return end
+				LocalPlayer.Character = Config.Universal.Clone
+				workspace.CurrentCamera.CameraSubject = LocalPlayer.Character
+			end)
+		end)
+		Config.Universal.Character:WaitForChild("HumanoidRootPart").Anchored = true
+		Config.Universal.Clone.Parent = Config.Universal.Character.Parent
+		task.spawn(function()
+			for i, v in game:GetService("Players"):GetPlayers() do
+				if v.Character == nil then continue end
+				Instance.new("Highlight", v.Character).Name = "InspectHighlight"
+				v.Character.InspectHighlight.FillColor = Color3.fromRGB(0, 0, 0)
+				Inspector:Clone().Parent = v.Character:WaitForChild("Head")
+				v.Character.Head.Inspector:WaitForChild("Box").Text = v.Name
+				v.Character.Head.Inspector.Box.TextColor3 = Color3.fromRGB(math.floor(255 * v.TeamColor.r), math.floor(255 * v.TeamColor.g), math.floor(255 * v.TeamColor.b))
+				v.Character:WaitForChild("HumanoidRootPart").Anchored = true
+			end
+			pcall(function()
+				repeat
+					Config.Universal.Clone.Humanoid.Health = Config.Universal.Clone.Humanoid.MaxHealth
+					for i, v in Config.Universal.Clone:GetDescendants() do
+						pcall(function()
+							v.CanCollide = false
+						end)
+					end
+					task.wait()
+				until Config.Universal.Clone == nil
+			end)
+		end)
+		Config.Universal.Clone:WaitForChild("Humanoid").DisplayName = "Inspector"
+		LocalPlayer.Character = Config.Universal.Clone
+		LocalPlayer.Character.Animate.Disabled = true
+		task.wait()
+		LocalPlayer.Character.Animate.Disabled = false
+		workspace.CurrentCamera.CameraSubject = LocalPlayer.Character
+	else
+		HidChat(game:GetService("Players"), "TNEInspectEnd")
+		InspectDied:Disconnect()
+		InspectAdded:Disconnect()
+		Universal.Inspect.Text = "Inspect"
+		LocalPlayer.Character = Config.Universal.Character
+		if LocalPlayer.Character == nil then
+			LocalPlayer.Character = workspace:WaitForChild(LocalPlayer.Name)
+		end
+		workspace.CurrentCamera.CameraSubject = LocalPlayer.Character
+		for i, v in game:GetService("Players"):GetPlayers() do
+			if v.Character == nil then continue end
+			v.Character:WaitForChild("HumanoidRootPart").Anchored = false
+			v.Character.Head:WaitForChild("Inspector"):Destroy()
+			v.Character:WaitForChild("InspectHighlight"):Destroy()
+		end
+		if Config.Universal.Clone ~= nil then
+			Config.Universal.Clone:Destroy()
+		end
+	end
+end)
+
+Universal.Goto.Activated:Connect(function()
+	if game:GetService("Players"):FindFirstChild(Universal.Input.Text) == nil then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\ Does Not Exist.", ["Duration"] = 2})
+		return
+	end
+	if game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character == nil then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\'s Character Does Not Exist.", ["Duration"] = 2})
+		return
+	end
+	LocalPlayer.Character:PivotTo(game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character:GetPivot())
+end)
+
+Universal.Fling.Activated:Connect(function()
+	Config.Universal.Flinging = not Config.Universal.Flinging
+	if Config.Universal.Flinging then
+		Universal.Fling.Text = "Stop Flinging"
+		if game:GetService("Players"):FindFirstChild(Universal.Input.Text) == nil then
+			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\ Does Not Exist.", ["Duration"] = 2})
+			Universal.Fling.Text = "Fling"
+			Config.Universal.Flinging = false
+			return
+		end
+		if game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character == nil then
+			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\'s Character Does Not Exist.", ["Duration"] = 2})
+			Universal.Fling.Text = "Fling"
+			Config.Universal.Flinging = false
+			return
+		end
+		local Target = game:GetService("Players"):FindFirstChild(Universal.Input.Text)
+
+		local Thrust = Instance.new('BodyThrust', LocalPlayer.Character.HumanoidRootPart)
+		Thrust.Force = Vector3.new(9999,9999,9999)
+		Thrust.Name = "FlingForce"
+		repeat
+			LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+			Thrust.Location = Target.Character.HumanoidRootPart.Position
+			game:GetService("RunService").Heartbeat:Wait()
+		until game:GetService("Players"):FindFirstChild(Universal.Input.Text) == nil or Target.Character.Humanoid.Health >= 0 or not Config.Universal.Flinging
+		LocalPlayer.Character.HumanoidRootPart.FlingForce:Destroy()
+		Universal.Fling.Text = "Fling"
+	else
+		Config.Universal.Flinging = false
+		Universal.Fling.Text = "Fling"
+	end
+end)
+
+Universal.UAFling.Activated:Connect(function()
+	Config.Universal.UAFlinging = not Config.Universal.UAFlinging
+	if Config.Universal.UAFlinging then
+		Universal.UAFling.Text = "Stop UAFlinging"
+		local Pos = game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character:GetPivot().Position
+		local Part = nil
+		if game:GetService("Players"):FindFirstChild(Universal.Input.Text) == nil then
+			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\ Does Not Exist.", ["Duration"] = 2})
+			Universal.UAFling.Text = "Part Fling"
+			return
+		end
+		if game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character == nil then
+			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\'s Character Does Not Exist.", ["Duration"] = 2})
+			Universal.UAFling.Text = "Part Fling"
+			return
+		end
+		Universal.UAFling.Text = "Searching..."
+		local Parts = workspace:GetDescendants()
+		for i, v in game:GetService("Players"):GetPlayers() do
+			if table.find(Parts, v) then
+				table.remove(Parts, table.find(Parts, v))
+			end
+		end
+		for i, v in Parts do
+			if Part then continue end
+			if v:IsA("BasePart") then
+				if v.Anchored then continue end
+				if not v.CanCollide then continue end
+				if v.AssemblyRootPart.ReceiveAge ~= 0 then continue end
+				Part = v
+			end
+		end
+		if Part == nil then
+			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "No Working Part Found", ["Duration"] = 2})
+			Universal.UAFling.Text = "Part Fling"
+			return
+		end
+		Universal.UAFling.Text = "Stop UAFlinging"
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Found", ["Text"] = "Found Part:\n\"game.".. Part:GetFullName().."\".", ["Duration"] = 2})
+		local Rep = false
+		task.spawn(function()
+			game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character.Humanoid.Died:Wait()
+			Rep = true
+		end)
+		local Start = Part.CFrame
+		repeat
+			Pos = game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character:GetPivot().Position
+			Part.Position = game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character:GetPivot().Position
+			Part.AssemblyLinearVelocity = Vector3.new((Part.Position.X - Pos.X)*-1, (Part.Position.Y - Pos.Y)*-1, (Part.Position.Z - Pos.Z)*-1)
+			Part.AssemblyAngularVelocity = Vector3.new(1000000000, 0, 0)
+			Part.CanCollide = false
+			task.wait()
+		until Rep or game:GetService("Players"):FindFirstChild(Universal.Input.Text) == nil or not Config.Universal.UAFlinging
+		Part.CanCollide = true
+		Part.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+		Part.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+		Part.CFrame = Start
+		Universal.UAFling.Text = "Part Fling"
+	else
+		Universal.UAFling.Text = "Part Fling"
+	end
+end)
+
+Universal.Bang.Activated:Connect(function()
+	Bang()
+end)
+
+Universal.Orbit.Activated:Connect(function()
+	Orbit()
+end)
+
+Universal.Input.FocusLost:Connect(function(EP)
+	if EP then
+		if GetUnshortened(Universal.Input.Text) == nil then return end
+		Universal.Input.Text = GetUnshortened(Universal.Input.Text).Name
+	end
+end)
+
+task.spawn(function()
+	local suc = false
+	repeat
+		suc = pcall(function()
+			AntiHub.TitleBar.Container.Container.Player.Settings.Image = "rbxassetid://1257503133"
+			AntiHub.TitleBar.Container.Container.Player.Profile.Image = game:GetService("Players"):GetUserThumbnailAsync(LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+		end)
+		task.wait(0.25)
+	until suc
+end)
 
 Players.Key.Text = "<font color=\"rgb(178,0,0)\">Normal User</font> | <font color=\"rgb(0,178,0)\">AntiHub User</font>"
 
 HidChat(game:GetService("Players"), "TNEListStart")
 
 
+local AK, AKO = pcall(function()
+	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(255,0,0)\">Disabled</font>"
+	if not hookmetamethod then 
+		warn("AntiHub - AntiKick Failed (Missing Function)")
+		return "hookmetamethod"
+	end
+	local oldhmmi
+	local oldhmmnc
+	local oldKickFunction
+	if hookfunction then
+		oldKickFunction = hookfunction(LocalPlayer.Kick, function() end)
+	end
+	oldhmmi = hookmetamethod(game, "__index", function(self, method)
+		if self == LocalPlayer and method:lower() == "kick" then
+			return error("Expected ':' not '.' calling member function Kick", 2)
+		end
+		return oldhmmi(self, method)
+	end)
+	oldhmmnc = hookmetamethod(game, "__namecall", function(self, ...)
+		if self == LocalPlayer and getnamecallmethod():lower() == "kick" then
+			return
+		end
+		return oldhmmnc(self, ...)
+	end)
+	AntiKick = true
+	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
+	print("AntiHub - AntiKick Enabled")
+end)
+
+if not AK then
+	if AKO ~= "hookmetamethod" then
+		AntiKick = true
+		AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
+		print("AntiHub - AntiKick Already Enabled")
+	end
+end
+
+task.spawn(function()
+	wait(1)
+	game:GetService("StarterGui"):SetCore("SendNotificaiton", {["Title"] = "AntiHub", ["Text"] = "Made By Username.\nVersion: 1.0", ["Duration"] = 5})
+end)
+
 while task.wait(0.05) do
+	game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.All, true)
 	Config.Ping = math.floor(LocalPlayer:GetNetworkPing() * 1000)
 	if Unread == 0 then
 		AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat"
@@ -1811,6 +3205,16 @@ while task.wait(0.05) do
 		end
 	else
 		AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Keybind [Stats UI]"
+	end
+	if Config.NotifyJoin then
+		AntiHub.TitleBar.Container.Container.Settings.NotifyJoin.Text = "Notify Hub Join [T]"
+	else
+		AntiHub.TitleBar.Container.Container.Settings.NotifyJoin.Text = "Notify Hub Join [F]"
+	end
+	if Config.NotifyUnread then
+		AntiHub.TitleBar.Container.Container.Settings.NotifyUnread.Text = "Notify Unread [T]"
+	else
+		AntiHub.TitleBar.Container.Container.Settings.NotifyUnread.Text = "Notify Unread [F]"
 	end
 	AntiHub.Stats.Text = tostring(Config.Ping).. " ms\n".. tostring(Config.FPS).. " FPS"
 end
