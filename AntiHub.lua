@@ -1895,6 +1895,7 @@ if _G.AHL then
 end
 _G.AHL = true
 local LocalPlayer = game:GetService("Players").LocalPlayer
+local ChatBox = game:GetService("CoreGui"):WaitForChild("ExperienceChat"):WaitForChild("appLayout"):WaitForChild("chatInputBar"):WaitForChild("Background"):WaitForChild("Container"):WaitForChild("TextContainer"):WaitForChild("TextBoxContainer"):WaitForChild("TextBox")
 local AntiHub = Converted._AntiHub
 local Inspector = AntiHub:WaitForChild("Inspector")
 local Visible = true
@@ -2490,7 +2491,14 @@ end)
 
 PrisonLife.Kick.Activated:Connect(function()
 	local Target = GetUnshortened(PrisonLife.Input.Text)
-	game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("/w ".. Target.DisplayName.. " !kick ".. Target.Name)
+	ChatBox.Text = "/w ".. Target.DisplayName
+	task.wait(0.25)
+	ChatBox.Text = "!kick ".. Target.Name
+	ChatBox:CaptureFocus()
+	task.wait(0.25)
+	keypress(0x0D)
+	task.wait(0.05)
+	keyrelease(0x0D)
 	PrisonLife.Input.Text = ""
 end)
 
@@ -3183,8 +3191,7 @@ if not AK then
 end
 
 task.spawn(function()
-	wait(1)
-	game:GetService("StarterGui"):SetCore("SendNotificaiton", {["Title"] = "AntiHub", ["Text"] = "Made By Username.\nVersion: 1.0", ["Duration"] = 5})
+	game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Loaded", ["Text"] = "Made By Username.\nVersion: 1.0", ["Duration"] = 5})
 end)
 
 while task.wait(0.05) do
