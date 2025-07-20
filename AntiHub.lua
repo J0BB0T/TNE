@@ -71,7 +71,7 @@ local Converted = {
 	["_UICorner23"] = Instance.new("UICorner");
 	["_Nexus"] = Instance.new("TextButton");
 	["_UICorner24"] = Instance.new("UICorner");
-	["_YTower"] = Instance.new("TextButton");
+	["_GTower"] = Instance.new("TextButton");
 	["_UICorner25"] = Instance.new("UICorner");
 	["_Universal1"] = Instance.new("CanvasGroup");
 	["_IY"] = Instance.new("TextButton");
@@ -159,17 +159,21 @@ local Converted = {
 	["_Load"] = Instance.new("TextButton");
 	["_UICorner55"] = Instance.new("UICorner");
 	["_Status"] = Instance.new("TextLabel");
+	["_Version"] = Instance.new("TextLabel");
 	["_UICorner56"] = Instance.new("UICorner");
-	["_Buttons"] = Instance.new("Frame");
 	["_UICorner57"] = Instance.new("UICorner");
-	["_Title"] = Instance.new("TextLabel");
+	["_Buttons"] = Instance.new("Frame");
 	["_UICorner58"] = Instance.new("UICorner");
-	["_Close2"] = Instance.new("TextButton");
+	["_Title"] = Instance.new("TextLabel");
 	["_UICorner59"] = Instance.new("UICorner");
-	["_Collapse"] = Instance.new("TextButton");
+	["_Close2"] = Instance.new("TextButton");
 	["_UICorner60"] = Instance.new("UICorner");
-	["_Stats"] = Instance.new("TextButton");
+	["_Collapse"] = Instance.new("TextButton");
 	["_UICorner61"] = Instance.new("UICorner");
+	["_Version1"] = Instance.new("TextLabel");
+	["_UICorner62"] = Instance.new("UICorner");
+	["_Stats"] = Instance.new("TextButton");
+	["_UICorner63"] = Instance.new("UICorner");
 	["_Inspector"] = Instance.new("BillboardGui");
 	["_Box"] = Instance.new("TextLabel");
 	["_UIStroke"] = Instance.new("UIStroke");
@@ -869,23 +873,23 @@ Converted["_Nexus"].Parent = Converted["_Teleports"]
 Converted["_UICorner24"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner24"].Parent = Converted["_Nexus"]
 
-Converted["_YTower"].Font = Enum.Font.TitilliumWeb
-Converted["_YTower"].Text = "GTower"
-Converted["_YTower"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
-Converted["_YTower"].TextScaled = true
-Converted["_YTower"].TextSize = 14
-Converted["_YTower"].TextWrapped = true
-Converted["_YTower"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_YTower"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
-Converted["_YTower"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_YTower"].BorderSizePixel = 0
-Converted["_YTower"].Position = UDim2.new(0.850000024, 0, 0.686999977, 0)
-Converted["_YTower"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
-Converted["_YTower"].Name = "YTower"
-Converted["_YTower"].Parent = Converted["_Teleports"]
+Converted["_GTower"].Font = Enum.Font.TitilliumWeb
+Converted["_GTower"].Text = "GTower"
+Converted["_GTower"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_GTower"].TextScaled = true
+Converted["_GTower"].TextSize = 14
+Converted["_GTower"].TextWrapped = true
+Converted["_GTower"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_GTower"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_GTower"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_GTower"].BorderSizePixel = 0
+Converted["_GTower"].Position = UDim2.new(0.850000024, 0, 0.686999977, 0)
+Converted["_GTower"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_GTower"].Name = "GTower"
+Converted["_GTower"].Parent = Converted["_Teleports"]
 
 Converted["_UICorner25"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner25"].Parent = Converted["_YTower"]
+Converted["_UICorner25"].Parent = Converted["_GTower"]
 
 Converted["_Universal1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Universal1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1764,20 +1768,41 @@ Converted["_Status"].Size = UDim2.new(0.25, 0, 0.109999999, 0)
 Converted["_Status"].Name = "Status"
 Converted["_Status"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner56"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner56"].Parent = Converted["_TitleBar"]
+Converted["_Version"].Font = Enum.Font.Ubuntu
+Converted["_Version"].Text = "Version: 69.420"
+Converted["_Version"].TextColor3 = Color3.fromRGB(128.0000075697899, 128.0000075697899, 128.0000075697899)
+Converted["_Version"].TextScaled = true
+Converted["_Version"].TextSize = 14
+Converted["_Version"].TextWrapped = true
+Converted["_Version"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Version"].Active = true
+Converted["_Version"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Version"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Version"].BackgroundTransparency = 1
+Converted["_Version"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Version"].BorderSizePixel = 0
+Converted["_Version"].Position = UDim2.new(0.111078434, 0, 0.875172615, 0)
+Converted["_Version"].Size = UDim2.new(0.200000003, 0, 0.0500000007, 0)
+Converted["_Version"].Name = "Version"
+Converted["_Version"].Parent = Converted["_Settings1"]
+
+Converted["_UICorner56"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner56"].Parent = Converted["_Version"]
+
+Converted["_UICorner57"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner57"].Parent = Converted["_TitleBar"]
 
 Converted["_Buttons"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Buttons"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
 Converted["_Buttons"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Buttons"].BorderSizePixel = 0
-Converted["_Buttons"].Position = UDim2.new(0.5, 0, 0.524999976, 0)
+Converted["_Buttons"].Position = UDim2.new(0.5, 0, 0.545000017, 0)
 Converted["_Buttons"].Size = UDim2.new(1, 0, 1.10000002, 0)
 Converted["_Buttons"].Name = "Buttons"
 Converted["_Buttons"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner57"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner57"].Parent = Converted["_Buttons"]
+Converted["_UICorner58"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner58"].Parent = Converted["_Buttons"]
 
 Converted["_Title"].Font = Enum.Font.Sarpanch
 Converted["_Title"].Text = "AntiHub"
@@ -1795,8 +1820,8 @@ Converted["_Title"].Size = UDim2.new(0.174999997, 0, 0.800000012, 0)
 Converted["_Title"].Name = "Title"
 Converted["_Title"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner58"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner58"].Parent = Converted["_Title"]
+Converted["_UICorner59"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner59"].Parent = Converted["_Title"]
 
 Converted["_Close2"].Font = Enum.Font.Nunito
 Converted["_Close2"].Text = "X"
@@ -1813,8 +1838,8 @@ Converted["_Close2"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
 Converted["_Close2"].Name = "Close"
 Converted["_Close2"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner59"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner59"].Parent = Converted["_Close2"]
+Converted["_UICorner60"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner60"].Parent = Converted["_Close2"]
 
 Converted["_Collapse"].Font = Enum.Font.Nunito
 Converted["_Collapse"].Text = "-"
@@ -1831,8 +1856,29 @@ Converted["_Collapse"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
 Converted["_Collapse"].Name = "Collapse"
 Converted["_Collapse"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner60"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner60"].Parent = Converted["_Collapse"]
+Converted["_UICorner61"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner61"].Parent = Converted["_Collapse"]
+
+Converted["_Version1"].Font = Enum.Font.Ubuntu
+Converted["_Version1"].Text = "Version: 69.420"
+Converted["_Version1"].TextColor3 = Color3.fromRGB(128.0000075697899, 128.0000075697899, 128.0000075697899)
+Converted["_Version1"].TextScaled = true
+Converted["_Version1"].TextSize = 14
+Converted["_Version1"].TextWrapped = true
+Converted["_Version1"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Version1"].Active = true
+Converted["_Version1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Version1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Version1"].BackgroundTransparency = 1
+Converted["_Version1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Version1"].BorderSizePixel = 0
+Converted["_Version1"].Position = UDim2.new(0.274520755, 0, 0.85650593, 0)
+Converted["_Version1"].Size = UDim2.new(0.174999997, 0, 0.25, 0)
+Converted["_Version1"].Name = "Version"
+Converted["_Version1"].Parent = Converted["_Buttons"]
+
+Converted["_UICorner62"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner62"].Parent = Converted["_Version1"]
 
 Converted["_Stats"].Font = Enum.Font.SciFi
 Converted["_Stats"].Text = "Added by script for so no errors."
@@ -1852,8 +1898,8 @@ Converted["_Stats"].Size = UDim2.new(0.0500000007, 0, 0.0500000007, 0)
 Converted["_Stats"].Name = "Stats"
 Converted["_Stats"].Parent = Converted["_AntiHub"]
 
-Converted["_UICorner61"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner61"].Parent = Converted["_Stats"]
+Converted["_UICorner63"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner63"].Parent = Converted["_Stats"]
 
 Converted["_Inspector"].Active = true
 Converted["_Inspector"].AlwaysOnTop = true
@@ -1865,7 +1911,6 @@ Converted["_Inspector"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_Inspector"].Name = "Inspector"
 Converted["_Inspector"].Parent = Converted["_AntiHub"]
 
-Converted["_Box"].Font = Enum.Font.Unknown
 Converted["_Box"].Text = "Hamoudip8"
 Converted["_Box"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Box"].TextScaled = true
@@ -1893,6 +1938,7 @@ if _G.AHL then
 	return
 end
 _G.AHL = true
+local SVersion = "1.0.2"
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local ChatBox = game:GetService("CoreGui"):WaitForChild("ExperienceChat"):WaitForChild("appLayout"):WaitForChild("chatInputBar"):WaitForChild("Background"):WaitForChild("Container"):WaitForChild("TextContainer"):WaitForChild("TextBoxContainer"):WaitForChild("TextBox")
 local AntiHub = Converted._AntiHub
@@ -1975,6 +2021,7 @@ end
 local Team = {}
 local HidChat = game:GetService("Players").Chat
 local function HubChat(msg)
+	if msg == "" or msg == " " then return end
 	HidChat(game:GetService("Players"), "TNEChatAH".. msg)
 end
 AntiHub.Parent = LocalPlayer.PlayerGui
@@ -2050,9 +2097,9 @@ local function OnMessage(plr, msg)
 			Unread += 1
 			if Config.NotifyUnread then
 				if (string.len(msg) - 9) >= 10 then
-					game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat - ".. plr.Name, ["Text"] = "New Message:\n".. msg:sub(10, 20).. "...", ["Duration"] = 1})
+					game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat - ".. plr.Name, ["Text"] = "New Message:\n".. msg:sub(10, 16).. "...", ["Duration"] = 1})
 				else
-					game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat - ".. plr.Name, ["Text"] = "New Message:\n".. msg, ["Duration"] = 1})
+					game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat - ".. plr.Name, ["Text"] = "New Message:\n".. msg:sub(10, 19), ["Duration"] = 1})
 				end
 			end
 		end
@@ -2485,6 +2532,11 @@ PrisonLife.PWare.Activated:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
 end)
 PrisonLife.Crash.Activated:Connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotificaiton", {["Title"] = "AntiHub - Crashing", ["Text"] = "Lowering FPS Cap.", ["Duration"] = 5})
+	game:GetService("RunService").Heartbeat:Connect(function()
+		LocalPlayer.PlayerScripts.ClientGunReplicator.Disabled = true
+		setfpscap(10)
+	end)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Crash.lua"))()
 end)
 
@@ -2689,6 +2741,7 @@ Universal.WOW.Activated:Connect(function()
 end)
 
 Chat.Send.Activated:Connect(function()
+	if Chat.Input.Text == "" or Chat.Input.Text == " " then return end
 	if string.len(Chat.Logs.Chat.Text) + string.len("<b>You:</b> ".. Chat.Input.Text.. "\n") >= 16385 then
 		Chat.Logs.Chat.Text = Chat.Logs.Chat.Text:sub(1, string.len(Chat.Logs.Chat.Text) - string.len("<b>You:</b> ".. Chat.Input.Text.. "\n"))
 	end
@@ -2708,6 +2761,7 @@ Chat.Input.FocusLost:Connect(function(EP)
 		Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y.Offset - Chat.Logs.AbsoluteWindowSize.Y)
 		HubChat(Chat.Input.Text)
 		Chat.Input.Text = ""
+		Chat.Input:CaptureFocus()
 	end
 end)
 
@@ -3190,7 +3244,9 @@ if not AK then
 end
 
 task.spawn(function()
-	game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Loaded", ["Text"] = "Made By Username.\nVersion: 1.0.1", ["Duration"] = 5})
+	AntiHub.TitleBar.Buttons.Version.Text = SVersion
+	AntiHub.TitleBar.Container.Container.Settings.Version.Text = SVersion
+	game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Loaded", ["Text"] = "Made By Username.\nVersion: ".. SVersion, ["Duration"] = 5})
 end)
 
 while task.wait(0.05) do
