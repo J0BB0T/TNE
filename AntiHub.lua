@@ -1767,7 +1767,6 @@ Converted["_Status"].Parent = Converted["_Settings1"]
 Converted["_UICorner56"].CornerRadius = UDim.new(0.0149999997, 0)
 Converted["_UICorner56"].Parent = Converted["_TitleBar"]
 
-Converted["_Buttons"].Active = true
 Converted["_Buttons"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Buttons"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
 Converted["_Buttons"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -2486,11 +2485,6 @@ PrisonLife.PWare.Activated:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
 end)
 PrisonLife.Crash.Activated:Connect(function()
-	game:GetService("StarterGui"):SetCore("SendNotificaiton", {["Title"] = "AntiHub - Crashing", ["Text"] = "Lowering FPS Cap.", ["Duration"] = 5})
-	game:GetService("RunService").Heartbeat:Connect(function()
-		LocalPlayer.PlayerScripts.ClientGunReplicator.Disabled = true
-		setfpscap(10)
-	end)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Crash.lua"))()
 end)
 
@@ -3196,7 +3190,7 @@ if not AK then
 end
 
 task.spawn(function()
-	game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Loaded", ["Text"] = "Made By Username.\nVersion: 1.0", ["Duration"] = 5})
+	game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Loaded", ["Text"] = "Made By Username.\nVersion: 1.0.1", ["Duration"] = 5})
 end)
 
 while task.wait(0.05) do
