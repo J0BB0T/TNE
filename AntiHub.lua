@@ -2529,7 +2529,7 @@ PrisonLife.PWare.Activated:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
 end)
 PrisonLife.Crash.Activated:Connect(function()
-	game:GetService("StarterGui"):SetCore("SendNotificaiton", {["Title"] = "AntiHub - Crashing", ["Text"] = "Lowering FPS Cap.", ["Duration"] = 5})
+	game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Crashing", ["Text"] = "Lowering FPS Cap.", ["Duration"] = 5})
 	game:GetService("RunService").Heartbeat:Connect(function()
 		LocalPlayer.PlayerScripts.ClientGunReplicator.Disabled = true
 		setfpscap(10)
