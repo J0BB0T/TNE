@@ -1936,6 +1936,7 @@ if _G.AHL then
 end
 _G.AHL = true
 _G.AH = Converted._AntiHub
+setfpscap(60)
 local SVersion = "1.0.2"
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local ChatBox = game:GetService("CoreGui"):WaitForChild("ExperienceChat"):WaitForChild("appLayout"):WaitForChild("chatInputBar"):WaitForChild("Background"):WaitForChild("Container"):WaitForChild("TextContainer"):WaitForChild("TextBoxContainer"):WaitForChild("TextBox")
