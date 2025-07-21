@@ -1935,6 +1935,7 @@ if _G.AHL then
 	return
 end
 _G.AHL = true
+_G.AH = Converted._AntiHub
 local SVersion = "1.0.2"
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local ChatBox = game:GetService("CoreGui"):WaitForChild("ExperienceChat"):WaitForChild("appLayout"):WaitForChild("chatInputBar"):WaitForChild("Background"):WaitForChild("Container"):WaitForChild("TextContainer"):WaitForChild("TextBoxContainer"):WaitForChild("TextBox")
@@ -3202,47 +3203,26 @@ Players.Key.Text = "<font color=\"rgb(178,0,0)\">Normal User</font> | <font colo
 
 HidChat(game:GetService("Players"), "TNEListStart")
 
+local AK, AKO = loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiKick.lua"))()
 
-local AK, AKO = pcall(function()
-	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(255,0,0)\">Disabled</font>"
-	if not hookmetamethod then 
-		warn("AntiHub - AntiKick Failed (Missing Function)")
-		return "hookmetamethod"
-	end
-	local oldhmmi
-	local oldhmmnc
-	local oldKickFunction
-	if hookfunction then
-		oldKickFunction = hookfunction(LocalPlayer.Kick, function() end)
-	end
-	oldhmmi = hookmetamethod(game, "__index", function(self, method)
-		if self == LocalPlayer and method:lower() == "kick" then
-			return error("Expected ':' not '.' calling member function Kick", 2)
-		end
-		return oldhmmi(self, method)
-	end)
-	oldhmmnc = hookmetamethod(game, "__namecall", function(self, ...)
-		if self == LocalPlayer and getnamecallmethod():lower() == "kick" then
-			return
-		end
-		return oldhmmnc(self, ...)
-	end)
-	AntiKick = true
-	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
-	print("AntiHub - AntiKick Enabled")
-end)
-
-if not AK then
-	if AKO ~= "hookmetamethod" then
+if AK then
+	if AKO == "loaded" then
+		AntiKick = true
+		AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
+	elseif AKO == "function" then
+		AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(255,0,0)\">Disabled</font>"
+	else
 		AntiKick = true
 		AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
 		print("AntiHub - AntiKick Already Enabled")
 	end
+else
+	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(255,0,0)\">Disabled</font>"
 end
 
 task.spawn(function()
-	AntiHub.TitleBar.Buttons.Version.Text = SVersion
-	AntiHub.TitleBar.Container.Container.Settings.Version.Text = SVersion
+	AntiHub.TitleBar.Buttons.Version.Text = "V".. SVersion
+	AntiHub.TitleBar.Container.Container.Settings.Version.Text = "Version ".. SVersion
 	game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Loaded", ["Text"] = "Made By Username.\nVersion: ".. SVersion, ["Duration"] = 5})
 end)
 
