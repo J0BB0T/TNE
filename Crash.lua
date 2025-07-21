@@ -1,116 +1,476 @@
-                                                                                 local v0=game:        
-                                                                        GetService("Players");local v1=v0.LocalPlayer;  
-                                                                    local v2=game:GetService("Teams");local v3={};local v4={};    
-                                                                local v5={};local v6=game:GetService("ReplicatedStorage");local v7=game 
-                                                            :GetService("RunService").Heartbeat;local v8=game:GetService("RunService").   
-                                                          RenderStepped;local v9=game:GetService("RunService").Stepped;Toggles={};          
-                                                        Connections={CharacterAdded=v1.CharacterAdded};local v10=false;local v11={};local v12 
-                                                      =function(v26) workspace.Remote.ItemHandler:InvokeServer({Position=v1.Character.Head.     
-                                                    Position,Parent=workspace.Prison_ITEMS.giver:FindFirstChild(v26) or workspace.Prison_ITEMS.   
-                                                  single:FindFirstChild(v26) });end;local v13=function(v27) local v28=0 + 0 ;local v29;local v30;   
-                                                  local v31;while true do local v56=163 -(92 + 71) ;while true do if (v56==(1 + 0)) then if (v28==(2  
-                                                -0)) then local v101=765 -(574 + 191) ;while true do if (v101==(341 -(218 + 123))) then v31=(v30-v29) * 
-                                                 1000 ;return v31;end end end break;end if ((1581 -(1535 + 46))==v56) then if (v28==(0 + 0)) then if v27  
-                                              then task.wait(v27);end v29=tick();v28=1 + 0 ;end if (v28==(561 -(306 + 254))) then pcall(function()          
-                                              workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.buttons["Car Spawner"]["Car Spawner"]);end); 
-                                            v30=tick();v28=2 + 0 ;end v56=1 + 0 ;end end end end;local v14=function() local v32=0 -0 ;while true do if (v32== 
-                                            0) then task.spawn(v12,"AK-47");task.spawn(v12,"Remington 870");v32=1468 -(899 + 568) ;end if (v32==1) then v12(    
-                                          "M9");task.wait();break;end end end;local v15=function(v33,v34) local v35=0 + 0 ;while true do if (v35==(0 -0)) then if 
-                                           (v33 and (v33=="old")) then local v88=603 -(268 + 335) ;local v89;while true do if (v88==(290 -(60 + 230))) then v89=572 
-                                           -(426 + 146) ;while true do if (v89==(0 + 0)) then local v166=1456 -(282 + 1174) ;while true do if (v166==(811 -(569 + 242 
-                                          ))) then game:GetService("Workspace").Remote.ItemHandler:InvokeServer(v34);return;end end end end break;end end end if v33  
-                                        then workspace.Remote.ItemHandler:InvokeServer({Position=v1.Character.Head.Position,Parent=v33:FindFirstChild(v34)});else       
-                                        workspace.Remote.ItemHandler:InvokeServer({Position=v1.Character.Head --[[==============================]].Position,Parent=       
-                                        workspace.Prison_ITEMS.giver:FindFirstChild(v34) or         --[[============================================]]workspace.          
-                                        Prison_ITEMS.single:FindFirstChild(v34) });end break;   --[[======================================================]]end end end;    
-                                      local v16=function(v36) v6.meleeEvent:FireServer(v36) --[[==========================================================]];end;local v17=   
-                                      function(v37) if (v37=="superknife") then local v57 --[[==============================================================]]=0 -0 ;local    
-                                      v58;local v59;local v60;local v61;local v62;while   --[[================================================================]]true do if (v57 
-                                      ==1) then local v90=0 + 0 ;while true do if (v90==( --[[==================================================================]]1024 -(706 +  
-                                      318))) then v59=Instance.new("Animation",v58);v59.  --[[==================================================================]]AnimationId=      
-                                    "rbxassetid://218504594";v90=1 + 0 ;end if (v90==(    --[[====================================================================]]1252 -(721 +  
-                    530))) then v57=1273 -(945 + 326) ;break;end end end if (v57==(0 -0)) --[[====================================================================]] then v15(false 
-              ,"Crude Knife");v58=v1.Backpack:FindFirstChild("Crude Knife") or v1.        --[[======================================================================]]Character:    
-            FindFirstChild("Crude Knife") ;v57=1 + 0 ;end if (v57==(703 -(271 + 429)))    --[[======================================================================]]then v62=game 
-          :GetService("UserInputService").InputBegan:Connect(function(v102) if ((v102.    --[[======================================================================]]UserInputType 
-        ==Enum.UserInputType.MouseButton1) or (v102.UserInputType==Enum.UserInputType.    --[[======================================================================]]Touch)) then  
-        if (v1.Character and v1.Character:FindFirstChild("Crude Knife")) then if  not v61 --[[======================================================================]] then local   
-      v185=0 + 0 ;while true do if (v185==(6 -4)) then v61=false;break;end if (v185==(    --[[======================================================================]]1501 -(1408 + 
-       92))) then for v205,v206 in pairs(v0:GetPlayers()) do if  not (v206==v1) then if (   --[[==================================================================]]v206.Character  
-      and v206.Character:FindFirstChild("Humanoid")) then if  not (v206.Character:          --[[================================================================]]FindFirstChild(   
-    "Humanoid").Health==(1086 -(461 + 625))) then local v218,v219=v1.Character.PrimaryPart, --[[==============================================================]]v206.Character.   
-    PrimaryPart;if (v218 and v219) then if ((v218.Position-v219.Position).Magnitude<=(1293 -( --[[==========================================================]]993 + 295))) then   
-    for v220=1 + 0 ,1186 -(418 + 753)  do v16(v206);end end end end end end end task.wait(0.1 + --[[====================================================]] 0 );v185=287 -(175 +   
-    110) ;end if (v185==(0 + 0)) then v61=true;v60:Play();v185=4 -3 ;end end end end end end);    --[[==============================================]]task.spawn(function()     
-    local v103=0 + 0 ;local v104;while true do if (v103==(0 + 0)) then v104=529 -(406 + 123) ;while   --[[====================================]]true do if (v104==(1770 -(    
-    1749 + 20))) then v59:Destroy();v59=nil;v104=1 + 1 ;end if ((1061 -(810 + 251))==v104) then v1.       --[[========================]]CharacterAdded:Wait();v62:Disconnect( 
-    );v104=1323 -(1249 + 73) ;end if (v104==(1 + 1)) then v60=nil;v62=nil;break;end end break;end end end);break;end if (v57==(1 + 1)) then v60=v1.Character:FindFirstChild 
-  ("Humanoid"):LoadAnimation(v59);v61=false;v57=3 + 0 ;end end elseif (v37=="bat") then local v73=1145 -(466 + 679) ;local v74;local v75;local v76;local v77;local v78;   
-  local v79;local v80;while true do if (v73==0) then v74=Instance.new("Tool",v1.Backpack);v74.GripPos=Vector3.new(0.1 -0 , -(2 -1),1900 -(106 + 1794) );v74.Name="Bat"; 
-  v73=1 + 0 ;end if (v73==(1 + 2)) then local v124=0 -0 ;while true do if (v124==(2 -1)) then v80=v75.Touched:Connect(function(v167) if v78 then local v190=114 -(4 + 110 
-  ) ;local v191;while true do if (v190==(584 -(57 + 527))) then v191=v167.Parent:FindFirstChild("Humanoid");if v191 then local v212=v0:FindFirstChild(v167.Parent.Name);  
-  if v212 then for v217=1,1437 -(41 + 1386)  do v16(v212);end end end break;end end end end);v73=4 + 0 ;break;end if (v124==(103 -(17 + 86))) then v78=false;v79=v74.     
-  Activated:Connect(function() if  not v78 then local v192=0 + 0 ;while true do if (v192==(4 -3)) then task.wait(0.1);v78=false;break;end if (v192==(0 -0)) then v78=true 
-  ;v77:Play();v192=1;end end end end);v124=2 -1 ;end end end if (v73==(168 -(122 + 44))) then local v125=406 -(183 + 223) ;while true do if ((0 -0)==v125) then v76=      
-  Instance.new("Animation",v74);v76.AnimationId="rbxassetid://218504594";v125=1 + 0 ;end if (v125==(3 -2)) then v77=v1.Character.Humanoid:LoadAnimation(v76);v73=3 + 0 ;  
-  break;end end end if (v73==(1 + 0)) then local v126=0 -0 ;while true do if (v126==(339 -(118 + 220))) then v75.Size=Vector3.new(0.4 + 0 ,69 -(30 + 35) ,0.4 + 0 );v73=1 
-   + 1 ;break;end if (v126==(1257 -(1043 + 214))) then v75=Instance.new("Part",v74);v75.Name="Handle";v126=3 -2 ;end end end if (v73==(1497 -(711 + 782))) then task.     
-  spawn(function() local v131=1212 -(323 + 889) ;while true do if (v131==(469 -(270 + 199))) then v1.CharacterAdded:Wait();v79:Disconnect();v131=2 -1 ;end if (v131==(583 
-   -(361 + 219))) then v77=nil;v76=nil;v131=324 -(53 + 267) ;end if (v131==(1 + 1)) then v74:Destroy();v76:Destroy();v131=1822 -(580 + 1239) ;end if (v131==1) then v80:    
-  Disconnect();v75:Destroy();v131=415 -(15 + 398) ;end if (v131==(986 -(18 + 964))) then v78=nil;break;end end end);break;end end elseif (v37=="clicktp") then local v105=0 
-   -0 ;local v106;local v107;while true do if (v105==(0 + 0)) then local v141=0 + 0 ;while true do if (v141==(851 -(20 + 830))) then v105=1 + 0 ;break;end if ((126 -(116 + 
-   10))==v141) then v106=Instance.new("Tool");v106.RequiresHandle=false;v141=1 + 0 ;end end end if (v105==3) then task.spawn(function() local v154=738 -(542 + 196) ;while  
-  true do if ((2 + 0)==v154) then v107=nil;break;end if (v154==(4 -3)) then v107:Disconnect();v106=nil;v154=3 -1 ;end if (v154==(0 + 0)) then v1.CharacterAdded:Wait();v106 
-  :Destroy();v154=1837 -(1045 + 791) ;end end end);break;end if (v105==(4 -2)) then local v142=0 + 0 ;while true do if ((0 + 0)==v142) then v107=nil;v107=v106.Activated:   
-  Connect(function() local v193=0 -0 ;local v194;local v195;local v196;local v197;local v198;while true do if (v193==2) then v198=v194.CFrame + v197 ;v194.CFrame=v198;     
-  break;end if (v193==(1575 -(1281 + 293))) then v196=v195.Position + Vector3.new(0 -0 ,268.5 -(28 + 238) ,1551 -(1126 + 425) ) ;v197=v196-v194.Position ;v193=407 -(118 +  
-  287) ;end if (v193==(0 + 0)) then local v208=0 -0 ;while true do if (v208==(1122 -(118 + 1003))) then v193=2 -1 ;break;end if (v208==(377 -(142 + 235))) then v194=v1.    
-  Character:FindFirstChild("HumanoidRootPart");v195=v1:GetMouse().Hit;v208=4 -3 ;end end end end end);v142=1 + 0 ;end if (v142==(978 -(553 + 424))) then v105=5 -2 ;break;  
-  end end end if (v105==(1 + 0)) then v106.Name="Click-TP";v106.Parent=v1.Backpack;v105=2 + 0 ;end end elseif (v37=="btools") then local v132=0 + 0 ;local v133;local v134; 
-  local v135;local v136;local v137;while true do if (v132==0) then local v168=1156 -(1074 + 82) ;while true do if (v168==(0 + 0)) then v133=Instance.new("HopperBin",v1.    
-  Backpack);v134=Instance.new("HopperBin",v1.Backpack);v168=1 + 0 ;end if (v168==(1785 -(214 + 1570))) then v132=1456 -(990 + 465) ;break;end end end if (v132==3) then     
-  v134.BinType="GameTool";v135.BinType="Script";v132=3 + 1 ;end if (v132==(8 -4)) then v136.BinType="Grab";v137.BinType="Clone";break;end if (v132==(5 -3)) then local    
-  v173=0 -0 ;while true do if (v173==(0 + 0)) then v137=Instance.new("HopperBin",v1.Backpack);v133.BinType="Hammer";v173=4 -3 ;end if (v173==(2 -1)) then v132=756 -(239  
-  + 514) ;break;end end end if ((1 + 0)==v132) then local v174=1329 -(797 + 532) ;while true do if (v174==(0 + 0)) then v135=Instance.new("HopperBin",v1.Backpack);v136=  
-    Instance.new("HopperBin",v1.Backpack);v174=1 + 0 ;end if (v174==(1 + 0)) then v132=4 -2 ;break;end end end end end end;local v18=function() local v38=1202 -(373 +    
-    829) ;local v39;while true do if (v38==0) then v14();if  not (v1.TeamColor==BrickColor.new("Bright blue")) then local v91=0;local v92;while true do if (v91==(731 -(  
-    476 + 255))) then v92=0;while true do if (v92==0) then v15(false,"Crude Knife");v15(false,"Hammer");break;end end break;end end end v38=1131 -(369 + 761) ;end if (   
-    v38==(2 + 0)) then if workspace.Prison_ITEMS.single:FindFirstChild("Key card") then v15(workspace.Prison_ITEMS.single,"Key card");end v17("bat");v38=5 -2 ;end if (   
-      v38==(5 -2)) then v17("btools");break;end if (v38==(1 -0)) then v39=workspace.Prison_ITEMS.giver:FindFirstChild("Dinner") or workspace.Prison_ITEMS.giver:        
-      FindFirstChild("Breakfast") or workspace.Prison_ITEMS.giver:FindFirstChild("Lunch") ;if v39 then v15(false,v39.Name);end v38=240 -(64 + 174) ;end end end;local   
-      v19=function(v40,v41) if (v40=="sit") then v1.Character:FindFirstChild("Humanoid").Sit=true;elseif (v40=="unsit") then local v81=0 + 0 ;while true do if (v81==(0 
-         -0)) then if v41 then local v146=0 + 0 ;local v147;while true do if (v146==(336 -(144 + 192))) then v147=v1.Character:FindFirstChildOfClass("Humanoid");for    
-        v199=1 + 0 ,2 + 6  do local v200=0 -0 ;while true do if ((217 -(42 + 174))==v200) then v8:Wait();v147.Sit=false;v200=2;end if (v200==(0 + 0)) then v7:Wait();   
-        v147.Sit=false;v200=1 + 0 ;end if (v200==2) then v9:Wait();v147.Sit=false;break;end end end break;end end end v1.Character:FindFirstChildOfClass("Humanoid"):   
-          ChangeState(Enum.HumanoidStateType.Running);break;end end elseif (v40=="speed") then v1.Character:FindFirstChild("Humanoid").WalkSpeed=v41;elseif (v40==    
-            "jumppw") then v1.Character:FindFirstChild("Humanoid").JumpPower=v41;elseif (v40=="die") then v1.Character:FindFirstChild("Humanoid").Health=0;elseif (   
-              v40=="died") then v1.Character:FindFirstChildWhichIsA("Humanoid"):ChangeState(Enum.HumanoidStateType.Dead);elseif (v40=="jump") then v1.Character:      
-                FindFirstChild("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping);elseif (v40=="state") then v1.Character:FindFirstChildOfClass("Humanoid"):     
-                  ChangeState(v41);elseif (v40=="equip") then v1.Character:FindFirstChild("Humanoid"):EquipTool(v41);elseif (v40=="unequip") then v1.Character:     
-                      FindFirstChild("Humanoid"):UnequipTools();end end;local v20=function(v42,v43,v44) local v45=0 + 0 ;local v46;local v47;local v48;while true   
-                                  do if (v45==(0 + 0)) then v46=0 + 0 ;v47=nil;v45=1505 -(363 + 1141) ;end if (v45==(1581 -(1183 + 397))) then v48=nil;while true   
-                                      do if (v46==(2 -1)) then repeat v9:Wait();until v42:FindFirstChild(v43) or ((tick() -v48)>=(0 + 0))  v48=nil;v46=2 + 0 ;end   
-                                      if (v46==(1977 -(1913 + 62))) then if v42:FindFirstChild(v43)          then return v42:FindFirstChild(v43);else return nil;   
-                                      end break;end if (v46==(0 + 0)) then v47=v44 or (13 -8) ;v48=         tick() + v47 ;v46=327 -(192 + 134) ;end end break;end 
-                                       end end;local function v21() end local function v22(v49)             print("Debug: "   .. v49 );end local v23=function(v50 
-                                      ) workspace.Remote.TeamEvent:FireServer(v50);end;local v24=           function(v51) local v52=1276 -(316 + 960) ;local v53; 
-                                      while true do if (v52==1) then if (v51=="criminal") then                local v93=1933 -(565 + 1368) ;local v94;while true  
-                                      do if (v93==(0 -0)) then v94=0;while true do if (v94==(2 + 0)           ) then return;end if (v94==(1661 -(1477 + 184)))    
-                                      then if (v1.TeamColor.Name=="Medium stone grey") then v23(              "Bright orange");end workspace["Criminals Spawn"] 
-                                        .SpawnLocation.CanCollide=false;v94=1 -0 ;end if ((1 + 0)==           v94) then repeat local v187=0 + 0 ;local v188;    
-                                        while true do if (v187==(856 -(564 + 292))) then v188=0 -0              ;while true do if ((0 -0)==v188) then pcall(    
-                                        function() workspace["Criminals Spawn"].SpawnLocation.                  CFrame=v1.Character:FindFirstChild(           
-                                        "HumanoidRootPart").CFrame;end);v9:Wait();break;end end                 break;end end until v1.TeamColor==BrickColor. 
-                                        new("Really red")  workspace["Criminals Spawn"].                          SpawnLocation.CFrame=v4.Crimpad;v94=306 - 
-                                        (244 + 60) ;end end break;end end elseif (v51=="inmate")                  then v23("Bright orange");elseif (v51==   
-                                          "guard") then local v148=0 + 0 ;local v149;while true                     do if (v148==(0 -0)) then v149=476 -( 
-                                          41 + 435) ;while true do if (0==v149) then v23(                             "Bright blue");if ( #v2.Guards: 
-                                            GetPlayers()>(1008 -(938 + 63))) then return;end                            break;end end break;end   
-                                            end end v1.CharacterAdded:Wait();v52=2 + 0 ;end                                   if (v52==(  
-                                              1127 -(936 + 189))) then v1.Character:        
-                                                WaitForChild("HumanoidRootPart").CFrame=  
-                                                    v53;break;end if (v52==0) then v53= 
-                                                          v1.Character:           
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local Teams = game:GetService("Teams")
+local SavedArgs = {}
+local SavedPositions = {}
+local States = {}
+local Rstorage = game:GetService("ReplicatedStorage")
+local Hbeat = game:GetService("RunService").Heartbeat
+local Rstep = game:GetService("RunService").RenderStepped
+local Stepped = game:GetService("RunService").Stepped
+Toggles = {}
+Connections = {["CharacterAdded"] = LocalPlayer.CharacterAdded}
+local Unloaded = false
+local states = {}
+local Gun = function(args)
+	workspace.Remote.ItemHandler:InvokeServer({ Position = LocalPlayer.Character.Head.Position, Parent = workspace.Prison_ITEMS.giver:FindFirstChild(args) or workspace.Prison_ITEMS.single:FindFirstChild(args) })
+end
+
+local RTPing = function(value)
+	if value then
+		task.wait(value)
+	end
+	local RT1 = tick()
+	pcall(function()
+		workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.buttons["Car Spawner"]["Car Spawner"])
+	end)
+	local RT2 = tick()
+	local RoundTrip = (RT2 - RT1) * 1000
+	return RoundTrip
+end
+
+local AllGuns = function()
+	task.spawn(Gun, "AK-47")
+	task.spawn(Gun, "Remington 870")
+	Gun("M9")
+	task.wait()
+end
+
+local ItemHand = function(source, args)
+	if source and source == "old" then
+		game:GetService("Workspace").Remote.ItemHandler:InvokeServer(args)
+		return
+	end
+	if source then
+		workspace.Remote.ItemHandler:InvokeServer({ Position = LocalPlayer.Character.Head.Position, Parent = source:FindFirstChild(args) })
+	else
+		workspace.Remote.ItemHandler:InvokeServer({ Position = LocalPlayer.Character.Head.Position, Parent = workspace.Prison_ITEMS.giver:FindFirstChild(args) or workspace.Prison_ITEMS.single:FindFirstChild(args) })
+	end
+end
+
+local MeleEve = function(args)
+	Rstorage.meleeEvent:FireServer(args)
+end
+
+local SpawnClientStuff = function(arg)
+	if arg == "superknife" then
+		ItemHand(false, "Crude Knife")
+		local knife = LocalPlayer.Backpack:FindFirstChild("Crude Knife") or LocalPlayer.Character:FindFirstChild("Crude Knife")
+		local animate = Instance.new("Animation", knife)
+		animate.AnimationId = "rbxassetid://218504594"
+		local animtrack = LocalPlayer.Character:FindFirstChild("Humanoid"):LoadAnimation(animate)
+		local attacking = false
+		local inPutCon = game:GetService("UserInputService").InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				if LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Crude Knife") then
+					if not attacking then
+						attacking = true
+						animtrack:Play()
+						for i, v in pairs(Players:GetPlayers()) do
+							if not (v == LocalPlayer) then
+								if v.Character and v.Character:FindFirstChild("Humanoid") then
+									if not (v.Character:FindFirstChild("Humanoid").Health == 0) then
+										local LPart, VPart = LocalPlayer.Character.PrimaryPart, v.Character.PrimaryPart
+										if LPart and VPart then
+											if (LPart.Position - VPart.Position).Magnitude <= 5 then
+												for i = 1, 15 do
+													MeleEve(v)
+												end
+											end
+										end
+									end
+								end
+							end
+						end
+						task.wait(0.1)
+						attacking = false
+					end
+				end
+			end
+		end)
+		task.spawn(function()
+			LocalPlayer.CharacterAdded:Wait()
+			inPutCon:Disconnect()
+			animate:Destroy()
+			animate = nil
+			animtrack = nil
+			inPutCon = nil
+		end)
+	elseif arg == "bat" then
+		local tool = Instance.new("Tool", LocalPlayer.Backpack)
+		tool.GripPos = Vector3.new(0.1, -1, 0)
+		tool.Name = "Bat"
+		local handle = Instance.new("Part", tool)
+		handle.Name = "Handle"
+		handle.Size = Vector3.new(0.4, 4, 0.4)
+		local animate = Instance.new("Animation", tool)
+		animate.AnimationId = "rbxassetid://218504594"
+		local animtrack = LocalPlayer.Character.Humanoid:LoadAnimation(animate)
+		local attacking = false
+		local activate = tool.Activated:Connect(function()
+			if not attacking then
+				attacking = true
+				animtrack:Play()
+				task.wait(0.1)
+				attacking = false
+			end
+		end)
+		local Touched = handle.Touched:Connect(function(part)
+			if attacking then
+				local human = part.Parent:FindFirstChild("Humanoid")
+				if human then
+					local plr = Players:FindFirstChild(part.Parent.Name)
+					if plr then
+						for i = 1, 10 do
+							MeleEve(plr)
+						end
+					end
+				end
+			end
+		end)
+		task.spawn(function()
+			LocalPlayer.CharacterAdded:Wait()
+			activate:Disconnect()
+			Touched:Disconnect()
+			handle:Destroy()
+			tool:Destroy()
+			animate:Destroy()
+			animtrack = nil
+			animate = nil
+			attacking = nil
+		end)
+	elseif arg == "clicktp" then
+		local newTool = Instance.new("Tool")
+		newTool.RequiresHandle = false
+		newTool.Name = "Click-TP"
+		newTool.Parent = LocalPlayer.Backpack
+		local tempocon = nil
+		tempocon = newTool.Activated:Connect(function()
+			local Get = LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+			local Wi = LocalPlayer:GetMouse().Hit
+			local Fi = Wi.Position + Vector3.new(0, 2.5, 0)
+			local Anywhere = Fi - Get.Position
+			local YouGo = Get.CFrame + Anywhere
+			Get.CFrame = YouGo
+		end)
+		task.spawn(function()
+			LocalPlayer.CharacterAdded:Wait()
+			newTool:Destroy()
+			tempocon:Disconnect()
+			newTool = nil
+			tempocon = nil
+		end)
+	elseif arg == "btools" then
+		local hammer = Instance.new("HopperBin", LocalPlayer.Backpack)
+		local gametool = Instance.new("HopperBin", LocalPlayer.Backpack)
+		local scriptt = Instance.new("HopperBin", LocalPlayer.Backpack)
+		local grab = Instance.new("HopperBin", LocalPlayer.Backpack)
+		local clonee = Instance.new("HopperBin", LocalPlayer.Backpack)
+		hammer.BinType = "Hammer"
+		gametool.BinType = "GameTool"
+		scriptt.BinType = "Script"
+		grab.BinType = "Grab"
+		clonee.BinType = "Clone"
+	end
+end
 
 
-WaitForChild("HumanoidRootPart").CFrame;v4.AutoRe=v53;v52=1 + 0 ;end end end;local v25=function(v54,v55) if (v54=="servercrash") then local v64=0;local v65;local v66;local v67;local v68;local v69;while true do if (v64==(1 + 0)) then v66,v67=v1.Character:WaitForChild("HumanoidRootPart").Position,workspace:FindFirstChildWhichIsA("BasePart").Position;for v109,v110 in pairs(v0:GetPlayers()) do v65[ #v65 + (1614 -(1565 + 48)) ]={Hit=workspace:FindFirstChildWhichIsA("Part"),Cframe=CFrame.new(),Distance=38736 + 31263 ,RayObject=Ray.new(v66,v67)};end v64=2 + 0 ;end if (v64==(1140 -(782 + 356))) then v68=(9302 -4278) -#v65 ;v69=v1.Backpack:FindFirstChild("M9") or v1.Character:FindFirstChild("M9") ;v64=270 -(176 + 91) ;end if ((1914 -(340 + 1571))==v64) then task.spawn(function() local v112=0 -0 ;while true do if (v112==(0 -0)) then for v156=1773 -(1733 + 39) ,v68 do v6.ShootEvent:FireServer({},v69);end task.delay(41 -26 ,function() local v157=1092 -(975 + 117) ;while true do if (v157==(1875 -(157 + 1718))) then v22("Debug_Crash events done");while v8:Wait() do v6.ShootEvent:FireServer(v65,v69);end break;end end end);v112=1 + 0 ;end if (v112==(3 -2)) then while task.wait() do local v158=0 -0 ;local v159;while true do if (v158==(1018 -(697 + 321))) then v159=0 -0 ;while true do if (v159==(1 + 0)) then v69=v1.Backpack:FindFirstChild("M9");if  not v69 then local v213=512 -(409 + 103) ;while true do if (v213==(0 -0)) then v12("M9");task.wait();v213=96 -(51 + 44) ;end if (v213==(1 -0)) then v69=v1.Backpack:FindFirstChild("M9");break;end end end break;end if (v159==(1317 -(1114 + 203))) then v1.CharacterAdded:Wait();wait();v159=727 -(228 + 498) ;end end break;end end end break;end end end);break;end if (v64==(0 -0)) then if ( #v2.Guards:GetPlayers()<(4 + 4)) then v24("guard");else v12("M9");task.wait();end v65={};v64=1 -0 ;end end elseif (v54=="timeout") then v12("AK-47");task.wait();local v82=v1.Backpack:FindFirstChild("AK-47") or v1.Character:FindFirstChild("AK-47") ;local v83={};local v84,v85=workspace:FindFirstChildWhichIsA("BasePart"),workspace:FindFirstChildOfClass("Part");for v97=664 -(174 + 489) ,260 -160  do v83[ #v83 + (1906 -(830 + 1075)) ]={Hit=v84,Cframe=CFrame.new(v84.Position,v85.Position) * CFrame.new(0,524 -(303 + 221) ,math.random(184 -115 ,701226 -(322 + 905) )) ,Distance=(v84.Position-v85.Position).Magnitude,RayObject=Ray.new(v84.Position,(v85.Position-v84.Position).unit * (7000610 -(602 + 9)) )};end task.spawn(function() while task.wait(1189.03 -(449 + 740) ) do pcall(function() local v127=872 -(826 + 46) ;while true do if (v127==(1162 -(171 + 991))) then if  not v82 then v12("AK-47");task.wait();v82=v1.Backpack:FindFirstChild("AK-47");end v6.ShootEvent:FireServer(v83,v82);break;end end end);end end);if ((v1.TeamColor~=BrickColor.new("Bright blue")) and ( #v2.Guards:GetPlayers()==(955 -(245 + 702)))) then local v113=0 -0 ;local v114;while true do if (v113==(0 -0)) then v114=0 + 0 ;while true do if ((0 + 0)==v114) then v21("Error","Guards team full!");return;end end break;end end end local v86={};local v87=v1.Character:FindFirstChild("HumanoidRootPart").Position;for v99,v100 in pairs(v0:GetPlayers()) do if (v100 and v100.Character) then local v128=1898 -(260 + 1638) ;local v129;while true do if (v128==(0 -0)) then v129=v100.Character:FindFirstChild("HumanoidRootPart").Position;v86[ #v86 + (441 -(382 + 58)) ]={Hit=v100.Character:FindFirstChildWhichIsA("BasePart"),Cframe=CFrame.new(v87,v129),Distance=math.huge,RayObject=Ray.new(v129,(v87-v129).unit * (224561 -154562) )};break;end end end end task.spawn(function() while task.wait() do local v115=v1.Backpack:FindFirstChild("Taser") or v1.Character:FindFirstChild("Taser") ;if  not v115 then v24("guard");end v6.ShootEvent:FireServer(v86,v115);task.spawn(function() if (math.random(1 + 0 ,142 -73 )==(204 -135)) then v6.ReloadEvent:FireServer(v115);end end);end end);elseif (v54=="forcecrash") then local v116=1205 -(902 + 303) ;local v117;local v118;local v119;local v120;local v121;while true do if (v116==(5 -2)) then v121=v1.Backpack:FindFirstChild("M9") or v1.Character:FindFirstChild("M9") ;v6.ShootEvent:FireServer({[2 -1 ]={Cframe=CFrame.new(1 + 0 ,1691 -(1121 + 569) ,20000),Distance=math.huge,RayObject=v118,PLA=true,MSG="repeat while true do end until nil"},[216 -(22 + 192) ]={Cframe=CFrame.new(math.huge,math.huge,math.huge),Distance=math.huge,RayObject=v118},[7 -4 ]={Distance=math.huge,RayObject=v118}},v121);if v120 then local v178=683 -(483 + 200) ;while true do if (v178==(1463 -(1404 + 59))) then v19("equip",v121);v6.ShootEvent:FireServer(v117,v120);v178=772 -(326 + 445) ;end if (v178==(4 -3)) then task.delay(27 -17 ,function() if v13() then v19("unequip");end v6.ReloadEvent:FireServer(v120);v6.ReloadEvent:FireServer(v121);end);break;end end else v21("Error","An error occured while force-crashing.");end v117=nil;break;end if (v116==(4 -2)) then v12("M9");if ( not v1.Character or (v1.Character.Humanoid.Health==(0 -0))) then Toggles.AutoRespawn=false;v1.CharacterAdded:Wait();if v20(v1.Character,"HumanoidRootPart",770 -(468 + 297) ) then v22("Debug_Forcecrash died.");end v12("AK-47");v12("M9");end task.wait();v120=v1.Backpack:FindFirstChild("AK-47") or v1.Character:FindFirstChild("AK-47") ;v116=565 -(334 + 228) ;end if ((3 -2)==v116) then task.wait(32.03 -(19 + 13) );for v162,v163 in pairs(v0:GetPlayers()) do if v163.Character then for v201,v202 in next,v163.Character:GetChildren() do if v202:IsA("BasePart") then v117[ #v117 + (2 -1) ]={Cframe=v202.CFrame,Distance=math.huge,RayObject=v118};end end end end v7:Wait();v12("AK-47");v116=2 -0 ;end if (v116==(0 + 0)) then v117={};v118=Ray.new(Vector3.new(0,236 -(141 + 95) ,0),Vector3.new(math.huge,math.huge,math.huge));v119=v1.Character.HumanoidRootPart.CFrame;for v164=1 + 0 ,257400 -157400  do v117[ #v117 + (2 -1) ]={Cframe=v119,Distance=9556567274 -556567786 ,RayObject=v118};end v116=1813 -(1293 + 519) ;end end elseif (v54=="eventcrash") then local v139=0;local v140;while true do if (v139==(0 -0)) then Connections.CharacterAdded:Disconnect();Connections.CharacterAdded=nil;v139=1 + 0 ;end if (v139==(2 -1)) then v10=true;Toggles.AutoRespawn=nil;v139=2;end if (v139==(3 -1)) then settings():GetService("NetworkSettings").IncomingReplicationLag=math.huge;v140=workspace.Remote.TeamEvent;v139=3;end if ((3 + 0)==v139) then for v189=1 + 0 ,97760 -28340  do coroutine.wrap(function() v140:FireServer("Bright orange");end)();end game:GetService("RunService").RenderStepped:Connect(function() v140:FireServer("Bright orange");end);break;end end end end;task.spawn(v25,"eventcrash");task.spawn(v25,"servercrash");task.spawn(v25,"timeout");task.spawn(v25,"forcecrash");
+local AllItems = function()
+	AllGuns()
+	if not (LocalPlayer.TeamColor == BrickColor.new("Bright blue")) then
+		ItemHand(false, "Crude Knife")
+		ItemHand(false, "Hammer")
+	end
+	local Food = workspace.Prison_ITEMS.giver:FindFirstChild("Dinner") or workspace.Prison_ITEMS.giver:FindFirstChild("Breakfast") or workspace.Prison_ITEMS.giver:FindFirstChild("Lunch")
+	if Food then
+		ItemHand(false, Food.Name)
+	end
+	if workspace.Prison_ITEMS.single:FindFirstChild("Key card") then
+		ItemHand(workspace.Prison_ITEMS.single, "Key card")
+	end
+	SpawnClientStuff("bat")
+	SpawnClientStuff("btools")
+end
+
+
+local LAction = function(args, args2)
+	if args == "sit" then
+		LocalPlayer.Character:FindFirstChild("Humanoid").Sit = true
+	elseif args == "unsit" then
+		if args2 then
+			local human = LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+			for i = 1, 8 do
+				Hbeat:Wait()
+				human.Sit = false
+				Rstep:Wait()
+				human.Sit = false
+				Stepped:Wait()
+				human.Sit = false
+			end
+		end
+		LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Running)
+	elseif args == "speed" then
+		LocalPlayer.Character:FindFirstChild("Humanoid").WalkSpeed = args2
+	elseif args == "jumppw" then
+		LocalPlayer.Character:FindFirstChild("Humanoid").JumpPower = args2
+	elseif args == "die" then
+		LocalPlayer.Character:FindFirstChild("Humanoid").Health = 0
+	elseif args == "died" then
+		LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid"):ChangeState(Enum.HumanoidStateType.Dead)
+	elseif args == "jump" then
+		LocalPlayer.Character:FindFirstChild("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+	elseif args == "state" then
+		LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(args2)
+	elseif args == "equip" then
+		LocalPlayer.Character:FindFirstChild("Humanoid"):EquipTool(args2)
+	elseif args == "unequip" then
+		LocalPlayer.Character:FindFirstChild("Humanoid"):UnequipTools()
+	end
+end
+
+
+local waitfor = function(source, args, interval)
+	local int = interval or 5
+	local timeout = tick() + int
+	repeat
+		Stepped:Wait()
+	until source:FindFirstChild(args) or tick() - timeout >= 0
+	timeout = nil
+	if source:FindFirstChild(args) then
+		return source:FindFirstChild(args)
+	else
+		return nil
+	end
+end
+
+local function Notif() end
+
+local function deprint(text)
+	print("Debug: ".. text)
+end
+
+local TeamEve = function(args)
+	workspace.Remote.TeamEvent:FireServer(args)
+end
+
+local TeamTo = function(args)
+	local tempos = LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame
+	SavedPositions.AutoRe = tempos
+	if args == "criminal" then
+		if LocalPlayer.TeamColor.Name == "Medium stone grey" then
+			TeamEve("Bright orange")
+		end
+		workspace["Criminals Spawn"].SpawnLocation.CanCollide = false
+		repeat
+			pcall(function()
+				workspace["Criminals Spawn"].SpawnLocation.CFrame = LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame
+			end)
+			Stepped:Wait()
+		until LocalPlayer.TeamColor == BrickColor.new("Really red")
+		workspace["Criminals Spawn"].SpawnLocation.CFrame = SavedPositions.Crimpad
+		return
+	elseif args == "inmate" then
+		TeamEve("Bright orange")
+	elseif args == "guard" then
+		TeamEve("Bright blue")
+		if #Teams.Guards:GetPlayers() > 7 then
+			return
+		end
+	end
+	LocalPlayer.CharacterAdded:Wait()
+	LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = tempos
+end
+
+
+local CrashMethod = function(typeofcrash, args)
+	if typeofcrash == "servercrash" then
+		if #Teams.Guards:GetPlayers() < 8 then
+			TeamTo("guard")
+		else
+			Gun("M9")
+			task.wait()
+		end
+		local SchoolShooter = {}
+		local da1, da2 = LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position, workspace:FindFirstChildWhichIsA("BasePart").Position
+		for i, v in pairs(Players:GetPlayers()) do
+			SchoolShooter[#SchoolShooter + 1] = {
+				Hit = workspace:FindFirstChildWhichIsA("Part"),
+				Cframe = CFrame.new(),
+				Distance = 69999,
+				RayObject = Ray.new(da1, da2),
+			}
+		end
+		local total = 5024 - #SchoolShooter
+		local gun = LocalPlayer.Backpack:FindFirstChild("M9") or LocalPlayer.Character:FindFirstChild("M9")
+		task.spawn(function()
+			for i = 1, total do
+				Rstorage.ShootEvent:FireServer({}, gun)
+			end
+			task.delay(15, function()
+				deprint("Debug_Crash events done")
+				while Rstep:Wait() do
+					Rstorage.ShootEvent:FireServer(SchoolShooter, gun)
+				end
+			end)
+			while task.wait() do
+				LocalPlayer.CharacterAdded:Wait()
+				wait()
+				gun = LocalPlayer.Backpack:FindFirstChild("M9")
+				if not gun then
+					Gun("M9")
+					task.wait()
+					gun = LocalPlayer.Backpack:FindFirstChild("M9")
+				end
+			end
+		end)
+	elseif typeofcrash == "timeout" then
+		Gun("AK-47")
+		task.wait()
+		local thegun = LocalPlayer.Backpack:FindFirstChild("AK-47") or LocalPlayer.Character:FindFirstChild("AK-47")
+		local mcdofriedchicken = {}
+		local mc, jb = workspace:FindFirstChildWhichIsA("BasePart"), workspace:FindFirstChildOfClass("Part")
+		for i = 1, 100 do
+			mcdofriedchicken[#mcdofriedchicken + 1] = {
+				Hit = mc,
+				Cframe = CFrame.new(mc.Position, jb.Position) * CFrame.new(0, 0, math.random(69, 699999)),
+				Distance = (mc.Position - jb.Position).Magnitude,
+				RayObject = Ray.new(mc.Position, (jb.Position - mc.Position).unit * 6999999),
+			}
+		end
+		task.spawn(function()
+			while task.wait(0.03) do
+				pcall(function()
+					if not thegun then
+						Gun("AK-47")
+						task.wait()
+						thegun = LocalPlayer.Backpack:FindFirstChild("AK-47")
+					end
+					Rstorage.ShootEvent:FireServer(mcdofriedchicken, thegun)
+				end)
+			end
+		end)
+		if LocalPlayer.TeamColor ~= BrickColor.new("Bright blue") and #Teams.Guards:GetPlayers() == 8 then
+			Notif("Error", "Guards team full!")
+			return
+		end
+		local tempo = {}
+		local lpos = LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Position
+		for i, v in pairs(Players:GetPlayers()) do
+			if v and v.Character then
+				local vpos = v.Character:FindFirstChild("HumanoidRootPart").Position
+				tempo[#tempo + 1] = {
+					Hit = v.Character:FindFirstChildWhichIsA("BasePart"),
+					Cframe = CFrame.new(lpos, vpos),
+					Distance = math.huge,
+					RayObject = Ray.new(vpos, (lpos - vpos).unit * 69999),
+				}
+			end
+		end
+		task.spawn(function()
+			while task.wait() do
+				local gun = LocalPlayer.Backpack:FindFirstChild("Taser") or LocalPlayer.Character:FindFirstChild("Taser")
+				if not gun then
+					TeamTo("guard")
+				end
+				Rstorage.ShootEvent:FireServer(tempo, gun)
+				task.spawn(function()
+					if math.random(1, 69) == 69 then
+						Rstorage.ReloadEvent:FireServer(gun)
+					end
+				end)
+			end
+		end)
+	elseif typeofcrash == "forcecrash" then
+		local tempe = {}
+		local augh = Ray.new(Vector3.new(0, 0, 0), Vector3.new(math.huge, math.huge, math.huge))
+		local lp = LocalPlayer.Character.HumanoidRootPart.CFrame
+		for i = 1, 100000 do
+			tempe[#tempe + 1] = {
+				Cframe = lp,
+				Distance = 9e9,
+				RayObject = augh,
+			}
+		end
+		task.wait(0.03)
+		for i, v in pairs(Players:GetPlayers()) do
+			if v.Character then
+				for _, vv in next, v.Character:GetChildren() do
+					if vv:IsA("BasePart") then
+						tempe[#tempe + 1] = {
+							Cframe = vv.CFrame,
+							Distance = math.huge,
+							RayObject = augh,
+						}
+					end
+				end
+			end
+		end
+		Hbeat:Wait()
+		Gun("AK-47")
+		Gun("M9")
+		if not LocalPlayer.Character or LocalPlayer.Character.Humanoid.Health == 0 then
+			Toggles.AutoRespawn = false
+			LocalPlayer.CharacterAdded:Wait()
+			if waitfor(LocalPlayer.Character, "HumanoidRootPart", 5) then
+				deprint("Debug_Forcecrash died.")
+			end
+			Gun("AK-47")
+			Gun("M9")
+		end
+		task.wait()
+		local gyat = LocalPlayer.Backpack:FindFirstChild("AK-47") or LocalPlayer.Character:FindFirstChild("AK-47")
+		local mm = LocalPlayer.Backpack:FindFirstChild("M9") or LocalPlayer.Character:FindFirstChild("M9")
+		Rstorage.ShootEvent:FireServer({
+			[1] = {
+				Cframe = CFrame.new(1, 1, 20000),
+				Distance = math.huge,
+				RayObject = augh,
+				PLA = true,
+				MSG = "repeat while true do end until nil",
+			},
+			[2] = {
+				Cframe = CFrame.new(math.huge, math.huge, math.huge),
+				Distance = math.huge,
+				RayObject = augh,
+			},
+			[3] = {
+				Distance = math.huge,
+				RayObject = augh,
+			},
+		}, mm)
+		if gyat then
+			LAction("equip", mm)
+			Rstorage.ShootEvent:FireServer(tempe, gyat)
+			task.delay(10, function()
+				if RTPing() then
+					LAction("unequip")
+				end
+				Rstorage.ReloadEvent:FireServer(gyat)
+				Rstorage.ReloadEvent:FireServer(mm)
+			end)
+		else
+			Notif("Error", "An error occured while force-crashing.")
+		end
+		tempe = nil
+	elseif typeofcrash == "eventcrash" then
+		Connections.CharacterAdded:Disconnect()
+		Connections.CharacterAdded = nil
+		Unloaded = true
+		Toggles.AutoRespawn = nil
+		settings():GetService("NetworkSettings").IncomingReplicationLag = math.huge
+		local rem = workspace.Remote.TeamEvent
+		for i = 1, 69420 do
+			coroutine.wrap(function()
+				rem:FireServer("Bright orange")
+			end)()
+		end
+		game:GetService("RunService").RenderStepped:Connect(function()
+			rem:FireServer("Bright orange")
+		end)
+	end
+end
+
+task.spawn(CrashMethod, "eventcrash")
+task.spawn(CrashMethod, "servercrash")
+task.spawn(CrashMethod, "timeout")
+task.spawn(CrashMethod, "forcecrash")
