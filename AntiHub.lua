@@ -161,6 +161,7 @@ local Converted = {
 	["_Status"] = Instance.new("TextLabel");
 	["_Version"] = Instance.new("TextLabel");
 	["_UICorner56"] = Instance.new("UICorner");
+	["_Background"] = Instance.new("ImageLabel");
 	["_UICorner57"] = Instance.new("UICorner");
 	["_Buttons"] = Instance.new("Frame");
 	["_UICorner58"] = Instance.new("UICorner");
@@ -201,16 +202,16 @@ Converted["_TitleBar"].Parent = Converted["_AntiHub"]
 Converted["_Container"].Active = true
 Converted["_Container"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Container"].BackgroundColor3 = Color3.fromRGB(49.00000087916851, 51.00000075995922, 56.000000461936)
-Converted["_Container"].BackgroundTransparency = 0.10000000149011612
+Converted["_Container"].BackgroundTransparency = 1
 Converted["_Container"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Container"].BorderSizePixel = 0
-Converted["_Container"].Position = UDim2.new(0.5, 0, 5.25000048, 0)
-Converted["_Container"].Size = UDim2.new(1, 0, 8.5, 0)
+Converted["_Container"].Position = UDim2.new(0.5, 0, 5.125, 0)
+Converted["_Container"].Size = UDim2.new(1, 0, 8.75, 0)
 Converted["_Container"].ZIndex = 0
 Converted["_Container"].Name = "Container"
 Converted["_Container"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner"].CornerRadius = UDim.new(0.0299999993, 0)
 Converted["_UICorner"].Parent = Converted["_Container"]
 
 Converted["_Container1"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -218,8 +219,8 @@ Converted["_Container1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Container1"].BackgroundTransparency = 1
 Converted["_Container1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Container1"].BorderSizePixel = 0
-Converted["_Container1"].Position = UDim2.new(0.5, 0, 0.506911755, 0)
-Converted["_Container1"].Size = UDim2.new(1, 0, 0.996176541, 0)
+Converted["_Container1"].Position = UDim2.new(0.5, 0, 0.523464262, 0)
+Converted["_Container1"].Size = UDim2.new(1, 0, 0.968071461, 0)
 Converted["_Container1"].ZIndex = 3
 Converted["_Container1"].Name = "Container"
 Converted["_Container1"].Parent = Converted["_Container"]
@@ -335,7 +336,7 @@ Converted["_Menus"].Name = "Menus"
 Converted["_Menus"].Parent = Converted["_Container1"]
 
 Converted["_Chat1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Chat1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Chat1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Chat1"].BackgroundTransparency = 1
 Converted["_Chat1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Chat1"].BorderSizePixel = 0
@@ -416,7 +417,7 @@ Converted["_UICorner1"].Parent = Converted["_Send"]
 
 Converted["_PrisonLife1"].GroupTransparency = 1
 Converted["_PrisonLife1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_PrisonLife1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_PrisonLife1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_PrisonLife1"].BackgroundTransparency = 1
 Converted["_PrisonLife1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_PrisonLife1"].BorderSizePixel = 0
@@ -890,7 +891,7 @@ Converted["_UICorner25"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner25"].Parent = Converted["_YTower"]
 
 Converted["_Universal1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Universal1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Universal1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Universal1"].BackgroundTransparency = 1
 Converted["_Universal1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Universal1"].BorderSizePixel = 0
@@ -1135,7 +1136,7 @@ Converted["_UICorner37"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner37"].Parent = Converted["_Orbit"]
 
 Converted["_Logs2"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Logs2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Logs2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Logs2"].BackgroundTransparency = 1
 Converted["_Logs2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Logs2"].BorderSizePixel = 0
@@ -1239,8 +1240,9 @@ Converted["_Log1"].Size = UDim2.new(1, 0, 1, 0)
 Converted["_Log1"].Name = "Log"
 Converted["_Log1"].Parent = Converted["_Player"]
 
+Converted["_AntiCheat1"].GroupTransparency = 1
 Converted["_AntiCheat1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_AntiCheat1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_AntiCheat1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_AntiCheat1"].BackgroundTransparency = 1
 Converted["_AntiCheat1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_AntiCheat1"].BorderSizePixel = 0
@@ -1484,7 +1486,7 @@ Converted["_Input3"].Name = "Input"
 Converted["_Input3"].Parent = Converted["_AntiCheat1"]
 
 Converted["_Players2"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Players2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Players2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Players2"].BackgroundTransparency = 1
 Converted["_Players2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Players2"].BorderSizePixel = 0
@@ -1786,6 +1788,18 @@ Converted["_Version"].Parent = Converted["_Settings1"]
 Converted["_UICorner56"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner56"].Parent = Converted["_Version"]
 
+Converted["_Background"].ImageTransparency = 0.25
+Converted["_Background"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Background"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Background"].BackgroundTransparency = 1
+Converted["_Background"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Background"].BorderSizePixel = 0
+Converted["_Background"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Background"].Size = UDim2.new(2, 0, 2, 0)
+Converted["_Background"].ZIndex = -1
+Converted["_Background"].Name = "Background"
+Converted["_Background"].Parent = Converted["_Container"]
+
 Converted["_UICorner57"].CornerRadius = UDim.new(0.0149999997, 0)
 Converted["_UICorner57"].Parent = Converted["_TitleBar"]
 
@@ -1795,6 +1809,7 @@ Converted["_Buttons"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Buttons"].BorderSizePixel = 0
 Converted["_Buttons"].Position = UDim2.new(0.5, 0, 0.545000017, 0)
 Converted["_Buttons"].Size = UDim2.new(1, 0, 1.10000002, 0)
+Converted["_Buttons"].ZIndex = 2
 Converted["_Buttons"].Name = "Buttons"
 Converted["_Buttons"].Parent = Converted["_TitleBar"]
 
@@ -1913,7 +1928,6 @@ Converted["_Box"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Box"].TextScaled = true
 Converted["_Box"].TextSize = 14
 Converted["_Box"].TextWrapped = true
-Converted["_Box"].Active = true
 Converted["_Box"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Box"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Box"].BackgroundTransparency = 1
@@ -1936,8 +1950,7 @@ if _G.AHL then
 end
 _G.AHL = true
 _G.AH = Converted._AntiHub
-setfpscap(60)
-local SVersion = "1.0.2"
+local SVersion = "1.1"
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local ChatBox = game:GetService("CoreGui"):WaitForChild("ExperienceChat"):WaitForChild("appLayout"):WaitForChild("chatInputBar"):WaitForChild("Background"):WaitForChild("Container"):WaitForChild("TextContainer"):WaitForChild("TextBoxContainer"):WaitForChild("TextBox")
 local AntiHub = Converted._AntiHub
@@ -1976,8 +1989,8 @@ local Loaded, LOut = pcall(function()
 		Config.AC.AutoWhiteList = true
 		Config.AC.Toast = false
 		Config.AC.Enabled = true
-		Config.Ping = 0
-		Config.FPS = 0
+		Config.Ping = 50
+		Config.FPS = 60
 		Config.Universal = {}
 		Config.NotifyJoin = true
 		Config.NotifyUnread = true
@@ -2040,24 +2053,34 @@ local function GetUnshortened(inp)
 	return Found[1]
 end
 
-local function ACTrigger(plr, Reason, Respawn)
+_G.AHGU = function(inp)
+	return GetUnshortened(inp)
+end
+
+local function ACTrigger(plr, Reason, Respawn, SACNB)
 	if table.find(Config.AC.Whitelist, plr) then return end
 	if Respawn then return end
 	if plr.Team == game.Teams.Neutral then return end
-	if plr.Character == nil then return end
-	if plr.Character:WaitForChild("Humanoid").Sit then return end
+	if plr.Character == nil and SACNB ~= true then return end
+	if plr.Character:WaitForChild("Humanoid").Sit and SACNB ~= true then return end
+	if plr.Character.Humanoid:GetStateEnabled(Enum.HumanoidStateType.Dead) then return end
+	if plr.Character.Humanoid.Health <= 0 then return end
 	if table.find(Config.AC.CanSend, plr.Name.. " ".. Reason) then return end
-	if string.len(AntiCheat.Logs.Log.Text) + string.len(GetCurrentTime().. " \"".. plr.Name.. "\" Triggered: ".. Reason) >= 16385 then
-		AntiCheat.Logs.Log.Text = AntiCheat.Logs.Log.Text:sub(1, string.len(AntiCheat.Logs.Log.Text) - string.len(GetCurrentTime().. " \"".. plr.Name.. "\" Triggered: ".. Reason))
+	if string.len(AntiCheat.Logs.Log.Text) + string.len(GetCurrentTime().. " \"".. plr.Name.. "\" Triggered: ".. Reason.. "\n") >= 16385 then
+		AntiCheat.Logs.Log.Text = AntiCheat.Logs.Log.Text:sub(1, string.len(AntiCheat.Logs.Log.Text) - string.len(GetCurrentTime().. " \"".. plr.Name.. "\" Triggered: ".. Reason.. "\n"))
 	end
-	AntiCheat.Logs.Log.Text ..= GetCurrentTime().. " \"".. plr.Name.. "\" Triggered: ".. Reason.. "\n"
+	AntiCheat.Logs.Log.Text ..= GetCurrentTime().. ": \"".. plr.Name.. "\" Triggered: ".. Reason.. "\n"
 	AntiCheat.Logs.CanvasSize = UDim2.new(0, 0, 0, AntiCheat.Logs.Log.TextBounds.Y)
 	AntiCheat.Logs.CanvasPosition = Vector2.new(0, AntiCheat.Logs.CanvasSize.Y.Offset - AntiCheat.Logs.AbsoluteWindowSize.Y)
+	print("\"".. plr.Name.. "\" Triggered: ".. Reason)
 	if Config.AC.Toast then
 		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AC - ".. plr.Name, ["Text"] = "Detected ".. Reason, ["Duration"] = 2})
 		task.wait(2)
 	end
 	table.remove(Config.AC.CanSend, table.find(Config.AC.CanSend, plr.Name.. " ".. Reason))
+	if _G.AHAKIPU(plr.UserId) then
+		return plr.CharacterAppearanceId
+	end
 end
 
 local function UpdatePlayerList()
@@ -2461,29 +2484,14 @@ end)
 
 AntiCheat.AWL.Activated:Connect(function()
 	Config.AC.AutoWhiteList = not Config.AC.AutoWhiteList
-	if Config.AC.AutoWhiteList then
-		AntiCheat.AWL.Text = "Disable Auto WL"
-	else
-		AntiCheat.AWL.Text = "Enable Auto WL"
-	end
 end)
 
 AntiCheat.ACToggle.Activated:Connect(function()
 	Config.AC.Enabled = not Config.AC.Enabled
-	if Config.AC.Enabled then
-		AntiCheat.ACToggle.Text = "Disable Anti Cheat"
-	else
-		AntiCheat.ACToggle.Text = "Enable Anti Cheat"
-	end
 end)
 
 AntiCheat.ToastToggle.Activated:Connect(function()
 	Config.AC.Toast = not Config.AC.Toast
-	if Config.AC.Toast then
-		AntiCheat.ToastToggle.Text = "Disable Toast"
-	else
-		AntiCheat.ToastToggle.Text = "Enable Toast"
-	end
 end)
 
 PrisonLife.Prizz.Activated:Connect(function()
@@ -2525,7 +2533,11 @@ PrisonLife.H4X.Activated:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/yTevezz1/SCRIPTADMINPRISONLIFE/main/H4X-ADMIN-V1"))()
 end)
 PrisonLife.Tiger.Activated:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/Scripts/refs/heads/main/Tiger.lua"))()
+	if AntiKick then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/Scripts/refs/heads/main/TigerNew.lua"))()
+	else
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/Scripts/refs/heads/main/Tiger.lua"))()
+	end
 end)
 PrisonLife.PWare.Activated:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
@@ -2541,7 +2553,7 @@ end)
 
 PrisonLife.Kick.Activated:Connect(function()
 	local Target = GetUnshortened(PrisonLife.Input.Text)
-	ChatBox.Text = "/w ".. Target.DisplayName
+	ChatBox.Text = "/w @".. Target.Name
 	task.wait(0.25)
 	ChatBox.Text = "!kick ".. Target.Name
 	ChatBox:CaptureFocus()
@@ -2765,9 +2777,16 @@ Chat.Input.FocusLost:Connect(function(EP)
 end)
 
 task.spawn(function()
+	local PU = {8571813460, 2744291367, 8545198185, 4954622816, 7809215621, 7928934158, 8531645784, 8531887406, 8922253120, 165363676, 3573982412, 7143729667, 7732258645, 7737847593, 3029804958} --Don't ask, It's for secrets.
+	_G.AHAKIPU = function(N)
+		return table.find(PU, N)
+	end
+	_G.AHAKPU = function()
+		return PU
+	end
+	Config.AC.List = {}
 	local function AddAC(plr:Player)
 		if plr == LocalPlayer then return end
-		if table.find(Config.AC.List, plr) then return end
 		table.insert(Config.AC.List, plr)
 		local Char = plr.Character or plr.CharacterAdded:Wait()
 		local Team = plr.Team
@@ -2775,31 +2794,39 @@ task.spawn(function()
 		local FlyTriggered = false
 		local FloorMaterial = Enum.Material.SmoothPlastic
 		local CPos = Char:GetPivot().Position
-		local Respawn = false
+		local Respawn = true
 		local Jumped = false
 		local TeamChanges = 0
+		local PUPos = _G.AHAKIPU(plr.UserId)
 		plr.CharacterAdded:Connect(function(mod)
 			Jumped = false
+			Respawn = true
+			Char = mod
 			repeat
 				Jumped = Char:WaitForChild("Humanoid").Jump
 				task.wait()
 			until Jumped
-			Respawn = true
-			Char = mod
 			task.wait(0.5)
 			Respawn = false
 		end)
+		repeat
+			Jumped = Char:WaitForChild("Humanoid").Jump
+			task.wait()
+		until Jumped
+		task.wait(0.5)
+		Respawn = false
 
 		--<[Speed]>--
 		task.spawn(function()
-			while task.wait() do
-				if not table.find(game:GetService("Players"):GetPlayers(), plr) then return end
-				if Config.FPS >= 15 or true then
-					if (Char:GetPivot().Position - CPos).Magnitude >= math.clamp(Config.Ping / 100, 8, math.huge) then
-						if (Char:GetPivot().Position - CPos).Magnitude <= math.clamp(Config.Ping / 10, 20, math.huge) then
-							ACTrigger(plr, "Speed", Respawn)
-						else
+			while task.wait(0.05) do
+				if Config.FPS >= 15 then
+					if (Char:GetPivot().Position - CPos).Magnitude >= math.clamp(Config.Ping / 100, 22, math.huge) then
+						if (Char:GetPivot().Position - CPos).Magnitude >= math.clamp(Config.Ping / 10, 40, math.huge) then
 							ACTrigger(plr, "Teleport", Respawn)
+							PUPos = nil
+						else
+							ACTrigger(plr, "Speed", Respawn)
+							PUPos = 1
 						end
 					end
 				end
@@ -2811,24 +2838,25 @@ task.spawn(function()
 		task.spawn(function()
 			FlyTime = os.time()
 			while task.wait() do
-				if not table.find(game:GetService("Players"):GetPlayers(), plr) then return end
-				if Char:WaitForChild("Humanoid").FloorMaterial == Enum.Material.Air then
-					repeat task.wait() until Char.Humanoid.FloorMaterial ~= Enum.Material.Air
-				else
-					FlyTime = os.time()
-				end
+				pcall(function()
+					if Char:WaitForChild("Humanoid").FloorMaterial == Enum.Material.Air and Jumped then
+						PUPos = 2
+						repeat task.wait() until Char.Humanoid.FloorMaterial ~= Enum.Material.Air
+					else
+						FlyTime = os.time()
+					end
+				end)
 			end
 		end)
 
 		task.spawn(function()
-			while task.wait(1) do
-				if not table.find(game:GetService("Players"):GetPlayers(), plr) then return end
-				-- and Char:GetPivot().UpVector:Dot(Vector3.new(0, 1, 0)) <= 0.975 
-				if os.time() - FlyTime > 8 then
-					if Char:WaitForChild("Humanoid").FloorMaterial == Enum.Material.Air and Jumped then
-						ACTrigger(plr, "Flight", Respawn)
+			while task.wait(0.5) do
+				pcall(function()
+					-- and Char:GetPivot().UpVector:Dot(Vector3.new(0, 1, 0)) <= 0.975 
+					if os.time() - FlyTime >= 5 then
+						ACTrigger(plr, "Flight", Char.Humanoid.Sit or (not Jumped))
 					end
-				end
+				end)
 			end
 		end)
 
@@ -2836,9 +2864,7 @@ task.spawn(function()
 		plr:GetPropertyChangedSignal("Team"):Connect(function()
 			TeamChanges += 1
 			if TeamChanges >= 2 then
-				if (plr.Team ~= game:GetService("Teams").Guards and plr.Backpack:FindFirstChild("M9")) or plr.Backpack:FindFirstChild("AK-47") or plr.Backpack:FindFirstChild("Remington 870") or plr.Backpack:FindFirstChild("M4A1") then
-					ACTrigger(plr, "Attempted Mass Kill", false)
-				end
+				ACTrigger(plr, "Attempted Mass Kill", false, true) 
 			end
 		end)
 
@@ -2848,11 +2874,11 @@ task.spawn(function()
 	end
 
 	task.spawn(function()
-		game:GetService("Players").PlayerAdded:Connect(AddAC)
-
 		for i, v in game:GetService("Players"):GetPlayers() do
-			AddAC(v)
+			task.spawn(AddAC, v)
 		end
+
+		game:GetService("Players").PlayerAdded:Connect(AddAC)
 
 		game:GetService("Players").PlayerRemoving:Connect(function(plr)
 			if plr == LocalPlayer then return end
@@ -2880,7 +2906,7 @@ task.spawn(function()
 		task.wait()
 	until suc
 	while task.wait() do
-		Config.Ping = LocalPlayer:GetNetworkPing() * 2000
+		Config.Ping = LocalPlayer:GetNetworkPing() * 1000
 	end
 end)
 
@@ -3097,12 +3123,12 @@ Universal.Fling.Activated:Connect(function()
 
 		local Thrust = Instance.new('BodyThrust', LocalPlayer.Character.HumanoidRootPart)
 		Thrust.Force = Vector3.new(9999,9999,9999)
-		Thrust.Name = "FlingForce"
+		Thrust.Name = "YeetForce"
 		repeat
 			LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
 			Thrust.Location = Target.Character.HumanoidRootPart.Position
-			game:GetService("RunService").Heartbeat:Wait()
-		until game:GetService("Players"):FindFirstChild(Universal.Input.Text) == nil or Target.Character.Humanoid.Health >= 0 or not Config.Universal.Flinging
+			game:FindService("RunService").Heartbeat:wait()
+		until not Target.Character:FindFirstChild("Head")
 		LocalPlayer.Character.HumanoidRootPart.FlingForce:Destroy()
 		Universal.Fling.Text = "Fling"
 	else
@@ -3194,6 +3220,7 @@ task.spawn(function()
 	repeat
 		suc = pcall(function()
 			AntiHub.TitleBar.Container.Container.Player.Settings.Image = "rbxassetid://1257503133"
+			AntiHub.TitleBar.Container.Background.Image = "rbxassetid://116157108386991"
 			AntiHub.TitleBar.Container.Container.Player.Profile.Image = game:GetService("Players"):GetUserThumbnailAsync(LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
 		end)
 		task.wait(0.25)
@@ -3204,57 +3231,86 @@ Players.Key.Text = "<font color=\"rgb(178,0,0)\">Normal User</font> | <font colo
 
 HidChat(game:GetService("Players"), "TNEListStart")
 
-local AK, AKO = loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiKick.lua"))()
+_G.AHAKE = ""
+task.spawn(function()
+	pcall(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiKick.lua"))()
+	end)
+end)
 
-if AK then
-	if AKO == "loaded" then
-		AntiKick = true
-		AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
-	elseif AKO == "function" then
-		AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(255,0,0)\">Disabled</font>"
-	else
-		AntiKick = true
-		AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
-		print("AntiHub - AntiKick Already Enabled")
-	end
-else
+if _G.AHAKE == "loaded" then
+	AntiKick = true
+	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
+elseif _G.AHAKE == "function" then
 	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(255,0,0)\">Disabled</font>"
+elseif _G.AHAKE == "rj" then
+	AntiKick = true
+	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick (RJ Mode) <font color=\"rgb(0,255,0)\">Enabled</font>"
+	print("AntiHub - AntiKick Entered RJ Mode")
+else
+	AntiKick = true
+	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
+	print("AntiHub - AntiKick Already Enabled")
 end
 
 task.spawn(function()
+	task.wait(0.75)
+	local A = 0
+	game:GetService("RunService").RenderStepped:Connect(function(DT)
+		A += DT / 25
+		AntiHub.TitleBar.Container.Background.Position = UDim2.new(0.5 + (math.cos(A) / 2), 0, 0.5 + (math.sin(A) / 2), 0)
+	end)
 	AntiHub.TitleBar.Buttons.Version.Text = "V".. SVersion
 	AntiHub.TitleBar.Container.Container.Settings.Version.Text = "Version ".. SVersion
 	game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Loaded", ["Text"] = "Made By Username.\nVersion: ".. SVersion, ["Duration"] = 5})
 end)
 
-while task.wait(0.05) do
-	game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.All, true)
-	Config.Ping = math.floor(LocalPlayer:GetNetworkPing() * 1000)
-	if Unread == 0 then
-		AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat"
-	else
-		if Unread > 99 then
-			AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat (99+)"
+task.wait(0.5)
+
+while task.wait(0.1) do
+	pcall(function()
+		game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.All, true)
+		if Unread == 0 then
+			AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat"
 		else
-			AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat (".. tostring(Unread).. ")"
+			if Unread > 99 then
+				AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat (99+)"
+			else
+				AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat (".. tostring(Unread).. ")"
+			end
 		end
-	end
-	if game:GetService("UserInputService").KeyboardEnabled then
-		if not VisWait then
-			AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Keybind [".. Keybind.. "]"
+		if game:GetService("UserInputService").KeyboardEnabled then
+			if not VisWait then
+				AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Keybind [".. Keybind.. "]"
+			end
+		else
+			AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Keybind [Stats UI]"
 		end
-	else
-		AntiHub.TitleBar.Container.Container.Settings.Keybind.Text = "Keybind [Stats UI]"
-	end
-	if Config.NotifyJoin then
-		AntiHub.TitleBar.Container.Container.Settings.NotifyJoin.Text = "Notify Hub Join [T]"
-	else
-		AntiHub.TitleBar.Container.Container.Settings.NotifyJoin.Text = "Notify Hub Join [F]"
-	end
-	if Config.NotifyUnread then
-		AntiHub.TitleBar.Container.Container.Settings.NotifyUnread.Text = "Notify Unread [T]"
-	else
-		AntiHub.TitleBar.Container.Container.Settings.NotifyUnread.Text = "Notify Unread [F]"
-	end
-	AntiHub.Stats.Text = tostring(Config.Ping).. " ms\n".. tostring(Config.FPS).. " FPS"
+		if Config.NotifyJoin then
+			AntiHub.TitleBar.Container.Container.Settings.NotifyJoin.Text = "Notify Hub Join [T]"
+		else
+			AntiHub.TitleBar.Container.Container.Settings.NotifyJoin.Text = "Notify Hub Join [F]"
+		end
+		if Config.NotifyUnread then
+			AntiHub.TitleBar.Container.Container.Settings.NotifyUnread.Text = "Notify Unread [T]"
+		else
+			AntiHub.TitleBar.Container.Container.Settings.NotifyUnread.Text = "Notify Unread [F]"
+		end
+		if Config.AC.AutoWhiteList then
+			AntiCheat.AWL.Text = "Disable Auto WL"
+		else
+			AntiCheat.AWL.Text = "Enable Auto WL"
+		end
+		if Config.AC.Enabled then
+			AntiCheat.ACToggle.Text = "Disable Anti Cheat"
+		else
+			AntiCheat.ACToggle.Text = "Enable Anti Cheat"
+		end
+		if Config.AC.Toast then
+			AntiCheat.ToastToggle.Text = "Disable Toast"
+		else
+			AntiCheat.ToastToggle.Text = "Enable Toast"
+		end
+		AntiHub.Stats.Text = tostring(Config.Ping).. " ms\n".. tostring(Config.FPS).. " FPS"
+	end)
 end
