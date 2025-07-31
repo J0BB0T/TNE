@@ -2523,7 +2523,6 @@ task.spawn(function()
 		local Jumped = false
 		task.spawn(function()
 			Char:WaitForChild("Humanoid"):GetPropertyChangedSignal("Jump"):Wait()
-			print(plr.Name.. " Jumped!")
 			Jumped = true
 		end)
 		plr.CharacterAdded:Connect(function(mod)
@@ -2533,7 +2532,6 @@ task.spawn(function()
 			Respawn = false
 			task.spawn(function()
 				mod:WaitForChild("Humanoid"):GetPropertyChangedSignal("Jump"):Wait()
-				print(plr.Name.. " Jumped!")
 				Jumped = true
 			end)
 			mod:WaitForChild("Humanoid").Died:Wait()
@@ -2550,7 +2548,7 @@ task.spawn(function()
 
 				--<[Flight]>--
 				if Char:WaitForChild("Humanoid"):GetStateEnabled(Enum.HumanoidStateType.PlatformStanding) or Char:WaitForChild("Humanoid"):GetStateEnabled(Enum.HumanoidStateType.Freefall) then
-					if not Char.Humanoid.Jumped then
+					if not Char:WaitForChild("Humanoid").Jumped then
 						ACTrigger(plr, "Flight", Respawn, Jumped)
 					end
 				end
@@ -2573,7 +2571,7 @@ task.spawn(function()
 
 			--<[Movement]>--
 			if (Char:GetPivot().Position - Pos).Magnitude >= 35 then
-				if Char.Humanoid.MoveDirection.Magnitude > 0 then
+				if Char:WaitForChild("Humanoid").MoveDirection.Magnitude > 0 then
 					ACTrigger(plr, "Speed", Respawn, Jumped)
 				else
 					ACTrigger(plr, "Teleport", Respawn, Jumped)
