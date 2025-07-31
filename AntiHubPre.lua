@@ -2013,7 +2013,7 @@ if _G.AHL then
 end
 _G.AHL = true
 _G.AH = Converted._AntiHub
-local SVersion = "Pre1.2"
+local SVersion = "1.2Pre"
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local ChatBox = game:GetService("CoreGui"):WaitForChild("ExperienceChat"):WaitForChild("appLayout"):WaitForChild("chatInputBar"):WaitForChild("Background"):WaitForChild("Container"):WaitForChild("TextContainer"):WaitForChild("TextBoxContainer"):WaitForChild("TextBox")
 local AntiHub = Converted._AntiHub
@@ -2120,14 +2120,14 @@ _G.AHGU = function(inp)
 	return GetUnshortened(inp)
 end
 
-local function ACTrigger(plr, Reason, Respawn, SACNB)
+local function ACTrigger(plr, Reason, Respawn, Jumped)
 	if table.find(Config.AC.Whitelist, plr) then return end
+	if not Jumped then return end
 	if Respawn then return end
 	if plr.Team == game.Teams.Neutral then return end
-	if plr.Character == nil and SACNB ~= true then return end
-	if plr.Character:WaitForChild("Humanoid").Sit and SACNB ~= true then return end
-	if plr.Character.Humanoid:GetStateEnabled(Enum.HumanoidStateType.Dead) then return end
-	if plr.Character.Humanoid.Health <= 0 then return end
+	if plr.Character == nil then return end
+	if plr.Character:WaitForChild("Humanoid").Sit then return end
+	if plr.Character.Humanoid.Health == 0 then return end
 	if table.find(Config.AC.CanSend, plr.Name.. " ".. Reason) then return end
 	if string.len(AntiCheat.Logs.Log.Text) + string.len(GetCurrentTime().. " \"".. plr.Name.. "\" Triggered: ".. Reason.. "\n") >= 16385 then
 		AntiCheat.Logs.Log.Text = AntiCheat.Logs.Log.Text:sub(1, string.len(AntiCheat.Logs.Log.Text) - string.len(GetCurrentTime().. " \"".. plr.Name.. "\" Triggered: ".. Reason.. "\n"))
@@ -2326,29 +2326,6 @@ local function Orbit(Target, Enabled)
 		if orbit4 then orbit4:Disconnect() end
 	end
 end
-
-_G.AHAKE = ""
-task.spawn(function()
-	pcall(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiKick.lua"))()
-	end)
-end)
-
-if _G.AHAKE == "loaded" then
-	AntiKick = true
-	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
-elseif _G.AHAKE == "function" then
-	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(255,0,0)\">Disabled</font>"
-elseif _G.AHAKE == "rj" then
-	AntiKick = true
-	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick (RJ Mode) <font color=\"rgb(0,255,0)\">Enabled</font>"
-	print("AntiHub - AntiKick Entered RJ Mode")
-else
-	AntiKick = true
-	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
-	print("AntiHub - AntiKick Already Enabled")
-end
-
 AntiHub:WaitForChild("TitleBar").Active = true
 AntiHub.TitleBar.Draggable = true
 
@@ -2524,6 +2501,148 @@ game:GetService("Players").PlayerRemoving:Connect(function(plr)
 end)
 
 UpdatePlayerList()
+
+task.spawn(function()
+	local PU = {8571813460, 2744291367, 8545198185, 4954622816, 7809215621, 7928934158, 8531645784, 8531887406, 8922253120, 165363676, 3573982412, 7143729667, 7732258645, 7737847593, 3029804958} --Don't ask, It's for secrets.
+	_G.AHAKIPU = function(N)
+		return table.find(PU, N)
+	end
+	_G.AHAKPU = function()
+		return PU
+	end
+	Config.AC.List = {}
+	local function AddAC(plr:Player)
+		if plr == LocalPlayer then return end
+		table.insert(Config.AC.List, plr)
+		local Char = plr.Character or plr.CharacterAdded:Wait()
+		local Pos = Char:GetPivot().Position
+		local FlyTime = os.time()
+		local Changes = 0
+		local ChangeTime = os.time()
+		local Respawn = false
+		local Jumped = false
+		task.spawn(function()
+			Char:WaitForChild("Humanoid"):GetPropertyChangedSignal("Jump"):Wait()
+			print(plr.Name.. " Jumped!")
+			Jumped = true
+		end)
+		plr.CharacterAdded:Connect(function(mod)
+			Jumped = false
+			Char = mod
+			Pos = mod:GetPivot().Position
+			Respawn = false
+			task.spawn(function()
+				mod:WaitForChild("Humanoid"):GetPropertyChangedSignal("Jump"):Wait()
+				print(plr.Name.. " Jumped!")
+				Jumped = true
+			end)
+			mod:WaitForChild("Humanoid").Died:Wait()
+			Respawn = true
+		end)
+
+		plr:GetPropertyChangedSignal("Team"):Connect(function()
+			Changes += 1
+		end)
+
+		task.spawn(function()
+			while task.wait(0.05) do
+				if not table.find(Config.AC.List, plr) then return end
+
+				--<[Flight]>--
+				if Char:WaitForChild("Humanoid"):GetStateEnabled(Enum.HumanoidStateType.PlatformStanding) or Char:WaitForChild("Humanoid"):GetStateEnabled(Enum.HumanoidStateType.Freefall) then
+					if Char:WaitForChild("HumanoidRootPart").AssemblyLinearVelocity.Y >= 7.5 then
+						if not Char.Humanoid.Jumped then
+							ACTrigger(plr, "Flight", Respawn, Jumped)
+						end
+					end
+				end
+
+				--<[Mass Kill]>--
+				if Changes == 0 then
+					ChangeTime = os.time()
+				end
+				if Changes >= 2 then
+					if os.time() - ChangeTime <= Changes then
+						ACTrigger(plr, "Mass Kill", false, true)
+					end 
+				end
+			end
+		end)
+
+		while task.wait(1) do
+			if not table.find(Config.AC.List, plr) then return end
+			Changes = math.clamp(Changes - 1, 0, 5)
+
+			--<[Movement]>--
+			if (Char:GetPivot().Position - Pos).Magnitude >= 35 then
+				if Char.Humanoid.MoveDirection.Magnitude > 0 then
+					ACTrigger(plr, "Speed", Respawn, Jumped)
+				else
+					ACTrigger(plr, "Teleport", Respawn, Jumped)
+				end
+			end
+			Pos = Char:GetPivot().Position
+		end
+	end
+
+	task.spawn(function()
+		for i, v in game:GetService("Players"):GetPlayers() do
+			task.spawn(AddAC, v)
+		end
+
+		game:GetService("Players").PlayerAdded:Connect(AddAC)
+
+		game:GetService("Players").PlayerRemoving:Connect(function(plr)
+			if plr == LocalPlayer then return end
+			table.remove(Config.AC.List, table.find(Config.AC.List, plr))
+		end)
+	end)
+
+	game:GetService("RunService").RenderStepped:Connect(function(DT)
+		Config.FPS = math.floor(1 / DT)
+	end)
+
+	game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
+		if proc then return end
+		if inp.KeyCode == Enum.KeyCode.L then
+			print("Users Under Anticheat (\n> ".. table.concat(Config.AC.List, ", ").. "\n)")
+		end
+	end)
+	print("Real Anticheat Loaded.")
+
+	local suc = false
+	repeat
+		suc = pcall(function()
+			game:GetService("StarterGui"):SetCore("SendNotificaiton", {["Title"] = "Anticheat", ["Text"] = "Real Anticheat Loaded.", ["Duration"] = 5})
+		end)
+		task.wait()
+	until suc
+	while task.wait() do
+		Config.Ping = LocalPlayer:GetNetworkPing() * 1000
+	end
+end)
+
+_G.AHAKE = ""
+task.spawn(function()
+	pcall(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiKick.lua"))()
+	end)
+end)
+
+if _G.AHAKE == "loaded" then
+	AntiKick = true
+	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
+elseif _G.AHAKE == "function" then
+	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(255,0,0)\">Disabled</font>"
+elseif _G.AHAKE == "rj" then
+	AntiKick = true
+	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick (RJ Mode) <font color=\"rgb(0,255,0)\">Enabled</font>"
+	print("AntiHub - AntiKick Entered RJ Mode")
+else
+	AntiKick = true
+	AntiHub.TitleBar.Container.Container.Settings.Status.Text = "AntiKick <font color=\"rgb(0,255,0)\">Enabled</font>"
+	print("AntiHub - AntiKick Already Enabled")
+end
 
 Players.Refresh.Activated:Connect(function()
 	HidChat(game:GetService("Players"), "TNEListStart")
@@ -2873,140 +2992,6 @@ end)
 
 Logs.Send.Activated:Connect(function()
 	HidChat(game.Players, Logs.Input.Text)
-end)
-
-task.spawn(function()
-	local PU = {8571813460, 2744291367, 8545198185, 4954622816, 7809215621, 7928934158, 8531645784, 8531887406, 8922253120, 165363676, 3573982412, 7143729667, 7732258645, 7737847593, 3029804958} --Don't ask, It's for secrets.
-	_G.AHAKIPU = function(N)
-		return table.find(PU, N)
-	end
-	_G.AHAKPU = function()
-		return PU
-	end
-	Config.AC.List = {}
-	local function AddAC(plr:Player)
-		if plr == LocalPlayer then return end
-		table.insert(Config.AC.List, plr)
-		local Char = plr.Character or plr.CharacterAdded:Wait()
-		local Team = plr.Team
-		local FlyTime = os.time()
-		local FlyTriggered = false
-		local FloorMaterial = Enum.Material.SmoothPlastic
-		local CPos = Char:GetPivot().Position
-		local Respawn = true
-		local Jumped = false
-		local TeamChanges = 0
-		local PUPos = _G.AHAKIPU(plr.UserId)
-		plr.CharacterAdded:Connect(function(mod)
-			Jumped = false
-			Respawn = true
-			Char = mod
-			repeat
-				Jumped = Char:WaitForChild("Humanoid").Jump
-				task.wait()
-			until Jumped
-			task.wait(0.5)
-			Respawn = false
-		end)
-		repeat
-			Jumped = Char:WaitForChild("Humanoid").Jump
-			task.wait()
-		until Jumped
-		task.wait(0.5)
-		Respawn = false
-
-		--<[Speed]>--
-		task.spawn(function()
-			while task.wait(0.05) do
-				if Config.FPS >= 15 then
-					if (Char:GetPivot().Position - CPos).Magnitude >= math.clamp(Config.Ping / 100, 22, math.huge) then
-						if (Char:GetPivot().Position - CPos).Magnitude >= math.clamp(Config.Ping / 10, 40, math.huge) then
-							ACTrigger(plr, "Teleport", Respawn)
-							PUPos = nil
-						else
-							ACTrigger(plr, "Speed", Respawn)
-							PUPos = 1
-						end
-					end
-				end
-				CPos = Char:GetPivot().Position
-			end
-		end)
-
-		--<[Flight]>--
-		task.spawn(function()
-			FlyTime = os.time()
-			while task.wait() do
-				pcall(function()
-					if Char:WaitForChild("Humanoid").FloorMaterial == Enum.Material.Air and Jumped then
-						PUPos = 2
-						repeat task.wait() until Char.Humanoid.FloorMaterial ~= Enum.Material.Air
-					else
-						FlyTime = os.time()
-					end
-				end)
-			end
-		end)
-
-		task.spawn(function()
-			while task.wait(0.5) do
-				pcall(function()
-					-- and Char:GetPivot().UpVector:Dot(Vector3.new(0, 1, 0)) <= 0.975 
-					if os.time() - FlyTime >= 5 then
-						ACTrigger(plr, "Flight", Char.Humanoid.Sit or (not Jumped))
-					end
-				end)
-			end
-		end)
-
-		--<[Teams]>--
-		plr:GetPropertyChangedSignal("Team"):Connect(function()
-			TeamChanges += 1
-			if TeamChanges >= 2 then
-				ACTrigger(plr, "Attempted Mass Kill", false, true) 
-			end
-		end)
-
-		while task.wait(2) do
-			TeamChanges = 0
-		end
-	end
-
-	task.spawn(function()
-		for i, v in game:GetService("Players"):GetPlayers() do
-			task.spawn(AddAC, v)
-		end
-
-		game:GetService("Players").PlayerAdded:Connect(AddAC)
-
-		game:GetService("Players").PlayerRemoving:Connect(function(plr)
-			if plr == LocalPlayer then return end
-			table.remove(Config.AC.List, table.find(Config.AC.List, plr))
-		end)
-	end)
-
-	game:GetService("RunService").RenderStepped:Connect(function(DT)
-		Config.FPS = math.floor(1 / DT)
-	end)
-
-	game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
-		if proc then return end
-		if inp.KeyCode == Enum.KeyCode.L then
-			print("Users Under Anticheat (\n> ".. table.concat(Config.AC.List, ", ").. "\n)")
-		end
-	end)
-	print("Real Anticheat Loaded.")
-
-	local suc = false
-	repeat
-		suc = pcall(function()
-			game:GetService("StarterGui"):SetCore("SendNotificaiton", {["Title"] = "Anticheat", ["Text"] = "Real Anticheat Loaded.", ["Duration"] = 5})
-		end)
-		task.wait()
-	until suc
-	while task.wait() do
-		Config.Ping = LocalPlayer:GetNetworkPing() * 1000
-	end
 end)
 
 AntiHub.TitleBar.Container.Container.Player.Settings.Activated:Connect(function()
