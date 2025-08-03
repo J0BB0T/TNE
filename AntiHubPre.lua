@@ -3893,9 +3893,11 @@ Washiez.TicketSpam.Activated:Connect(function()
 			end
 			Current += 1
 			for i, v in game:GetService("Players"):GetPlayers() do
-				game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {v.Name, Types[Current]})
+				task.spawn(function()
+					game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {v.Name, Types[Current]})
+				end)
 			end
-			task.wait()
+			task.wait(0.1)
 		until not Config.Washiez.AllTickets
 	else
 		Washiez.TicketSpam.Text = "Spam All Tickets"
@@ -3927,12 +3929,14 @@ Washiez.DTickets.Activated:Connect(function()
 		Washiez.DTickets.Text = "Enable Tickets"
 		repeat
 			for i, v in game:GetService("Players"):GetPlayers() do
-				if v.Character == nil then continue end
-				if v.Character:FindFirstChild("Regular Ticket") or v.Character:FindFirstChild("Extra Ticket") or v.Character:FindFirstChild("Deluxe Ticket") or v.Backpack:FindFirstChild("Regular Ticket") or v.Backpack:FindFirstChild("Extra Ticket") or v.Backpack:FindFirstChild("Deluxe Ticket") then
-					pcall(function()
-						game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {v.Name})
-					end)
-				end
+				task.spawn(function()
+					if v.Character == nil then continue end
+					if v.Character:FindFirstChild("Regular Ticket") or v.Character:FindFirstChild("Extra Ticket") or v.Character:FindFirstChild("Deluxe Ticket") or v.Backpack:FindFirstChild("Regular Ticket") or v.Backpack:FindFirstChild("Extra Ticket") or v.Backpack:FindFirstChild("Deluxe Ticket") then
+						pcall(function()
+							game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {v.Name})
+						end)
+					end
+				end)
 			end
 			task.wait()
 		until not Config.Washiez.AllTickets
