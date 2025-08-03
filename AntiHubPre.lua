@@ -3287,8 +3287,6 @@ for i, v in AntiHub.TitleBar.Container.Container.Menus:GetChildren() do
 	v.Visible = false
 	v.GroupTransparency = 1
 end
-AntiHub.TitleBar.Container.Container.Menus[Menu].Visible = true
-AntiHub.TitleBar.Container.Container.Menus[Menu].GroupTransparency = 0
 
 for i, v in game:GetService("Players"):GetPlayers() do
 	v:GetPropertyChangedSignal("Team"):Connect(UpdatePlayerList)
@@ -4332,8 +4330,12 @@ HidChat(game:GetService("Players"), "TNEListStart")
 if table.find(PlaceIDs, game.PlaceId) then
 	AntiHub.TitleBar.Container.Container.List.Places.Visible = false
 	AntiHub.TitleBar.Container.Container.List[Supported[table.find(PlaceIDs, game.PlaceId)]].Visible = true
+	AntiHub.TitleBar.Container.Container.Menus[Supported[table.find(PlaceIDs, game.PlaceId)]].Visible = true
+	AntiHub.TitleBar.Container.Container.Menus[Supported[table.find(PlaceIDs, game.PlaceId)]].GroupTransparency = 0
 else
 	AntiHub.TitleBar.Container.Container.List.Places.Visible = true
+	AntiHub.TitleBar.Container.Container.Menus.Places.Visible = true
+	AntiHub.TitleBar.Container.Container.Menus.Places.GroupTransparency = 0
 end
 
 task.spawn(function()
