@@ -3930,7 +3930,7 @@ Washiez.DTickets.Activated:Connect(function()
 		repeat
 			for i, v in game:GetService("Players"):GetPlayers() do
 				task.spawn(function()
-					if v.Character == nil then continue end
+					if v.Character == nil then return end
 					if v.Character:FindFirstChild("Regular Ticket") or v.Character:FindFirstChild("Extra Ticket") or v.Character:FindFirstChild("Deluxe Ticket") or v.Backpack:FindFirstChild("Regular Ticket") or v.Backpack:FindFirstChild("Extra Ticket") or v.Backpack:FindFirstChild("Deluxe Ticket") then
 						pcall(function()
 							game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {v.Name})
