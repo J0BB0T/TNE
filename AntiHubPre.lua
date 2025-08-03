@@ -3924,7 +3924,7 @@ Washiez.Despawn.Activated:Connect(function()
 end)
 
 Washiez.DTickets.Activated:Connect(function()
-	Config.Washiez.NoTickets = not Config.WashiezNoTickets
+	Config.Washiez.NoTickets = not Config.Washiez.NoTickets
 	if Config.Washiez.NoTickets then
 		Washiez.DTickets.Text = "Enable Tickets"
 		repeat
