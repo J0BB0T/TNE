@@ -153,14 +153,14 @@ local Converted = {
 	["_WashiezTC1"] = Instance.new("TextButton");
 	["_UICorner50"] = Instance.new("UICorner");
 	["_Washiez2"] = Instance.new("CanvasGroup");
-	["_Crash1"] = Instance.new("TextButton");
+	["_Despawn"] = Instance.new("TextButton");
 	["_UICorner51"] = Instance.new("UICorner");
 	["_NFuel"] = Instance.new("TextButton");
 	["_UICorner52"] = Instance.new("UICorner");
 	["_Input5"] = Instance.new("TextBox");
 	["_Fling1"] = Instance.new("TextButton");
 	["_UICorner53"] = Instance.new("UICorner");
-	["_Despawn"] = Instance.new("TextButton");
+	["_AutoFarm"] = Instance.new("TextButton");
 	["_UICorner54"] = Instance.new("UICorner");
 	["_TP1"] = Instance.new("TextButton");
 	["_UICorner55"] = Instance.new("UICorner");
@@ -212,7 +212,7 @@ local Converted = {
 	["_Entrance"] = Instance.new("TextButton");
 	["_UICorner77"] = Instance.new("UICorner");
 	["_OilUp2"] = Instance.new("CanvasGroup");
-	["_AutoFarm"] = Instance.new("TextButton");
+	["_AutoFarm1"] = Instance.new("TextButton");
 	["_UICorner78"] = Instance.new("UICorner");
 	["_Player1"] = Instance.new("CanvasGroup");
 	["_UICorner79"] = Instance.new("UICorner");
@@ -1866,23 +1866,23 @@ Converted["_Washiez2"].Visible = false
 Converted["_Washiez2"].Name = "Washiez"
 Converted["_Washiez2"].Parent = Converted["_Menus"]
 
-Converted["_Crash1"].Font = Enum.Font.TitilliumWeb
-Converted["_Crash1"].Text = "Crash"
-Converted["_Crash1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Crash1"].TextScaled = true
-Converted["_Crash1"].TextSize = 14
-Converted["_Crash1"].TextWrapped = true
-Converted["_Crash1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Crash1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Crash1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Crash1"].BorderSizePixel = 0
-Converted["_Crash1"].Position = UDim2.new(0.125, 0, 0.944999993, 0)
-Converted["_Crash1"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
-Converted["_Crash1"].Name = "Crash"
-Converted["_Crash1"].Parent = Converted["_Washiez2"]
+Converted["_Despawn"].Font = Enum.Font.TitilliumWeb
+Converted["_Despawn"].Text = "Despawn Car"
+Converted["_Despawn"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Despawn"].TextScaled = true
+Converted["_Despawn"].TextSize = 14
+Converted["_Despawn"].TextWrapped = true
+Converted["_Despawn"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Despawn"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Despawn"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Despawn"].BorderSizePixel = 0
+Converted["_Despawn"].Position = UDim2.new(0.125, 0, 0.944999993, 0)
+Converted["_Despawn"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Despawn"].Name = "Despawn"
+Converted["_Despawn"].Parent = Converted["_Washiez2"]
 
 Converted["_UICorner51"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner51"].Parent = Converted["_Crash1"]
+Converted["_UICorner51"].Parent = Converted["_Despawn"]
 
 Converted["_NFuel"].Font = Enum.Font.TitilliumWeb
 Converted["_NFuel"].Text = "0 Fuel"
@@ -1938,23 +1938,23 @@ Converted["_Fling1"].Parent = Converted["_Washiez2"]
 Converted["_UICorner53"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner53"].Parent = Converted["_Fling1"]
 
-Converted["_Despawn"].Font = Enum.Font.TitilliumWeb
-Converted["_Despawn"].Text = "Despawn Car"
-Converted["_Despawn"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Despawn"].TextScaled = true
-Converted["_Despawn"].TextSize = 14
-Converted["_Despawn"].TextWrapped = true
-Converted["_Despawn"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Despawn"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Despawn"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Despawn"].BorderSizePixel = 0
-Converted["_Despawn"].Position = UDim2.new(0.800000012, 0, 0.224999994, 0)
-Converted["_Despawn"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
-Converted["_Despawn"].Name = "Despawn"
-Converted["_Despawn"].Parent = Converted["_Washiez2"]
+Converted["_AutoFarm"].Font = Enum.Font.TitilliumWeb
+Converted["_AutoFarm"].Text = "Enable AutoFarm"
+Converted["_AutoFarm"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_AutoFarm"].TextScaled = true
+Converted["_AutoFarm"].TextSize = 14
+Converted["_AutoFarm"].TextWrapped = true
+Converted["_AutoFarm"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_AutoFarm"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_AutoFarm"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_AutoFarm"].BorderSizePixel = 0
+Converted["_AutoFarm"].Position = UDim2.new(0.800000012, 0, 0.224999994, 0)
+Converted["_AutoFarm"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_AutoFarm"].Name = "AutoFarm"
+Converted["_AutoFarm"].Parent = Converted["_Washiez2"]
 
 Converted["_UICorner54"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner54"].Parent = Converted["_Despawn"]
+Converted["_UICorner54"].Parent = Converted["_AutoFarm"]
 
 Converted["_TP1"].Font = Enum.Font.TitilliumWeb
 Converted["_TP1"].Text = "Teleports"
@@ -2424,23 +2424,23 @@ Converted["_OilUp2"].Visible = false
 Converted["_OilUp2"].Name = "OilUp"
 Converted["_OilUp2"].Parent = Converted["_Menus"]
 
-Converted["_AutoFarm"].Font = Enum.Font.TitilliumWeb
-Converted["_AutoFarm"].Text = "Enable AutoFarm"
-Converted["_AutoFarm"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_AutoFarm"].TextScaled = true
-Converted["_AutoFarm"].TextSize = 14
-Converted["_AutoFarm"].TextWrapped = true
-Converted["_AutoFarm"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_AutoFarm"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_AutoFarm"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_AutoFarm"].BorderSizePixel = 0
-Converted["_AutoFarm"].Position = UDim2.new(0.5, 0, 0.375, 0)
-Converted["_AutoFarm"].Size = UDim2.new(0.400000006, 0, 0.400000006, 0)
-Converted["_AutoFarm"].Name = "AutoFarm"
-Converted["_AutoFarm"].Parent = Converted["_OilUp2"]
+Converted["_AutoFarm1"].Font = Enum.Font.TitilliumWeb
+Converted["_AutoFarm1"].Text = "Enable AutoFarm"
+Converted["_AutoFarm1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_AutoFarm1"].TextScaled = true
+Converted["_AutoFarm1"].TextSize = 14
+Converted["_AutoFarm1"].TextWrapped = true
+Converted["_AutoFarm1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_AutoFarm1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_AutoFarm1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_AutoFarm1"].BorderSizePixel = 0
+Converted["_AutoFarm1"].Position = UDim2.new(0.5, 0, 0.375, 0)
+Converted["_AutoFarm1"].Size = UDim2.new(0.400000006, 0, 0.400000006, 0)
+Converted["_AutoFarm1"].Name = "AutoFarm"
+Converted["_AutoFarm1"].Parent = Converted["_OilUp2"]
 
 Converted["_UICorner78"].CornerRadius = UDim.new(0.0500000007, 0)
-Converted["_UICorner78"].Parent = Converted["_AutoFarm"]
+Converted["_UICorner78"].Parent = Converted["_AutoFarm1"]
 
 Converted["_Player1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Player1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
@@ -2848,7 +2848,7 @@ local MenWait = false
 local Keybind = "G"
 local UIPos = UDim2.new(0, 0, 0, 0)
 local Expanded = true
-local Menu = "PrisonLife"
+local Menu = "Places"
 local Chat = AntiHub:WaitForChild("TitleBar"):WaitForChild("Container"):WaitForChild("Container"):WaitForChild("Menus"):WaitForChild("Chat")
 local Places = AntiHub.TitleBar.Container.Container.Menus.Places
 local PrisonLife = AntiHub.TitleBar.Container.Container.Menus.PrisonLife
@@ -2869,6 +2869,13 @@ Platform.Size = Vector3.new(50, 10, 50)
 Platform.Position = Vector3.new(0, 100000, 0)
 Platform.Anchored = true
 Platform.Parent = workspace
+if not fireproximityprompt then
+	local function fireproximityprompt(Prompt:ProximityPrompt)
+		Prompt:InputHoldBegin()
+		task.wait()
+		Prompt:InputHoldEnd()
+	end
+end
 local Config = {}
 local Loaded, LOut = pcall(function()
 	if isfile("AHConfig.cfg") then
@@ -2898,6 +2905,8 @@ local Loaded, LOut = pcall(function()
 	Config.Washiez = {}
 	Config.Washiez.AllTickets = false
 	Config.Washiez.NoTickets = false
+	Config.Washiez.AutoFarm = false
+	Config.Washiez.Flinging = false
 	Config.OilUp = {}
 	Config.OilUp.AutoFarm = false
 end)
@@ -2927,6 +2936,8 @@ else
 	Config.Washiez = {}
 	Config.Washiez.AllTickets = false
 	Config.Washiez.NoTickets = false
+	Config.Washiez.AutoFarm = false
+	Config.Washiez.Flinging = false
 	Config.OilUp = {}
 	Config.OilUp.AutoFarm = false
 end
@@ -2995,7 +3006,7 @@ local function UpdatePlayerList()
 			TeamName = v.Team.Name
 			TeamColor = "rgb(".. tostring(math.round(255 * v.TeamColor.Color.R)).. ",".. tostring(math.round(255 * v.TeamColor.Color.G)).. ",".. tostring(math.round(255 * v.TeamColor.Color.B)).. ")"
 		end
-		if table.find(Config.AC.Whitelist, v) then
+		if table.find(Team, v) then
 			table.insert(List, tostring(i).. ". <font color=\"rgb(0,178,0)\">".. v.Name.. `</font> <font color=\"{TeamColor}\"> ({TeamName})</font>`)
 		else
 			table.insert(List, tostring(i).. ". <font color=\"rgb(178,0,0)\">".. v.Name.. `</font> <font color=\"{TeamColor}\"> ({TeamName})</font>`)
@@ -3471,8 +3482,8 @@ task.spawn(function()
 		end)
 		task.wait()
 	until suc
-	while task.wait() do
-		Config.Ping = LocalPlayer:GetNetworkPing() * 1000
+	while task.wait(0.1) do
+		Config.Ping = game:GetService("Stats").Network.ServerStatsItem.Ping
 	end
 end)
 
@@ -3532,6 +3543,7 @@ AntiCheat.Toggle.Activated:Connect(function()
 		table.remove(Config.AC.Whitelist, table.find(Config.AC.Whitelist, game:GetService("Players"):FindFirstChild(AntiCheat.Input.Text)))
 	else
 		table.insert(Config.AC.Whitelist, game:GetService("Players"):FindFirstChild(AntiCheat.Input.Text))
+		AddAC(game:GetService("Players"):FindFirstChild(AntiCheat.Input.Text))
 	end
 	UpdateWhitelist()
 end)
@@ -3663,6 +3675,7 @@ PrisonLife.Guards.Activated:Connect(function()
 	local CF = LocalPlayer.Character:GetPivot()
 	workspace.Remote.TeamEvent:FireServer("Bright blue")
 	if #game:GetService("Teams").Guards:GetPlayers() > 7 then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Guards Team Full", ["Duration"] = 5})
 		return
 	end
 	if Team == game:GetService("Teams").Neutral then
@@ -3695,22 +3708,31 @@ PrisonLife.Neutral.Activated:Connect(function()
 end)
 
 PrisonLife.Teleports.Crimbase.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(-945, 95, 2065))
 end)
 PrisonLife.Teleports.Yard.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:PivotTo(CFrame.new(788, 98, 2468))
 end)
 PrisonLife.Teleports.Guards.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:PivotTo(CFrame.new(836, 100, 2285))
 end)
 PrisonLife.Teleports.Mansion.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:PivotTo(CFrame.new(-316, 65, 1841))
 end)
 PrisonLife.Teleports.Cafe.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:PivotTo(CFrame.new(884, 100, 2294))
 end)
 PrisonLife.Teleports.Gate.Activated:Connect(function()
-	local LocalPlayer = game.Players.LocalPlayer
 	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(505, 100, 2250))
@@ -3895,7 +3917,7 @@ Washiez.TicketSpam.Activated:Connect(function()
 					game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {v.Name, Types[Current]})
 				end)
 			end
-			task.wait(0.5)
+			task.wait(#game:GetService("Players"):GetPlayers() / 100)
 		until not Config.Washiez.AllTickets
 	else
 		Washiez.TicketSpam.Text = "Spam All Tickets"
@@ -3927,37 +3949,92 @@ Washiez.DTickets.Activated:Connect(function()
 		Washiez.DTickets.Text = "Enable Tickets"
 		repeat
 			for i, v in game:GetService("Players"):GetPlayers() do
-				task.spawn(function()
-					if v.Character == nil then return end
-					if v.Character:FindFirstChild("Regular Ticket") or v.Character:FindFirstChild("Extra Ticket") or v.Character:FindFirstChild("Deluxe Ticket") or v.Backpack:FindFirstChild("Regular Ticket") or v.Backpack:FindFirstChild("Extra Ticket") or v.Backpack:FindFirstChild("Deluxe Ticket") then
-						pcall(function()
-							game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {v.Name})
-						end)
-					end
-				end)
+				if v.Character == nil then continue end
+				if v.Character:FindFirstChild("Regular Ticket") or v.Character:FindFirstChild("Extra Ticket") or v.Character:FindFirstChild("Deluxe Ticket") or v.Backpack:FindFirstChild("Regular Ticket") or v.Backpack:FindFirstChild("Extra Ticket") or v.Backpack:FindFirstChild("Deluxe Ticket") then
+					pcall(function()
+						game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {v.Name})
+					end)
+				end
 			end
-			task.wait()
-		until not Config.Washiez.AllTickets
+			task.wait(task.wait(#game:GetService("Players"):GetPlayers() / 100))
+		until not Config.Washiez.NoTickets
 	else
 		Washiez.DTickets.Text = "Disable Tickets"
 	end
 end)
+Washiez.AutoFarm.Activated:Connect(function()
+	Config.Washiez.NoTickets = not Config.Washiez.NoTickets
+	if Config.Washiez.NoTickets then
+		Washiez.AutoFarm.Text = "Disable Autofarm"
+		local Types = {"Regular", "Extra", "Deluxe"}
+		local Current = 0
+		repeat
+			if Current == 3 then
+				Current = 0
+			end
+			Current += 1
+			game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {LocalPlayer.Name, Types[Current]})
+			task.wait(10)
+		until not Config.Washiez.AutoFarm
+	else
+		Washiez.AutoFarm.Text = "Enabled AutoFarm"
+	end
+end)
+Washiez.Fling.Activated:Connect(function()
+	Config.Washiez.Flinging = not Config.Washiez.Flinging
+	if Config.Washiez.Flinging then
+		Washiez.Fling.Text = "Stop Flinging"
+		sethiddenproperty(game:GetService("Players").LocalPlayer, "SimulationRadius", math.huge)
+		local Pos = Vector3.new(0, 0, 0)
+		local Target = game:GetService("Players"):FindFirstChild(Washiez.Target.Text)
+		repeat
+			if Target then
+				Pos = Target.Character:GetPivot()
+			end
+			local Part = workspace:WaitForChild("SpawnedCars"):FindFirstChild(LocalPlayer.Name.. "-SUV")
+			if Part == nil then
+				game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Please Spawn An SUV", ["Duration"] = 5})
+				return
+			end
+			Part = Part.Chassis:FindFirstChildWhichIsA("VehicleSeat")
+			Part.Position = Pos
+			Part.AssemblyLinearVelocity = Vector3.new((Part.Position.X - Pos.X)*-1, (Part.Position.Y - Pos.Y)*-1, (Part.Position.Z - Pos.Z)*-1)
+			Part.AssemblyAngularVelocity = Vector3.new(1000000000, 0, 0)
+			Part.CanCollide = false
+		until Target == nil or Target.Character:FindFirstChild("HumanoidRootPart") == nil or not Config.Washiez.Flinging
+		Washiez.Fling.Text = "Fling"
+	else
+		Washiez.Fling.Text = "Fling"
+	end
+end)
 Washiez.Teleports.Spawn.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(-110, 4, 105))
 end)
 Washiez.Teleports.Staff.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(290, 4, -195))
 end)
 Washiez.Teleports.Store.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(545, 4, -200))
 end)
 Washiez.Teleports.Key.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(-155, -5, -210))
 end)
 Washiez.Teleports.Kitchen.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(569, 4, 206))
 end)
 Washiez.Teleports.Jail.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(275, 4, -535))
 end)
 Washiez.Teleports.Close.Activated:Connect(function()
@@ -3979,30 +4056,48 @@ Washiez.TP.Activated:Connect(function()
 end)
 
 WashiezTC.Spawn.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(469, 6, -115))
 end)
 WashiezTC.Staff.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(305, 6, -115))
 end)
 WashiezTC.Upstairs.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(330, 23, -115))
 end)
 WashiezTC.Trainee.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(228, 4, 0))
 end)
 WashiezTC.JD.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(200, 4, -105))
 end)
 WashiezTC.SD.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(230, 4, -230))
 end)
 WashiezTC.Chair.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(426, -41, -134))
 end)
 WashiezTC.Entrance.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(560, 4, -115))
 end)
 WashiezTC.Test.Activated:Connect(function()
+	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
 	LocalPlayer.Character:MoveTo(Vector3.new(829, -284, -10))
 end)
 
@@ -4332,7 +4427,9 @@ if table.find(PlaceIDs, game.PlaceId) then
 	AntiHub.TitleBar.Container.Container.List[Supported[table.find(PlaceIDs, game.PlaceId)]].Visible = true
 	AntiHub.TitleBar.Container.Container.Menus[Supported[table.find(PlaceIDs, game.PlaceId)]].Visible = true
 	AntiHub.TitleBar.Container.Container.Menus[Supported[table.find(PlaceIDs, game.PlaceId)]].GroupTransparency = 0
+	Menu = Supported[table.find(PlaceIDs, game.PlaceId)]
 else
+	Menu = "Places"
 	AntiHub.TitleBar.Container.Container.List.Places.Visible = true
 	AntiHub.TitleBar.Container.Container.Menus.Places.Visible = true
 	AntiHub.TitleBar.Container.Container.Menus.Places.GroupTransparency = 0
@@ -4374,11 +4471,9 @@ task.spawn(function()
 			if LocalPlayer.Character == nil then return end
 			local CF = LocalPlayer.Character:GetPivot()
 			local Target = workspace:FindFirstChild("CarSpawner").CarSpawner.Screen.CarSystem
-			LocalPlayer.Character:PivotTo(Target.Parent.CFrame)
 			repeat task.wait()
-				Target:InputHoldBegin()
-				task.wait(0.05)
-				Target:InputHoldEnd()
+				LocalPlayer.Character:PivotTo(Target.Parent.CFrame)
+				fireproxmimityprompt(Target)
 				task.wait(0.05)
 			until LocalPlayer.PlayerGui.CarSelection.MainFrame.Position ~= UDim2.new(1.2, 0, 0.5, 0)
 			LocalPlayer.Character:PivotTo(CF)
@@ -4401,6 +4496,17 @@ task.spawn(function()
 				Car:SetAttribute("FreezeCar", false)
 				task.wait(0.1)
 			until Car == nil
+			for i, v in Car:WaitForChild("Chassis"):GetChildren() do
+				if not v:IsA("Seat") then continue end
+				v:WaitForChild("PromptLocation"):WaitForChild("EndorsedVehicleProximityPromptV1").Triggered:Connect(function()
+					if LocalPlayer.Character == nil then return end
+					LocalPlayer.Character:PivotTo(v.CFrame)
+					v:Sit(LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid"))
+				end)
+			end
+		end)
+		game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(prompt)
+			fireproximityprompt(prompt)
 		end)
 		while task.wait(1) do
 			Washiez.Rank.Text = "Current Rank: ".. tostring(LocalPlayer.GroupInfo.Rank.Value)
