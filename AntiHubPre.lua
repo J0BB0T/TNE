@@ -3895,7 +3895,7 @@ Washiez.TicketSpam.Activated:Connect(function()
 					game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {v.Name, Types[Current]})
 				end)
 			end
-			task.wait(0.1)
+			task.wait(0.5)
 		until not Config.Washiez.AllTickets
 	else
 		Washiez.TicketSpam.Text = "Spam All Tickets"
