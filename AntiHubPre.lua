@@ -4944,7 +4944,7 @@ WashiezTC.Doors.Activated:Connect(function()
 		end
 	end
 end)
-WashiezTC.OG.Activated:Conncet(function()
+WashiezTC.OG.Activated:Connect(function()
 	game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub", ["Text"] = "Teleporting...", ["Duration"] = 10})
 	game:GetService("TeleportService"):Teleport(13824270489, LocalPlayer)
 end)
