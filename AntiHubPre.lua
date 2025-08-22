@@ -4901,7 +4901,7 @@ end)
 _G.AHAKE = ""
 task.spawn(function()
 	pcall(function()
-		--loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiKick.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiKick.lua"))()
 	end)
 end)
 
