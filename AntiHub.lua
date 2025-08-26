@@ -18,6 +18,7 @@ local Converted = {
 	["_Washiez"] = Instance.new("TextButton");
 	["_WashiezTC"] = Instance.new("TextButton");
 	["_OilUp"] = Instance.new("TextButton");
+	["_WashiezOGTC"] = Instance.new("TextButton");
 	["_Menus"] = Instance.new("Folder");
 	["_Chat1"] = Instance.new("CanvasGroup");
 	["_Logs1"] = Instance.new("ScrollingFrame");
@@ -157,122 +158,170 @@ local Converted = {
 	["_UICorner51"] = Instance.new("UICorner");
 	["_NFuel"] = Instance.new("TextButton");
 	["_UICorner52"] = Instance.new("UICorner");
-	["_Input5"] = Instance.new("TextBox");
-	["_CTickets"] = Instance.new("TextButton");
-	["_UICorner53"] = Instance.new("UICorner");
-	["_AutoFarm"] = Instance.new("TextButton");
-	["_UICorner54"] = Instance.new("UICorner");
 	["_TP1"] = Instance.new("TextButton");
-	["_UICorner55"] = Instance.new("UICorner");
-	["_NIFuel"] = Instance.new("TextButton");
-	["_UICorner56"] = Instance.new("UICorner");
+	["_UICorner53"] = Instance.new("UICorner");
+	["_IFuel"] = Instance.new("TextButton");
+	["_UICorner54"] = Instance.new("UICorner");
 	["_Teleports2"] = Instance.new("CanvasGroup");
 	["_Close1"] = Instance.new("TextButton");
-	["_UICorner57"] = Instance.new("UICorner");
+	["_UICorner55"] = Instance.new("UICorner");
 	["_Jail"] = Instance.new("TextButton");
-	["_UICorner58"] = Instance.new("UICorner");
+	["_UICorner56"] = Instance.new("UICorner");
 	["_Store"] = Instance.new("TextButton");
-	["_UICorner59"] = Instance.new("UICorner");
+	["_UICorner57"] = Instance.new("UICorner");
 	["_Staff"] = Instance.new("TextButton");
-	["_UICorner60"] = Instance.new("UICorner");
+	["_UICorner58"] = Instance.new("UICorner");
 	["_Spawn"] = Instance.new("TextButton");
-	["_UICorner61"] = Instance.new("UICorner");
+	["_UICorner59"] = Instance.new("UICorner");
 	["_Kitchen"] = Instance.new("TextButton");
-	["_UICorner62"] = Instance.new("UICorner");
+	["_UICorner60"] = Instance.new("UICorner");
 	["_Key1"] = Instance.new("TextButton");
-	["_UICorner63"] = Instance.new("UICorner");
+	["_UICorner61"] = Instance.new("UICorner");
 	["_VIP"] = Instance.new("TextButton");
-	["_UICorner64"] = Instance.new("UICorner");
+	["_UICorner62"] = Instance.new("UICorner");
 	["_CarWash"] = Instance.new("TextButton");
-	["_UICorner65"] = Instance.new("UICorner");
+	["_UICorner63"] = Instance.new("UICorner");
 	["_Warehouse"] = Instance.new("TextButton");
-	["_UICorner66"] = Instance.new("UICorner");
-	["_TicketSpam"] = Instance.new("TextButton");
-	["_UICorner67"] = Instance.new("UICorner");
-	["_DTickets"] = Instance.new("TextButton");
-	["_UICorner68"] = Instance.new("UICorner");
+	["_UICorner64"] = Instance.new("UICorner");
 	["_MFuel"] = Instance.new("TextButton");
-	["_UICorner69"] = Instance.new("UICorner");
+	["_UICorner65"] = Instance.new("UICorner");
 	["_RankDown"] = Instance.new("TextButton");
-	["_UICorner70"] = Instance.new("UICorner");
+	["_UICorner66"] = Instance.new("UICorner");
 	["_RankUp"] = Instance.new("TextButton");
-	["_UICorner71"] = Instance.new("UICorner");
+	["_UICorner67"] = Instance.new("UICorner");
 	["_Rank"] = Instance.new("TextLabel");
-	["_Regular"] = Instance.new("TextButton");
+	["_Radio"] = Instance.new("TextBox");
+	["_UICorner68"] = Instance.new("UICorner");
+	["_Tickets"] = Instance.new("CanvasGroup");
+	["_TicketSpam"] = Instance.new("TextButton");
+	["_UICorner69"] = Instance.new("UICorner");
+	["_DTickets"] = Instance.new("TextButton");
+	["_UICorner70"] = Instance.new("UICorner");
+	["_AutoFarm"] = Instance.new("TextButton");
+	["_UICorner71"] = Instance.new("UICorner");
+	["_CTicket"] = Instance.new("TextLabel");
 	["_UICorner72"] = Instance.new("UICorner");
-	["_Extra"] = Instance.new("TextButton");
+	["_CTickets"] = Instance.new("TextButton");
 	["_UICorner73"] = Instance.new("UICorner");
 	["_Deluxe"] = Instance.new("TextButton");
 	["_UICorner74"] = Instance.new("UICorner");
-	["_CTicket"] = Instance.new("TextLabel");
+	["_Extra"] = Instance.new("TextButton");
 	["_UICorner75"] = Instance.new("UICorner");
-	["_WashiezTC2"] = Instance.new("CanvasGroup");
-	["_SD"] = Instance.new("TextButton");
+	["_Regular"] = Instance.new("TextButton");
 	["_UICorner76"] = Instance.new("UICorner");
-	["_Trainee"] = Instance.new("TextButton");
+	["_Input5"] = Instance.new("TextBox");
 	["_UICorner77"] = Instance.new("UICorner");
-	["_JD"] = Instance.new("TextButton");
+	["_Close2"] = Instance.new("TextButton");
 	["_UICorner78"] = Instance.new("UICorner");
-	["_Spawn1"] = Instance.new("TextButton");
+	["_TCK"] = Instance.new("TextButton");
 	["_UICorner79"] = Instance.new("UICorner");
-	["_Staff1"] = Instance.new("TextButton");
+	["_CRank"] = Instance.new("TextBox");
 	["_UICorner80"] = Instance.new("UICorner");
-	["_Upstairs"] = Instance.new("TextButton");
+	["_FF"] = Instance.new("TextButton");
 	["_UICorner81"] = Instance.new("UICorner");
-	["_Chair"] = Instance.new("TextButton");
+	["_Obby"] = Instance.new("TextLabel");
 	["_UICorner82"] = Instance.new("UICorner");
-	["_Test"] = Instance.new("TextButton");
+	["_ObbyR"] = Instance.new("TextButton");
 	["_UICorner83"] = Instance.new("UICorner");
-	["_Entrance"] = Instance.new("TextButton");
+	["_ObbyL"] = Instance.new("TextButton");
 	["_UICorner84"] = Instance.new("UICorner");
+	["_AutoObby"] = Instance.new("TextButton");
+	["_UICorner85"] = Instance.new("UICorner");
+	["_NIFuel"] = Instance.new("TextButton");
+	["_UICorner86"] = Instance.new("UICorner");
+	["_Gates"] = Instance.new("TextButton");
+	["_UICorner87"] = Instance.new("UICorner");
+	["_Key2"] = Instance.new("TextButton");
+	["_UICorner88"] = Instance.new("UICorner");
+	["_Collision"] = Instance.new("TextButton");
+	["_UICorner89"] = Instance.new("UICorner");
+	["_WLOL"] = Instance.new("TextButton");
+	["_UICorner90"] = Instance.new("UICorner");
+	["_WashiezTC2"] = Instance.new("CanvasGroup");
+	["_VSeat"] = Instance.new("TextButton");
+	["_UICorner91"] = Instance.new("UICorner");
+	["_OG"] = Instance.new("TextButton");
+	["_UICorner92"] = Instance.new("UICorner");
+	["_Doors"] = Instance.new("TextButton");
+	["_UICorner93"] = Instance.new("UICorner");
+	["_Teleports3"] = Instance.new("CanvasGroup");
+	["_Upstairs"] = Instance.new("TextButton");
+	["_UICorner94"] = Instance.new("UICorner");
+	["_Trainee"] = Instance.new("TextButton");
+	["_UICorner95"] = Instance.new("UICorner");
+	["_Test"] = Instance.new("TextButton");
+	["_UICorner96"] = Instance.new("UICorner");
+	["_Staff1"] = Instance.new("TextButton");
+	["_UICorner97"] = Instance.new("UICorner");
+	["_Spawn1"] = Instance.new("TextButton");
+	["_UICorner98"] = Instance.new("UICorner");
+	["_JD"] = Instance.new("TextButton");
+	["_UICorner99"] = Instance.new("UICorner");
+	["_SD"] = Instance.new("TextButton");
+	["_UICorner100"] = Instance.new("UICorner");
+	["_Entrance"] = Instance.new("TextButton");
+	["_UICorner101"] = Instance.new("UICorner");
+	["_Chair"] = Instance.new("TextButton");
+	["_UICorner102"] = Instance.new("UICorner");
+	["_Close3"] = Instance.new("TextButton");
+	["_UICorner103"] = Instance.new("UICorner");
+	["_TP2"] = Instance.new("TextButton");
+	["_UICorner104"] = Instance.new("UICorner");
+	["_FF1"] = Instance.new("TextButton");
+	["_UICorner105"] = Instance.new("UICorner");
+	["_Cars"] = Instance.new("TextLabel");
+	["_UICorner106"] = Instance.new("UICorner");
 	["_OilUp2"] = Instance.new("CanvasGroup");
 	["_AutoFarm1"] = Instance.new("TextButton");
-	["_UICorner85"] = Instance.new("UICorner");
+	["_UICorner107"] = Instance.new("UICorner");
+	["_WashiezOGTC1"] = Instance.new("CanvasGroup");
+	["_OGTCMessage"] = Instance.new("TextLabel");
+	["_UICorner108"] = Instance.new("UICorner");
 	["_Player1"] = Instance.new("CanvasGroup");
-	["_UICorner86"] = Instance.new("UICorner");
+	["_UICorner109"] = Instance.new("UICorner");
 	["_Settings"] = Instance.new("ImageButton");
-	["_UICorner87"] = Instance.new("UICorner");
+	["_UICorner110"] = Instance.new("UICorner");
 	["_KeepShapePlz"] = Instance.new("UIAspectRatioConstraint");
 	["_Profile"] = Instance.new("ImageButton");
-	["_UICorner88"] = Instance.new("UICorner");
+	["_UICorner111"] = Instance.new("UICorner");
 	["_Outline"] = Instance.new("UIStroke");
 	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
 	["_Settings1"] = Instance.new("CanvasGroup");
 	["_Keybind"] = Instance.new("TextButton");
-	["_UICorner89"] = Instance.new("UICorner");
-	["_Close2"] = Instance.new("TextButton");
-	["_UICorner90"] = Instance.new("UICorner");
+	["_UICorner112"] = Instance.new("UICorner");
+	["_Close4"] = Instance.new("TextButton");
+	["_UICorner113"] = Instance.new("UICorner");
 	["_ResetKeybind"] = Instance.new("TextButton");
-	["_UICorner91"] = Instance.new("UICorner");
+	["_UICorner114"] = Instance.new("UICorner");
 	["_NotifyJoin"] = Instance.new("TextButton");
-	["_UICorner92"] = Instance.new("UICorner");
+	["_UICorner115"] = Instance.new("UICorner");
 	["_NotifyUnread"] = Instance.new("TextButton");
-	["_UICorner93"] = Instance.new("UICorner");
+	["_UICorner116"] = Instance.new("UICorner");
 	["_Save"] = Instance.new("TextButton");
-	["_UICorner94"] = Instance.new("UICorner");
+	["_UICorner117"] = Instance.new("UICorner");
 	["_Load"] = Instance.new("TextButton");
-	["_UICorner95"] = Instance.new("UICorner");
+	["_UICorner118"] = Instance.new("UICorner");
 	["_Status"] = Instance.new("TextLabel");
 	["_Version"] = Instance.new("TextLabel");
-	["_UICorner96"] = Instance.new("UICorner");
+	["_UICorner119"] = Instance.new("UICorner");
 	["_Background"] = Instance.new("ImageLabel");
-	["_UICorner97"] = Instance.new("UICorner");
-	["_UICorner98"] = Instance.new("UICorner");
+	["_UICorner120"] = Instance.new("UICorner");
+	["_UICorner121"] = Instance.new("UICorner");
 	["_Buttons"] = Instance.new("Frame");
-	["_UICorner99"] = Instance.new("UICorner");
+	["_UICorner122"] = Instance.new("UICorner");
 	["_Title"] = Instance.new("TextLabel");
-	["_UICorner100"] = Instance.new("UICorner");
-	["_Close3"] = Instance.new("TextButton");
-	["_UICorner101"] = Instance.new("UICorner");
+	["_UICorner123"] = Instance.new("UICorner");
+	["_Close5"] = Instance.new("TextButton");
+	["_UICorner124"] = Instance.new("UICorner");
 	["_Collapse"] = Instance.new("TextButton");
-	["_UICorner102"] = Instance.new("UICorner");
+	["_UICorner125"] = Instance.new("UICorner");
 	["_Version1"] = Instance.new("TextLabel");
-	["_UICorner103"] = Instance.new("UICorner");
-	["_Stats"] = Instance.new("TextButton");
-	["_UICorner104"] = Instance.new("UICorner");
+	["_UICorner126"] = Instance.new("UICorner");
 	["_Inspector"] = Instance.new("BillboardGui");
 	["_Box"] = Instance.new("TextLabel");
 	["_UIStroke"] = Instance.new("UIStroke");
+	["_Stats"] = Instance.new("TextButton");
+	["_UICorner127"] = Instance.new("UICorner");
 }
 
 -- Properties:
@@ -335,7 +384,7 @@ Converted["_PrisonLife"].TextScaled = true
 Converted["_PrisonLife"].TextSize = 14
 Converted["_PrisonLife"].TextWrapped = true
 Converted["_PrisonLife"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_PrisonLife"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_PrisonLife"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_PrisonLife"].BackgroundTransparency = 0.5
 Converted["_PrisonLife"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_PrisonLife"].BorderSizePixel = 0
@@ -352,7 +401,7 @@ Converted["_Universal"].TextScaled = true
 Converted["_Universal"].TextSize = 14
 Converted["_Universal"].TextWrapped = true
 Converted["_Universal"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Universal"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Universal"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Universal"].BackgroundTransparency = 0.5
 Converted["_Universal"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Universal"].BorderSizePixel = 0
@@ -368,7 +417,7 @@ Converted["_Logs"].TextScaled = true
 Converted["_Logs"].TextSize = 14
 Converted["_Logs"].TextWrapped = true
 Converted["_Logs"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Logs"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Logs"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Logs"].BackgroundTransparency = 0.5
 Converted["_Logs"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Logs"].BorderSizePixel = 0
@@ -384,7 +433,7 @@ Converted["_AntiCheat"].TextScaled = true
 Converted["_AntiCheat"].TextSize = 14
 Converted["_AntiCheat"].TextWrapped = true
 Converted["_AntiCheat"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_AntiCheat"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_AntiCheat"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_AntiCheat"].BackgroundTransparency = 0.5
 Converted["_AntiCheat"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_AntiCheat"].BorderSizePixel = 0
@@ -400,7 +449,7 @@ Converted["_Chat"].TextScaled = true
 Converted["_Chat"].TextSize = 14
 Converted["_Chat"].TextWrapped = true
 Converted["_Chat"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Chat"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Chat"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Chat"].BackgroundTransparency = 0.5
 Converted["_Chat"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Chat"].BorderSizePixel = 0
@@ -416,7 +465,7 @@ Converted["_Players"].TextScaled = true
 Converted["_Players"].TextSize = 14
 Converted["_Players"].TextWrapped = true
 Converted["_Players"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Players"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Players"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Players"].BackgroundTransparency = 0.5
 Converted["_Players"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Players"].BorderSizePixel = 0
@@ -432,7 +481,7 @@ Converted["_Places"].TextScaled = true
 Converted["_Places"].TextSize = 14
 Converted["_Places"].TextWrapped = true
 Converted["_Places"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Places"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Places"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Places"].BackgroundTransparency = 0.5
 Converted["_Places"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Places"].BorderSizePixel = 0
@@ -448,7 +497,7 @@ Converted["_Washiez"].TextScaled = true
 Converted["_Washiez"].TextSize = 14
 Converted["_Washiez"].TextWrapped = true
 Converted["_Washiez"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Washiez"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Washiez"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Washiez"].BackgroundTransparency = 0.5
 Converted["_Washiez"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Washiez"].BorderSizePixel = 0
@@ -465,7 +514,7 @@ Converted["_WashiezTC"].TextScaled = true
 Converted["_WashiezTC"].TextSize = 14
 Converted["_WashiezTC"].TextWrapped = true
 Converted["_WashiezTC"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_WashiezTC"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_WashiezTC"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_WashiezTC"].BackgroundTransparency = 0.5
 Converted["_WashiezTC"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_WashiezTC"].BorderSizePixel = 0
@@ -482,7 +531,7 @@ Converted["_OilUp"].TextScaled = true
 Converted["_OilUp"].TextSize = 14
 Converted["_OilUp"].TextWrapped = true
 Converted["_OilUp"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_OilUp"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_OilUp"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_OilUp"].BackgroundTransparency = 0.5
 Converted["_OilUp"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_OilUp"].BorderSizePixel = 0
@@ -491,6 +540,23 @@ Converted["_OilUp"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_OilUp"].Visible = false
 Converted["_OilUp"].Name = "OilUp"
 Converted["_OilUp"].Parent = Converted["_List"]
+
+Converted["_WashiezOGTC"].Font = Enum.Font.TitilliumWeb
+Converted["_WashiezOGTC"].Text = "OG Training Center"
+Converted["_WashiezOGTC"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_WashiezOGTC"].TextScaled = true
+Converted["_WashiezOGTC"].TextSize = 14
+Converted["_WashiezOGTC"].TextWrapped = true
+Converted["_WashiezOGTC"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_WashiezOGTC"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_WashiezOGTC"].BackgroundTransparency = 0.5
+Converted["_WashiezOGTC"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_WashiezOGTC"].BorderSizePixel = 0
+Converted["_WashiezOGTC"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
+Converted["_WashiezOGTC"].Size = UDim2.new(1, 0, 0.100000001, 0)
+Converted["_WashiezOGTC"].Visible = false
+Converted["_WashiezOGTC"].Name = "WashiezOGTC"
+Converted["_WashiezOGTC"].Parent = Converted["_List"]
 
 Converted["_Menus"].Name = "Menus"
 Converted["_Menus"].Parent = Converted["_Container1"]
@@ -807,7 +873,7 @@ Converted["_UICorner11"].Parent = Converted["_TP"]
 Converted["_Teleports"].GroupTransparency = 1
 Converted["_Teleports"].Active = true
 Converted["_Teleports"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Teleports"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Teleports"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
 Converted["_Teleports"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Teleports"].BorderSizePixel = 0
 Converted["_Teleports"].Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -824,7 +890,7 @@ Converted["_Crimbase"].TextScaled = true
 Converted["_Crimbase"].TextSize = 14
 Converted["_Crimbase"].TextWrapped = true
 Converted["_Crimbase"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Crimbase"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Crimbase"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Crimbase"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Crimbase"].BorderSizePixel = 0
 Converted["_Crimbase"].Position = UDim2.new(0.150000006, 0, 0.125, 0)
@@ -842,7 +908,7 @@ Converted["_Guards1"].TextScaled = true
 Converted["_Guards1"].TextSize = 14
 Converted["_Guards1"].TextWrapped = true
 Converted["_Guards1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Guards1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Guards1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Guards1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Guards1"].BorderSizePixel = 0
 Converted["_Guards1"].Position = UDim2.new(0.850000024, 0, 0.125, 0)
@@ -860,7 +926,7 @@ Converted["_Yard"].TextScaled = true
 Converted["_Yard"].TextSize = 14
 Converted["_Yard"].TextWrapped = true
 Converted["_Yard"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Yard"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Yard"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Yard"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Yard"].BorderSizePixel = 0
 Converted["_Yard"].Position = UDim2.new(0.5, 0, 0.125, 0)
@@ -878,7 +944,7 @@ Converted["_Cafe"].TextScaled = true
 Converted["_Cafe"].TextSize = 14
 Converted["_Cafe"].TextWrapped = true
 Converted["_Cafe"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Cafe"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Cafe"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Cafe"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Cafe"].BorderSizePixel = 0
 Converted["_Cafe"].Position = UDim2.new(0.5, 0, 0.3125, 0)
@@ -896,7 +962,7 @@ Converted["_Mansion"].TextScaled = true
 Converted["_Mansion"].TextSize = 14
 Converted["_Mansion"].TextWrapped = true
 Converted["_Mansion"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Mansion"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Mansion"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Mansion"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Mansion"].BorderSizePixel = 0
 Converted["_Mansion"].Position = UDim2.new(0.150000006, 0, 0.312999994, 0)
@@ -914,7 +980,7 @@ Converted["_Gate"].TextScaled = true
 Converted["_Gate"].TextSize = 14
 Converted["_Gate"].TextWrapped = true
 Converted["_Gate"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Gate"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Gate"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Gate"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Gate"].BorderSizePixel = 0
 Converted["_Gate"].Position = UDim2.new(0.850000024, 0, 0.312999994, 0)
@@ -932,7 +998,7 @@ Converted["_Trap"].TextScaled = true
 Converted["_Trap"].TextSize = 14
 Converted["_Trap"].TextWrapped = true
 Converted["_Trap"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Trap"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Trap"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Trap"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Trap"].BorderSizePixel = 0
 Converted["_Trap"].Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -950,7 +1016,7 @@ Converted["_Platform"].TextScaled = true
 Converted["_Platform"].TextSize = 14
 Converted["_Platform"].TextWrapped = true
 Converted["_Platform"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Platform"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Platform"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Platform"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Platform"].BorderSizePixel = 0
 Converted["_Platform"].Position = UDim2.new(0.150000006, 0, 0.5, 0)
@@ -968,7 +1034,7 @@ Converted["_Car"].TextScaled = true
 Converted["_Car"].TextSize = 14
 Converted["_Car"].TextWrapped = true
 Converted["_Car"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Car"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Car"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Car"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Car"].BorderSizePixel = 0
 Converted["_Car"].Position = UDim2.new(0.850000024, 0, 0.5, 0)
@@ -987,7 +1053,7 @@ Converted["_Close"].TextSize = 14
 Converted["_Close"].TextWrapped = true
 Converted["_Close"].TextYAlignment = Enum.TextYAlignment.Bottom
 Converted["_Close"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Close"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Close"].BorderSizePixel = 0
 Converted["_Close"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
@@ -1005,7 +1071,7 @@ Converted["_Neutral1"].TextScaled = true
 Converted["_Neutral1"].TextSize = 14
 Converted["_Neutral1"].TextWrapped = true
 Converted["_Neutral1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Neutral1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Neutral1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Neutral1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Neutral1"].BorderSizePixel = 0
 Converted["_Neutral1"].Position = UDim2.new(0.150000006, 0, 0.686999977, 0)
@@ -1023,7 +1089,7 @@ Converted["_Nexus"].TextScaled = true
 Converted["_Nexus"].TextSize = 14
 Converted["_Nexus"].TextWrapped = true
 Converted["_Nexus"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Nexus"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Nexus"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Nexus"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Nexus"].BorderSizePixel = 0
 Converted["_Nexus"].Position = UDim2.new(0.49999994, 0, 0.686999977, 0)
@@ -1041,7 +1107,7 @@ Converted["_YTower"].TextScaled = true
 Converted["_YTower"].TextSize = 14
 Converted["_YTower"].TextWrapped = true
 Converted["_YTower"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_YTower"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_YTower"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_YTower"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_YTower"].BorderSizePixel = 0
 Converted["_YTower"].Position = UDim2.new(0.850000024, 0, 0.686999977, 0)
@@ -1909,68 +1975,13 @@ Converted["_NFuel"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_NFuel"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_NFuel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_NFuel"].BorderSizePixel = 0
-Converted["_NFuel"].Position = UDim2.new(0.370000005, 0, 0.224999994, 0)
+Converted["_NFuel"].Position = UDim2.new(0.399999917, 0, 0.200490311, 0)
 Converted["_NFuel"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_NFuel"].Name = "NFuel"
 Converted["_NFuel"].Parent = Converted["_Washiez2"]
 
 Converted["_UICorner52"].CornerRadius = UDim.new(0.125, 0)
 Converted["_UICorner52"].Parent = Converted["_NFuel"]
-
-Converted["_Input5"].ClearTextOnFocus = false
-Converted["_Input5"].CursorPosition = -1
-Converted["_Input5"].Font = Enum.Font.TitilliumWeb
-Converted["_Input5"].PlaceholderText = "Player Name"
-Converted["_Input5"].Text = ""
-Converted["_Input5"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Input5"].TextScaled = true
-Converted["_Input5"].TextSize = 14
-Converted["_Input5"].TextWrapped = true
-Converted["_Input5"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Input5"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Input5"].BackgroundTransparency = 0.5
-Converted["_Input5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Input5"].BorderSizePixel = 0
-Converted["_Input5"].Position = UDim2.new(0.5, 0, 0.949999988, 0)
-Converted["_Input5"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
-Converted["_Input5"].Name = "Input"
-Converted["_Input5"].Parent = Converted["_Washiez2"]
-
-Converted["_CTickets"].Font = Enum.Font.TitilliumWeb
-Converted["_CTickets"].Text = "Remove Ticket"
-Converted["_CTickets"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_CTickets"].TextScaled = true
-Converted["_CTickets"].TextSize = 14
-Converted["_CTickets"].TextWrapped = true
-Converted["_CTickets"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_CTickets"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_CTickets"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_CTickets"].BorderSizePixel = 0
-Converted["_CTickets"].Position = UDim2.new(0.5, 0, 0.725000024, 0)
-Converted["_CTickets"].Size = UDim2.new(0.25, 0, 0.075000003, 0)
-Converted["_CTickets"].Name = "CTickets"
-Converted["_CTickets"].Parent = Converted["_Washiez2"]
-
-Converted["_UICorner53"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner53"].Parent = Converted["_CTickets"]
-
-Converted["_AutoFarm"].Font = Enum.Font.TitilliumWeb
-Converted["_AutoFarm"].Text = "Enable AutoFarm"
-Converted["_AutoFarm"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_AutoFarm"].TextScaled = true
-Converted["_AutoFarm"].TextSize = 14
-Converted["_AutoFarm"].TextWrapped = true
-Converted["_AutoFarm"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_AutoFarm"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_AutoFarm"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_AutoFarm"].BorderSizePixel = 0
-Converted["_AutoFarm"].Position = UDim2.new(0.800000012, 0, 0.224999994, 0)
-Converted["_AutoFarm"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
-Converted["_AutoFarm"].Name = "AutoFarm"
-Converted["_AutoFarm"].Parent = Converted["_Washiez2"]
-
-Converted["_UICorner54"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner54"].Parent = Converted["_AutoFarm"]
 
 Converted["_TP1"].Font = Enum.Font.TitilliumWeb
 Converted["_TP1"].Text = "Teleports"
@@ -1987,31 +1998,31 @@ Converted["_TP1"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_TP1"].Name = "TP"
 Converted["_TP1"].Parent = Converted["_Washiez2"]
 
-Converted["_UICorner55"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner55"].Parent = Converted["_TP1"]
+Converted["_UICorner53"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner53"].Parent = Converted["_TP1"]
 
-Converted["_NIFuel"].Font = Enum.Font.TitilliumWeb
-Converted["_NIFuel"].Text = "-Inf Fuel"
-Converted["_NIFuel"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_NIFuel"].TextScaled = true
-Converted["_NIFuel"].TextSize = 14
-Converted["_NIFuel"].TextWrapped = true
-Converted["_NIFuel"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_NIFuel"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_NIFuel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_NIFuel"].BorderSizePixel = 0
-Converted["_NIFuel"].Position = UDim2.new(0.579999983, 0, 0.224999994, 0)
-Converted["_NIFuel"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
-Converted["_NIFuel"].Name = "NIFuel"
-Converted["_NIFuel"].Parent = Converted["_Washiez2"]
+Converted["_IFuel"].Font = Enum.Font.TitilliumWeb
+Converted["_IFuel"].Text = "Inf Fuel"
+Converted["_IFuel"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_IFuel"].TextScaled = true
+Converted["_IFuel"].TextSize = 14
+Converted["_IFuel"].TextWrapped = true
+Converted["_IFuel"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_IFuel"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_IFuel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_IFuel"].BorderSizePixel = 0
+Converted["_IFuel"].Position = UDim2.new(0.599999964, 0, 0.200490311, 0)
+Converted["_IFuel"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_IFuel"].Name = "IFuel"
+Converted["_IFuel"].Parent = Converted["_Washiez2"]
 
-Converted["_UICorner56"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner56"].Parent = Converted["_NIFuel"]
+Converted["_UICorner54"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner54"].Parent = Converted["_IFuel"]
 
 Converted["_Teleports2"].GroupTransparency = 1
 Converted["_Teleports2"].Active = true
 Converted["_Teleports2"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Teleports2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Teleports2"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
 Converted["_Teleports2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Teleports2"].BorderSizePixel = 0
 Converted["_Teleports2"].Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -2029,7 +2040,7 @@ Converted["_Close1"].TextSize = 14
 Converted["_Close1"].TextWrapped = true
 Converted["_Close1"].TextYAlignment = Enum.TextYAlignment.Bottom
 Converted["_Close1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Close1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Close1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Close1"].BorderSizePixel = 0
 Converted["_Close1"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
@@ -2037,8 +2048,8 @@ Converted["_Close1"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
 Converted["_Close1"].Name = "Close"
 Converted["_Close1"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner57"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner57"].Parent = Converted["_Close1"]
+Converted["_UICorner55"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner55"].Parent = Converted["_Close1"]
 
 Converted["_Jail"].Font = Enum.Font.TitilliumWeb
 Converted["_Jail"].Text = "Jail"
@@ -2047,7 +2058,7 @@ Converted["_Jail"].TextScaled = true
 Converted["_Jail"].TextSize = 14
 Converted["_Jail"].TextWrapped = true
 Converted["_Jail"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Jail"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Jail"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Jail"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Jail"].BorderSizePixel = 0
 Converted["_Jail"].Position = UDim2.new(0.850000024, 0, 0.312999994, 0)
@@ -2055,8 +2066,8 @@ Converted["_Jail"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Jail"].Name = "Jail"
 Converted["_Jail"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner58"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner58"].Parent = Converted["_Jail"]
+Converted["_UICorner56"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner56"].Parent = Converted["_Jail"]
 
 Converted["_Store"].Font = Enum.Font.TitilliumWeb
 Converted["_Store"].Text = "Store"
@@ -2065,7 +2076,7 @@ Converted["_Store"].TextScaled = true
 Converted["_Store"].TextSize = 14
 Converted["_Store"].TextWrapped = true
 Converted["_Store"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Store"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Store"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Store"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Store"].BorderSizePixel = 0
 Converted["_Store"].Position = UDim2.new(0.850000024, 0, 0.125, 0)
@@ -2073,8 +2084,8 @@ Converted["_Store"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Store"].Name = "Store"
 Converted["_Store"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner59"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner59"].Parent = Converted["_Store"]
+Converted["_UICorner57"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner57"].Parent = Converted["_Store"]
 
 Converted["_Staff"].Font = Enum.Font.TitilliumWeb
 Converted["_Staff"].Text = "Staff Spawn"
@@ -2083,7 +2094,7 @@ Converted["_Staff"].TextScaled = true
 Converted["_Staff"].TextSize = 14
 Converted["_Staff"].TextWrapped = true
 Converted["_Staff"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Staff"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Staff"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Staff"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Staff"].BorderSizePixel = 0
 Converted["_Staff"].Position = UDim2.new(0.5, 0, 0.125, 0)
@@ -2091,8 +2102,8 @@ Converted["_Staff"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Staff"].Name = "Staff"
 Converted["_Staff"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner60"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner60"].Parent = Converted["_Staff"]
+Converted["_UICorner58"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner58"].Parent = Converted["_Staff"]
 
 Converted["_Spawn"].Font = Enum.Font.TitilliumWeb
 Converted["_Spawn"].Text = "Spawn"
@@ -2101,7 +2112,7 @@ Converted["_Spawn"].TextScaled = true
 Converted["_Spawn"].TextSize = 14
 Converted["_Spawn"].TextWrapped = true
 Converted["_Spawn"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Spawn"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Spawn"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Spawn"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Spawn"].BorderSizePixel = 0
 Converted["_Spawn"].Position = UDim2.new(0.150000006, 0, 0.125, 0)
@@ -2109,8 +2120,8 @@ Converted["_Spawn"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Spawn"].Name = "Spawn"
 Converted["_Spawn"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner61"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner61"].Parent = Converted["_Spawn"]
+Converted["_UICorner59"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner59"].Parent = Converted["_Spawn"]
 
 Converted["_Kitchen"].Font = Enum.Font.TitilliumWeb
 Converted["_Kitchen"].Text = "Kitchen"
@@ -2119,7 +2130,7 @@ Converted["_Kitchen"].TextScaled = true
 Converted["_Kitchen"].TextSize = 14
 Converted["_Kitchen"].TextWrapped = true
 Converted["_Kitchen"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Kitchen"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Kitchen"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Kitchen"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Kitchen"].BorderSizePixel = 0
 Converted["_Kitchen"].Position = UDim2.new(0.5, 0, 0.3125, 0)
@@ -2127,8 +2138,8 @@ Converted["_Kitchen"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Kitchen"].Name = "Kitchen"
 Converted["_Kitchen"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner62"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner62"].Parent = Converted["_Kitchen"]
+Converted["_UICorner60"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner60"].Parent = Converted["_Kitchen"]
 
 Converted["_Key1"].Font = Enum.Font.TitilliumWeb
 Converted["_Key1"].Text = "Key Room"
@@ -2137,7 +2148,7 @@ Converted["_Key1"].TextScaled = true
 Converted["_Key1"].TextSize = 14
 Converted["_Key1"].TextWrapped = true
 Converted["_Key1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Key1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Key1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Key1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Key1"].BorderSizePixel = 0
 Converted["_Key1"].Position = UDim2.new(0.150000006, 0, 0.312999994, 0)
@@ -2145,8 +2156,8 @@ Converted["_Key1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Key1"].Name = "Key"
 Converted["_Key1"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner63"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner63"].Parent = Converted["_Key1"]
+Converted["_UICorner61"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner61"].Parent = Converted["_Key1"]
 
 Converted["_VIP"].Font = Enum.Font.TitilliumWeb
 Converted["_VIP"].Text = "VIP Room"
@@ -2155,7 +2166,7 @@ Converted["_VIP"].TextScaled = true
 Converted["_VIP"].TextSize = 14
 Converted["_VIP"].TextWrapped = true
 Converted["_VIP"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_VIP"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_VIP"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_VIP"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_VIP"].BorderSizePixel = 0
 Converted["_VIP"].Position = UDim2.new(0.850000024, 0, 0.5, 0)
@@ -2163,8 +2174,8 @@ Converted["_VIP"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_VIP"].Name = "VIP"
 Converted["_VIP"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner64"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner64"].Parent = Converted["_VIP"]
+Converted["_UICorner62"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner62"].Parent = Converted["_VIP"]
 
 Converted["_CarWash"].Font = Enum.Font.TitilliumWeb
 Converted["_CarWash"].Text = "Car Wash"
@@ -2173,7 +2184,7 @@ Converted["_CarWash"].TextScaled = true
 Converted["_CarWash"].TextSize = 14
 Converted["_CarWash"].TextWrapped = true
 Converted["_CarWash"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_CarWash"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_CarWash"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_CarWash"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_CarWash"].BorderSizePixel = 0
 Converted["_CarWash"].Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -2181,8 +2192,8 @@ Converted["_CarWash"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_CarWash"].Name = "CarWash"
 Converted["_CarWash"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner65"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner65"].Parent = Converted["_CarWash"]
+Converted["_UICorner63"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner63"].Parent = Converted["_CarWash"]
 
 Converted["_Warehouse"].Font = Enum.Font.TitilliumWeb
 Converted["_Warehouse"].Text = "Warehouse"
@@ -2191,7 +2202,7 @@ Converted["_Warehouse"].TextScaled = true
 Converted["_Warehouse"].TextSize = 14
 Converted["_Warehouse"].TextWrapped = true
 Converted["_Warehouse"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Warehouse"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Warehouse"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Warehouse"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Warehouse"].BorderSizePixel = 0
 Converted["_Warehouse"].Position = UDim2.new(0.150000006, 0, 0.5, 0)
@@ -2199,44 +2210,8 @@ Converted["_Warehouse"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Warehouse"].Name = "Warehouse"
 Converted["_Warehouse"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner66"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner66"].Parent = Converted["_Warehouse"]
-
-Converted["_TicketSpam"].Font = Enum.Font.TitilliumWeb
-Converted["_TicketSpam"].Text = "Spam Tickets"
-Converted["_TicketSpam"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TicketSpam"].TextScaled = true
-Converted["_TicketSpam"].TextSize = 14
-Converted["_TicketSpam"].TextWrapped = true
-Converted["_TicketSpam"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_TicketSpam"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_TicketSpam"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TicketSpam"].BorderSizePixel = 0
-Converted["_TicketSpam"].Position = UDim2.new(0.370000035, 0, 0.37478146, 0)
-Converted["_TicketSpam"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
-Converted["_TicketSpam"].Name = "TicketSpam"
-Converted["_TicketSpam"].Parent = Converted["_Washiez2"]
-
-Converted["_UICorner67"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner67"].Parent = Converted["_TicketSpam"]
-
-Converted["_DTickets"].Font = Enum.Font.TitilliumWeb
-Converted["_DTickets"].Text = "Disable Tickets"
-Converted["_DTickets"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_DTickets"].TextScaled = true
-Converted["_DTickets"].TextSize = 14
-Converted["_DTickets"].TextWrapped = true
-Converted["_DTickets"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_DTickets"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_DTickets"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_DTickets"].BorderSizePixel = 0
-Converted["_DTickets"].Position = UDim2.new(0.579999983, 0, 0.37478146, 0)
-Converted["_DTickets"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
-Converted["_DTickets"].Name = "DTickets"
-Converted["_DTickets"].Parent = Converted["_Washiez2"]
-
-Converted["_UICorner68"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner68"].Parent = Converted["_DTickets"]
+Converted["_UICorner64"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner64"].Parent = Converted["_Warehouse"]
 
 Converted["_MFuel"].Font = Enum.Font.TitilliumWeb
 Converted["_MFuel"].Text = "Max Fuel"
@@ -2248,13 +2223,13 @@ Converted["_MFuel"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_MFuel"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_MFuel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_MFuel"].BorderSizePixel = 0
-Converted["_MFuel"].Position = UDim2.new(0.159999996, 0, 0.224999994, 0)
+Converted["_MFuel"].Position = UDim2.new(0.199999973, 0, 0.200490311, 0)
 Converted["_MFuel"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_MFuel"].Name = "MFuel"
 Converted["_MFuel"].Parent = Converted["_Washiez2"]
 
-Converted["_UICorner69"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner69"].Parent = Converted["_MFuel"]
+Converted["_UICorner65"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner65"].Parent = Converted["_MFuel"]
 
 Converted["_RankDown"].Font = Enum.Font.TitilliumWeb
 Converted["_RankDown"].Text = "Rank 0"
@@ -2266,13 +2241,13 @@ Converted["_RankDown"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_RankDown"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_RankDown"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_RankDown"].BorderSizePixel = 0
-Converted["_RankDown"].Position = UDim2.new(0.800000072, 0, 0.37478146, 0)
+Converted["_RankDown"].Position = UDim2.new(0.799999952, 0, 0.350490332, 0)
 Converted["_RankDown"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_RankDown"].Name = "RankDown"
 Converted["_RankDown"].Parent = Converted["_Washiez2"]
 
-Converted["_UICorner70"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner70"].Parent = Converted["_RankDown"]
+Converted["_UICorner66"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner66"].Parent = Converted["_RankDown"]
 
 Converted["_RankUp"].Font = Enum.Font.TitilliumWeb
 Converted["_RankUp"].Text = "Rank 200"
@@ -2284,13 +2259,13 @@ Converted["_RankUp"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_RankUp"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_RankUp"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_RankUp"].BorderSizePixel = 0
-Converted["_RankUp"].Position = UDim2.new(0.159999937, 0, 0.37478146, 0)
+Converted["_RankUp"].Position = UDim2.new(0.199999973, 0, 0.350490332, 0)
 Converted["_RankUp"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_RankUp"].Name = "RankUp"
 Converted["_RankUp"].Parent = Converted["_Washiez2"]
 
-Converted["_UICorner71"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner71"].Parent = Converted["_RankUp"]
+Converted["_UICorner67"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner67"].Parent = Converted["_RankUp"]
 
 Converted["_Rank"].Font = Enum.Font.TitilliumWeb
 Converted["_Rank"].Text = "Current Rank: 0"
@@ -2308,59 +2283,94 @@ Converted["_Rank"].Size = UDim2.new(0.818000019, 0, 0.075000003, 0)
 Converted["_Rank"].Name = "Rank"
 Converted["_Rank"].Parent = Converted["_Washiez2"]
 
-Converted["_Regular"].Font = Enum.Font.TitilliumWeb
-Converted["_Regular"].Text = "Regular"
-Converted["_Regular"].TextColor3 = Color3.fromRGB(68.00000354647636, 68.00000354647636, 71.00000336766243)
-Converted["_Regular"].TextScaled = true
-Converted["_Regular"].TextSize = 14
-Converted["_Regular"].TextWrapped = true
-Converted["_Regular"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Regular"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Regular"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Regular"].BorderSizePixel = 0
-Converted["_Regular"].Position = UDim2.new(0.375, 0, 0.824999988, 0)
-Converted["_Regular"].Size = UDim2.new(0.100000001, 0, 0.075000003, 0)
-Converted["_Regular"].Name = "Regular"
-Converted["_Regular"].Parent = Converted["_Washiez2"]
+Converted["_Radio"].ClearTextOnFocus = false
+Converted["_Radio"].Font = Enum.Font.TitilliumWeb
+Converted["_Radio"].PlaceholderText = "Hidden Radio ID"
+Converted["_Radio"].Text = ""
+Converted["_Radio"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Radio"].TextScaled = true
+Converted["_Radio"].TextSize = 14
+Converted["_Radio"].TextWrapped = true
+Converted["_Radio"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Radio"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Radio"].BackgroundTransparency = 0.5
+Converted["_Radio"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Radio"].BorderSizePixel = 0
+Converted["_Radio"].Position = UDim2.new(0.400000006, 0, 0.944999993, 0)
+Converted["_Radio"].Size = UDim2.new(0.349999994, 0, 0.100000001, 0)
+Converted["_Radio"].Name = "Radio"
+Converted["_Radio"].Parent = Converted["_Washiez2"]
 
-Converted["_UICorner72"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner72"].Parent = Converted["_Regular"]
+Converted["_UICorner68"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner68"].Parent = Converted["_Radio"]
 
-Converted["_Extra"].Font = Enum.Font.TitilliumWeb
-Converted["_Extra"].Text = "Extra"
-Converted["_Extra"].TextColor3 = Color3.fromRGB(45.00000111758709, 110.00000104308128, 250.00000029802322)
-Converted["_Extra"].TextScaled = true
-Converted["_Extra"].TextSize = 14
-Converted["_Extra"].TextWrapped = true
-Converted["_Extra"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Extra"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Extra"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Extra"].BorderSizePixel = 0
-Converted["_Extra"].Position = UDim2.new(0.5, 0, 0.824999988, 0)
-Converted["_Extra"].Size = UDim2.new(0.100000001, 0, 0.075000003, 0)
-Converted["_Extra"].Name = "Extra"
-Converted["_Extra"].Parent = Converted["_Washiez2"]
+Converted["_Tickets"].GroupTransparency = 1
+Converted["_Tickets"].Active = true
+Converted["_Tickets"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Tickets"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
+Converted["_Tickets"].BackgroundTransparency = 0.009999999776482582
+Converted["_Tickets"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Tickets"].BorderSizePixel = 0
+Converted["_Tickets"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Tickets"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Tickets"].Visible = false
+Converted["_Tickets"].ZIndex = 2
+Converted["_Tickets"].Name = "Tickets"
+Converted["_Tickets"].Parent = Converted["_Washiez2"]
 
-Converted["_UICorner73"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner73"].Parent = Converted["_Extra"]
+Converted["_TicketSpam"].Font = Enum.Font.TitilliumWeb
+Converted["_TicketSpam"].Text = "Spam Tickets"
+Converted["_TicketSpam"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TicketSpam"].TextScaled = true
+Converted["_TicketSpam"].TextSize = 14
+Converted["_TicketSpam"].TextWrapped = true
+Converted["_TicketSpam"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_TicketSpam"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_TicketSpam"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TicketSpam"].BorderSizePixel = 0
+Converted["_TicketSpam"].Position = UDim2.new(0.300000012, 0, 0.349999994, 0)
+Converted["_TicketSpam"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_TicketSpam"].Name = "TicketSpam"
+Converted["_TicketSpam"].Parent = Converted["_Tickets"]
 
-Converted["_Deluxe"].Font = Enum.Font.TitilliumWeb
-Converted["_Deluxe"].Text = "Deluxe"
-Converted["_Deluxe"].TextColor3 = Color3.fromRGB(195.0000035762787, 57.00000040233135, 57.00000040233135)
-Converted["_Deluxe"].TextScaled = true
-Converted["_Deluxe"].TextSize = 14
-Converted["_Deluxe"].TextWrapped = true
-Converted["_Deluxe"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Deluxe"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Deluxe"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Deluxe"].BorderSizePixel = 0
-Converted["_Deluxe"].Position = UDim2.new(0.625, 0, 0.824999988, 0)
-Converted["_Deluxe"].Size = UDim2.new(0.100000001, 0, 0.075000003, 0)
-Converted["_Deluxe"].Name = "Deluxe"
-Converted["_Deluxe"].Parent = Converted["_Washiez2"]
+Converted["_UICorner69"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner69"].Parent = Converted["_TicketSpam"]
 
-Converted["_UICorner74"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner74"].Parent = Converted["_Deluxe"]
+Converted["_DTickets"].Font = Enum.Font.TitilliumWeb
+Converted["_DTickets"].Text = "Disable Tickets"
+Converted["_DTickets"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_DTickets"].TextScaled = true
+Converted["_DTickets"].TextSize = 14
+Converted["_DTickets"].TextWrapped = true
+Converted["_DTickets"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_DTickets"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_DTickets"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_DTickets"].BorderSizePixel = 0
+Converted["_DTickets"].Position = UDim2.new(0.5, 0, 0.349999994, 0)
+Converted["_DTickets"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_DTickets"].Name = "DTickets"
+Converted["_DTickets"].Parent = Converted["_Tickets"]
+
+Converted["_UICorner70"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner70"].Parent = Converted["_DTickets"]
+
+Converted["_AutoFarm"].Font = Enum.Font.TitilliumWeb
+Converted["_AutoFarm"].Text = "Enable AutoFarm"
+Converted["_AutoFarm"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_AutoFarm"].TextScaled = true
+Converted["_AutoFarm"].TextSize = 14
+Converted["_AutoFarm"].TextWrapped = true
+Converted["_AutoFarm"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_AutoFarm"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_AutoFarm"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_AutoFarm"].BorderSizePixel = 0
+Converted["_AutoFarm"].Position = UDim2.new(0.699999988, 0, 0.349999994, 0)
+Converted["_AutoFarm"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_AutoFarm"].Name = "AutoFarm"
+Converted["_AutoFarm"].Parent = Converted["_Tickets"]
+
+Converted["_UICorner71"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner71"].Parent = Converted["_AutoFarm"]
 
 Converted["_CTicket"].Font = Enum.Font.TitilliumWeb
 Converted["_CTicket"].Text = "Current Ticket: None"
@@ -2373,13 +2383,346 @@ Converted["_CTicket"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 50.0
 Converted["_CTicket"].BackgroundTransparency = 0.5
 Converted["_CTicket"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_CTicket"].BorderSizePixel = 0
-Converted["_CTicket"].Position = UDim2.new(0.5, 0, 0.600000024, 0)
-Converted["_CTicket"].Size = UDim2.new(0.250273168, 0, 0.075000003, 0)
+Converted["_CTicket"].Position = UDim2.new(0.5, 0, 0.200000003, 0)
+Converted["_CTicket"].Size = UDim2.new(0.449999988, 0, 0.150000006, 0)
 Converted["_CTicket"].Name = "CTicket"
-Converted["_CTicket"].Parent = Converted["_Washiez2"]
+Converted["_CTicket"].Parent = Converted["_Tickets"]
+
+Converted["_UICorner72"].CornerRadius = UDim.new(0.300000012, 0)
+Converted["_UICorner72"].Parent = Converted["_CTicket"]
+
+Converted["_CTickets"].Font = Enum.Font.TitilliumWeb
+Converted["_CTickets"].Text = "Remove Ticket"
+Converted["_CTickets"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CTickets"].TextScaled = true
+Converted["_CTickets"].TextSize = 14
+Converted["_CTickets"].TextWrapped = true
+Converted["_CTickets"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_CTickets"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_CTickets"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CTickets"].BorderSizePixel = 0
+Converted["_CTickets"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_CTickets"].Size = UDim2.new(0.400000006, 0, 0.100000001, 0)
+Converted["_CTickets"].Name = "CTickets"
+Converted["_CTickets"].Parent = Converted["_Tickets"]
+
+Converted["_UICorner73"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner73"].Parent = Converted["_CTickets"]
+
+Converted["_Deluxe"].Font = Enum.Font.TitilliumWeb
+Converted["_Deluxe"].Text = "Deluxe"
+Converted["_Deluxe"].TextColor3 = Color3.fromRGB(195.0000035762787, 57.00000040233135, 57.00000040233135)
+Converted["_Deluxe"].TextScaled = true
+Converted["_Deluxe"].TextSize = 14
+Converted["_Deluxe"].TextWrapped = true
+Converted["_Deluxe"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Deluxe"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Deluxe"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Deluxe"].BorderSizePixel = 0
+Converted["_Deluxe"].Position = UDim2.new(0.675000012, 0, 0.649999976, 0)
+Converted["_Deluxe"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
+Converted["_Deluxe"].Name = "Deluxe"
+Converted["_Deluxe"].Parent = Converted["_Tickets"]
+
+Converted["_UICorner74"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner74"].Parent = Converted["_Deluxe"]
+
+Converted["_Extra"].Font = Enum.Font.TitilliumWeb
+Converted["_Extra"].Text = "Extra"
+Converted["_Extra"].TextColor3 = Color3.fromRGB(45.00000111758709, 110.00000104308128, 250.00000029802322)
+Converted["_Extra"].TextScaled = true
+Converted["_Extra"].TextSize = 14
+Converted["_Extra"].TextWrapped = true
+Converted["_Extra"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Extra"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Extra"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Extra"].BorderSizePixel = 0
+Converted["_Extra"].Position = UDim2.new(0.5, 0, 0.649999976, 0)
+Converted["_Extra"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
+Converted["_Extra"].Name = "Extra"
+Converted["_Extra"].Parent = Converted["_Tickets"]
 
 Converted["_UICorner75"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner75"].Parent = Converted["_CTicket"]
+Converted["_UICorner75"].Parent = Converted["_Extra"]
+
+Converted["_Regular"].Font = Enum.Font.TitilliumWeb
+Converted["_Regular"].Text = "Regular"
+Converted["_Regular"].TextColor3 = Color3.fromRGB(68.00000354647636, 68.00000354647636, 71.00000336766243)
+Converted["_Regular"].TextScaled = true
+Converted["_Regular"].TextSize = 14
+Converted["_Regular"].TextWrapped = true
+Converted["_Regular"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Regular"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Regular"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Regular"].BorderSizePixel = 0
+Converted["_Regular"].Position = UDim2.new(0.324999988, 0, 0.649999976, 0)
+Converted["_Regular"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
+Converted["_Regular"].Name = "Regular"
+Converted["_Regular"].Parent = Converted["_Tickets"]
+
+Converted["_UICorner76"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner76"].Parent = Converted["_Regular"]
+
+Converted["_Input5"].ClearTextOnFocus = false
+Converted["_Input5"].Font = Enum.Font.TitilliumWeb
+Converted["_Input5"].PlaceholderText = "Player Name"
+Converted["_Input5"].Text = ""
+Converted["_Input5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input5"].TextScaled = true
+Converted["_Input5"].TextSize = 14
+Converted["_Input5"].TextWrapped = true
+Converted["_Input5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input5"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input5"].BackgroundTransparency = 0.5
+Converted["_Input5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input5"].BorderSizePixel = 0
+Converted["_Input5"].Position = UDim2.new(0.5, 0, 0.800000012, 0)
+Converted["_Input5"].Size = UDim2.new(0.899999976, 0, 0.100000001, 0)
+Converted["_Input5"].Name = "Input"
+Converted["_Input5"].Parent = Converted["_Tickets"]
+
+Converted["_UICorner77"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner77"].Parent = Converted["_Input5"]
+
+Converted["_Close2"].Font = Enum.Font.TitilliumWeb
+Converted["_Close2"].Text = "Close"
+Converted["_Close2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close2"].TextScaled = true
+Converted["_Close2"].TextSize = 14
+Converted["_Close2"].TextWrapped = true
+Converted["_Close2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Close2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close2"].BorderSizePixel = 0
+Converted["_Close2"].Position = UDim2.new(0.899999857, 0, 0.944334745, 0)
+Converted["_Close2"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+Converted["_Close2"].Name = "Close"
+Converted["_Close2"].Parent = Converted["_Tickets"]
+
+Converted["_UICorner78"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner78"].Parent = Converted["_Close2"]
+
+Converted["_TCK"].Font = Enum.Font.TitilliumWeb
+Converted["_TCK"].Text = "Tickets"
+Converted["_TCK"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TCK"].TextScaled = true
+Converted["_TCK"].TextSize = 14
+Converted["_TCK"].TextWrapped = true
+Converted["_TCK"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_TCK"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_TCK"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TCK"].BorderSizePixel = 0
+Converted["_TCK"].Position = UDim2.new(0.675000012, 0, 0.944999993, 0)
+Converted["_TCK"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_TCK"].Name = "TCK"
+Converted["_TCK"].Parent = Converted["_Washiez2"]
+
+Converted["_UICorner79"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner79"].Parent = Converted["_TCK"]
+
+Converted["_CRank"].Font = Enum.Font.TitilliumWeb
+Converted["_CRank"].PlaceholderText = "Custom Rank ID"
+Converted["_CRank"].Text = ""
+Converted["_CRank"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CRank"].TextScaled = true
+Converted["_CRank"].TextSize = 14
+Converted["_CRank"].TextWrapped = true
+Converted["_CRank"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_CRank"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_CRank"].BackgroundTransparency = 0.5
+Converted["_CRank"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CRank"].BorderSizePixel = 0
+Converted["_CRank"].Position = UDim2.new(0.5, 0, 0.350490332, 0)
+Converted["_CRank"].Size = UDim2.new(0.394999981, 0, 0.100000016, 0)
+Converted["_CRank"].Name = "CRank"
+Converted["_CRank"].Parent = Converted["_Washiez2"]
+
+Converted["_UICorner80"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner80"].Parent = Converted["_CRank"]
+
+Converted["_FF"].Font = Enum.Font.TitilliumWeb
+Converted["_FF"].Text = "FF"
+Converted["_FF"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_FF"].TextScaled = true
+Converted["_FF"].TextSize = 14
+Converted["_FF"].TextWrapped = true
+Converted["_FF"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_FF"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_FF"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_FF"].BorderSizePixel = 0
+Converted["_FF"].Position = UDim2.new(0.200000003, 0, 0.474999994, 0)
+Converted["_FF"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_FF"].Name = "FF"
+Converted["_FF"].Parent = Converted["_Washiez2"]
+
+Converted["_UICorner81"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner81"].Parent = Converted["_FF"]
+
+Converted["_Obby"].Font = Enum.Font.TitilliumWeb
+Converted["_Obby"].Text = "Nature Obby"
+Converted["_Obby"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Obby"].TextScaled = true
+Converted["_Obby"].TextSize = 14
+Converted["_Obby"].TextTransparency = 0.5
+Converted["_Obby"].TextWrapped = true
+Converted["_Obby"].Active = true
+Converted["_Obby"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Obby"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Obby"].BackgroundTransparency = 0.5
+Converted["_Obby"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Obby"].BorderSizePixel = 0
+Converted["_Obby"].Position = UDim2.new(0.5, 0, 0.800000012, 0)
+Converted["_Obby"].Selectable = true
+Converted["_Obby"].Size = UDim2.new(0.394999981, 0, 0.100000016, 0)
+Converted["_Obby"].Name = "Obby"
+Converted["_Obby"].Parent = Converted["_Washiez2"]
+
+Converted["_UICorner82"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner82"].Parent = Converted["_Obby"]
+
+Converted["_ObbyR"].Font = Enum.Font.Roboto
+Converted["_ObbyR"].Text = ">"
+Converted["_ObbyR"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_ObbyR"].TextScaled = true
+Converted["_ObbyR"].TextSize = 14
+Converted["_ObbyR"].TextWrapped = true
+Converted["_ObbyR"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_ObbyR"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_ObbyR"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ObbyR"].BorderSizePixel = 0
+Converted["_ObbyR"].Position = UDim2.new(0.75, 0, 0.800000012, 0)
+Converted["_ObbyR"].Size = UDim2.new(0.0599999949, 0, 0.100000016, 0)
+Converted["_ObbyR"].Name = "ObbyR"
+Converted["_ObbyR"].Parent = Converted["_Washiez2"]
+
+Converted["_UICorner83"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner83"].Parent = Converted["_ObbyR"]
+
+Converted["_ObbyL"].Font = Enum.Font.Roboto
+Converted["_ObbyL"].Text = "<"
+Converted["_ObbyL"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_ObbyL"].TextScaled = true
+Converted["_ObbyL"].TextSize = 14
+Converted["_ObbyL"].TextWrapped = true
+Converted["_ObbyL"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_ObbyL"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_ObbyL"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ObbyL"].BorderSizePixel = 0
+Converted["_ObbyL"].Position = UDim2.new(0.25, 0, 0.800000012, 0)
+Converted["_ObbyL"].Size = UDim2.new(0.0607470796, 0, 0.100000009, 0)
+Converted["_ObbyL"].Name = "ObbyL"
+Converted["_ObbyL"].Parent = Converted["_Washiez2"]
+
+Converted["_UICorner84"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner84"].Parent = Converted["_ObbyL"]
+
+Converted["_AutoObby"].Font = Enum.Font.TitilliumWeb
+Converted["_AutoObby"].Text = "AutoFarm Obby"
+Converted["_AutoObby"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_AutoObby"].TextScaled = true
+Converted["_AutoObby"].TextSize = 14
+Converted["_AutoObby"].TextWrapped = true
+Converted["_AutoObby"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_AutoObby"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_AutoObby"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_AutoObby"].BorderSizePixel = 0
+Converted["_AutoObby"].Position = UDim2.new(0.5, 0, 0.675000012, 0)
+Converted["_AutoObby"].Size = UDim2.new(0.300000012, 0, 0.100000001, 0)
+Converted["_AutoObby"].Name = "AutoObby"
+Converted["_AutoObby"].Parent = Converted["_Washiez2"]
+
+Converted["_UICorner85"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner85"].Parent = Converted["_AutoObby"]
+
+Converted["_NIFuel"].Font = Enum.Font.TitilliumWeb
+Converted["_NIFuel"].Text = "-Inf Fuel"
+Converted["_NIFuel"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_NIFuel"].TextScaled = true
+Converted["_NIFuel"].TextSize = 14
+Converted["_NIFuel"].TextWrapped = true
+Converted["_NIFuel"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_NIFuel"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_NIFuel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_NIFuel"].BorderSizePixel = 0
+Converted["_NIFuel"].Position = UDim2.new(0.799999952, 0, 0.200490311, 0)
+Converted["_NIFuel"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_NIFuel"].Name = "NIFuel"
+Converted["_NIFuel"].Parent = Converted["_Washiez2"]
+
+Converted["_UICorner86"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner86"].Parent = Converted["_NIFuel"]
+
+Converted["_Gates"].Font = Enum.Font.TitilliumWeb
+Converted["_Gates"].Text = "Hide Gates"
+Converted["_Gates"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Gates"].TextScaled = true
+Converted["_Gates"].TextSize = 14
+Converted["_Gates"].TextWrapped = true
+Converted["_Gates"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Gates"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Gates"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Gates"].BorderSizePixel = 0
+Converted["_Gates"].Position = UDim2.new(0.400000006, 0, 0.474999994, 0)
+Converted["_Gates"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Gates"].Name = "Gates"
+Converted["_Gates"].Parent = Converted["_Washiez2"]
+
+Converted["_UICorner87"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner87"].Parent = Converted["_Gates"]
+
+Converted["_Key2"].Font = Enum.Font.TitilliumWeb
+Converted["_Key2"].Text = "Get Key"
+Converted["_Key2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Key2"].TextScaled = true
+Converted["_Key2"].TextSize = 14
+Converted["_Key2"].TextWrapped = true
+Converted["_Key2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Key2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Key2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Key2"].BorderSizePixel = 0
+Converted["_Key2"].Position = UDim2.new(0.600000024, 0, 0.474999994, 0)
+Converted["_Key2"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Key2"].Name = "Key"
+Converted["_Key2"].Parent = Converted["_Washiez2"]
+
+Converted["_UICorner88"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner88"].Parent = Converted["_Key2"]
+
+Converted["_Collision"].Font = Enum.Font.TitilliumWeb
+Converted["_Collision"].Text = "Car Noclip"
+Converted["_Collision"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Collision"].TextScaled = true
+Converted["_Collision"].TextSize = 14
+Converted["_Collision"].TextWrapped = true
+Converted["_Collision"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Collision"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Collision"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Collision"].BorderSizePixel = 0
+Converted["_Collision"].Position = UDim2.new(0.800000012, 0, 0.474999994, 0)
+Converted["_Collision"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Collision"].Name = "Collision"
+Converted["_Collision"].Parent = Converted["_Washiez2"]
+
+Converted["_UICorner89"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner89"].Parent = Converted["_Collision"]
+
+Converted["_WLOL"].Font = Enum.Font.TitilliumWeb
+Converted["_WLOL"].Text = "Washiez.lol"
+Converted["_WLOL"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_WLOL"].TextScaled = true
+Converted["_WLOL"].TextSize = 14
+Converted["_WLOL"].TextWrapped = true
+Converted["_WLOL"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_WLOL"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_WLOL"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_WLOL"].BorderSizePixel = 0
+Converted["_WLOL"].Position = UDim2.new(0.178137258, 0, 0.575000048, 0)
+Converted["_WLOL"].Size = UDim2.new(0.140000001, 0, 0.075000003, 0)
+Converted["_WLOL"].Name = "WLOL"
+Converted["_WLOL"].Parent = Converted["_Washiez2"]
+
+Converted["_UICorner90"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner90"].Parent = Converted["_WLOL"]
 
 Converted["_WashiezTC2"].GroupTransparency = 1
 Converted["_WashiezTC2"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2393,95 +2736,73 @@ Converted["_WashiezTC2"].Visible = false
 Converted["_WashiezTC2"].Name = "WashiezTC"
 Converted["_WashiezTC2"].Parent = Converted["_Menus"]
 
-Converted["_SD"].Font = Enum.Font.TitilliumWeb
-Converted["_SD"].Text = "SD Hallway"
-Converted["_SD"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
-Converted["_SD"].TextScaled = true
-Converted["_SD"].TextSize = 14
-Converted["_SD"].TextWrapped = true
-Converted["_SD"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_SD"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
-Converted["_SD"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_SD"].BorderSizePixel = 0
-Converted["_SD"].Position = UDim2.new(0.850000024, 0, 0.312999994, 0)
-Converted["_SD"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
-Converted["_SD"].Name = "SD"
-Converted["_SD"].Parent = Converted["_WashiezTC2"]
+Converted["_VSeat"].Font = Enum.Font.TitilliumWeb
+Converted["_VSeat"].Text = "Enter Car"
+Converted["_VSeat"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_VSeat"].TextScaled = true
+Converted["_VSeat"].TextSize = 14
+Converted["_VSeat"].TextWrapped = true
+Converted["_VSeat"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_VSeat"].BackgroundColor3 = Color3.fromRGB(404.00000631809235, 404.00000631809235, 404.00000631809235)
+Converted["_VSeat"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_VSeat"].BorderSizePixel = 0
+Converted["_VSeat"].Position = UDim2.new(0.150000006, 0, 0.200000003, 0)
+Converted["_VSeat"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_VSeat"].Name = "VSeat"
+Converted["_VSeat"].Parent = Converted["_WashiezTC2"]
 
-Converted["_UICorner76"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner76"].Parent = Converted["_SD"]
+Converted["_UICorner91"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner91"].Parent = Converted["_VSeat"]
 
-Converted["_Trainee"].Font = Enum.Font.TitilliumWeb
-Converted["_Trainee"].Text = "Trainee Hallway"
-Converted["_Trainee"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
-Converted["_Trainee"].TextScaled = true
-Converted["_Trainee"].TextSize = 14
-Converted["_Trainee"].TextWrapped = true
-Converted["_Trainee"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Trainee"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
-Converted["_Trainee"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Trainee"].BorderSizePixel = 0
-Converted["_Trainee"].Position = UDim2.new(0.150000006, 0, 0.312999994, 0)
-Converted["_Trainee"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
-Converted["_Trainee"].Name = "Trainee"
-Converted["_Trainee"].Parent = Converted["_WashiezTC2"]
+Converted["_OG"].Font = Enum.Font.TitilliumWeb
+Converted["_OG"].Text = "Join OG TC"
+Converted["_OG"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_OG"].TextScaled = true
+Converted["_OG"].TextSize = 14
+Converted["_OG"].TextWrapped = true
+Converted["_OG"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_OG"].BackgroundColor3 = Color3.fromRGB(404.00000631809235, 404.00000631809235, 404.00000631809235)
+Converted["_OG"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_OG"].BorderSizePixel = 0
+Converted["_OG"].Position = UDim2.new(0.5, 0, 0.200000003, 0)
+Converted["_OG"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_OG"].Name = "OG"
+Converted["_OG"].Parent = Converted["_WashiezTC2"]
 
-Converted["_UICorner77"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner77"].Parent = Converted["_Trainee"]
+Converted["_UICorner92"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner92"].Parent = Converted["_OG"]
 
-Converted["_JD"].Font = Enum.Font.TitilliumWeb
-Converted["_JD"].Text = "JD Hallway"
-Converted["_JD"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
-Converted["_JD"].TextScaled = true
-Converted["_JD"].TextSize = 14
-Converted["_JD"].TextWrapped = true
-Converted["_JD"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_JD"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
-Converted["_JD"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_JD"].BorderSizePixel = 0
-Converted["_JD"].Position = UDim2.new(0.5, 0, 0.3125, 0)
-Converted["_JD"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
-Converted["_JD"].Name = "JD"
-Converted["_JD"].Parent = Converted["_WashiezTC2"]
+Converted["_Doors"].Font = Enum.Font.TitilliumWeb
+Converted["_Doors"].Text = "Disable Doors"
+Converted["_Doors"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_Doors"].TextScaled = true
+Converted["_Doors"].TextSize = 14
+Converted["_Doors"].TextWrapped = true
+Converted["_Doors"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Doors"].BackgroundColor3 = Color3.fromRGB(404.00000631809235, 404.00000631809235, 404.00000631809235)
+Converted["_Doors"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Doors"].BorderSizePixel = 0
+Converted["_Doors"].Position = UDim2.new(0.850000024, 0, 0.200000003, 0)
+Converted["_Doors"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Doors"].Name = "Doors"
+Converted["_Doors"].Parent = Converted["_WashiezTC2"]
 
-Converted["_UICorner78"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner78"].Parent = Converted["_JD"]
+Converted["_UICorner93"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner93"].Parent = Converted["_Doors"]
 
-Converted["_Spawn1"].Font = Enum.Font.TitilliumWeb
-Converted["_Spawn1"].Text = "Spawn"
-Converted["_Spawn1"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
-Converted["_Spawn1"].TextScaled = true
-Converted["_Spawn1"].TextSize = 14
-Converted["_Spawn1"].TextWrapped = true
-Converted["_Spawn1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Spawn1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
-Converted["_Spawn1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Spawn1"].BorderSizePixel = 0
-Converted["_Spawn1"].Position = UDim2.new(0.150000006, 0, 0.125, 0)
-Converted["_Spawn1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
-Converted["_Spawn1"].Name = "Spawn"
-Converted["_Spawn1"].Parent = Converted["_WashiezTC2"]
-
-Converted["_UICorner79"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner79"].Parent = Converted["_Spawn1"]
-
-Converted["_Staff1"].Font = Enum.Font.TitilliumWeb
-Converted["_Staff1"].Text = "Staff Spawn"
-Converted["_Staff1"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
-Converted["_Staff1"].TextScaled = true
-Converted["_Staff1"].TextSize = 14
-Converted["_Staff1"].TextWrapped = true
-Converted["_Staff1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Staff1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
-Converted["_Staff1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Staff1"].BorderSizePixel = 0
-Converted["_Staff1"].Position = UDim2.new(0.5, 0, 0.125, 0)
-Converted["_Staff1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
-Converted["_Staff1"].Name = "Staff"
-Converted["_Staff1"].Parent = Converted["_WashiezTC2"]
-
-Converted["_UICorner80"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner80"].Parent = Converted["_Staff1"]
+Converted["_Teleports3"].GroupTransparency = 1
+Converted["_Teleports3"].Active = true
+Converted["_Teleports3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Teleports3"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
+Converted["_Teleports3"].BackgroundTransparency = 0.5
+Converted["_Teleports3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Teleports3"].BorderSizePixel = 0
+Converted["_Teleports3"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Teleports3"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Teleports3"].Visible = false
+Converted["_Teleports3"].ZIndex = 2
+Converted["_Teleports3"].Name = "Teleports"
+Converted["_Teleports3"].Parent = Converted["_WashiezTC2"]
 
 Converted["_Upstairs"].Font = Enum.Font.TitilliumWeb
 Converted["_Upstairs"].Text = "Upstairs"
@@ -2490,34 +2811,34 @@ Converted["_Upstairs"].TextScaled = true
 Converted["_Upstairs"].TextSize = 14
 Converted["_Upstairs"].TextWrapped = true
 Converted["_Upstairs"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Upstairs"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Upstairs"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Upstairs"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Upstairs"].BorderSizePixel = 0
-Converted["_Upstairs"].Position = UDim2.new(0.850000024, 0, 0.125, 0)
+Converted["_Upstairs"].Position = UDim2.new(0.850000083, 0, 0.200000003, 0)
 Converted["_Upstairs"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Upstairs"].Name = "Upstairs"
-Converted["_Upstairs"].Parent = Converted["_WashiezTC2"]
+Converted["_Upstairs"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner81"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner81"].Parent = Converted["_Upstairs"]
+Converted["_UICorner94"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner94"].Parent = Converted["_Upstairs"]
 
-Converted["_Chair"].Font = Enum.Font.TitilliumWeb
-Converted["_Chair"].Text = "Chair"
-Converted["_Chair"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
-Converted["_Chair"].TextScaled = true
-Converted["_Chair"].TextSize = 14
-Converted["_Chair"].TextWrapped = true
-Converted["_Chair"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Chair"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
-Converted["_Chair"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Chair"].BorderSizePixel = 0
-Converted["_Chair"].Position = UDim2.new(0.150000006, 0, 0.5, 0)
-Converted["_Chair"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
-Converted["_Chair"].Name = "Chair"
-Converted["_Chair"].Parent = Converted["_WashiezTC2"]
+Converted["_Trainee"].Font = Enum.Font.TitilliumWeb
+Converted["_Trainee"].Text = "Trainee Hallway"
+Converted["_Trainee"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_Trainee"].TextScaled = true
+Converted["_Trainee"].TextSize = 14
+Converted["_Trainee"].TextWrapped = true
+Converted["_Trainee"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Trainee"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Trainee"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Trainee"].BorderSizePixel = 0
+Converted["_Trainee"].Position = UDim2.new(0.150000006, 0, 0.400000006, 0)
+Converted["_Trainee"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Trainee"].Name = "Trainee"
+Converted["_Trainee"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner82"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner82"].Parent = Converted["_Chair"]
+Converted["_UICorner95"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner95"].Parent = Converted["_Trainee"]
 
 Converted["_Test"].Font = Enum.Font.TitilliumWeb
 Converted["_Test"].Text = "Testing Area"
@@ -2526,16 +2847,88 @@ Converted["_Test"].TextScaled = true
 Converted["_Test"].TextSize = 14
 Converted["_Test"].TextWrapped = true
 Converted["_Test"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Test"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Test"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Test"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Test"].BorderSizePixel = 0
-Converted["_Test"].Position = UDim2.new(0.850000024, 0, 0.5, 0)
+Converted["_Test"].Position = UDim2.new(0.850000024, 0, 0.600000024, 0)
 Converted["_Test"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Test"].Name = "Test"
-Converted["_Test"].Parent = Converted["_WashiezTC2"]
+Converted["_Test"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner83"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner83"].Parent = Converted["_Test"]
+Converted["_UICorner96"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner96"].Parent = Converted["_Test"]
+
+Converted["_Staff1"].Font = Enum.Font.TitilliumWeb
+Converted["_Staff1"].Text = "Staff Spawn"
+Converted["_Staff1"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_Staff1"].TextScaled = true
+Converted["_Staff1"].TextSize = 14
+Converted["_Staff1"].TextWrapped = true
+Converted["_Staff1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Staff1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Staff1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Staff1"].BorderSizePixel = 0
+Converted["_Staff1"].Position = UDim2.new(0.50000006, 0, 0.200000018, 0)
+Converted["_Staff1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Staff1"].Name = "Staff"
+Converted["_Staff1"].Parent = Converted["_Teleports3"]
+
+Converted["_UICorner97"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner97"].Parent = Converted["_Staff1"]
+
+Converted["_Spawn1"].Font = Enum.Font.TitilliumWeb
+Converted["_Spawn1"].Text = "Spawn"
+Converted["_Spawn1"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_Spawn1"].TextScaled = true
+Converted["_Spawn1"].TextSize = 14
+Converted["_Spawn1"].TextWrapped = true
+Converted["_Spawn1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Spawn1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Spawn1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Spawn1"].BorderSizePixel = 0
+Converted["_Spawn1"].Position = UDim2.new(0.150000036, 0, 0.200000003, 0)
+Converted["_Spawn1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Spawn1"].Name = "Spawn"
+Converted["_Spawn1"].Parent = Converted["_Teleports3"]
+
+Converted["_UICorner98"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner98"].Parent = Converted["_Spawn1"]
+
+Converted["_JD"].Font = Enum.Font.TitilliumWeb
+Converted["_JD"].Text = "JD Hallway"
+Converted["_JD"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_JD"].TextScaled = true
+Converted["_JD"].TextSize = 14
+Converted["_JD"].TextWrapped = true
+Converted["_JD"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_JD"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_JD"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_JD"].BorderSizePixel = 0
+Converted["_JD"].Position = UDim2.new(0.850000024, 0, 0.400000006, 0)
+Converted["_JD"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_JD"].Name = "JD"
+Converted["_JD"].Parent = Converted["_Teleports3"]
+
+Converted["_UICorner99"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner99"].Parent = Converted["_JD"]
+
+Converted["_SD"].Font = Enum.Font.TitilliumWeb
+Converted["_SD"].Text = "SD Hallway"
+Converted["_SD"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_SD"].TextScaled = true
+Converted["_SD"].TextSize = 14
+Converted["_SD"].TextWrapped = true
+Converted["_SD"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_SD"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_SD"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SD"].BorderSizePixel = 0
+Converted["_SD"].Position = UDim2.new(0.50000006, 0, 0.400000066, 0)
+Converted["_SD"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_SD"].Name = "SD"
+Converted["_SD"].Parent = Converted["_Teleports3"]
+
+Converted["_UICorner100"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner100"].Parent = Converted["_SD"]
 
 Converted["_Entrance"].Font = Enum.Font.TitilliumWeb
 Converted["_Entrance"].Text = "Entrance"
@@ -2544,16 +2937,107 @@ Converted["_Entrance"].TextScaled = true
 Converted["_Entrance"].TextSize = 14
 Converted["_Entrance"].TextWrapped = true
 Converted["_Entrance"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Entrance"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Entrance"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Entrance"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Entrance"].BorderSizePixel = 0
-Converted["_Entrance"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Entrance"].Position = UDim2.new(0.50000006, 0, 0.600000024, 0)
 Converted["_Entrance"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Entrance"].Name = "Entrance"
-Converted["_Entrance"].Parent = Converted["_WashiezTC2"]
+Converted["_Entrance"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner84"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner84"].Parent = Converted["_Entrance"]
+Converted["_UICorner101"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner101"].Parent = Converted["_Entrance"]
+
+Converted["_Chair"].Font = Enum.Font.TitilliumWeb
+Converted["_Chair"].Text = "Chair"
+Converted["_Chair"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_Chair"].TextScaled = true
+Converted["_Chair"].TextSize = 14
+Converted["_Chair"].TextWrapped = true
+Converted["_Chair"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Chair"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Chair"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Chair"].BorderSizePixel = 0
+Converted["_Chair"].Position = UDim2.new(0.150000006, 0, 0.600000024, 0)
+Converted["_Chair"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Chair"].Name = "Chair"
+Converted["_Chair"].Parent = Converted["_Teleports3"]
+
+Converted["_UICorner102"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner102"].Parent = Converted["_Chair"]
+
+Converted["_Close3"].Font = Enum.Font.TitilliumWeb
+Converted["_Close3"].Text = "Close"
+Converted["_Close3"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_Close3"].TextScaled = true
+Converted["_Close3"].TextSize = 14
+Converted["_Close3"].TextWrapped = true
+Converted["_Close3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Close3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close3"].BorderSizePixel = 0
+Converted["_Close3"].Position = UDim2.new(0.874586225, 0, 0.924835026, 0)
+Converted["_Close3"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Close3"].Name = "Close"
+Converted["_Close3"].Parent = Converted["_Teleports3"]
+
+Converted["_UICorner103"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner103"].Parent = Converted["_Close3"]
+
+Converted["_TP2"].Font = Enum.Font.TitilliumWeb
+Converted["_TP2"].Text = "Teleports"
+Converted["_TP2"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_TP2"].TextScaled = true
+Converted["_TP2"].TextSize = 14
+Converted["_TP2"].TextWrapped = true
+Converted["_TP2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_TP2"].BackgroundColor3 = Color3.fromRGB(404.00000631809235, 404.00000631809235, 404.00000631809235)
+Converted["_TP2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TP2"].BorderSizePixel = 0
+Converted["_TP2"].Position = UDim2.new(0.875, 0, 0.925000012, 0)
+Converted["_TP2"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_TP2"].Name = "TP"
+Converted["_TP2"].Parent = Converted["_WashiezTC2"]
+
+Converted["_UICorner104"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner104"].Parent = Converted["_TP2"]
+
+Converted["_FF1"].Font = Enum.Font.TitilliumWeb
+Converted["_FF1"].Text = "FF"
+Converted["_FF1"].TextColor3 = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803)
+Converted["_FF1"].TextScaled = true
+Converted["_FF1"].TextSize = 14
+Converted["_FF1"].TextWrapped = true
+Converted["_FF1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_FF1"].BackgroundColor3 = Color3.fromRGB(404.00000631809235, 404.00000631809235, 404.00000631809235)
+Converted["_FF1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_FF1"].BorderSizePixel = 0
+Converted["_FF1"].Position = UDim2.new(0.5, 0, 0.400000006, 0)
+Converted["_FF1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_FF1"].Name = "FF"
+Converted["_FF1"].Parent = Converted["_WashiezTC2"]
+
+Converted["_UICorner105"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner105"].Parent = Converted["_FF1"]
+
+Converted["_Cars"].Font = Enum.Font.Unknown
+Converted["_Cars"].Text = "69 Cars | 420 Available"
+Converted["_Cars"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_Cars"].TextScaled = true
+Converted["_Cars"].TextSize = 14
+Converted["_Cars"].TextWrapped = true
+Converted["_Cars"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Cars"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Cars"].BackgroundTransparency = 0.5
+Converted["_Cars"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Cars"].BorderSizePixel = 0
+Converted["_Cars"].Position = UDim2.new(0.5, 0, 0.75, 0)
+Converted["_Cars"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
+Converted["_Cars"].Name = "Cars"
+Converted["_Cars"].Parent = Converted["_WashiezTC2"]
+
+Converted["_UICorner106"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner106"].Parent = Converted["_Cars"]
 
 Converted["_OilUp2"].GroupTransparency = 1
 Converted["_OilUp2"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2582,11 +3066,41 @@ Converted["_AutoFarm1"].Size = UDim2.new(0.400000006, 0, 0.400000006, 0)
 Converted["_AutoFarm1"].Name = "AutoFarm"
 Converted["_AutoFarm1"].Parent = Converted["_OilUp2"]
 
-Converted["_UICorner85"].CornerRadius = UDim.new(0.0500000007, 0)
-Converted["_UICorner85"].Parent = Converted["_AutoFarm1"]
+Converted["_UICorner107"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner107"].Parent = Converted["_AutoFarm1"]
+
+Converted["_WashiezOGTC1"].GroupTransparency = 1
+Converted["_WashiezOGTC1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_WashiezOGTC1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_WashiezOGTC1"].BackgroundTransparency = 1
+Converted["_WashiezOGTC1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_WashiezOGTC1"].BorderSizePixel = 0
+Converted["_WashiezOGTC1"].Position = UDim2.new(0.574999988, 0, 0.5, 0)
+Converted["_WashiezOGTC1"].Size = UDim2.new(0.850000024, 0, 1, 0)
+Converted["_WashiezOGTC1"].Visible = false
+Converted["_WashiezOGTC1"].Name = "WashiezOGTC"
+Converted["_WashiezOGTC1"].Parent = Converted["_Menus"]
+
+Converted["_OGTCMessage"].Font = Enum.Font.TitilliumWeb
+Converted["_OGTCMessage"].Text = "Disabled Temporarily"
+Converted["_OGTCMessage"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_OGTCMessage"].TextScaled = true
+Converted["_OGTCMessage"].TextSize = 14
+Converted["_OGTCMessage"].TextWrapped = true
+Converted["_OGTCMessage"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_OGTCMessage"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_OGTCMessage"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_OGTCMessage"].BorderSizePixel = 0
+Converted["_OGTCMessage"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_OGTCMessage"].Size = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_OGTCMessage"].Name = "OGTCMessage"
+Converted["_OGTCMessage"].Parent = Converted["_WashiezOGTC1"]
+
+Converted["_UICorner108"].CornerRadius = UDim.new(0.150000006, 0)
+Converted["_UICorner108"].Parent = Converted["_OGTCMessage"]
 
 Converted["_Player1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Player1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Player1"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
 Converted["_Player1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Player1"].BorderSizePixel = 0
 Converted["_Player1"].Position = UDim2.new(0.075000003, 0, 0.899999976, 0)
@@ -2595,11 +3109,11 @@ Converted["_Player1"].ZIndex = 3
 Converted["_Player1"].Name = "Player"
 Converted["_Player1"].Parent = Converted["_Container1"]
 
-Converted["_UICorner86"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner86"].Parent = Converted["_Player1"]
+Converted["_UICorner109"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner109"].Parent = Converted["_Player1"]
 
 Converted["_Settings"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Settings"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Settings"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Settings"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Settings"].BorderSizePixel = 0
 Converted["_Settings"].Position = UDim2.new(0.814999998, 0, 0.5, 0)
@@ -2607,8 +3121,8 @@ Converted["_Settings"].Size = UDim2.new(0.324999988, 0, 0.800000012, 0)
 Converted["_Settings"].Name = "Settings"
 Converted["_Settings"].Parent = Converted["_Player1"]
 
-Converted["_UICorner87"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner87"].Parent = Converted["_Settings"]
+Converted["_UICorner110"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner110"].Parent = Converted["_Settings"]
 
 Converted["_KeepShapePlz"].AspectRatio = 1.0068495273590088
 Converted["_KeepShapePlz"].Name = "KeepShapePlz"
@@ -2625,8 +3139,8 @@ Converted["_Profile"].Size = UDim2.new(0.349999994, 0, 0.850000024, 0)
 Converted["_Profile"].Name = "Profile"
 Converted["_Profile"].Parent = Converted["_Player1"]
 
-Converted["_UICorner88"].CornerRadius = UDim.new(1, 0)
-Converted["_UICorner88"].Parent = Converted["_Profile"]
+Converted["_UICorner111"].CornerRadius = UDim.new(1, 0)
+Converted["_UICorner111"].Parent = Converted["_Profile"]
 
 Converted["_Outline"].Color = Color3.fromRGB(255, 255, 255)
 Converted["_Outline"].Name = "Outline"
@@ -2663,27 +3177,27 @@ Converted["_Keybind"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Keybind"].Name = "Keybind"
 Converted["_Keybind"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner89"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner89"].Parent = Converted["_Keybind"]
+Converted["_UICorner112"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner112"].Parent = Converted["_Keybind"]
 
-Converted["_Close2"].Font = Enum.Font.Nunito
-Converted["_Close2"].Text = "X"
-Converted["_Close2"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close2"].TextScaled = true
-Converted["_Close2"].TextSize = 14
-Converted["_Close2"].TextWrapped = true
-Converted["_Close2"].TextYAlignment = Enum.TextYAlignment.Bottom
-Converted["_Close2"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close2"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
-Converted["_Close2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close2"].BorderSizePixel = 0
-Converted["_Close2"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
-Converted["_Close2"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
-Converted["_Close2"].Name = "Close"
-Converted["_Close2"].Parent = Converted["_Settings1"]
+Converted["_Close4"].Font = Enum.Font.Nunito
+Converted["_Close4"].Text = "X"
+Converted["_Close4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close4"].TextScaled = true
+Converted["_Close4"].TextSize = 14
+Converted["_Close4"].TextWrapped = true
+Converted["_Close4"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Close4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close4"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Close4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close4"].BorderSizePixel = 0
+Converted["_Close4"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
+Converted["_Close4"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+Converted["_Close4"].Name = "Close"
+Converted["_Close4"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner90"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner90"].Parent = Converted["_Close2"]
+Converted["_UICorner113"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner113"].Parent = Converted["_Close4"]
 
 Converted["_ResetKeybind"].Font = Enum.Font.TitilliumWeb
 Converted["_ResetKeybind"].Text = "Reset keybind"
@@ -2700,8 +3214,8 @@ Converted["_ResetKeybind"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_ResetKeybind"].Name = "ResetKeybind"
 Converted["_ResetKeybind"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner91"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner91"].Parent = Converted["_ResetKeybind"]
+Converted["_UICorner114"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner114"].Parent = Converted["_ResetKeybind"]
 
 Converted["_NotifyJoin"].Font = Enum.Font.TitilliumWeb
 Converted["_NotifyJoin"].Text = "Notify Hub Join [T]"
@@ -2718,8 +3232,8 @@ Converted["_NotifyJoin"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_NotifyJoin"].Name = "NotifyJoin"
 Converted["_NotifyJoin"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner92"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner92"].Parent = Converted["_NotifyJoin"]
+Converted["_UICorner115"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner115"].Parent = Converted["_NotifyJoin"]
 
 Converted["_NotifyUnread"].Font = Enum.Font.TitilliumWeb
 Converted["_NotifyUnread"].Text = "Notify Unread [T]"
@@ -2736,8 +3250,8 @@ Converted["_NotifyUnread"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_NotifyUnread"].Name = "NotifyUnread"
 Converted["_NotifyUnread"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner93"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner93"].Parent = Converted["_NotifyUnread"]
+Converted["_UICorner116"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner116"].Parent = Converted["_NotifyUnread"]
 
 Converted["_Save"].Font = Enum.Font.TitilliumWeb
 Converted["_Save"].Text = "Save Config"
@@ -2754,8 +3268,8 @@ Converted["_Save"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Save"].Name = "Save"
 Converted["_Save"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner94"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner94"].Parent = Converted["_Save"]
+Converted["_UICorner117"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner117"].Parent = Converted["_Save"]
 
 Converted["_Load"].Font = Enum.Font.TitilliumWeb
 Converted["_Load"].Text = "Load Config"
@@ -2772,8 +3286,8 @@ Converted["_Load"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Load"].Name = "Load"
 Converted["_Load"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner95"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner95"].Parent = Converted["_Load"]
+Converted["_UICorner118"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner118"].Parent = Converted["_Load"]
 
 Converted["_Status"].Font = Enum.Font.TitilliumWeb
 Converted["_Status"].RichText = true
@@ -2809,8 +3323,8 @@ Converted["_Version"].Size = UDim2.new(0.200000003, 0, 0.0500000007, 0)
 Converted["_Version"].Name = "Version"
 Converted["_Version"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner96"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner96"].Parent = Converted["_Version"]
+Converted["_UICorner119"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner119"].Parent = Converted["_Version"]
 
 Converted["_Background"].ImageTransparency = 0.25
 Converted["_Background"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2824,11 +3338,11 @@ Converted["_Background"].ZIndex = -1
 Converted["_Background"].Name = "Background"
 Converted["_Background"].Parent = Converted["_Container"]
 
-Converted["_UICorner97"].CornerRadius = UDim.new(0.0299999993, 0)
-Converted["_UICorner97"].Parent = Converted["_Container"]
+Converted["_UICorner120"].CornerRadius = UDim.new(0.0299999993, 0)
+Converted["_UICorner120"].Parent = Converted["_Container"]
 
-Converted["_UICorner98"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner98"].Parent = Converted["_TitleBar"]
+Converted["_UICorner121"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner121"].Parent = Converted["_TitleBar"]
 
 Converted["_Buttons"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Buttons"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
@@ -2840,8 +3354,8 @@ Converted["_Buttons"].ZIndex = 2
 Converted["_Buttons"].Name = "Buttons"
 Converted["_Buttons"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner99"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner99"].Parent = Converted["_Buttons"]
+Converted["_UICorner122"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner122"].Parent = Converted["_Buttons"]
 
 Converted["_Title"].Font = Enum.Font.Sarpanch
 Converted["_Title"].Text = "AntiHub"
@@ -2859,26 +3373,26 @@ Converted["_Title"].Size = UDim2.new(0.174999997, 0, 0.800000012, 0)
 Converted["_Title"].Name = "Title"
 Converted["_Title"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner100"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner100"].Parent = Converted["_Title"]
+Converted["_UICorner123"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner123"].Parent = Converted["_Title"]
 
-Converted["_Close3"].Font = Enum.Font.Nunito
-Converted["_Close3"].Text = "X"
-Converted["_Close3"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close3"].TextScaled = true
-Converted["_Close3"].TextSize = 14
-Converted["_Close3"].TextWrapped = true
-Converted["_Close3"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Close3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close3"].BorderSizePixel = 0
-Converted["_Close3"].Position = UDim2.new(0.949999988, 0, 0.5, 0)
-Converted["_Close3"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
-Converted["_Close3"].Name = "Close"
-Converted["_Close3"].Parent = Converted["_Buttons"]
+Converted["_Close5"].Font = Enum.Font.Nunito
+Converted["_Close5"].Text = "X"
+Converted["_Close5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close5"].TextScaled = true
+Converted["_Close5"].TextSize = 14
+Converted["_Close5"].TextWrapped = true
+Converted["_Close5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close5"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Close5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close5"].BorderSizePixel = 0
+Converted["_Close5"].Position = UDim2.new(0.949999988, 0, 0.5, 0)
+Converted["_Close5"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
+Converted["_Close5"].Name = "Close"
+Converted["_Close5"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner101"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner101"].Parent = Converted["_Close3"]
+Converted["_UICorner124"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner124"].Parent = Converted["_Close5"]
 
 Converted["_Collapse"].Font = Enum.Font.Nunito
 Converted["_Collapse"].Text = "-"
@@ -2895,8 +3409,8 @@ Converted["_Collapse"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
 Converted["_Collapse"].Name = "Collapse"
 Converted["_Collapse"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner102"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner102"].Parent = Converted["_Collapse"]
+Converted["_UICorner125"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner125"].Parent = Converted["_Collapse"]
 
 Converted["_Version1"].Font = Enum.Font.Ubuntu
 Converted["_Version1"].Text = "Version: 69.420"
@@ -2916,8 +3430,37 @@ Converted["_Version1"].Size = UDim2.new(0.174999997, 0, 0.25, 0)
 Converted["_Version1"].Name = "Version"
 Converted["_Version1"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner103"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner103"].Parent = Converted["_Version1"]
+Converted["_UICorner126"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner126"].Parent = Converted["_Version1"]
+
+Converted["_Inspector"].AlwaysOnTop = true
+Converted["_Inspector"].ClipsDescendants = true
+Converted["_Inspector"].LightInfluence = 1
+Converted["_Inspector"].Size = UDim2.new(7.5, 0, 7.5, 0)
+Converted["_Inspector"].StudsOffset = Vector3.new(0, 2.5, 2.5)
+Converted["_Inspector"].Enabled = false
+Converted["_Inspector"].ResetOnSpawn = false
+Converted["_Inspector"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_Inspector"].Name = "Inspector"
+Converted["_Inspector"].Parent = Converted["_AntiHub"]
+
+Converted["_Box"].Text = "Name"
+Converted["_Box"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Box"].TextScaled = true
+Converted["_Box"].TextSize = 14
+Converted["_Box"].TextWrapped = true
+Converted["_Box"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Box"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Box"].BackgroundTransparency = 1
+Converted["_Box"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Box"].BorderSizePixel = 0
+Converted["_Box"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Box"].Size = UDim2.new(0.949999988, 0, 0.949999988, 0)
+Converted["_Box"].Name = "Box"
+Converted["_Box"].Parent = Converted["_Inspector"]
+
+Converted["_UIStroke"].Thickness = 2
+Converted["_UIStroke"].Parent = Converted["_Box"]
 
 Converted["_Stats"].Font = Enum.Font.SciFi
 Converted["_Stats"].Text = "Added by script for so no errors."
@@ -2937,36 +3480,8 @@ Converted["_Stats"].Size = UDim2.new(0.0500000007, 0, 0.0500000007, 0)
 Converted["_Stats"].Name = "Stats"
 Converted["_Stats"].Parent = Converted["_AntiHub"]
 
-Converted["_UICorner104"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner104"].Parent = Converted["_Stats"]
-
-Converted["_Inspector"].Active = true
-Converted["_Inspector"].AlwaysOnTop = true
-Converted["_Inspector"].ClipsDescendants = true
-Converted["_Inspector"].LightInfluence = 1
-Converted["_Inspector"].Size = UDim2.new(7.5, 0, 7.5, 0)
-Converted["_Inspector"].StudsOffset = Vector3.new(0, 2.5, 2.5)
-Converted["_Inspector"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_Inspector"].Name = "Inspector"
-Converted["_Inspector"].Parent = Converted["_AntiHub"]
-
-Converted["_Box"].Text = "Hamoudip8"
-Converted["_Box"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Box"].TextScaled = true
-Converted["_Box"].TextSize = 14
-Converted["_Box"].TextWrapped = true
-Converted["_Box"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Box"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Box"].BackgroundTransparency = 1
-Converted["_Box"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Box"].BorderSizePixel = 0
-Converted["_Box"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Box"].Size = UDim2.new(0.949999988, 0, 0.949999988, 0)
-Converted["_Box"].Name = "Box"
-Converted["_Box"].Parent = Converted["_Inspector"]
-
-Converted["_UIStroke"].Thickness = 2
-Converted["_UIStroke"].Parent = Converted["_Box"]
+Converted["_UICorner127"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner127"].Parent = Converted["_Stats"]
 
 Converted._AntiHub.Enabled = true
 if _G.AHL then
@@ -2977,9 +3492,10 @@ if _G.AHL then
 end
 _G.AHL = true
 _G.AH = Converted._AntiHub
-local SVersion = "1.3.1"
+local SVersion = "1.4"
 _G.AHSV = SVersion
 local LocalPlayer = game:GetService("Players").LocalPlayer
+local LocalCharacter = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 local ChatBox = game:GetService("CoreGui"):WaitForChild("ExperienceChat"):WaitForChild("appLayout"):WaitForChild("chatInputBar"):WaitForChild("Background"):WaitForChild("Container"):WaitForChild("TextContainer"):WaitForChild("TextBoxContainer"):WaitForChild("TextBox")
 local AntiHub = Converted._AntiHub
 local Inspector = AntiHub:WaitForChild("Inspector")
@@ -2998,6 +3514,7 @@ local Places = AntiHub.TitleBar.Container.Container.Menus.Places
 local PrisonLife = AntiHub.TitleBar.Container.Container.Menus.PrisonLife
 local Washiez = AntiHub.TitleBar.Container.Container.Menus.Washiez
 local WashiezTC = AntiHub.TitleBar.Container.Container.Menus.WashiezTC
+local WashiezOGTC = AntiHub.TitleBar.Container.Container.Menus.WashiezOGTC
 local OilUp = AntiHub.TitleBar.Container.Container.Menus.OilUp
 local Universal = AntiHub.TitleBar.Container.Container.Menus.Universal
 local Logs = AntiHub.TitleBar.Container.Container.Menus.Logs
@@ -3005,8 +3522,8 @@ local AntiCheat = AntiHub.TitleBar.Container.Container.Menus.AntiCheat
 local Players = AntiHub.TitleBar.Container.Container.Menus.Players
 local AntiKick = false
 local Unread = 0
-local PlaceIDs = {155615604, 6764533218,  6868593153, 84881892786857}
-local Supported = {"PrisonLife", "Washiez", "WashiezTC", "OilUp"}
+local PlaceIDs = {155615604, 6764533218,  6868593153, 13824270489, 84881892786857}
+local Supported = {"PrisonLife", "Washiez", "WashiezTC", "WashiezOGTC", "OilUp"}
 Platform = Instance.new("Part")
 Platform.Name = "AHPlatform"
 Platform.Size = Vector3.new(50, 10, 50)
@@ -3033,7 +3550,7 @@ local Loaded, LOut = pcall(function()
 	Config.AC.Messages = {}
 	Config.AC.CanSend = {}
 	Config.AC.Whitelist = {LocalPlayer}
-	Config.Universal.Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+	Config.Universal.Character = LocalCharacter or LocalPlayer.CharacterAdded:Wait()
 	Config.Universal.Inspecting = false
 	Config.Universal.Clone = nil
 	Config.Universal.Banging = false
@@ -3044,7 +3561,27 @@ local Loaded, LOut = pcall(function()
 	Config.Washiez.NoTickets = false
 	Config.Washiez.AutoFarm = false
 	Config.Washiez.Flinging = false
+	Config.Washiez.Drifting = false
 	Config.Washiez.TTicket = "None"
+	Config.Washiez.Seat = nil
+	Config.Washiez.Gate = false
+	Config.Washiez.Gates = {}
+	Config.Washiez.Collider = false
+	task.spawn(function()
+		Config.Washiez.DefaultRank = LocalPlayer:WaitForChild("GroupInfo"):WaitForChild("Rank").Value
+	end)
+	Config.Washiez.FF = false
+	Config.Washiez.FFE = false
+	Config.Washiez.Obby = 1
+	Config.Washiez.Obbies = {"Nature", "Sky", "Arctic", "Candy"}
+	Config.Washiez.AutoObby = false
+	Config.WashiezTC = {}
+	Config.WashiezTC.KD = {}
+	Config.WashiezTC.KDE = false
+	Config.WashiezTC.FF = false
+	task.spawn(function()
+		Config.WashiezTC.Rank = LocalPlayer:WaitForChild("GroupInfo"):WaitForChild("Rank").Value
+	end)
 	Config.OilUp = {}
 	Config.OilUp.AutoFarm = false
 end)
@@ -3065,7 +3602,7 @@ else
 	Config.AC.Messages = {}
 	Config.AC.CanSend = {}
 	Config.AC.Whitelist = {LocalPlayer}
-	Config.Universal.Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+	Config.Universal.Character = LocalCharacter or LocalPlayer.CharacterAdded:Wait()
 	Config.Universal.Inspecting = false
 	Config.Universal.Clone = nil
 	Config.Universal.Banging = false
@@ -3076,9 +3613,54 @@ else
 	Config.Washiez.NoTickets = false
 	Config.Washiez.AutoFarm = false
 	Config.Washiez.Flinging = false
+	Config.Washiez.Drifting = false
 	Config.Washiez.TTicket = "None"
+	Config.Washiez.Seat = nil
+	Config.Washiez.Gate = false
+	Config.Washiez.Gates = {}
+	Config.Washiez.Collider = false
+	task.spawn(function()
+		Config.Washiez.DefaultRank = LocalPlayer:WaitForChild("GroupInfo"):WaitForChild("Rank").Value
+	end)
+	Config.Washiez.FF = false
+	Config.Washiez.FFE = false
+	Config.Washiez.Obby = 1
+	Config.Washiez.Obbies = {"Nature", "Sky", "Arctic", "Candy"}
+	Config.Washiez.AutoObby = false
+	Config.WashiezTC = {}
+	Config.WashiezTC.KD = {}
+	Config.WashiezTC.KDE = false
+	Config.WashiezTC.FF = false
+	task.spawn(function()
+		Config.WashiezTC.Rank = LocalPlayer:WaitForChild("GroupInfo"):WaitForChild("Rank").Value
+	end)
 	Config.OilUp = {}
 	Config.OilUp.AutoFarm = false
+end
+LocalPlayer.CharacterAdded:Connect(function(mod)
+	LocalCharacter = mod
+	if Supported[table.find(PlaceIDs, game.PlaceId)] == "Washiez" then
+		mod:WaitForChild("Humanoid").Jumping:Connect(function()
+			if Config.Washiez.Seat ~= nil then
+				Config.Washiez.Seat = nil
+				mod.Humanoid.Sit = false
+				LocalCharacter.PrimaryPart:WaitForChild("LockedSeatWeld"):Destroy()
+				task.wait(0.25)
+				LocalCharacter:MoveTo(LocalCharacter:GetPivot().Position + Vector3.new(0, 7.5, 0))
+			end
+		end)
+	end
+end)
+if Supported[table.find(PlaceIDs, game.PlaceId)] == "Washiez" then
+	LocalCharacter:WaitForChild("Humanoid").Jumping:Connect(function()
+		if Config.Washiez.Seat ~= nil then
+			Config.Washiez.Seat = nil
+			LocalCharacter.Humanoid.Sit = false
+			LocalCharacter.PrimaryPart:WaitForChild("LockedSeatWeld"):Destroy()
+			task.wait(0.25)
+			LocalCharacter:MoveTo(LocalCharacter:GetPivot().Position + Vector3.new(0, 7.5, 0))
+		end
+	end)
 end
 local Team = {}
 local HidChat = game:GetService("Players").Chat
@@ -3136,6 +3718,15 @@ local function ACTrigger(plr, Reason, Respawn, Jumped)
 	end
 end
 
+local function Notify(Text, Duration, Title)
+	if Title == nil then
+		Title = "AntiHub"
+	else
+		Title = "AntiHub - ".. Title
+	end
+	game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = Title, ["Text"] = Text, ["Duration"] = Duration})
+end
+
 local function UpdatePlayerList()
 	local List = {}
 	for i, v in game:GetService("Players"):GetPlayers() do
@@ -3178,9 +3769,9 @@ local function OnMessage(plr, msg)
 			Unread += 1
 			if Config.NotifyUnread then
 				if (string.len(msg) - 9) >= 10 then
-					game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat - ".. plr.Name, ["Text"] = "New Message:\n".. msg:sub(10, 16).. "...", ["Duration"] = 1})
+					Notify("New Message:\n".. msg:sub(10, 16).. "...", 2, plr.Name)
 				else
-					game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Chat - ".. plr.Name, ["Text"] = "New Message:\n".. msg:sub(10, 19), ["Duration"] = 1})
+					Notify("New Message:\n".. msg:sub(10, 19), 2, plr.Name)
 				end
 			end
 		end
@@ -3199,7 +3790,7 @@ local function OnMessage(plr, msg)
 				UpdateWhitelist()
 			end
 			if Config.NotifyJoin then
-				game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Detected", ["Text"] = "User ".. plr.Name.. " Has Joined With AntiHub.", ["Duration"] = 5})
+				Notify("User ".. plr.Name.. " Has Joined With AntiHub.", 5, "Detector")
 			end
 			HidChat(game:GetService("Players"), "TNEListUpdate")
 		end
@@ -3212,9 +3803,9 @@ local function OnMessage(plr, msg)
 			end
 		end
 	elseif msg == "TNEInspectStart" then
-		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Inspect", ["Text"] = "User ".. plr.Name.. " Has Started Inspecting.", ["Duration"] = 5})
+		Notify("User ".. plr.Name.. " Has Started Inspecting.", 5, "Inspector")
 	elseif msg == "TNEInspectEnd" then
-		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub Inspect", ["Text"] = "User ".. plr.Name.. " Has Stopped Inspecting.", ["Duration"] = 5})
+		Notify("User ".. plr.Name.. " Has Stopped Inspecting.", 5, "Inspector")
 	end
 	if string.len(Logs.Chat.Log.Text) + string.len(" <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n") >= 16385 then
 		Logs.Chat.Log.Text = Logs.Chat.Log.Text:sub(1, string.len(Logs.Chat.Log.Text) - string.len(" <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"))
@@ -3224,21 +3815,40 @@ local function OnMessage(plr, msg)
 	Logs.Chat.CanvasPosition = Vector2.new(0, Logs.Chat.CanvasSize.Y.Offset - Logs.Chat.AbsoluteWindowSize.Y)
 end
 
+
+local function WashiezSound(Id)
+	if LocalCharacter == nil then return end
+	if LocalCharacter:FindFirstChildWhichIsA("Humanoid") == nil then return end
+	local Tool = LocalPlayer.Backpack:FindFirstChild("Radio") or LocalCharacter:FindFirstChild("Radio")
+	if Tool == nil then return end
+	if Tool.Parent == LocalPlayer.Backpack then
+		LocalCharacter:FindFirstChildWhichIsA("Humanoid"):UnequipTools()
+		LocalCharacter:FindFirstChildWhichIsA("Humanoid"):EquipTool(Tool)
+	end
+	task.wait(0.1)
+	Tool:WaitForChild("Remote"):InvokeServer("Activate", vector.create(LocalCharacter:GetPivot().X, LocalCharacter:GetPivot().Y, LocalCharacter:GetPivot().Z))
+	task.spawn(function()
+		Tool.Remote:InvokeServer("PlaySong", Id)
+	end)
+	repeat task.wait() until Tool.Handle.Sound.IsLoaded
+	LocalCharacter.Humanoid:UnequipTools()
+end
+
 local function Bang(Target, Enabled)
 	if game:GetService("Players"):FindFirstChild(Universal.Input.Text) == nil then
-		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\" Does Not Exist", ["Duration"] = 2})
+		Notify("Player \"".. Universal.Input.Text.. "\" Does Not Exist", 3, "Error")
 		return
 	end
 	if game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character == nil then
-		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\"'s Character Does Not Exist", ["Duration"] = 2})
+		Notify("Player \"".. Universal.Input.Text.. "\"'s Character Does Not Exist", 3, "Error")
 		return
 	end
 	Config.Universal.Banging = Enabled or not Config.Universal.Banging
 	if Config.Universal.Banging or Enabled then
 		Universal.Bang.Text = "Stop Banging"
-		local humanoid = LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid")
+		local humanoid = LocalCharacter:FindFirstChildWhichIsA("Humanoid")
 		bangAnim = Instance.new("Animation")
-		bangAnim.AnimationId = LocalPlayer.Character:FindFirstChildOfClass('Humanoid').RigType ~= Enum.HumanoidRigType.R15 and "rbxassetid://148840371" or "rbxassetid://5918726674"
+		bangAnim.AnimationId = LocalCharacter:FindFirstChildOfClass('Humanoid').RigType ~= Enum.HumanoidRigType.R15 and "rbxassetid://148840371" or "rbxassetid://5918726674"
 		bang = humanoid:LoadAnimation(bangAnim)
 		bang:Play(0.1, 1, 1)
 		bang:AdjustSpeed(3)
@@ -3256,7 +3866,7 @@ local function Bang(Target, Enabled)
 		bangLoop = game:GetService("RunService").Stepped:Connect(function()
 			pcall(function()
 				local otherRoot = bangplr.Character:FindFirstChild("Torso") or bangplr.Character:FindFirstChild("UpperTorso") or bangplr.Character:FindFirstChild("LowerTorso") or bangplr.Character:FindFirstChild("HumanoidRootPart")
-				LocalPlayer.Character.HumanoidRootPart.CFrame = otherRoot.CFrame * bangOffset
+				LocalCharacter.HumanoidRootPart.CFrame = otherRoot.CFrame * bangOffset
 			end)
 		end)
 	else
@@ -3286,8 +3896,8 @@ local function Orbit(Target, Enabled)
 			Target = ""
 		end
 		local target = game:GetService("Players"):FindFirstChild(Target) or game:GetService("Players"):FindFirstChild(Universal.Input.Text)
-		local root = LocalPlayer.Character.HumanoidRootPart
-		local humanoid = LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid")
+		local root = LocalCharacter.HumanoidRootPart
+		local humanoid = LocalCharacter:FindFirstChildWhichIsA("Humanoid")
 		if target and target.Character and target.Character.HumanoidRootPart and root and humanoid then
 			local rotation = 0
 			local speed = 5
@@ -3451,6 +4061,7 @@ for i, v in game:GetService("Players"):GetPlayers() do
 			mod.InspectHighlight.FillColor = Color3.fromRGB(0, 0, 0)
 			Inspector:Clone().Parent = mod:WaitForChild("Head")
 			mod.Head.Inspector:WaitForChild("Box").Text = v.Name
+			mod.Head.Inspector.Enabled = true
 			mod.Head.Inspector.Box.TextColor3 = Color3.fromRGB(math.floor(255 * v.TeamColor.r), math.floor(255 * v.TeamColor.g), math.floor(255 * v.TeamColor.b))
 		end
 	end)
@@ -3497,7 +4108,7 @@ end)
 UpdatePlayerList()
 
 task.spawn(function()
-	local PU = {8571813460, 2744291367, 8545198185, 4954622816, 7809215621, 7928934158, 8531645784, 8531887406, 8922253120, 165363676, 3573982412, 7143729667, 7732258645, 7737847593, 3029804958} --Don't ask, It's for secrets.
+	local PU = {8571813460, 2744291367, 8545198185, 4954622816, 7809215621, 7928934158, 8531645784, 8531887406, 165363676, 3573982412, 3029804958, 5640121362, 8921747177}
 	_G.AHAKIPU = function(N)
 		return table.find(PU, N)
 	end
@@ -3616,7 +4227,7 @@ task.spawn(function()
 		task.wait()
 	until suc
 	while task.wait(0.1) do
-		Config.Ping = game:GetService("Stats").Network.ServerStatsItem.Ping
+		Config.Ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]
 	end
 end)
 
@@ -3663,10 +4274,10 @@ PrisonLife.Input.FocusLost:Connect(function(EP)
 	end
 end)
 
-Washiez.Input.FocusLost:Connect(function(EP)
+Washiez.Tickets.Input.FocusLost:Connect(function(EP)
 	if EP then
-		if GetUnshortened(Washiez.Input.Text) == nil then return end
-		Washiez.Input.Text = GetUnshortened(Washiez.Input.Text).Name
+		if GetUnshortened(Washiez.Tickets.Input.Text) == nil then return end
+		Washiez.Tickets.Input.Text = GetUnshortened(Washiez.Tickets.Input.Text).Name
 	end
 end)
 
@@ -3783,29 +4394,29 @@ PrisonLife.Kick.Activated:Connect(function()
 end)
 
 PrisonLife.Criminals.Activated:Connect(function()
-	local CF = LocalPlayer.Character:GetPivot()
+	local CF = LocalCharacter:GetPivot()
 	local SCF = workspace["Criminals Spawn"].SpawnLocation.CFrame
 	if LocalPlayer.Team == game:GetService("Teams").Neutral then
 		workspace.Remote.TeamEvent:FireServer("Bright orange")
 		LocalPlayer.PlayerGui.Home.intro.Visible = false
 		workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
-		workspace.CurrentCamera.CameraSubject = LocalPlayer.Character:WaitForChild("Humanoid")
+		workspace.CurrentCamera.CameraSubject = LocalCharacter:WaitForChild("Humanoid")
 	end
 	workspace["Criminals Spawn"].SpawnLocation.CanCollide = false
 	repeat
 		pcall(function()
-			workspace["Criminals Spawn"].SpawnLocation.CFrame = LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame
+			workspace["Criminals Spawn"].SpawnLocation.CFrame = LocalCharacter:FindFirstChild("HumanoidRootPart").CFrame
 		end)
 		game:GetService("RunService").Stepped:Wait()
 	until LocalPlayer.TeamColor == BrickColor.new("Really red")
 	workspace["Criminals Spawn"].SpawnLocation.CFrame = SCF
 	task.wait(0.25)
-	LocalPlayer.Character:PivotTo(CF)
+	LocalCharacter:PivotTo(CF)
 end)
 
 PrisonLife.Guards.Activated:Connect(function()
 	local Team = LocalPlayer.Team
-	local CF = LocalPlayer.Character:GetPivot()
+	local CF = LocalCharacter:GetPivot()
 	workspace.Remote.TeamEvent:FireServer("Bright blue")
 	if #game:GetService("Teams").Guards:GetPlayers() > 7 then
 		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Guards Team Full", ["Duration"] = 5})
@@ -3814,26 +4425,26 @@ PrisonLife.Guards.Activated:Connect(function()
 	if Team == game:GetService("Teams").Neutral then
 		LocalPlayer.PlayerGui.Home.intro.Visible = false
 		workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
-		workspace.CurrentCamera.CameraSubject = LocalPlayer.Character:WaitForChild("Humanoid")
+		workspace.CurrentCamera.CameraSubject = LocalCharacter:WaitForChild("Humanoid")
 	else
 		LocalPlayer.CharacterAdded:Wait()
 		task.wait(0.25)
-		LocalPlayer.Character:PivotTo(CF)
+		LocalCharacter:PivotTo(CF)
 	end
 end)
 
 PrisonLife.Inmates.Activated:Connect(function()
 	local Team = LocalPlayer.Team
-	local CF = LocalPlayer.Character:GetPivot()
+	local CF = LocalCharacter:GetPivot()
 	workspace.Remote.TeamEvent:FireServer("Bright orange")
 	if Team == game:GetService("Teams").Neutral then
 		LocalPlayer.PlayerGui.Home.intro.Visible = false
 		workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
-		workspace.CurrentCamera.CameraSubject = LocalPlayer.Character:WaitForChild("Humanoid")
+		workspace.CurrentCamera.CameraSubject = LocalCharacter:WaitForChild("Humanoid")
 	else
 		LocalPlayer.CharacterAdded:Wait()
 		task.wait(0.25)
-		LocalPlayer.Character:PivotTo(CF)
+		LocalCharacter:PivotTo(CF)
 	end
 end)
 PrisonLife.Neutral.Activated:Connect(function()
@@ -3841,62 +4452,62 @@ PrisonLife.Neutral.Activated:Connect(function()
 end)
 
 PrisonLife.Teleports.Crimbase.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(-945, 95, 2065))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(-945, 95, 2065))
 end)
 PrisonLife.Teleports.Yard.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:PivotTo(CFrame.new(788, 98, 2468))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:PivotTo(CFrame.new(788, 98, 2468))
 end)
 PrisonLife.Teleports.Guards.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:PivotTo(CFrame.new(836, 100, 2285))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:PivotTo(CFrame.new(836, 100, 2285))
 end)
 PrisonLife.Teleports.Mansion.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:PivotTo(CFrame.new(-316, 65, 1841))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:PivotTo(CFrame.new(-316, 65, 1841))
 end)
 PrisonLife.Teleports.Cafe.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:PivotTo(CFrame.new(884, 100, 2294))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:PivotTo(CFrame.new(884, 100, 2294))
 end)
 PrisonLife.Teleports.Gate.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(505, 100, 2250))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(505, 100, 2250))
 end)
 PrisonLife.Teleports.Platform.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Platform.Position + Vector3.new(0, 15, 0))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Platform.Position + Vector3.new(0, 15, 0))
 end)
 PrisonLife.Teleports.Trap.Activated:Connect(function()
-	LocalPlayer.Character:PivotTo(CFrame.new(-307, 84, 1984))
+	LocalCharacter:PivotTo(CFrame.new(-307, 84, 1984))
 end)
 PrisonLife.Teleports.Car.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(workspace.Prison_ITEMS.buttons["Car Spawner"]["Car Spawner"]:GetPivot().Position + Vector3.new(0, 10, 0))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(workspace.Prison_ITEMS.buttons["Car Spawner"]["Car Spawner"]:GetPivot().Position + Vector3.new(0, 10, 0))
 end)
 PrisonLife.Teleports.Neutral.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:PivotTo(CFrame.new(879, 28, 2349))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:PivotTo(CFrame.new(879, 28, 2349))
 end)
 PrisonLife.Teleports.Nexus.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:PivotTo(CFrame.new(878, 100, 2374))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:PivotTo(CFrame.new(878, 100, 2374))
 end)
 PrisonLife.Teleports.YTower.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:PivotTo(CFrame.new(787, 125, 2588))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:PivotTo(CFrame.new(787, 125, 2588))
 end)
 
 PrisonLife.TP.Activated:Connect(function()
@@ -3945,12 +4556,12 @@ Universal.Respawn.Activated:Connect(function()
 		Universal.Respawn.Text = "Respawn"
 	else
 		local LocalPlayer = game.Players.LocalPlayer
-		local Char = LocalPlayer.Character
+		local Char = LocalCharacter
 		local Cam = workspace.CurrentCamera:GetPivot()
 		Char.Archivable = true
 		local Clone = Char:Clone()
 		Clone.Parent = Char.Parent
-		LocalPlayer.Character = Clone
+		LocalCharacter = Clone
 		workspace.CurrentCamera.CameraSubject = Clone.Humanoid
 		workspace.CurrentCamera:PivotTo(Cam)
 		Clone:WaitForChild("Humanoid").DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
@@ -3964,13 +4575,13 @@ Universal.Respawn.Activated:Connect(function()
 		Clone:WaitForChild("Animate").Disabled = true
 		task.wait()
 		Clone:WaitForChild("Animate").Disabled = false
-		LocalPlayer.Character = LocalPlayer.CharacterAdded:Wait()
+		LocalCharacter = LocalPlayer.CharacterAdded:Wait()
 		Cam = workspace.CurrentCamera:GetPivot()
 		Char:Destroy()
 		local CF = Clone:GetPivot()
-		workspace.CurrentCamera.CameraSubject = LocalPlayer.Character
+		workspace.CurrentCamera.CameraSubject = LocalCharacter
 		Clone:Destroy()
-		LocalPlayer.Character:PivotTo(CF)
+		LocalCharacter:PivotTo(CF)
 		workspace.CurrentCamera:PivotTo(Cam)
 	end
 end)
@@ -4034,10 +4645,10 @@ Logs.Send.Activated:Connect(function()
 	HidChat(game.Players, Logs.Input.Text)
 end)
 
-Washiez.TicketSpam.Activated:Connect(function()
+Washiez.Tickets.TicketSpam.Activated:Connect(function()
 	Config.Washiez.AllTickets = not Config.Washiez.AllTickets
 	if Config.Washiez.AllTickets then
-		Washiez.TicketSpam.Text = "Unspam All Tickets"
+		Washiez.Tickets.TicketSpam.Text = "Unspam All Tickets"
 		local Types = {"Regular", "Extra", "Deluxe"}
 		local Current = 0
 		repeat
@@ -4053,20 +4664,45 @@ Washiez.TicketSpam.Activated:Connect(function()
 			task.wait(#game:GetService("Players"):GetPlayers() / 100)
 		until not Config.Washiez.AllTickets
 	else
-		Washiez.TicketSpam.Text = "Spam All Tickets"
+		Washiez.Tickets.TicketSpam.Text = "Spam All Tickets"
 	end
 end)
-
 Washiez.RankUp.Activated:Connect(function()
 	LocalPlayer.GroupInfo.Rank.Value = 200
 end)
 Washiez.RankDown.Activated:Connect(function()
 	LocalPlayer.GroupInfo.Rank.Value = 0
 end)
-LocalPlayer.GroupInfo.Rank:GetPropertyChangedSignal("Value"):Connect(function()
-	Washiez.Rank.Text = "Current Rank: ".. tostring(LocalPlayer.GroupInfo.Rank.Value)
+Washiez.CRank.FocusLost:Connect(function(EP)
+	if EP then
+		if Washiez.CRank.Text == "" then
+			LocalPlayer.GroupInfo.Rank.Value = Config.Washiez.DefaultRank
+			Notify("Set Default Rank", 3, "Success")
+			Washiez.CRank.Text = ""
+			return
+		end
+		if tonumber(Washiez.CRank.Text) == nil then
+			Notify("\"".. Washiez.CRank.Text.. "\" Is Not A Number", 3, "Error")
+			Washiez.CRank.Text = ""
+			return
+		end
+		LocalPlayer.GroupInfo.Rank.Value = tonumber(Washiez.CRank.Text)
+		Notify("Set Rank To \"".. Washiez.CRank.Text.. "\"", 3, "Success")
+		Washiez.CRank.Text = ""
+	end
 end)
-Washiez.Rank.Text = "Current Rank: ".. tostring(LocalPlayer.GroupInfo.Rank.Value)
+if Supported[table.find(PlaceIDs, game.PlaceId)] == "Washiez" then
+	LocalPlayer.GroupInfo.Rank:GetPropertyChangedSignal("Value"):Connect(function()
+		Washiez.Rank.Text = "Current Rank: ".. tostring(LocalPlayer.GroupInfo.Rank.Value)
+	end)
+	Washiez.Rank.Text = "Current Rank: ".. tostring(LocalPlayer.GroupInfo.Rank.Value)
+elseif Supported[table.find(PlaceIDs, game.Players)] == "WashiezOGTC" then
+	LocalPlayer.GroupInfo.Rank:GetPropertyChangedSignal("Value"):Connect(function()
+		Washiez.Rank.Text = "Current Rank: ".. tostring(LocalPlayer.GroupInfo.Rank.Value)
+	end)
+	WashiezOGTC.Rank.Text = "Current Rank: ".. tostring(LocalPlayer.GroupInfo.Rank.Value)
+end
+
 Washiez.MFuel.Activated:Connect(function()
 	game:GetService("ReplicatedStorage").GasStation.Refuel:FireServer(100)
 end)
@@ -4076,14 +4712,17 @@ end)
 Washiez.NIFuel.Activated:Connect(function()
 	game:GetService("ReplicatedStorage").GasStation.Refuel:FireServer(tonumber("-inf"))
 end)
+Washiez.IFuel.Activated:Connect(function()
+	game:GetService("ReplicatedStorage").GasStation.Refuel:FireServer(tonumber("nan"))
+end)
 Washiez.Despawn.Activated:Connect(function()
 	game:GetService("ReplicatedStorage"):WaitForChild("CarSpawnSystem"):WaitForChild("RemoteEvents"):WaitForChild("CarSystem"):InvokeServer("Despawn")
 end)
 
-Washiez.DTickets.Activated:Connect(function()
+Washiez.Tickets.DTickets.Activated:Connect(function()
 	Config.Washiez.NoTickets = not Config.Washiez.NoTickets
 	if Config.Washiez.NoTickets then
-		Washiez.DTickets.Text = "Enable Tickets"
+		Washiez.Tickets.DTickets.Text = "Enable Tickets"
 		repeat
 			for i, v in game:GetService("Players"):GetPlayers() do
 				if v.Character == nil then continue end
@@ -4093,16 +4732,17 @@ Washiez.DTickets.Activated:Connect(function()
 					end)
 				end
 			end
-			task.wait(task.wait(#game:GetService("Players"):GetPlayers() / 100))
+			task.wait(#game:GetService("Players"):GetPlayers() / 1000)
 		until not Config.Washiez.NoTickets
 	else
-		Washiez.DTickets.Text = "Disable Tickets"
+		Washiez.Tickets.DTickets.Text = "Disable Tickets"
 	end
 end)
-Washiez.AutoFarm.Activated:Connect(function()
+
+Washiez.Tickets.AutoFarm.Activated:Connect(function()
 	Config.Washiez.NoTickets = not Config.Washiez.NoTickets
 	if Config.Washiez.NoTickets then
-		Washiez.AutoFarm.Text = "Disable Autofarm"
+		Washiez.Tickets.AutoFarm.Text = "Disable Autofarm"
 		local Types = {"Regular", "Extra", "Deluxe"}
 		local Current = 0
 		repeat
@@ -4114,83 +4754,141 @@ Washiez.AutoFarm.Activated:Connect(function()
 			task.wait(10)
 		until not Config.Washiez.AutoFarm
 	else
-		Washiez.AutoFarm.Text = "Enabled AutoFarm"
+		Washiez.Tickets.AutoFarm.Text = "Enabled AutoFarm"
 	end
 end)
 
-Washiez.CTickets.Activated:Connect(function()
-	if game:GetService("Players"):FindFirstChild(Washiez.Input.Text) == nil then
-		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Washiez.Input.Text.. "\" Does Not Exist."})
-		return
+Washiez.Radio.FocusLost:Connect(function(EP)
+	if EP then
+		local Tool = LocalPlayer.Backpack:FindFirstChild("Radio") or LocalCharacter:FindFirstChild("Radio")
+		if Tool == nil then
+			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "No Radio Found.", ["Duration"] = 5})
+			Washiez.Radio.Text = ""
+			return
+		end
+		if tonumber(Washiez.Radio.Text) == nil then
+			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Invalid Sound Id.", ["Duration"] = 5})
+			Washiez.Radio.Text = ""
+			return
+		end
+		WashiezSound(tonumber(Washiez.Radio.Text))
+		Washiez.Radio.Text = ""
 	end
-	game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {Washiez.Input.Text})
-end)
-Washiez.Regular.Activated:Connect(function()
-	if game:GetService("Players"):FindFirstChild(Washiez.Input.Text) == nil then
-		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Washiez.Input.Text.. "\" Does Not Exist."})
-		return
-	end
-	game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {Washiez.Input.Text, "Regular"})
-end)
-Washiez.Extra.Activated:Connect(function()
-	if game:GetService("Players"):FindFirstChild(Washiez.Input.Text) == nil then
-		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Washiez.Input.Text.. "\" Does Not Exist."})
-		return
-	end
-	game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {Washiez.Input.Text, "Extra"})
-end)
-Washiez.Deluxe.Activated:Connect(function()
-	if game:GetService("Players"):FindFirstChild(Washiez.Input.Text) == nil then
-		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Washiez.Input.Text.. "\" Does Not Exist."})
-		return
-	end
-	game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {Washiez.Input.Text, "Deluxe"})
 end)
 
+Washiez.ObbyL.Activated:Connect(function()
+	if Config.Washiez.Obby == 1 then return end
+	Config.Washiez.Obby -= 1
+	Washiez.Obby.Text = Config.Washiez.Obbies[Config.Washiez.Obby].. " Obby"
+end)
+Washiez.ObbyR.Activated:Connect(function()
+	if Config.Washiez.Obby == #Config.Washiez.Obbies then return end
+	Config.Washiez.Obby += 1
+	Washiez.Obby.Text = Config.Washiez.Obbies[Config.Washiez.Obby].. " Obby"
+end)
+
+Washiez.AutoObby.Activated:Connect(function()
+	Config.Washiez.AutoObby = not Config.Washiez.AutoObby
+	if Config.Washiez.AutoObby then
+		Washiez.AutoObby.Text = "Stop AutoFarming"
+		local Checkpoints = workspace.ObbyCheckpoints[Config.Washiez.Obbies[Config.Washiez.Obby].. "Obby"]:GetChildren()
+		table.sort(Checkpoints, (function(a, b) 
+			return a:GetAttribute("Number") < b:GetAttribute("Number")
+		end))
+		repeat
+			repeat
+				firetouchinterest(LocalCharacter.PrimaryPart, workspace.Portals.Portals[Config.Washiez.Obbies[Config.Washiez.Obby].. "ObbyPortal"].Teleport, 0)
+				task.wait(0.1)
+				firetouchinterest(LocalCharacter.PrimaryPart, workspace.Portals.Portals[Config.Washiez.Obbies[Config.Washiez.Obby].. "ObbyPortal"].Teleport, 1)
+				task.wait(1.25)
+				workspace.Gravity = 50
+
+				for i, v in Checkpoints do
+					LocalCharacter:PivotTo(v:GetPivot())
+					LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+					repeat LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0) task.wait() until v.Cylinder.Color.R ~= 255
+				end	
+				task.wait(1)
+			until Checkpoints[#Checkpoints].Cylinder.Color.R == 52 or not Config.Washiez.AutoObby
+		until not Config.Washiez.AutoObby
+	else
+		Washiez.AutoObby.Text = "AutoFarm Obby"
+		workspace.Gravity = 196.2
+	end
+end)
+
+Washiez.Tickets.CTickets.Activated:Connect(function()
+	if game:GetService("Players"):FindFirstChild(Washiez.Tickets.Input.Text) == nil then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Washiez.Tickets.Input.Text.. "\" Does Not Exist.", ["Duration"] = 3})
+		return
+	end
+	game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {Washiez.Tickets.Input.Text})
+end)
+Washiez.Tickets.Regular.Activated:Connect(function()
+	if game:GetService("Players"):FindFirstChild(Washiez.Tickets.Input.Text) == nil then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Washiez.Tickets.Input.Text.. "\" Does Not Exist."})
+		return
+	end
+	game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {Washiez.Tickets.Input.Text, "Regular"})
+end)
+Washiez.Tickets.Extra.Activated:Connect(function()
+	if game:GetService("Players"):FindFirstChild(Washiez.Tickets.Input.Text) == nil then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Washiez.Tickets.Input.Text.. "\" Does Not Exist."})
+		return
+	end
+	game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {Washiez.Tickets.Input.Text, "Extra"})
+end)
+Washiez.Tickets.Deluxe.Activated:Connect(function()
+	if game:GetService("Players"):FindFirstChild(Washiez.Tickets.Input.Text) == nil then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Washiez.Tickets.Input.Text.. "\" Does Not Exist."})
+		return
+	end
+	game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {Washiez.Tickets.Input.Text, "Deluxe"})
+end)
 Washiez.Teleports.Spawn.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(-110, 4, 105))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(-110, 4, 105))
 end)
 Washiez.Teleports.Staff.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(290, 4, -195))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(290, 4, -195))
 end)
 Washiez.Teleports.Store.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(545, 4, -200))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(545, 4, -200))
 end)
 Washiez.Teleports.Key.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(-155, -5, -210))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(-155, -5, -210))
 end)
 Washiez.Teleports.Kitchen.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(569, 4, 206))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(569, 4, 206))
 end)
 Washiez.Teleports.Jail.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(275, 4, -535))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(275, 4, -535))
 end)
 Washiez.Teleports.Warehouse.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(495, 4, 20))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(495, 4, 20))
 end)
 Washiez.Teleports.CarWash.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(350, 4, 160))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(350, 4, 160))
 end)
 Washiez.Teleports.VIP.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(270, 4, 55))
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(270, 4, 55))
 end)
 Washiez.Teleports.Close.Activated:Connect(function()
 	if TPWait then return end
@@ -4209,51 +4907,285 @@ Washiez.TP.Activated:Connect(function()
 	task.wait(0.1)
 	TPWait = false
 end)
+Washiez.TCK.Activated:Connect(function()
+	if TPWait then return end
+	TPWait = true
+	Washiez.Tickets.GroupTransparency = 1
+	Washiez.Tickets.Visible = true
+	game:GetService("TweenService"):Create(Washiez.Tickets, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
+	task.wait(0.1)
+	TPWait = false
+end)
+Washiez.Tickets.Close.Activated:Connect(function()
+	if TPWait then return end
+	TPWait = true
+	game:GetService("TweenService"):Create(Washiez.Tickets, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
+	task.wait(0.1)
+	Washiez.Tickets.Visible = false
+	TPWait = false
+end)
 
-WashiezTC.Spawn.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(469, 6, -115))
+Washiez.FF.Activated:Connect(function()
+	if not replicatesignal then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Missing replicatefunction.", ["Duration"] = 5})
+		return 
+	end
+	Config.Washiez.FF = not Config.Washiez.FF
+	if Config.Washiez.FF then
+		if Config.Washiez.FFE then
+			Config.Washiez.FF = false
+			return
+		end
+		Washiez.FF.Text = "Stop FF"
+		local CF = LocalCharacter:GetPivot()
+		Config.Washiez.FFE = true
+		Notify("ForceField Enabled.", 6, "FA")
+		repeat
+			CF = LocalCharacter:GetPivot()
+			replicatesignal(LocalPlayer.ConnectDiedSignalBackend)
+			local Camera = workspace.CurrentCamera
+			task.wait(game:GetService("Players").RespawnTime - 0.165)
+			pcall(function()
+				if LocalCharacter:GetPivot() == nil then return end
+				CF = LocalCharacter:GetPivot()
+			end)
+			print(CF.Position)
+			LocalCharacter:WaitForChild("Humanoid"):ChangeState(Enum.HumanoidStateType.Dead)
+			LocalPlayer.CharacterAdded:Wait()
+			task.wait(Config.Ping * 0.001)
+			workspace.CurrentCamera = Camera
+			task.spawn(function()
+				LocalCharacter:PivotTo(CF)
+				task.wait(1)
+				if math.abs(LocalCharacter:GetPivot().Position.Magnitude - CF.Position.Magnitude) <= 0.01 then
+					repeat
+						LocalCharacter:PivotTo(CF)
+						task.wait(0.05)
+					until math.abs(LocalCharacter:GetPivot().Position.Magnitude - CF.Position.Magnitude) <= 0.01
+				end
+				task.wait(2)
+				if math.abs(LocalCharacter:GetPivot().Position.Magnitude - CF.Position.Magnitude) <= 10 then
+					LocalCharacter:PivotTo(CF)
+				end
+			end)
+			task.wait(4)
+		until not Config.Washiez.FF
+		Config.Washiez.FFE = false
+	else
+		Washiez.FF.Text = "Stopping FF"
+		Notify("Stopping ForceField.", 3, "FA")
+		repeat task.wait() until not Config.Washiez.FFE
+		Washiez.FF.Text = "FF"
+		Notify("ForceField Disabled.", 3, "FA")
+	end
 end)
-WashiezTC.Staff.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(305, 6, -115))
+Washiez.Key.Activated:Connect(function()
+	local CF = game.Players.LocalPlayer.Character:GetPivot()
+	game.Players.LocalPlayer.Character:PivotTo(workspace.UndergroundKeys:FindFirstChildWhichIsA("ProximityPrompt", true).Parent.CFrame)
+	task.wait(Config.Ping * 0.001)
+	fireproximityprompt(workspace.UndergroundKeys:FindFirstChildWhichIsA("ProximityPrompt", true))
+	task.wait(Config.Ping * 0.001)
+	game.Players.LocalPlayer.Character:PivotTo(CF)
 end)
-WashiezTC.Upstairs.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(330, 23, -115))
+Washiez.Gates.Activated:Connect(function()
+	Config.Washiez.Gate = not Config.Washiez.Gate
+	if Config.Washiez.Gate then
+		Washiez.Gates.Text = "Show Gates"
+		for i, v in Config.Washiez.Gates do
+			v.Value.Parent = nil
+		end
+	else
+		Washiez.Gates.Text = "Hide Gates"
+		for i, v in Config.Washiez.Gates do
+			v.Value.Parent = v.Parent
+		end
+	end
 end)
-WashiezTC.Trainee.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(228, 4, 0))
+Washiez.Collision.Activated:Connect(function()
+	Config.Washiez.Collider = not Config.Washiez.Collider
+	print(Config.Washiez.Collider)
+	if Config.Washiez.Collider then
+		Washiez.Collision.Text = "Starting"
+		for i, v in workspace.SpawnedCars:GetChildren() do
+			if v == Config.Washiez.Car then continue end
+			task.spawn(function()
+				for ii, vv in v:GetDescendants() do
+					pcall(function()
+						vv.CanCollide = false
+					end)
+				end
+			end)
+		end
+		Washiez.Collision.Text = "Car Clip"
+	else
+		Washiez.Collision.Text = "Starting"
+		for i, v in workspace.SpawnedCars:GetChildren() do
+			if v == Config.Washiez.Car then continue end
+			task.spawn(function()
+				for ii, vv in v:GetDescendants() do
+					pcall(function()
+						vv.CanCollide = true
+					end)
+				end
+			end)
+		end
+		Washiez.Collision.Text = "Car Noclip"
+	end
 end)
-WashiezTC.JD.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(200, 4, -105))
+
+Washiez.WLOL.Activated:Connect(function()
+	Notify("Check Out\nburntribs.space/washiez.lol", 6, "Loading")
+	loadstring(game:HttpGet('https://burntribs.space/washiez.lol/script.lua'))()
 end)
-WashiezTC.SD.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(230, 4, -230))
+
+WashiezTC.Teleports.Spawn.Activated:Connect(function()
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(469, 6, -115))
 end)
-WashiezTC.Chair.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(426, -41, -134))
+WashiezTC.Teleports.Staff.Activated:Connect(function()
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(305, 6, -115))
 end)
-WashiezTC.Entrance.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(560, 4, -115))
+WashiezTC.Teleports.Upstairs.Activated:Connect(function()
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(330, 23, -115))
 end)
-WashiezTC.Test.Activated:Connect(function()
-	LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalPlayer.Character:MoveTo(Vector3.new(829, -284, -10))
+WashiezTC.Teleports.Trainee.Activated:Connect(function()
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(228, 4, 0))
+end)
+WashiezTC.Teleports.SD.Activated:Connect(function()
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(200, 4, -105))
+end)
+WashiezTC.Teleports.JD.Activated:Connect(function()
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(230, 4, -230))
+end)
+WashiezTC.Teleports.Chair.Activated:Connect(function()
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(426, -41, -134))
+end)
+WashiezTC.Teleports.Entrance.Activated:Connect(function()
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(560, 4, -115))
+end)
+WashiezTC.Teleports.Test.Activated:Connect(function()
+	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter:MoveTo(Vector3.new(829, -284, -10))
+end)
+WashiezTC.Teleports.Close.Activated:Connect(function()
+	if TPWait then return end
+	TPWait = true
+	game:GetService("TweenService"):Create(WashiezTC.Teleports, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
+	task.wait(0.1)
+	WashiezTC.Teleports.Visible = false
+	TPWait = false
+end)
+WashiezTC.TP.Activated:Connect(function()
+	if TPWait then return end
+	TPWait = true
+	WashiezTC.Teleports.GroupTransparency = 1
+	WashiezTC.Teleports.Visible = true
+	game:GetService("TweenService"):Create(WashiezTC.Teleports, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
+	task.wait(0.1)
+	TPWait = false
+end)
+WashiezTC.VSeat.Activated:Connect(function()
+	local Seats = {}
+	for i, v in workspace:GetDescendants() do
+		if v:IsA("VehicleSeat") then
+			if v.Occupant ~= nil then continue end
+			table.insert(Seats, v)
+		end
+	end
+	table.sort(Seats, function(a, b)
+		return (a.Position - LocalCharacter:GetPivot().Position).Magnitude < (b.Position - LocalCharacter:GetPivot().Position).Magnitude
+	end)
+	if Seats[1] == nil then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "No Vehicles Spawned.", ["Duration"] = 3})
+		return
+	end
+	LocalCharacter:PivotTo(Seats[1].CFrame)
+	Seats[1]:Sit(LocalCharacter:WaitForChild("Humanoid"))
+end)
+
+WashiezTC.Doors.Activated:Connect(function()
+	Config.WashiezTC.KDE = not Config.WashiezTC.KDE
+	if Config.WashiezTC.KDE then
+		WashiezTC.Doors.Text = "Enable Doors"
+		for i, v in Config.WashiezTC.KD do
+			v.Parent = nil
+		end
+	else
+		WashiezTC.Doors.Text = "Disable Doors"
+		for i, v in Config.WashiezTC.KD do
+			v.Parent = workspace
+		end
+	end
+end)
+WashiezTC.OG.Activated:Connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub", ["Text"] = "Teleporting...", ["Duration"] = 10})
+	game:GetService("TeleportService"):Teleport(13824270489, LocalPlayer)
+end)
+
+WashiezTC.FF.Activated:Connect(function()
+	if not replicatesignal then
+		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Missing replicatefunction.", ["Duration"] = 5})
+		return 
+	end
+	Config.WashiezTC.FF = not Config.WashiezTC.FF
+	if Config.WashiezTC.FF then
+		if Config.WashiezTC.FFE then
+			Config.WashiezTC.FF = false
+			return
+		end
+		WashiezTC.FF.Text = "Stop FF"
+		local CF = LocalCharacter:GetPivot()
+		Config.WashiezTC.FFE = true
+		Notify("ForceField Enabled.", 6, "FA")
+		repeat
+			CF = LocalCharacter:GetPivot()
+			replicatesignal(LocalPlayer.ConnectDiedSignalBackend)
+			local Camera = workspace.CurrentCamera
+			task.wait(game:GetService("Players").RespawnTime - 0.165)
+			pcall(function()
+				if LocalCharacter:GetPivot() == nil then return end
+				CF = LocalCharacter:GetPivot()
+			end)
+			LocalCharacter:WaitForChild("Humanoid"):ChangeState(Enum.HumanoidStateType.Dead)
+			LocalPlayer.CharacterAdded:Wait()
+			task.wait(Config.Ping * 0.001)
+			workspace.CurrentCamera = Camera
+			task.spawn(function()
+				LocalCharacter:PivotTo(CF)
+				task.wait(1)
+				if math.abs(LocalCharacter:GetPivot().Position.Magnitude - CF.Position.Magnitude) <= 0.01 then
+					repeat
+						LocalCharacter:PivotTo(CF)
+						task.wait(0.05)
+					until math.abs(LocalCharacter:GetPivot().Position.Magnitude - CF.Position.Magnitude) <= 0.01
+				end
+			end)
+			task.wait(4)
+		until not Config.WashiezTC.FF
+		Config.WashiezTC.FFE = false
+	else
+		WashiezTC.FF.Text = "Stopping FF"
+		Notify("Stopping ForceField.", 3, "FA")
+		repeat task.wait() until not Config.WashiezTC.FFE
+		WashiezTC.FF.Text = "FF"
+		Notify("ForceField Disabled.", 3, "FA")
+	end
 end)
 
 AntiHub.TitleBar.Container.Container.Player.Settings.Activated:Connect(function()
@@ -4341,7 +5273,7 @@ AntiHub.TitleBar.Container.Container.Settings.Load.Activated:Connect(function()
 		Config.AC.Messages = {}
 		Config.AC.CanSend = {}
 		Config.AC.Whitelist = {LocalPlayer}
-		Config.Universal.Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+		Config.Universal.Character = LocalCharacter or LocalPlayer.CharacterAdded:Wait()
 		Config.Universal.Inspecting = false
 		Config.Universal.Clone = nil
 		Config.Universal.Banging = false
@@ -4358,11 +5290,11 @@ end)
 Universal.Inspect.Activated:Connect(function()
 	Config.Universal.Inspecting = not Config.Universal.Inspecting
 	if Config.Universal.Inspecting then
-		if LocalPlayer.Character == nil then
+		if LocalCharacter == nil then
 			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Character Not Loaded.", ["Duration"] = 2})
 			return
 		end
-		if LocalPlayer.Character:WaitForChild("Humanoid"):GetState() == Enum.HumanoidStateType.Dead then
+		if LocalCharacter:WaitForChild("Humanoid"):GetState() == Enum.HumanoidStateType.Dead then
 			game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Currently Dead.", ["Duration"] = 2})
 			return
 		end
@@ -4370,19 +5302,19 @@ Universal.Inspect.Activated:Connect(function()
 		Config.Universal.InspectTime = os.time()
 		local InspectTime = Config.Universal.InspectTime
 		Universal.Inspect.Text = "Stop Inspecting"
-		Config.Universal.Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-		LocalPlayer.Character.Archivable = true
-		Config.Universal.Clone = LocalPlayer.Character:Clone()
+		Config.Universal.Character = LocalCharacter or LocalPlayer.CharacterAdded:Wait()
+		LocalCharacter.Archivable = true
+		Config.Universal.Clone = LocalCharacter:Clone()
 		task.spawn(function()
-			InspectDied = LocalPlayer.Character:WaitForChild("Humanoid").Died:Connect(function()
+			InspectDied = LocalCharacter:WaitForChild("Humanoid").Died:Connect(function()
 				if Config.Universal.InspectTime ~= InspectTime then return end
-				LocalPlayer.Character = Config.Universal.Clone
-				workspace.CurrentCamera.CameraSubject = LocalPlayer.Character
+				LocalCharacter = Config.Universal.Clone
+				workspace.CurrentCamera.CameraSubject = LocalCharacter
 			end)
 			InspectAdded = LocalPlayer.CharacterAdded:Connect(function()
 				if Config.Universal.InspectTime ~= InspectTime then return end
-				LocalPlayer.Character = Config.Universal.Clone
-				workspace.CurrentCamera.CameraSubject = LocalPlayer.Character
+				LocalCharacter = Config.Universal.Clone
+				workspace.CurrentCamera.CameraSubject = LocalCharacter
 			end)
 		end)
 		Config.Universal.Character:WaitForChild("HumanoidRootPart").Anchored = true
@@ -4394,6 +5326,7 @@ Universal.Inspect.Activated:Connect(function()
 				v.Character.InspectHighlight.FillColor = Color3.fromRGB(0, 0, 0)
 				Inspector:Clone().Parent = v.Character:WaitForChild("Head")
 				v.Character.Head.Inspector:WaitForChild("Box").Text = v.Name
+				v.Character.Head.Inspector.Enabled = true
 				v.Character.Head.Inspector.Box.TextColor3 = Color3.fromRGB(math.floor(255 * v.TeamColor.r), math.floor(255 * v.TeamColor.g), math.floor(255 * v.TeamColor.b))
 				v.Character:WaitForChild("HumanoidRootPart").Anchored = true
 			end
@@ -4410,21 +5343,21 @@ Universal.Inspect.Activated:Connect(function()
 			end)
 		end)
 		Config.Universal.Clone:WaitForChild("Humanoid").DisplayName = "Inspector"
-		LocalPlayer.Character = Config.Universal.Clone
-		LocalPlayer.Character.Animate.Disabled = true
+		LocalCharacter = Config.Universal.Clone
+		LocalCharacter.Animate.Disabled = true
 		task.wait()
-		LocalPlayer.Character.Animate.Disabled = false
-		workspace.CurrentCamera.CameraSubject = LocalPlayer.Character
+		LocalCharacter.Animate.Disabled = false
+		workspace.CurrentCamera.CameraSubject = LocalCharacter
 	else
 		HidChat(game:GetService("Players"), "TNEInspectEnd")
 		InspectDied:Disconnect()
 		InspectAdded:Disconnect()
 		Universal.Inspect.Text = "Inspect"
-		LocalPlayer.Character = Config.Universal.Character
-		if LocalPlayer.Character == nil then
-			LocalPlayer.Character = workspace:WaitForChild(LocalPlayer.Name)
+		LocalCharacter = Config.Universal.Character
+		if LocalCharacter == nil then
+			LocalCharacter = workspace:WaitForChild(LocalPlayer.Name)
 		end
-		workspace.CurrentCamera.CameraSubject = LocalPlayer.Character
+		workspace.CurrentCamera.CameraSubject = LocalCharacter
 		for i, v in game:GetService("Players"):GetPlayers() do
 			if v.Character == nil then continue end
 			v.Character:WaitForChild("HumanoidRootPart").Anchored = false
@@ -4446,7 +5379,7 @@ Universal.Goto.Activated:Connect(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AntiHub - Error", ["Text"] = "Player \"".. Universal.Input.Text.. "\'s Character Does Not Exist.", ["Duration"] = 2})
 		return
 	end
-	LocalPlayer.Character:PivotTo(game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character:GetPivot())
+	LocalCharacter:PivotTo(game:GetService("Players"):FindFirstChild(Universal.Input.Text).Character:GetPivot())
 end)
 
 Universal.Fling.Activated:Connect(function()
@@ -4467,15 +5400,15 @@ Universal.Fling.Activated:Connect(function()
 		end
 		local Target = game:GetService("Players"):FindFirstChild(Universal.Input.Text)
 
-		local Thrust = Instance.new('BodyThrust', LocalPlayer.Character.HumanoidRootPart)
+		local Thrust = Instance.new('BodyThrust', LocalCharacter.HumanoidRootPart)
 		Thrust.Force = Vector3.new(9999,9999,9999)
 		Thrust.Name = "YeetForce"
 		repeat
-			LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+			LocalCharacter.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
 			Thrust.Location = Target.Character.HumanoidRootPart.Position
 			game:FindService("RunService").Heartbeat:wait()
 		until not Target.Character:FindFirstChild("Head")
-		LocalPlayer.Character.HumanoidRootPart.FlingForce:Destroy()
+		LocalCharacter.HumanoidRootPart.FlingForce:Destroy()
 		Universal.Fling.Text = "Fling"
 	else
 		Config.Universal.Flinging = false
@@ -4592,6 +5525,9 @@ end
 
 task.spawn(function()
 	if Supported[table.find(PlaceIDs, game.PlaceId)] == "Washiez" then
+		LocalPlayer.PlayerScripts:WaitForChild("Essentials Code"):Destroy()
+		LocalPlayer.PlayerScripts:WaitForChild("ReAdminClient"):Destroy()
+		LocalPlayer.PlayerScripts:WaitForChild("Broom"):Destroy()
 		LocalPlayer.PlayerGui.MainUI.SideMenu.List.Chat.Visible = true
 		LocalPlayer.PlayerGui.MainUI.SideMenu.List.StaffMenu.Visible = true
 		local Container = Instance.new("Frame")
@@ -4623,53 +5559,226 @@ task.spawn(function()
 
 		local Target = workspace:FindFirstChild("CarSpawner").CarSpawner.Screen.CarSystem
 		Open.Activated:Connect(function()
-			if LocalPlayer.Character == nil then return end
-			local CF = LocalPlayer.Character:GetPivot()
+			if LocalCharacter == nil then return end
+			local CF = LocalCharacter:GetPivot()
 			local Target = workspace:FindFirstChild("CarSystem", true)
 			print(Target:GetFullName())
 			print(Target:IsA("ProximityPrompt"))
 			repeat task.wait()
-				LocalPlayer.Character:MoveTo(Target.Parent.Position + Vector3.new(0, -10, 0))
-				LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+				LocalCharacter:MoveTo(Target.Parent.Position + Vector3.new(0, -10, 0))
+				LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
 				pcall(function()
 					fireproximityprompt(Target)
 				end)
 				task.wait(0.05)
 			until LocalPlayer.PlayerGui.CarSelection.MainFrame.Position.X.Scale <= 1.1
-			print("end")
-			LocalPlayer.Character:PivotTo(CF)
+			LocalCharacter:PivotTo(CF)
 		end)
+
+		for i, v in workspace.Gates:GetChildren() do
+			table.insert(Config.Washiez.Gates, {["Value"] = v, ["Parent"] = v.Parent})
+		end
+		for i, v in workspace.AutoGates:GetChildren() do
+			table.insert(Config.Washiez.Gates, {["Value"] = v, ["Parent"] = v.Parent})
+		end
+		for i, v in workspace.Lanes:GetChildren() do
+			table.insert(Config.Washiez.Gates, {["Value"] = v.Gate, ["Parent"] = v})
+		end
+
+		local Names = {
+			"trafficcone2",
+			"carbarrier",
+			"postbarrier",
+			"cylinder",
+			"streetlight",
+			"constructionbarrier",
+			"trashcan",
+			"bannersign3",
+			"bannersign6",
+			"tree1",
+			"tree2",
+			"tree3",
+			"newrock1",
+			"newrock2",
+			"newrock3",
+			"newrock4",
+			"newrock5",
+			"cafebillboard"
+		}
 		for i, v in workspace:GetDescendants() do
-			if v.Name:lower() == "trafficcone2" or v.Name:lower() == "carbarrier" or v.Name:lower() == "postbarrier" or string.find(v.Name:lower(), "plant") then 
-				v:Destroy()
+			if table.find(Names, v.Name:lower()) or string.find(v.Name:lower(), "plant") then 
+				pcall(function()
+					v.CanCollide = false
+					v.Transparency = 0.5
+				end)
+				for ii, vv in v:GetDescendants() do
+					pcall(function()
+						vv.CanCollide = false
+					end)
+					pcall(function()
+						vv.Transparency = 0.5
+					end)
+				end
 			end
 		end
-		workspace.SpawnedCars.ChildAdded:Connect(function(Car)
+		for i, v in workspace:GetDescendants() do
+			if v.Name:lower() == "electricalpole" or v.Name:lower() == "spinnyparts" then
+				for ii, vv in v.Parent:GetChildren() do
+					pcall(function()
+						vv.CanCollide = false
+					end)
+					pcall(function()
+						vv.Transparency = 0.5
+					end)
+				end
+			end
+		end
+		workspace.UndergroundDoor.Door.CanCollide = false
+		game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
+			if proc then return end
+			if not LocalCharacter:WaitForChild("Humanoid").Sit then return end
+			if Config.Washiez.Car == nil then return end
+			if Config.Washiez.Drifting then return end
+			if inp.KeyCode ~= Enum.KeyCode.LeftShift then return end
+			Config.Washiez.Drifting = true
+			Config.Washiez.Car:SetAttribute("DrivingTorque", Config.Washiez.Car:GetAttribute("DrivingTorque") * 2)
+			Config.Washiez.Car:SetAttribute("WheelFriction", 0.175)
+		end)
+		game:GetService("UserInputService").InputEnded:Connect(function(inp, proc)
+			if proc then return end
+			if not LocalCharacter:WaitForChild("Humanoid").Sit then return end
+			if Config.Washiez.Car == nil then return end
+			if not Config.Washiez.Drifting then return end
+			if inp.KeyCode ~= Enum.KeyCode.LeftShift then return end
+			Config.Washiez.Drifting = false
+			Config.Washiez.Car:SetAttribute("DrivingTorque", Config.Washiez.Car:GetAttribute("DrivingTorque") / 2)
+			Config.Washiez.Car:SetAttribute("WheelFriction", 2)
+		end)
+
+		LocalPlayer.PlayerGui.ChildAdded:Connect(function(UI)
+			local Parent = nil
+			for i, v in LocalPlayer.PlayerGui:GetChildren() do
+				if v.Name:find(LocalPlayer.Name.. "-") then
+					Parent = v
+				end
+			end
+			if Parent == nil then return end
+			if Parent:FindFirstChild("DriftButton", true) ~= nil then return end
+			local Converted = {
+				["_DriftButton"] = Instance.new("ImageButton");
+				["_UICorner"] = Instance.new("UICorner");
+				["_UIStroke"] = Instance.new("UIStroke");
+			}
+
+			Converted["_DriftButton"].ScaleType = Enum.ScaleType.Fit
+			Converted["_DriftButton"].AnchorPoint = Vector2.new(0.5, 0.5)
+			Converted["_DriftButton"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+			Converted["_DriftButton"].BackgroundTransparency = 0.5
+			Converted["_DriftButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+			Converted["_DriftButton"].BorderSizePixel = 0
+			Converted["_DriftButton"].Position = UDim2.new(0.9, 0, 0.825, 0)
+			Converted["_DriftButton"].Size = UDim2.new(0, 44, 0, 44)
+			Converted["_DriftButton"].Name = "DriftButton"
+			Converted["_DriftButton"].Image = "rbxassetid://136758574816289"
+
+			Converted["_UICorner"].Parent = Converted["_DriftButton"]
+			Converted["_UICorner"].CornerRadius = UDim.new(1, 1)
+
+			Converted["_UIStroke"].Parent = Converted["_DriftButton"]
+			Converted["_UIStroke"].Color = Color3.new(255, 255, 255)
+			Converted["_UIStroke"].Thickness = 2
+
+			local Parent = nil
+			for i, v in LocalPlayer.PlayerGui:GetChildren() do
+				if v.Name:find(LocalPlayer.Name.. "-") then
+					Parent = v
+				end
+			end
+
+			Converted["_DriftButton"].Parent = Parent
+			Converted["_DriftButton"].Activated:Connect(function()
+				if not LocalCharacter:WaitForChild("Humanoid").Sit then return end
+				if Config.Washiez.Car == nil then return end
+				Config.Washiez.Drifting = not Config.Washiez.Drifting
+				if Config.Washiez.Drifting then
+					Config.Washiez.Car:SetAttribute("DrivingTorque", Config.Washiez.Car:GetAttribute("DrivingTorque") * 2)
+					Config.Washiez.Car:SetAttribute("WheelFriction", 0.175)
+				else
+					Converted["_UIStroke"].Color = Color3.fromRGB(255, 255, 255)
+					Config.Washiez.Car:SetAttribute("DrivingTorque", Config.Washiez.Car:GetAttribute("DrivingTorque") / 2)
+					Config.Washiez.Car:SetAttribute("WheelFriction", tonumber("inf"))
+				end
+			end)
+			repeat
+				if Config.Washiez.Drifting then
+					Converted["_UIStroke"].Color = Color3.fromRGB(178, 255, 178)
+				else
+					Converted["_UIStroke"].Color = Color3.fromRGB(255, 255, 255)
+				end
+				task.wait(0.1)
+			until UI.Parent ~= LocalPlayer.PlayerGui
+		end)
+
+		local function AddCar(Car)
 			pcall(function()
 				Car:WaitForChild("BindableEvents"):WaitForChild("ForceExitSeat"):Destroy()
 			end)
-			Car:SetAttribute("MaxSpeed", tonumber("inf"))
-			Car:SetAttribute("ReverseSpeed", tonumber("inf"))
-			Car:SetAttribute("MaxEngineRPM", tonumber("inf"))
-			Car:SetAttribute("WheelFriction", tonumber("inf"))
-			Car:SetAttribute("AllowCarjacking", true)
-			repeat
-				Car:SetAttribute("FreezeCar", false)
-				task.wait(0.1)
-			until Car == nil
-			for i, v in Car:GetDescendants() do
-				if not v:IsA("Seat") then continue end
-				v:WaitForChild("PromptLocation"):WaitForChild("EndorsedVehicleProximityPromptV1").Triggered:Connect(function()
-					if LocalPlayer.Character == nil then return end
-					LocalPlayer.Character:PivotTo(v.CFrame)
-					v:Sit(LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid"))
+			if Car.Name:lower():find("sports") then
+				Car.Remotes.SetThrottle:Destroy()
+				Instance.new("RemoteEvent", Car.Remotes).Name = "SetThrottle"
+			end
+			if Car.Name:split("-")[1] == LocalPlayer.Name then
+				Config.Washiez.Car = Car
+				task.spawn(function()
+					Car:SetAttribute("MaxSpeed", tonumber("inf"))
+					Car:SetAttribute("ReverseSpeed", tonumber("inf"))
+					Car:SetAttribute("MaxEngineRPM", tonumber("inf"))
+					Car:SetAttribute("WheelFriction", tonumber("inf"))
+					Car:SetAttribute("AllowCarjacking", true)
+					repeat
+						Car:SetAttribute("FreezeCar", false)
+						task.wait()
+					until Car == nil
 				end)
 			end
-		end)
+			for i, v in Car:WaitForChild("Chassis"):GetChildren() do
+				if not v:IsA("Seat") then continue end
+				if Car.Name:split("-")[1] == LocalPlayer.Name then continue end
+				v:WaitForChild("PromptLocation"):WaitForChild("EndorsedVehicleProximityPromptV1").Triggered:Connect(function()
+					if v.Occupant ~= nil then return end
+					if game:GetService("Players"):FindFirstChild(Car.Name:split("-")[1]) == nil then return end
+					if not game:GetService("Players"):FindFirstChild(Car.Name:split("-")[1]):WaitForChild("Whitelist"):WaitForChild("Cars"):GetAttribute("Locked") then return end
+					if game:GetService("Players"):FindFirstChild(Car.Name:split("-")[1]):WaitForChild("Whitelist"):WaitForChild("Cars"):FindFirstChild(LocalPlayer.Name) ~= nil then
+						if game:GetService("Players"):FindFirstChild(Car.Name:split("-")[1]):WaitForChild("Whitelist"):WaitForChild("Cars"):FindFirstChild(LocalPlayer.Name).Value then return end
+					end
+					task.wait(0.25)
+					Config.Washiez.Seat = v:WaitForChild("PromptLocation"):WaitForChild("EndorsedVehicleProximityPromptV1")
+					local Weld = Instance.new("Weld", LocalCharacter.PrimaryPart)
+					Weld.Enabled = false
+					Weld.Name = "LockedSeatWeld"
+					Weld.Part0 = LocalCharacter.PrimaryPart
+					Weld.Part1 = Car.Chassis.PrimaryPart
+					LocalCharacter:PivotTo(v.CFrame)
+					LocalCharacter.Humanoid.Sit = true
+					task.wait((Config.Ping * 0.001) / 1.25)
+					Weld.Enabled = true
+				end)
+			end
+		end
+
+		workspace.SpawnedCars.ChildAdded:Connect(AddCar)
+		for i, v in workspace.SpawnedCars:GetChildren() do
+			task.spawn(AddCar, v)
+		end
 		game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(prompt)
 			fireproximityprompt(prompt)
 		end)
 	elseif Supported[table.find(PlaceIDs, game.PlaceId)] == "WashiezTC" then
+		for i, v in workspace:GetDescendants() do
+			if v.Name:lower() == "keycarddoor" or v.Name:lower() == "doorwindow" then
+				table.insert(Config.WashiezTC.KD, v)
+			end
+		end
 		LocalPlayer:WaitForChild("GroupInfo"):WaitForChild("Rank").Value = tonumber("inf")
 		LocalPlayer.PlayerGui.MainUI.SideMenu.List.Guide.Visible = true
 		LocalPlayer.PlayerGui.MainUI.SideMenu.List.Information.Visible = true
@@ -4683,6 +5792,12 @@ task.spawn(function()
 		game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(prompt)
 			fireproximityprompt(prompt)
 		end)
+	elseif Supported[table.find(PlaceIDs, game.PlaceId)] == "WashiezOGTC" then
+		for i, v in LocalPlayer.Backpack:GetChildren() do
+			if v:IsA("LocalScript") then
+				v:Destroy()
+			end
+		end
 	end
 end)
 
@@ -4692,6 +5807,26 @@ for i, v in Places.Teleports:GetChildren() do
 		game:GetService("TeleportService"):Teleport(PlaceIDs[table.find(Supported, v.Name)], LocalPlayer)
 	end)
 end
+
+task.spawn(function()
+	pcall(function()
+		local sc = (debug and debug.setconstant) or setconstant
+		local gc = (debug and debug.getconstants) or getconstants
+		if not sc or not getgc or not gc then return end
+		local pop = LocalPlayer.PlayerScripts.PlayerModule.CameraModule.ZoomController.Popper
+		for i, v in pairs(getgc()) do
+			if type(v) == 'function' and getfenv(v).script == pop then
+				for i, vv in pairs(gc(v)) do
+					if tonumber(vv) == 0.25 then
+						sc(v, i, 0)
+					elseif tonumber(vv) == 0 then
+						sc(v, i, 0.25)
+					end
+				end
+			end
+		end
+	end)
+end)
 
 task.spawn(function()
 	pcall(function()
@@ -4710,25 +5845,11 @@ end)
 
 task.wait(0.5)
 
+local Seats = 0
+local Available = 0
 while task.wait(0.1) do
 	pcall(function()
 		AntiHub.Stats.Text = tostring(Config.Ping).. " ms\n".. tostring(Config.FPS).. " FPS"
-		if Supported[table.find(PlaceIDs, game.PlaceId)] == "Washiez" then
-			if game:GetService("Players"):FindFirstChild(Washiez.Input.Text) == nil then
-				Config.Washiez.TTicket = "None"
-			else
-				if game:GetService("Players"):FindFirstChild(Washiez.Input.Text).Backpack:FindFirstChild("Regular Ticket") or game:GetService("Players"):FindFirstChild(Washiez.Input.Text).Character:FindFirstChild("Regular Ticket") then
-					Config.Washiez.TTicket = "Regular"
-				end
-				if game:GetService("Players"):FindFirstChild(Washiez.Input.Text).Backpack:FindFirstChild("Extra Ticket") or game:GetService("Players"):FindFirstChild(Washiez.Input.Text).Character:FindFirstChild("Extra Ticket") then
-					Config.Washiez.TTicket = "Extra"
-				end
-				if game:GetService("Players"):FindFirstChild(Washiez.Input.Text).Backpack:FindFirstChild("Deluxe Ticket") or game:GetService("Players"):FindFirstChild(Washiez.Input.Text).Character:FindFirstChild("Deluxe Ticket") then
-					Config.Washiez.TTicket = "Deluxe"
-				end
-			end
-		end
-		Washiez.CTicket.Text = "Current Ticket: ".. Config.Washiez.TTicket
 		if Unread == 0 then
 			AntiHub.TitleBar.Container.Container.List.Chat.Text = "Chat"
 		else
@@ -4769,6 +5890,41 @@ while task.wait(0.1) do
 			AntiCheat.ToastToggle.Text = "Disable Toast"
 		else
 			AntiCheat.ToastToggle.Text = "Enable Toast"
+		end
+		if Supported[table.find(PlaceIDs, game.PlaceId)] == "Washiez" then
+			pcall(function()
+				game:GetService("Players").LocalPlayer.PlayerGui.Fade.TextLabel.BackgroundTransparency = 0.8
+			end)
+			Washiez.CTicket.Text = "Current Ticket: ".. Config.Washiez.TTicket
+			if game:GetService("Players"):FindFirstChild(Washiez.Tickets.Input.Text) == nil then
+				Config.Washiez.TTicket = "None"
+			else
+				if game:GetService("Players"):FindFirstChild(Washiez.Tickets.Input.Text).Backpack:FindFirstChild("Regular Ticket") or game:GetService("Players"):FindFirstChild(Washiez.Tickets.Input.Text).Character:FindFirstChild("Regular Ticket") then
+					Config.Washiez.TTicket = "Regular"
+				end
+				if game:GetService("Players"):FindFirstChild(Washiez.Tickets.Input.Text).Backpack:FindFirstChild("Extra Ticket") or game:GetService("Players"):FindFirstChild(Washiez.Tickets.Input.Text).Character:FindFirstChild("Extra Ticket") then
+					Config.Washiez.TTicket = "Extra"
+				end
+				if game:GetService("Players"):FindFirstChild(Washiez.Tickets.Input.Text).Backpack:FindFirstChild("Deluxe Ticket") or game:GetService("Players"):FindFirstChild(Washiez.Tickets.Input.Text).Character:FindFirstChild("Deluxe Ticket") then
+					Config.Washiez.TTicket = "Deluxe"
+				end
+			end
+		elseif Supported[table.find(PlaceIDs, game.PlaceId)] == "WashiezTC" then
+			Seats = 0
+			Available = 0
+			for i, v in workspace:GetDescendants() do
+				if v:IsA("VehicleSeat") then
+					Seats += 1
+					if v.Occupant == nil then
+						Available += 1
+					end
+				end
+			end
+			if Seats == 0 then
+				WashiezTC.Cars.Text = "No Cars Spawned :("
+			else
+				WashiezTC.Cars.Text = tostring(Seats).. " Cars | ".. tostring(Available).. " Available"
+			end
 		end
 	end)
 end
