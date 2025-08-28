@@ -66,7 +66,6 @@
 				end
 			end
 			local function run(placeId, target)
-				Button.Text = "Finding"
 				local userId = tonumber(target)
 				if not userId then
 					local ok, uid = pcall(function()
@@ -76,8 +75,6 @@
 						pcall(function()
 							game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, target)
 						end)
-						Button.Text = "Invalid Username."
-						task.delay(2, function() Button.Text = "Teleport" end)
 						return
 					end
 					userId = uid
@@ -85,17 +82,11 @@
 
 				local tokens = fetchTokens(placeId, 1000)
 				if #tokens == 0 then
-					Button.Text = "Player Not Found"
-					task.delay(2, function() Button.Text = "Teleport" end)
 					return
 				end
 				local pid, sid = runBatches(tokens, game:GetService("Players"):GetUserThumbnailAsync(game:GetService("Players"):GetUserIdFromNameAsync(target), Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150))
 				if pid and sid then
-					Button.Text = "Teleporting."
 					game:GetService("TeleportService"):TeleportToPlaceInstance(pid, sid)
-				else
-					Button.Text = "Player Not Found"
-					task.delay(2, function() Button.Text = "Teleport" end)
 				end
 			end
 return function(Player)
