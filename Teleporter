@@ -1,0 +1,103 @@
+			local function fetchTokens(placeId, maxPages)
+				local tokens, cursor, pages = {}, "", 0
+				while true do
+					local url = "https://games.roblox.com/v1/games/" .. placeId .. "/servers/0?limit=100"
+					if cursor ~= "" then url = url .. "&cursor=" .. cursor end
+					local success, response = pcall(function()
+						return http_request({["Url"] = url, ["Method"] = "GET"})
+					end)
+					if not success or not response then
+						break
+					end
+					local suc, data = pcall(function() return game:GetService("HttpService"):JSONDecode(response.Body) end)
+					if not suc or not data or not data.data then
+						break
+					end
+					for i, server in ipairs(data.data) do
+						if server.playerTokens then
+							for ii, token in ipairs(server.playerTokens) do
+								table.insert(tokens, {placeId, server.id, token})
+							end
+						end
+					end
+					pages += 1
+
+					if not data.nextPageCursor or pages >= maxPages then break end
+					cursor = data.nextPageCursor
+					task.wait(0.15)
+				end
+				return tokens
+			end
+			local function checkBatch(batch, targetImage)
+				local payload = {}
+				for _, entry in ipairs(batch) do
+					table.insert(payload, {
+						requestId = "0:" .. entry[3] .. ":AvatarHeadshot:150x150:png:regular",
+						type = "AvatarHeadShot",
+						token = entry[3],
+						format = "png",
+						size = "150x150"
+					})
+				end
+
+				local res = http_request({
+					Url = "https://thumbnails.roblox.com/v1/batch",
+					Method = "POST",
+					Headers = {["Content-Type"] = "application/json"},
+					Body = game:GetService("HttpService"):JSONEncode(payload)
+				})
+				local decoded = game:GetService("HttpService"):JSONDecode(res.Body)
+				for i, v in ipairs(decoded.data) do
+					if v.imageUrl == targetImage then
+						local entry = batch[i]
+						return entry[1], entry[2]
+					end
+				end
+			end
+			local function runBatches(tokens, image)
+				for i = 1, #tokens, 100 do
+					local batch = {}
+					for j = i, math.min(i + 99, #tokens) do
+						table.insert(batch, tokens[j])
+					end
+					local pid, sid = checkBatch(batch, image)
+					if pid and sid then return pid, sid end
+					task.wait(0.05)
+				end
+			end
+			local function run(placeId, target)
+				Button.Text = "Finding"
+				local userId = tonumber(target)
+				if not userId then
+					local ok, uid = pcall(function()
+						return game:GetService("Players"):GetUserIdFromNameAsync(target)
+					end)
+					if not ok then
+						pcall(function()
+							game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, target)
+						end)
+						Button.Text = "Invalid Username."
+						task.delay(2, function() Button.Text = "Teleport" end)
+						return
+					end
+					userId = uid
+				end
+
+				local tokens = fetchTokens(placeId, 1000)
+				if #tokens == 0 then
+					Button.Text = "Player Not Found"
+					task.delay(2, function() Button.Text = "Teleport" end)
+					return
+				end
+				local pid, sid = runBatches(tokens, game:GetService("Players"):GetUserThumbnailAsync(game:GetService("Players"):GetUserIdFromNameAsync(target), Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150))
+				if pid and sid then
+					Button.Text = "Teleporting."
+					game:GetService("TeleportService"):TeleportToPlaceInstance(pid, sid)
+				else
+					Button.Text = "Player Not Found"
+					task.delay(2, function() Button.Text = "Teleport" end)
+				end
+			end
+return function(Player)
+run(Player)
+end
