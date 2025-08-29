@@ -4746,16 +4746,16 @@ elseif Supported[table.find(PlaceIDs, game.Players)] == "WashiezOGTC" then
 end
 
 Washiez.MFuel.Activated:Connect(function()
-	game:GetService("ReplicatedStorage").GasStation.Refuel:FireServer(100)
+	game:GetService("ReplicatedStorage").GasStation.Refuel:FireServer(100, "Regular")
 end)
 Washiez.NFuel.Activated:Connect(function()
-	game:GetService("ReplicatedStorage").GasStation.Refuel:FireServer(0)
+	game:GetService("ReplicatedStorage").GasStation.Refuel:FireServer(0, "Regular")
 end)
 Washiez.NIFuel.Activated:Connect(function()
-	game:GetService("ReplicatedStorage").GasStation.Refuel:FireServer(tonumber("-inf"))
+	game:GetService("ReplicatedStorage").GasStation.Refuel:FireServer(tonumber("-inf"), "Regular")
 end)
 Washiez.IFuel.Activated:Connect(function()
-	game:GetService("ReplicatedStorage").GasStation.Refuel:FireServer(tonumber("nan"))
+	game:GetService("ReplicatedStorage").GasStation.Refuel:FireServer(tonumber("nan"), "Regular")
 end)
 Washiez.Despawn.Activated:Connect(function()
 	game:GetService("ReplicatedStorage"):WaitForChild("CarSpawnSystem"):WaitForChild("RemoteEvents"):WaitForChild("CarSystem"):InvokeServer("Despawn")
@@ -5585,8 +5585,10 @@ end
 task.spawn(function()
 	if Supported[table.find(PlaceIDs, game.PlaceId)] == "Washiez" then
 		game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.All, true)
-		LocalPlayer.PlayerScripts:WaitForChild("Essentials Code"):Destroy()
-		LocalPlayer.PlayerScripts:WaitForChild("ReAdminClient"):Destroy()
+		task.spawn(function()
+			LocalPlayer.PlayerScripts:WaitForChild("Essentials Code"):Destroy()
+			LocalPlayer.PlayerScripts:WaitForChild("ReAdminClient"):Destroy()
+		end)
 		LocalPlayer.PlayerScripts:WaitForChild("Broom"):Destroy()
 		LocalPlayer.PlayerGui.MainUI.SideMenu.List.Chat.Visible = true
 		LocalPlayer.PlayerGui.MainUI.SideMenu.List.StaffMenu.Visible = true
