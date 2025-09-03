@@ -5871,7 +5871,7 @@ task.spawn(function()
 			Converted["_DriftButton"].BackgroundTransparency = 0.5
 			Converted["_DriftButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 			Converted["_DriftButton"].BorderSizePixel = 0
-			Converted["_DriftButton"].Position = UDim2.new(0.85, 0, 0.825, 0)
+			Converted["_DriftButton"].Position = UDim2.new(0.865, 0, 0.8, 0)
 			Converted["_DriftButton"].Size = UDim2.new(0, 44, 0, 44)
 			Converted["_DriftButton"].Name = "DriftButton"
 			Converted["_DriftButton"].Image = "rbxassetid://136758574816289"
