@@ -3624,7 +3624,7 @@ if _G.AHL then
 end
 _G.AHL = true
 _G.AH = Converted._AntiHub
-local SVersion = "1.4.1Pre2"
+local SVersion = "1.4.1"
 _G.AHSV = SVersion
 local GSPlayers = game:GetService("Players")
 local LocalPlayer = GSPlayers.LocalPlayer
@@ -3843,10 +3843,6 @@ local function GetUnshortened(inp)
 	return Found[1]
 end
 
-_G.AHGU = function(inp)
-	return GetUnshortened(inp)
-end
-
 local function ACTrigger(plr, Reason, Respawn, Jumped)
 	if not Config.AC.Enabled then return end
 	if table.find(Config.AC.Whitelist, plr) then return end
@@ -3870,11 +3866,8 @@ local function ACTrigger(plr, Reason, Respawn, Jumped)
 	if Config.AC.Toast then
 		game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AC - ".. plr.Name, ["Text"] = "Detected ".. Reason, ["Duration"] = 2})
 		task.wait(2)
-	end
+	end	
 	table.remove(Config.AC.CanSend, table.find(Config.AC.CanSend, plr.Name.. " ".. Reason))
-	if _G.AHAKIPU(plr.UserId) then
-		return plr.CharacterAppearanceId
-	end
 end
 
 local function Notify(Text, Duration, Title)
@@ -3920,21 +3913,22 @@ local function UpdateWhitelist()
 	AntiCheat.Whitelist.CanvasPosition = Vector2.new(0, AntiCheat.Whitelist.CanvasSize.Y.Offset - AntiCheat.Whitelist.AbsoluteWindowSize.Y)
 	UpdatePlayerList()
 end
+UpdateWhitelist()
 
 local function OnMessage(plr, msg)
 	if plr == LocalPlayer then return end
-	if msg:sub(1, 8) == "AHChatAH" then
+	if msg:sub(1, 8) == "AHChat" then
 		if Visible == false or Menu ~= "Chat" then
 			Unread += 1
 			if Config.NotifyUnread then
-				if (string.len(msg) - 8) >= 9 then
-					Notify("New Message:\n".. msg:sub(9, 16).. "...", 2, plr.Name)
+				if (string.len(msg) - 6) >= 9 then
+					Notify("New Message:\n".. msg:sub(7, 14).. "...", 2, plr.Name)
 				else
-					Notify("New Message:\n".. msg:sub(9, 18), 2, plr.Name)
+					Notify("New Message:\n".. msg:sub(7, 16), 2, plr.Name)
 				end
 			end
 		end
-		local Message = msg:sub(10)
+		local Message = msg:sub(6)
 		if string.len(Chat.Logs.Chat.Text) + string.len("<b>".. plr.DisplayName.. ":</b> ".. Message.. "\n") >= 2000 then
 			Chat.Logs.Chat.Text = Chat.Logs.Chat.Text:sub(1, 	string.len(Chat.Logs.Chat.Text) - string.len("<b>".. plr.DisplayName.. ":</b> ".. Message.. "\n"))
 		end
@@ -3948,13 +3942,16 @@ local function OnMessage(plr, msg)
 				table.insert(Config.AC.Whitelist, plr)
 				UpdateWhitelist()
 			end
+			SaveLogs ..= GetCurrentTime().. ": AntiHub Detected From Player \"".. plr.Name.. "\"\n"
 			if Config.NotifyJoin then
+				SaveLogs ..= GetCurrentTime().. ": AntiHub Detected From Player \"".. plr.Name.. "\"\n"
 				Notify("User ".. plr.Name.. " Has Joined With AntiHub.", 5, "Detector")
 			end
 			HidChat(GSPlayers, "TNEListUpdate")
 		end
 	elseif msg == "AHListUpdate" then
 		if not table.find(Team, plr) then
+			SaveLogs ..= GetCurrentTime().. ": AntiHub Detected From Player \"".. plr.Name.. "\"\n"
 			table.insert(Team, plr)
 			if Config.AC.AutoWhiteList then
 				table.insert(Config.AC.Whitelist, plr)
@@ -3966,10 +3963,14 @@ local function OnMessage(plr, msg)
 	elseif msg == "AHInspectEnd" then
 		Notify("User ".. plr.Name.. " Has Stopped Inspecting.", 5, "Inspector")
 	end
-	if string.len(Logs.Chat.Log.Text) + string.len(" <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n") >= 2000 then
-		Logs.Chat.Log.Text = Logs.Chat.Log.Text:sub(1, string.len(Logs.Chat.Log.Text) - string.len(" <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"))
+	--	if string.len(Logs.Chat.Log.Text) + string.len(" <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n") >= 2000 then
+	--		Logs.Chat.Log.Text = Logs.Chat.Log.Text:sub(1, string.len(Logs.Chat.Log.Text) - string.len(" <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"))
+	--	end
+	--	Logs.Chat.Log.Text ..= GetCurrentTime().. " <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"
+	if string.len(Logs.Chat.Log.Text) + string.len(" ".. plr.DisplayName.. ": ".. msg.. "\n") >= 2000 then
+		Logs.Chat.Log.Text = Logs.Chat.Log.Text:sub(1, string.len(Logs.Chat.Log.Text) - string.len(" ".. plr.DisplayName.. ": ".. msg.. "\n"))
 	end
-	Logs.Chat.Log.Text ..= GetCurrentTime().. " <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"
+	Logs.Chat.Log.Text ..= GetCurrentTime().. " ".. plr.DisplayName.. ": ".. msg.. "\n"
 	Logs.Chat.CanvasSize = UDim2.new(0, 0, 0, Logs.Chat.Log.TextBounds.Y)
 	Logs.Chat.CanvasPosition = Vector2.new(0, Logs.Chat.CanvasSize.Y.Offset - Logs.Chat.AbsoluteWindowSize.Y)
 end
@@ -4231,11 +4232,14 @@ for i, v in GSPlayers:GetPlayers() do
 end
 
 GSPlayers.PlayerAdded:Connect(function(plr)
-	if string.len(Logs.Player.Log.Text) + string.len("<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>\n") >= 2000 then
-		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len("<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>\n"))
+	--	if string.len(Logs.Player.Log.Text) + string.len(GetCurrentTime().. "<font color=\"rgb(0,128,0)\">: ".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>\n") >= 2000 then
+	--		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len(GetCurrentTime().. "<font color=\"rgb(0,128,0)\">: ".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>\n"))
+	--	end
+	if string.len(Logs.Player.Log.Text) + string.len(GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName..  ") Joined!\n") >= 2000 then
+		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len(GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName..  ") Joined!\n"))
 	end
-	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(0,128,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>\n"
-	SaveLogs.Text ..= GetCurrentTime().. plr.Name.. " (".. plr.DisplayName..  ") Joined!\n"
+	Logs.Player.Log.Text ..= GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName..  ") Joined!\n"
+	SaveLogs ..= GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName..  ") Joined!\n"
 	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
 	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
 	UpdatePlayerList()
@@ -4255,31 +4259,26 @@ GSPlayers.PlayerAdded:Connect(function(plr)
 	end)
 end)
 GSPlayers.PlayerRemoving:Connect(function(plr)
-	if string.len(Logs.Player.Log.Text) + string.len( GetCurrentTime().. "<font color=\"rgb(128,0,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>\n") >= 2000 then
-		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len( GetCurrentTime().. "<font color=\"rgb(128,0,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>\n"))
+	--	if string.len(Logs.Player.Log.Text) + string.len(GetCurrentTime().. "<font color=\"rgb(128,0,0)\">: ".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>\n") >= 2000 then
+	--		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len(GetCurrentTime().. "<font color=\"rgb(128,0,0)\">: ".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>\n"))
+	--	end
+	if string.len(Logs.Player.Log.Text) + string.len(GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName..  ") Left.\n") >= 2000 then
+		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len(GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName..  ") Left.\n"))
 	end
-	Logs.Player.Log.Text ..= GetCurrentTime().. "<font color=\"rgb(128,0,0)\">".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>\n"
-	SaveLogs.Text ..= GetCurrentTime().. plr.Name.. " (".. plr.DisplayName..  ") Left. \n"
+	Logs.Player.Log.Text ..= GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName..  ") Left.\n"
+	SaveLogs ..= GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName..  ") Left. \n"
 	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
 	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
 	if table.find(Config.AC.Whitelist, plr) then
 		table.remove(Config.AC.Whitelist, table.find(Config.AC.Whitelist, plr))
-		UpdateWhitelist()
-	else
-		UpdatePlayerList()
 	end
+	UpdatePlayerList()
+	UpdateWhitelist()
 end)
 
 UpdatePlayerList()
 
 task.spawn(function()
-	local PU = {8571813460, 2744291367, 8545198185, 4954622816, 7809215621, 7928934158, 8531645784, 8531887406, 165363676, 3573982412, 3029804958, 5640121362, 8921747177}
-	_G.AHAKIPU = function(N)
-		return table.find(PU, N)
-	end
-	_G.AHAKPU = function()
-		return PU
-	end
 	Config.AC.List = {}
 	function AddAC(plr:Player)
 		if not Config.AC.Enabled then return end
@@ -4413,7 +4412,6 @@ AntiCheat.Input.FocusLost:Connect(function(EP)
 	if EP then
 		if GetUnshortened(AntiCheat.Input.Text) ~= nil then
 			AntiCheat.Input.Text = GetUnshortened(AntiCheat.Input.Text).Name
-			AntiCheat.Input.Text = ""
 		end
 	end
 end)
@@ -4446,13 +4444,16 @@ Washiez.Tickets.Input.FocusLost:Connect(function(EP)
 end)
 
 AntiCheat.Save.Activated:Connect(function()
+	print("SLSTART")
+	print(SaveLogs)
+	print("SLEND")
 	local N, A = string.gsub(SaveLogs, "\n", "\n")
 	local Name = tostring(A).. "-AHAC-".. GetCurrentTime().. ".log"
 	local Rep = 0
 	repeat
 		Name, Rep = string.gsub(Name, ":", "-")
 	until Rep == 0
-	writefile(Name, AntiCheat.Logs.Log.Text)
+	writefile(Name, SaveLogs)
 	Notify("Saved As \"".. Name.. "\"", 5, "Workspace")
 end)
 
@@ -4477,6 +4478,9 @@ AntiCheat.ACToggle.Activated:Connect(function()
 		for i, v in GSPlayers:GetPlayers() do
 			task.spawn(AddAC, v)
 		end
+		SaveLogs ..= GetCurrentTime().. ": Enabled AntiCheat.\n"
+	else
+		SaveLogs ..= GetCurrentTime().. ": Disabled AntiCheat.\n"
 	end
 end)
 
@@ -6057,9 +6061,6 @@ task.spawn(function()
 		_G.AHL = nil
 		_G.AH = nil
 		_G.AHSV = nil
-		_G.AHGU = nil
-		_G.AHAKIPU = nil
-		_G.AHAKPU = nil
 		_G.AHAKE = nil
 		Notify("AntiHub Unloaded.", 10, "Success")
 	end
@@ -6078,6 +6079,11 @@ task.spawn(function()
 	end)
 	AntiHub.TitleBar.Buttons.Version.Text = "V".. SVersion
 	AntiHub.TitleBar.Container.Container.Settings.Version.Text = "Version ".. SVersion
+	if Config.AC.Enabled then
+		SaveLogs ..= GetCurrentTime().. ": AntiHub Loaded. - AntiCheat Enabled\n"
+	else
+		SaveLogs ..= GetCurrentTime().. ": AntiHub Loaded. - AntiCheat Disabled\n"
+	end
 	Notify("Made By Username.\nVersion: ".. SVersion, 5, "Loaded")
 end)
 
