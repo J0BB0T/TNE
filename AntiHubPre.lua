@@ -19,6 +19,7 @@ local Converted = {
 	["_WashiezTC"] = Instance.new("TextButton");
 	["_OilUp"] = Instance.new("TextButton");
 	["_WashiezOGTC"] = Instance.new("TextButton");
+	["_SCCSimulator"] = Instance.new("TextButton");
 	["_Menus"] = Instance.new("Folder");
 	["_Chat1"] = Instance.new("CanvasGroup");
 	["_Logs1"] = Instance.new("ScrollingFrame");
@@ -288,53 +289,78 @@ local Converted = {
 	["_WashiezOGTC1"] = Instance.new("CanvasGroup");
 	["_OGTCMessage"] = Instance.new("TextLabel");
 	["_UICorner114"] = Instance.new("UICorner");
-	["_Player1"] = Instance.new("CanvasGroup");
+	["_SCCSimulator1"] = Instance.new("CanvasGroup");
+	["_Audio"] = Instance.new("TextButton");
 	["_UICorner115"] = Instance.new("UICorner");
-	["_Settings"] = Instance.new("ImageButton");
+	["_AutoFarm2"] = Instance.new("TextButton");
 	["_UICorner116"] = Instance.new("UICorner");
+	["_SCC"] = Instance.new("TextButton");
+	["_UICorner117"] = Instance.new("UICorner");
+	["_HCC"] = Instance.new("TextButton");
+	["_UICorner118"] = Instance.new("UICorner");
+	["_Message"] = Instance.new("TextBox");
+	["_UICorner119"] = Instance.new("UICorner");
+	["_Send2"] = Instance.new("TextButton");
+	["_UICorner120"] = Instance.new("UICorner");
+	["_CD"] = Instance.new("TextButton");
+	["_UICorner121"] = Instance.new("UICorner");
+	["_CC"] = Instance.new("TextButton");
+	["_UICorner122"] = Instance.new("UICorner");
+	["_Clear1"] = Instance.new("TextButton");
+	["_UICorner123"] = Instance.new("UICorner");
+	["_Lag"] = Instance.new("TextButton");
+	["_UICorner124"] = Instance.new("UICorner");
+	["_Amount"] = Instance.new("TextBox");
+	["_UICorner125"] = Instance.new("UICorner");
+	["_Delay"] = Instance.new("TextBox");
+	["_UICorner126"] = Instance.new("UICorner");
+	["_Player1"] = Instance.new("CanvasGroup");
+	["_UICorner127"] = Instance.new("UICorner");
+	["_Settings"] = Instance.new("ImageButton");
+	["_UICorner128"] = Instance.new("UICorner");
 	["_KeepShapePlz"] = Instance.new("UIAspectRatioConstraint");
 	["_Profile"] = Instance.new("ImageButton");
-	["_UICorner117"] = Instance.new("UICorner");
+	["_UICorner129"] = Instance.new("UICorner");
 	["_Outline"] = Instance.new("UIStroke");
 	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
 	["_Settings1"] = Instance.new("CanvasGroup");
 	["_Keybind"] = Instance.new("TextButton");
-	["_UICorner118"] = Instance.new("UICorner");
+	["_UICorner130"] = Instance.new("UICorner");
 	["_Close4"] = Instance.new("TextButton");
-	["_UICorner119"] = Instance.new("UICorner");
+	["_UICorner131"] = Instance.new("UICorner");
 	["_ResetKeybind"] = Instance.new("TextButton");
-	["_UICorner120"] = Instance.new("UICorner");
+	["_UICorner132"] = Instance.new("UICorner");
 	["_NotifyJoin"] = Instance.new("TextButton");
-	["_UICorner121"] = Instance.new("UICorner");
+	["_UICorner133"] = Instance.new("UICorner");
 	["_NotifyUnread"] = Instance.new("TextButton");
-	["_UICorner122"] = Instance.new("UICorner");
+	["_UICorner134"] = Instance.new("UICorner");
 	["_Save1"] = Instance.new("TextButton");
-	["_UICorner123"] = Instance.new("UICorner");
+	["_UICorner135"] = Instance.new("UICorner");
 	["_Status"] = Instance.new("TextLabel");
 	["_Version"] = Instance.new("TextLabel");
-	["_UICorner124"] = Instance.new("UICorner");
+	["_UICorner136"] = Instance.new("UICorner");
 	["_Unload"] = Instance.new("TextButton");
-	["_UICorner125"] = Instance.new("UICorner");
+	["_UICorner137"] = Instance.new("UICorner");
 	["_Delete"] = Instance.new("TextButton");
-	["_UICorner126"] = Instance.new("UICorner");
+	["_UICorner138"] = Instance.new("UICorner");
 	["_Background"] = Instance.new("ImageLabel");
-	["_UICorner127"] = Instance.new("UICorner");
-	["_UICorner128"] = Instance.new("UICorner");
+	["_UICorner139"] = Instance.new("UICorner");
+	["_UICorner140"] = Instance.new("UICorner");
 	["_Buttons"] = Instance.new("Frame");
-	["_UICorner129"] = Instance.new("UICorner");
+	["_UICorner141"] = Instance.new("UICorner");
 	["_Title"] = Instance.new("TextLabel");
-	["_UICorner130"] = Instance.new("UICorner");
+	["_UICorner142"] = Instance.new("UICorner");
 	["_Close5"] = Instance.new("TextButton");
-	["_UICorner131"] = Instance.new("UICorner");
+	["_UICorner143"] = Instance.new("UICorner");
 	["_Collapse"] = Instance.new("TextButton");
-	["_UICorner132"] = Instance.new("UICorner");
+	["_UICorner144"] = Instance.new("UICorner");
 	["_Version1"] = Instance.new("TextLabel");
-	["_UICorner133"] = Instance.new("UICorner");
+	["_UICorner145"] = Instance.new("UICorner");
 	["_Inspector"] = Instance.new("BillboardGui");
 	["_Box"] = Instance.new("TextLabel");
 	["_UIStroke"] = Instance.new("UIStroke");
 	["_Stats"] = Instance.new("TextButton");
-	["_UICorner134"] = Instance.new("UICorner");
+	["_UICorner146"] = Instance.new("UICorner");
 }
 
 -- Properties:
@@ -570,6 +596,23 @@ Converted["_WashiezOGTC"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_WashiezOGTC"].Visible = false
 Converted["_WashiezOGTC"].Name = "WashiezOGTC"
 Converted["_WashiezOGTC"].Parent = Converted["_List"]
+
+Converted["_SCCSimulator"].Font = Enum.Font.TitilliumWeb
+Converted["_SCCSimulator"].Text = "Scam Call Center"
+Converted["_SCCSimulator"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_SCCSimulator"].TextScaled = true
+Converted["_SCCSimulator"].TextSize = 14
+Converted["_SCCSimulator"].TextWrapped = true
+Converted["_SCCSimulator"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_SCCSimulator"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_SCCSimulator"].BackgroundTransparency = 0.5
+Converted["_SCCSimulator"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SCCSimulator"].BorderSizePixel = 0
+Converted["_SCCSimulator"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
+Converted["_SCCSimulator"].Size = UDim2.new(1, 0, 0.100000001, 0)
+Converted["_SCCSimulator"].Visible = false
+Converted["_SCCSimulator"].Name = "SCCSimulator"
+Converted["_SCCSimulator"].Parent = Converted["_List"]
 
 Converted["_Menus"].Name = "Menus"
 Converted["_Menus"].Parent = Converted["_Container1"]
@@ -3213,6 +3256,245 @@ Converted["_OGTCMessage"].Parent = Converted["_WashiezOGTC1"]
 Converted["_UICorner114"].CornerRadius = UDim.new(0.150000006, 0)
 Converted["_UICorner114"].Parent = Converted["_OGTCMessage"]
 
+Converted["_SCCSimulator1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_SCCSimulator1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_SCCSimulator1"].BackgroundTransparency = 1
+Converted["_SCCSimulator1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SCCSimulator1"].BorderSizePixel = 0
+Converted["_SCCSimulator1"].Position = UDim2.new(0.574999988, 0, 0.5, 0)
+Converted["_SCCSimulator1"].Size = UDim2.new(0.850000024, 0, 1, 0)
+Converted["_SCCSimulator1"].Name = "SCCSimulator"
+Converted["_SCCSimulator1"].Parent = Converted["_Menus"]
+
+Converted["_Audio"].Font = Enum.Font.TitilliumWeb
+Converted["_Audio"].Text = "Start Audio"
+Converted["_Audio"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Audio"].TextScaled = true
+Converted["_Audio"].TextSize = 14
+Converted["_Audio"].TextWrapped = true
+Converted["_Audio"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Audio"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Audio"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Audio"].BorderSizePixel = 0
+Converted["_Audio"].Position = UDim2.new(0.174999997, 0, 0.5, 0)
+Converted["_Audio"].Size = UDim2.new(0.275000006, 0, 0.100000001, 0)
+Converted["_Audio"].Name = "Audio"
+Converted["_Audio"].Parent = Converted["_SCCSimulator1"]
+
+Converted["_UICorner115"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner115"].Parent = Converted["_Audio"]
+
+Converted["_AutoFarm2"].Font = Enum.Font.TitilliumWeb
+Converted["_AutoFarm2"].Text = "Enable AutoFarm"
+Converted["_AutoFarm2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_AutoFarm2"].TextScaled = true
+Converted["_AutoFarm2"].TextSize = 14
+Converted["_AutoFarm2"].TextWrapped = true
+Converted["_AutoFarm2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_AutoFarm2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_AutoFarm2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_AutoFarm2"].BorderSizePixel = 0
+Converted["_AutoFarm2"].Position = UDim2.new(0.824999988, 0, 0.5, 0)
+Converted["_AutoFarm2"].Size = UDim2.new(0.275000006, 0, 0.100000001, 0)
+Converted["_AutoFarm2"].Name = "AutoFarm"
+Converted["_AutoFarm2"].Parent = Converted["_SCCSimulator1"]
+
+Converted["_UICorner116"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner116"].Parent = Converted["_AutoFarm2"]
+
+Converted["_SCC"].Font = Enum.Font.TitilliumWeb
+Converted["_SCC"].Text = "Spam Chat Connections"
+Converted["_SCC"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_SCC"].TextScaled = true
+Converted["_SCC"].TextSize = 14
+Converted["_SCC"].TextWrapped = true
+Converted["_SCC"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_SCC"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_SCC"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SCC"].BorderSizePixel = 0
+Converted["_SCC"].Position = UDim2.new(0.5, 0, 0.349999994, 0)
+Converted["_SCC"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_SCC"].Name = "SCC"
+Converted["_SCC"].Parent = Converted["_SCCSimulator1"]
+
+Converted["_UICorner117"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner117"].Parent = Converted["_SCC"]
+
+Converted["_HCC"].Font = Enum.Font.TitilliumWeb
+Converted["_HCC"].Text = "Spam Chat Disconnect"
+Converted["_HCC"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_HCC"].TextScaled = true
+Converted["_HCC"].TextSize = 14
+Converted["_HCC"].TextWrapped = true
+Converted["_HCC"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_HCC"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_HCC"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_HCC"].BorderSizePixel = 0
+Converted["_HCC"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_HCC"].Size = UDim2.new(0.349999994, 0, 0.100000001, 0)
+Converted["_HCC"].Name = "HCC"
+Converted["_HCC"].Parent = Converted["_SCCSimulator1"]
+
+Converted["_UICorner118"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner118"].Parent = Converted["_HCC"]
+
+Converted["_Message"].ClearTextOnFocus = false
+Converted["_Message"].Font = Enum.Font.TitilliumWeb
+Converted["_Message"].MultiLine = true
+Converted["_Message"].PlaceholderText = "Message"
+Converted["_Message"].Text = ""
+Converted["_Message"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Message"].TextScaled = true
+Converted["_Message"].TextSize = 14
+Converted["_Message"].TextWrapped = true
+Converted["_Message"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Message"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Message"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Message"].BackgroundTransparency = 0.5
+Converted["_Message"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Message"].BorderSizePixel = 0
+Converted["_Message"].Position = UDim2.new(0.5, 0, 0.699999988, 0)
+Converted["_Message"].Size = UDim2.new(0.600000024, 0, 0.275000006, 0)
+Converted["_Message"].Name = "Message"
+Converted["_Message"].Parent = Converted["_SCCSimulator1"]
+
+Converted["_UICorner119"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner119"].Parent = Converted["_Message"]
+
+Converted["_Send2"].Font = Enum.Font.TitilliumWeb
+Converted["_Send2"].Text = "Send Message"
+Converted["_Send2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Send2"].TextScaled = true
+Converted["_Send2"].TextSize = 14
+Converted["_Send2"].TextWrapped = true
+Converted["_Send2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Send2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Send2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Send2"].BorderSizePixel = 0
+Converted["_Send2"].Position = UDim2.new(0.375, 0, 0.899999976, 0)
+Converted["_Send2"].Size = UDim2.new(0.349999994, 0, 0.100000001, 0)
+Converted["_Send2"].Name = "Send"
+Converted["_Send2"].Parent = Converted["_SCCSimulator1"]
+
+Converted["_UICorner120"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner120"].Parent = Converted["_Send2"]
+
+Converted["_CD"].Font = Enum.Font.TitilliumWeb
+Converted["_CD"].Text = "Chat Disconnect"
+Converted["_CD"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CD"].TextScaled = true
+Converted["_CD"].TextSize = 14
+Converted["_CD"].TextWrapped = true
+Converted["_CD"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_CD"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_CD"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CD"].BorderSizePixel = 0
+Converted["_CD"].Position = UDim2.new(0.800000012, 0, 0.349999994, 0)
+Converted["_CD"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_CD"].Name = "CD"
+Converted["_CD"].Parent = Converted["_SCCSimulator1"]
+
+Converted["_UICorner121"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner121"].Parent = Converted["_CD"]
+
+Converted["_CC"].Font = Enum.Font.TitilliumWeb
+Converted["_CC"].Text = "Chat Connect"
+Converted["_CC"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CC"].TextScaled = true
+Converted["_CC"].TextSize = 14
+Converted["_CC"].TextWrapped = true
+Converted["_CC"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_CC"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_CC"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CC"].BorderSizePixel = 0
+Converted["_CC"].Position = UDim2.new(0.200000003, 0, 0.349999994, 0)
+Converted["_CC"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_CC"].Name = "CC"
+Converted["_CC"].Parent = Converted["_SCCSimulator1"]
+
+Converted["_UICorner122"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner122"].Parent = Converted["_CC"]
+
+Converted["_Clear1"].Font = Enum.Font.TitilliumWeb
+Converted["_Clear1"].Text = "Clear"
+Converted["_Clear1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Clear1"].TextScaled = true
+Converted["_Clear1"].TextSize = 14
+Converted["_Clear1"].TextWrapped = true
+Converted["_Clear1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Clear1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Clear1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Clear1"].BorderSizePixel = 0
+Converted["_Clear1"].Position = UDim2.new(0.699999988, 0, 0.899999976, 0)
+Converted["_Clear1"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+Converted["_Clear1"].Name = "Clear"
+Converted["_Clear1"].Parent = Converted["_SCCSimulator1"]
+
+Converted["_UICorner123"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner123"].Parent = Converted["_Clear1"]
+
+Converted["_Lag"].Font = Enum.Font.TitilliumWeb
+Converted["_Lag"].Text = "Lag Server"
+Converted["_Lag"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Lag"].TextScaled = true
+Converted["_Lag"].TextSize = 14
+Converted["_Lag"].TextWrapped = true
+Converted["_Lag"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Lag"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Lag"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Lag"].BorderSizePixel = 0
+Converted["_Lag"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
+Converted["_Lag"].Size = UDim2.new(0.349999994, 0, 0.100000001, 0)
+Converted["_Lag"].Name = "Lag"
+Converted["_Lag"].Parent = Converted["_SCCSimulator1"]
+
+Converted["_UICorner124"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner124"].Parent = Converted["_Lag"]
+
+Converted["_Amount"].ClearTextOnFocus = false
+Converted["_Amount"].CursorPosition = -1
+Converted["_Amount"].Font = Enum.Font.TitilliumWeb
+Converted["_Amount"].PlaceholderText = "Bag Amount (100)"
+Converted["_Amount"].Text = ""
+Converted["_Amount"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Amount"].TextScaled = true
+Converted["_Amount"].TextSize = 14
+Converted["_Amount"].TextWrapped = true
+Converted["_Amount"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Amount"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Amount"].BackgroundTransparency = 0.5
+Converted["_Amount"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Amount"].BorderSizePixel = 0
+Converted["_Amount"].Position = UDim2.new(0.324999988, 0, 0.200000003, 0)
+Converted["_Amount"].Size = UDim2.new(0.275000006, 0, 0.075000003, 0)
+Converted["_Amount"].Name = "Amount"
+Converted["_Amount"].Parent = Converted["_SCCSimulator1"]
+
+Converted["_UICorner125"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner125"].Parent = Converted["_Amount"]
+
+Converted["_Delay"].ClearTextOnFocus = false
+Converted["_Delay"].CursorPosition = -1
+Converted["_Delay"].Font = Enum.Font.TitilliumWeb
+Converted["_Delay"].PlaceholderText = "Use Delay (10)"
+Converted["_Delay"].Text = ""
+Converted["_Delay"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Delay"].TextScaled = true
+Converted["_Delay"].TextSize = 14
+Converted["_Delay"].TextWrapped = true
+Converted["_Delay"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Delay"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Delay"].BackgroundTransparency = 0.5
+Converted["_Delay"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Delay"].BorderSizePixel = 0
+Converted["_Delay"].Position = UDim2.new(0.675000012, 0, 0.200000003, 0)
+Converted["_Delay"].Size = UDim2.new(0.275000006, 0, 0.075000003, 0)
+Converted["_Delay"].Name = "Delay"
+Converted["_Delay"].Parent = Converted["_SCCSimulator1"]
+
+Converted["_UICorner126"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner126"].Parent = Converted["_Delay"]
+
 Converted["_Player1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Player1"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
 Converted["_Player1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -3223,8 +3505,8 @@ Converted["_Player1"].ZIndex = 3
 Converted["_Player1"].Name = "Player"
 Converted["_Player1"].Parent = Converted["_Container1"]
 
-Converted["_UICorner115"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner115"].Parent = Converted["_Player1"]
+Converted["_UICorner127"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner127"].Parent = Converted["_Player1"]
 
 Converted["_Settings"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Settings"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
@@ -3235,8 +3517,8 @@ Converted["_Settings"].Size = UDim2.new(0.324999988, 0, 0.800000012, 0)
 Converted["_Settings"].Name = "Settings"
 Converted["_Settings"].Parent = Converted["_Player1"]
 
-Converted["_UICorner116"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner116"].Parent = Converted["_Settings"]
+Converted["_UICorner128"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner128"].Parent = Converted["_Settings"]
 
 Converted["_KeepShapePlz"].AspectRatio = 1.0068495273590088
 Converted["_KeepShapePlz"].Name = "KeepShapePlz"
@@ -3253,8 +3535,8 @@ Converted["_Profile"].Size = UDim2.new(0.349999994, 0, 0.850000024, 0)
 Converted["_Profile"].Name = "Profile"
 Converted["_Profile"].Parent = Converted["_Player1"]
 
-Converted["_UICorner117"].CornerRadius = UDim.new(1, 0)
-Converted["_UICorner117"].Parent = Converted["_Profile"]
+Converted["_UICorner129"].CornerRadius = UDim.new(1, 0)
+Converted["_UICorner129"].Parent = Converted["_Profile"]
 
 Converted["_Outline"].Color = Color3.fromRGB(255, 255, 255)
 Converted["_Outline"].Name = "Outline"
@@ -3291,8 +3573,8 @@ Converted["_Keybind"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Keybind"].Name = "Keybind"
 Converted["_Keybind"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner118"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner118"].Parent = Converted["_Keybind"]
+Converted["_UICorner130"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner130"].Parent = Converted["_Keybind"]
 
 Converted["_Close4"].Font = Enum.Font.Nunito
 Converted["_Close4"].Text = "X"
@@ -3310,8 +3592,8 @@ Converted["_Close4"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
 Converted["_Close4"].Name = "Close"
 Converted["_Close4"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner119"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner119"].Parent = Converted["_Close4"]
+Converted["_UICorner131"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner131"].Parent = Converted["_Close4"]
 
 Converted["_ResetKeybind"].Font = Enum.Font.TitilliumWeb
 Converted["_ResetKeybind"].Text = "Reset keybind"
@@ -3328,8 +3610,8 @@ Converted["_ResetKeybind"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_ResetKeybind"].Name = "ResetKeybind"
 Converted["_ResetKeybind"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner120"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner120"].Parent = Converted["_ResetKeybind"]
+Converted["_UICorner132"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner132"].Parent = Converted["_ResetKeybind"]
 
 Converted["_NotifyJoin"].Font = Enum.Font.TitilliumWeb
 Converted["_NotifyJoin"].Text = "Notify Hub Join [T]"
@@ -3346,8 +3628,8 @@ Converted["_NotifyJoin"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_NotifyJoin"].Name = "NotifyJoin"
 Converted["_NotifyJoin"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner121"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner121"].Parent = Converted["_NotifyJoin"]
+Converted["_UICorner133"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner133"].Parent = Converted["_NotifyJoin"]
 
 Converted["_NotifyUnread"].Font = Enum.Font.TitilliumWeb
 Converted["_NotifyUnread"].Text = "Notify Unread [T]"
@@ -3364,8 +3646,8 @@ Converted["_NotifyUnread"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_NotifyUnread"].Name = "NotifyUnread"
 Converted["_NotifyUnread"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner122"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner122"].Parent = Converted["_NotifyUnread"]
+Converted["_UICorner134"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner134"].Parent = Converted["_NotifyUnread"]
 
 Converted["_Save1"].Font = Enum.Font.TitilliumWeb
 Converted["_Save1"].Text = "Save Config"
@@ -3382,8 +3664,8 @@ Converted["_Save1"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Save1"].Name = "Save"
 Converted["_Save1"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner123"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner123"].Parent = Converted["_Save1"]
+Converted["_UICorner135"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner135"].Parent = Converted["_Save1"]
 
 Converted["_Status"].Font = Enum.Font.TitilliumWeb
 Converted["_Status"].RichText = true
@@ -3419,8 +3701,8 @@ Converted["_Version"].Size = UDim2.new(0.200000003, 0, 0.0500000007, 0)
 Converted["_Version"].Name = "Version"
 Converted["_Version"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner124"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner124"].Parent = Converted["_Version"]
+Converted["_UICorner136"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner136"].Parent = Converted["_Version"]
 
 Converted["_Unload"].Font = Enum.Font.TitilliumWeb
 Converted["_Unload"].Text = "Unload Script"
@@ -3437,8 +3719,8 @@ Converted["_Unload"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Unload"].Name = "Unload"
 Converted["_Unload"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner125"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner125"].Parent = Converted["_Unload"]
+Converted["_UICorner137"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner137"].Parent = Converted["_Unload"]
 
 Converted["_Delete"].Font = Enum.Font.TitilliumWeb
 Converted["_Delete"].Text = "Delete Config"
@@ -3455,8 +3737,8 @@ Converted["_Delete"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Delete"].Name = "Delete"
 Converted["_Delete"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner126"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner126"].Parent = Converted["_Delete"]
+Converted["_UICorner138"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner138"].Parent = Converted["_Delete"]
 
 Converted["_Background"].ImageTransparency = 0.25
 Converted["_Background"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -3470,11 +3752,11 @@ Converted["_Background"].ZIndex = -1
 Converted["_Background"].Name = "Background"
 Converted["_Background"].Parent = Converted["_Container"]
 
-Converted["_UICorner127"].CornerRadius = UDim.new(0.0299999993, 0)
-Converted["_UICorner127"].Parent = Converted["_Container"]
+Converted["_UICorner139"].CornerRadius = UDim.new(0.0299999993, 0)
+Converted["_UICorner139"].Parent = Converted["_Container"]
 
-Converted["_UICorner128"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner128"].Parent = Converted["_TitleBar"]
+Converted["_UICorner140"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner140"].Parent = Converted["_TitleBar"]
 
 Converted["_Buttons"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Buttons"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
@@ -3486,8 +3768,8 @@ Converted["_Buttons"].ZIndex = 2
 Converted["_Buttons"].Name = "Buttons"
 Converted["_Buttons"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner129"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner129"].Parent = Converted["_Buttons"]
+Converted["_UICorner141"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner141"].Parent = Converted["_Buttons"]
 
 Converted["_Title"].Font = Enum.Font.Sarpanch
 Converted["_Title"].Text = "AntiHub"
@@ -3505,8 +3787,8 @@ Converted["_Title"].Size = UDim2.new(0.174999997, 0, 0.800000012, 0)
 Converted["_Title"].Name = "Title"
 Converted["_Title"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner130"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner130"].Parent = Converted["_Title"]
+Converted["_UICorner142"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner142"].Parent = Converted["_Title"]
 
 Converted["_Close5"].Font = Enum.Font.Nunito
 Converted["_Close5"].Text = "X"
@@ -3523,8 +3805,8 @@ Converted["_Close5"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
 Converted["_Close5"].Name = "Close"
 Converted["_Close5"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner131"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner131"].Parent = Converted["_Close5"]
+Converted["_UICorner143"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner143"].Parent = Converted["_Close5"]
 
 Converted["_Collapse"].Font = Enum.Font.Nunito
 Converted["_Collapse"].Text = "-"
@@ -3541,8 +3823,8 @@ Converted["_Collapse"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
 Converted["_Collapse"].Name = "Collapse"
 Converted["_Collapse"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner132"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner132"].Parent = Converted["_Collapse"]
+Converted["_UICorner144"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner144"].Parent = Converted["_Collapse"]
 
 Converted["_Version1"].Font = Enum.Font.Ubuntu
 Converted["_Version1"].Text = "Version: 69.420"
@@ -3562,8 +3844,8 @@ Converted["_Version1"].Size = UDim2.new(0.174999997, 0, 0.25, 0)
 Converted["_Version1"].Name = "Version"
 Converted["_Version1"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner133"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner133"].Parent = Converted["_Version1"]
+Converted["_UICorner145"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner145"].Parent = Converted["_Version1"]
 
 Converted["_Inspector"].AlwaysOnTop = true
 Converted["_Inspector"].ClipsDescendants = true
@@ -3612,8 +3894,8 @@ Converted["_Stats"].Size = UDim2.new(0.0500000007, 0, 0.0500000007, 0)
 Converted["_Stats"].Name = "Stats"
 Converted["_Stats"].Parent = Converted["_AntiHub"]
 
-Converted["_UICorner134"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner134"].Parent = Converted["_Stats"]
+Converted["_UICorner146"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner146"].Parent = Converted["_Stats"]
 
 Converted._AntiHub.Enabled = true
 if _G.AHL then
@@ -3622,9 +3904,10 @@ if _G.AHL then
 	Converted._AntiHub.Enabled = false
 	return
 end
+_G.AHNCC = true
 _G.AHL = true
 _G.AH = Converted._AntiHub
-local SVersion = "1.4.1"
+local SVersion = "1.5Pre"
 _G.AHSV = SVersion
 local GSPlayers = game:GetService("Players")
 local LocalPlayer = GSPlayers.LocalPlayer
@@ -3654,10 +3937,11 @@ local Universal = AntiHub.TitleBar.Container.Container.Menus.Universal
 local Logs = AntiHub.TitleBar.Container.Container.Menus.Logs
 local AntiCheat = AntiHub.TitleBar.Container.Container.Menus.AntiCheat
 local Players = AntiHub.TitleBar.Container.Container.Menus.Players
+local SCallSim = AntiHub.TitleBar.Container.Container.Menus.SCCSimulator
 local AntiKick = false
 local Unread = 0
-local PlaceIDs = {155615604, 6764533218,  6868593153, 13824270489, 84881892786857}
-local Supported = {"PrisonLife", "Washiez", "WashiezTC", "WashiezOGTC", "OilUp"}
+local PlaceIDs = {155615604, 6764533218,  6868593153, 13824270489, 84881892786857, 11667312371}
+local Supported = {"PrisonLife", "Washiez", "WashiezTC", "WashiezOGTC", "OilUp", "SCCSimulator"}
 local Say = loadstring(game:HttpGet("https://gist.githubusercontent.com/devguy100/6a49aa32164143be3ac90f2d705c4583/raw"))()
 Platform = Instance.new("Part")
 Platform.Name = "AHPlatform"
@@ -3720,6 +4004,13 @@ local Loaded, LOut = pcall(function()
 	end)
 	Config.OilUp = {}
 	Config.OilUp.AutoFarm = false
+	Config.SCallSim = {}
+	Config.SCallSim.HCC = false
+	Config.SCallSim.SCC = false
+	Config.SCallSim.Audio = false
+	Config.SCallSim.AutoFarm = false
+	Config.SCallSim.Delay = 10
+	Config.SCallSim.Amount = 100
 end)
 if Loaded then
 	print("Loaded Config")
@@ -3773,6 +4064,13 @@ else
 	end)
 	Config.OilUp = {}
 	Config.OilUp.AutoFarm = false
+	Config.SCallSim = {}
+	Config.SCallSim.HCC = false
+	Config.SCallSim.SCC = false
+	Config.SCallSim.Audio = false
+	Config.SCallSim.AutoFarm = false
+	Config.SCallSim.Delay = 10
+	Config.SCallSim.Amount = 100
 end
 LocalPlayer.CharacterAdded:Connect(function(mod)
 	LocalCharacter = mod
@@ -4096,6 +4394,13 @@ AntiHub:WaitForChild("TitleBar").Active = true
 AntiHub.TitleBar.Draggable = true
 
 AntiHub.TitleBar.Container.Container.Player.Profile.Activated:Connect(function()
+	pcall(function()
+		if SVersion:find("Pre") then
+			queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHubPre.lua"))()')
+		else
+			queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHub.lua"))()')
+		end
+	end)
 	Notify("Rejoining", 10)
 	if #GSPlayers:GetPlayers() <= 1 then
 		LocalPlayer:Kick("\nRejoining...")
@@ -4917,7 +5222,7 @@ Washiez.Tickets.AutoFarm.Activated:Connect(function()
 			end
 			Current += 1
 			game:GetService("ReplicatedStorage"):WaitForChild("CarWashSystem"):WaitForChild("TicketSystem"):InvokeServer("Ticket Type", {LocalPlayer.Name, Types[Current]})
-			task.wait(10)
+			task.wait(3)
 		until not Config.Washiez.AutoFarm
 	else
 		Washiez.Tickets.AutoFarm.Text = "Enabled AutoFarm"
@@ -5386,6 +5691,177 @@ WashiezTC.FF.Activated:Connect(function()
 	end
 end)
 
+SCallSim.Audio.Activated:Connect(function()
+	Config.SCallSim.Audio = not Config.SCallSim.Audio
+	if Config.SCallSim.Audio then
+		SCallSim.Audio.Text = "Stop Audio"
+		task.spawn(function()
+			repeat
+				for i, v in workspace.Computers:GetChildren() do
+					game:GetService("ReplicatedStorage"):WaitForChild("LoudTyping"):FireServer(tonumber(v.Name:split("PC")[2]), Config.SCallSim.Audio)
+					task.wait()
+				end
+				task.wait(5)
+			until not Config.SCallSim.Audio
+		end)
+		repeat
+			game:GetService("ReplicatedStorage"):WaitForChild("LinePlayer"):FireServer("Option1", "Dialogue1", "Call1")
+			task.wait()
+		until not Config.SCallSim.Audio
+	else
+		SCallSim.Audio.Text = "Start Audio"
+		game:GetService("ReplicatedStorage"):WaitForChild("ClearSounds"):FireServer()
+		for i, v in workspace.Computers:GetChildren() do
+			game:GetService("ReplicatedStorage"):WaitForChild("LoudTyping"):FireServer(tonumber(v.Name:split("PC")[2]), false)
+			task.wait()
+		end
+	end
+end)
+
+SCallSim.AutoFarm.Activated:Connect(function()
+	Config.SCallSim.AutoFarm = not Config.SCallSim.AutoFarm
+	if Config.SCallSim.AutoFarm then
+		SCallSim.AutoFarm.Text = "Disable AutoFarm"
+		repeat
+			game:GetService("ReplicatedStorage"):WaitForChild("Passoffs"):WaitForChild("Dialedup"):FireServer(true)
+			game:GetService("ReplicatedStorage"):WaitForChild("Passoffs"):WaitForChild("Energydrink"):FireServer(true)
+			game:GetService("ReplicatedStorage"):WaitForChild("PhoneReward"):FireServer()
+			game:GetService("ReplicatedStorage"):WaitForChild("Links"):FireServer("links")
+			game:GetService("ReplicatedStorage"):WaitForChild("Reward"):FireServer("notepad")
+			game:GetService("ReplicatedStorage"):WaitForChild("Reward"):FireServer("virus")
+			game:GetService("ReplicatedStorage"):WaitForChild("CallMade"):FireServer()
+			task.wait(0.5)
+		until not Config.SCallSim.AutoFarm
+	else
+		SCallSim.AutoFarm.Text = "Enable AutoFarm"
+	end
+end)
+SCallSim.SCC.Activated:Connect(function()
+	Config.SCallSim.SCC = not Config.SCallSim.SCC
+	if Config.SCallSim.SCC then
+		SCallSim.SCC.Text = "Stop Spamming C Connections"
+		repeat
+			game:GetService("ReplicatedStorage"):WaitForChild("Chatroom"):WaitForChild("UserConnected"):FireServer()
+			task.wait(0.1)
+		until not Config.SCallSim.SCC
+	else
+		SCallSim.SCC.Text = "Spam Chat Connections"
+	end
+end)
+SCallSim.CC.Activated:Connect(function()
+	game:GetService("ReplicatedStorage"):WaitForChild("Chatroom"):WaitForChild("UserConnected"):FireServer()
+end)
+SCallSim.CD.Activated:Connect(function()
+	game:GetService("ReplicatedStorage"):WaitForChild("Chatroom"):WaitForChild("UserDisconnected"):FireServer()
+end)
+SCallSim.HCC.Activated:Connect(function()
+	Config.SCallSim.HCC = not Config.SCallSim.HCC
+	if Config.SCallSim.HCC then
+		SCallSim.HCC.Text = "Stop Spamming CD"
+		repeat
+			game:GetService("ReplicatedStorage"):WaitForChild("Chatroom"):WaitForChild("UserDisconnected"):FireServer()
+			task.wait(0.1)
+		until not Config.SCallSim.HCC
+	else
+		SCallSim.HCC.Text = "Spam Chat Disconnect"
+	end
+end)
+SCallSim.Send.Activated:Connect(function()
+	game:GetService("ReplicatedStorage"):WaitForChild("DialogueClicked"):FireServer(SCallSim.Message.Text)
+end)
+SCallSim.Clear.Activated:Connect(function()
+	SCallSim.Message.Text = ""
+end)
+
+SCallSim.Lag.Activated:Connect(function()
+	if SCallSim.Lag.Text == "Getting Tools" or SCallSim.Lag.Text == "Stopping" then return end
+	Config.SCallSim.Lag = not Config.SCallSim.Lag
+	if Config.SCallSim.Lag then
+		SCallSim.Lag.Text = "Getting Tools"
+		Config.SCallSim.LagTools = {}
+		for i, v in LocalPlayer.Backpack:GetChildren() do
+			if not v:IsA("Tool") then continue end
+			table.insert(Config.SCallSim.LagTools, v)
+		end
+		for i, v in LocalCharacter:GetChildren() do
+			if not v:IsA("Tool") then continue end
+			table.insert(Config.SCallSim.LagTools, v)
+		end
+		for i, v in Config.SCallSim.LagTools do
+			v.Parent = nil
+		end
+		for i=1, Config.SCallSim.Amount do
+			game:GetService("ReplicatedStorage"):WaitForChild("PurchaseHandler"):FireServer(1, "moneybag")
+			task.wait()
+		end
+		local NewTools = {}
+		for i, v in LocalPlayer.Backpack:GetChildren() do
+			if not v:IsA("Tool") then continue end
+			v.Parent = LocalCharacter
+			table.insert(NewTools, v)
+		end
+		task.wait(0.1)
+		for i, v in LocalCharacter.Humanoid:GetPlayingAnimationTracks() do
+			v:Stop()
+		end
+		SCallSim.Lag.Text = "Stop Lagging Server"
+		repeat
+			for i, v in NewTools do
+				if not v:IsA("Tool") then continue end
+				v:Activate()
+			end
+			task.wait(Config.SCallSim.Delay)
+		until not Config.SCallSim.Lag
+		SCallSim.Lag.Text = "Lag Server"
+		LocalCharacter:WaitForChild("Humanoid"):UnequipTools()
+		LocalPlayer.Backpack:ClearAllChildren()
+		for i, v in Config.SCallSim.LagTools do
+			v.Parent = LocalPlayer.Backpack
+		end
+	else
+		SCallSim.Lag.Text = "Stopping"
+	end
+end)
+
+SCallSim.Amount.FocusLost:Connect(function(EP)
+	if not EP then return end
+	if SCallSim.Amount.Text == "" or SCallSim.Amount.Text == " " then
+		Config.SCallSim.Amount = 100
+		Notify("Set To Amount Default (10)", 5)
+		SCallSim.Amount.Text = ""
+		return
+	end
+	if tonumber(SCallSim.Amount.Text) == nil then
+		Notify("Invalid Number.", 3, "Error")
+		SCallSim.Amount.Text = ""
+		return
+	end
+	Config.SCallSim.Amount = tonumber(SCallSim.Amount.Text)
+	if Config.SCallSim.Amount >= 500 then
+		Notify("Large Amounts Take Longer To Load.", 6, "Warning")
+	end
+	SCallSim.Amount.Text = ""
+end)
+SCallSim.Delay.FocusLost:Connect(function(EP)
+	if not EP then return end
+	if SCallSim.Delay.Text == "" or SCallSim.Delay.Text == " " then
+		Config.SCallSim.Delay = 10
+		Notify("Set To Delay Default (10)", 5)
+		SCallSim.Delay.Text = ""
+		return
+	end
+	if tonumber(SCallSim.Delay.Text) == nil then
+		Notify("Invalid Number.", 3, "Error")
+		SCallSim.Delay.Text = ""
+		return
+	end
+	Config.SCallSim.Delay = tonumber(SCallSim.Delay.Text)
+	if Config.SCallSim.Delay <= 3 then
+		Notify("Small Delays May Lag Your Device.", 6, "Warning")
+	end
+	SCallSim.Delay.Text = ""
+end)
+
 AntiHub.TitleBar.Container.Container.Player.Settings.Activated:Connect(function()
 	if SetWait then return end
 	SetWait = true
@@ -5761,6 +6237,7 @@ task.spawn(function()
 		end
 
 		pcall(function()
+			if _G.AHNCC then return end
 			local MT = getrawmetatable(game)
 			setreadonly(MT, false)
 			local NC = MT.__nccarsystem
@@ -6014,6 +6491,23 @@ task.spawn(function()
 				v:Destroy()
 			end
 		end
+	elseif Supported[table.find(PlaceIDs, game.PlaceId)] == "SCCSimulator" then
+		game:GetService("ReplicatedStorage"):WaitForChild("Kohl's Admin Source"):WaitForChild("Remote"):WaitForChild("Idled"):FireServer(0)
+		game:GetService("ReplicatedStorage"):WaitForChild("Kohl's Admin Source"):WaitForChild("Remote"):WaitForChild("Idled"):Destroy()
+		game:GetService("ReplicatedStorage"):WaitForChild("FreezePlr"):FireServer(false)
+		game:GetService("ReplicatedStorage"):WaitForChild("FreezePlr"):Destroy()
+		game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(prompt)
+			fireproximityprompt(prompt)
+		end)
+		workspace.ChildAdded:Connect(function(Part)
+			if not Part:IsA("BasePart") then return end
+			task.wait(0.1)
+			if Part.Color == Color3.fromRGB(40, 127, 71) then
+				Part.Anchored = true
+				Part.CanCollide = false
+				Part.Transparency = 0.9
+			end
+		end)
 	end
 end)
 
@@ -6053,8 +6547,11 @@ task.spawn(function()
 	end)
 end)
 
+local BackgroundRenderStepped = nil
+
 task.spawn(function()
 	local function Unload()
+		BackgroundRenderStepped:Disconnect()
 		Config.AC.Enabled = false
 		Config.Universal.Inspecting = false
 		AntiHub:Destroy()
@@ -6073,7 +6570,7 @@ task.spawn(function()
 	end)
 	task.wait(0.75)
 	local A = 0
-	game:GetService("RunService").RenderStepped:Connect(function(DT)
+	BackgroundRenderStepped = game:GetService("RunService").RenderStepped:Connect(function(DT)
 		A += DT / 25
 		AntiHub.TitleBar.Container.Background.Position = UDim2.new(0.5 + (math.cos(A) / 2), 0, 0.5 + (math.sin(A) / 2), 0)
 	end)
@@ -6172,6 +6669,9 @@ while task.wait(0.1) do
 			else
 				WashiezTC.Cars.Text = tostring(Seats).. " Cars | ".. tostring(Available).. " Available"
 			end
+		elseif Supported[table.find(PlaceIDs, game.PlaceId)] == "SCCSimulator" then
+			SCallSim.Amount.PlaceholderText = "Bag Amount (".. tostring(Config.SCallSim.Amount).. ")"
+			SCallSim.Delay.PlaceholderText = "Delay Amount (".. tostring(Config.SCallSim.Delay).. "s)"
 		end
 	end)
 end
