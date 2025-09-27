@@ -4822,7 +4822,7 @@ end
 getgenv().AHNCC = true
 getgenv().AHL = true
 getgenv().AH = Converted._AntiHub
-local SVersion = "1.5PreStudio"
+local SVersion = "1.5"
 getgenv().AHSV = SVersion
 local GSPlayers = game:GetService("Players")
 local LocalPlayer = GSPlayers.LocalPlayer
