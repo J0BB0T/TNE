@@ -4962,7 +4962,9 @@ end)
 if Loaded and FileLoaded then
 	print("Loaded Config")
 else
-	warn("Config Error, Loading Default. Error:\n".. LOut)
+	pcall(function()
+		warn("Config Error, Loading Default. Error:\n".. LOut)
+	end)
 	Config.Version = SVersion:split("P")[1]
 	Config.Active = true
 	Config.AC = {}
