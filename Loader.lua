@@ -252,6 +252,19 @@ if not game:IsLoaded() then
 	repeat task.wait() until game:IsLoaded()
 end
 
+if not getgenv then
+	function getgenv()
+		return _G.AHGGV
+	end
+end
+
+if getgenv().AHLoader then
+	warn("AntiHub Loader Already Loaded.")
+	return
+end
+
+getgenv().AHLoader = true
+
 local Loader = Converted["_TitleBar"]
 local Versions = game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/VersionList.json")
 Versions = game:GetService("HttpService"):JSONDecode(Versions)
