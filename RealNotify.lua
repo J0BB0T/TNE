@@ -213,7 +213,7 @@ local function Notify(Text:string, Duration:number, Title:string, Id:string)
 				GSTween:Create(v, TweenInfo.new(0.25, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {["Position"] = UDim2.new(0.5, 0, v.Position.Y.Scale - 0.125, 0)}):Play()
 			end
 		end
-		local Notif = Templates[Id]:Clone()
+		local Notif = Templates:WaitForChild(Id):Clone()
 		Notif.NotifContents.Text = Text
 		Notif.Title.Text = Title
 		Notif.Position = UDim2.new(1.5, 0, 0.925, 0)
@@ -240,6 +240,7 @@ end
 
 pcall(function()
 	Templates.Template.Background.Image = "rbxassetid://116157108386991"
+	Templates.Tempate.Visible = false
 end)
 
 return function(Image)
@@ -248,6 +249,9 @@ return function(Image)
 		Notif.Name = Image
 		Notif.ImageLabel.ImageLabel.Image = Image
 		Notif.Parent = Templates
+		Notif.Visible = true
+		print(Notif)
+		print(Notif.Parent)
 	end
 	return function(Text, Duration, Title)
 		Notify(Text, Duration, Title, Image)
