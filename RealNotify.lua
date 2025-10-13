@@ -164,7 +164,19 @@ Converted["_Countdown"].Size = UDim2.new(1, 0, 0.0500000007, 0)
 Converted["_Countdown"].Name = "Countdown"
 Converted["_Countdown"].Parent = Converted["_Template"]
 
+if not getgenv then
+	function getgenv()
+		return _G.RNGGV
+	end
+end
 local Notifications = Converted["_RealNotify"]
+if getgenv().Loaded then
+	Notifications:Destroy()
+	Notifications = getgenv().UI
+	return
+else
+	getgenv().UI = Notifications
+end
 local Total = 0
 local List = 0
 local Queue = {}
@@ -225,6 +237,10 @@ local function Notify(Text:string, Duration:number, Title:string, Id:string)
 		Notif:Destroy()
 	end)
 end
+
+pcall(function()
+	Templates.Template.Background.Image = "rbxassetid://116157108386991"
+end)
 
 return function(Image)
 	if Templates:FindFirstChild(Image) == nil then
