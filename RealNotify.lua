@@ -247,6 +247,7 @@ return function(Image)
 		local Notif = Templates.Template:Clone()
 		Notif.Name = Image
 		Notif.ImageLabel.ImageLabel.Image = Image
+		Notif.Parent = Templates
 	end
 	return function(Text, Duration, Title)
 		Notify(Text, Duration, Title, Image)
