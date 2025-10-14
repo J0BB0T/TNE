@@ -248,6 +248,7 @@ Converted["_UICorner10"].Parent = Converted["_Close"]
 Converted["_UIAspectRatioConstraint"].AspectRatio = 0.9862900972366333
 Converted["_UIAspectRatioConstraint"].Parent = Converted["_Close"]
 
+local Loader = Converted["_TitleBar"]
 if not game:IsLoaded() then
 	repeat task.wait() until game:IsLoaded()
 end
@@ -260,14 +261,19 @@ end
 
 if getgenv().AHLoader then
 	warn("AntiHub Loader Already Loaded.")
+	Loader:Destroy()
 	return
 end
 
 getgenv().AHLoader = true
 
-local Loader = Converted["_TitleBar"]
 local Versions = game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/VersionList.json")
+local Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/RealNotify.lua"))()("rbxassetid://110362083969529")
 Versions = game:GetService("HttpService"):JSONDecode(Versions)
+pcall(function()
+	Loader.Container.Background.Image = "rbxassetid://116157108386991"
+	Loader.Parent.Parent = gethui()
+end)
 local Open = false
 Loader.Visible = false
 Loader.Size = UDim2.new(0, 0, 0, 0)
@@ -303,20 +309,37 @@ game:GetService("RunService").RenderStepped:Connect(function(DT)
 	A += DT / 25
 	Loader.Container.Background.Position = UDim2.new(0.5 + (math.cos(A) / 2), 0, 0.5 + (math.sin(A) / 2), 0)
 end)
-pcall(function()
-	Loader.Container.Background.Image = "rbxassetid://116157108386991"
-	Loader.Parent.Parent = gethui()
-end)
 
 Loader.Draggable = true
 
 Loader.Container.Main.Activated:Connect(function()
+	task.spawn(function()
+		game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
+		Open = false
+		task.wait(0.25)
+		Loader.Visible = false
+	end)
+	Notify("Running Main.", 3, "Loading")
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHub.lua"))()
 end)
 Loader.Container.PreRelease.Activated:Connect(function()
+	task.spawn(function()
+		game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
+		Open = false
+		task.wait(0.25)
+		Loader.Visible = false
+	end)
+	Notify("Running PreRelease.", 3, "Loading")
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHubPre.lua"))()
 end)
 Loader.Container.LC.Activated:Connect(function()
+	task.spawn(function()
+		game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
+		Open = false
+		task.wait(0.25)
+		Loader.Visible = false
+	end)
+	Notify("Running Custom.", 3, "Loading")
 	loadstring(game:HttpGet(Loader.Container.Custom.Text))()
 end)
-game:GetService("StarterGui"):SetCore("SendNotification", {["Title"] = "AH Loader", ["Text"] = "RightAlt To Open.", ["Duration"] = 5})
+Notify("RightAlt To Open.", 5, "Loaded")
