@@ -177,6 +177,7 @@ if getgenv().Loaded then
 else
 	getgenv().UI = Notifications
 end
+getgenv().Loaded = true
 local Total = 0
 local List = 0
 local Queue = {}
