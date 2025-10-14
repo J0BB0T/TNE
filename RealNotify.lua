@@ -173,7 +173,6 @@ local Notifications = Converted["_RealNotify"]
 if getgenv().Loaded then
 	Notifications:Destroy()
 	Notifications = getgenv().UI
-	return
 else
 	getgenv().UI = Notifications
 end
