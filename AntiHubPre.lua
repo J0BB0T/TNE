@@ -8890,10 +8890,8 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 			Touch = Target ~= nil
 			if Target == nil then
 				Target = workspace.Prison_ITEMS:FindFirstChild(Tool, true)
-				LogDebug("1: ".. tostring(Target))
 				if Target == nil then
 					Target = workspace:FindFirstChild(Tool)
-					LogDebug("2: ".. tostring(Target))
 					if Target == nil then
 						Notify("Cannot Find Tool.", 5, "Error")
 						LogDebug("Tool Not Found *".. Tool.. "* | *".. tostring(Target).. "*")
@@ -8902,12 +8900,10 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 				end
 			end
 		end
-		LogDebug("3: ".. tostring(Target))
 		if Target == nil then
 			LogDebug("Tool Not Found 2 *".. Tool.. "* | *".. tostring(Target).. "*")
 			return
 		end
-		LogDebug("4: ".. tostring(Target))
 		CF = LocalCharacter:GetPivot()
 		LC = LocalCharacter
 		if Touch then
