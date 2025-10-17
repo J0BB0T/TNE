@@ -8899,7 +8899,7 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 			repeat
 				FireTouch(LC.PrimaryPart, Target, 0.05)
 				task.wait(0.1)
-			until LC.Parent == nil or LC:FindFirstChild(Target.Name) ~= nil or LocalPlayer.Backpack:FindFirstChild(Target.Name) ~= nil or not Config.Active
+			until LC.Parent == nil or LC:FindFirstChild(Tool) ~= nil or LocalPlayer.Backpack:FindFirstChild(Tool) ~= nil or not Config.Active
 		else
 			local Pick = Target:FindFirstChildWhichIsA("BasePart")
 			task.spawn(function()
