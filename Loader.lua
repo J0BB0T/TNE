@@ -20,13 +20,15 @@ local Converted = {
 	["_UICorner5"] = Instance.new("UICorner");
 	["_PRVersion"] = Instance.new("TextLabel");
 	["_UICorner6"] = Instance.new("UICorner");
+	["_Debug"] = Instance.new("TextButton");
 	["_UICorner7"] = Instance.new("UICorner");
-	["_Buttons"] = Instance.new("Frame");
 	["_UICorner8"] = Instance.new("UICorner");
-	["_Title"] = Instance.new("TextLabel");
+	["_Buttons"] = Instance.new("Frame");
 	["_UICorner9"] = Instance.new("UICorner");
-	["_Close"] = Instance.new("TextButton");
+	["_Title"] = Instance.new("TextLabel");
 	["_UICorner10"] = Instance.new("UICorner");
+	["_Close"] = Instance.new("TextButton");
+	["_UICorner11"] = Instance.new("UICorner");
 	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
 }
 
@@ -75,7 +77,6 @@ Converted["_Background"].Parent = Converted["_Container"]
 Converted["_UICorner"].CornerRadius = UDim.new(0.0199999996, 0)
 Converted["_UICorner"].Parent = Converted["_Container"]
 
-Converted["_Custom"].CursorPosition = -1
 Converted["_Custom"].Font = Enum.Font.Ubuntu
 Converted["_Custom"].PlaceholderText = "Custom URL"
 Converted["_Custom"].Text = ""
@@ -193,8 +194,26 @@ Converted["_PRVersion"].Parent = Converted["_Container"]
 Converted["_UICorner6"].CornerRadius = UDim.new(0.150000006, 0)
 Converted["_UICorner6"].Parent = Converted["_PRVersion"]
 
-Converted["_UICorner7"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner7"].Parent = Converted["_TitleBar"]
+Converted["_Debug"].Font = Enum.Font.TitilliumWeb
+Converted["_Debug"].Text = "Debug Disabled"
+Converted["_Debug"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Debug"].TextScaled = true
+Converted["_Debug"].TextSize = 14
+Converted["_Debug"].TextWrapped = true
+Converted["_Debug"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Debug"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Debug"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Debug"].BorderSizePixel = 0
+Converted["_Debug"].Position = UDim2.new(0.5, 0, 0.625, 0)
+Converted["_Debug"].Size = UDim2.new(0.25, 0, 0.075000003, 0)
+Converted["_Debug"].Name = "Debug"
+Converted["_Debug"].Parent = Converted["_Container"]
+
+Converted["_UICorner7"].CornerRadius = UDim.new(0.150000006, 0)
+Converted["_UICorner7"].Parent = Converted["_Debug"]
+
+Converted["_UICorner8"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner8"].Parent = Converted["_TitleBar"]
 
 Converted["_Buttons"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Buttons"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
@@ -206,8 +225,8 @@ Converted["_Buttons"].ZIndex = 2
 Converted["_Buttons"].Name = "Buttons"
 Converted["_Buttons"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner8"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner8"].Parent = Converted["_Buttons"]
+Converted["_UICorner9"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner9"].Parent = Converted["_Buttons"]
 
 Converted["_Title"].Font = Enum.Font.Sarpanch
 Converted["_Title"].Text = "AntiHub Loader"
@@ -224,8 +243,8 @@ Converted["_Title"].Size = UDim2.new(0.300000012, 0, 0.800000012, 0)
 Converted["_Title"].Name = "Title"
 Converted["_Title"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner9"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner9"].Parent = Converted["_Title"]
+Converted["_UICorner10"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner10"].Parent = Converted["_Title"]
 
 Converted["_Close"].Font = Enum.Font.Nunito
 Converted["_Close"].Text = "X"
@@ -242,8 +261,8 @@ Converted["_Close"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
 Converted["_Close"].Name = "Close"
 Converted["_Close"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner10"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner10"].Parent = Converted["_Close"]
+Converted["_UICorner11"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner11"].Parent = Converted["_Close"]
 
 Converted["_UIAspectRatioConstraint"].AspectRatio = 0.9862900972366333
 Converted["_UIAspectRatioConstraint"].Parent = Converted["_Close"]
@@ -274,6 +293,7 @@ pcall(function()
 	Loader.Container.Background.Image = "rbxassetid://116157108386991"
 	Loader.Parent.Parent = gethui()
 end)
+local Debug = false
 local Open = false
 Loader.Visible = false
 Loader.Size = UDim2.new(0, 0, 0, 0)
@@ -313,6 +333,7 @@ end)
 Loader.Draggable = true
 
 Loader.Container.Main.Activated:Connect(function()
+	getgenv().AHDebug = Debug
 	task.spawn(function()
 		game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 		Open = false
@@ -323,6 +344,7 @@ Loader.Container.Main.Activated:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHub.lua"))()
 end)
 Loader.Container.PreRelease.Activated:Connect(function()
+	getgenv().AHDebug = Debug
 	task.spawn(function()
 		game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 		Open = false
@@ -333,6 +355,7 @@ Loader.Container.PreRelease.Activated:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHubPre.lua"))()
 end)
 Loader.Container.LC.Activated:Connect(function()
+	getgenv().AHDebug = Debug
 	task.spawn(function()
 		game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 		Open = false
@@ -341,5 +364,13 @@ Loader.Container.LC.Activated:Connect(function()
 	end)
 	Notify("Running Custom.", 3, "Loading")
 	loadstring(game:HttpGet(Loader.Container.Custom.Text))()
+end)
+Loader.Container.Debug.Activated:Connect(function()
+	Debug = not Debug
+	if Debug then
+		Loader.Container.Debug.Text = "Debug Enabled"
+	else
+		Loader.Container.Debug.Text = "Debug Disabled"
+	end
 end)
 Notify("RightAlt To Open.", 5, "Loaded")
