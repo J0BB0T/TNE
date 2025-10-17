@@ -11753,9 +11753,9 @@ AHContainer.Settings.Save.Activated:Connect(function()
 	local function SaveLoop(Tab)
 		for i, v in Tab do
 			if type(v) == "userdata" then
-				v = "Instance Removed"
+				Tab[i] = "Instance Removed"
 			elseif type(v) == "table" then
-				v = task.spawn(SaveLoop, Tab)
+				Tab[i] = SaveLogs[Tab]
 			end
 			task.wait()
 		end
