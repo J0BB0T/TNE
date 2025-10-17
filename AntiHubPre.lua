@@ -8882,7 +8882,11 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 			LocalCharacter:PivotTo(CF)
 			return
 		else
-			Target = workspace:FindFirstChild(Tool)
+			for i, v in workspace:GetChildren() do
+				if v.Name == "TouchGiver" and v:GetAttribute("ToolName") == Tool then
+					Target = v.TouchGiver
+				end
+			end
 			Touch = Target ~= nil
 			if Target == nil then
 				Target = workspace.Prison_ITEMS:FindFirstChild(Tool, true)
