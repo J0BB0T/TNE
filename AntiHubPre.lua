@@ -8951,6 +8951,11 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 						workspace.Remote.ItemHandler:InvokeServer(Pick)
 						task.wait(0.05)
 					until LC.Parent == nil or LocalCharacter:FindFirstChild("Riot helmet") or not Config.Active
+				elseif Tool == "Crude Knife" or Tool == "Hammer" then
+					repeat
+						GSRS.Remotes.GiverPressed:FireServer(Pick.Parent)
+						task.wait(0.05)
+					until LC.Parent == nil or LC:FindFirstChild(Target.Name) ~= nil or LocalPlayer.Backpack:FindFirstChild(Target.Name) ~= nil or not Config.Active
 				else
 					repeat
 						workspace.Remote.ItemHandler:InvokeServer(Pick)
