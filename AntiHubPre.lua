@@ -8892,9 +8892,6 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 				Target = workspace.Prison_ITEMS:FindFirstChild(Tool, true)
 				if Target == nil then
 					Target = workspace:FindFirstChild(Tool)
-					if Target then
-						Target = Target:FindFirstChild("ITEMPICKUP")
-					end
 					if Target == nil then
 						Notify("Cannot Find Tool.", 5, "Error")
 						LogDebug("Tool Not Found *".. Tool.. "* | *".. tostring(Target).. "*")
