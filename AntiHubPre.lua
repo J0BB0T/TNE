@@ -8888,8 +8888,18 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 				end
 			end
 			Touch = Target ~= nil
-			if Target == nil then
+			if not Touch then
 				Target = workspace.Prison_ITEMS:FindFirstChild(Tool, true)
+				if Target == nil then
+					Target = workspace:FindFirstChild(Tool)
+					if Target then
+						Target = Target:FindFirstChild("ITEMPICKUP")
+					end
+					if Target == nil then
+						Notify("Cannot Find Tool.", 5, "Error")
+						LogDebug("Tool Not Found *".. Tool.. "* | *".. tostring(Target).. "*")
+					end
+				end
 			end
 		end
 		if Target == nil then return end
