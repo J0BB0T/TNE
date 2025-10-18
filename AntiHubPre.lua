@@ -8894,7 +8894,7 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 		if Tool == "Vending" then
 			for i, v in workspace:GetChildren() do
 				if v.Name == "Model" and v:FindFirstChild("vending machine") then
-					if #v.Items:GetChildren() == nil then continue end
+					if #v:FindFirstChild("vending machine").Items:GetChildren() == nil then continue end
 					Target = v
 					Touch = true
 				end
@@ -8928,6 +8928,8 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 			Target:SetAttribute("Spread", 1000)
 			Target:SetAttribute("AutoFire", true)
 			Target:SetAttribute("Range", 1200)
+			LocalCharacter:FindFirstChildWhichIsA("Humanoid"):UnequipTools()
+			Notify("Modded \"".. Target.Name.. "\"", 3, "Success")
 			return Target
 		--[[
 		elseif Tool == "Remington 870" then
