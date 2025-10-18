@@ -8895,7 +8895,7 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 			for i, v in workspace:GetChildren() do
 				if v.Name == "Model" and v:FindFirstChild("vending machine") then
 					if #v:FindFirstChild("vending machine").Items:GetChildren() == nil then continue end
-					Target = v
+					Target = v:FindFirstChild("vending machine").Items:FindFirstChildWhichIsA("Tool")
 					Touch = true
 				end
 			end
@@ -12205,6 +12205,12 @@ task.spawn(function()
 					v.damagePart:Destroy()
 					task.wait()
 				until v:FindFirstChild("damagePart") == nil
+			end)
+			pcall(function()
+				repeat
+					v.barbwire:Destroy()
+					task.wait()
+				until v:FindFirstChild("barbwire") == nil
 			end)
 		end
 	end
