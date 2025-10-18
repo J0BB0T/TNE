@@ -10441,6 +10441,15 @@ PrisonLife.Criminals.Activated:Connect(function()
 		Notify("You Are Already On This Team.", 3, "Error")
 		return
 	end
+	if LocalPlayer.Team == GSTeams.Guards then
+		if Config.PrisonLife.Cooldown > 0 then
+			Notify("Team Changer Currently On Cooldown.", 3, "Error")
+			return
+		end
+		PLTeam(GSTeams.Neutral)
+		PLTeam(GSTeams.Inmates)
+		PLCooldown()
+	end
 	local CF = LocalCharacter:GetPivot()
 	if LocalPlayer.Team == GSTeams.Neutral then
 		if Config.PrisonLife.Cooldown > 0 then
@@ -10453,9 +10462,10 @@ PrisonLife.Criminals.Activated:Connect(function()
 		PLCooldown()
 	end
 	repeat
-		FireTouch(LocalCharacter.PrimaryPart, workspace["Criminals Spawn"].SpawnLocation, 0.05)
+		LocalCharacter:PivotTo(CFrame.new(275, 60, 2350))
+		LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
 		task.wait(0.1)
-	until LocalPlayer.Team == GSTeams.Criminals
+	until LocalPlayer.Team ~= GSTeams.Inmates
 	task.wait(0.25)
 	LocalCharacter:PivotTo(CF)
 end)
@@ -10478,9 +10488,12 @@ PrisonLife.Refresh.Activated:Connect(function()
 		task.wait(0.25)
 		PLCooldown()
 		repeat
-			FireTouch(LocalCharacter.PrimaryPart, workspace["Criminals Spawn"].SpawnLocation, 0.05)
+			LocalCharacter:PivotTo(CFrame.new(275, 60, 2350))
+			LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
 			task.wait(0.1)
-		until LocalPlayer.Team == GSTeams.Criminals
+		until LocalPlayer.Team ~= GSTeams.Inmates
+		task.wait(0.25)
+		LocalCharacter:PivotTo(CF)
 		return
 	elseif Team == GSTeams.Guards then
 		PLTeam(GSTeams.Inmates)
