@@ -10582,7 +10582,7 @@ PrisonLife.Refresh.Activated:Connect(function()
 			LocalCharacter:PivotTo(CF + Vector3.new(0, 1, 0))
 			LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
 			task.wait(0.1)
-		until math.abs((LocalCharacter:GetPivot().Position - CF.Position).Magnitude) <= 2.5 or not Config.Active
+		until math.abs((LocalCharacter:GetPivot().Position - CF.Position).Magnitude) <= 3.5 or not Config.Active
 	end)
 	task.wait(0.25)
 	LocalCharacter:PivotTo(CF)
@@ -10620,7 +10620,7 @@ PrisonLife.Guards.Activated:Connect(function()
 				LocalCharacter:PivotTo(CF + Vector3.new(0, 1, 0))
 				LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
 				task.wait(0.1)
-			until math.abs((LocalCharacter:GetPivot().Position - CF.Position).Magnitude) <= 2.5 or not Config.Active
+			until math.abs((LocalCharacter:GetPivot().Position - CF.Position).Magnitude) <= 3.5 or not Config.Active
 		end)
 	end
 end)
@@ -10647,7 +10647,7 @@ PrisonLife.Inmates.Activated:Connect(function()
 				LocalCharacter:PivotTo(CF + Vector3.new(0, 1, 0))
 				LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
 				task.wait(0.1)
-			until math.abs((LocalCharacter:GetPivot().Position - CF.Position).Magnitude) <= 2.5 or not Config.Active
+			until math.abs((LocalCharacter:GetPivot().Position - CF.Position).Magnitude) <= 3.5 or not Config.Active
 		end)
 	end)
 	--[[
