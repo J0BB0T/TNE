@@ -8841,7 +8841,19 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 		local Touch = false
 		local CF = LocalCharacter:GetPivot()
 		local LC = LocalCharacter
-		if Tool == "Food" then
+		if Tool == "Vending" then
+			for i, v in workspace:GetChildren() do
+				if v.Name == "Model" and v:FindFirstChild("vending machine") then
+					if #v.Items:GetChildren() == nil then continue end
+					Target = v
+					Touch = true
+				end
+			end
+			if Target == nil then
+				Notify("Vending Food Found.", 3, "Error")
+				return
+			end
+		elseif Tool == "Food" then
 			Target = workspace.Prison_ITEMS:FindFirstChild("Dinner", true) or workspace.Prison_ITEMS:FindFirstChild("Breakfast", true) or workspace.Prison_ITEMS:FindFirstChild("Lunch", true)
 			if Target == nil then
 				if NotifyErrors then
@@ -8851,11 +8863,22 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 			end
 		elseif Tool == "MShotgun" then
 			local New = PLTool("Remington 870")
-			New:SetAttribute("Spread", 100)
+			New:SetAttribute("Spread", 1000)
 			New:SetAttribute("ProjectileCount", 25)
 			New:SetAttribute("FireRate", 0)
 			New.Parent = LocalPlayer.Backpack
 			return New
+		elseif Tool == "MCurrent" then
+			Target = LocalCharacter:FindFirstChildWhichIsA("Tool")
+			if Target == nil then
+				Notify("No Item Equipped.", 3, "Error")
+				return
+			end
+			Target:SetAttribute("FireRate", 0)
+			Target:SetAttribute("Spread", 1000)
+			Target:SetAttribute("AutoFire", true)
+			Target:SetAttribute("Range", 1200)
+			return Target
 		--[[
 		elseif Tool == "Remington 870" then
 			Target = workspace.Prison_ITEMS.giver:GetChildren()
@@ -9751,6 +9774,7 @@ AntiCheat.Clear.WL.Activated:Connect(function()
 end)
 
 AntiCheat.Clear.Logs.Activated:Connect(function()
+	TLogs.AntiCheat = {}
 	AntiCheat.Logs.Log.Text = ""
 	AntiCheat.Logs.CanvasSize = UDim2.new(0, 0, 0, AntiCheat.Logs.Log.TextBounds.Y)
 	AntiCheat.Logs.CanvasPosition = Vector2.new(0, AntiCheat.Logs.CanvasSize.Y.Offset - AntiCheat.Logs.AbsoluteWindowSize.Y)
@@ -10462,7 +10486,7 @@ PrisonLife.Criminals.Activated:Connect(function()
 		PLCooldown()
 	end
 	repeat
-		LocalCharacter:PivotTo(CFrame.new(275, 60, 2350))
+		LocalCharacter:PivotTo(CFrame.new(-950, 95, 1980))
 		LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
 		task.wait(0.1)
 	until LocalPlayer.Team ~= GSTeams.Inmates
@@ -10488,7 +10512,7 @@ PrisonLife.Refresh.Activated:Connect(function()
 		task.wait(0.25)
 		PLCooldown()
 		repeat
-			LocalCharacter:PivotTo(CFrame.new(275, 60, 2350))
+			LocalCharacter:PivotTo(CFrame.new(-950, 95, 1980))
 			LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
 			task.wait(0.1)
 		until LocalPlayer.Team ~= GSTeams.Inmates
@@ -10628,11 +10652,13 @@ PrisonLife.Neutral.Activated:Connect(function()
 	PLCooldown()
 end)
 
-PrisonLife.Teleports.Crimbase.Activated:Connect(function()
-	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter:MoveTo(Vector3.new(-945, 95, 2065))
-end)
+PrisonLife.
+
+	PrisonLife.Teleports.Crimbase.Activated:Connect(function()
+		LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+		LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+		LocalCharacter:MoveTo(Vector3.new(-945, 95, 2065))
+	end)
 PrisonLife.Teleports.Yard.Activated:Connect(function()
 	LocalCharacter.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
 	LocalCharacter.HumanoidRootPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
