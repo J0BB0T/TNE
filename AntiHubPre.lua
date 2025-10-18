@@ -8900,7 +8900,9 @@ if Supported[table.find(PlaceIDs, PlaceId)] == "PrisonLife" then
 				end
 			end
 			if Target == nil then
-				Notify("Vending Food Found.", 3, "Error")
+				if NotifyErrors then
+					Notify("Vending Food Found.", 3, "Error")
+				end
 				return
 			end
 		elseif Tool == "Food" then
