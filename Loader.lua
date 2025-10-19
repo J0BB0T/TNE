@@ -310,7 +310,7 @@ end)
 
 game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
 	if proc then return end
-	if inp.KeyCode == Enum.KeyCode.RightAlt then
+	if inp.KeyCode == Enum.KeyCode.RightAlt or inp.KeyCode == Enum.KeyCode.RightMeta or inp.KeyCode == Enum.KeyCode.RightSuper then
 		if Open then
 			game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 			Open = false
