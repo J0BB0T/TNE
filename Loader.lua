@@ -286,7 +286,7 @@ end
 
 getgenv().AHLoader = true
 
-local Versions = game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/VersionList.json")
+local Versions = game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Assets/VersionList.json")
 local Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/RealNotify.lua"))()("rbxassetid://110362083969529")
 Versions = game:GetService("HttpService"):JSONDecode(Versions)
 pcall(function()
