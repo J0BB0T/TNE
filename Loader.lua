@@ -272,6 +272,8 @@ if not game:IsLoaded() then
 	repeat task.wait() until game:IsLoaded()
 end
 
+local Mobile = not game:GetService("UserInputService").KeyboardEnabled
+
 if not getgenv then
 	function getgenv()
 		return _G.AHGGV
@@ -281,9 +283,12 @@ end
 if getgenv().AHLoader then
 	warn("AntiHub Loader Already Loaded.")
 	Loader:Destroy()
+	getgenv().AHLUI.Size = UDim2.new(0.5, 0, 0.05, 0)
+	getgenv().AHLUI.Position = UDim2.new(0.5, 0, 0.3, 0)
 	return
 end
 
+getgenv().AHLUI = Loader
 getgenv().AHLoader = true
 
 local Versions = game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Assets/VersionList.json")
@@ -373,4 +378,8 @@ Loader.Container.Debug.Activated:Connect(function()
 		Loader.Container.Debug.Text = "Debug Disabled"
 	end
 end)
-Notify("RightAlt To Open.", 5, "Loaded")
+if Mobile then
+	Notify("Re-execute To Open.", 5, "Loaded")
+else
+	Notify("RightAlt To Open.", 5, "Loaded")
+end
