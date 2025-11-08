@@ -15858,17 +15858,6 @@ Washiez.CRank.FocusLost:Connect(function(EP)
 		Washiez.CRank.Text = ""
 	end
 end)
-if CurrentGame == "Washiez" then
-	table.insert(RBXConnections, LocalPlayer.GroupInfo.Rank:GetPropertyChangedSignal("Value"):Connect(function()
-		Washiez.Rank.Text = "Current Rank: ".. tostring(LocalPlayer.GroupInfo.Rank.Value)
-	end))
-	Washiez.Rank.Text = "Current Rank: ".. tostring(LocalPlayer.GroupInfo.Rank.Value)
-elseif CurrentGame == "WashiezOGTC" then
-	table.insert(RBXConnections, LocalPlayer.GroupInfo.Rank:GetPropertyChangedSignal("Value"):Connect(function()
-		Washiez.Rank.Text = "Current Rank: ".. tostring(LocalPlayer.GroupInfo.Rank.Value)
-	end))
-	WashiezOGTC.Rank.Text = "Current Rank: ".. tostring(LocalPlayer.GroupInfo.Rank.Value)
-end
 
 Washiez.MFuel.Activated:Connect(function()
 	GSRS.GasStation.Refuel:FireServer(100, "Regular")
