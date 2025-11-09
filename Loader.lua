@@ -285,6 +285,7 @@ if getgenv().AHLoader then
 	Loader:Destroy()
 	getgenv().AHLUI.Size = UDim2.new(0.5, 0, 0.05, 0)
 	getgenv().AHLUI.Position = UDim2.new(0.5, 0, 0.3, 0)
+	getgenv().AHLUI.Visible = true
 	return
 end
 
