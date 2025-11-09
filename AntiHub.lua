@@ -1188,6 +1188,7 @@ local Converted = {
 	["_UICorner352"] = Instance.new("UICorner");
 	["_Frame3"] = Instance.new("Frame");
 	["_Info4"] = Instance.new("TextLabel");
+	["_Warning"] = Instance.new("TextButton");
 	["_Background"] = Instance.new("ImageLabel");
 	["_UICorner353"] = Instance.new("UICorner");
 	["_UICorner354"] = Instance.new("UICorner");
@@ -9250,6 +9251,7 @@ Converted["_PlayerCount"].Parent = Converted["_Misc"]
 Converted["_UICorner298"].CornerRadius = UDim.new(0.25, 0)
 Converted["_UICorner298"].Parent = Converted["_PlayerCount"]
 
+Converted["_MM21"].GroupTransparency = 1
 Converted["_MM21"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_MM21"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_MM21"].BackgroundTransparency = 1
@@ -9257,6 +9259,7 @@ Converted["_MM21"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_MM21"].BorderSizePixel = 0
 Converted["_MM21"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
 Converted["_MM21"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_MM21"].Visible = false
 Converted["_MM21"].Name = "MM2"
 Converted["_MM21"].Parent = Converted["_Menus"]
 
@@ -11268,6 +11271,24 @@ Converted["_Info4"].ZIndex = 0
 Converted["_Info4"].Name = "Info"
 Converted["_Info4"].Parent = Converted["_Help"]
 
+Converted["_Warning"].Font = Enum.Font.Sarpanch
+Converted["_Warning"].Text = "FileSystem Error Warning"
+Converted["_Warning"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Warning"].TextScaled = true
+Converted["_Warning"].TextSize = 14
+Converted["_Warning"].TextWrapped = true
+Converted["_Warning"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Warning"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Warning"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Warning"].BorderSizePixel = 0
+Converted["_Warning"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Warning"].Selectable = false
+Converted["_Warning"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Warning"].Visible = false
+Converted["_Warning"].ZIndex = 10
+Converted["_Warning"].Name = "Warning"
+Converted["_Warning"].Parent = Converted["_Container1"]
+
 Converted["_Background"].ImageTransparency = 0.25
 Converted["_Background"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Background"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -12443,6 +12464,23 @@ end
 AHContainer.Settings.Unload.Activated:Once(Unload)
 
 Keybind.Visible = false
+AHContainer.Warning.Visible = false
+
+task.spawn(function()
+	AHContainer.Warning.Text = "Warning\nFileSystem Had An Error. Some Features May Be Limited.\nClick To Continue."
+	if type(readfile) ~= "function" then
+		AHContainer.Warning.Visible = true
+	end
+	if type(writefile) ~= "function" then
+		AHContainer.Warning.Visible = true
+	end
+	if type(getcustomasset) ~= "function" then
+		AHContainer.Warning.Visible = true
+	end
+end)
+AHContainer.Warning.Activated:Connect(function()
+	AHContainer.Warning:Destroy()
+end)
 
 table.insert(RBXConnections, LocalPlayer.CharacterAdded:Connect(function(mod)
 	pcall(function()
@@ -12596,10 +12634,12 @@ local function FireTouch(Part, Touch, Time, Toggle, Log)
 			pcall(firetouchinterest, Part, Touch, Toggle)
 		else
 			if Part == nil or Touch == nil then return end
+			if Part.Parent == nil or Touch.Parent == nil then return end
 			pcall(firetouchinterest, Part, Touch, 1)
 			pcall(firetouchinterest, Part, Touch, 0)
 			task.wait(Time)
 			if Part == nil or Touch == nil then return end
+			if Part.Parent == nil or Touch.Parent == nil then return end
 			pcall(firetouchinterest, Part, Touch, 1)
 		end
 	else
