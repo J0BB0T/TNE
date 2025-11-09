@@ -12477,6 +12477,18 @@ task.spawn(function()
 	if type(getcustomasset) ~= "function" then
 		AHContainer.Warning.Visible = true
 	end
+	local Test = pcall(function()
+		writefile("Test.txt", "true")
+	end)
+	if not Test then
+		AHContainer.Warning.Visible = true
+	end
+	Test = pcall(function()
+		readfile("Test.txt")
+	end)
+	if not Test then
+		AHContainer.Warning.Visible = true
+	end
 end)
 AHContainer.Warning.Activated:Connect(function()
 	AHContainer.Warning:Destroy()
