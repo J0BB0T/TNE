@@ -36,6 +36,7 @@ local Converted = {
 
 Converted["_AHLoader"].IgnoreGuiInset = true
 Converted["_AHLoader"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+Converted["_AHLoader"].Enabled = false
 Converted["_AHLoader"].ResetOnSpawn = false
 Converted["_AHLoader"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_AHLoader"].Name = "AHLoader"
@@ -106,6 +107,7 @@ Converted["_LC"].TextSize = 14
 Converted["_LC"].TextWrapped = true
 Converted["_LC"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_LC"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_LC"].BackgroundTransparency = 0.5
 Converted["_LC"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_LC"].BorderSizePixel = 0
 Converted["_LC"].Position = UDim2.new(0.5, 0, 0.75, 0)
@@ -124,6 +126,7 @@ Converted["_Main"].TextSize = 14
 Converted["_Main"].TextWrapped = true
 Converted["_Main"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Main"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Main"].BackgroundTransparency = 0.5
 Converted["_Main"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Main"].BorderSizePixel = 0
 Converted["_Main"].Position = UDim2.new(0.300000012, 0, 0.349999994, 0)
@@ -142,6 +145,7 @@ Converted["_PreRelease"].TextSize = 14
 Converted["_PreRelease"].TextWrapped = true
 Converted["_PreRelease"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_PreRelease"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_PreRelease"].BackgroundTransparency = 0.5
 Converted["_PreRelease"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_PreRelease"].BorderSizePixel = 0
 Converted["_PreRelease"].Position = UDim2.new(0.699999988, 0, 0.349999994, 0)
@@ -202,6 +206,7 @@ Converted["_Debug"].TextSize = 14
 Converted["_Debug"].TextWrapped = true
 Converted["_Debug"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Debug"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Debug"].BackgroundTransparency = 0.5
 Converted["_Debug"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Debug"].BorderSizePixel = 0
 Converted["_Debug"].Position = UDim2.new(0.5, 0, 0.625, 0)
@@ -272,7 +277,7 @@ if not game:IsLoaded() then
 	repeat task.wait() until game:IsLoaded()
 end
 
-local Mobile = not game:GetService("UserInputService").KeyboardEnabled
+local Mobile = game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").MouseEnabled
 
 if not getgenv then
 	function getgenv()
@@ -303,6 +308,7 @@ local Debug = false
 local Open = false
 Loader.Visible = false
 Loader.Size = UDim2.new(0, 0, 0, 0)
+Loader.Parent.Enabled = true
 
 Loader.Container.MVersion.Text = Versions.Main
 Loader.Container.PRVersion.Text = Versions.PreRelease
@@ -380,7 +386,9 @@ Loader.Container.Debug.Activated:Connect(function()
 	end
 end)
 if Mobile then
-	Notify("Re-execute To Open.", 5, "Loaded")
+	Notify("Re-execute To Open If Closed.", 5, "Loaded")
+	Loader.Visible = true
+	Loader.Size = UDim2.new(0.5, 0, 0.05, 0)
 else
 	Notify("RightAlt To Open.", 5, "Loaded")
 end
