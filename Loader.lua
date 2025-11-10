@@ -22,13 +22,18 @@ local Converted = {
 	["_UICorner6"] = Instance.new("UICorner");
 	["_Debug"] = Instance.new("TextButton");
 	["_UICorner7"] = Instance.new("UICorner");
+	["_Newest"] = Instance.new("Folder");
+	["_Main1"] = Instance.new("TextLabel");
 	["_UICorner8"] = Instance.new("UICorner");
-	["_Buttons"] = Instance.new("Frame");
+	["_PreRelease1"] = Instance.new("TextLabel");
 	["_UICorner9"] = Instance.new("UICorner");
-	["_Title"] = Instance.new("TextLabel");
 	["_UICorner10"] = Instance.new("UICorner");
-	["_Close"] = Instance.new("TextButton");
+	["_Buttons"] = Instance.new("Frame");
 	["_UICorner11"] = Instance.new("UICorner");
+	["_Title"] = Instance.new("TextLabel");
+	["_UICorner12"] = Instance.new("UICorner");
+	["_Close"] = Instance.new("TextButton");
+	["_UICorner13"] = Instance.new("UICorner");
 	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
 }
 
@@ -36,7 +41,6 @@ local Converted = {
 
 Converted["_AHLoader"].IgnoreGuiInset = true
 Converted["_AHLoader"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
-Converted["_AHLoader"].Enabled = false
 Converted["_AHLoader"].ResetOnSpawn = false
 Converted["_AHLoader"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_AHLoader"].Name = "AHLoader"
@@ -217,8 +221,55 @@ Converted["_Debug"].Parent = Converted["_Container"]
 Converted["_UICorner7"].CornerRadius = UDim.new(0.150000006, 0)
 Converted["_UICorner7"].Parent = Converted["_Debug"]
 
-Converted["_UICorner8"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner8"].Parent = Converted["_TitleBar"]
+Converted["_Newest"].Name = "Newest"
+Converted["_Newest"].Parent = Converted["_Container"]
+
+Converted["_Main1"].Font = Enum.Font.TitilliumWeb
+Converted["_Main1"].Text = "Newest Version"
+Converted["_Main1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Main1"].TextScaled = true
+Converted["_Main1"].TextSize = 14
+Converted["_Main1"].TextWrapped = true
+Converted["_Main1"].Active = true
+Converted["_Main1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Main1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 80.00000283122063, 40.00000141561031)
+Converted["_Main1"].BackgroundTransparency = 0.5
+Converted["_Main1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Main1"].BorderSizePixel = 0
+Converted["_Main1"].Position = UDim2.new(0.300000012, 0, 0.200000003, 0)
+Converted["_Main1"].Selectable = true
+Converted["_Main1"].Size = UDim2.new(0.25, 0, 0.075000003, 0)
+Converted["_Main1"].Visible = false
+Converted["_Main1"].Name = "Main"
+Converted["_Main1"].Parent = Converted["_Newest"]
+
+Converted["_UICorner8"].CornerRadius = UDim.new(0.150000006, 0)
+Converted["_UICorner8"].Parent = Converted["_Main1"]
+
+Converted["_PreRelease1"].Font = Enum.Font.TitilliumWeb
+Converted["_PreRelease1"].Text = "Newest Version"
+Converted["_PreRelease1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_PreRelease1"].TextScaled = true
+Converted["_PreRelease1"].TextSize = 14
+Converted["_PreRelease1"].TextWrapped = true
+Converted["_PreRelease1"].Active = true
+Converted["_PreRelease1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_PreRelease1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 80.00000283122063, 40.00000141561031)
+Converted["_PreRelease1"].BackgroundTransparency = 0.5
+Converted["_PreRelease1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_PreRelease1"].BorderSizePixel = 0
+Converted["_PreRelease1"].Position = UDim2.new(0.699999988, 0, 0.200000003, 0)
+Converted["_PreRelease1"].Selectable = true
+Converted["_PreRelease1"].Size = UDim2.new(0.25, 0, 0.075000003, 0)
+Converted["_PreRelease1"].Visible = false
+Converted["_PreRelease1"].Name = "PreRelease"
+Converted["_PreRelease1"].Parent = Converted["_Newest"]
+
+Converted["_UICorner9"].CornerRadius = UDim.new(0.150000006, 0)
+Converted["_UICorner9"].Parent = Converted["_PreRelease1"]
+
+Converted["_UICorner10"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner10"].Parent = Converted["_TitleBar"]
 
 Converted["_Buttons"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Buttons"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
@@ -230,8 +281,8 @@ Converted["_Buttons"].ZIndex = 2
 Converted["_Buttons"].Name = "Buttons"
 Converted["_Buttons"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner9"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner9"].Parent = Converted["_Buttons"]
+Converted["_UICorner11"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner11"].Parent = Converted["_Buttons"]
 
 Converted["_Title"].Font = Enum.Font.Sarpanch
 Converted["_Title"].Text = "AntiHub Loader"
@@ -248,8 +299,8 @@ Converted["_Title"].Size = UDim2.new(0.300000012, 0, 0.800000012, 0)
 Converted["_Title"].Name = "Title"
 Converted["_Title"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner10"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner10"].Parent = Converted["_Title"]
+Converted["_UICorner12"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner12"].Parent = Converted["_Title"]
 
 Converted["_Close"].Font = Enum.Font.Nunito
 Converted["_Close"].Text = "X"
@@ -266,8 +317,8 @@ Converted["_Close"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
 Converted["_Close"].Name = "Close"
 Converted["_Close"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner11"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner11"].Parent = Converted["_Close"]
+Converted["_UICorner13"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner13"].Parent = Converted["_Close"]
 
 Converted["_UIAspectRatioConstraint"].AspectRatio = 0.9862900972366333
 Converted["_UIAspectRatioConstraint"].Parent = Converted["_Close"]
@@ -298,8 +349,10 @@ getgenv().AHLUI = Loader
 getgenv().AHLoader = true
 
 local Versions = game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Assets/VersionList.json")
-local Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/RealNotify.lua"))()("rbxassetid://110362083969529")
 Versions = game:GetService("HttpService"):JSONDecode(Versions)
+local Newest = Versions.NewestScript
+Versions = Versions.ScriptInfo
+local Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/RealNotify.lua"))()("rbxassetid://110362083969529")
 pcall(function()
 	Loader.Container.Background.Image = "rbxassetid://116157108386991"
 	Loader.Parent.Parent = gethui()
@@ -385,6 +438,11 @@ Loader.Container.Debug.Activated:Connect(function()
 		Loader.Container.Debug.Text = "Debug Disabled"
 	end
 end)
+
+pcall(function()
+	Loader.Container.Newest[Newest].Visible = true
+end)
+
 if Mobile then
 	Notify("Re-execute To Open If Closed.", 5, "Loaded")
 	Loader.Visible = true
