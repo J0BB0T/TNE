@@ -6,11 +6,11 @@ https://scriptblox.com/script/Universal-Script-AntiHub-60123
 
 Loader:
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Loader.lua")()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Loader.lua"))()
 ```
 Main:
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHub.lua")()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHub.lua"))()
 ```
 PreRelease:
 ```lua
