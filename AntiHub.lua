@@ -14234,7 +14234,7 @@ local function LoadAK(Load)
 	pcall(function()
 		LogDebug("Starting AntiKick")
 		if Load then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiKick.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AHAntiKick.lua"))()
 		end
 		LogDebug("Ended AntiKick - ".. getgenv().AHAKE)
 		getgenv().AHCL(Config.ChatLogs)
