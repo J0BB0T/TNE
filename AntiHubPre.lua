@@ -9684,7 +9684,7 @@ task.spawn(function()
 	getgenv().AHAKE = ""
 	pcall(function()
 		LogDebug("Starting AntiKick")
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiKick.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AHAntiKick.lua"))()
 		LogDebug("Ended AntiKick - ".. getgenv().AHAKE)
 		getgenv().AHCL(Config.ChatLogs)
 	end)
