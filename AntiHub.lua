@@ -11930,8 +11930,8 @@ local SCallSim = AHContainer.Menus.SCCSimulator
 local AntiKick = false
 local Unread = 0
 local TLogs = {["ChatLogs"] = {}, ["JoinLogs"] = {}, ["Debug"] = {}, ["AntiCheat"] = {}, ["Commands"] = {}}
-local PlaceIDs = {155615604, 6764533218,  6868593153, 13824270489, 6884042552, 84881892786857, 11667312371, 142823291, 636649648, 335132309}
-local Supported = {"PrisonLife", "Washiez", "WashiezTC", "WashiezOGTC", "WashiezRank",	 "OilUp", "SCCSimulator", "MM2", "MM2", "MM2"}
+local PlaceIDs = {155615604, 135564683255158, 6764533218,  6868593153, 13824270489, 6884042552, 84881892786857, 11667312371, 142823291, 636649648, 335132309}
+local Supported = {"PrisonLife", "PrisonLife", "Washiez", "WashiezTC", "WashiezOGTC", "WashiezRank",	 "OilUp", "SCCSimulator", "MM2", "MM2", "MM2"}
 local CurrentGame = Supported[table.find(PlaceIDs, PlaceId)] or ""
 local function Say()
 	warn("AntiHub> This Exploit Is Not Supported | Say")
