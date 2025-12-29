@@ -11321,7 +11321,7 @@ Converted["_UICorner355"].CornerRadius = UDim.new(0.0149999997, 0)
 Converted["_UICorner355"].Parent = Converted["_Buttons"]
 
 Converted["_Title1"].Font = Enum.Font.Sarpanch
-Converted["_Title1"].Text = "🎄AntiHub"
+Converted["_Title1"].Text = "AntiHub"
 Converted["_Title1"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Title1"].TextScaled = true
 Converted["_Title1"].TextSize = 14
