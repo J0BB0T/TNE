@@ -15942,7 +15942,9 @@ local function FireTouch(Part, Touch, Time, Toggle, Log)
 	if Log == nil then
 		Log = true
 	end
-	LogDebug("FireTouch *game.".. Part:GetFullName().. "* | *game.".. Touch:GetFullName().. "* | *".. tostring(Time).. "* | *".. tostring(Toggle).. "*", Log)
+	pcall(function()
+		LogDebug("FireTouch *game.".. Part:GetFullName().. "* | *game.".. Touch:GetFullName().. "* | *".. tostring(Time).. "* | *".. tostring(Toggle).. "*", Log)
+	end)
 	if firetouchinterest then
 		if Time == nil then
 			pcall(firetouchinterest, Part, Touch, Toggle)
