@@ -1,1 +1,1 @@
-{"Plugin":["iy","ah","lua","luau"],"Image":["png","jpeg","gif","webp","svg","psd"],"Audio":["mp3","wav","midi","ogg"],"Text":["","txt","rtf","doc","docx","json","py","js","log","cfg"],"Video":["mov","mp4","webm","mkv","avi"]}
+{"Plugin":["iy","ah","lua","luau"],"Image":["png","jpeg","gif","webp","svg","psd"],"Audio":["mp3","wav","midi","ogg"],"Table":["json","cfg","log"],"Text":["","txt","rtf","doc","docx","py","js"],"Video":["mov","mp4","webm","mkv","avi"]}
