@@ -1,0 +1,165 @@
+-- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
+
+-- Instances:
+
+local Converted = {
+	["_Example"] = Instance.new("CanvasGroup");
+	["_Test"] = Instance.new("TextButton");
+	["_UICorner"] = Instance.new("UICorner");
+	["_Bindable"] = Instance.new("BoolValue");
+	["_SubMenu"] = Instance.new("CanvasGroup");
+	["_Close"] = Instance.new("TextButton");
+	["_Bindable1"] = Instance.new("BoolValue");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_Input"] = Instance.new("TextBox");
+	["_UICorner2"] = Instance.new("UICorner");
+	["_Open"] = Instance.new("TextButton");
+	["_UICorner3"] = Instance.new("UICorner");
+	["_Bindable2"] = Instance.new("BoolValue");
+}
+
+-- Properties:
+
+Converted["_Example"].GroupTransparency = 1
+Converted["_Example"].Active = true
+Converted["_Example"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Example"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Example"].BackgroundTransparency = 1
+Converted["_Example"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Example"].BorderSizePixel = 0
+Converted["_Example"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
+Converted["_Example"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
+Converted["_Example"].Visible = false
+Converted["_Example"].Name = "Example"
+Converted["_Example"].Parent = nil
+
+Converted["_Test"].Font = Enum.Font.TitilliumWeb
+Converted["_Test"].Text = "Notify Player Name"
+Converted["_Test"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Test"].TextScaled = true
+Converted["_Test"].TextSize = 14
+Converted["_Test"].TextWrapped = true
+Converted["_Test"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Test"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Test"].BackgroundTransparency = 0.25
+Converted["_Test"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Test"].BorderSizePixel = 0
+Converted["_Test"].Position = UDim2.new(0.5, 0, 0.824999988, 0)
+Converted["_Test"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_Test"].Name = "Test"
+Converted["_Test"].Parent = Converted["_Example"]
+
+Converted["_UICorner"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner"].Parent = Converted["_Test"]
+
+Converted["_Bindable"].Value = true
+Converted["_Bindable"].Name = "Bindable"
+Converted["_Bindable"].Parent = Converted["_Test"]
+
+Converted["_SubMenu"].GroupTransparency = 1
+Converted["_SubMenu"].Active = true
+Converted["_SubMenu"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_SubMenu"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
+Converted["_SubMenu"].BackgroundTransparency = 0.25
+Converted["_SubMenu"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SubMenu"].BorderSizePixel = 0
+Converted["_SubMenu"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_SubMenu"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_SubMenu"].Visible = false
+Converted["_SubMenu"].ZIndex = 2
+Converted["_SubMenu"].Name = "SubMenu"
+Converted["_SubMenu"].Parent = Converted["_Example"]
+
+Converted["_Close"].Font = Enum.Font.Nunito
+Converted["_Close"].Text = "X"
+Converted["_Close"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close"].TextScaled = true
+Converted["_Close"].TextSize = 14
+Converted["_Close"].TextWrapped = true
+Converted["_Close"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Close"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Close"].BackgroundTransparency = 0.25
+Converted["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close"].BorderSizePixel = 0
+Converted["_Close"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
+Converted["_Close"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+Converted["_Close"].Name = "Close"
+Converted["_Close"].Parent = Converted["_SubMenu"]
+
+Converted["_Bindable1"].Value = true
+Converted["_Bindable1"].Name = "Bindable"
+Converted["_Bindable1"].Parent = Converted["_Close"]
+
+Converted["_UICorner1"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner1"].Parent = Converted["_Close"]
+
+Converted["_Input"].Font = Enum.Font.TitilliumWeb
+Converted["_Input"].PlaceholderText = "Player Name"
+Converted["_Input"].Text = ""
+Converted["_Input"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input"].TextScaled = true
+Converted["_Input"].TextSize = 14
+Converted["_Input"].TextWrapped = true
+Converted["_Input"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input"].BackgroundTransparency = 0.5
+Converted["_Input"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input"].BorderSizePixel = 0
+Converted["_Input"].Position = UDim2.new(0.5, 0, 0.25, 0)
+Converted["_Input"].Size = UDim2.new(0.75, 0, 0.25, 0)
+Converted["_Input"].Name = "Input"
+Converted["_Input"].Parent = Converted["_SubMenu"]
+
+Converted["_UICorner2"].CornerRadius = UDim.new(0.0250000004, 0)
+Converted["_UICorner2"].Parent = Converted["_Input"]
+
+Converted["_Open"].Font = Enum.Font.TitilliumWeb
+Converted["_Open"].Text = "Open SubMenu"
+Converted["_Open"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Open"].TextScaled = true
+Converted["_Open"].TextSize = 14
+Converted["_Open"].TextWrapped = true
+Converted["_Open"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Open"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Open"].BackgroundTransparency = 0.25
+Converted["_Open"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Open"].BorderSizePixel = 0
+Converted["_Open"].Position = UDim2.new(0.5, 0, 0.150000006, 0)
+Converted["_Open"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_Open"].Name = "Open"
+Converted["_Open"].Parent = Converted["_Example"]
+
+Converted["_UICorner3"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner3"].Parent = Converted["_Open"]
+
+Converted["_Bindable2"].Value = true
+Converted["_Bindable2"].Name = "Bindable"
+Converted["_Bindable2"].Parent = Converted["_Open"]
+
+if not getgenv then
+	if _G.AHGGV == nil then
+		_G.AHGGV = {}
+	end
+	function getgenv()
+		return _G.AHGGV
+	end
+end
+
+local AHLib = getgenv().AHLib
+
+local GSPlayers = game:GetService("Players")
+local Container = Converted["_Example"]
+
+Container.Visible = false
+Container.GroupTransparency = 1
+table.insert(AHLib.Plugins, {["Name"] = "Example Plugin", ["Description"] = "An Example Plugin To Use.", ["Menu"] = Container, ["Function"] = function()
+	AHLib.AddTab("Example", Container, false, "Example Menu.")
+	AHLib.RegisterSubMenu(Container.Open, Container.SubMenu, Container)
+	AHLib.AddUnshortener(Container.SubMenu.Input)
+	Container.Test.Activated:Connect(function()
+		AHLib.LogDebug(AHLib.GetCurrentDate().. " ".. tostring(AHLib.InternalVars.CurrentGame).. " - Plugin")
+		AHLib.Notify(tostring(AHLib.GetPlayer(Container.SubMenu.Input.Text) or AHLib.GetUnshortened("Random")), 5, AHLib.GetCurrentTime())
+		print("Clicked And Finished. - Example Plugin")
+	end)
+end})
