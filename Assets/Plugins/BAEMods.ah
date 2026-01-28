@@ -277,11 +277,10 @@ Converted["_Bindable7"].Name = "Bindable"
 Converted["_Bindable7"].Parent = Converted["_List"]
 
 Converted["_Failed"].Font = Enum.Font.TitilliumWeb
-Converted["_Failed"].Text = "Basic Admin Essentials Not Found."
-Converted["_Failed"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Failed"].Text = "Error: Basic Admin Essentials RemoteEvent Not Found."
+Converted["_Failed"].TextColor3 = Color3.fromRGB(255, 128, 128)
 Converted["_Failed"].TextScaled = true
 Converted["_Failed"].TextSize = 14
-Converted["_Failed"].TextTransparency = 0.5
 Converted["_Failed"].TextWrapped = true
 Converted["_Failed"].TextXAlignment = Enum.TextXAlignment.Left
 Converted["_Failed"].TextYAlignment = Enum.TextYAlignment.Top
