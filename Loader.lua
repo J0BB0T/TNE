@@ -41,9 +41,11 @@ local Converted = {
 	["_UICorner15"] = Instance.new("UICorner");
 	["_Legacy"] = Instance.new("TextButton");
 	["_UICorner16"] = Instance.new("UICorner");
+	["_StartupMessage"] = Instance.new("TextLabel");
+	["_UICorner17"] = Instance.new("UICorner");
 	["_History"] = Instance.new("CanvasGroup");
 	["_Background1"] = Instance.new("ImageLabel");
-	["_UICorner17"] = Instance.new("UICorner");
+	["_UICorner18"] = Instance.new("UICorner");
 	["_Scroll"] = Instance.new("ScrollingFrame");
 	["_UIListLayout"] = Instance.new("UIListLayout");
 	["_Template"] = Instance.new("Frame");
@@ -52,7 +54,7 @@ local Converted = {
 	["_Info"] = Instance.new("TextLabel");
 	["_Get"] = Instance.new("StringValue");
 	["_Return"] = Instance.new("TextButton");
-	["_UICorner18"] = Instance.new("UICorner");
+	["_UICorner19"] = Instance.new("UICorner");
 	["_Cover"] = Instance.new("Frame");
 	["_Loading"] = Instance.new("TextLabel");
 	["_Drag"] = Instance.new("UIDragDetector");
@@ -65,7 +67,7 @@ Converted["_AHLoader"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_AHLoader"].ResetOnSpawn = false
 Converted["_AHLoader"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_AHLoader"].Name = "AHLoader"
-Converted["_AHLoader"].Parent = game:GetService("CoreGui")
+Converted["_AHLoader"].Parent = nil
 
 Converted["_TitleBar"].Active = true
 Converted["_TitleBar"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -226,8 +228,8 @@ Converted["_LC"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.0000014
 Converted["_LC"].BackgroundTransparency = 0.5
 Converted["_LC"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_LC"].BorderSizePixel = 0
-Converted["_LC"].Position = UDim2.new(0.5, 0, 0.75, 0)
-Converted["_LC"].Size = UDim2.new(0.5, 0, 0.125, 0)
+Converted["_LC"].Position = UDim2.new(0.5, 0, 0.774999976, 0)
+Converted["_LC"].Size = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_LC"].Name = "LC"
 Converted["_LC"].Parent = Converted["_Container"]
 
@@ -325,8 +327,8 @@ Converted["_Debug"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.0000
 Converted["_Debug"].BackgroundTransparency = 0.5
 Converted["_Debug"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Debug"].BorderSizePixel = 0
-Converted["_Debug"].Position = UDim2.new(0.5, 0, 0.625, 0)
-Converted["_Debug"].Size = UDim2.new(0.25, 0, 0.075000003, 0)
+Converted["_Debug"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Debug"].Size = UDim2.new(0.174999997, 0, 0.075000003, 0)
 Converted["_Debug"].Name = "Debug"
 Converted["_Debug"].Parent = Converted["_Container"]
 
@@ -399,6 +401,28 @@ Converted["_Legacy"].Parent = Converted["_Container"]
 Converted["_UICorner16"].CornerRadius = UDim.new(0.150000006, 0)
 Converted["_UICorner16"].Parent = Converted["_Legacy"]
 
+Converted["_StartupMessage"].Font = Enum.Font.TitilliumWeb
+Converted["_StartupMessage"].Text = "nil"
+Converted["_StartupMessage"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_StartupMessage"].TextScaled = true
+Converted["_StartupMessage"].TextSize = 14
+Converted["_StartupMessage"].TextWrapped = true
+Converted["_StartupMessage"].Active = true
+Converted["_StartupMessage"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_StartupMessage"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_StartupMessage"].BackgroundTransparency = 0.5
+Converted["_StartupMessage"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_StartupMessage"].BorderSizePixel = 0
+Converted["_StartupMessage"].Position = UDim2.new(0.5, 0, 0.625, 0)
+Converted["_StartupMessage"].Selectable = true
+Converted["_StartupMessage"].Size = UDim2.new(0.375, 0, 0.125, 0)
+Converted["_StartupMessage"].Visible = false
+Converted["_StartupMessage"].Name = "StartupMessage"
+Converted["_StartupMessage"].Parent = Converted["_Container"]
+
+Converted["_UICorner17"].CornerRadius = UDim.new(0.075000003, 0)
+Converted["_UICorner17"].Parent = Converted["_StartupMessage"]
+
 Converted["_History"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_History"].BackgroundColor3 = Color3.fromRGB(49.00000087916851, 51.00000075995922, 56.000000461936)
 Converted["_History"].BackgroundTransparency = 1
@@ -423,8 +447,8 @@ Converted["_Background1"].ZIndex = -1
 Converted["_Background1"].Name = "Background"
 Converted["_Background1"].Parent = Converted["_History"]
 
-Converted["_UICorner17"].CornerRadius = UDim.new(0.0199999996, 0)
-Converted["_UICorner17"].Parent = Converted["_History"]
+Converted["_UICorner18"].CornerRadius = UDim.new(0.0199999996, 0)
+Converted["_UICorner18"].Parent = Converted["_History"]
 
 Converted["_Scroll"].AutomaticCanvasSize = Enum.AutomaticSize.X
 Converted["_Scroll"].CanvasSize = UDim2.new(1, 0, 0, 0)
@@ -524,8 +548,8 @@ Converted["_Return"].Size = UDim2.new(0.25, 0, 0.075000003, 0)
 Converted["_Return"].Name = "Return"
 Converted["_Return"].Parent = Converted["_History"]
 
-Converted["_UICorner18"].CornerRadius = UDim.new(0.150000006, 0)
-Converted["_UICorner18"].Parent = Converted["_Return"]
+Converted["_UICorner19"].CornerRadius = UDim.new(0.150000006, 0)
+Converted["_UICorner19"].Parent = Converted["_Return"]
 
 Converted["_Cover"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Cover"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
@@ -562,9 +586,38 @@ if not game:IsLoaded() then
 	--repeat task.wait() until game:IsLoaded()
 end
 
-local Mobile = game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").MouseEnabled
+local GSPlayers = game:GetService("Players")
+
+task.spawn(function()
+	local Suc = pcall(function()
+		Loader.Parent.Parent = gethui()
+	end)
+	if not Suc then
+		Suc = pcall(function()
+			Loader.Parent.Parent = game:GetService("CoreGui")
+		end)
+		if not Suc then
+			Suc = pcall(function()
+				Loader.Parent.Parent = GSPlayers.LocalPlayer.PlayerGui
+			end)
+		end
+	end
+end)
+
+local GSTween = game:GetService("TweenService")
+local GSUIP = game:GetService("UserInputService")
+local GSHTTP = game:GetService("HttpService")
+local GSGamepad = game:GetService("GamepadService")
+local GSRS = game:GetService("RunService")
+local GSGamepad = game:GetService("GamepadService")
+local GSStarterGui = game:GetService("StarterGui")
+
+local Mobile = GSUIP.TouchEnabled and not GSUIP.MouseEnabled
 
 if not getgenv then
+	if _G.AHGGV == nil then
+		_G.AHGGV = {}
+	end
 	function getgenv()
 		return _G.AHGGV
 	end
@@ -576,7 +629,7 @@ if getgenv().AHLoader then
 	getgenv().AHLUI.Size = UDim2.new(0.5, 0, 0.05, 0)
 	getgenv().AHLUI.Position = UDim2.new(0.5, 0, 0.3, 0)
 	getgenv().AHLUI.Visible = true
-	game:GetService("GamepadService"):EnableGamepadCursor(getgenv().AHLUI)
+	GSGamepad:EnableGamepadCursor(getgenv().AHLUI)
 	return
 end
 
@@ -587,15 +640,20 @@ local RBXConnections = {}
 
 Loader.Cover.Visible = true
 
-local Versions = game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Assets/VersionList.json")
-Versions = game:GetService("HttpService"):JSONDecode(Versions)
+local Versions = {["NewestScript"] = "Error", ["ScriptInfo"] = {["Main"] = "Error", ["PreRelease"] = "Error"}}
+local function Notify(Text, Duration, Title)
+	GSStarterGui:SetCore({["Title"] = Title, ["Text"] = Text, ["Duration"] = Duration})
+end
+pcall(function()
+	Versions = game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Assets/VersionList.json")
+	Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/RealNotify.lua"))()("rbxassetid://110362083969529")
+end)
+Versions = GSHTTP:JSONDecode(Versions)
 local Newest = Versions.NewestScript
 Versions = Versions.ScriptInfo
-local Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/RealNotify.lua"))()("rbxassetid://110362083969529")
 pcall(function()
 	Loader.Container.Background.Image = "rbxassetid://116157108386991"
 	Loader.History.Background.Image = "rbxassetid://116157108386991"
-	Loader.Parent.Parent = gethui()
 end)
 local Debug = false
 local Open = false
@@ -607,9 +665,22 @@ Loader.Parent.Enabled = true
 Loader.Container.MVersion.Text = Versions.Main
 Loader.Container.PRVersion.Text = Versions.PreRelease
 
+local StartupMessage = ""
+
+pcall(function()
+	StartupMessage = game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Assets/StartupMessage.json")
+	StartupMessage = GSHTTP:JSONDecode(StartupMessage).Loader
+	if StartupMessage == "nil" then
+		Loader.Container.StartupMessage.Visible = false
+	else
+		Loader.Container.StartupMessage.Text = StartupMessage
+		Loader.Container.StartupMessage.Visible = true
+	end
+end)
+
 Loader.Buttons.Close.Activated:Connect(function()
-	game:GetService("GamepadService"):DisableGamepadCursor()
-	game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
+	GSGamepad:DisableGamepadCursor()
+	GSTween:Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 	Open = false
 	task.wait(0.25)
 	Loader.Visible = false
@@ -622,28 +693,28 @@ Loader.Buttons.Unload.Activated:Connect(function()
 			end)
 		end
 	end)
-	game:GetService("GamepadService"):DisableGamepadCursor()
+	GSGamepad:DisableGamepadCursor()
 	getgenv().AHLUI = nil
 	getgenv().AHLoader = false
 	Converted["_AHLoader"]:Destroy()
 end)
 
-game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
+GSUIP.InputBegan:Connect(function(inp, proc)
 	if proc then return end
-	if inp.KeyCode == Enum.KeyCode.RightAlt or inp.KeyCode == Enum.KeyCode.RightMeta or inp.KeyCode == Enum.KeyCode.RightSuper or inp.KeyCode == Enum.KeyCode.ButtonY then
+	if inp.KeyCode == Enum.KeyCode.RightAlt or inp.KeyCode == Enum.KeyCode.RightMeta or inp.KeyCode == Enum.KeyCode.RightSuper then
 		if Waiting then return end
 		Waiting = true
 		if Open then
-			game:GetService("GamepadService"):DisableGamepadCursor()
-			game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
+			GSGamepad:DisableGamepadCursor()
+			GSTween:Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 			Open = false
 			task.wait(0.25)
 			Loader.Visible = false
 			Waiting = false
 		else
-			game:GetService("GamepadService"):EnableGamepadCursor(Loader)
+			GSGamepad:EnableGamepadCursor(Loader)
 			Loader.Visible = true
-			game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0.05, 0)}):Play()
+			GSTween:Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0.05, 0)}):Play()
 			Open = true
 			task.wait(0.25)
 			Waiting = false
@@ -652,7 +723,7 @@ game:GetService("UserInputService").InputBegan:Connect(function(inp, proc)
 end)
 
 local A = 0
-table.insert(RBXConnections, game:GetService("RunService").RenderStepped:Connect(function(DT)
+table.insert(RBXConnections, GSRS.RenderStepped:Connect(function(DT)
 	A += DT / 25
 	Loader.Container.Background.Position = UDim2.new(0.5 + (math.cos(A) / 2), 0, 0.5 + (math.sin(A) / 2), 0)
 	Loader.History.Background.Position = Loader.Container.Background.Position
@@ -666,12 +737,12 @@ Loader.Container.Legacy.Activated:Connect(function()
 	Waiting = true
 	Loader.Cover.BackgroundTransparency = 1
 	Loader.Cover.Visible = true
-	game:GetService("TweenService"):Create(Loader.Cover, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundTransparency"] = 0}):Play()
+	GSTween:Create(Loader.Cover, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundTransparency"] = 0}):Play()
 	task.wait(0.25)
 	Loader.History.Visible = true
 	Loader.Container.Visible = false
 	task.wait(0.125)
-	game:GetService("TweenService"):Create(Loader.Cover, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundTransparency"] = 1}):Play()
+	GSTween:Create(Loader.Cover, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundTransparency"] = 1}):Play()
 	task.wait(0.25)
 	Loader.Cover.Visible = false
 	Waiting = false
@@ -681,12 +752,12 @@ Loader.History.Return.Activated:Connect(function()
 	Waiting = true
 	Loader.Cover.BackgroundTransparency = 1
 	Loader.Cover.Visible = true
-	game:GetService("TweenService"):Create(Loader.Cover, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundTransparency"] = 0}):Play()
+	GSTween:Create(Loader.Cover, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundTransparency"] = 0}):Play()
 	task.wait(0.25)
 	Loader.History.Visible = false
 	Loader.Container.Visible = true
 	task.wait(0.125)
-	game:GetService("TweenService"):Create(Loader.Cover, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundTransparency"] = 1}):Play()
+	GSTween:Create(Loader.Cover, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundTransparency"] = 1}):Play()
 	task.wait(0.25)
 	Loader.Cover.Visible = false
 	Waiting = false
@@ -695,8 +766,8 @@ end)
 Loader.Container.Main.Activated:Connect(function()
 	getgenv().AHDebug = Debug
 	task.spawn(function()
-		game:GetService("GamepadService"):DisableGamepadCursor()
-		game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
+		GSGamepad:DisableGamepadCursor()
+		GSTween:Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 		Open = false
 		task.wait(0.25)
 		Loader.Visible = false
@@ -707,8 +778,8 @@ end)
 Loader.Container.PreRelease.Activated:Connect(function()
 	getgenv().AHDebug = Debug
 	task.spawn(function()
-		game:GetService("GamepadService"):DisableGamepadCursor()
-		game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
+		GSGamepad:DisableGamepadCursor()
+		GSTween:Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 		Open = false
 		task.wait(0.25)
 		Loader.Visible = false
@@ -719,8 +790,8 @@ end)
 Loader.Container.LC.Activated:Connect(function()
 	getgenv().AHDebug = Debug
 	task.spawn(function()
-		game:GetService("GamepadService"):DisableGamepadCursor()
-		game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
+		GSGamepad:DisableGamepadCursor()
+		GSTween:Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 		Open = false
 		task.wait(0.25)
 		Loader.Visible = false
@@ -739,7 +810,7 @@ end)
 
 pcall(function()
 	local History = game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Assets/VersionHistory.json")
-	History = game:GetService("HttpService"):JSONDecode(History)
+	History = GSHTTP:JSONDecode(History)
 
 	for i, v in History do
 		pcall(function()
@@ -753,8 +824,8 @@ pcall(function()
 			Clone.Container.Version.Activated:Connect(function()
 				getgenv().AHDebug = Debug
 				task.spawn(function()
-					game:GetService("GamepadService"):DisableGamepadCursor()
-					game:GetService("TweenService"):Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
+					GSGamepad:DisableGamepadCursor()
+					GSTween:Create(Loader, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Size"] = UDim2.new(0.5, 0, 0, 0)}):Play()
 					Open = false
 					task.wait(0.25)
 					Loader.Visible = false
@@ -784,4 +855,4 @@ end
 Loader.Visible = true
 Loader.Size = UDim2.new(0.5, 0, 0.05, 0)
 
-game:GetService("GamepadService"):EnableGamepadCursor(Loader)
+GSGamepad:EnableGamepadCursor(Loader)
