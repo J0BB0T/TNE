@@ -1,0 +1,892 @@
+-- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
+
+-- Instances:
+
+local Converted = {
+	["_LibInspector"] = Instance.new("CanvasGroup");
+	["_Use"] = Instance.new("TextButton");
+	["_UICorner"] = Instance.new("UICorner");
+	["_Bindable"] = Instance.new("BoolValue");
+	["_Inspector"] = Instance.new("CanvasGroup");
+	["_Close"] = Instance.new("TextButton");
+	["_Bindable1"] = Instance.new("BoolValue");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_Types"] = Instance.new("Folder");
+	["_vector"] = Instance.new("Frame");
+	["_Input"] = Instance.new("TextLabel");
+	["_UICorner2"] = Instance.new("UICorner");
+	["_Type"] = Instance.new("TextLabel");
+	["_UICorner3"] = Instance.new("UICorner");
+	["_function"] = Instance.new("Frame");
+	["_Run"] = Instance.new("TextButton");
+	["_UICorner4"] = Instance.new("UICorner");
+	["_Input1"] = Instance.new("TextBox");
+	["_UICorner5"] = Instance.new("UICorner");
+	["_Type1"] = Instance.new("TextLabel");
+	["_UICorner6"] = Instance.new("UICorner");
+	["_string"] = Instance.new("Frame");
+	["_Input2"] = Instance.new("TextLabel");
+	["_UICorner7"] = Instance.new("UICorner");
+	["_Type2"] = Instance.new("TextLabel");
+	["_UICorner8"] = Instance.new("UICorner");
+	["_number"] = Instance.new("Frame");
+	["_Input3"] = Instance.new("TextLabel");
+	["_UICorner9"] = Instance.new("UICorner");
+	["_Type3"] = Instance.new("TextLabel");
+	["_UICorner10"] = Instance.new("UICorner");
+	["_boolean"] = Instance.new("Frame");
+	["_Input4"] = Instance.new("TextLabel");
+	["_UICorner11"] = Instance.new("UICorner");
+	["_Type4"] = Instance.new("TextLabel");
+	["_UICorner12"] = Instance.new("UICorner");
+	["_table"] = Instance.new("Frame");
+	["_Input5"] = Instance.new("TextLabel");
+	["_UICorner13"] = Instance.new("UICorner");
+	["_Type5"] = Instance.new("TextLabel");
+	["_UICorner14"] = Instance.new("UICorner");
+	["_thread"] = Instance.new("Frame");
+	["_Input6"] = Instance.new("TextLabel");
+	["_UICorner15"] = Instance.new("UICorner");
+	["_Type6"] = Instance.new("TextLabel");
+	["_UICorner16"] = Instance.new("UICorner");
+	["_buffer"] = Instance.new("Frame");
+	["_Input7"] = Instance.new("TextLabel");
+	["_UICorner17"] = Instance.new("UICorner");
+	["_Type7"] = Instance.new("TextLabel");
+	["_UICorner18"] = Instance.new("UICorner");
+	["_nil"] = Instance.new("Frame");
+	["_Input8"] = Instance.new("TextLabel");
+	["_UICorner19"] = Instance.new("UICorner");
+	["_Type8"] = Instance.new("TextLabel");
+	["_UICorner20"] = Instance.new("UICorner");
+	["_userdata"] = Instance.new("Frame");
+	["_Input9"] = Instance.new("TextLabel");
+	["_UICorner21"] = Instance.new("UICorner");
+	["_Type9"] = Instance.new("TextLabel");
+	["_UICorner22"] = Instance.new("UICorner");
+	["_Scroll"] = Instance.new("ScrollingFrame");
+	["_List"] = Instance.new("UIListLayout");
+	["_Current"] = Instance.new("TextLabel");
+	["_UICorner23"] = Instance.new("UICorner");
+	["_Template"] = Instance.new("Frame");
+	["_Log"] = Instance.new("TextButton");
+	["_UICorner24"] = Instance.new("UICorner");
+	["_Refresh"] = Instance.new("TextButton");
+	["_UICorner25"] = Instance.new("UICorner");
+}
+
+-- Properties:
+
+Converted["_LibInspector"].Active = true
+Converted["_LibInspector"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_LibInspector"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_LibInspector"].BackgroundTransparency = 1
+Converted["_LibInspector"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_LibInspector"].BorderSizePixel = 0
+Converted["_LibInspector"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
+Converted["_LibInspector"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
+Converted["_LibInspector"].Name = "LibInspector"
+Converted["_LibInspector"].Parent = nil
+
+Converted["_Use"].Font = Enum.Font.TitilliumWeb
+Converted["_Use"].Text = "Inspect"
+Converted["_Use"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Use"].TextScaled = true
+Converted["_Use"].TextSize = 14
+Converted["_Use"].TextWrapped = true
+Converted["_Use"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Use"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Use"].BackgroundTransparency = 0.25
+Converted["_Use"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Use"].BorderSizePixel = 0
+Converted["_Use"].Position = UDim2.new(0.5, 0, 0.925000012, 0)
+Converted["_Use"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_Use"].Name = "Use"
+Converted["_Use"].Parent = Converted["_LibInspector"]
+
+Converted["_UICorner"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner"].Parent = Converted["_Use"]
+
+Converted["_Bindable"].Value = true
+Converted["_Bindable"].Name = "Bindable"
+Converted["_Bindable"].Parent = Converted["_Use"]
+
+Converted["_Inspector"].GroupTransparency = 1
+Converted["_Inspector"].Active = true
+Converted["_Inspector"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Inspector"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
+Converted["_Inspector"].BackgroundTransparency = 0.25
+Converted["_Inspector"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Inspector"].BorderSizePixel = 0
+Converted["_Inspector"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Inspector"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Inspector"].Visible = false
+Converted["_Inspector"].ZIndex = 2
+Converted["_Inspector"].Name = "Inspector"
+Converted["_Inspector"].Parent = Converted["_LibInspector"]
+
+Converted["_Close"].Font = Enum.Font.Nunito
+Converted["_Close"].Text = "X"
+Converted["_Close"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close"].TextScaled = true
+Converted["_Close"].TextSize = 14
+Converted["_Close"].TextWrapped = true
+Converted["_Close"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Close"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Close"].BackgroundTransparency = 0.25
+Converted["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close"].BorderSizePixel = 0
+Converted["_Close"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
+Converted["_Close"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+Converted["_Close"].Name = "Close"
+Converted["_Close"].Parent = Converted["_Inspector"]
+
+Converted["_Bindable1"].Value = true
+Converted["_Bindable1"].Name = "Bindable"
+Converted["_Bindable1"].Parent = Converted["_Close"]
+
+Converted["_UICorner1"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner1"].Parent = Converted["_Close"]
+
+Converted["_Types"].Name = "Types"
+Converted["_Types"].Parent = Converted["_Inspector"]
+
+Converted["_vector"].Active = true
+Converted["_vector"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_vector"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_vector"].BackgroundTransparency = 1
+Converted["_vector"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_vector"].BorderSizePixel = 0
+Converted["_vector"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_vector"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_vector"].Visible = false
+Converted["_vector"].Name = "vector"
+Converted["_vector"].Parent = Converted["_Types"]
+
+Converted["_Input"].Font = Enum.Font.TitilliumWeb
+Converted["_Input"].Text = "Unable To Show Value"
+Converted["_Input"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input"].TextScaled = true
+Converted["_Input"].TextSize = 14
+Converted["_Input"].TextWrapped = true
+Converted["_Input"].Active = true
+Converted["_Input"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input"].BackgroundTransparency = 0.25
+Converted["_Input"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input"].BorderSizePixel = 0
+Converted["_Input"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Input"].Selectable = true
+Converted["_Input"].Size = UDim2.new(0.75, 0, 0.75, 0)
+Converted["_Input"].Name = "Input"
+Converted["_Input"].Parent = Converted["_vector"]
+
+Converted["_UICorner2"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner2"].Parent = Converted["_Input"]
+
+Converted["_Type"].Font = Enum.Font.TitilliumWeb
+Converted["_Type"].Text = "Error"
+Converted["_Type"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Type"].TextScaled = true
+Converted["_Type"].TextSize = 14
+Converted["_Type"].TextWrapped = true
+Converted["_Type"].Active = true
+Converted["_Type"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Type"].BackgroundTransparency = 0.25
+Converted["_Type"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type"].BorderSizePixel = 0
+Converted["_Type"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Type"].Selectable = true
+Converted["_Type"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Type"].Name = "Type"
+Converted["_Type"].Parent = Converted["_vector"]
+
+Converted["_UICorner3"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner3"].Parent = Converted["_Type"]
+
+Converted["_function"].Active = true
+Converted["_function"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_function"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_function"].BackgroundTransparency = 1
+Converted["_function"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_function"].BorderSizePixel = 0
+Converted["_function"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_function"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_function"].Visible = false
+Converted["_function"].Name = "function"
+Converted["_function"].Parent = Converted["_Types"]
+
+Converted["_Run"].Font = Enum.Font.TitilliumWeb
+Converted["_Run"].Text = "Run Function"
+Converted["_Run"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Run"].TextScaled = true
+Converted["_Run"].TextSize = 14
+Converted["_Run"].TextWrapped = true
+Converted["_Run"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Run"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Run"].BackgroundTransparency = 0.25
+Converted["_Run"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Run"].BorderSizePixel = 0
+Converted["_Run"].Position = UDim2.new(0.5, 0, 0.75, 0)
+Converted["_Run"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_Run"].Name = "Run"
+Converted["_Run"].Parent = Converted["_function"]
+
+Converted["_UICorner4"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner4"].Parent = Converted["_Run"]
+
+Converted["_Input1"].Font = Enum.Font.TitilliumWeb
+Converted["_Input1"].PlaceholderText = "Arguments Here (,)"
+Converted["_Input1"].Text = ""
+Converted["_Input1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input1"].TextScaled = true
+Converted["_Input1"].TextSize = 14
+Converted["_Input1"].TextWrapped = true
+Converted["_Input1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input1"].BackgroundTransparency = 0.5
+Converted["_Input1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input1"].BorderSizePixel = 0
+Converted["_Input1"].Position = UDim2.new(0.5, 0, 0.125, 0)
+Converted["_Input1"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Input1"].Name = "Input"
+Converted["_Input1"].Parent = Converted["_function"]
+
+Converted["_UICorner5"].CornerRadius = UDim.new(0.0250000004, 0)
+Converted["_UICorner5"].Parent = Converted["_Input1"]
+
+Converted["_Type1"].Font = Enum.Font.TitilliumWeb
+Converted["_Type1"].Text = "Error"
+Converted["_Type1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Type1"].TextScaled = true
+Converted["_Type1"].TextSize = 14
+Converted["_Type1"].TextWrapped = true
+Converted["_Type1"].Active = true
+Converted["_Type1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Type1"].BackgroundTransparency = 0.25
+Converted["_Type1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type1"].BorderSizePixel = 0
+Converted["_Type1"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Type1"].Selectable = true
+Converted["_Type1"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Type1"].Name = "Type"
+Converted["_Type1"].Parent = Converted["_function"]
+
+Converted["_UICorner6"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner6"].Parent = Converted["_Type1"]
+
+Converted["_string"].Active = true
+Converted["_string"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_string"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_string"].BackgroundTransparency = 1
+Converted["_string"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_string"].BorderSizePixel = 0
+Converted["_string"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_string"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_string"].Visible = false
+Converted["_string"].Name = "string"
+Converted["_string"].Parent = Converted["_Types"]
+
+Converted["_Input2"].Font = Enum.Font.TitilliumWeb
+Converted["_Input2"].Text = "None"
+Converted["_Input2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input2"].TextScaled = true
+Converted["_Input2"].TextSize = 14
+Converted["_Input2"].TextWrapped = true
+Converted["_Input2"].Active = true
+Converted["_Input2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input2"].BackgroundTransparency = 0.25
+Converted["_Input2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input2"].BorderSizePixel = 0
+Converted["_Input2"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Input2"].Selectable = true
+Converted["_Input2"].Size = UDim2.new(0.75, 0, 0.75, 0)
+Converted["_Input2"].Name = "Input"
+Converted["_Input2"].Parent = Converted["_string"]
+
+Converted["_UICorner7"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner7"].Parent = Converted["_Input2"]
+
+Converted["_Type2"].Font = Enum.Font.TitilliumWeb
+Converted["_Type2"].Text = "Error"
+Converted["_Type2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Type2"].TextScaled = true
+Converted["_Type2"].TextSize = 14
+Converted["_Type2"].TextWrapped = true
+Converted["_Type2"].Active = true
+Converted["_Type2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Type2"].BackgroundTransparency = 0.25
+Converted["_Type2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type2"].BorderSizePixel = 0
+Converted["_Type2"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Type2"].Selectable = true
+Converted["_Type2"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Type2"].Name = "Type"
+Converted["_Type2"].Parent = Converted["_string"]
+
+Converted["_UICorner8"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner8"].Parent = Converted["_Type2"]
+
+Converted["_number"].Active = true
+Converted["_number"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_number"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_number"].BackgroundTransparency = 1
+Converted["_number"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_number"].BorderSizePixel = 0
+Converted["_number"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_number"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_number"].Visible = false
+Converted["_number"].Name = "number"
+Converted["_number"].Parent = Converted["_Types"]
+
+Converted["_Input3"].Font = Enum.Font.TitilliumWeb
+Converted["_Input3"].Text = "None"
+Converted["_Input3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input3"].TextScaled = true
+Converted["_Input3"].TextSize = 14
+Converted["_Input3"].TextWrapped = true
+Converted["_Input3"].Active = true
+Converted["_Input3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input3"].BackgroundTransparency = 0.25
+Converted["_Input3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input3"].BorderSizePixel = 0
+Converted["_Input3"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Input3"].Selectable = true
+Converted["_Input3"].Size = UDim2.new(0.75, 0, 0.75, 0)
+Converted["_Input3"].Name = "Input"
+Converted["_Input3"].Parent = Converted["_number"]
+
+Converted["_UICorner9"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner9"].Parent = Converted["_Input3"]
+
+Converted["_Type3"].Font = Enum.Font.TitilliumWeb
+Converted["_Type3"].Text = "Error"
+Converted["_Type3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Type3"].TextScaled = true
+Converted["_Type3"].TextSize = 14
+Converted["_Type3"].TextWrapped = true
+Converted["_Type3"].Active = true
+Converted["_Type3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Type3"].BackgroundTransparency = 0.25
+Converted["_Type3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type3"].BorderSizePixel = 0
+Converted["_Type3"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Type3"].Selectable = true
+Converted["_Type3"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Type3"].Name = "Type"
+Converted["_Type3"].Parent = Converted["_number"]
+
+Converted["_UICorner10"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner10"].Parent = Converted["_Type3"]
+
+Converted["_boolean"].Active = true
+Converted["_boolean"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_boolean"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_boolean"].BackgroundTransparency = 1
+Converted["_boolean"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_boolean"].BorderSizePixel = 0
+Converted["_boolean"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_boolean"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_boolean"].Visible = false
+Converted["_boolean"].Name = "boolean"
+Converted["_boolean"].Parent = Converted["_Types"]
+
+Converted["_Input4"].Font = Enum.Font.TitilliumWeb
+Converted["_Input4"].Text = "None"
+Converted["_Input4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input4"].TextScaled = true
+Converted["_Input4"].TextSize = 14
+Converted["_Input4"].TextWrapped = true
+Converted["_Input4"].Active = true
+Converted["_Input4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input4"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input4"].BackgroundTransparency = 0.25
+Converted["_Input4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input4"].BorderSizePixel = 0
+Converted["_Input4"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Input4"].Selectable = true
+Converted["_Input4"].Size = UDim2.new(0.75, 0, 0.75, 0)
+Converted["_Input4"].Name = "Input"
+Converted["_Input4"].Parent = Converted["_boolean"]
+
+Converted["_UICorner11"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner11"].Parent = Converted["_Input4"]
+
+Converted["_Type4"].Font = Enum.Font.TitilliumWeb
+Converted["_Type4"].Text = "Error"
+Converted["_Type4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Type4"].TextScaled = true
+Converted["_Type4"].TextSize = 14
+Converted["_Type4"].TextWrapped = true
+Converted["_Type4"].Active = true
+Converted["_Type4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type4"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Type4"].BackgroundTransparency = 0.25
+Converted["_Type4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type4"].BorderSizePixel = 0
+Converted["_Type4"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Type4"].Selectable = true
+Converted["_Type4"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Type4"].Name = "Type"
+Converted["_Type4"].Parent = Converted["_boolean"]
+
+Converted["_UICorner12"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner12"].Parent = Converted["_Type4"]
+
+Converted["_table"].Active = true
+Converted["_table"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_table"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_table"].BackgroundTransparency = 1
+Converted["_table"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_table"].BorderSizePixel = 0
+Converted["_table"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_table"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_table"].Visible = false
+Converted["_table"].Name = "table"
+Converted["_table"].Parent = Converted["_Types"]
+
+Converted["_Input5"].Font = Enum.Font.TitilliumWeb
+Converted["_Input5"].Text = "Unable To Show Value"
+Converted["_Input5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input5"].TextScaled = true
+Converted["_Input5"].TextSize = 14
+Converted["_Input5"].TextWrapped = true
+Converted["_Input5"].Active = true
+Converted["_Input5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input5"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input5"].BackgroundTransparency = 0.25
+Converted["_Input5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input5"].BorderSizePixel = 0
+Converted["_Input5"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Input5"].Selectable = true
+Converted["_Input5"].Size = UDim2.new(0.75, 0, 0.75, 0)
+Converted["_Input5"].Name = "Input"
+Converted["_Input5"].Parent = Converted["_table"]
+
+Converted["_UICorner13"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner13"].Parent = Converted["_Input5"]
+
+Converted["_Type5"].Font = Enum.Font.TitilliumWeb
+Converted["_Type5"].Text = "Error"
+Converted["_Type5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Type5"].TextScaled = true
+Converted["_Type5"].TextSize = 14
+Converted["_Type5"].TextWrapped = true
+Converted["_Type5"].Active = true
+Converted["_Type5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type5"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Type5"].BackgroundTransparency = 0.25
+Converted["_Type5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type5"].BorderSizePixel = 0
+Converted["_Type5"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Type5"].Selectable = true
+Converted["_Type5"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Type5"].Name = "Type"
+Converted["_Type5"].Parent = Converted["_table"]
+
+Converted["_UICorner14"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner14"].Parent = Converted["_Type5"]
+
+Converted["_thread"].Active = true
+Converted["_thread"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_thread"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_thread"].BackgroundTransparency = 1
+Converted["_thread"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_thread"].BorderSizePixel = 0
+Converted["_thread"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_thread"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_thread"].Visible = false
+Converted["_thread"].Name = "thread"
+Converted["_thread"].Parent = Converted["_Types"]
+
+Converted["_Input6"].Font = Enum.Font.TitilliumWeb
+Converted["_Input6"].Text = "Unable To Show Value"
+Converted["_Input6"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input6"].TextScaled = true
+Converted["_Input6"].TextSize = 14
+Converted["_Input6"].TextWrapped = true
+Converted["_Input6"].Active = true
+Converted["_Input6"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input6"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input6"].BackgroundTransparency = 0.25
+Converted["_Input6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input6"].BorderSizePixel = 0
+Converted["_Input6"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Input6"].Selectable = true
+Converted["_Input6"].Size = UDim2.new(0.75, 0, 0.75, 0)
+Converted["_Input6"].Name = "Input"
+Converted["_Input6"].Parent = Converted["_thread"]
+
+Converted["_UICorner15"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner15"].Parent = Converted["_Input6"]
+
+Converted["_Type6"].Font = Enum.Font.TitilliumWeb
+Converted["_Type6"].Text = "Error"
+Converted["_Type6"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Type6"].TextScaled = true
+Converted["_Type6"].TextSize = 14
+Converted["_Type6"].TextWrapped = true
+Converted["_Type6"].Active = true
+Converted["_Type6"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type6"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Type6"].BackgroundTransparency = 0.25
+Converted["_Type6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type6"].BorderSizePixel = 0
+Converted["_Type6"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Type6"].Selectable = true
+Converted["_Type6"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Type6"].Name = "Type"
+Converted["_Type6"].Parent = Converted["_thread"]
+
+Converted["_UICorner16"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner16"].Parent = Converted["_Type6"]
+
+Converted["_buffer"].Active = true
+Converted["_buffer"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_buffer"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_buffer"].BackgroundTransparency = 1
+Converted["_buffer"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_buffer"].BorderSizePixel = 0
+Converted["_buffer"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_buffer"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_buffer"].Visible = false
+Converted["_buffer"].Name = "buffer"
+Converted["_buffer"].Parent = Converted["_Types"]
+
+Converted["_Input7"].Font = Enum.Font.TitilliumWeb
+Converted["_Input7"].Text = "Unable To Show Value"
+Converted["_Input7"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input7"].TextScaled = true
+Converted["_Input7"].TextSize = 14
+Converted["_Input7"].TextWrapped = true
+Converted["_Input7"].Active = true
+Converted["_Input7"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input7"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input7"].BackgroundTransparency = 0.25
+Converted["_Input7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input7"].BorderSizePixel = 0
+Converted["_Input7"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Input7"].Selectable = true
+Converted["_Input7"].Size = UDim2.new(0.75, 0, 0.75, 0)
+Converted["_Input7"].Name = "Input"
+Converted["_Input7"].Parent = Converted["_buffer"]
+
+Converted["_UICorner17"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner17"].Parent = Converted["_Input7"]
+
+Converted["_Type7"].Font = Enum.Font.TitilliumWeb
+Converted["_Type7"].Text = "Error"
+Converted["_Type7"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Type7"].TextScaled = true
+Converted["_Type7"].TextSize = 14
+Converted["_Type7"].TextWrapped = true
+Converted["_Type7"].Active = true
+Converted["_Type7"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type7"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Type7"].BackgroundTransparency = 0.25
+Converted["_Type7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type7"].BorderSizePixel = 0
+Converted["_Type7"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Type7"].Selectable = true
+Converted["_Type7"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Type7"].Name = "Type"
+Converted["_Type7"].Parent = Converted["_buffer"]
+
+Converted["_UICorner18"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner18"].Parent = Converted["_Type7"]
+
+Converted["_nil"].Active = true
+Converted["_nil"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_nil"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_nil"].BackgroundTransparency = 1
+Converted["_nil"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_nil"].BorderSizePixel = 0
+Converted["_nil"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_nil"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_nil"].Visible = false
+Converted["_nil"].Name = "nil"
+Converted["_nil"].Parent = Converted["_Types"]
+
+Converted["_Input8"].Font = Enum.Font.TitilliumWeb
+Converted["_Input8"].Text = "nil"
+Converted["_Input8"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input8"].TextScaled = true
+Converted["_Input8"].TextSize = 14
+Converted["_Input8"].TextWrapped = true
+Converted["_Input8"].Active = true
+Converted["_Input8"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input8"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input8"].BackgroundTransparency = 0.25
+Converted["_Input8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input8"].BorderSizePixel = 0
+Converted["_Input8"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Input8"].Selectable = true
+Converted["_Input8"].Size = UDim2.new(0.75, 0, 0.75, 0)
+Converted["_Input8"].Name = "Input"
+Converted["_Input8"].Parent = Converted["_nil"]
+
+Converted["_UICorner19"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner19"].Parent = Converted["_Input8"]
+
+Converted["_Type8"].Font = Enum.Font.TitilliumWeb
+Converted["_Type8"].Text = "Error"
+Converted["_Type8"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Type8"].TextScaled = true
+Converted["_Type8"].TextSize = 14
+Converted["_Type8"].TextWrapped = true
+Converted["_Type8"].Active = true
+Converted["_Type8"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type8"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Type8"].BackgroundTransparency = 0.25
+Converted["_Type8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type8"].BorderSizePixel = 0
+Converted["_Type8"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Type8"].Selectable = true
+Converted["_Type8"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Type8"].Name = "Type"
+Converted["_Type8"].Parent = Converted["_nil"]
+
+Converted["_UICorner20"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner20"].Parent = Converted["_Type8"]
+
+Converted["_userdata"].Active = true
+Converted["_userdata"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_userdata"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_userdata"].BackgroundTransparency = 1
+Converted["_userdata"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_userdata"].BorderSizePixel = 0
+Converted["_userdata"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_userdata"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_userdata"].Visible = false
+Converted["_userdata"].Name = "userdata"
+Converted["_userdata"].Parent = Converted["_Types"]
+
+Converted["_Input9"].Font = Enum.Font.TitilliumWeb
+Converted["_Input9"].Text = "Unable To Show Value"
+Converted["_Input9"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input9"].TextScaled = true
+Converted["_Input9"].TextSize = 14
+Converted["_Input9"].TextWrapped = true
+Converted["_Input9"].Active = true
+Converted["_Input9"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input9"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input9"].BackgroundTransparency = 0.25
+Converted["_Input9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input9"].BorderSizePixel = 0
+Converted["_Input9"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Input9"].Selectable = true
+Converted["_Input9"].Size = UDim2.new(0.75, 0, 0.75, 0)
+Converted["_Input9"].Name = "Input"
+Converted["_Input9"].Parent = Converted["_userdata"]
+
+Converted["_UICorner21"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner21"].Parent = Converted["_Input9"]
+
+Converted["_Type9"].Font = Enum.Font.TitilliumWeb
+Converted["_Type9"].Text = "Error"
+Converted["_Type9"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Type9"].TextScaled = true
+Converted["_Type9"].TextSize = 14
+Converted["_Type9"].TextWrapped = true
+Converted["_Type9"].Active = true
+Converted["_Type9"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type9"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Type9"].BackgroundTransparency = 0.25
+Converted["_Type9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type9"].BorderSizePixel = 0
+Converted["_Type9"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Type9"].Selectable = true
+Converted["_Type9"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Type9"].Name = "Type"
+Converted["_Type9"].Parent = Converted["_userdata"]
+
+Converted["_UICorner22"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner22"].Parent = Converted["_Type9"]
+
+Converted["_Scroll"].AutomaticCanvasSize = Enum.AutomaticSize.Y
+Converted["_Scroll"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_Scroll"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Scroll"].ScrollBarThickness = 6
+Converted["_Scroll"].ScrollingDirection = Enum.ScrollingDirection.Y
+Converted["_Scroll"].Active = true
+Converted["_Scroll"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Scroll"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Scroll"].BackgroundTransparency = 0.5
+Converted["_Scroll"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Scroll"].BorderSizePixel = 0
+Converted["_Scroll"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Scroll"].Size = UDim2.new(0.800000012, 0, 0.800000012, 0)
+Converted["_Scroll"].Name = "Scroll"
+Converted["_Scroll"].Parent = Converted["_LibInspector"]
+
+Converted["_List"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_List"].Name = "List"
+Converted["_List"].Parent = Converted["_Scroll"]
+
+Converted["_Current"].Font = Enum.Font.TitilliumWeb
+Converted["_Current"].Text = "Nothing"
+Converted["_Current"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Current"].TextScaled = true
+Converted["_Current"].TextSize = 14
+Converted["_Current"].TextWrapped = true
+Converted["_Current"].Active = true
+Converted["_Current"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Current"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Current"].BackgroundTransparency = 0.25
+Converted["_Current"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Current"].BorderSizePixel = 0
+Converted["_Current"].Position = UDim2.new(0.224999994, 0, 0.925000012, 0)
+Converted["_Current"].Selectable = true
+Converted["_Current"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_Current"].Name = "Current"
+Converted["_Current"].Parent = Converted["_LibInspector"]
+
+Converted["_UICorner23"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner23"].Parent = Converted["_Current"]
+
+Converted["_Template"].Active = true
+Converted["_Template"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Template"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Template"].BackgroundTransparency = 1
+Converted["_Template"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Template"].BorderSizePixel = 0
+Converted["_Template"].Size = UDim2.new(1, 0, 0.150000006, 0)
+Converted["_Template"].Visible = false
+Converted["_Template"].Name = "Template"
+Converted["_Template"].Parent = Converted["_LibInspector"]
+
+Converted["_Log"].Font = Enum.Font.TitilliumWeb
+Converted["_Log"].RichText = true
+Converted["_Log"].Text = ""
+Converted["_Log"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Log"].TextScaled = true
+Converted["_Log"].TextSize = 16
+Converted["_Log"].TextWrapped = true
+Converted["_Log"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Log"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Log"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Log"].BackgroundColor3 = Color3.fromRGB(25.000000409781933, 25.000000409781933, 25.000000409781933)
+Converted["_Log"].BackgroundTransparency = 0.5
+Converted["_Log"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Log"].BorderSizePixel = 0
+Converted["_Log"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Log"].Size = UDim2.new(0.949999988, 0, 0.800000012, 0)
+Converted["_Log"].Name = "Log"
+Converted["_Log"].Parent = Converted["_Template"]
+
+Converted["_UICorner24"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner24"].Parent = Converted["_Log"]
+
+Converted["_Refresh"].Font = Enum.Font.TitilliumWeb
+Converted["_Refresh"].Text = "Refresh"
+Converted["_Refresh"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Refresh"].TextScaled = true
+Converted["_Refresh"].TextSize = 14
+Converted["_Refresh"].TextWrapped = true
+Converted["_Refresh"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Refresh"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Refresh"].BackgroundTransparency = 0.25
+Converted["_Refresh"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Refresh"].BorderSizePixel = 0
+Converted["_Refresh"].Position = UDim2.new(0.774999976, 0, 0.925000012, 0)
+Converted["_Refresh"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_Refresh"].Name = "Refresh"
+Converted["_Refresh"].Parent = Converted["_LibInspector"]
+
+Converted["_UICorner25"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner25"].Parent = Converted["_Refresh"]
+
+if not getgenv then
+	if _G.AHGGV == nil then
+		_G.AHGGV = {}
+	end
+	function getgenv()
+		return _G.AHGGV
+	end
+end
+
+local AHLib = getgenv().AHLib
+
+local GSPlayers = game:GetService("Players")
+local Container = Converted["_LibInspector"]
+
+Container.Visible = false
+Container.GroupTransparency = 1
+local Current = nil
+
+function AddTable(Tab, Prefix)
+	Prefix = Prefix or ""
+	for i, v in pairs(Tab) do
+		if type(v) == "table" then
+			AddTable(v, Prefix.. i.. ".")
+		else
+			local Clone = Container.Template:Clone()
+			if Container.Scroll.CanvasPosition.Y >= Container.Scroll.CanvasSize.Y.Offset - Container.Scroll.AbsoluteWindowSize.Y then
+				Clone:AddTag("Downwards")
+			end
+			Clone.Parent = Container.Scroll
+			Clone.Log.Text = Prefix.. i
+			Clone.Name = "Log_".. tostring(#Container.Scroll:GetChildren())
+			Clone.Visible = true
+			Clone.Log.Activated:Connect(function()
+				Current = v
+				Container.Current.Text = Prefix.. i
+				for i, v in Container.Inspector.Types:GetChildren() do
+					v.Visible = false
+				end
+				Container.Inspector.Types:FindFirstChild(type(v)).Visible = true
+				if type(v) == "function" then
+					pcall(function()
+						Container.Inspector.Types:FindFirstChild(type(v)).Input.Text = ""
+					end)
+				else
+					Container.Inspector.Types:FindFirstChild(type(v)).Input.Text = tostring(v)
+				end
+			end)
+		end
+	end
+end
+
+table.insert(AHLib.Plugins, {["Name"] = "Debug Plugin", ["Description"] = "Search The AHLib In AntiHub.", ["Menu"] = Container, ["Function"] = function()
+	AHLib.AddTab("AHLib Debug", Container, false, "Search The AHLib In AntiHub.")
+	AHLib.RegisterSubMenu(Container.Use, Container.Inspector, Container)
+	Container.Refresh.Activated:Connect(function()
+		Container.Current.Text = "Nothing"
+		Current = ""
+		for i, v in Container.Inspector.Types:GetChildren() do
+			v.Visible = false
+		end
+		for i, v in Container.Scroll:GetChildren() do
+			if v:IsA("Frame") then
+				v:Destroy()
+			end
+		end
+		AddTable(getgenv().AHLib)
+	end)
+	Container.Inspector.Types["function"].Run.Activated:Connect(function()
+		local Args = Container.Inspector.Types["function"].Input.Text:split(",")
+		local UseArgs = {}
+		for i, v in Args do
+			if v:lower() == "nil" or v == "" then
+				table.insert(UseArgs, v)
+			elseif v:sub(1, 1) == "\"" and v:sub(string.len(v)) == "\"" and string.len(v) > 2 then
+				table.insert(UseArgs, v:sub(2, string.len(v) - 1))
+			elseif tonumber(v) ~= nil then
+				table.insert(UseArgs, tonumber(v))
+			else
+				table.insert(UseArgs, v)
+			end
+		end
+		Current(unpack(UseArgs))
+	end)
+	for i, v in Container.Inspector.Types:GetChildren() do
+		v.Type.Text = "Type: ".. v.Name
+	end
+end})
