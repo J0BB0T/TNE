@@ -1,0 +1,377 @@
+-- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
+
+-- Instances:
+
+local Converted = {
+	["_BAEMods"] = Instance.new("CanvasGroup");
+	["_Fly"] = Instance.new("TextButton");
+	["_UICorner"] = Instance.new("UICorner");
+	["_Bindable"] = Instance.new("BoolValue");
+	["_MSG"] = Instance.new("TextButton");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_Bindable1"] = Instance.new("BoolValue");
+	["_Hint"] = Instance.new("TextButton");
+	["_UICorner2"] = Instance.new("UICorner");
+	["_Bindable2"] = Instance.new("BoolValue");
+	["_PM"] = Instance.new("TextButton");
+	["_UICorner3"] = Instance.new("UICorner");
+	["_Bindable3"] = Instance.new("BoolValue");
+	["_Title"] = Instance.new("TextBox");
+	["_UICorner4"] = Instance.new("UICorner");
+	["_Message"] = Instance.new("TextBox");
+	["_UICorner5"] = Instance.new("UICorner");
+	["_Rank"] = Instance.new("TextButton");
+	["_UICorner6"] = Instance.new("UICorner");
+	["_Bindable4"] = Instance.new("BoolValue");
+	["_Notif"] = Instance.new("TextButton");
+	["_UICorner7"] = Instance.new("UICorner");
+	["_Bindable5"] = Instance.new("BoolValue");
+	["_Donor"] = Instance.new("TextButton");
+	["_UICorner8"] = Instance.new("UICorner");
+	["_Bindable6"] = Instance.new("BoolValue");
+	["_List"] = Instance.new("TextButton");
+	["_UICorner9"] = Instance.new("UICorner");
+	["_Bindable7"] = Instance.new("BoolValue");
+	["_Failed"] = Instance.new("TextLabel");
+	["_UICorner10"] = Instance.new("UICorner");
+}
+
+-- Properties:
+
+Converted["_BAEMods"].GroupTransparency = 1
+Converted["_BAEMods"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_BAEMods"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_BAEMods"].BackgroundTransparency = 1
+Converted["_BAEMods"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_BAEMods"].BorderSizePixel = 0
+Converted["_BAEMods"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
+Converted["_BAEMods"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
+Converted["_BAEMods"].Visible = false
+Converted["_BAEMods"].Name = "BAEMods"
+Converted["_BAEMods"].Parent = nil
+
+Converted["_Fly"].Font = Enum.Font.TitilliumWeb
+Converted["_Fly"].Text = "Fly"
+Converted["_Fly"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Fly"].TextScaled = true
+Converted["_Fly"].TextSize = 14
+Converted["_Fly"].TextWrapped = true
+Converted["_Fly"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Fly"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Fly"].BackgroundTransparency = 0.25
+Converted["_Fly"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Fly"].BorderSizePixel = 0
+Converted["_Fly"].Position = UDim2.new(0.125, 0, 0.925000012, 0)
+Converted["_Fly"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+Converted["_Fly"].Name = "Fly"
+Converted["_Fly"].Parent = Converted["_BAEMods"]
+
+Converted["_UICorner"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner"].Parent = Converted["_Fly"]
+
+Converted["_Bindable"].Value = true
+Converted["_Bindable"].Name = "Bindable"
+Converted["_Bindable"].Parent = Converted["_Fly"]
+
+Converted["_MSG"].Font = Enum.Font.TitilliumWeb
+Converted["_MSG"].Text = "Fake Message"
+Converted["_MSG"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_MSG"].TextScaled = true
+Converted["_MSG"].TextSize = 14
+Converted["_MSG"].TextWrapped = true
+Converted["_MSG"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_MSG"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_MSG"].BackgroundTransparency = 0.25
+Converted["_MSG"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MSG"].BorderSizePixel = 0
+Converted["_MSG"].Position = UDim2.new(0.875, 0, 0.925000012, 0)
+Converted["_MSG"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+Converted["_MSG"].Name = "MSG"
+Converted["_MSG"].Parent = Converted["_BAEMods"]
+
+Converted["_UICorner1"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner1"].Parent = Converted["_MSG"]
+
+Converted["_Bindable1"].Value = true
+Converted["_Bindable1"].Name = "Bindable"
+Converted["_Bindable1"].Parent = Converted["_MSG"]
+
+Converted["_Hint"].Font = Enum.Font.TitilliumWeb
+Converted["_Hint"].Text = "Fake Hint"
+Converted["_Hint"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Hint"].TextScaled = true
+Converted["_Hint"].TextSize = 14
+Converted["_Hint"].TextWrapped = true
+Converted["_Hint"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Hint"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Hint"].BackgroundTransparency = 0.25
+Converted["_Hint"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Hint"].BorderSizePixel = 0
+Converted["_Hint"].Position = UDim2.new(0.875, 0, 0.800000012, 0)
+Converted["_Hint"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+Converted["_Hint"].Name = "Hint"
+Converted["_Hint"].Parent = Converted["_BAEMods"]
+
+Converted["_UICorner2"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner2"].Parent = Converted["_Hint"]
+
+Converted["_Bindable2"].Value = true
+Converted["_Bindable2"].Name = "Bindable"
+Converted["_Bindable2"].Parent = Converted["_Hint"]
+
+Converted["_PM"].Font = Enum.Font.TitilliumWeb
+Converted["_PM"].Text = "Fake PM"
+Converted["_PM"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_PM"].TextScaled = true
+Converted["_PM"].TextSize = 14
+Converted["_PM"].TextWrapped = true
+Converted["_PM"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_PM"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_PM"].BackgroundTransparency = 0.25
+Converted["_PM"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_PM"].BorderSizePixel = 0
+Converted["_PM"].Position = UDim2.new(0.875, 0, 0.673383296, 0)
+Converted["_PM"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+Converted["_PM"].Name = "PM"
+Converted["_PM"].Parent = Converted["_BAEMods"]
+
+Converted["_UICorner3"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner3"].Parent = Converted["_PM"]
+
+Converted["_Bindable3"].Value = true
+Converted["_Bindable3"].Name = "Bindable"
+Converted["_Bindable3"].Parent = Converted["_PM"]
+
+Converted["_Title"].Font = Enum.Font.TitilliumWeb
+Converted["_Title"].PlaceholderText = "Title/Player Name/Rank/Items (,)"
+Converted["_Title"].Text = ""
+Converted["_Title"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title"].TextScaled = true
+Converted["_Title"].TextSize = 14
+Converted["_Title"].TextWrapped = true
+Converted["_Title"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Title"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Title"].BackgroundTransparency = 0.5
+Converted["_Title"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Title"].BorderSizePixel = 0
+Converted["_Title"].Position = UDim2.new(0.5, 0, 0.850000024, 0)
+Converted["_Title"].Size = UDim2.new(0.50000006, 0, 0.225000218, 0)
+Converted["_Title"].Name = "Title"
+Converted["_Title"].Parent = Converted["_BAEMods"]
+
+Converted["_UICorner4"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner4"].Parent = Converted["_Title"]
+
+Converted["_Message"].Font = Enum.Font.TitilliumWeb
+Converted["_Message"].PlaceholderText = "Message"
+Converted["_Message"].Text = ""
+Converted["_Message"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Message"].TextScaled = true
+Converted["_Message"].TextSize = 14
+Converted["_Message"].TextWrapped = true
+Converted["_Message"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Message"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Message"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Message"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Message"].BackgroundTransparency = 0.5
+Converted["_Message"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Message"].BorderSizePixel = 0
+Converted["_Message"].Position = UDim2.new(0.5, 0, 0.550000012, 0)
+Converted["_Message"].Size = UDim2.new(0.5, 0, 0.300000012, 0)
+Converted["_Message"].Name = "Message"
+Converted["_Message"].Parent = Converted["_BAEMods"]
+
+Converted["_UICorner5"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner5"].Parent = Converted["_Message"]
+
+Converted["_Rank"].Font = Enum.Font.TitilliumWeb
+Converted["_Rank"].Text = "Fake Rank"
+Converted["_Rank"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Rank"].TextScaled = true
+Converted["_Rank"].TextSize = 14
+Converted["_Rank"].TextWrapped = true
+Converted["_Rank"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Rank"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Rank"].BackgroundTransparency = 0.25
+Converted["_Rank"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Rank"].BorderSizePixel = 0
+Converted["_Rank"].Position = UDim2.new(0.125, 0, 0.800000012, 0)
+Converted["_Rank"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+Converted["_Rank"].Name = "Rank"
+Converted["_Rank"].Parent = Converted["_BAEMods"]
+
+Converted["_UICorner6"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner6"].Parent = Converted["_Rank"]
+
+Converted["_Bindable4"].Value = true
+Converted["_Bindable4"].Name = "Bindable"
+Converted["_Bindable4"].Parent = Converted["_Rank"]
+
+Converted["_Notif"].Font = Enum.Font.TitilliumWeb
+Converted["_Notif"].Text = "Fake Notify"
+Converted["_Notif"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Notif"].TextScaled = true
+Converted["_Notif"].TextSize = 14
+Converted["_Notif"].TextWrapped = true
+Converted["_Notif"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Notif"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Notif"].BackgroundTransparency = 0.25
+Converted["_Notif"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Notif"].BorderSizePixel = 0
+Converted["_Notif"].Position = UDim2.new(0.125, 0, 0.672999978, 0)
+Converted["_Notif"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+Converted["_Notif"].Name = "Notif"
+Converted["_Notif"].Parent = Converted["_BAEMods"]
+
+Converted["_UICorner7"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner7"].Parent = Converted["_Notif"]
+
+Converted["_Bindable5"].Value = true
+Converted["_Bindable5"].Name = "Bindable"
+Converted["_Bindable5"].Parent = Converted["_Notif"]
+
+Converted["_Donor"].Font = Enum.Font.TitilliumWeb
+Converted["_Donor"].Text = "Open Donor Perks"
+Converted["_Donor"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Donor"].TextScaled = true
+Converted["_Donor"].TextSize = 14
+Converted["_Donor"].TextWrapped = true
+Converted["_Donor"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Donor"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Donor"].BackgroundTransparency = 0.25
+Converted["_Donor"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Donor"].BorderSizePixel = 0
+Converted["_Donor"].Position = UDim2.new(0.5, 0, 0.150000006, 0)
+Converted["_Donor"].Size = UDim2.new(0.400000006, 0, 0.100000001, 0)
+Converted["_Donor"].Name = "Donor"
+Converted["_Donor"].Parent = Converted["_BAEMods"]
+
+Converted["_UICorner8"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner8"].Parent = Converted["_Donor"]
+
+Converted["_Bindable6"].Value = true
+Converted["_Bindable6"].Name = "Bindable"
+Converted["_Bindable6"].Parent = Converted["_Donor"]
+
+Converted["_List"].Font = Enum.Font.TitilliumWeb
+Converted["_List"].Text = "Open Custom List"
+Converted["_List"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_List"].TextScaled = true
+Converted["_List"].TextSize = 14
+Converted["_List"].TextWrapped = true
+Converted["_List"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_List"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_List"].BackgroundTransparency = 0.25
+Converted["_List"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_List"].BorderSizePixel = 0
+Converted["_List"].Position = UDim2.new(0.5, 0, 0.275000006, 0)
+Converted["_List"].Size = UDim2.new(0.400000006, 0, 0.100000001, 0)
+Converted["_List"].Name = "List"
+Converted["_List"].Parent = Converted["_BAEMods"]
+
+Converted["_UICorner9"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner9"].Parent = Converted["_List"]
+
+Converted["_Bindable7"].Value = true
+Converted["_Bindable7"].Name = "Bindable"
+Converted["_Bindable7"].Parent = Converted["_List"]
+
+Converted["_Failed"].Font = Enum.Font.TitilliumWeb
+Converted["_Failed"].Text = "Basic Admin Essentials Not Found."
+Converted["_Failed"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Failed"].TextScaled = true
+Converted["_Failed"].TextSize = 14
+Converted["_Failed"].TextTransparency = 0.5
+Converted["_Failed"].TextWrapped = true
+Converted["_Failed"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Failed"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Failed"].Active = true
+Converted["_Failed"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Failed"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Failed"].BackgroundTransparency = 0.5
+Converted["_Failed"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Failed"].BorderSizePixel = 0
+Converted["_Failed"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Failed"].Selectable = true
+Converted["_Failed"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Failed"].Visible = false
+Converted["_Failed"].Name = "Failed"
+Converted["_Failed"].Parent = Converted["_BAEMods"]
+
+Converted["_UICorner10"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner10"].Parent = Converted["_Failed"]
+
+if not getgenv then
+	if _G.AHGGV == nil then
+		_G.AHGGV = {}
+	end
+	function getgenv()
+		return _G.AHGGV
+	end
+end
+
+local AHLib = getgenv().AHLib
+
+local GSRS = game:GetService("ReplicatedStorage")
+local Container = Converted["_BAEMods"]
+
+Container.Visible = false
+Container.GroupTransparency = 1
+
+local Fly = false
+local EventFound = false
+
+local Event = nil
+
+pcall(function()
+	Event = GSRS:FindFirstChild("Basic Admin Essentials")
+	if Event == nil then
+		Event = Instance.new("RemoteEvent")
+	else
+		Event = Event:FindFirstChild("Essentials Event")
+		EventFound = true
+	end
+end)
+
+table.insert(AHLib.Plugins, {["Name"] = "BAE Mods", ["Description"] = "Mods For Basic Admin Essentials.", ["Menu"] = Container, ["Function"] = function()
+	AHLib.AddTab("BAE Mods", Container, false, "Fake Messages And More With BAE.")
+	if not EventFound then
+		for i, v in Container:GetDescendants() do
+			pcall(function()
+				v.Visible = false
+			end)
+		end
+		Container.Failed.Visible = true
+		return
+	end
+	Container.Fly.Activated:Connect(function()
+		Fly = not Fly
+		firesignal(Event.OnClientEvent, unpack({"Fly", Fly}))
+		if Fly then
+			Container.Fly.Text = "Unfly"
+		else
+			Container.Fly.Text = "Fly"
+		end
+	end)
+	Container.Notif.Activated:Connect(function()
+		firesignal(Event.OnClientEvent, unpack({"Notif", Container.Title.Text, Container.Message.Text, {}}))
+	end)
+	Container.Rank.Activated:Connect(function()
+		firesignal(Event.OnClientEvent, unpack({"Admin Update", Container.Title.Text, Container.Message.Text, {"Cmds"}, {}, 3}))
+	end)
+	Container.PM.Activated:Connect(function()
+		firesignal(Event.OnClientEvent, unpack({"PM", Container.Title.Text, Container.Message.Text, false, nil}))
+	end)
+	Container.Hint.Activated:Connect(function()
+		firesignal(Event.OnClientEvent, unpack({"Hint", Container.Title.Text, Container.Message.Text}))
+	end)
+	Container.MSG.Activated:Connect(function()
+		firesignal(Event.OnClientEvent, unpack({"Message", Container.Title.Text, Container.Message.Text}))
+	end)
+	Container.Donor.Activated:Connect(function()
+		firesignal(Event.OnClientEvent, "Donor")
+	end)
+	Container.List.Activated:Connect(function()
+		firesignal(Event.OnClientEvent, unpack({"List", Container.Title.Text, true, true, Container.Title.Text:split(",")}))
+	end)
+end})
