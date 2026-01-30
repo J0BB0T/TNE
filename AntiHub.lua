@@ -6,660 +6,702 @@ local Converted = {
 	["_AntiHub"] = Instance.new("ScreenGui");
 	["_TitleBar"] = Instance.new("Frame");
 	["_Container"] = Instance.new("CanvasGroup");
-	["_Container1"] = Instance.new("CanvasGroup");
+	["_Background"] = Instance.new("ImageLabel");
+	["_UICorner"] = Instance.new("UICorner");
+	["_Container1"] = Instance.new("Frame");
 	["_Menus"] = Instance.new("Folder");
 	["_Chat"] = Instance.new("CanvasGroup");
 	["_Logs"] = Instance.new("ScrollingFrame");
-	["_Chat1"] = Instance.new("TextLabel");
+	["_List"] = Instance.new("UIListLayout");
 	["_Input"] = Instance.new("TextBox");
-	["_UICorner"] = Instance.new("UICorner");
-	["_Send"] = Instance.new("TextButton");
 	["_UICorner1"] = Instance.new("UICorner");
+	["_Send"] = Instance.new("TextButton");
+	["_UICorner2"] = Instance.new("UICorner");
 	["_Bindable"] = Instance.new("BoolValue");
+	["_Template"] = Instance.new("Frame");
+	["_Log"] = Instance.new("TextButton");
+	["_UICorner3"] = Instance.new("UICorner");
 	["_PrisonLife"] = Instance.new("CanvasGroup");
 	["_Prizz"] = Instance.new("TextButton");
-	["_UICorner2"] = Instance.new("UICorner");
+	["_UICorner4"] = Instance.new("UICorner");
 	["_Bindable1"] = Instance.new("BoolValue");
 	["_H4X"] = Instance.new("TextButton");
-	["_UICorner3"] = Instance.new("UICorner");
+	["_UICorner5"] = Instance.new("UICorner");
 	["_Bindable2"] = Instance.new("BoolValue");
 	["_Tiger"] = Instance.new("TextButton");
-	["_UICorner4"] = Instance.new("UICorner");
+	["_UICorner6"] = Instance.new("UICorner");
 	["_Bindable3"] = Instance.new("BoolValue");
 	["_PWare"] = Instance.new("TextButton");
-	["_UICorner5"] = Instance.new("UICorner");
+	["_UICorner7"] = Instance.new("UICorner");
 	["_Bindable4"] = Instance.new("BoolValue");
 	["_Input1"] = Instance.new("TextBox");
-	["_UICorner6"] = Instance.new("UICorner");
+	["_UICorner8"] = Instance.new("UICorner");
 	["_Kick"] = Instance.new("TextButton");
-	["_UICorner7"] = Instance.new("UICorner");
+	["_UICorner9"] = Instance.new("UICorner");
 	["_Bindable5"] = Instance.new("BoolValue");
 	["_Neutral"] = Instance.new("TextButton");
-	["_UICorner8"] = Instance.new("UICorner");
+	["_UICorner10"] = Instance.new("UICorner");
 	["_Bindable6"] = Instance.new("BoolValue");
 	["_Criminals"] = Instance.new("TextButton");
-	["_UICorner9"] = Instance.new("UICorner");
+	["_UICorner11"] = Instance.new("UICorner");
 	["_Bindable7"] = Instance.new("BoolValue");
 	["_Inmates"] = Instance.new("TextButton");
-	["_UICorner10"] = Instance.new("UICorner");
+	["_UICorner12"] = Instance.new("UICorner");
 	["_Bindable8"] = Instance.new("BoolValue");
 	["_Guards"] = Instance.new("TextButton");
-	["_UICorner11"] = Instance.new("UICorner");
+	["_UICorner13"] = Instance.new("UICorner");
 	["_Bindable9"] = Instance.new("BoolValue");
 	["_TLag"] = Instance.new("TextButton");
-	["_UICorner12"] = Instance.new("UICorner");
+	["_UICorner14"] = Instance.new("UICorner");
 	["_Bindable10"] = Instance.new("BoolValue");
 	["_Teleports"] = Instance.new("CanvasGroup");
 	["_Crimbase"] = Instance.new("TextButton");
-	["_UICorner13"] = Instance.new("UICorner");
+	["_UICorner15"] = Instance.new("UICorner");
 	["_Bindable11"] = Instance.new("BoolValue");
 	["_Guards1"] = Instance.new("TextButton");
-	["_UICorner14"] = Instance.new("UICorner");
+	["_UICorner16"] = Instance.new("UICorner");
 	["_Bindable12"] = Instance.new("BoolValue");
 	["_Yard"] = Instance.new("TextButton");
-	["_UICorner15"] = Instance.new("UICorner");
+	["_UICorner17"] = Instance.new("UICorner");
 	["_Bindable13"] = Instance.new("BoolValue");
 	["_Cafe"] = Instance.new("TextButton");
-	["_UICorner16"] = Instance.new("UICorner");
+	["_UICorner18"] = Instance.new("UICorner");
 	["_Bindable14"] = Instance.new("BoolValue");
 	["_Mansion"] = Instance.new("TextButton");
-	["_UICorner17"] = Instance.new("UICorner");
+	["_UICorner19"] = Instance.new("UICorner");
 	["_Bindable15"] = Instance.new("BoolValue");
 	["_Gate"] = Instance.new("TextButton");
-	["_UICorner18"] = Instance.new("UICorner");
+	["_UICorner20"] = Instance.new("UICorner");
 	["_Bindable16"] = Instance.new("BoolValue");
 	["_Trap"] = Instance.new("TextButton");
-	["_UICorner19"] = Instance.new("UICorner");
+	["_UICorner21"] = Instance.new("UICorner");
 	["_Bindable17"] = Instance.new("BoolValue");
 	["_Platform"] = Instance.new("TextButton");
-	["_UICorner20"] = Instance.new("UICorner");
+	["_UICorner22"] = Instance.new("UICorner");
 	["_Bindable18"] = Instance.new("BoolValue");
 	["_Car"] = Instance.new("TextButton");
-	["_UICorner21"] = Instance.new("UICorner");
+	["_UICorner23"] = Instance.new("UICorner");
 	["_Bindable19"] = Instance.new("BoolValue");
 	["_Close"] = Instance.new("TextButton");
-	["_UICorner22"] = Instance.new("UICorner");
+	["_UICorner24"] = Instance.new("UICorner");
 	["_Bindable20"] = Instance.new("BoolValue");
 	["_Neutral1"] = Instance.new("TextButton");
-	["_UICorner23"] = Instance.new("UICorner");
+	["_UICorner25"] = Instance.new("UICorner");
 	["_Bindable21"] = Instance.new("BoolValue");
 	["_Nexus"] = Instance.new("TextButton");
-	["_UICorner24"] = Instance.new("UICorner");
+	["_UICorner26"] = Instance.new("UICorner");
 	["_Bindable22"] = Instance.new("BoolValue");
 	["_YTower"] = Instance.new("TextButton");
-	["_UICorner25"] = Instance.new("UICorner");
+	["_UICorner27"] = Instance.new("UICorner");
 	["_Bindable23"] = Instance.new("BoolValue");
 	["_Sewer"] = Instance.new("TextButton");
-	["_UICorner26"] = Instance.new("UICorner");
+	["_UICorner28"] = Instance.new("UICorner");
 	["_Bindable24"] = Instance.new("BoolValue");
 	["_Office"] = Instance.new("TextButton");
-	["_UICorner27"] = Instance.new("UICorner");
+	["_UICorner29"] = Instance.new("UICorner");
 	["_Bindable25"] = Instance.new("BoolValue");
 	["_Cells"] = Instance.new("TextButton");
-	["_UICorner28"] = Instance.new("UICorner");
+	["_UICorner30"] = Instance.new("UICorner");
 	["_Bindable26"] = Instance.new("BoolValue");
 	["_Panther"] = Instance.new("TextButton");
-	["_UICorner29"] = Instance.new("UICorner");
+	["_UICorner31"] = Instance.new("UICorner");
 	["_Bindable27"] = Instance.new("BoolValue");
 	["_Arrest"] = Instance.new("TextButton");
-	["_UICorner30"] = Instance.new("UICorner");
+	["_UICorner32"] = Instance.new("UICorner");
 	["_Bindable28"] = Instance.new("BoolValue");
 	["_Message"] = Instance.new("TextLabel");
-	["_UICorner31"] = Instance.new("UICorner");
+	["_UICorner33"] = Instance.new("UICorner");
 	["_MKill"] = Instance.new("TextButton");
-	["_UICorner32"] = Instance.new("UICorner");
+	["_UICorner34"] = Instance.new("UICorner");
 	["_Bindable29"] = Instance.new("BoolValue");
 	["_Weapons"] = Instance.new("CanvasGroup");
 	["_Close1"] = Instance.new("TextButton");
-	["_UICorner33"] = Instance.new("UICorner");
+	["_UICorner35"] = Instance.new("UICorner");
 	["_Bindable30"] = Instance.new("BoolValue");
 	["_Hammer"] = Instance.new("TextButton");
-	["_UICorner34"] = Instance.new("UICorner");
+	["_UICorner36"] = Instance.new("UICorner");
 	["_Bindable31"] = Instance.new("BoolValue");
 	["_Riot Shield"] = Instance.new("TextButton");
-	["_UICorner35"] = Instance.new("UICorner");
+	["_UICorner37"] = Instance.new("UICorner");
 	["_Bindable32"] = Instance.new("BoolValue");
 	["_AK-47"] = Instance.new("TextButton");
-	["_UICorner36"] = Instance.new("UICorner");
+	["_UICorner38"] = Instance.new("UICorner");
 	["_Bindable33"] = Instance.new("BoolValue");
 	["_M9"] = Instance.new("TextButton");
-	["_UICorner37"] = Instance.new("UICorner");
+	["_UICorner39"] = Instance.new("UICorner");
 	["_Bindable34"] = Instance.new("BoolValue");
 	["_Food"] = Instance.new("TextButton");
-	["_UICorner38"] = Instance.new("UICorner");
+	["_UICorner40"] = Instance.new("UICorner");
 	["_Bindable35"] = Instance.new("BoolValue");
 	["_Remington 870"] = Instance.new("TextButton");
-	["_UICorner39"] = Instance.new("UICorner");
+	["_UICorner41"] = Instance.new("UICorner");
 	["_Bindable36"] = Instance.new("BoolValue");
 	["_Crude Knife"] = Instance.new("TextButton");
-	["_UICorner40"] = Instance.new("UICorner");
+	["_UICorner42"] = Instance.new("UICorner");
 	["_Bindable37"] = Instance.new("BoolValue");
 	["_Riot Police"] = Instance.new("TextButton");
-	["_UICorner41"] = Instance.new("UICorner");
+	["_UICorner43"] = Instance.new("UICorner");
 	["_Bindable38"] = Instance.new("BoolValue");
 	["_Riot helmet"] = Instance.new("TextButton");
-	["_UICorner42"] = Instance.new("UICorner");
+	["_UICorner44"] = Instance.new("UICorner");
 	["_Bindable39"] = Instance.new("BoolValue");
 	["_M4A1"] = Instance.new("TextButton");
-	["_UICorner43"] = Instance.new("UICorner");
+	["_UICorner45"] = Instance.new("UICorner");
 	["_Bindable40"] = Instance.new("BoolValue");
 	["_All"] = Instance.new("TextButton");
-	["_UICorner44"] = Instance.new("UICorner");
+	["_UICorner46"] = Instance.new("UICorner");
 	["_Bindable41"] = Instance.new("BoolValue");
 	["_MShotgun"] = Instance.new("TextButton");
-	["_UICorner45"] = Instance.new("UICorner");
+	["_UICorner47"] = Instance.new("UICorner");
 	["_Bindable42"] = Instance.new("BoolValue");
 	["_MCurrent"] = Instance.new("TextButton");
-	["_UICorner46"] = Instance.new("UICorner");
+	["_UICorner48"] = Instance.new("UICorner");
 	["_Bindable43"] = Instance.new("BoolValue");
 	["_Vending"] = Instance.new("TextButton");
-	["_UICorner47"] = Instance.new("UICorner");
+	["_UICorner49"] = Instance.new("UICorner");
 	["_Bindable44"] = Instance.new("BoolValue");
 	["_WP"] = Instance.new("TextButton");
-	["_UICorner48"] = Instance.new("UICorner");
+	["_UICorner50"] = Instance.new("UICorner");
 	["_Bindable45"] = Instance.new("BoolValue");
 	["_TCrash"] = Instance.new("TextButton");
-	["_UICorner49"] = Instance.new("UICorner");
+	["_UICorner51"] = Instance.new("UICorner");
 	["_Bindable46"] = Instance.new("BoolValue");
 	["_TP"] = Instance.new("TextButton");
-	["_UICorner50"] = Instance.new("UICorner");
+	["_UICorner52"] = Instance.new("UICorner");
 	["_Bindable47"] = Instance.new("BoolValue");
 	["_Counter"] = Instance.new("TextLabel");
-	["_UICorner51"] = Instance.new("UICorner");
-	["_Cooldown"] = Instance.new("TextLabel");
-	["_UICorner52"] = Instance.new("UICorner");
-	["_Refresh"] = Instance.new("TextButton");
 	["_UICorner53"] = Instance.new("UICorner");
+	["_Cooldown"] = Instance.new("TextLabel");
+	["_UICorner54"] = Instance.new("UICorner");
+	["_Refresh"] = Instance.new("TextButton");
+	["_UICorner55"] = Instance.new("UICorner");
 	["_Bindable48"] = Instance.new("BoolValue");
 	["_Crash"] = Instance.new("TextButton");
-	["_UICorner54"] = Instance.new("UICorner");
+	["_UICorner56"] = Instance.new("UICorner");
 	["_Bindable49"] = Instance.new("BoolValue");
 	["_LMK"] = Instance.new("TextButton");
-	["_UICorner55"] = Instance.new("UICorner");
+	["_UICorner57"] = Instance.new("UICorner");
 	["_Bindable50"] = Instance.new("BoolValue");
 	["_LKT"] = Instance.new("TextLabel");
-	["_UICorner56"] = Instance.new("UICorner");
+	["_UICorner58"] = Instance.new("UICorner");
 	["_ArrestAll"] = Instance.new("TextButton");
-	["_UICorner57"] = Instance.new("UICorner");
+	["_UICorner59"] = Instance.new("UICorner");
 	["_Bindable51"] = Instance.new("BoolValue");
 	["_PA"] = Instance.new("TextButton");
-	["_UICorner58"] = Instance.new("UICorner");
+	["_UICorner60"] = Instance.new("UICorner");
 	["_Bindable52"] = Instance.new("BoolValue");
 	["_AntiShield"] = Instance.new("TextButton");
-	["_UICorner59"] = Instance.new("UICorner");
+	["_UICorner61"] = Instance.new("UICorner");
 	["_Bindable53"] = Instance.new("BoolValue");
 	["_Kill"] = Instance.new("TextButton");
-	["_UICorner60"] = Instance.new("UICorner");
+	["_UICorner62"] = Instance.new("UICorner");
 	["_Bindable54"] = Instance.new("BoolValue");
+	["_Indicators"] = Instance.new("TextButton");
+	["_UICorner63"] = Instance.new("UICorner");
+	["_Bindable55"] = Instance.new("BoolValue");
+	["_FunnyHub"] = Instance.new("TextButton");
+	["_UICorner64"] = Instance.new("UICorner");
+	["_Bindable56"] = Instance.new("BoolValue");
 	["_Universal"] = Instance.new("CanvasGroup");
 	["_IY"] = Instance.new("TextButton");
-	["_UICorner61"] = Instance.new("UICorner");
-	["_Bindable55"] = Instance.new("BoolValue");
-	["_Respawn"] = Instance.new("TextButton");
-	["_UICorner62"] = Instance.new("UICorner");
-	["_Bindable56"] = Instance.new("BoolValue");
-	["_DEX"] = Instance.new("TextButton");
-	["_UICorner63"] = Instance.new("UICorner");
-	["_Bindable57"] = Instance.new("BoolValue");
-	["_Owl"] = Instance.new("TextButton");
-	["_UICorner64"] = Instance.new("UICorner");
-	["_Bindable58"] = Instance.new("BoolValue");
-	["_WOW"] = Instance.new("TextButton");
 	["_UICorner65"] = Instance.new("UICorner");
-	["_Bindable59"] = Instance.new("BoolValue");
-	["_Nameless"] = Instance.new("TextButton");
+	["_Bindable57"] = Instance.new("BoolValue");
+	["_Respawn"] = Instance.new("TextButton");
 	["_UICorner66"] = Instance.new("UICorner");
-	["_Bindable60"] = Instance.new("BoolValue");
-	["_Input2"] = Instance.new("TextBox");
+	["_Bindable58"] = Instance.new("BoolValue");
+	["_DEX"] = Instance.new("TextButton");
 	["_UICorner67"] = Instance.new("UICorner");
-	["_Fling"] = Instance.new("TextButton");
+	["_Bindable59"] = Instance.new("BoolValue");
+	["_Owl"] = Instance.new("TextButton");
 	["_UICorner68"] = Instance.new("UICorner");
-	["_Bindable61"] = Instance.new("BoolValue");
-	["_UAFling"] = Instance.new("TextButton");
+	["_Bindable60"] = Instance.new("BoolValue");
+	["_WOW"] = Instance.new("TextButton");
 	["_UICorner69"] = Instance.new("UICorner");
-	["_Bindable62"] = Instance.new("BoolValue");
-	["_Inspect"] = Instance.new("TextButton");
+	["_Bindable61"] = Instance.new("BoolValue");
+	["_Nameless"] = Instance.new("TextButton");
 	["_UICorner70"] = Instance.new("UICorner");
-	["_Bindable63"] = Instance.new("BoolValue");
-	["_Bang"] = Instance.new("TextButton");
+	["_Bindable62"] = Instance.new("BoolValue");
+	["_Input2"] = Instance.new("TextBox");
 	["_UICorner71"] = Instance.new("UICorner");
-	["_Bindable64"] = Instance.new("BoolValue");
-	["_Orbit"] = Instance.new("TextButton");
+	["_Fling"] = Instance.new("TextButton");
 	["_UICorner72"] = Instance.new("UICorner");
-	["_Bindable65"] = Instance.new("BoolValue");
-	["_Invisible"] = Instance.new("TextButton");
+	["_Bindable63"] = Instance.new("BoolValue");
+	["_UAFling"] = Instance.new("TextButton");
 	["_UICorner73"] = Instance.new("UICorner");
+	["_Bindable64"] = Instance.new("BoolValue");
+	["_Inspect"] = Instance.new("TextButton");
+	["_UICorner74"] = Instance.new("UICorner");
+	["_Bindable65"] = Instance.new("BoolValue");
+	["_Bang"] = Instance.new("TextButton");
+	["_UICorner75"] = Instance.new("UICorner");
 	["_Bindable66"] = Instance.new("BoolValue");
+	["_Orbit"] = Instance.new("TextButton");
+	["_UICorner76"] = Instance.new("UICorner");
+	["_Bindable67"] = Instance.new("BoolValue");
+	["_Invisible"] = Instance.new("TextButton");
+	["_UICorner77"] = Instance.new("UICorner");
+	["_Bindable68"] = Instance.new("BoolValue");
 	["_Logs1"] = Instance.new("CanvasGroup");
-	["_Chat2"] = Instance.new("ScrollingFrame");
-	["_Log"] = Instance.new("TextLabel");
+	["_Chat1"] = Instance.new("ScrollingFrame");
+	["_List1"] = Instance.new("UIListLayout");
 	["_CL"] = Instance.new("TextLabel");
 	["_PL"] = Instance.new("TextLabel");
 	["_Player"] = Instance.new("ScrollingFrame");
-	["_Log1"] = Instance.new("TextLabel");
+	["_List2"] = Instance.new("UIListLayout");
 	["_CClear"] = Instance.new("TextButton");
-	["_UICorner74"] = Instance.new("UICorner");
-	["_Bindable67"] = Instance.new("BoolValue");
+	["_UICorner78"] = Instance.new("UICorner");
+	["_Bindable69"] = Instance.new("BoolValue");
 	["_PClear"] = Instance.new("TextButton");
-	["_UICorner75"] = Instance.new("UICorner");
-	["_Bindable68"] = Instance.new("BoolValue");
+	["_UICorner79"] = Instance.new("UICorner");
+	["_Bindable70"] = Instance.new("BoolValue");
+	["_PlayerTemplate"] = Instance.new("Frame");
+	["_Log1"] = Instance.new("TextButton");
+	["_UICorner80"] = Instance.new("UICorner");
+	["_ChatTemplate"] = Instance.new("Frame");
+	["_Log2"] = Instance.new("TextButton");
+	["_UICorner81"] = Instance.new("UICorner");
 	["_AntiCheat"] = Instance.new("CanvasGroup");
 	["_Logs2"] = Instance.new("ScrollingFrame");
-	["_Log2"] = Instance.new("TextLabel");
+	["_List3"] = Instance.new("UIListLayout");
 	["_Whitelist"] = Instance.new("ScrollingFrame");
-	["_Players"] = Instance.new("TextLabel");
+	["_List4"] = Instance.new("UIListLayout");
 	["_ACL"] = Instance.new("TextLabel");
 	["_WL"] = Instance.new("TextLabel");
 	["_AWL"] = Instance.new("TextButton");
-	["_UICorner76"] = Instance.new("UICorner");
-	["_Bindable69"] = Instance.new("BoolValue");
-	["_Save"] = Instance.new("TextButton");
-	["_UICorner77"] = Instance.new("UICorner");
-	["_ACToggle"] = Instance.new("TextButton");
-	["_UICorner78"] = Instance.new("UICorner");
-	["_Bindable70"] = Instance.new("BoolValue");
-	["_ToastToggle"] = Instance.new("TextButton");
-	["_UICorner79"] = Instance.new("UICorner");
-	["_Bindable71"] = Instance.new("BoolValue");
-	["_Clear"] = Instance.new("CanvasGroup");
-	["_UICorner80"] = Instance.new("UICorner");
-	["_WL1"] = Instance.new("TextButton");
-	["_UICorner81"] = Instance.new("UICorner");
-	["_Logs3"] = Instance.new("TextButton");
 	["_UICorner82"] = Instance.new("UICorner");
-	["_Input3"] = Instance.new("TextBox");
+	["_Bindable71"] = Instance.new("BoolValue");
+	["_Save"] = Instance.new("TextButton");
 	["_UICorner83"] = Instance.new("UICorner");
-	["_Toggle"] = Instance.new("TextButton");
+	["_ACToggle"] = Instance.new("TextButton");
 	["_UICorner84"] = Instance.new("UICorner");
 	["_Bindable72"] = Instance.new("BoolValue");
-	["_Players1"] = Instance.new("CanvasGroup");
-	["_List"] = Instance.new("ScrollingFrame");
-	["_Players2"] = Instance.new("TextLabel");
-	["_Bodycam"] = Instance.new("TextButton");
+	["_ToastToggle"] = Instance.new("TextButton");
 	["_UICorner85"] = Instance.new("UICorner");
 	["_Bindable73"] = Instance.new("BoolValue");
-	["_Input4"] = Instance.new("TextBox");
+	["_Clear"] = Instance.new("CanvasGroup");
 	["_UICorner86"] = Instance.new("UICorner");
-	["_View"] = Instance.new("TextButton");
+	["_WL1"] = Instance.new("TextButton");
 	["_UICorner87"] = Instance.new("UICorner");
-	["_Bindable74"] = Instance.new("BoolValue");
-	["_Teleport"] = Instance.new("TextButton");
+	["_Logs3"] = Instance.new("TextButton");
 	["_UICorner88"] = Instance.new("UICorner");
-	["_Bindable75"] = Instance.new("BoolValue");
-	["_Pisswater"] = Instance.new("TextButton");
+	["_Input3"] = Instance.new("TextBox");
 	["_UICorner89"] = Instance.new("UICorner");
-	["_Tools"] = Instance.new("TextButton");
+	["_Toggle"] = Instance.new("TextButton");
 	["_UICorner90"] = Instance.new("UICorner");
-	["_Bindable76"] = Instance.new("BoolValue");
-	["_UserId"] = Instance.new("TextLabel");
+	["_Bindable74"] = Instance.new("BoolValue");
+	["_Template1"] = Instance.new("Frame");
+	["_Log3"] = Instance.new("TextButton");
 	["_UICorner91"] = Instance.new("UICorner");
-	["_CopyName"] = Instance.new("TextButton");
+	["_WLTemplate"] = Instance.new("Frame");
+	["_Log4"] = Instance.new("TextButton");
 	["_UICorner92"] = Instance.new("UICorner");
-	["_Bindable77"] = Instance.new("BoolValue");
-	["_Refresh1"] = Instance.new("TextButton");
+	["_Players"] = Instance.new("CanvasGroup");
+	["_List5"] = Instance.new("ScrollingFrame");
+	["_Players1"] = Instance.new("TextLabel");
+	["_Bodycam"] = Instance.new("TextButton");
 	["_UICorner93"] = Instance.new("UICorner");
+	["_Bindable75"] = Instance.new("BoolValue");
+	["_Input4"] = Instance.new("TextBox");
+	["_UICorner94"] = Instance.new("UICorner");
+	["_View"] = Instance.new("TextButton");
+	["_UICorner95"] = Instance.new("UICorner");
+	["_Bindable76"] = Instance.new("BoolValue");
+	["_Teleport"] = Instance.new("TextButton");
+	["_UICorner96"] = Instance.new("UICorner");
+	["_Bindable77"] = Instance.new("BoolValue");
+	["_Pisswater"] = Instance.new("TextButton");
+	["_UICorner97"] = Instance.new("UICorner");
+	["_Tools"] = Instance.new("TextButton");
+	["_UICorner98"] = Instance.new("UICorner");
 	["_Bindable78"] = Instance.new("BoolValue");
+	["_UserId"] = Instance.new("TextLabel");
+	["_UICorner99"] = Instance.new("UICorner");
+	["_CopyName"] = Instance.new("TextButton");
+	["_UICorner100"] = Instance.new("UICorner");
+	["_Bindable79"] = Instance.new("BoolValue");
+	["_Refresh1"] = Instance.new("TextButton");
+	["_UICorner101"] = Instance.new("UICorner");
+	["_Bindable80"] = Instance.new("BoolValue");
 	["_Places"] = Instance.new("CanvasGroup");
 	["_Teleports1"] = Instance.new("Folder");
 	["_Washiez"] = Instance.new("TextButton");
-	["_UICorner94"] = Instance.new("UICorner");
+	["_UICorner102"] = Instance.new("UICorner");
 	["_OilUp"] = Instance.new("TextButton");
-	["_UICorner95"] = Instance.new("UICorner");
+	["_UICorner103"] = Instance.new("UICorner");
 	["_PrisonLife1"] = Instance.new("TextButton");
-	["_UICorner96"] = Instance.new("UICorner");
+	["_UICorner104"] = Instance.new("UICorner");
 	["_WashiezTC"] = Instance.new("TextButton");
-	["_UICorner97"] = Instance.new("UICorner");
+	["_UICorner105"] = Instance.new("UICorner");
 	["_SCCSimulator"] = Instance.new("TextButton");
-	["_UICorner98"] = Instance.new("UICorner");
+	["_UICorner106"] = Instance.new("UICorner");
 	["_MM2"] = Instance.new("TextButton");
-	["_UICorner99"] = Instance.new("UICorner");
+	["_UICorner107"] = Instance.new("UICorner");
 	["_WashiezRank"] = Instance.new("TextButton");
-	["_UICorner100"] = Instance.new("UICorner");
+	["_UICorner108"] = Instance.new("UICorner");
+	["_AimbotFFA"] = Instance.new("TextButton");
+	["_UICorner109"] = Instance.new("UICorner");
 	["_Washiez1"] = Instance.new("CanvasGroup");
 	["_RMenu"] = Instance.new("TextButton");
-	["_UICorner101"] = Instance.new("UICorner");
-	["_Bindable79"] = Instance.new("BoolValue");
-	["_NFuel"] = Instance.new("TextButton");
-	["_UICorner102"] = Instance.new("UICorner");
-	["_Bindable80"] = Instance.new("BoolValue");
-	["_TP1"] = Instance.new("TextButton");
-	["_UICorner103"] = Instance.new("UICorner");
+	["_UICorner110"] = Instance.new("UICorner");
 	["_Bindable81"] = Instance.new("BoolValue");
-	["_IFuel"] = Instance.new("TextButton");
-	["_UICorner104"] = Instance.new("UICorner");
+	["_NFuel"] = Instance.new("TextButton");
+	["_UICorner111"] = Instance.new("UICorner");
 	["_Bindable82"] = Instance.new("BoolValue");
+	["_TP1"] = Instance.new("TextButton");
+	["_UICorner112"] = Instance.new("UICorner");
+	["_Bindable83"] = Instance.new("BoolValue");
+	["_IFuel"] = Instance.new("TextButton");
+	["_UICorner113"] = Instance.new("UICorner");
+	["_Bindable84"] = Instance.new("BoolValue");
 	["_Teleports2"] = Instance.new("CanvasGroup");
 	["_Close2"] = Instance.new("TextButton");
-	["_UICorner105"] = Instance.new("UICorner");
-	["_Bindable83"] = Instance.new("BoolValue");
-	["_Jail"] = Instance.new("TextButton");
-	["_UICorner106"] = Instance.new("UICorner");
-	["_Bindable84"] = Instance.new("BoolValue");
-	["_Store"] = Instance.new("TextButton");
-	["_UICorner107"] = Instance.new("UICorner");
-	["_Bindable85"] = Instance.new("BoolValue");
-	["_Staff"] = Instance.new("TextButton");
-	["_UICorner108"] = Instance.new("UICorner");
-	["_Bindable86"] = Instance.new("BoolValue");
-	["_Spawn"] = Instance.new("TextButton");
-	["_UICorner109"] = Instance.new("UICorner");
-	["_Bindable87"] = Instance.new("BoolValue");
-	["_Kitchen"] = Instance.new("TextButton");
-	["_UICorner110"] = Instance.new("UICorner");
-	["_Bindable88"] = Instance.new("BoolValue");
-	["_Key"] = Instance.new("TextButton");
-	["_UICorner111"] = Instance.new("UICorner");
-	["_Bindable89"] = Instance.new("BoolValue");
-	["_VIP"] = Instance.new("TextButton");
-	["_UICorner112"] = Instance.new("UICorner");
-	["_Bindable90"] = Instance.new("BoolValue");
-	["_CarWash"] = Instance.new("TextButton");
-	["_UICorner113"] = Instance.new("UICorner");
-	["_Bindable91"] = Instance.new("BoolValue");
-	["_Warehouse"] = Instance.new("TextButton");
 	["_UICorner114"] = Instance.new("UICorner");
-	["_Bindable92"] = Instance.new("BoolValue");
-	["_Campsite"] = Instance.new("TextButton");
+	["_Bindable85"] = Instance.new("BoolValue");
+	["_Jail"] = Instance.new("TextButton");
 	["_UICorner115"] = Instance.new("UICorner");
-	["_Bindable93"] = Instance.new("BoolValue");
-	["_Obbies"] = Instance.new("TextButton");
+	["_Bindable86"] = Instance.new("BoolValue");
+	["_Store"] = Instance.new("TextButton");
 	["_UICorner116"] = Instance.new("UICorner");
-	["_Bindable94"] = Instance.new("BoolValue");
-	["_Raceway"] = Instance.new("TextButton");
+	["_Bindable87"] = Instance.new("BoolValue");
+	["_Staff"] = Instance.new("TextButton");
 	["_UICorner117"] = Instance.new("UICorner");
-	["_Bindable95"] = Instance.new("BoolValue");
-	["_MFuel"] = Instance.new("TextButton");
+	["_Bindable88"] = Instance.new("BoolValue");
+	["_Spawn"] = Instance.new("TextButton");
 	["_UICorner118"] = Instance.new("UICorner");
-	["_Bindable96"] = Instance.new("BoolValue");
-	["_RankDown"] = Instance.new("TextButton");
+	["_Bindable89"] = Instance.new("BoolValue");
+	["_Kitchen"] = Instance.new("TextButton");
 	["_UICorner119"] = Instance.new("UICorner");
-	["_Bindable97"] = Instance.new("BoolValue");
-	["_RankUp"] = Instance.new("TextButton");
+	["_Bindable90"] = Instance.new("BoolValue");
+	["_Key"] = Instance.new("TextButton");
 	["_UICorner120"] = Instance.new("UICorner");
-	["_Bindable98"] = Instance.new("BoolValue");
-	["_Rank"] = Instance.new("TextLabel");
+	["_Bindable91"] = Instance.new("BoolValue");
+	["_VIP"] = Instance.new("TextButton");
 	["_UICorner121"] = Instance.new("UICorner");
-	["_Radio"] = Instance.new("TextBox");
+	["_Bindable92"] = Instance.new("BoolValue");
+	["_CarWash"] = Instance.new("TextButton");
 	["_UICorner122"] = Instance.new("UICorner");
+	["_Bindable93"] = Instance.new("BoolValue");
+	["_Warehouse"] = Instance.new("TextButton");
+	["_UICorner123"] = Instance.new("UICorner");
+	["_Bindable94"] = Instance.new("BoolValue");
+	["_Campsite"] = Instance.new("TextButton");
+	["_UICorner124"] = Instance.new("UICorner");
+	["_Bindable95"] = Instance.new("BoolValue");
+	["_Obbies"] = Instance.new("TextButton");
+	["_UICorner125"] = Instance.new("UICorner");
+	["_Bindable96"] = Instance.new("BoolValue");
+	["_Raceway"] = Instance.new("TextButton");
+	["_UICorner126"] = Instance.new("UICorner");
+	["_Bindable97"] = Instance.new("BoolValue");
+	["_MFuel"] = Instance.new("TextButton");
+	["_UICorner127"] = Instance.new("UICorner");
+	["_Bindable98"] = Instance.new("BoolValue");
+	["_RankDown"] = Instance.new("TextButton");
+	["_UICorner128"] = Instance.new("UICorner");
+	["_Bindable99"] = Instance.new("BoolValue");
+	["_RankUp"] = Instance.new("TextButton");
+	["_UICorner129"] = Instance.new("UICorner");
+	["_Bindable100"] = Instance.new("BoolValue");
+	["_Rank"] = Instance.new("TextLabel");
+	["_UICorner130"] = Instance.new("UICorner");
+	["_Radio"] = Instance.new("TextBox");
+	["_UICorner131"] = Instance.new("UICorner");
 	["_Tickets"] = Instance.new("CanvasGroup");
 	["_TicketSpam"] = Instance.new("TextButton");
-	["_UICorner123"] = Instance.new("UICorner");
-	["_Bindable99"] = Instance.new("BoolValue");
-	["_DTickets"] = Instance.new("TextButton");
-	["_UICorner124"] = Instance.new("UICorner");
-	["_Bindable100"] = Instance.new("BoolValue");
-	["_SpamTarget"] = Instance.new("TextButton");
-	["_UICorner125"] = Instance.new("UICorner");
-	["_Bindable101"] = Instance.new("BoolValue");
-	["_CTicket"] = Instance.new("TextLabel");
-	["_UICorner126"] = Instance.new("UICorner");
-	["_CTickets"] = Instance.new("TextButton");
-	["_UICorner127"] = Instance.new("UICorner");
-	["_Bindable102"] = Instance.new("BoolValue");
-	["_Deluxe"] = Instance.new("TextButton");
-	["_UICorner128"] = Instance.new("UICorner");
-	["_Bindable103"] = Instance.new("BoolValue");
-	["_Extra"] = Instance.new("TextButton");
-	["_UICorner129"] = Instance.new("UICorner");
-	["_Bindable104"] = Instance.new("BoolValue");
-	["_Regular"] = Instance.new("TextButton");
-	["_UICorner130"] = Instance.new("UICorner");
-	["_Bindable105"] = Instance.new("BoolValue");
-	["_Input5"] = Instance.new("TextBox");
-	["_UICorner131"] = Instance.new("UICorner");
-	["_Close3"] = Instance.new("TextButton");
 	["_UICorner132"] = Instance.new("UICorner");
-	["_Bindable106"] = Instance.new("BoolValue");
-	["_TCK"] = Instance.new("TextButton");
+	["_Bindable101"] = Instance.new("BoolValue");
+	["_DTickets"] = Instance.new("TextButton");
 	["_UICorner133"] = Instance.new("UICorner");
-	["_Bindable107"] = Instance.new("BoolValue");
-	["_CRank"] = Instance.new("TextBox");
+	["_Bindable102"] = Instance.new("BoolValue");
+	["_SpamTarget"] = Instance.new("TextButton");
 	["_UICorner134"] = Instance.new("UICorner");
-	["_FF"] = Instance.new("TextButton");
+	["_Bindable103"] = Instance.new("BoolValue");
+	["_CTicket"] = Instance.new("TextLabel");
 	["_UICorner135"] = Instance.new("UICorner");
-	["_Bindable108"] = Instance.new("BoolValue");
-	["_Obby"] = Instance.new("TextLabel");
+	["_CTickets"] = Instance.new("TextButton");
 	["_UICorner136"] = Instance.new("UICorner");
-	["_ObbyR"] = Instance.new("TextButton");
+	["_Bindable104"] = Instance.new("BoolValue");
+	["_Deluxe"] = Instance.new("TextButton");
 	["_UICorner137"] = Instance.new("UICorner");
-	["_Bindable109"] = Instance.new("BoolValue");
-	["_ObbyL"] = Instance.new("TextButton");
+	["_Bindable105"] = Instance.new("BoolValue");
+	["_Extra"] = Instance.new("TextButton");
 	["_UICorner138"] = Instance.new("UICorner");
-	["_Bindable110"] = Instance.new("BoolValue");
-	["_AutoObby"] = Instance.new("TextButton");
+	["_Bindable106"] = Instance.new("BoolValue");
+	["_Regular"] = Instance.new("TextButton");
 	["_UICorner139"] = Instance.new("UICorner");
-	["_Bindable111"] = Instance.new("BoolValue");
-	["_NIFuel"] = Instance.new("TextButton");
+	["_Bindable107"] = Instance.new("BoolValue");
+	["_Input5"] = Instance.new("TextBox");
 	["_UICorner140"] = Instance.new("UICorner");
-	["_Bindable112"] = Instance.new("BoolValue");
-	["_Gates"] = Instance.new("TextButton");
+	["_Close3"] = Instance.new("TextButton");
 	["_UICorner141"] = Instance.new("UICorner");
-	["_Bindable113"] = Instance.new("BoolValue");
-	["_Key1"] = Instance.new("TextButton");
+	["_Bindable108"] = Instance.new("BoolValue");
+	["_TCK"] = Instance.new("TextButton");
 	["_UICorner142"] = Instance.new("UICorner");
-	["_Bindable114"] = Instance.new("BoolValue");
-	["_Collision"] = Instance.new("TextButton");
+	["_Bindable109"] = Instance.new("BoolValue");
+	["_CRank"] = Instance.new("TextBox");
 	["_UICorner143"] = Instance.new("UICorner");
-	["_Bindable115"] = Instance.new("BoolValue");
-	["_WLOL"] = Instance.new("TextButton");
+	["_FF"] = Instance.new("TextButton");
 	["_UICorner144"] = Instance.new("UICorner");
-	["_Bindable116"] = Instance.new("BoolValue");
-	["_OStats"] = Instance.new("TextLabel");
+	["_Bindable110"] = Instance.new("BoolValue");
+	["_Obby"] = Instance.new("TextLabel");
 	["_UICorner145"] = Instance.new("UICorner");
-	["_CarPad"] = Instance.new("TextButton");
+	["_ObbyR"] = Instance.new("TextButton");
 	["_UICorner146"] = Instance.new("UICorner");
-	["_Bindable117"] = Instance.new("BoolValue");
-	["_OpenDoors"] = Instance.new("TextButton");
+	["_Bindable111"] = Instance.new("BoolValue");
+	["_ObbyL"] = Instance.new("TextButton");
 	["_UICorner147"] = Instance.new("UICorner");
-	["_Bindable118"] = Instance.new("BoolValue");
-	["_Doors"] = Instance.new("TextButton");
+	["_Bindable112"] = Instance.new("BoolValue");
+	["_AutoObby"] = Instance.new("TextButton");
 	["_UICorner148"] = Instance.new("UICorner");
+	["_Bindable113"] = Instance.new("BoolValue");
+	["_NIFuel"] = Instance.new("TextButton");
+	["_UICorner149"] = Instance.new("UICorner");
+	["_Bindable114"] = Instance.new("BoolValue");
+	["_Gates"] = Instance.new("TextButton");
+	["_UICorner150"] = Instance.new("UICorner");
+	["_Bindable115"] = Instance.new("BoolValue");
+	["_Key1"] = Instance.new("TextButton");
+	["_UICorner151"] = Instance.new("UICorner");
+	["_Bindable116"] = Instance.new("BoolValue");
+	["_Collision"] = Instance.new("TextButton");
+	["_UICorner152"] = Instance.new("UICorner");
+	["_Bindable117"] = Instance.new("BoolValue");
+	["_WLOL"] = Instance.new("TextButton");
+	["_UICorner153"] = Instance.new("UICorner");
+	["_Bindable118"] = Instance.new("BoolValue");
+	["_OStats"] = Instance.new("TextLabel");
+	["_UICorner154"] = Instance.new("UICorner");
+	["_CarPad"] = Instance.new("TextButton");
+	["_UICorner155"] = Instance.new("UICorner");
 	["_Bindable119"] = Instance.new("BoolValue");
+	["_OpenDoors"] = Instance.new("TextButton");
+	["_UICorner156"] = Instance.new("UICorner");
+	["_Bindable120"] = Instance.new("BoolValue");
+	["_Doors"] = Instance.new("TextButton");
+	["_UICorner157"] = Instance.new("UICorner");
+	["_Bindable121"] = Instance.new("BoolValue");
 	["_Ranks"] = Instance.new("CanvasGroup");
 	["_Close4"] = Instance.new("TextButton");
-	["_UICorner149"] = Instance.new("UICorner");
-	["_Bindable120"] = Instance.new("BoolValue");
+	["_UICorner158"] = Instance.new("UICorner");
+	["_Bindable122"] = Instance.new("BoolValue");
 	["_Info"] = Instance.new("TextLabel");
 	["_NotifyMGMT"] = Instance.new("TextButton");
-	["_UICorner150"] = Instance.new("UICorner");
-	["_Bindable121"] = Instance.new("BoolValue");
+	["_UICorner159"] = Instance.new("UICorner");
+	["_Bindable123"] = Instance.new("BoolValue");
 	["_NotifyST"] = Instance.new("TextButton");
-	["_UICorner151"] = Instance.new("UICorner");
-	["_Bindable122"] = Instance.new("BoolValue");
+	["_UICorner160"] = Instance.new("UICorner");
+	["_Bindable124"] = Instance.new("BoolValue");
+	["_Event"] = Instance.new("TextButton");
+	["_UICorner161"] = Instance.new("UICorner");
+	["_Bindable125"] = Instance.new("BoolValue");
+	["_LOD"] = Instance.new("TextButton");
+	["_UICorner162"] = Instance.new("UICorner");
+	["_Bindable126"] = Instance.new("BoolValue");
 	["_WashiezTC1"] = Instance.new("CanvasGroup");
 	["_VSeat"] = Instance.new("TextButton");
-	["_UICorner152"] = Instance.new("UICorner");
-	["_Bindable123"] = Instance.new("BoolValue");
+	["_UICorner163"] = Instance.new("UICorner");
+	["_Bindable127"] = Instance.new("BoolValue");
 	["_OG"] = Instance.new("TextButton");
-	["_UICorner153"] = Instance.new("UICorner");
-	["_Bindable124"] = Instance.new("BoolValue");
+	["_UICorner164"] = Instance.new("UICorner");
+	["_Bindable128"] = Instance.new("BoolValue");
 	["_Doors1"] = Instance.new("TextButton");
-	["_UICorner154"] = Instance.new("UICorner");
-	["_Bindable125"] = Instance.new("BoolValue");
+	["_UICorner165"] = Instance.new("UICorner");
+	["_Bindable129"] = Instance.new("BoolValue");
 	["_Teleports3"] = Instance.new("CanvasGroup");
 	["_Upstairs"] = Instance.new("TextButton");
-	["_UICorner155"] = Instance.new("UICorner");
-	["_Bindable126"] = Instance.new("BoolValue");
-	["_Trainee"] = Instance.new("TextButton");
-	["_UICorner156"] = Instance.new("UICorner");
-	["_Bindable127"] = Instance.new("BoolValue");
-	["_Test"] = Instance.new("TextButton");
-	["_UICorner157"] = Instance.new("UICorner");
-	["_Bindable128"] = Instance.new("BoolValue");
-	["_Staff1"] = Instance.new("TextButton");
-	["_UICorner158"] = Instance.new("UICorner");
-	["_Bindable129"] = Instance.new("BoolValue");
-	["_Spawn1"] = Instance.new("TextButton");
-	["_UICorner159"] = Instance.new("UICorner");
-	["_Bindable130"] = Instance.new("BoolValue");
-	["_JO"] = Instance.new("TextButton");
-	["_UICorner160"] = Instance.new("UICorner");
-	["_Bindable131"] = Instance.new("BoolValue");
-	["_SO"] = Instance.new("TextButton");
-	["_UICorner161"] = Instance.new("UICorner");
-	["_Bindable132"] = Instance.new("BoolValue");
-	["_Entrance"] = Instance.new("TextButton");
-	["_UICorner162"] = Instance.new("UICorner");
-	["_Bindable133"] = Instance.new("BoolValue");
-	["_Chair"] = Instance.new("TextButton");
-	["_UICorner163"] = Instance.new("UICorner");
-	["_Bindable134"] = Instance.new("BoolValue");
-	["_Close5"] = Instance.new("TextButton");
-	["_UICorner164"] = Instance.new("UICorner");
-	["_Bindable135"] = Instance.new("BoolValue");
-	["_CarInfo"] = Instance.new("TextLabel");
-	["_UICorner165"] = Instance.new("UICorner");
-	["_CM"] = Instance.new("TextButton");
 	["_UICorner166"] = Instance.new("UICorner");
-	["_Bindable136"] = Instance.new("BoolValue");
-	["_TP2"] = Instance.new("TextButton");
+	["_Bindable130"] = Instance.new("BoolValue");
+	["_Trainee"] = Instance.new("TextButton");
 	["_UICorner167"] = Instance.new("UICorner");
+	["_Bindable131"] = Instance.new("BoolValue");
+	["_Test"] = Instance.new("TextButton");
+	["_UICorner168"] = Instance.new("UICorner");
+	["_Bindable132"] = Instance.new("BoolValue");
+	["_Staff1"] = Instance.new("TextButton");
+	["_UICorner169"] = Instance.new("UICorner");
+	["_Bindable133"] = Instance.new("BoolValue");
+	["_Spawn1"] = Instance.new("TextButton");
+	["_UICorner170"] = Instance.new("UICorner");
+	["_Bindable134"] = Instance.new("BoolValue");
+	["_JO"] = Instance.new("TextButton");
+	["_UICorner171"] = Instance.new("UICorner");
+	["_Bindable135"] = Instance.new("BoolValue");
+	["_SO"] = Instance.new("TextButton");
+	["_UICorner172"] = Instance.new("UICorner");
+	["_Bindable136"] = Instance.new("BoolValue");
+	["_Entrance"] = Instance.new("TextButton");
+	["_UICorner173"] = Instance.new("UICorner");
 	["_Bindable137"] = Instance.new("BoolValue");
+	["_Chair"] = Instance.new("TextButton");
+	["_UICorner174"] = Instance.new("UICorner");
+	["_Bindable138"] = Instance.new("BoolValue");
+	["_Close5"] = Instance.new("TextButton");
+	["_UICorner175"] = Instance.new("UICorner");
+	["_Bindable139"] = Instance.new("BoolValue");
+	["_CarInfo"] = Instance.new("TextLabel");
+	["_UICorner176"] = Instance.new("UICorner");
+	["_CM"] = Instance.new("TextButton");
+	["_UICorner177"] = Instance.new("UICorner");
+	["_Bindable140"] = Instance.new("BoolValue");
+	["_TP2"] = Instance.new("TextButton");
+	["_UICorner178"] = Instance.new("UICorner");
+	["_Bindable141"] = Instance.new("BoolValue");
 	["_Cars"] = Instance.new("CanvasGroup");
 	["_Teleport1"] = Instance.new("TextButton");
-	["_UICorner168"] = Instance.new("UICorner");
-	["_Bindable138"] = Instance.new("BoolValue");
-	["_Close6"] = Instance.new("TextButton");
-	["_UICorner169"] = Instance.new("UICorner");
-	["_Bindable139"] = Instance.new("BoolValue");
-	["_Input6"] = Instance.new("TextBox");
-	["_UICorner170"] = Instance.new("UICorner");
-	["_Delete"] = Instance.new("TextButton");
-	["_UICorner171"] = Instance.new("UICorner");
-	["_Bindable140"] = Instance.new("BoolValue");
-	["_Main"] = Instance.new("TextButton");
-	["_UICorner172"] = Instance.new("UICorner");
-	["_Bindable141"] = Instance.new("BoolValue");
-	["_Stage"] = Instance.new("TextButton");
-	["_UICorner173"] = Instance.new("UICorner");
-	["_Bindable142"] = Instance.new("BoolValue");
-	["_Roof"] = Instance.new("TextButton");
-	["_UICorner174"] = Instance.new("UICorner");
-	["_Bindable143"] = Instance.new("BoolValue");
-	["_Outside"] = Instance.new("TextButton");
-	["_UICorner175"] = Instance.new("UICorner");
-	["_Bindable144"] = Instance.new("BoolValue");
-	["_DeleteAll"] = Instance.new("TextButton");
-	["_UICorner176"] = Instance.new("UICorner");
-	["_Bindable145"] = Instance.new("BoolValue");
-	["_Flip"] = Instance.new("TextButton");
-	["_UICorner177"] = Instance.new("UICorner");
-	["_Bindable146"] = Instance.new("BoolValue");
-	["_Fling1"] = Instance.new("TextButton");
-	["_UICorner178"] = Instance.new("UICorner");
-	["_Bindable147"] = Instance.new("BoolValue");
-	["_FlingAll"] = Instance.new("TextButton");
 	["_UICorner179"] = Instance.new("UICorner");
-	["_Bindable148"] = Instance.new("BoolValue");
-	["_Fix"] = Instance.new("TextButton");
+	["_Bindable142"] = Instance.new("BoolValue");
+	["_Close6"] = Instance.new("TextButton");
 	["_UICorner180"] = Instance.new("UICorner");
-	["_Bindable149"] = Instance.new("BoolValue");
-	["_OpenDoors1"] = Instance.new("TextButton");
+	["_Bindable143"] = Instance.new("BoolValue");
+	["_Input6"] = Instance.new("TextBox");
 	["_UICorner181"] = Instance.new("UICorner");
-	["_Bindable150"] = Instance.new("BoolValue");
-	["_FF1"] = Instance.new("TextButton");
+	["_Delete"] = Instance.new("TextButton");
 	["_UICorner182"] = Instance.new("UICorner");
-	["_Bindable151"] = Instance.new("BoolValue");
-	["_CarAdded"] = Instance.new("TextButton");
+	["_Bindable144"] = Instance.new("BoolValue");
+	["_Main"] = Instance.new("TextButton");
 	["_UICorner183"] = Instance.new("UICorner");
-	["_Bindable152"] = Instance.new("BoolValue");
-	["_CarDeleted"] = Instance.new("TextButton");
+	["_Bindable145"] = Instance.new("BoolValue");
+	["_Stage"] = Instance.new("TextButton");
 	["_UICorner184"] = Instance.new("UICorner");
-	["_Bindable153"] = Instance.new("BoolValue");
-	["_RMenu1"] = Instance.new("TextButton");
+	["_Bindable146"] = Instance.new("BoolValue");
+	["_Roof"] = Instance.new("TextButton");
 	["_UICorner185"] = Instance.new("UICorner");
+	["_Bindable147"] = Instance.new("BoolValue");
+	["_Outside"] = Instance.new("TextButton");
+	["_UICorner186"] = Instance.new("UICorner");
+	["_Bindable148"] = Instance.new("BoolValue");
+	["_DeleteAll"] = Instance.new("TextButton");
+	["_UICorner187"] = Instance.new("UICorner");
+	["_Bindable149"] = Instance.new("BoolValue");
+	["_Flip"] = Instance.new("TextButton");
+	["_UICorner188"] = Instance.new("UICorner");
+	["_Bindable150"] = Instance.new("BoolValue");
+	["_Fling1"] = Instance.new("TextButton");
+	["_UICorner189"] = Instance.new("UICorner");
+	["_Bindable151"] = Instance.new("BoolValue");
+	["_FlingAll"] = Instance.new("TextButton");
+	["_UICorner190"] = Instance.new("UICorner");
+	["_Bindable152"] = Instance.new("BoolValue");
+	["_Fix"] = Instance.new("TextButton");
+	["_UICorner191"] = Instance.new("UICorner");
+	["_Bindable153"] = Instance.new("BoolValue");
+	["_OpenDoors1"] = Instance.new("TextButton");
+	["_UICorner192"] = Instance.new("UICorner");
 	["_Bindable154"] = Instance.new("BoolValue");
+	["_FF1"] = Instance.new("TextButton");
+	["_UICorner193"] = Instance.new("UICorner");
+	["_Bindable155"] = Instance.new("BoolValue");
+	["_CarAdded"] = Instance.new("TextButton");
+	["_UICorner194"] = Instance.new("UICorner");
+	["_Bindable156"] = Instance.new("BoolValue");
+	["_CarDeleted"] = Instance.new("TextButton");
+	["_UICorner195"] = Instance.new("UICorner");
+	["_Bindable157"] = Instance.new("BoolValue");
+	["_RMenu1"] = Instance.new("TextButton");
+	["_UICorner196"] = Instance.new("UICorner");
+	["_Bindable158"] = Instance.new("BoolValue");
 	["_Ranks1"] = Instance.new("CanvasGroup");
 	["_Close7"] = Instance.new("TextButton");
-	["_UICorner186"] = Instance.new("UICorner");
-	["_Bindable155"] = Instance.new("BoolValue");
+	["_UICorner197"] = Instance.new("UICorner");
+	["_Bindable159"] = Instance.new("BoolValue");
 	["_Info1"] = Instance.new("TextLabel");
 	["_NotifyST1"] = Instance.new("TextButton");
-	["_UICorner187"] = Instance.new("UICorner");
-	["_Bindable156"] = Instance.new("BoolValue");
+	["_UICorner198"] = Instance.new("UICorner");
+	["_Bindable160"] = Instance.new("BoolValue");
 	["_NotifyMGMT1"] = Instance.new("TextButton");
-	["_UICorner188"] = Instance.new("UICorner");
-	["_Bindable157"] = Instance.new("BoolValue");
-	["_Spark"] = Instance.new("TextButton");
-	["_UICorner189"] = Instance.new("UICorner");
-	["_Bindable158"] = Instance.new("BoolValue");
+	["_UICorner199"] = Instance.new("UICorner");
+	["_Bindable161"] = Instance.new("BoolValue");
+	["_LOD1"] = Instance.new("TextButton");
+	["_UICorner200"] = Instance.new("UICorner");
+	["_Bindable162"] = Instance.new("BoolValue");
 	["_OilUp1"] = Instance.new("CanvasGroup");
 	["_AutoFarm"] = Instance.new("TextButton");
-	["_UICorner190"] = Instance.new("UICorner");
-	["_Bindable159"] = Instance.new("BoolValue");
-	["_Input7"] = Instance.new("TextBox");
-	["_UICorner191"] = Instance.new("UICorner");
-	["_Set"] = Instance.new("TextButton");
-	["_UICorner192"] = Instance.new("UICorner");
-	["_Bindable160"] = Instance.new("BoolValue");
-	["_Add"] = Instance.new("TextButton");
-	["_UICorner193"] = Instance.new("UICorner");
-	["_Bindable161"] = Instance.new("BoolValue");
-	["_Play"] = Instance.new("TextButton");
-	["_UICorner194"] = Instance.new("UICorner");
-	["_Bindable162"] = Instance.new("BoolValue");
-	["_Pause"] = Instance.new("TextButton");
-	["_UICorner195"] = Instance.new("UICorner");
+	["_UICorner201"] = Instance.new("UICorner");
 	["_Bindable163"] = Instance.new("BoolValue");
-	["_Stop"] = Instance.new("TextButton");
-	["_UICorner196"] = Instance.new("UICorner");
+	["_Input7"] = Instance.new("TextBox");
+	["_UICorner202"] = Instance.new("UICorner");
+	["_Set"] = Instance.new("TextButton");
+	["_UICorner203"] = Instance.new("UICorner");
 	["_Bindable164"] = Instance.new("BoolValue");
-	["_Status"] = Instance.new("TextLabel");
-	["_UICorner197"] = Instance.new("UICorner");
+	["_Add"] = Instance.new("TextButton");
+	["_UICorner204"] = Instance.new("UICorner");
 	["_Bindable165"] = Instance.new("BoolValue");
-	["_Length"] = Instance.new("TextLabel");
-	["_UICorner198"] = Instance.new("UICorner");
+	["_Play"] = Instance.new("TextButton");
+	["_UICorner205"] = Instance.new("UICorner");
 	["_Bindable166"] = Instance.new("BoolValue");
+	["_Pause"] = Instance.new("TextButton");
+	["_UICorner206"] = Instance.new("UICorner");
+	["_Bindable167"] = Instance.new("BoolValue");
+	["_Stop"] = Instance.new("TextButton");
+	["_UICorner207"] = Instance.new("UICorner");
+	["_Bindable168"] = Instance.new("BoolValue");
+	["_Status"] = Instance.new("TextLabel");
+	["_UICorner208"] = Instance.new("UICorner");
+	["_Bindable169"] = Instance.new("BoolValue");
+	["_Length"] = Instance.new("TextLabel");
+	["_UICorner209"] = Instance.new("UICorner");
+	["_Bindable170"] = Instance.new("BoolValue");
+	["_MDisabled"] = Instance.new("TextLabel");
+	["_UICorner210"] = Instance.new("UICorner");
+	["_Mute"] = Instance.new("TextButton");
+	["_UICorner211"] = Instance.new("UICorner");
+	["_Bindable171"] = Instance.new("BoolValue");
+	["_FView"] = Instance.new("TextButton");
+	["_UICorner212"] = Instance.new("UICorner");
+	["_Bindable172"] = Instance.new("BoolValue");
 	["_SCCSimulator1"] = Instance.new("CanvasGroup");
 	["_Audio"] = Instance.new("TextButton");
-	["_UICorner199"] = Instance.new("UICorner");
-	["_Bindable167"] = Instance.new("BoolValue");
-	["_AutoFarm1"] = Instance.new("TextButton");
-	["_UICorner200"] = Instance.new("UICorner");
-	["_Bindable168"] = Instance.new("BoolValue");
-	["_SCC"] = Instance.new("TextButton");
-	["_UICorner201"] = Instance.new("UICorner");
-	["_Bindable169"] = Instance.new("BoolValue");
-	["_HCC"] = Instance.new("TextButton");
-	["_UICorner202"] = Instance.new("UICorner");
-	["_Bindable170"] = Instance.new("BoolValue");
-	["_Message1"] = Instance.new("TextBox");
-	["_UICorner203"] = Instance.new("UICorner");
-	["_Send1"] = Instance.new("TextButton");
-	["_UICorner204"] = Instance.new("UICorner");
-	["_Bindable171"] = Instance.new("BoolValue");
-	["_CD"] = Instance.new("TextButton");
-	["_UICorner205"] = Instance.new("UICorner");
-	["_Bindable172"] = Instance.new("BoolValue");
-	["_CC"] = Instance.new("TextButton");
-	["_UICorner206"] = Instance.new("UICorner");
+	["_UICorner213"] = Instance.new("UICorner");
 	["_Bindable173"] = Instance.new("BoolValue");
-	["_Clear1"] = Instance.new("TextButton");
-	["_UICorner207"] = Instance.new("UICorner");
+	["_AutoFarm1"] = Instance.new("TextButton");
+	["_UICorner214"] = Instance.new("UICorner");
 	["_Bindable174"] = Instance.new("BoolValue");
-	["_Lag"] = Instance.new("TextButton");
-	["_UICorner208"] = Instance.new("UICorner");
+	["_SCC"] = Instance.new("TextButton");
+	["_UICorner215"] = Instance.new("UICorner");
 	["_Bindable175"] = Instance.new("BoolValue");
-	["_Amount"] = Instance.new("TextBox");
-	["_UICorner209"] = Instance.new("UICorner");
-	["_Delay"] = Instance.new("TextBox");
-	["_UICorner210"] = Instance.new("UICorner");
-	["_UseCall"] = Instance.new("TextButton");
-	["_UICorner211"] = Instance.new("UICorner");
+	["_HCC"] = Instance.new("TextButton");
+	["_UICorner216"] = Instance.new("UICorner");
 	["_Bindable176"] = Instance.new("BoolValue");
+	["_Message1"] = Instance.new("TextBox");
+	["_UICorner217"] = Instance.new("UICorner");
+	["_Send1"] = Instance.new("TextButton");
+	["_UICorner218"] = Instance.new("UICorner");
+	["_Bindable177"] = Instance.new("BoolValue");
+	["_CD"] = Instance.new("TextButton");
+	["_UICorner219"] = Instance.new("UICorner");
+	["_Bindable178"] = Instance.new("BoolValue");
+	["_CC"] = Instance.new("TextButton");
+	["_UICorner220"] = Instance.new("UICorner");
+	["_Bindable179"] = Instance.new("BoolValue");
+	["_Clear1"] = Instance.new("TextButton");
+	["_UICorner221"] = Instance.new("UICorner");
+	["_Bindable180"] = Instance.new("BoolValue");
+	["_Lag"] = Instance.new("TextButton");
+	["_UICorner222"] = Instance.new("UICorner");
+	["_Bindable181"] = Instance.new("BoolValue");
+	["_Amount"] = Instance.new("TextBox");
+	["_UICorner223"] = Instance.new("UICorner");
+	["_Delay"] = Instance.new("TextBox");
+	["_UICorner224"] = Instance.new("UICorner");
+	["_UseCall"] = Instance.new("TextButton");
+	["_UICorner225"] = Instance.new("UICorner");
+	["_Bindable182"] = Instance.new("BoolValue");
 	["_Utility"] = Instance.new("CanvasGroup");
 	["_Container2"] = Instance.new("Frame");
 	["_Divider"] = Instance.new("Frame");
-	["_List1"] = Instance.new("CanvasGroup");
+	["_List6"] = Instance.new("CanvasGroup");
 	["_Exploits"] = Instance.new("TextButton");
-	["_UICorner212"] = Instance.new("UICorner");
-	["_Bindable177"] = Instance.new("BoolValue");
+	["_UICorner226"] = Instance.new("UICorner");
+	["_Bindable183"] = Instance.new("BoolValue");
 	["_Executor"] = Instance.new("TextButton");
-	["_UICorner213"] = Instance.new("UICorner");
-	["_Bindable178"] = Instance.new("BoolValue");
+	["_UICorner227"] = Instance.new("UICorner");
+	["_Bindable184"] = Instance.new("BoolValue");
 	["_Notepad"] = Instance.new("TextButton");
-	["_UICorner214"] = Instance.new("UICorner");
-	["_Bindable179"] = Instance.new("BoolValue");
+	["_UICorner228"] = Instance.new("UICorner");
+	["_Bindable185"] = Instance.new("BoolValue");
+	["_Files"] = Instance.new("TextButton");
+	["_UICorner229"] = Instance.new("UICorner");
+	["_Bindable186"] = Instance.new("BoolValue");
 	["_Divider1"] = Instance.new("Frame");
 	["_Menus1"] = Instance.new("Folder");
 	["_Executor1"] = Instance.new("CanvasGroup");
@@ -667,593 +709,911 @@ local Converted = {
 	["_TextBox"] = Instance.new("TextBox");
 	["_Overlay"] = Instance.new("TextLabel");
 	["_Clear2"] = Instance.new("TextButton");
-	["_UICorner215"] = Instance.new("UICorner");
-	["_Bindable180"] = Instance.new("BoolValue");
+	["_UICorner230"] = Instance.new("UICorner");
+	["_Bindable187"] = Instance.new("BoolValue");
 	["_Execute"] = Instance.new("TextButton");
-	["_UICorner216"] = Instance.new("UICorner");
-	["_Bindable181"] = Instance.new("BoolValue");
+	["_UICorner231"] = Instance.new("UICorner");
+	["_Bindable188"] = Instance.new("BoolValue");
 	["_Copy"] = Instance.new("TextButton");
-	["_UICorner217"] = Instance.new("UICorner");
-	["_Bindable182"] = Instance.new("BoolValue");
+	["_UICorner232"] = Instance.new("UICorner");
+	["_Bindable189"] = Instance.new("BoolValue");
 	["_Toast"] = Instance.new("TextButton");
-	["_UICorner218"] = Instance.new("UICorner");
-	["_Bindable183"] = Instance.new("BoolValue");
+	["_UICorner233"] = Instance.new("UICorner");
+	["_Bindable190"] = Instance.new("BoolValue");
 	["_Exploits1"] = Instance.new("CanvasGroup");
 	["_WalkSpeed"] = Instance.new("TextBox");
-	["_UICorner219"] = Instance.new("UICorner");
+	["_UICorner234"] = Instance.new("UICorner");
 	["_JumpPower"] = Instance.new("TextBox");
-	["_UICorner220"] = Instance.new("UICorner");
+	["_UICorner235"] = Instance.new("UICorner");
 	["_Reset"] = Instance.new("TextButton");
-	["_UICorner221"] = Instance.new("UICorner");
-	["_Bindable184"] = Instance.new("BoolValue");
-	["_WalkFling"] = Instance.new("TextButton");
-	["_UICorner222"] = Instance.new("UICorner");
-	["_Bindable185"] = Instance.new("BoolValue");
-	["_God"] = Instance.new("TextButton");
-	["_UICorner223"] = Instance.new("UICorner");
-	["_Bindable186"] = Instance.new("BoolValue");
-	["_Fixcam"] = Instance.new("TextButton");
-	["_UICorner224"] = Instance.new("UICorner");
-	["_Bindable187"] = Instance.new("BoolValue");
-	["_Fullbright"] = Instance.new("TextButton");
-	["_UICorner225"] = Instance.new("UICorner");
-	["_Bindable188"] = Instance.new("BoolValue");
-	["_Jerk"] = Instance.new("TextButton");
-	["_UICorner226"] = Instance.new("UICorner");
-	["_Bindable189"] = Instance.new("BoolValue");
-	["_Nosit"] = Instance.new("TextButton");
-	["_UICorner227"] = Instance.new("UICorner");
-	["_Bindable190"] = Instance.new("BoolValue");
-	["_ESP"] = Instance.new("TextButton");
-	["_UICorner228"] = Instance.new("UICorner");
+	["_UICorner236"] = Instance.new("UICorner");
 	["_Bindable191"] = Instance.new("BoolValue");
+	["_WalkFling"] = Instance.new("TextButton");
+	["_UICorner237"] = Instance.new("UICorner");
+	["_Bindable192"] = Instance.new("BoolValue");
+	["_God"] = Instance.new("TextButton");
+	["_UICorner238"] = Instance.new("UICorner");
+	["_Bindable193"] = Instance.new("BoolValue");
+	["_Fixcam"] = Instance.new("TextButton");
+	["_UICorner239"] = Instance.new("UICorner");
+	["_Bindable194"] = Instance.new("BoolValue");
+	["_Fullbright"] = Instance.new("TextButton");
+	["_UICorner240"] = Instance.new("UICorner");
+	["_Bindable195"] = Instance.new("BoolValue");
+	["_Jerk"] = Instance.new("TextButton");
+	["_UICorner241"] = Instance.new("UICorner");
+	["_Bindable196"] = Instance.new("BoolValue");
+	["_Nosit"] = Instance.new("TextButton");
+	["_UICorner242"] = Instance.new("UICorner");
+	["_Bindable197"] = Instance.new("BoolValue");
+	["_ESP"] = Instance.new("TextButton");
+	["_UICorner243"] = Instance.new("UICorner");
+	["_Bindable198"] = Instance.new("BoolValue");
+	["_Gravity"] = Instance.new("TextBox");
+	["_UICorner244"] = Instance.new("UICorner");
+	["_Stun"] = Instance.new("TextButton");
+	["_UICorner245"] = Instance.new("UICorner");
+	["_Bindable199"] = Instance.new("BoolValue");
 	["_Notepad1"] = Instance.new("CanvasGroup");
 	["_Scroll1"] = Instance.new("ScrollingFrame");
 	["_TextBox1"] = Instance.new("TextBox");
 	["_Save1"] = Instance.new("TextButton");
-	["_UICorner229"] = Instance.new("UICorner");
-	["_Bindable192"] = Instance.new("BoolValue");
+	["_UICorner246"] = Instance.new("UICorner");
+	["_Bindable200"] = Instance.new("BoolValue");
 	["_Copy1"] = Instance.new("TextButton");
-	["_UICorner230"] = Instance.new("UICorner");
-	["_Bindable193"] = Instance.new("BoolValue");
+	["_UICorner247"] = Instance.new("UICorner");
+	["_Bindable201"] = Instance.new("BoolValue");
 	["_Clear3"] = Instance.new("TextButton");
-	["_UICorner231"] = Instance.new("UICorner");
-	["_Bindable194"] = Instance.new("BoolValue");
+	["_UICorner248"] = Instance.new("UICorner");
+	["_Bindable202"] = Instance.new("BoolValue");
+	["_Files1"] = Instance.new("CanvasGroup");
+	["_Plugins"] = Instance.new("TextButton");
+	["_UICorner249"] = Instance.new("UICorner");
+	["_FileSystem"] = Instance.new("TextButton");
+	["_UICorner250"] = Instance.new("UICorner");
+	["_Explorer"] = Instance.new("TextButton");
+	["_UICorner251"] = Instance.new("UICorner");
+	["_PCount"] = Instance.new("TextLabel");
+	["_UICorner252"] = Instance.new("UICorner");
+	["_Status1"] = Instance.new("TextLabel");
+	["_UICorner253"] = Instance.new("UICorner");
 	["_SaveBox"] = Instance.new("CanvasGroup");
 	["_Input8"] = Instance.new("TextBox");
 	["_UIStroke"] = Instance.new("UIStroke");
 	["_Save2"] = Instance.new("TextButton");
-	["_UICorner232"] = Instance.new("UICorner");
+	["_UICorner254"] = Instance.new("UICorner");
 	["_Cancel"] = Instance.new("TextButton");
-	["_UICorner233"] = Instance.new("UICorner");
+	["_UICorner255"] = Instance.new("UICorner");
 	["_WashiezOGTC"] = Instance.new("CanvasGroup");
 	["_OGTCMessage"] = Instance.new("TextLabel");
-	["_UICorner234"] = Instance.new("UICorner");
+	["_UICorner256"] = Instance.new("UICorner");
 	["_Debug"] = Instance.new("CanvasGroup");
 	["_Logs4"] = Instance.new("ScrollingFrame");
-	["_Log3"] = Instance.new("TextLabel");
+	["_List7"] = Instance.new("UIListLayout");
 	["_DL"] = Instance.new("TextLabel");
 	["_Save3"] = Instance.new("TextButton");
-	["_UICorner235"] = Instance.new("UICorner");
-	["_Bindable195"] = Instance.new("BoolValue");
-	["_Copy2"] = Instance.new("TextButton");
-	["_UICorner236"] = Instance.new("UICorner");
-	["_Bindable196"] = Instance.new("BoolValue");
-	["_Clear4"] = Instance.new("TextButton");
-	["_UICorner237"] = Instance.new("UICorner");
-	["_Bindable197"] = Instance.new("BoolValue");
-	["_DToggle"] = Instance.new("TextButton");
-	["_UICorner238"] = Instance.new("UICorner");
-	["_Bindable198"] = Instance.new("BoolValue");
-	["_ToastToggle1"] = Instance.new("TextButton");
-	["_UICorner239"] = Instance.new("UICorner");
-	["_Bindable199"] = Instance.new("BoolValue");
-	["_Pause1"] = Instance.new("TextButton");
-	["_UICorner240"] = Instance.new("UICorner");
-	["_Bindable200"] = Instance.new("BoolValue");
-	["_Loops"] = Instance.new("TextLabel");
-	["_UICorner241"] = Instance.new("UICorner");
-	["_Bindable201"] = Instance.new("BoolValue");
-	["_Next"] = Instance.new("TextButton");
-	["_UICorner242"] = Instance.new("UICorner");
-	["_Bindable202"] = Instance.new("BoolValue");
-	["_MMenu"] = Instance.new("TextButton");
-	["_UICorner243"] = Instance.new("UICorner");
+	["_UICorner257"] = Instance.new("UICorner");
 	["_Bindable203"] = Instance.new("BoolValue");
+	["_Copy2"] = Instance.new("TextButton");
+	["_UICorner258"] = Instance.new("UICorner");
+	["_Bindable204"] = Instance.new("BoolValue");
+	["_Clear4"] = Instance.new("TextButton");
+	["_UICorner259"] = Instance.new("UICorner");
+	["_Bindable205"] = Instance.new("BoolValue");
+	["_DToggle"] = Instance.new("TextButton");
+	["_UICorner260"] = Instance.new("UICorner");
+	["_Bindable206"] = Instance.new("BoolValue");
+	["_ToastToggle1"] = Instance.new("TextButton");
+	["_UICorner261"] = Instance.new("UICorner");
+	["_Bindable207"] = Instance.new("BoolValue");
+	["_Pause1"] = Instance.new("TextButton");
+	["_UICorner262"] = Instance.new("UICorner");
+	["_Bindable208"] = Instance.new("BoolValue");
+	["_Loops"] = Instance.new("TextLabel");
+	["_UICorner263"] = Instance.new("UICorner");
+	["_Bindable209"] = Instance.new("BoolValue");
+	["_Next"] = Instance.new("TextButton");
+	["_UICorner264"] = Instance.new("UICorner");
+	["_Bindable210"] = Instance.new("BoolValue");
+	["_MMenu"] = Instance.new("TextButton");
+	["_UICorner265"] = Instance.new("UICorner");
+	["_Bindable211"] = Instance.new("BoolValue");
 	["_More"] = Instance.new("CanvasGroup");
 	["_Close8"] = Instance.new("TextButton");
-	["_Bindable204"] = Instance.new("BoolValue");
-	["_UICorner244"] = Instance.new("UICorner");
+	["_Bindable212"] = Instance.new("BoolValue");
+	["_UICorner266"] = Instance.new("UICorner");
 	["_MInput"] = Instance.new("TextBox");
-	["_UICorner245"] = Instance.new("UICorner");
+	["_UICorner267"] = Instance.new("UICorner");
 	["_CMenu"] = Instance.new("TextLabel");
 	["_CM1"] = Instance.new("TextLabel");
 	["_GSet"] = Instance.new("TextButton");
-	["_UICorner246"] = Instance.new("UICorner");
-	["_Bindable205"] = Instance.new("BoolValue");
+	["_UICorner268"] = Instance.new("UICorner");
+	["_Bindable213"] = Instance.new("BoolValue");
 	["_AKStatus"] = Instance.new("TextLabel");
 	["_AKS"] = Instance.new("TextLabel");
 	["_CGame"] = Instance.new("TextLabel");
 	["_CG"] = Instance.new("TextLabel");
 	["_GInput"] = Instance.new("TextBox");
-	["_UICorner247"] = Instance.new("UICorner");
+	["_UICorner269"] = Instance.new("UICorner");
 	["_MSet"] = Instance.new("TextButton");
-	["_UICorner248"] = Instance.new("UICorner");
-	["_Bindable206"] = Instance.new("BoolValue");
+	["_UICorner270"] = Instance.new("UICorner");
+	["_Bindable214"] = Instance.new("BoolValue");
 	["_Hide"] = Instance.new("TextButton");
-	["_UICorner249"] = Instance.new("UICorner");
-	["_Bindable207"] = Instance.new("BoolValue");
+	["_UICorner271"] = Instance.new("UICorner");
+	["_Bindable215"] = Instance.new("BoolValue");
 	["_RAK"] = Instance.new("TextButton");
-	["_UICorner250"] = Instance.new("UICorner");
-	["_Bindable208"] = Instance.new("BoolValue");
+	["_UICorner272"] = Instance.new("UICorner");
+	["_Bindable216"] = Instance.new("BoolValue");
+	["_Reparent"] = Instance.new("TextButton");
+	["_UICorner273"] = Instance.new("UICorner");
+	["_Bindable217"] = Instance.new("BoolValue");
+	["_Template2"] = Instance.new("Frame");
+	["_Log5"] = Instance.new("TextButton");
+	["_UICorner274"] = Instance.new("UICorner");
 	["_ScriptBlox"] = Instance.new("CanvasGroup");
 	["_Scroll2"] = Instance.new("ScrollingFrame");
 	["_Grid"] = Instance.new("UIGridLayout");
 	["_Search"] = Instance.new("TextBox");
-	["_UICorner251"] = Instance.new("UICorner");
+	["_UICorner275"] = Instance.new("UICorner");
 	["_Options"] = Instance.new("Frame");
 	["_Container3"] = Instance.new("CanvasGroup");
 	["_Container4"] = Instance.new("Frame");
 	["_Current"] = Instance.new("TextLabel");
-	["_UICorner252"] = Instance.new("UICorner");
+	["_UICorner276"] = Instance.new("UICorner");
 	["_Open"] = Instance.new("TextButton");
-	["_UICorner253"] = Instance.new("UICorner");
+	["_UICorner277"] = Instance.new("UICorner");
 	["_Copy3"] = Instance.new("TextButton");
-	["_UICorner254"] = Instance.new("UICorner");
+	["_UICorner278"] = Instance.new("UICorner");
 	["_RunS"] = Instance.new("TextButton");
-	["_UICorner255"] = Instance.new("UICorner");
+	["_UICorner279"] = Instance.new("UICorner");
 	["_GCurrent"] = Instance.new("TextLabel");
-	["_UICorner256"] = Instance.new("UICorner");
+	["_UICorner280"] = Instance.new("UICorner");
 	["_Close9"] = Instance.new("TextButton");
-	["_UICorner257"] = Instance.new("UICorner");
+	["_UICorner281"] = Instance.new("UICorner");
 	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
 	["_Title"] = Instance.new("TextLabel");
-	["_UICorner258"] = Instance.new("UICorner");
-	["_UICorner259"] = Instance.new("UICorner");
-	["_Template"] = Instance.new("Frame");
+	["_UICorner282"] = Instance.new("UICorner");
+	["_UICorner283"] = Instance.new("UICorner");
+	["_Template3"] = Instance.new("Frame");
 	["_Container5"] = Instance.new("CanvasGroup");
 	["_Open1"] = Instance.new("TextButton");
 	["_Info2"] = Instance.new("TextLabel");
-	["_UICorner260"] = Instance.new("UICorner");
+	["_UICorner284"] = Instance.new("UICorner");
 	["_Output"] = Instance.new("StringValue");
 	["_SName"] = Instance.new("StringValue");
 	["_GName"] = Instance.new("StringValue");
 	["_None"] = Instance.new("CanvasGroup");
 	["_Message2"] = Instance.new("TextLabel");
-	["_UICorner261"] = Instance.new("UICorner");
+	["_UICorner285"] = Instance.new("UICorner");
 	["_AntiKick"] = Instance.new("CanvasGroup");
 	["_Input9"] = Instance.new("TextBox");
-	["_UICorner262"] = Instance.new("UICorner");
+	["_UICorner286"] = Instance.new("UICorner");
 	["_Set1"] = Instance.new("TextButton");
-	["_UICorner263"] = Instance.new("UICorner");
-	["_Bindable209"] = Instance.new("BoolValue");
+	["_UICorner287"] = Instance.new("UICorner");
+	["_Bindable218"] = Instance.new("BoolValue");
 	["_Current1"] = Instance.new("TextLabel");
-	["_UICorner264"] = Instance.new("UICorner");
+	["_UICorner288"] = Instance.new("UICorner");
 	["_Logs5"] = Instance.new("ScrollingFrame");
-	["_Log4"] = Instance.new("TextLabel");
+	["_Log6"] = Instance.new("TextLabel");
 	["_BL"] = Instance.new("TextLabel");
 	["_Keybinds"] = Instance.new("CanvasGroup");
 	["_Scroll3"] = Instance.new("ScrollingFrame");
 	["_UIListLayout"] = Instance.new("UIListLayout");
 	["_OP"] = Instance.new("Frame");
 	["_Refresh2"] = Instance.new("TextButton");
-	["_UICorner265"] = Instance.new("UICorner");
-	["_Template1"] = Instance.new("Frame");
+	["_UICorner289"] = Instance.new("UICorner");
+	["_Template4"] = Instance.new("Frame");
 	["_Container6"] = Instance.new("CanvasGroup");
 	["_Open2"] = Instance.new("TextButton");
 	["_Info3"] = Instance.new("TextLabel");
-	["_UICorner266"] = Instance.new("UICorner");
+	["_UICorner290"] = Instance.new("UICorner");
 	["_Index"] = Instance.new("NumberValue");
 	["_Credits"] = Instance.new("CanvasGroup");
 	["_Credits1"] = Instance.new("TextLabel");
-	["_UICorner267"] = Instance.new("UICorner");
+	["_UICorner291"] = Instance.new("UICorner");
 	["_Discord"] = Instance.new("TextButton");
-	["_UICorner268"] = Instance.new("UICorner");
+	["_UICorner292"] = Instance.new("UICorner");
 	["_Donate"] = Instance.new("TextButton");
-	["_UICorner269"] = Instance.new("UICorner");
+	["_UICorner293"] = Instance.new("UICorner");
 	["_Donations"] = Instance.new("CanvasGroup");
 	["_Copy4"] = Instance.new("TextButton");
-	["_UICorner270"] = Instance.new("UICorner");
+	["_UICorner294"] = Instance.new("UICorner");
 	["_Join"] = Instance.new("TextButton");
-	["_UICorner271"] = Instance.new("UICorner");
+	["_UICorner295"] = Instance.new("UICorner");
 	["_Close10"] = Instance.new("TextButton");
-	["_UICorner272"] = Instance.new("UICorner");
-	["_Bindable210"] = Instance.new("BoolValue");
+	["_UICorner296"] = Instance.new("UICorner");
+	["_Bindable219"] = Instance.new("BoolValue");
 	["_Trolling"] = Instance.new("CanvasGroup");
 	["_PlaceId"] = Instance.new("TextBox");
-	["_UICorner273"] = Instance.new("UICorner");
+	["_UICorner297"] = Instance.new("UICorner");
 	["_Send2"] = Instance.new("TextButton");
-	["_UICorner274"] = Instance.new("UICorner");
-	["_Bindable211"] = Instance.new("BoolValue");
+	["_UICorner298"] = Instance.new("UICorner");
+	["_Bindable220"] = Instance.new("BoolValue");
 	["_JobId"] = Instance.new("TextBox");
-	["_UICorner275"] = Instance.new("UICorner");
+	["_UICorner299"] = Instance.new("UICorner");
 	["_Join1"] = Instance.new("TextButton");
-	["_UICorner276"] = Instance.new("UICorner");
-	["_Bindable212"] = Instance.new("BoolValue");
+	["_UICorner300"] = Instance.new("UICorner");
+	["_Bindable221"] = Instance.new("BoolValue");
 	["_CopyJID"] = Instance.new("TextButton");
-	["_UICorner277"] = Instance.new("UICorner");
-	["_Bindable213"] = Instance.new("BoolValue");
+	["_UICorner301"] = Instance.new("UICorner");
+	["_Bindable222"] = Instance.new("BoolValue");
 	["_Message3"] = Instance.new("TextBox");
-	["_UICorner278"] = Instance.new("UICorner");
+	["_UICorner302"] = Instance.new("UICorner");
 	["_Show"] = Instance.new("TextButton");
-	["_UICorner279"] = Instance.new("UICorner");
-	["_Bindable214"] = Instance.new("BoolValue");
+	["_UICorner303"] = Instance.new("UICorner");
+	["_Bindable223"] = Instance.new("BoolValue");
 	["_Prefix"] = Instance.new("TextBox");
-	["_UICorner280"] = Instance.new("UICorner");
+	["_UICorner304"] = Instance.new("UICorner");
 	["_User"] = Instance.new("TextBox");
-	["_UICorner281"] = Instance.new("UICorner");
+	["_UICorner305"] = Instance.new("UICorner");
 	["_Disguise"] = Instance.new("TextBox");
-	["_UICorner282"] = Instance.new("UICorner");
+	["_UICorner306"] = Instance.new("UICorner");
 	["_Clear5"] = Instance.new("TextButton");
-	["_UICorner283"] = Instance.new("UICorner");
-	["_Bindable215"] = Instance.new("BoolValue");
+	["_UICorner307"] = Instance.new("UICorner");
+	["_Bindable224"] = Instance.new("BoolValue");
 	["_CopyPID"] = Instance.new("TextButton");
-	["_UICorner284"] = Instance.new("UICorner");
-	["_Bindable216"] = Instance.new("BoolValue");
+	["_UICorner308"] = Instance.new("UICorner");
+	["_Bindable225"] = Instance.new("BoolValue");
 	["_CopyJURL"] = Instance.new("TextButton");
-	["_UICorner285"] = Instance.new("UICorner");
-	["_Bindable217"] = Instance.new("BoolValue");
+	["_UICorner309"] = Instance.new("UICorner");
+	["_Bindable226"] = Instance.new("BoolValue");
 	["_Fill"] = Instance.new("TextButton");
-	["_UICorner286"] = Instance.new("UICorner");
-	["_Bindable218"] = Instance.new("BoolValue");
+	["_UICorner310"] = Instance.new("UICorner");
+	["_Bindable227"] = Instance.new("BoolValue");
 	["_Preview"] = Instance.new("TextLabel");
-	["_UICorner287"] = Instance.new("UICorner");
+	["_UICorner311"] = Instance.new("UICorner");
 	["_Tag"] = Instance.new("TextBox");
-	["_UICorner288"] = Instance.new("UICorner");
+	["_UICorner312"] = Instance.new("UICorner");
 	["_Commands"] = Instance.new("CanvasGroup");
 	["_Scroll4"] = Instance.new("ScrollingFrame");
-	["_Scroll5"] = Instance.new("TextLabel");
+	["_List8"] = Instance.new("UIListLayout");
 	["_Input10"] = Instance.new("TextBox");
-	["_UICorner289"] = Instance.new("UICorner");
+	["_UICorner313"] = Instance.new("UICorner");
+	["_Template5"] = Instance.new("Frame");
+	["_Log7"] = Instance.new("TextButton");
+	["_UICorner314"] = Instance.new("UICorner");
 	["_Misc"] = Instance.new("CanvasGroup");
 	["_DEXPP"] = Instance.new("TextButton");
-	["_UICorner290"] = Instance.new("UICorner");
-	["_Bindable219"] = Instance.new("BoolValue");
+	["_UICorner315"] = Instance.new("UICorner");
+	["_Bindable228"] = Instance.new("BoolValue");
 	["_NCCam"] = Instance.new("TextButton");
-	["_UICorner291"] = Instance.new("UICorner");
-	["_Bindable220"] = Instance.new("BoolValue");
+	["_UICorner316"] = Instance.new("UICorner");
+	["_Bindable229"] = Instance.new("BoolValue");
 	["_RSpy"] = Instance.new("TextButton");
-	["_UICorner292"] = Instance.new("UICorner");
-	["_Bindable221"] = Instance.new("BoolValue");
+	["_UICorner317"] = Instance.new("UICorner");
+	["_Bindable230"] = Instance.new("BoolValue");
 	["_SRSpy"] = Instance.new("TextButton");
-	["_UICorner293"] = Instance.new("UICorner");
-	["_Bindable222"] = Instance.new("BoolValue");
+	["_UICorner318"] = Instance.new("UICorner");
+	["_Bindable231"] = Instance.new("BoolValue");
 	["_TPUI"] = Instance.new("TextButton");
-	["_UICorner294"] = Instance.new("UICorner");
-	["_Bindable223"] = Instance.new("BoolValue");
+	["_UICorner319"] = Instance.new("UICorner");
+	["_Bindable232"] = Instance.new("BoolValue");
 	["_TurtleSpy"] = Instance.new("TextButton");
-	["_UICorner295"] = Instance.new("UICorner");
-	["_Bindable224"] = Instance.new("BoolValue");
+	["_UICorner320"] = Instance.new("UICorner");
+	["_Bindable233"] = Instance.new("BoolValue");
 	["_BTools"] = Instance.new("TextButton");
-	["_UICorner296"] = Instance.new("UICorner");
-	["_Bindable225"] = Instance.new("BoolValue");
+	["_UICorner321"] = Instance.new("UICorner");
+	["_Bindable234"] = Instance.new("BoolValue");
 	["_Expn"] = Instance.new("TextLabel");
-	["_UICorner297"] = Instance.new("UICorner");
+	["_UICorner322"] = Instance.new("UICorner");
 	["_PlayerCount"] = Instance.new("TextLabel");
-	["_UICorner298"] = Instance.new("UICorner");
+	["_UICorner323"] = Instance.new("UICorner");
 	["_MM21"] = Instance.new("CanvasGroup");
 	["_TLobby"] = Instance.new("TextButton");
-	["_UICorner299"] = Instance.new("UICorner");
-	["_Bindable226"] = Instance.new("BoolValue");
-	["_Shoot"] = Instance.new("TextButton");
-	["_UICorner300"] = Instance.new("UICorner");
-	["_Bindable227"] = Instance.new("BoolValue");
-	["_StabSheriff"] = Instance.new("TextButton");
-	["_UICorner301"] = Instance.new("UICorner");
-	["_Bindable228"] = Instance.new("BoolValue");
-	["_Sheriff"] = Instance.new("TextLabel");
-	["_UICorner302"] = Instance.new("UICorner");
-	["_Input11"] = Instance.new("TextBox");
-	["_UICorner303"] = Instance.new("UICorner");
-	["_Kick1"] = Instance.new("TextButton");
-	["_UICorner304"] = Instance.new("UICorner");
-	["_Bindable229"] = Instance.new("BoolValue");
-	["_StabAll"] = Instance.new("TextButton");
-	["_UICorner305"] = Instance.new("UICorner");
-	["_Bindable230"] = Instance.new("BoolValue");
-	["_ShootM"] = Instance.new("TextButton");
-	["_UICorner306"] = Instance.new("UICorner");
-	["_Bindable231"] = Instance.new("BoolValue");
-	["_Stab"] = Instance.new("TextButton");
-	["_UICorner307"] = Instance.new("UICorner");
-	["_Bindable232"] = Instance.new("BoolValue");
-	["_Murderer"] = Instance.new("TextLabel");
-	["_UICorner308"] = Instance.new("UICorner");
-	["_TMap"] = Instance.new("TextButton");
-	["_UICorner309"] = Instance.new("UICorner");
-	["_Bindable233"] = Instance.new("BoolValue");
-	["_Throw"] = Instance.new("TextButton");
-	["_UICorner310"] = Instance.new("UICorner");
-	["_Bindable234"] = Instance.new("BoolValue");
-	["_TVoid"] = Instance.new("TextButton");
-	["_UICorner311"] = Instance.new("UICorner");
+	["_UICorner324"] = Instance.new("UICorner");
 	["_Bindable235"] = Instance.new("BoolValue");
-	["_Self"] = Instance.new("TextLabel");
-	["_UICorner312"] = Instance.new("UICorner");
-	["_GrabGun"] = Instance.new("TextButton");
-	["_UICorner313"] = Instance.new("UICorner");
+	["_Shoot"] = Instance.new("TextButton");
+	["_UICorner325"] = Instance.new("UICorner");
 	["_Bindable236"] = Instance.new("BoolValue");
-	["_NRole"] = Instance.new("TextButton");
-	["_UICorner314"] = Instance.new("UICorner");
+	["_StabSheriff"] = Instance.new("TextButton");
+	["_UICorner326"] = Instance.new("UICorner");
 	["_Bindable237"] = Instance.new("BoolValue");
-	["_Expose"] = Instance.new("TextButton");
-	["_UICorner315"] = Instance.new("UICorner");
+	["_Sheriff"] = Instance.new("TextLabel");
+	["_UICorner327"] = Instance.new("UICorner");
+	["_Input11"] = Instance.new("TextBox");
+	["_UICorner328"] = Instance.new("UICorner");
+	["_Kick1"] = Instance.new("TextButton");
+	["_UICorner329"] = Instance.new("UICorner");
 	["_Bindable238"] = Instance.new("BoolValue");
-	["_NDrop"] = Instance.new("TextButton");
-	["_UICorner316"] = Instance.new("UICorner");
+	["_StabAll"] = Instance.new("TextButton");
+	["_UICorner330"] = Instance.new("UICorner");
 	["_Bindable239"] = Instance.new("BoolValue");
+	["_ShootM"] = Instance.new("TextButton");
+	["_UICorner331"] = Instance.new("UICorner");
+	["_Bindable240"] = Instance.new("BoolValue");
+	["_Stab"] = Instance.new("TextButton");
+	["_UICorner332"] = Instance.new("UICorner");
+	["_Bindable241"] = Instance.new("BoolValue");
+	["_Murderer"] = Instance.new("TextLabel");
+	["_UICorner333"] = Instance.new("UICorner");
+	["_TMap"] = Instance.new("TextButton");
+	["_UICorner334"] = Instance.new("UICorner");
+	["_Bindable242"] = Instance.new("BoolValue");
+	["_Throw"] = Instance.new("TextButton");
+	["_UICorner335"] = Instance.new("UICorner");
+	["_Bindable243"] = Instance.new("BoolValue");
+	["_TVoid"] = Instance.new("TextButton");
+	["_UICorner336"] = Instance.new("UICorner");
+	["_Bindable244"] = Instance.new("BoolValue");
+	["_Self"] = Instance.new("TextLabel");
+	["_UICorner337"] = Instance.new("UICorner");
+	["_GrabGun"] = Instance.new("TextButton");
+	["_UICorner338"] = Instance.new("UICorner");
+	["_Bindable245"] = Instance.new("BoolValue");
+	["_NRole"] = Instance.new("TextButton");
+	["_UICorner339"] = Instance.new("UICorner");
+	["_Bindable246"] = Instance.new("BoolValue");
+	["_Expose"] = Instance.new("TextButton");
+	["_UICorner340"] = Instance.new("UICorner");
+	["_Bindable247"] = Instance.new("BoolValue");
+	["_NDrop"] = Instance.new("TextButton");
+	["_UICorner341"] = Instance.new("UICorner");
+	["_Bindable248"] = Instance.new("BoolValue");
+	["_HidStab"] = Instance.new("TextButton");
+	["_UICorner342"] = Instance.new("UICorner");
+	["_Bindable249"] = Instance.new("BoolValue");
+	["_MChance"] = Instance.new("TextLabel");
+	["_UICorner343"] = Instance.new("UICorner");
 	["_WashiezRank1"] = Instance.new("CanvasGroup");
 	["_Complete"] = Instance.new("TextButton");
-	["_UICorner317"] = Instance.new("UICorner");
-	["_Bindable240"] = Instance.new("BoolValue");
+	["_UICorner344"] = Instance.new("UICorner");
+	["_Bindable250"] = Instance.new("BoolValue");
+	["_Plugins1"] = Instance.new("CanvasGroup");
+	["_Scroll5"] = Instance.new("ScrollingFrame");
+	["_UIListLayout1"] = Instance.new("UIListLayout");
+	["_Options1"] = Instance.new("Frame");
+	["_Close11"] = Instance.new("TextButton");
+	["_UICorner345"] = Instance.new("UICorner");
+	["_PName"] = Instance.new("TextLabel");
+	["_UICorner346"] = Instance.new("UICorner");
+	["_Description"] = Instance.new("TextLabel");
+	["_UICorner347"] = Instance.new("UICorner");
+	["_Current2"] = Instance.new("ObjectValue");
+	["_Delete1"] = Instance.new("TextButton");
+	["_UICorner348"] = Instance.new("UICorner");
+	["_Edit"] = Instance.new("TextButton");
+	["_UICorner349"] = Instance.new("UICorner");
+	["_Reload"] = Instance.new("TextButton");
+	["_UICorner350"] = Instance.new("UICorner");
+	["_Menu"] = Instance.new("TextButton");
+	["_UICorner351"] = Instance.new("UICorner");
+	["_Bar"] = Instance.new("Frame");
+	["_AddPlugin"] = Instance.new("TextButton");
+	["_UICorner352"] = Instance.new("UICorner");
+	["_Featured"] = Instance.new("TextButton");
+	["_UICorner353"] = Instance.new("UICorner");
+	["_Saved"] = Instance.new("TextButton");
+	["_UICorner354"] = Instance.new("UICorner");
+	["_Template6"] = Instance.new("Frame");
+	["_Container7"] = Instance.new("Frame");
+	["_Open3"] = Instance.new("TextButton");
+	["_Title1"] = Instance.new("TextLabel");
+	["_Description1"] = Instance.new("StringValue");
+	["_Path"] = Instance.new("StringValue");
+	["_Menu1"] = Instance.new("ObjectValue");
+	["_Featured1"] = Instance.new("ScrollingFrame");
+	["_UIListLayout2"] = Instance.new("UIListLayout");
+	["_FTemplate"] = Instance.new("Frame");
+	["_Container8"] = Instance.new("Frame");
+	["_Save4"] = Instance.new("TextButton");
+	["_Title2"] = Instance.new("TextLabel");
+	["_URL"] = Instance.new("StringValue");
+	["_FileSystem1"] = Instance.new("CanvasGroup");
+	["_Message4"] = Instance.new("TextLabel");
+	["_UICorner355"] = Instance.new("UICorner");
+	["_Explorer1"] = Instance.new("CanvasGroup");
+	["_Message5"] = Instance.new("TextLabel");
+	["_UICorner356"] = Instance.new("UICorner");
+	["_AimbotFFA1"] = Instance.new("CanvasGroup");
+	["_Input12"] = Instance.new("TextBox");
+	["_UICorner357"] = Instance.new("UICorner");
+	["_KillAll"] = Instance.new("TextButton");
+	["_UICorner358"] = Instance.new("UICorner");
+	["_Bindable251"] = Instance.new("BoolValue");
+	["_Aimbot"] = Instance.new("TextButton");
+	["_UICorner359"] = Instance.new("UICorner");
+	["_Bindable252"] = Instance.new("BoolValue");
+	["_Kill1"] = Instance.new("TextButton");
+	["_UICorner360"] = Instance.new("UICorner");
+	["_Bindable253"] = Instance.new("BoolValue");
+	["_LKAll"] = Instance.new("TextButton");
+	["_UICorner361"] = Instance.new("UICorner");
+	["_Bindable254"] = Instance.new("BoolValue");
+	["_GunMods"] = Instance.new("TextButton");
+	["_UICorner362"] = Instance.new("UICorner");
+	["_Bindable255"] = Instance.new("BoolValue");
+	["_NoGun"] = Instance.new("TextButton");
+	["_UICorner363"] = Instance.new("UICorner");
+	["_Bindable256"] = Instance.new("BoolValue");
+	["_Crash1"] = Instance.new("TextButton");
+	["_UICorner364"] = Instance.new("UICorner");
+	["_Bindable257"] = Instance.new("BoolValue");
+	["_SuperCrash"] = Instance.new("TextButton");
+	["_UICorner365"] = Instance.new("UICorner");
+	["_Bindable258"] = Instance.new("BoolValue");
+	["_MMenu1"] = Instance.new("TextButton");
+	["_UICorner366"] = Instance.new("UICorner");
+	["_Bindable259"] = Instance.new("BoolValue");
+	["_NMenu"] = Instance.new("TextButton");
+	["_UICorner367"] = Instance.new("UICorner");
+	["_Bindable260"] = Instance.new("BoolValue");
+	["_Thorns"] = Instance.new("TextButton");
+	["_UICorner368"] = Instance.new("UICorner");
+	["_Bindable261"] = Instance.new("BoolValue");
+	["_Whitelist1"] = Instance.new("CanvasGroup");
+	["_Close12"] = Instance.new("TextButton");
+	["_UICorner369"] = Instance.new("UICorner");
+	["_Bindable262"] = Instance.new("BoolValue");
+	["_Add1"] = Instance.new("TextButton");
+	["_UICorner370"] = Instance.new("UICorner");
+	["_Bindable263"] = Instance.new("BoolValue");
+	["_Scroll6"] = Instance.new("ScrollingFrame");
+	["_List9"] = Instance.new("UIListLayout");
+	["_Delete2"] = Instance.new("TextButton");
+	["_UICorner371"] = Instance.new("UICorner");
+	["_Bindable264"] = Instance.new("BoolValue");
+	["_Input13"] = Instance.new("TextBox");
+	["_UICorner372"] = Instance.new("UICorner");
+	["_Whitelist2"] = Instance.new("Folder");
+	["_Template7"] = Instance.new("Frame");
+	["_Log8"] = Instance.new("TextButton");
+	["_UICorner373"] = Instance.new("UICorner");
+	["_WL2"] = Instance.new("TextButton");
+	["_UICorner374"] = Instance.new("UICorner");
+	["_Bindable265"] = Instance.new("BoolValue");
+	["_Mute1"] = Instance.new("TextButton");
+	["_UICorner375"] = Instance.new("UICorner");
+	["_Bindable266"] = Instance.new("BoolValue");
 	["_Time"] = Instance.new("TextLabel");
-	["_UICorner318"] = Instance.new("UICorner");
-	["_List2"] = Instance.new("Frame");
+	["_UICorner376"] = Instance.new("UICorner");
+	["_List10"] = Instance.new("Frame");
 	["_PrisonLife2"] = Instance.new("TextButton");
-	["_Bindable241"] = Instance.new("BoolValue");
+	["_Bindable267"] = Instance.new("BoolValue");
 	["_Overflow"] = Instance.new("BoolValue");
 	["_Tooltip"] = Instance.new("StringValue");
 	["_Universal1"] = Instance.new("TextButton");
-	["_Bindable242"] = Instance.new("BoolValue");
+	["_Bindable268"] = Instance.new("BoolValue");
 	["_Overflow1"] = Instance.new("BoolValue");
 	["_Tooltip1"] = Instance.new("StringValue");
 	["_AntiCheat1"] = Instance.new("TextButton");
-	["_Bindable243"] = Instance.new("BoolValue");
+	["_Bindable269"] = Instance.new("BoolValue");
 	["_Overflow2"] = Instance.new("BoolValue");
 	["_Tooltip2"] = Instance.new("StringValue");
-	["_Chat3"] = Instance.new("TextButton");
-	["_Bindable244"] = Instance.new("BoolValue");
+	["_Chat2"] = Instance.new("TextButton");
+	["_Bindable270"] = Instance.new("BoolValue");
 	["_Overflow3"] = Instance.new("BoolValue");
 	["_Tooltip3"] = Instance.new("StringValue");
-	["_Players3"] = Instance.new("TextButton");
-	["_Bindable245"] = Instance.new("BoolValue");
+	["_Players2"] = Instance.new("TextButton");
+	["_Bindable271"] = Instance.new("BoolValue");
 	["_Overflow4"] = Instance.new("BoolValue");
 	["_Tooltip4"] = Instance.new("StringValue");
 	["_Places1"] = Instance.new("TextButton");
-	["_Bindable246"] = Instance.new("BoolValue");
+	["_Bindable272"] = Instance.new("BoolValue");
 	["_Overflow5"] = Instance.new("BoolValue");
 	["_Tooltip5"] = Instance.new("StringValue");
 	["_Washiez2"] = Instance.new("TextButton");
-	["_Bindable247"] = Instance.new("BoolValue");
+	["_Bindable273"] = Instance.new("BoolValue");
 	["_Overflow6"] = Instance.new("BoolValue");
 	["_Tooltip6"] = Instance.new("StringValue");
 	["_WashiezTC2"] = Instance.new("TextButton");
-	["_Bindable248"] = Instance.new("BoolValue");
+	["_Bindable274"] = Instance.new("BoolValue");
 	["_Overflow7"] = Instance.new("BoolValue");
 	["_Tooltip7"] = Instance.new("StringValue");
 	["_OilUp2"] = Instance.new("TextButton");
-	["_Bindable249"] = Instance.new("BoolValue");
+	["_Bindable275"] = Instance.new("BoolValue");
 	["_Overflow8"] = Instance.new("BoolValue");
 	["_Tooltip8"] = Instance.new("StringValue");
 	["_WashiezOGTC1"] = Instance.new("TextButton");
-	["_Bindable250"] = Instance.new("BoolValue");
+	["_Bindable276"] = Instance.new("BoolValue");
 	["_Overflow9"] = Instance.new("BoolValue");
 	["_Tooltip9"] = Instance.new("StringValue");
 	["_SCCSimulator2"] = Instance.new("TextButton");
-	["_Bindable251"] = Instance.new("BoolValue");
+	["_Bindable277"] = Instance.new("BoolValue");
 	["_Overflow10"] = Instance.new("BoolValue");
 	["_Tooltip10"] = Instance.new("StringValue");
 	["_Utility1"] = Instance.new("TextButton");
-	["_Bindable252"] = Instance.new("BoolValue");
+	["_Bindable278"] = Instance.new("BoolValue");
 	["_Overflow11"] = Instance.new("BoolValue");
 	["_Tooltip11"] = Instance.new("StringValue");
 	["_Logs6"] = Instance.new("TextButton");
-	["_Bindable253"] = Instance.new("BoolValue");
+	["_Bindable279"] = Instance.new("BoolValue");
 	["_Overflow12"] = Instance.new("BoolValue");
 	["_Tooltip12"] = Instance.new("StringValue");
 	["_Debug1"] = Instance.new("TextButton");
-	["_Bindable254"] = Instance.new("BoolValue");
+	["_Bindable280"] = Instance.new("BoolValue");
 	["_Overflow13"] = Instance.new("BoolValue");
 	["_Tooltip13"] = Instance.new("StringValue");
 	["_ScriptBlox1"] = Instance.new("TextButton");
-	["_Bindable255"] = Instance.new("BoolValue");
+	["_Bindable281"] = Instance.new("BoolValue");
 	["_Overflow14"] = Instance.new("BoolValue");
 	["_Tooltip14"] = Instance.new("StringValue");
 	["_Stats"] = Instance.new("TextButton");
-	["_Bindable256"] = Instance.new("BoolValue");
+	["_Bindable282"] = Instance.new("BoolValue");
 	["_Overflow15"] = Instance.new("BoolValue");
 	["_Tooltip15"] = Instance.new("StringValue");
 	["_Keybinds1"] = Instance.new("TextButton");
-	["_Bindable257"] = Instance.new("BoolValue");
+	["_Bindable283"] = Instance.new("BoolValue");
 	["_Overflow16"] = Instance.new("BoolValue");
 	["_Tooltip16"] = Instance.new("StringValue");
 	["_AntiKick1"] = Instance.new("TextButton");
-	["_Bindable258"] = Instance.new("BoolValue");
+	["_Bindable284"] = Instance.new("BoolValue");
 	["_Overflow17"] = Instance.new("BoolValue");
 	["_Tooltip17"] = Instance.new("StringValue");
 	["_None1"] = Instance.new("TextButton");
-	["_Bindable259"] = Instance.new("BoolValue");
+	["_Bindable285"] = Instance.new("BoolValue");
 	["_Overflow18"] = Instance.new("BoolValue");
 	["_Tooltip18"] = Instance.new("StringValue");
 	["_Credits2"] = Instance.new("TextButton");
-	["_Bindable260"] = Instance.new("BoolValue");
+	["_Bindable286"] = Instance.new("BoolValue");
 	["_Overflow19"] = Instance.new("BoolValue");
 	["_Tooltip19"] = Instance.new("StringValue");
 	["_Trolling1"] = Instance.new("TextButton");
-	["_Bindable261"] = Instance.new("BoolValue");
+	["_Bindable287"] = Instance.new("BoolValue");
 	["_Overflow20"] = Instance.new("BoolValue");
 	["_Tooltip20"] = Instance.new("StringValue");
 	["_Commands1"] = Instance.new("TextButton");
-	["_Bindable262"] = Instance.new("BoolValue");
+	["_Bindable288"] = Instance.new("BoolValue");
 	["_Overflow21"] = Instance.new("BoolValue");
 	["_Tooltip21"] = Instance.new("StringValue");
 	["_Misc1"] = Instance.new("TextButton");
-	["_Bindable263"] = Instance.new("BoolValue");
+	["_Bindable289"] = Instance.new("BoolValue");
 	["_Overflow22"] = Instance.new("BoolValue");
 	["_Tooltip22"] = Instance.new("StringValue");
 	["_MM22"] = Instance.new("TextButton");
-	["_Bindable264"] = Instance.new("BoolValue");
+	["_Bindable290"] = Instance.new("BoolValue");
 	["_Overflow23"] = Instance.new("BoolValue");
 	["_Tooltip23"] = Instance.new("StringValue");
 	["_WashiezRank2"] = Instance.new("TextButton");
-	["_Bindable265"] = Instance.new("BoolValue");
+	["_Bindable291"] = Instance.new("BoolValue");
 	["_Overflow24"] = Instance.new("BoolValue");
 	["_Tooltip24"] = Instance.new("StringValue");
+	["_AimbotFFA2"] = Instance.new("TextButton");
+	["_Bindable292"] = Instance.new("BoolValue");
+	["_Overflow25"] = Instance.new("BoolValue");
+	["_Tooltip25"] = Instance.new("StringValue");
+	["_Explorer2"] = Instance.new("TextButton");
+	["_Bindable293"] = Instance.new("BoolValue");
+	["_Overflow26"] = Instance.new("BoolValue");
+	["_Tooltip26"] = Instance.new("StringValue");
+	["_Plugins2"] = Instance.new("TextButton");
+	["_Bindable294"] = Instance.new("BoolValue");
+	["_Overflow27"] = Instance.new("BoolValue");
+	["_Tooltip27"] = Instance.new("StringValue");
 	["_Player1"] = Instance.new("Frame");
 	["_Settings"] = Instance.new("ImageButton");
-	["_UICorner319"] = Instance.new("UICorner");
+	["_UICorner377"] = Instance.new("UICorner");
 	["_KeepShapePlz"] = Instance.new("UIAspectRatioConstraint");
 	["_Profile"] = Instance.new("ImageButton");
-	["_UICorner320"] = Instance.new("UICorner");
+	["_UICorner378"] = Instance.new("UICorner");
 	["_Outline"] = Instance.new("UIStroke");
 	["_UIAspectRatioConstraint1"] = Instance.new("UIAspectRatioConstraint");
 	["_Settings1"] = Instance.new("CanvasGroup");
 	["_Keybind"] = Instance.new("TextButton");
-	["_UICorner321"] = Instance.new("UICorner");
-	["_Close11"] = Instance.new("TextButton");
-	["_UICorner322"] = Instance.new("UICorner");
+	["_UICorner379"] = Instance.new("UICorner");
+	["_Close13"] = Instance.new("TextButton");
+	["_UICorner380"] = Instance.new("UICorner");
 	["_ResetKeybind"] = Instance.new("TextButton");
-	["_UICorner323"] = Instance.new("UICorner");
+	["_UICorner381"] = Instance.new("UICorner");
 	["_NotifyJoin"] = Instance.new("TextButton");
-	["_UICorner324"] = Instance.new("UICorner");
+	["_UICorner382"] = Instance.new("UICorner");
 	["_NotifyUnread"] = Instance.new("TextButton");
-	["_UICorner325"] = Instance.new("UICorner");
+	["_UICorner383"] = Instance.new("UICorner");
 	["_SaveConfig"] = Instance.new("TextButton");
-	["_UICorner326"] = Instance.new("UICorner");
-	["_Status1"] = Instance.new("TextLabel");
+	["_UICorner384"] = Instance.new("UICorner");
+	["_Status2"] = Instance.new("TextLabel");
 	["_Version"] = Instance.new("TextLabel");
-	["_UICorner327"] = Instance.new("UICorner");
+	["_UICorner385"] = Instance.new("UICorner");
 	["_Unload"] = Instance.new("TextButton");
-	["_UICorner328"] = Instance.new("UICorner");
+	["_UICorner386"] = Instance.new("UICorner");
 	["_DeleteConfig"] = Instance.new("TextButton");
-	["_UICorner329"] = Instance.new("UICorner");
+	["_UICorner387"] = Instance.new("UICorner");
 	["_Frame"] = Instance.new("Frame");
 	["_LoadConfig"] = Instance.new("TextButton");
-	["_UICorner330"] = Instance.new("UICorner");
+	["_UICorner388"] = Instance.new("UICorner");
 	["_Toast1"] = Instance.new("TextButton");
-	["_UICorner331"] = Instance.new("UICorner");
-	["_Bindable266"] = Instance.new("BoolValue");
+	["_UICorner389"] = Instance.new("UICorner");
+	["_Bindable295"] = Instance.new("BoolValue");
 	["_Tween"] = Instance.new("TextButton");
-	["_UICorner332"] = Instance.new("UICorner");
-	["_Bindable267"] = Instance.new("BoolValue");
+	["_UICorner390"] = Instance.new("UICorner");
+	["_Bindable296"] = Instance.new("BoolValue");
 	["_TSPS"] = Instance.new("TextBox");
-	["_UICorner333"] = Instance.new("UICorner");
-	["_Overflow25"] = Instance.new("CanvasGroup");
-	["_Close12"] = Instance.new("TextButton");
-	["_UICorner334"] = Instance.new("UICorner");
+	["_UICorner391"] = Instance.new("UICorner");
+	["_FSType"] = Instance.new("TextButton");
+	["_UICorner392"] = Instance.new("UICorner");
+	["_Bindable297"] = Instance.new("BoolValue");
+	["_ColorMode"] = Instance.new("TextButton");
+	["_UICorner393"] = Instance.new("UICorner");
+	["_LSpeed"] = Instance.new("TextBox");
+	["_UICorner394"] = Instance.new("UICorner");
+	["_Overflow28"] = Instance.new("CanvasGroup");
+	["_Close14"] = Instance.new("TextButton");
+	["_UICorner395"] = Instance.new("UICorner");
 	["_Version1"] = Instance.new("TextLabel");
-	["_UICorner335"] = Instance.new("UICorner");
-	["_List3"] = Instance.new("Folder");
+	["_UICorner396"] = Instance.new("UICorner");
+	["_List11"] = Instance.new("Folder");
 	["_Debug2"] = Instance.new("TextButton");
-	["_UICorner336"] = Instance.new("UICorner");
-	["_Bindable268"] = Instance.new("BoolValue");
+	["_UICorner397"] = Instance.new("UICorner");
+	["_Bindable298"] = Instance.new("BoolValue");
 	["_AntiKick2"] = Instance.new("TextButton");
-	["_UICorner337"] = Instance.new("UICorner");
-	["_Bindable269"] = Instance.new("BoolValue");
+	["_UICorner398"] = Instance.new("UICorner");
+	["_Bindable299"] = Instance.new("BoolValue");
 	["_ScriptBlox2"] = Instance.new("TextButton");
-	["_UICorner338"] = Instance.new("UICorner");
-	["_Bindable270"] = Instance.new("BoolValue");
+	["_UICorner399"] = Instance.new("UICorner");
+	["_Bindable300"] = Instance.new("BoolValue");
 	["_None2"] = Instance.new("TextButton");
-	["_UICorner339"] = Instance.new("UICorner");
-	["_Bindable271"] = Instance.new("BoolValue");
+	["_UICorner400"] = Instance.new("UICorner");
+	["_Bindable301"] = Instance.new("BoolValue");
 	["_Commands2"] = Instance.new("TextButton");
-	["_UICorner340"] = Instance.new("UICorner");
-	["_Bindable272"] = Instance.new("BoolValue");
+	["_UICorner401"] = Instance.new("UICorner");
+	["_Bindable302"] = Instance.new("BoolValue");
 	["_Trolling2"] = Instance.new("TextButton");
-	["_UICorner341"] = Instance.new("UICorner");
-	["_Bindable273"] = Instance.new("BoolValue");
-	["_Chat4"] = Instance.new("TextButton");
-	["_UICorner342"] = Instance.new("UICorner");
-	["_Bindable274"] = Instance.new("BoolValue");
+	["_UICorner402"] = Instance.new("UICorner");
+	["_Bindable303"] = Instance.new("BoolValue");
+	["_Chat3"] = Instance.new("TextButton");
+	["_UICorner403"] = Instance.new("UICorner");
+	["_Bindable304"] = Instance.new("BoolValue");
 	["_Misc2"] = Instance.new("TextButton");
-	["_UICorner343"] = Instance.new("UICorner");
-	["_Bindable275"] = Instance.new("BoolValue");
+	["_UICorner404"] = Instance.new("UICorner");
+	["_Bindable305"] = Instance.new("BoolValue");
 	["_Places2"] = Instance.new("TextButton");
-	["_UICorner344"] = Instance.new("UICorner");
-	["_Bindable276"] = Instance.new("BoolValue");
+	["_UICorner405"] = Instance.new("UICorner");
+	["_Bindable306"] = Instance.new("BoolValue");
 	["_None3"] = Instance.new("TextButton");
-	["_UICorner345"] = Instance.new("UICorner");
-	["_Bindable277"] = Instance.new("BoolValue");
+	["_UICorner406"] = Instance.new("UICorner");
+	["_Bindable307"] = Instance.new("BoolValue");
 	["_None4"] = Instance.new("TextButton");
-	["_UICorner346"] = Instance.new("UICorner");
-	["_Bindable278"] = Instance.new("BoolValue");
+	["_UICorner407"] = Instance.new("UICorner");
+	["_Bindable308"] = Instance.new("BoolValue");
 	["_None5"] = Instance.new("TextButton");
-	["_UICorner347"] = Instance.new("UICorner");
-	["_Bindable279"] = Instance.new("BoolValue");
+	["_UICorner408"] = Instance.new("UICorner");
+	["_Bindable309"] = Instance.new("BoolValue");
 	["_Credits3"] = Instance.new("TextButton");
-	["_UICorner348"] = Instance.new("UICorner");
-	["_Bindable280"] = Instance.new("BoolValue");
+	["_UICorner409"] = Instance.new("UICorner");
+	["_Bindable310"] = Instance.new("BoolValue");
 	["_Keybinds2"] = Instance.new("TextButton");
-	["_UICorner349"] = Instance.new("UICorner");
-	["_Bindable281"] = Instance.new("BoolValue");
+	["_UICorner410"] = Instance.new("UICorner");
+	["_Bindable311"] = Instance.new("BoolValue");
 	["_Rejoin"] = Instance.new("TextButton");
-	["_UICorner350"] = Instance.new("UICorner");
+	["_UICorner411"] = Instance.new("UICorner");
 	["_SHop"] = Instance.new("TextButton");
-	["_UICorner351"] = Instance.new("UICorner");
+	["_UICorner412"] = Instance.new("UICorner");
 	["_Frame1"] = Instance.new("Frame");
 	["_Frame2"] = Instance.new("Frame");
 	["_Welcome"] = Instance.new("TextLabel");
 	["_Help"] = Instance.new("CanvasGroup");
-	["_Close13"] = Instance.new("TextButton");
-	["_UICorner352"] = Instance.new("UICorner");
+	["_Close15"] = Instance.new("TextButton");
+	["_UICorner413"] = Instance.new("UICorner");
 	["_Frame3"] = Instance.new("Frame");
 	["_Info4"] = Instance.new("TextLabel");
 	["_Warning"] = Instance.new("TextButton");
-	["_Background"] = Instance.new("ImageLabel");
-	["_UICorner353"] = Instance.new("UICorner");
-	["_UICorner354"] = Instance.new("UICorner");
-	["_Buttons"] = Instance.new("Frame");
-	["_UICorner355"] = Instance.new("UICorner");
-	["_Title1"] = Instance.new("TextLabel");
-	["_UICorner356"] = Instance.new("UICorner");
-	["_Close14"] = Instance.new("TextButton");
-	["_UICorner357"] = Instance.new("UICorner");
+	["_UICorner414"] = Instance.new("UICorner");
+	["_Explorer3"] = Instance.new("Frame");
+	["_MainControls"] = Instance.new("Frame");
+	["_Open4"] = Instance.new("TextButton");
+	["_UICorner415"] = Instance.new("UICorner");
+	["_Delete3"] = Instance.new("TextButton");
+	["_UICorner416"] = Instance.new("UICorner");
+	["_Copy5"] = Instance.new("TextButton");
+	["_UICorner417"] = Instance.new("UICorner");
+	["_Cut"] = Instance.new("TextButton");
+	["_UICorner418"] = Instance.new("UICorner");
+	["_Paste"] = Instance.new("TextButton");
+	["_UICorner419"] = Instance.new("UICorner");
+	["_Rename"] = Instance.new("TextButton");
+	["_UICorner420"] = Instance.new("UICorner");
+	["_RInput"] = Instance.new("TextBox");
+	["_UICorner421"] = Instance.new("UICorner");
+	["_New"] = Instance.new("TextButton");
+	["_UICorner422"] = Instance.new("UICorner");
+	["_Scroll7"] = Instance.new("ScrollingFrame");
+	["_List12"] = Instance.new("UIListLayout");
+	["_Controls"] = Instance.new("Frame");
+	["_Back"] = Instance.new("TextButton");
+	["_UICorner423"] = Instance.new("UICorner");
+	["_Home"] = Instance.new("ImageButton");
+	["_UICorner424"] = Instance.new("UICorner");
 	["_UIAspectRatioConstraint2"] = Instance.new("UIAspectRatioConstraint");
-	["_Collapse"] = Instance.new("TextButton");
-	["_UICorner358"] = Instance.new("UICorner");
+	["_Current3"] = Instance.new("TextBox");
+	["_UICorner425"] = Instance.new("UICorner");
+	["_Refresh3"] = Instance.new("ImageButton");
+	["_UICorner426"] = Instance.new("UICorner");
 	["_UIAspectRatioConstraint3"] = Instance.new("UIAspectRatioConstraint");
-	["_Bindable282"] = Instance.new("BoolValue");
+	["_Close16"] = Instance.new("TextButton");
+	["_UICorner427"] = Instance.new("UICorner");
+	["_Template8"] = Instance.new("Frame");
+	["_Container9"] = Instance.new("TextButton");
+	["_Type"] = Instance.new("ImageLabel");
+	["_UICorner428"] = Instance.new("UICorner");
+	["_UIAspectRatioConstraint4"] = Instance.new("UIAspectRatioConstraint");
+	["_Title3"] = Instance.new("TextLabel");
+	["_UICorner429"] = Instance.new("UICorner");
+	["_Path1"] = Instance.new("StringValue");
+	["_Clicked"] = Instance.new("BoolValue");
+	["_FileType"] = Instance.new("StringValue");
+	["_Rename1"] = Instance.new("TextBox");
+	["_UICorner430"] = Instance.new("UICorner");
+	["_New1"] = Instance.new("Frame");
+	["_Folder"] = Instance.new("TextButton");
+	["_UICorner431"] = Instance.new("UICorner");
+	["_RInput1"] = Instance.new("TextBox");
+	["_UICorner432"] = Instance.new("UICorner");
+	["_File"] = Instance.new("TextButton");
+	["_UICorner433"] = Instance.new("UICorner");
+	["_Cancel1"] = Instance.new("TextButton");
+	["_UICorner434"] = Instance.new("UICorner");
+	["_UICorner435"] = Instance.new("UICorner");
+	["_Values"] = Instance.new("Folder");
+	["_Path2"] = Instance.new("StringValue");
+	["_Copy6"] = Instance.new("StringValue");
+	["_UseCut"] = Instance.new("BoolValue");
+	["_Copied"] = Instance.new("BoolValue");
+	["_Requested"] = Instance.new("BoolValue");
+	["_Current4"] = Instance.new("ObjectValue");
+	["_Found"] = Instance.new("BoolValue");
+	["_UseFile"] = Instance.new("BoolValue");
+	["_ManualPath"] = Instance.new("StringValue");
+	["_UsePath"] = Instance.new("BoolValue");
+	["_UICorner436"] = Instance.new("UICorner");
+	["_Buttons"] = Instance.new("Frame");
+	["_UICorner437"] = Instance.new("UICorner");
+	["_Title4"] = Instance.new("TextLabel");
+	["_UICorner438"] = Instance.new("UICorner");
+	["_Close17"] = Instance.new("TextButton");
+	["_UICorner439"] = Instance.new("UICorner");
+	["_UIAspectRatioConstraint5"] = Instance.new("UIAspectRatioConstraint");
+	["_Collapse"] = Instance.new("TextButton");
+	["_UICorner440"] = Instance.new("UICorner");
+	["_UIAspectRatioConstraint6"] = Instance.new("UIAspectRatioConstraint");
+	["_Bindable312"] = Instance.new("BoolValue");
 	["_Version2"] = Instance.new("TextLabel");
-	["_UICorner359"] = Instance.new("UICorner");
+	["_UICorner441"] = Instance.new("UICorner");
 	["_Help1"] = Instance.new("TextButton");
-	["_UICorner360"] = Instance.new("UICorner");
+	["_UICorner442"] = Instance.new("UICorner");
+	["_Hints"] = Instance.new("Folder");
+	["_Close18"] = Instance.new("TextButton");
+	["_UICorner443"] = Instance.new("UICorner");
+	["_Overflow29"] = Instance.new("TextButton");
+	["_UICorner444"] = Instance.new("UICorner");
+	["_Stats1"] = Instance.new("TextButton");
+	["_UICorner445"] = Instance.new("UICorner");
+	["_Help2"] = Instance.new("TextButton");
+	["_UICorner446"] = Instance.new("UICorner");
+	["_Drag"] = Instance.new("UIDragDetector");
 	["_Inspector"] = Instance.new("BillboardGui");
 	["_Box"] = Instance.new("TextLabel");
 	["_UIStroke1"] = Instance.new("UIStroke");
-	["_Stats1"] = Instance.new("TextButton");
-	["_UICorner361"] = Instance.new("UICorner");
-	["_Keybinds3"] = Instance.new("CanvasGroup");
-	["_UICorner362"] = Instance.new("UICorner");
-	["_Container7"] = Instance.new("Frame");
-	["_Current2"] = Instance.new("TextLabel");
-	["_UICorner363"] = Instance.new("UICorner");
-	["_Set2"] = Instance.new("TextButton");
-	["_UICorner364"] = Instance.new("UICorner");
-	["_Delete1"] = Instance.new("TextButton");
-	["_UICorner365"] = Instance.new("UICorner");
-	["_Custom"] = Instance.new("TextBox");
-	["_UICorner366"] = Instance.new("UICorner");
-	["_Read"] = Instance.new("TextButton");
-	["_UICorner367"] = Instance.new("UICorner");
-	["_Close15"] = Instance.new("TextButton");
-	["_UICorner368"] = Instance.new("UICorner");
-	["_UIAspectRatioConstraint4"] = Instance.new("UIAspectRatioConstraint");
-	["_Title2"] = Instance.new("TextLabel");
-	["_UICorner369"] = Instance.new("UICorner");
+	["_Stats2"] = Instance.new("TextButton");
+	["_UICorner447"] = Instance.new("UICorner");
 	["_CommandBar"] = Instance.new("CanvasGroup");
-	["_Input12"] = Instance.new("TextBox");
+	["_Input14"] = Instance.new("TextBox");
 	["_UIStroke2"] = Instance.new("UIStroke");
-	["_UICorner370"] = Instance.new("UICorner");
-	["_CommandList"] = Instance.new("CanvasGroup");
-	["_Container8"] = Instance.new("Frame");
-	["_Scroll6"] = Instance.new("ScrollingFrame");
-	["_UIListLayout1"] = Instance.new("UIListLayout");
-	["_Template2"] = Instance.new("Frame");
-	["_Text"] = Instance.new("TextLabel");
-	["_UICorner371"] = Instance.new("UICorner");
-	["_Tooltip25"] = Instance.new("StringValue");
-	["_UICorner372"] = Instance.new("UICorner");
-	["_Tooltip26"] = Instance.new("TextLabel");
-	["_Close16"] = Instance.new("TextButton");
-	["_UICorner373"] = Instance.new("UICorner");
-	["_UIAspectRatioConstraint5"] = Instance.new("UIAspectRatioConstraint");
-	["_Title3"] = Instance.new("TextLabel");
-	["_UICorner374"] = Instance.new("UICorner");
+	["_UICorner448"] = Instance.new("UICorner");
+	["_Events"] = Instance.new("Folder");
+	["_MenuOpened"] = Instance.new("BindableEvent");
+	["_CustomMenus"] = Instance.new("Folder");
+	["_Template9"] = Instance.new("CanvasGroup");
+	["_Background1"] = Instance.new("Frame");
+	["_UICorner449"] = Instance.new("UICorner");
+	["_Close19"] = Instance.new("TextButton");
+	["_UICorner450"] = Instance.new("UICorner");
+	["_UIAspectRatioConstraint7"] = Instance.new("UIAspectRatioConstraint");
+	["_Title5"] = Instance.new("TextLabel");
+	["_UICorner451"] = Instance.new("UICorner");
 	["_TitleBar1"] = Instance.new("Frame");
+	["_Drag1"] = Instance.new("UIDragDetector");
+	["_Container10"] = Instance.new("Frame");
+	["_Events1"] = Instance.new("Folder");
+	["_Open5"] = Instance.new("BindableEvent");
+	["_Open6"] = Instance.new("BoolValue");
+	["_AHMenus"] = Instance.new("Folder");
+	["_MediaPlayer"] = Instance.new("Frame");
+	["_UICorner452"] = Instance.new("UICorner");
+	["_Types"] = Instance.new("Folder");
+	["_Audio1"] = Instance.new("Frame");
+	["_Preview1"] = Instance.new("Sound");
+	["_Background2"] = Instance.new("Frame");
+	["_Fade"] = Instance.new("ImageLabel");
+	["_Stats3"] = Instance.new("Frame");
+	["_CPos"] = Instance.new("TextLabel");
+	["_Type1"] = Instance.new("TextLabel");
+	["_Status3"] = Instance.new("TextLabel");
+	["_Length1"] = Instance.new("TextLabel");
+	["_UICorner453"] = Instance.new("UICorner");
+	["_Actions"] = Instance.new("Frame");
+	["_UICorner454"] = Instance.new("UICorner");
+	["_Continue"] = Instance.new("TextButton");
+	["_UICorner455"] = Instance.new("UICorner");
+	["_UIAspectRatioConstraint8"] = Instance.new("UIAspectRatioConstraint");
+	["_Loop"] = Instance.new("TextButton");
+	["_UICorner456"] = Instance.new("UICorner");
+	["_SInput"] = Instance.new("TextBox");
+	["_UICorner457"] = Instance.new("UICorner");
+	["_Seek"] = Instance.new("TextButton");
+	["_UICorner458"] = Instance.new("UICorner");
+	["_Volume"] = Instance.new("TextButton");
+	["_UICorner459"] = Instance.new("UICorner");
+	["_Stop1"] = Instance.new("TextButton");
+	["_UICorner460"] = Instance.new("UICorner");
+	["_VControls"] = Instance.new("Frame");
+	["_Mute2"] = Instance.new("TextButton");
+	["_UICorner461"] = Instance.new("UICorner");
+	["_UICorner462"] = Instance.new("UICorner");
+	["_Volume1"] = Instance.new("TextBox");
+	["_UICorner463"] = Instance.new("UICorner");
+	["_Text"] = Instance.new("Frame");
+	["_Scroll8"] = Instance.new("ScrollingFrame");
+	["_Input15"] = Instance.new("TextBox");
+	["_Video"] = Instance.new("Frame");
+	["_Stats4"] = Instance.new("Frame");
+	["_CPos1"] = Instance.new("TextLabel");
+	["_Type2"] = Instance.new("TextLabel");
+	["_Status4"] = Instance.new("TextLabel");
+	["_Length2"] = Instance.new("TextLabel");
+	["_UICorner464"] = Instance.new("UICorner");
+	["_Actions1"] = Instance.new("Frame");
+	["_UICorner465"] = Instance.new("UICorner");
+	["_Continue1"] = Instance.new("TextButton");
+	["_UICorner466"] = Instance.new("UICorner");
+	["_UIAspectRatioConstraint9"] = Instance.new("UIAspectRatioConstraint");
+	["_Stop2"] = Instance.new("TextButton");
+	["_UICorner467"] = Instance.new("UICorner");
+	["_Loop1"] = Instance.new("TextButton");
+	["_UICorner468"] = Instance.new("UICorner");
+	["_Seek1"] = Instance.new("TextButton");
+	["_UICorner469"] = Instance.new("UICorner");
+	["_SInput1"] = Instance.new("TextBox");
+	["_UICorner470"] = Instance.new("UICorner");
+	["_SWarning"] = Instance.new("TextLabel");
+	["_UICorner471"] = Instance.new("UICorner");
+	["_VControls1"] = Instance.new("Frame");
+	["_Mute3"] = Instance.new("TextButton");
+	["_UICorner472"] = Instance.new("UICorner");
+	["_Volume2"] = Instance.new("TextBox");
+	["_UICorner473"] = Instance.new("UICorner");
+	["_UICorner474"] = Instance.new("UICorner");
+	["_Volume3"] = Instance.new("TextButton");
+	["_UICorner475"] = Instance.new("UICorner");
+	["_Preview2"] = Instance.new("VideoFrame");
+	["_Background3"] = Instance.new("Frame");
+	["_Image"] = Instance.new("Frame");
+	["_Preview3"] = Instance.new("ImageLabel");
+	["_Background4"] = Instance.new("Frame");
+	["_Bottom"] = Instance.new("Frame");
+	["_Save5"] = Instance.new("TextButton");
+	["_UICorner476"] = Instance.new("UICorner");
+	["_Bindable313"] = Instance.new("BoolValue");
+	["_Cancel2"] = Instance.new("TextButton");
+	["_UICorner477"] = Instance.new("UICorner");
+	["_Bindable314"] = Instance.new("BoolValue");
+	["_Path3"] = Instance.new("TextLabel");
+	["_UICorner478"] = Instance.new("UICorner");
+	["_Bindable315"] = Instance.new("BoolValue");
+	["_CPath"] = Instance.new("StringValue");
+	["_Keybinds3"] = Instance.new("Frame");
+	["_Current5"] = Instance.new("TextLabel");
+	["_UICorner479"] = Instance.new("UICorner");
+	["_Set2"] = Instance.new("TextButton");
+	["_UICorner480"] = Instance.new("UICorner");
+	["_Delete4"] = Instance.new("TextButton");
+	["_UICorner481"] = Instance.new("UICorner");
+	["_Custom"] = Instance.new("TextBox");
+	["_UICorner482"] = Instance.new("UICorner");
+	["_Read"] = Instance.new("TextButton");
+	["_UICorner483"] = Instance.new("UICorner");
+	["_CommandList"] = Instance.new("Frame");
+	["_Scroll9"] = Instance.new("ScrollingFrame");
+	["_UIListLayout3"] = Instance.new("UIListLayout");
+	["_Template10"] = Instance.new("Frame");
+	["_Text1"] = Instance.new("TextLabel");
+	["_UICorner484"] = Instance.new("UICorner");
+	["_Tooltip28"] = Instance.new("StringValue");
+	["_UICorner485"] = Instance.new("UICorner");
+	["_Tooltip29"] = Instance.new("TextLabel");
 }
 
 -- Properties:
 
+Converted["_AntiHub"].DisplayOrder = 10
 Converted["_AntiHub"].IgnoreGuiInset = true
 Converted["_AntiHub"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_AntiHub"].ResetOnSpawn = false
@@ -1283,11 +1643,27 @@ Converted["_Container"].ZIndex = 0
 Converted["_Container"].Name = "Container"
 Converted["_Container"].Parent = Converted["_TitleBar"]
 
+Converted["_Background"].ImageTransparency = 0.25
+Converted["_Background"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Background"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Background"].BackgroundTransparency = 1
+Converted["_Background"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Background"].BorderSizePixel = 0
+Converted["_Background"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Background"].Size = UDim2.new(2, 0, 2, 0)
+Converted["_Background"].ZIndex = -1
+Converted["_Background"].Name = "Background"
+Converted["_Background"].Parent = Converted["_Container"]
+
+Converted["_UICorner"].CornerRadius = UDim.new(0.0199999996, 0)
+Converted["_UICorner"].Parent = Converted["_Container"]
+
 Converted["_Container1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Container1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Container1"].BackgroundTransparency = 1
 Converted["_Container1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Container1"].BorderSizePixel = 0
+Converted["_Container1"].ClipsDescendants = true
 Converted["_Container1"].Position = UDim2.new(0.5, 0, 0.524999976, 0)
 Converted["_Container1"].Size = UDim2.new(1, 0, 0.975000024, 0)
 Converted["_Container1"].ZIndex = 3
@@ -1304,11 +1680,12 @@ Converted["_Chat"].BackgroundTransparency = 1
 Converted["_Chat"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Chat"].BorderSizePixel = 0
 Converted["_Chat"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Chat"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_Chat"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_Chat"].Visible = false
 Converted["_Chat"].Name = "Chat"
 Converted["_Chat"].Parent = Converted["_Menus"]
 
+Converted["_Logs"].AutomaticCanvasSize = Enum.AutomaticSize.Y
 Converted["_Logs"].CanvasSize = UDim2.new(0, 0, 0, 0)
 Converted["_Logs"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Logs"].Active = true
@@ -1322,22 +1699,10 @@ Converted["_Logs"].Size = UDim2.new(0.899999976, 0, 0.800000012, 0)
 Converted["_Logs"].Name = "Logs"
 Converted["_Logs"].Parent = Converted["_Chat"]
 
-Converted["_Chat1"].Font = Enum.Font.TitilliumWeb
-Converted["_Chat1"].RichText = true
-Converted["_Chat1"].Text = ""
-Converted["_Chat1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Chat1"].TextSize = 16
-Converted["_Chat1"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_Chat1"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_Chat1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Chat1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Chat1"].BackgroundTransparency = 1
-Converted["_Chat1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Chat1"].BorderSizePixel = 0
-Converted["_Chat1"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Chat1"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Chat1"].Name = "Chat"
-Converted["_Chat1"].Parent = Converted["_Logs"]
+Converted["_List"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_List"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_List"].Name = "List"
+Converted["_List"].Parent = Converted["_Logs"]
 
 Converted["_Input"].Font = Enum.Font.TitilliumWeb
 Converted["_Input"].MultiLine = true
@@ -1358,8 +1723,8 @@ Converted["_Input"].Size = UDim2.new(0.699999988, 0, 0.100000001, 0)
 Converted["_Input"].Name = "Input"
 Converted["_Input"].Parent = Converted["_Chat"]
 
-Converted["_UICorner"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner"].Parent = Converted["_Input"]
+Converted["_UICorner1"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner1"].Parent = Converted["_Input"]
 
 Converted["_Send"].Font = Enum.Font.Nunito
 Converted["_Send"].Text = "^"
@@ -1377,12 +1742,46 @@ Converted["_Send"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
 Converted["_Send"].Name = "Send"
 Converted["_Send"].Parent = Converted["_Chat"]
 
-Converted["_UICorner1"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner1"].Parent = Converted["_Send"]
+Converted["_UICorner2"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner2"].Parent = Converted["_Send"]
 
 Converted["_Bindable"].Value = true
 Converted["_Bindable"].Name = "Bindable"
 Converted["_Bindable"].Parent = Converted["_Send"]
+
+Converted["_Template"].Active = true
+Converted["_Template"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Template"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Template"].BackgroundTransparency = 1
+Converted["_Template"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Template"].BorderSizePixel = 0
+Converted["_Template"].Size = UDim2.new(1, 0, 0.25, 0)
+Converted["_Template"].Visible = false
+Converted["_Template"].Name = "Template"
+Converted["_Template"].Parent = Converted["_Chat"]
+
+Converted["_Log"].Font = Enum.Font.TitilliumWeb
+Converted["_Log"].RichText = true
+Converted["_Log"].Text = ""
+Converted["_Log"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Log"].TextScaled = true
+Converted["_Log"].TextSize = 16
+Converted["_Log"].TextWrapped = true
+Converted["_Log"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Log"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Log"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Log"].BackgroundColor3 = Color3.fromRGB(25.000000409781933, 25.000000409781933, 25.000000409781933)
+Converted["_Log"].BackgroundTransparency = 0.5
+Converted["_Log"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Log"].BorderSizePixel = 0
+Converted["_Log"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Log"].Selectable = false
+Converted["_Log"].Size = UDim2.new(0.949999988, 0, 0.800000012, 0)
+Converted["_Log"].Name = "Log"
+Converted["_Log"].Parent = Converted["_Template"]
+
+Converted["_UICorner3"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner3"].Parent = Converted["_Log"]
 
 Converted["_PrisonLife"].GroupTransparency = 1
 Converted["_PrisonLife"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1391,7 +1790,7 @@ Converted["_PrisonLife"].BackgroundTransparency = 1
 Converted["_PrisonLife"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_PrisonLife"].BorderSizePixel = 0
 Converted["_PrisonLife"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_PrisonLife"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_PrisonLife"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_PrisonLife"].Visible = false
 Converted["_PrisonLife"].Name = "PrisonLife"
 Converted["_PrisonLife"].Parent = Converted["_Menus"]
@@ -1412,8 +1811,8 @@ Converted["_Prizz"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Prizz"].Name = "Prizz"
 Converted["_Prizz"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner2"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner2"].Parent = Converted["_Prizz"]
+Converted["_UICorner4"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner4"].Parent = Converted["_Prizz"]
 
 Converted["_Bindable1"].Value = true
 Converted["_Bindable1"].Name = "Bindable"
@@ -1435,8 +1834,8 @@ Converted["_H4X"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_H4X"].Name = "H4X"
 Converted["_H4X"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner3"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner3"].Parent = Converted["_H4X"]
+Converted["_UICorner5"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner5"].Parent = Converted["_H4X"]
 
 Converted["_Bindable2"].Value = true
 Converted["_Bindable2"].Name = "Bindable"
@@ -1458,8 +1857,8 @@ Converted["_Tiger"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Tiger"].Name = "Tiger"
 Converted["_Tiger"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner4"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner4"].Parent = Converted["_Tiger"]
+Converted["_UICorner6"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner6"].Parent = Converted["_Tiger"]
 
 Converted["_Bindable3"].Value = true
 Converted["_Bindable3"].Name = "Bindable"
@@ -1481,8 +1880,8 @@ Converted["_PWare"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_PWare"].Name = "PWare"
 Converted["_PWare"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner5"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner5"].Parent = Converted["_PWare"]
+Converted["_UICorner7"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner7"].Parent = Converted["_PWare"]
 
 Converted["_Bindable4"].Value = true
 Converted["_Bindable4"].Name = "Bindable"
@@ -1505,8 +1904,8 @@ Converted["_Input1"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
 Converted["_Input1"].Name = "Input"
 Converted["_Input1"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner6"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner6"].Parent = Converted["_Input1"]
+Converted["_UICorner8"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner8"].Parent = Converted["_Input1"]
 
 Converted["_Kick"].Font = Enum.Font.TitilliumWeb
 Converted["_Kick"].Text = "Kick"
@@ -1526,8 +1925,8 @@ Converted["_Kick"].Visible = false
 Converted["_Kick"].Name = "Kick"
 Converted["_Kick"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner7"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner7"].Parent = Converted["_Kick"]
+Converted["_UICorner9"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner9"].Parent = Converted["_Kick"]
 
 Converted["_Bindable5"].Value = true
 Converted["_Bindable5"].Name = "Bindable"
@@ -1549,8 +1948,8 @@ Converted["_Neutral"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Neutral"].Name = "Neutral"
 Converted["_Neutral"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner8"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner8"].Parent = Converted["_Neutral"]
+Converted["_UICorner10"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner10"].Parent = Converted["_Neutral"]
 
 Converted["_Bindable6"].Value = true
 Converted["_Bindable6"].Name = "Bindable"
@@ -1572,8 +1971,8 @@ Converted["_Criminals"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Criminals"].Name = "Criminals"
 Converted["_Criminals"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner9"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner9"].Parent = Converted["_Criminals"]
+Converted["_UICorner11"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner11"].Parent = Converted["_Criminals"]
 
 Converted["_Bindable7"].Value = true
 Converted["_Bindable7"].Name = "Bindable"
@@ -1595,8 +1994,8 @@ Converted["_Inmates"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Inmates"].Name = "Inmates"
 Converted["_Inmates"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner10"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner10"].Parent = Converted["_Inmates"]
+Converted["_UICorner12"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner12"].Parent = Converted["_Inmates"]
 
 Converted["_Bindable8"].Value = true
 Converted["_Bindable8"].Name = "Bindable"
@@ -1618,8 +2017,8 @@ Converted["_Guards"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Guards"].Name = "Guards"
 Converted["_Guards"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner11"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner11"].Parent = Converted["_Guards"]
+Converted["_UICorner13"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner13"].Parent = Converted["_Guards"]
 
 Converted["_Bindable9"].Value = true
 Converted["_Bindable9"].Name = "Bindable"
@@ -1641,8 +2040,8 @@ Converted["_TLag"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_TLag"].Name = "TLag"
 Converted["_TLag"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner12"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner12"].Parent = Converted["_TLag"]
+Converted["_UICorner14"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner14"].Parent = Converted["_TLag"]
 
 Converted["_Bindable10"].Value = true
 Converted["_Bindable10"].Name = "Bindable"
@@ -1678,8 +2077,8 @@ Converted["_Crimbase"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Crimbase"].Name = "Crimbase"
 Converted["_Crimbase"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner13"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner13"].Parent = Converted["_Crimbase"]
+Converted["_UICorner15"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner15"].Parent = Converted["_Crimbase"]
 
 Converted["_Bindable11"].Value = true
 Converted["_Bindable11"].Name = "Bindable"
@@ -1701,8 +2100,8 @@ Converted["_Guards1"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Guards1"].Name = "Guards"
 Converted["_Guards1"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner14"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner14"].Parent = Converted["_Guards1"]
+Converted["_UICorner16"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner16"].Parent = Converted["_Guards1"]
 
 Converted["_Bindable12"].Value = true
 Converted["_Bindable12"].Name = "Bindable"
@@ -1724,8 +2123,8 @@ Converted["_Yard"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Yard"].Name = "Yard"
 Converted["_Yard"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner15"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner15"].Parent = Converted["_Yard"]
+Converted["_UICorner17"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner17"].Parent = Converted["_Yard"]
 
 Converted["_Bindable13"].Value = true
 Converted["_Bindable13"].Name = "Bindable"
@@ -1747,8 +2146,8 @@ Converted["_Cafe"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Cafe"].Name = "Cafe"
 Converted["_Cafe"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner16"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner16"].Parent = Converted["_Cafe"]
+Converted["_UICorner18"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner18"].Parent = Converted["_Cafe"]
 
 Converted["_Bindable14"].Value = true
 Converted["_Bindable14"].Name = "Bindable"
@@ -1770,8 +2169,8 @@ Converted["_Mansion"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Mansion"].Name = "Mansion"
 Converted["_Mansion"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner17"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner17"].Parent = Converted["_Mansion"]
+Converted["_UICorner19"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner19"].Parent = Converted["_Mansion"]
 
 Converted["_Bindable15"].Value = true
 Converted["_Bindable15"].Name = "Bindable"
@@ -1793,8 +2192,8 @@ Converted["_Gate"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Gate"].Name = "Gate"
 Converted["_Gate"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner18"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner18"].Parent = Converted["_Gate"]
+Converted["_UICorner20"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner20"].Parent = Converted["_Gate"]
 
 Converted["_Bindable16"].Value = true
 Converted["_Bindable16"].Name = "Bindable"
@@ -1816,8 +2215,8 @@ Converted["_Trap"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Trap"].Name = "Trap"
 Converted["_Trap"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner19"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner19"].Parent = Converted["_Trap"]
+Converted["_UICorner21"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner21"].Parent = Converted["_Trap"]
 
 Converted["_Bindable17"].Value = true
 Converted["_Bindable17"].Name = "Bindable"
@@ -1839,8 +2238,8 @@ Converted["_Platform"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Platform"].Name = "Platform"
 Converted["_Platform"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner20"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner20"].Parent = Converted["_Platform"]
+Converted["_UICorner22"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner22"].Parent = Converted["_Platform"]
 
 Converted["_Bindable18"].Value = true
 Converted["_Bindable18"].Name = "Bindable"
@@ -1862,8 +2261,8 @@ Converted["_Car"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Car"].Name = "Car"
 Converted["_Car"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner21"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner21"].Parent = Converted["_Car"]
+Converted["_UICorner23"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner23"].Parent = Converted["_Car"]
 
 Converted["_Bindable19"].Value = true
 Converted["_Bindable19"].Name = "Bindable"
@@ -1886,8 +2285,8 @@ Converted["_Close"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
 Converted["_Close"].Name = "Close"
 Converted["_Close"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner22"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner22"].Parent = Converted["_Close"]
+Converted["_UICorner24"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner24"].Parent = Converted["_Close"]
 
 Converted["_Bindable20"].Value = true
 Converted["_Bindable20"].Name = "Bindable"
@@ -1909,8 +2308,8 @@ Converted["_Neutral1"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Neutral1"].Name = "Neutral"
 Converted["_Neutral1"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner23"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner23"].Parent = Converted["_Neutral1"]
+Converted["_UICorner25"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner25"].Parent = Converted["_Neutral1"]
 
 Converted["_Bindable21"].Value = true
 Converted["_Bindable21"].Name = "Bindable"
@@ -1932,8 +2331,8 @@ Converted["_Nexus"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Nexus"].Name = "Nexus"
 Converted["_Nexus"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner24"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner24"].Parent = Converted["_Nexus"]
+Converted["_UICorner26"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner26"].Parent = Converted["_Nexus"]
 
 Converted["_Bindable22"].Value = true
 Converted["_Bindable22"].Name = "Bindable"
@@ -1955,8 +2354,8 @@ Converted["_YTower"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_YTower"].Name = "YTower"
 Converted["_YTower"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner25"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner25"].Parent = Converted["_YTower"]
+Converted["_UICorner27"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner27"].Parent = Converted["_YTower"]
 
 Converted["_Bindable23"].Value = true
 Converted["_Bindable23"].Name = "Bindable"
@@ -1978,8 +2377,8 @@ Converted["_Sewer"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Sewer"].Name = "Sewer"
 Converted["_Sewer"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner26"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner26"].Parent = Converted["_Sewer"]
+Converted["_UICorner28"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner28"].Parent = Converted["_Sewer"]
 
 Converted["_Bindable24"].Value = true
 Converted["_Bindable24"].Name = "Bindable"
@@ -2001,8 +2400,8 @@ Converted["_Office"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Office"].Name = "Office"
 Converted["_Office"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner27"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner27"].Parent = Converted["_Office"]
+Converted["_UICorner29"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner29"].Parent = Converted["_Office"]
 
 Converted["_Bindable25"].Value = true
 Converted["_Bindable25"].Name = "Bindable"
@@ -2024,8 +2423,8 @@ Converted["_Cells"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Cells"].Name = "Cells"
 Converted["_Cells"].Parent = Converted["_Teleports"]
 
-Converted["_UICorner28"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner28"].Parent = Converted["_Cells"]
+Converted["_UICorner30"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner30"].Parent = Converted["_Cells"]
 
 Converted["_Bindable26"].Value = true
 Converted["_Bindable26"].Name = "Bindable"
@@ -2047,8 +2446,8 @@ Converted["_Panther"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Panther"].Name = "Panther"
 Converted["_Panther"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner29"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner29"].Parent = Converted["_Panther"]
+Converted["_UICorner31"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner31"].Parent = Converted["_Panther"]
 
 Converted["_Bindable27"].Value = true
 Converted["_Bindable27"].Name = "Bindable"
@@ -2070,8 +2469,8 @@ Converted["_Arrest"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Arrest"].Name = "Arrest"
 Converted["_Arrest"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner30"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner30"].Parent = Converted["_Arrest"]
+Converted["_UICorner32"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner32"].Parent = Converted["_Arrest"]
 
 Converted["_Bindable28"].Value = true
 Converted["_Bindable28"].Name = "Bindable"
@@ -2094,8 +2493,8 @@ Converted["_Message"].Visible = false
 Converted["_Message"].Name = "Message"
 Converted["_Message"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner31"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner31"].Parent = Converted["_Message"]
+Converted["_UICorner33"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner33"].Parent = Converted["_Message"]
 
 Converted["_MKill"].Font = Enum.Font.TitilliumWeb
 Converted["_MKill"].Text = "MKill"
@@ -2113,8 +2512,8 @@ Converted["_MKill"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_MKill"].Name = "MKill"
 Converted["_MKill"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner32"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner32"].Parent = Converted["_MKill"]
+Converted["_UICorner34"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner34"].Parent = Converted["_MKill"]
 
 Converted["_Bindable29"].Value = true
 Converted["_Bindable29"].Name = "Bindable"
@@ -2151,8 +2550,8 @@ Converted["_Close1"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
 Converted["_Close1"].Name = "Close"
 Converted["_Close1"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner33"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner33"].Parent = Converted["_Close1"]
+Converted["_UICorner35"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner35"].Parent = Converted["_Close1"]
 
 Converted["_Bindable30"].Value = true
 Converted["_Bindable30"].Name = "Bindable"
@@ -2174,8 +2573,8 @@ Converted["_Hammer"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Hammer"].Name = "Hammer"
 Converted["_Hammer"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner34"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner34"].Parent = Converted["_Hammer"]
+Converted["_UICorner36"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner36"].Parent = Converted["_Hammer"]
 
 Converted["_Bindable31"].Value = true
 Converted["_Bindable31"].Name = "Bindable"
@@ -2197,8 +2596,8 @@ Converted["_Riot Shield"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Riot Shield"].Name = "Riot Shield"
 Converted["_Riot Shield"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner35"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner35"].Parent = Converted["_Riot Shield"]
+Converted["_UICorner37"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner37"].Parent = Converted["_Riot Shield"]
 
 Converted["_Bindable32"].Value = true
 Converted["_Bindable32"].Name = "Bindable"
@@ -2220,8 +2619,8 @@ Converted["_AK-47"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_AK-47"].Name = "AK-47"
 Converted["_AK-47"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner36"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner36"].Parent = Converted["_AK-47"]
+Converted["_UICorner38"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner38"].Parent = Converted["_AK-47"]
 
 Converted["_Bindable33"].Value = true
 Converted["_Bindable33"].Name = "Bindable"
@@ -2243,8 +2642,8 @@ Converted["_M9"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_M9"].Name = "M9"
 Converted["_M9"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner37"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner37"].Parent = Converted["_M9"]
+Converted["_UICorner39"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner39"].Parent = Converted["_M9"]
 
 Converted["_Bindable34"].Value = true
 Converted["_Bindable34"].Name = "Bindable"
@@ -2266,8 +2665,8 @@ Converted["_Food"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Food"].Name = "Food"
 Converted["_Food"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner38"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner38"].Parent = Converted["_Food"]
+Converted["_UICorner40"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner40"].Parent = Converted["_Food"]
 
 Converted["_Bindable35"].Value = true
 Converted["_Bindable35"].Name = "Bindable"
@@ -2289,8 +2688,8 @@ Converted["_Remington 870"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Remington 870"].Name = "Remington 870"
 Converted["_Remington 870"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner39"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner39"].Parent = Converted["_Remington 870"]
+Converted["_UICorner41"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner41"].Parent = Converted["_Remington 870"]
 
 Converted["_Bindable36"].Value = true
 Converted["_Bindable36"].Name = "Bindable"
@@ -2312,8 +2711,8 @@ Converted["_Crude Knife"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Crude Knife"].Name = "Crude Knife"
 Converted["_Crude Knife"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner40"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner40"].Parent = Converted["_Crude Knife"]
+Converted["_UICorner42"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner42"].Parent = Converted["_Crude Knife"]
 
 Converted["_Bindable37"].Value = true
 Converted["_Bindable37"].Name = "Bindable"
@@ -2335,8 +2734,8 @@ Converted["_Riot Police"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Riot Police"].Name = "Riot Police"
 Converted["_Riot Police"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner41"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner41"].Parent = Converted["_Riot Police"]
+Converted["_UICorner43"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner43"].Parent = Converted["_Riot Police"]
 
 Converted["_Bindable38"].Value = true
 Converted["_Bindable38"].Name = "Bindable"
@@ -2358,8 +2757,8 @@ Converted["_Riot helmet"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Riot helmet"].Name = "Riot helmet"
 Converted["_Riot helmet"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner42"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner42"].Parent = Converted["_Riot helmet"]
+Converted["_UICorner44"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner44"].Parent = Converted["_Riot helmet"]
 
 Converted["_Bindable39"].Value = true
 Converted["_Bindable39"].Name = "Bindable"
@@ -2381,8 +2780,8 @@ Converted["_M4A1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_M4A1"].Name = "M4A1"
 Converted["_M4A1"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner43"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner43"].Parent = Converted["_M4A1"]
+Converted["_UICorner45"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner45"].Parent = Converted["_M4A1"]
 
 Converted["_Bindable40"].Value = true
 Converted["_Bindable40"].Name = "Bindable"
@@ -2404,8 +2803,8 @@ Converted["_All"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_All"].Name = "All"
 Converted["_All"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner44"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner44"].Parent = Converted["_All"]
+Converted["_UICorner46"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner46"].Parent = Converted["_All"]
 
 Converted["_Bindable41"].Value = true
 Converted["_Bindable41"].Name = "Bindable"
@@ -2427,8 +2826,8 @@ Converted["_MShotgun"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_MShotgun"].Name = "MShotgun"
 Converted["_MShotgun"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner45"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner45"].Parent = Converted["_MShotgun"]
+Converted["_UICorner47"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner47"].Parent = Converted["_MShotgun"]
 
 Converted["_Bindable42"].Value = true
 Converted["_Bindable42"].Name = "Bindable"
@@ -2450,8 +2849,8 @@ Converted["_MCurrent"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_MCurrent"].Name = "MCurrent"
 Converted["_MCurrent"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner46"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner46"].Parent = Converted["_MCurrent"]
+Converted["_UICorner48"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner48"].Parent = Converted["_MCurrent"]
 
 Converted["_Bindable43"].Value = true
 Converted["_Bindable43"].Name = "Bindable"
@@ -2473,8 +2872,8 @@ Converted["_Vending"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Vending"].Name = "Vending"
 Converted["_Vending"].Parent = Converted["_Weapons"]
 
-Converted["_UICorner47"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner47"].Parent = Converted["_Vending"]
+Converted["_UICorner49"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner49"].Parent = Converted["_Vending"]
 
 Converted["_Bindable44"].Value = true
 Converted["_Bindable44"].Name = "Bindable"
@@ -2496,8 +2895,8 @@ Converted["_WP"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_WP"].Name = "WP"
 Converted["_WP"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner48"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner48"].Parent = Converted["_WP"]
+Converted["_UICorner50"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner50"].Parent = Converted["_WP"]
 
 Converted["_Bindable45"].Value = true
 Converted["_Bindable45"].Name = "Bindable"
@@ -2520,8 +2919,8 @@ Converted["_TCrash"].Visible = false
 Converted["_TCrash"].Name = "TCrash"
 Converted["_TCrash"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner49"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner49"].Parent = Converted["_TCrash"]
+Converted["_UICorner51"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner51"].Parent = Converted["_TCrash"]
 
 Converted["_Bindable46"].Value = true
 Converted["_Bindable46"].Name = "Bindable"
@@ -2543,8 +2942,8 @@ Converted["_TP"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_TP"].Name = "TP"
 Converted["_TP"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner50"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner50"].Parent = Converted["_TP"]
+Converted["_UICorner52"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner52"].Parent = Converted["_TP"]
 
 Converted["_Bindable47"].Value = true
 Converted["_Bindable47"].Name = "Bindable"
@@ -2568,8 +2967,8 @@ Converted["_Counter"].Visible = false
 Converted["_Counter"].Name = "Counter"
 Converted["_Counter"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner51"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner51"].Parent = Converted["_Counter"]
+Converted["_UICorner53"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner53"].Parent = Converted["_Counter"]
 
 Converted["_Cooldown"].Font = Enum.Font.Ubuntu
 Converted["_Cooldown"].Text = "0s"
@@ -2588,8 +2987,8 @@ Converted["_Cooldown"].Size = UDim2.new(0.165000007, 0, 0.0500000007, 0)
 Converted["_Cooldown"].Name = "Cooldown"
 Converted["_Cooldown"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner52"].CornerRadius = UDim.new(0.25, 0)
-Converted["_UICorner52"].Parent = Converted["_Cooldown"]
+Converted["_UICorner54"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner54"].Parent = Converted["_Cooldown"]
 
 Converted["_Refresh"].Font = Enum.Font.TitilliumWeb
 Converted["_Refresh"].Text = "Refresh"
@@ -2607,8 +3006,8 @@ Converted["_Refresh"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Refresh"].Name = "Refresh"
 Converted["_Refresh"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner53"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner53"].Parent = Converted["_Refresh"]
+Converted["_UICorner55"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner55"].Parent = Converted["_Refresh"]
 
 Converted["_Bindable48"].Value = true
 Converted["_Bindable48"].Name = "Bindable"
@@ -2630,8 +3029,8 @@ Converted["_Crash"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Crash"].Name = "Crash"
 Converted["_Crash"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner54"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner54"].Parent = Converted["_Crash"]
+Converted["_UICorner56"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner56"].Parent = Converted["_Crash"]
 
 Converted["_Bindable49"].Value = true
 Converted["_Bindable49"].Name = "Bindable"
@@ -2653,8 +3052,8 @@ Converted["_LMK"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_LMK"].Name = "LMK"
 Converted["_LMK"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner55"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner55"].Parent = Converted["_LMK"]
+Converted["_UICorner57"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner57"].Parent = Converted["_LMK"]
 
 Converted["_Bindable50"].Value = true
 Converted["_Bindable50"].Name = "Bindable"
@@ -2677,8 +3076,8 @@ Converted["_LKT"].Size = UDim2.new(0.25, 0, 0.0500000007, 0)
 Converted["_LKT"].Name = "LKT"
 Converted["_LKT"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner56"].CornerRadius = UDim.new(0.25, 0)
-Converted["_UICorner56"].Parent = Converted["_LKT"]
+Converted["_UICorner58"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner58"].Parent = Converted["_LKT"]
 
 Converted["_ArrestAll"].Font = Enum.Font.TitilliumWeb
 Converted["_ArrestAll"].Text = "Arrest All"
@@ -2696,8 +3095,8 @@ Converted["_ArrestAll"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_ArrestAll"].Name = "ArrestAll"
 Converted["_ArrestAll"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner57"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner57"].Parent = Converted["_ArrestAll"]
+Converted["_UICorner59"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner59"].Parent = Converted["_ArrestAll"]
 
 Converted["_Bindable51"].Value = true
 Converted["_Bindable51"].Name = "Bindable"
@@ -2719,8 +3118,8 @@ Converted["_PA"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_PA"].Name = "PA"
 Converted["_PA"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner58"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner58"].Parent = Converted["_PA"]
+Converted["_UICorner60"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner60"].Parent = Converted["_PA"]
 
 Converted["_Bindable52"].Value = true
 Converted["_Bindable52"].Name = "Bindable"
@@ -2742,8 +3141,8 @@ Converted["_AntiShield"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_AntiShield"].Name = "AntiShield"
 Converted["_AntiShield"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner59"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner59"].Parent = Converted["_AntiShield"]
+Converted["_UICorner61"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner61"].Parent = Converted["_AntiShield"]
 
 Converted["_Bindable53"].Value = true
 Converted["_Bindable53"].Name = "Bindable"
@@ -2765,12 +3164,58 @@ Converted["_Kill"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Kill"].Name = "Kill"
 Converted["_Kill"].Parent = Converted["_PrisonLife"]
 
-Converted["_UICorner60"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner60"].Parent = Converted["_Kill"]
+Converted["_UICorner62"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner62"].Parent = Converted["_Kill"]
 
 Converted["_Bindable54"].Value = true
 Converted["_Bindable54"].Name = "Bindable"
 Converted["_Bindable54"].Parent = Converted["_Kill"]
+
+Converted["_Indicators"].Font = Enum.Font.TitilliumWeb
+Converted["_Indicators"].Text = "Force Indicators [F]"
+Converted["_Indicators"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Indicators"].TextScaled = true
+Converted["_Indicators"].TextSize = 14
+Converted["_Indicators"].TextWrapped = true
+Converted["_Indicators"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Indicators"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Indicators"].BackgroundTransparency = 0.25
+Converted["_Indicators"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Indicators"].BorderSizePixel = 0
+Converted["_Indicators"].Position = UDim2.new(0.180999994, 0, 0.100000001, 0)
+Converted["_Indicators"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Indicators"].Name = "Indicators"
+Converted["_Indicators"].Parent = Converted["_PrisonLife"]
+
+Converted["_UICorner63"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner63"].Parent = Converted["_Indicators"]
+
+Converted["_Bindable55"].Value = true
+Converted["_Bindable55"].Name = "Bindable"
+Converted["_Bindable55"].Parent = Converted["_Indicators"]
+
+Converted["_FunnyHub"].Font = Enum.Font.TitilliumWeb
+Converted["_FunnyHub"].Text = "Funny Hub"
+Converted["_FunnyHub"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_FunnyHub"].TextScaled = true
+Converted["_FunnyHub"].TextSize = 14
+Converted["_FunnyHub"].TextWrapped = true
+Converted["_FunnyHub"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_FunnyHub"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_FunnyHub"].BackgroundTransparency = 0.25
+Converted["_FunnyHub"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_FunnyHub"].BorderSizePixel = 0
+Converted["_FunnyHub"].Position = UDim2.new(0.816999972, 0, 0.100000001, 0)
+Converted["_FunnyHub"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_FunnyHub"].Name = "FunnyHub"
+Converted["_FunnyHub"].Parent = Converted["_PrisonLife"]
+
+Converted["_UICorner64"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner64"].Parent = Converted["_FunnyHub"]
+
+Converted["_Bindable56"].Value = true
+Converted["_Bindable56"].Name = "Bindable"
+Converted["_Bindable56"].Parent = Converted["_FunnyHub"]
 
 Converted["_Universal"].GroupTransparency = 1
 Converted["_Universal"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2779,7 +3224,7 @@ Converted["_Universal"].BackgroundTransparency = 1
 Converted["_Universal"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Universal"].BorderSizePixel = 0
 Converted["_Universal"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Universal"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_Universal"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_Universal"].Visible = false
 Converted["_Universal"].Name = "Universal"
 Converted["_Universal"].Parent = Converted["_Menus"]
@@ -2800,12 +3245,12 @@ Converted["_IY"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_IY"].Name = "IY"
 Converted["_IY"].Parent = Converted["_Universal"]
 
-Converted["_UICorner61"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner61"].Parent = Converted["_IY"]
+Converted["_UICorner65"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner65"].Parent = Converted["_IY"]
 
-Converted["_Bindable55"].Value = true
-Converted["_Bindable55"].Name = "Bindable"
-Converted["_Bindable55"].Parent = Converted["_IY"]
+Converted["_Bindable57"].Value = true
+Converted["_Bindable57"].Name = "Bindable"
+Converted["_Bindable57"].Parent = Converted["_IY"]
 
 Converted["_Respawn"].Font = Enum.Font.TitilliumWeb
 Converted["_Respawn"].Text = "Respawn"
@@ -2823,12 +3268,12 @@ Converted["_Respawn"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Respawn"].Name = "Respawn"
 Converted["_Respawn"].Parent = Converted["_Universal"]
 
-Converted["_UICorner62"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner62"].Parent = Converted["_Respawn"]
+Converted["_UICorner66"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner66"].Parent = Converted["_Respawn"]
 
-Converted["_Bindable56"].Value = true
-Converted["_Bindable56"].Name = "Bindable"
-Converted["_Bindable56"].Parent = Converted["_Respawn"]
+Converted["_Bindable58"].Value = true
+Converted["_Bindable58"].Name = "Bindable"
+Converted["_Bindable58"].Parent = Converted["_Respawn"]
 
 Converted["_DEX"].Font = Enum.Font.TitilliumWeb
 Converted["_DEX"].Text = "DEX Explorer"
@@ -2846,12 +3291,12 @@ Converted["_DEX"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_DEX"].Name = "DEX"
 Converted["_DEX"].Parent = Converted["_Universal"]
 
-Converted["_UICorner63"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner63"].Parent = Converted["_DEX"]
+Converted["_UICorner67"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner67"].Parent = Converted["_DEX"]
 
-Converted["_Bindable57"].Value = true
-Converted["_Bindable57"].Name = "Bindable"
-Converted["_Bindable57"].Parent = Converted["_DEX"]
+Converted["_Bindable59"].Value = true
+Converted["_Bindable59"].Name = "Bindable"
+Converted["_Bindable59"].Parent = Converted["_DEX"]
 
 Converted["_Owl"].Font = Enum.Font.TitilliumWeb
 Converted["_Owl"].Text = "OwlHub"
@@ -2869,12 +3314,12 @@ Converted["_Owl"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Owl"].Name = "Owl"
 Converted["_Owl"].Parent = Converted["_Universal"]
 
-Converted["_UICorner64"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner64"].Parent = Converted["_Owl"]
+Converted["_UICorner68"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner68"].Parent = Converted["_Owl"]
 
-Converted["_Bindable58"].Value = true
-Converted["_Bindable58"].Name = "Bindable"
-Converted["_Bindable58"].Parent = Converted["_Owl"]
+Converted["_Bindable60"].Value = true
+Converted["_Bindable60"].Name = "Bindable"
+Converted["_Bindable60"].Parent = Converted["_Owl"]
 
 Converted["_WOW"].Font = Enum.Font.TitilliumWeb
 Converted["_WOW"].Text = "Walk On Walls"
@@ -2892,12 +3337,12 @@ Converted["_WOW"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_WOW"].Name = "WOW"
 Converted["_WOW"].Parent = Converted["_Universal"]
 
-Converted["_UICorner65"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner65"].Parent = Converted["_WOW"]
+Converted["_UICorner69"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner69"].Parent = Converted["_WOW"]
 
-Converted["_Bindable59"].Value = true
-Converted["_Bindable59"].Name = "Bindable"
-Converted["_Bindable59"].Parent = Converted["_WOW"]
+Converted["_Bindable61"].Value = true
+Converted["_Bindable61"].Name = "Bindable"
+Converted["_Bindable61"].Parent = Converted["_WOW"]
 
 Converted["_Nameless"].Font = Enum.Font.TitilliumWeb
 Converted["_Nameless"].Text = "Nameless"
@@ -2915,12 +3360,12 @@ Converted["_Nameless"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Nameless"].Name = "Nameless"
 Converted["_Nameless"].Parent = Converted["_Universal"]
 
-Converted["_UICorner66"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner66"].Parent = Converted["_Nameless"]
+Converted["_UICorner70"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner70"].Parent = Converted["_Nameless"]
 
-Converted["_Bindable60"].Value = true
-Converted["_Bindable60"].Name = "Bindable"
-Converted["_Bindable60"].Parent = Converted["_Nameless"]
+Converted["_Bindable62"].Value = true
+Converted["_Bindable62"].Name = "Bindable"
+Converted["_Bindable62"].Parent = Converted["_Nameless"]
 
 Converted["_Input2"].Font = Enum.Font.TitilliumWeb
 Converted["_Input2"].PlaceholderText = "Player Name"
@@ -2939,8 +3384,8 @@ Converted["_Input2"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
 Converted["_Input2"].Name = "Input"
 Converted["_Input2"].Parent = Converted["_Universal"]
 
-Converted["_UICorner67"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner67"].Parent = Converted["_Input2"]
+Converted["_UICorner71"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner71"].Parent = Converted["_Input2"]
 
 Converted["_Fling"].Font = Enum.Font.TitilliumWeb
 Converted["_Fling"].Text = "Fling"
@@ -2958,12 +3403,12 @@ Converted["_Fling"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Fling"].Name = "Fling"
 Converted["_Fling"].Parent = Converted["_Universal"]
 
-Converted["_UICorner68"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner68"].Parent = Converted["_Fling"]
+Converted["_UICorner72"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner72"].Parent = Converted["_Fling"]
 
-Converted["_Bindable61"].Value = true
-Converted["_Bindable61"].Name = "Bindable"
-Converted["_Bindable61"].Parent = Converted["_Fling"]
+Converted["_Bindable63"].Value = true
+Converted["_Bindable63"].Name = "Bindable"
+Converted["_Bindable63"].Parent = Converted["_Fling"]
 
 Converted["_UAFling"].Font = Enum.Font.TitilliumWeb
 Converted["_UAFling"].Text = "Part Fling"
@@ -2981,12 +3426,12 @@ Converted["_UAFling"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_UAFling"].Name = "UAFling"
 Converted["_UAFling"].Parent = Converted["_Universal"]
 
-Converted["_UICorner69"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner69"].Parent = Converted["_UAFling"]
+Converted["_UICorner73"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner73"].Parent = Converted["_UAFling"]
 
-Converted["_Bindable62"].Value = true
-Converted["_Bindable62"].Name = "Bindable"
-Converted["_Bindable62"].Parent = Converted["_UAFling"]
+Converted["_Bindable64"].Value = true
+Converted["_Bindable64"].Name = "Bindable"
+Converted["_Bindable64"].Parent = Converted["_UAFling"]
 
 Converted["_Inspect"].Font = Enum.Font.TitilliumWeb
 Converted["_Inspect"].Text = "Inspect"
@@ -3004,12 +3449,12 @@ Converted["_Inspect"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Inspect"].Name = "Inspect"
 Converted["_Inspect"].Parent = Converted["_Universal"]
 
-Converted["_UICorner70"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner70"].Parent = Converted["_Inspect"]
+Converted["_UICorner74"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner74"].Parent = Converted["_Inspect"]
 
-Converted["_Bindable63"].Value = true
-Converted["_Bindable63"].Name = "Bindable"
-Converted["_Bindable63"].Parent = Converted["_Inspect"]
+Converted["_Bindable65"].Value = true
+Converted["_Bindable65"].Name = "Bindable"
+Converted["_Bindable65"].Parent = Converted["_Inspect"]
 
 Converted["_Bang"].Font = Enum.Font.TitilliumWeb
 Converted["_Bang"].Text = "Bang"
@@ -3027,12 +3472,12 @@ Converted["_Bang"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Bang"].Name = "Bang"
 Converted["_Bang"].Parent = Converted["_Universal"]
 
-Converted["_UICorner71"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner71"].Parent = Converted["_Bang"]
+Converted["_UICorner75"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner75"].Parent = Converted["_Bang"]
 
-Converted["_Bindable64"].Value = true
-Converted["_Bindable64"].Name = "Bindable"
-Converted["_Bindable64"].Parent = Converted["_Bang"]
+Converted["_Bindable66"].Value = true
+Converted["_Bindable66"].Name = "Bindable"
+Converted["_Bindable66"].Parent = Converted["_Bang"]
 
 Converted["_Orbit"].Font = Enum.Font.TitilliumWeb
 Converted["_Orbit"].Text = "Orbit"
@@ -3050,12 +3495,12 @@ Converted["_Orbit"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Orbit"].Name = "Orbit"
 Converted["_Orbit"].Parent = Converted["_Universal"]
 
-Converted["_UICorner72"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner72"].Parent = Converted["_Orbit"]
+Converted["_UICorner76"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner76"].Parent = Converted["_Orbit"]
 
-Converted["_Bindable65"].Value = true
-Converted["_Bindable65"].Name = "Bindable"
-Converted["_Bindable65"].Parent = Converted["_Orbit"]
+Converted["_Bindable67"].Value = true
+Converted["_Bindable67"].Name = "Bindable"
+Converted["_Bindable67"].Parent = Converted["_Orbit"]
 
 Converted["_Invisible"].Font = Enum.Font.TitilliumWeb
 Converted["_Invisible"].Text = "AnInvisible"
@@ -3070,15 +3515,16 @@ Converted["_Invisible"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Invisible"].BorderSizePixel = 0
 Converted["_Invisible"].Position = UDim2.new(0.125, 0, 0.800000012, 0)
 Converted["_Invisible"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Invisible"].Visible = false
 Converted["_Invisible"].Name = "Invisible"
 Converted["_Invisible"].Parent = Converted["_Universal"]
 
-Converted["_UICorner73"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner73"].Parent = Converted["_Invisible"]
+Converted["_UICorner77"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner77"].Parent = Converted["_Invisible"]
 
-Converted["_Bindable66"].Value = true
-Converted["_Bindable66"].Name = "Bindable"
-Converted["_Bindable66"].Parent = Converted["_Invisible"]
+Converted["_Bindable68"].Value = true
+Converted["_Bindable68"].Name = "Bindable"
+Converted["_Bindable68"].Parent = Converted["_Invisible"]
 
 Converted["_Logs1"].GroupTransparency = 1
 Converted["_Logs1"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -3087,40 +3533,29 @@ Converted["_Logs1"].BackgroundTransparency = 1
 Converted["_Logs1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Logs1"].BorderSizePixel = 0
 Converted["_Logs1"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Logs1"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_Logs1"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_Logs1"].Visible = false
 Converted["_Logs1"].Name = "Logs"
 Converted["_Logs1"].Parent = Converted["_Menus"]
 
-Converted["_Chat2"].CanvasSize = UDim2.new(0, 0, 0, 0)
-Converted["_Chat2"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Chat2"].Active = true
-Converted["_Chat2"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Chat2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Chat2"].BackgroundTransparency = 0.5
-Converted["_Chat2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Chat2"].BorderSizePixel = 0
-Converted["_Chat2"].Position = UDim2.new(0.425000012, 0, 0.275000006, 0)
-Converted["_Chat2"].Size = UDim2.new(0.800000012, 0, 0.375, 0)
-Converted["_Chat2"].Name = "Chat"
-Converted["_Chat2"].Parent = Converted["_Logs1"]
+Converted["_Chat1"].AutomaticCanvasSize = Enum.AutomaticSize.Y
+Converted["_Chat1"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_Chat1"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Chat1"].Active = true
+Converted["_Chat1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Chat1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Chat1"].BackgroundTransparency = 0.5
+Converted["_Chat1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Chat1"].BorderSizePixel = 0
+Converted["_Chat1"].Position = UDim2.new(0.425000012, 0, 0.25, 0)
+Converted["_Chat1"].Size = UDim2.new(0.800000012, 0, 0.349999994, 0)
+Converted["_Chat1"].Name = "Chat"
+Converted["_Chat1"].Parent = Converted["_Logs1"]
 
-Converted["_Log"].Font = Enum.Font.TitilliumWeb
-Converted["_Log"].RichText = true
-Converted["_Log"].Text = ""
-Converted["_Log"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Log"].TextSize = 12
-Converted["_Log"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_Log"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_Log"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Log"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Log"].BackgroundTransparency = 1
-Converted["_Log"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Log"].BorderSizePixel = 0
-Converted["_Log"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Log"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Log"].Name = "Log"
-Converted["_Log"].Parent = Converted["_Chat2"]
+Converted["_List1"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_List1"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_List1"].Name = "List"
+Converted["_List1"].Parent = Converted["_Chat1"]
 
 Converted["_CL"].Font = Enum.Font.TitilliumWeb
 Converted["_CL"].Text = "Chat Logs"
@@ -3133,7 +3568,7 @@ Converted["_CL"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 50.000000
 Converted["_CL"].BackgroundTransparency = 0.5
 Converted["_CL"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_CL"].BorderSizePixel = 0
-Converted["_CL"].Position = UDim2.new(0.425000012, 0, 0.0613834932, 0)
+Converted["_CL"].Position = UDim2.new(0.425000012, 0, 0.0500000007, 0)
 Converted["_CL"].Size = UDim2.new(0.800000012, 0, 0.0500000082, 0)
 Converted["_CL"].Name = "CL"
 Converted["_CL"].Parent = Converted["_Logs1"]
@@ -3149,11 +3584,12 @@ Converted["_PL"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 50.000000
 Converted["_PL"].BackgroundTransparency = 0.5
 Converted["_PL"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_PL"].BorderSizePixel = 0
-Converted["_PL"].Position = UDim2.new(0.424999923, 0, 0.510727823, 0)
+Converted["_PL"].Position = UDim2.new(0.425000012, 0, 0.5, 0)
 Converted["_PL"].Size = UDim2.new(0.800000012, 0, 0.0500000082, 0)
 Converted["_PL"].Name = "PL"
 Converted["_PL"].Parent = Converted["_Logs1"]
 
+Converted["_Player"].AutomaticCanvasSize = Enum.AutomaticSize.Y
 Converted["_Player"].CanvasSize = UDim2.new(0, 0, 0, 0)
 Converted["_Player"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Player"].Active = true
@@ -3162,27 +3598,15 @@ Converted["_Player"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.000
 Converted["_Player"].BackgroundTransparency = 0.5
 Converted["_Player"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Player"].BorderSizePixel = 0
-Converted["_Player"].Position = UDim2.new(0.425000012, 0, 0.725000024, 0)
-Converted["_Player"].Size = UDim2.new(0.800000012, 0, 0.375, 0)
+Converted["_Player"].Position = UDim2.new(0.425000012, 0, 0.699999988, 0)
+Converted["_Player"].Size = UDim2.new(0.800000012, 0, 0.349999994, 0)
 Converted["_Player"].Name = "Player"
 Converted["_Player"].Parent = Converted["_Logs1"]
 
-Converted["_Log1"].Font = Enum.Font.TitilliumWeb
-Converted["_Log1"].RichText = true
-Converted["_Log1"].Text = ""
-Converted["_Log1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Log1"].TextSize = 12
-Converted["_Log1"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_Log1"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_Log1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Log1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Log1"].BackgroundTransparency = 1
-Converted["_Log1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Log1"].BorderSizePixel = 0
-Converted["_Log1"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Log1"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Log1"].Name = "Log"
-Converted["_Log1"].Parent = Converted["_Player"]
+Converted["_List2"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_List2"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_List2"].Name = "List"
+Converted["_List2"].Parent = Converted["_Player"]
 
 Converted["_CClear"].Font = Enum.Font.TitilliumWeb
 Converted["_CClear"].Text = "Clear"
@@ -3200,12 +3624,12 @@ Converted["_CClear"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_CClear"].Name = "CClear"
 Converted["_CClear"].Parent = Converted["_Logs1"]
 
-Converted["_UICorner74"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner74"].Parent = Converted["_CClear"]
+Converted["_UICorner78"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner78"].Parent = Converted["_CClear"]
 
-Converted["_Bindable67"].Value = true
-Converted["_Bindable67"].Name = "Bindable"
-Converted["_Bindable67"].Parent = Converted["_CClear"]
+Converted["_Bindable69"].Value = true
+Converted["_Bindable69"].Name = "Bindable"
+Converted["_Bindable69"].Parent = Converted["_CClear"]
 
 Converted["_PClear"].Font = Enum.Font.TitilliumWeb
 Converted["_PClear"].Text = "Clear"
@@ -3223,12 +3647,80 @@ Converted["_PClear"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_PClear"].Name = "PClear"
 Converted["_PClear"].Parent = Converted["_Logs1"]
 
-Converted["_UICorner75"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner75"].Parent = Converted["_PClear"]
+Converted["_UICorner79"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner79"].Parent = Converted["_PClear"]
 
-Converted["_Bindable68"].Value = true
-Converted["_Bindable68"].Name = "Bindable"
-Converted["_Bindable68"].Parent = Converted["_PClear"]
+Converted["_Bindable70"].Value = true
+Converted["_Bindable70"].Name = "Bindable"
+Converted["_Bindable70"].Parent = Converted["_PClear"]
+
+Converted["_PlayerTemplate"].Active = true
+Converted["_PlayerTemplate"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_PlayerTemplate"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_PlayerTemplate"].BackgroundTransparency = 1
+Converted["_PlayerTemplate"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_PlayerTemplate"].BorderSizePixel = 0
+Converted["_PlayerTemplate"].Size = UDim2.new(1, 0, 0.200000003, 0)
+Converted["_PlayerTemplate"].Visible = false
+Converted["_PlayerTemplate"].Name = "PlayerTemplate"
+Converted["_PlayerTemplate"].Parent = Converted["_Logs1"]
+
+Converted["_Log1"].Font = Enum.Font.TitilliumWeb
+Converted["_Log1"].RichText = true
+Converted["_Log1"].Text = ""
+Converted["_Log1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Log1"].TextScaled = true
+Converted["_Log1"].TextSize = 16
+Converted["_Log1"].TextWrapped = true
+Converted["_Log1"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Log1"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Log1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Log1"].BackgroundColor3 = Color3.fromRGB(25.000000409781933, 25.000000409781933, 25.000000409781933)
+Converted["_Log1"].BackgroundTransparency = 0.5
+Converted["_Log1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Log1"].BorderSizePixel = 0
+Converted["_Log1"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Log1"].Selectable = false
+Converted["_Log1"].Size = UDim2.new(0.975000024, 0, 0.800000012, 0)
+Converted["_Log1"].Name = "Log"
+Converted["_Log1"].Parent = Converted["_PlayerTemplate"]
+
+Converted["_UICorner80"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner80"].Parent = Converted["_Log1"]
+
+Converted["_ChatTemplate"].Active = true
+Converted["_ChatTemplate"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_ChatTemplate"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ChatTemplate"].BackgroundTransparency = 1
+Converted["_ChatTemplate"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ChatTemplate"].BorderSizePixel = 0
+Converted["_ChatTemplate"].Size = UDim2.new(1, 0, 0.25, 0)
+Converted["_ChatTemplate"].Visible = false
+Converted["_ChatTemplate"].Name = "ChatTemplate"
+Converted["_ChatTemplate"].Parent = Converted["_Logs1"]
+
+Converted["_Log2"].Font = Enum.Font.TitilliumWeb
+Converted["_Log2"].RichText = true
+Converted["_Log2"].Text = ""
+Converted["_Log2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Log2"].TextScaled = true
+Converted["_Log2"].TextSize = 16
+Converted["_Log2"].TextWrapped = true
+Converted["_Log2"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Log2"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Log2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Log2"].BackgroundColor3 = Color3.fromRGB(25.000000409781933, 25.000000409781933, 25.000000409781933)
+Converted["_Log2"].BackgroundTransparency = 0.5
+Converted["_Log2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Log2"].BorderSizePixel = 0
+Converted["_Log2"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Log2"].Selectable = false
+Converted["_Log2"].Size = UDim2.new(0.975000024, 0, 0.800000012, 0)
+Converted["_Log2"].Name = "Log"
+Converted["_Log2"].Parent = Converted["_ChatTemplate"]
+
+Converted["_UICorner81"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner81"].Parent = Converted["_Log2"]
 
 Converted["_AntiCheat"].GroupTransparency = 1
 Converted["_AntiCheat"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -3237,11 +3729,12 @@ Converted["_AntiCheat"].BackgroundTransparency = 1
 Converted["_AntiCheat"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_AntiCheat"].BorderSizePixel = 0
 Converted["_AntiCheat"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_AntiCheat"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_AntiCheat"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_AntiCheat"].Visible = false
 Converted["_AntiCheat"].Name = "AntiCheat"
 Converted["_AntiCheat"].Parent = Converted["_Menus"]
 
+Converted["_Logs2"].AutomaticCanvasSize = Enum.AutomaticSize.Y
 Converted["_Logs2"].CanvasSize = UDim2.new(0, 0, 0, 0)
 Converted["_Logs2"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Logs2"].Active = true
@@ -3255,23 +3748,12 @@ Converted["_Logs2"].Size = UDim2.new(0.550000012, 0, 0.600000024, 0)
 Converted["_Logs2"].Name = "Logs"
 Converted["_Logs2"].Parent = Converted["_AntiCheat"]
 
-Converted["_Log2"].Font = Enum.Font.TitilliumWeb
-Converted["_Log2"].RichText = true
-Converted["_Log2"].Text = ""
-Converted["_Log2"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Log2"].TextSize = 14
-Converted["_Log2"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_Log2"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_Log2"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Log2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Log2"].BackgroundTransparency = 1
-Converted["_Log2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Log2"].BorderSizePixel = 0
-Converted["_Log2"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Log2"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Log2"].Name = "Log"
-Converted["_Log2"].Parent = Converted["_Logs2"]
+Converted["_List3"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_List3"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_List3"].Name = "List"
+Converted["_List3"].Parent = Converted["_Logs2"]
 
+Converted["_Whitelist"].AutomaticCanvasSize = Enum.AutomaticSize.Y
 Converted["_Whitelist"].CanvasSize = UDim2.new(0, 0, 0, 0)
 Converted["_Whitelist"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Whitelist"].Active = true
@@ -3285,22 +3767,10 @@ Converted["_Whitelist"].Size = UDim2.new(0.300000012, 0, 0.600000024, 0)
 Converted["_Whitelist"].Name = "Whitelist"
 Converted["_Whitelist"].Parent = Converted["_AntiCheat"]
 
-Converted["_Players"].Font = Enum.Font.TitilliumWeb
-Converted["_Players"].RichText = true
-Converted["_Players"].Text = ""
-Converted["_Players"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Players"].TextSize = 14
-Converted["_Players"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_Players"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_Players"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Players"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Players"].BackgroundTransparency = 1
-Converted["_Players"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Players"].BorderSizePixel = 0
-Converted["_Players"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Players"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Players"].Name = "Players"
-Converted["_Players"].Parent = Converted["_Whitelist"]
+Converted["_List4"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_List4"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_List4"].Name = "List"
+Converted["_List4"].Parent = Converted["_Whitelist"]
 
 Converted["_ACL"].Font = Enum.Font.TitilliumWeb
 Converted["_ACL"].Text = "Anti Cheat Logs"
@@ -3351,12 +3821,12 @@ Converted["_AWL"].Visible = false
 Converted["_AWL"].Name = "AWL"
 Converted["_AWL"].Parent = Converted["_AntiCheat"]
 
-Converted["_UICorner76"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner76"].Parent = Converted["_AWL"]
+Converted["_UICorner82"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner82"].Parent = Converted["_AWL"]
 
-Converted["_Bindable69"].Value = true
-Converted["_Bindable69"].Name = "Bindable"
-Converted["_Bindable69"].Parent = Converted["_AWL"]
+Converted["_Bindable71"].Value = true
+Converted["_Bindable71"].Name = "Bindable"
+Converted["_Bindable71"].Parent = Converted["_AWL"]
 
 Converted["_Save"].Font = Enum.Font.TitilliumWeb
 Converted["_Save"].Text = "Save To File"
@@ -3374,8 +3844,8 @@ Converted["_Save"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Save"].Name = "Save"
 Converted["_Save"].Parent = Converted["_AntiCheat"]
 
-Converted["_UICorner77"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner77"].Parent = Converted["_Save"]
+Converted["_UICorner83"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner83"].Parent = Converted["_Save"]
 
 Converted["_ACToggle"].Font = Enum.Font.TitilliumWeb
 Converted["_ACToggle"].Text = "Disable AntiCheat"
@@ -3393,12 +3863,12 @@ Converted["_ACToggle"].Size = UDim2.new(0.24999997, 0, 0.150000006, 0)
 Converted["_ACToggle"].Name = "ACToggle"
 Converted["_ACToggle"].Parent = Converted["_AntiCheat"]
 
-Converted["_UICorner78"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner78"].Parent = Converted["_ACToggle"]
+Converted["_UICorner84"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner84"].Parent = Converted["_ACToggle"]
 
-Converted["_Bindable70"].Value = true
-Converted["_Bindable70"].Name = "Bindable"
-Converted["_Bindable70"].Parent = Converted["_ACToggle"]
+Converted["_Bindable72"].Value = true
+Converted["_Bindable72"].Name = "Bindable"
+Converted["_Bindable72"].Parent = Converted["_ACToggle"]
 
 Converted["_ToastToggle"].Font = Enum.Font.TitilliumWeb
 Converted["_ToastToggle"].Text = "Enable Toast"
@@ -3416,12 +3886,12 @@ Converted["_ToastToggle"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_ToastToggle"].Name = "ToastToggle"
 Converted["_ToastToggle"].Parent = Converted["_AntiCheat"]
 
-Converted["_UICorner79"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner79"].Parent = Converted["_ToastToggle"]
+Converted["_UICorner85"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner85"].Parent = Converted["_ToastToggle"]
 
-Converted["_Bindable71"].Value = true
-Converted["_Bindable71"].Name = "Bindable"
-Converted["_Bindable71"].Parent = Converted["_ToastToggle"]
+Converted["_Bindable73"].Value = true
+Converted["_Bindable73"].Name = "Bindable"
+Converted["_Bindable73"].Parent = Converted["_ToastToggle"]
 
 Converted["_Clear"].Active = true
 Converted["_Clear"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -3429,13 +3899,12 @@ Converted["_Clear"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 50.000
 Converted["_Clear"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Clear"].BorderSizePixel = 0
 Converted["_Clear"].Position = UDim2.new(0.800000012, 0, 0.75, 0)
-Converted["_Clear"].Selectable = true
 Converted["_Clear"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Clear"].Name = "Clear"
 Converted["_Clear"].Parent = Converted["_AntiCheat"]
 
-Converted["_UICorner80"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner80"].Parent = Converted["_Clear"]
+Converted["_UICorner86"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner86"].Parent = Converted["_Clear"]
 
 Converted["_WL1"].Font = Enum.Font.TitilliumWeb
 Converted["_WL1"].Text = "WL"
@@ -3453,8 +3922,8 @@ Converted["_WL1"].Size = UDim2.new(0.349999994, 0, 0.899999976, 0)
 Converted["_WL1"].Name = "WL"
 Converted["_WL1"].Parent = Converted["_Clear"]
 
-Converted["_UICorner81"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner81"].Parent = Converted["_WL1"]
+Converted["_UICorner87"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner87"].Parent = Converted["_WL1"]
 
 Converted["_Logs3"].Font = Enum.Font.TitilliumWeb
 Converted["_Logs3"].Text = "Logs"
@@ -3472,8 +3941,8 @@ Converted["_Logs3"].Size = UDim2.new(0.349999994, 0, 0.899999976, 0)
 Converted["_Logs3"].Name = "Logs"
 Converted["_Logs3"].Parent = Converted["_Clear"]
 
-Converted["_UICorner82"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner82"].Parent = Converted["_Logs3"]
+Converted["_UICorner88"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner88"].Parent = Converted["_Logs3"]
 
 Converted["_Input3"].Font = Enum.Font.TitilliumWeb
 Converted["_Input3"].PlaceholderText = "Username Here"
@@ -3492,8 +3961,8 @@ Converted["_Input3"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Input3"].Name = "Input"
 Converted["_Input3"].Parent = Converted["_AntiCheat"]
 
-Converted["_UICorner83"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner83"].Parent = Converted["_Input3"]
+Converted["_UICorner89"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner89"].Parent = Converted["_Input3"]
 
 Converted["_Toggle"].Font = Enum.Font.TitilliumWeb
 Converted["_Toggle"].Text = "Toggle User"
@@ -3511,55 +3980,123 @@ Converted["_Toggle"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Toggle"].Name = "Toggle"
 Converted["_Toggle"].Parent = Converted["_AntiCheat"]
 
-Converted["_UICorner84"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner84"].Parent = Converted["_Toggle"]
+Converted["_UICorner90"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner90"].Parent = Converted["_Toggle"]
 
-Converted["_Bindable72"].Value = true
-Converted["_Bindable72"].Name = "Bindable"
-Converted["_Bindable72"].Parent = Converted["_Toggle"]
+Converted["_Bindable74"].Value = true
+Converted["_Bindable74"].Name = "Bindable"
+Converted["_Bindable74"].Parent = Converted["_Toggle"]
 
-Converted["_Players1"].GroupTransparency = 1
+Converted["_Template1"].Active = true
+Converted["_Template1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Template1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Template1"].BackgroundTransparency = 1
+Converted["_Template1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Template1"].BorderSizePixel = 0
+Converted["_Template1"].Size = UDim2.new(1, 0, 0.200000003, 0)
+Converted["_Template1"].Visible = false
+Converted["_Template1"].Name = "Template"
+Converted["_Template1"].Parent = Converted["_AntiCheat"]
+
+Converted["_Log3"].Font = Enum.Font.TitilliumWeb
+Converted["_Log3"].RichText = true
+Converted["_Log3"].Text = ""
+Converted["_Log3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Log3"].TextScaled = true
+Converted["_Log3"].TextSize = 16
+Converted["_Log3"].TextWrapped = true
+Converted["_Log3"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Log3"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Log3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Log3"].BackgroundColor3 = Color3.fromRGB(25.000000409781933, 25.000000409781933, 25.000000409781933)
+Converted["_Log3"].BackgroundTransparency = 0.5
+Converted["_Log3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Log3"].BorderSizePixel = 0
+Converted["_Log3"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Log3"].Selectable = false
+Converted["_Log3"].Size = UDim2.new(0.949999988, 0, 0.800000012, 0)
+Converted["_Log3"].Name = "Log"
+Converted["_Log3"].Parent = Converted["_Template1"]
+
+Converted["_UICorner91"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner91"].Parent = Converted["_Log3"]
+
+Converted["_WLTemplate"].Active = true
+Converted["_WLTemplate"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_WLTemplate"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_WLTemplate"].BackgroundTransparency = 1
+Converted["_WLTemplate"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_WLTemplate"].BorderSizePixel = 0
+Converted["_WLTemplate"].Size = UDim2.new(1, 0, 0.200000003, 0)
+Converted["_WLTemplate"].Visible = false
+Converted["_WLTemplate"].Name = "WLTemplate"
+Converted["_WLTemplate"].Parent = Converted["_AntiCheat"]
+
+Converted["_Log4"].Font = Enum.Font.TitilliumWeb
+Converted["_Log4"].RichText = true
+Converted["_Log4"].Text = ""
+Converted["_Log4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Log4"].TextScaled = true
+Converted["_Log4"].TextSize = 16
+Converted["_Log4"].TextWrapped = true
+Converted["_Log4"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Log4"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Log4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Log4"].BackgroundColor3 = Color3.fromRGB(25.000000409781933, 25.000000409781933, 25.000000409781933)
+Converted["_Log4"].BackgroundTransparency = 0.5
+Converted["_Log4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Log4"].BorderSizePixel = 0
+Converted["_Log4"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Log4"].Selectable = false
+Converted["_Log4"].Size = UDim2.new(0.949999988, 0, 0.800000012, 0)
+Converted["_Log4"].Name = "Log"
+Converted["_Log4"].Parent = Converted["_WLTemplate"]
+
+Converted["_UICorner92"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner92"].Parent = Converted["_Log4"]
+
+Converted["_Players"].GroupTransparency = 1
+Converted["_Players"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Players"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Players"].BackgroundTransparency = 1
+Converted["_Players"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Players"].BorderSizePixel = 0
+Converted["_Players"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
+Converted["_Players"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
+Converted["_Players"].Visible = false
+Converted["_Players"].Name = "Players"
+Converted["_Players"].Parent = Converted["_Menus"]
+
+Converted["_List5"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_List5"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_List5"].Active = true
+Converted["_List5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_List5"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_List5"].BackgroundTransparency = 0.5
+Converted["_List5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_List5"].BorderSizePixel = 0
+Converted["_List5"].Position = UDim2.new(0.5, 0, 0.349999994, 0)
+Converted["_List5"].Size = UDim2.new(0.899999976, 0, 0.649999976, 0)
+Converted["_List5"].Name = "List"
+Converted["_List5"].Parent = Converted["_Players"]
+
+Converted["_Players1"].Font = Enum.Font.TitilliumWeb
+Converted["_Players1"].RichText = true
+Converted["_Players1"].Text = ""
+Converted["_Players1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Players1"].TextSize = 16
+Converted["_Players1"].TextWrapped = true
+Converted["_Players1"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Players1"].TextYAlignment = Enum.TextYAlignment.Top
 Converted["_Players1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Players1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Players1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Players1"].BackgroundTransparency = 1
 Converted["_Players1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Players1"].BorderSizePixel = 0
-Converted["_Players1"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Players1"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
-Converted["_Players1"].Visible = false
+Converted["_Players1"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Players1"].Size = UDim2.new(1, 0, 1, 0)
 Converted["_Players1"].Name = "Players"
-Converted["_Players1"].Parent = Converted["_Menus"]
-
-Converted["_List"].CanvasSize = UDim2.new(0, 0, 0, 0)
-Converted["_List"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_List"].Active = true
-Converted["_List"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_List"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_List"].BackgroundTransparency = 0.5
-Converted["_List"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_List"].BorderSizePixel = 0
-Converted["_List"].Position = UDim2.new(0.5, 0, 0.349999994, 0)
-Converted["_List"].Size = UDim2.new(0.899999976, 0, 0.649999976, 0)
-Converted["_List"].Name = "List"
-Converted["_List"].Parent = Converted["_Players1"]
-
-Converted["_Players2"].Font = Enum.Font.TitilliumWeb
-Converted["_Players2"].RichText = true
-Converted["_Players2"].Text = ""
-Converted["_Players2"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Players2"].TextSize = 16
-Converted["_Players2"].TextWrapped = true
-Converted["_Players2"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_Players2"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_Players2"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Players2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Players2"].BackgroundTransparency = 1
-Converted["_Players2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Players2"].BorderSizePixel = 0
-Converted["_Players2"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Players2"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Players2"].Name = "Players"
-Converted["_Players2"].Parent = Converted["_List"]
+Converted["_Players1"].Parent = Converted["_List5"]
 
 Converted["_Bodycam"].Font = Enum.Font.TitilliumWeb
 Converted["_Bodycam"].Text = "Bodycam"
@@ -3575,14 +4112,14 @@ Converted["_Bodycam"].BorderSizePixel = 0
 Converted["_Bodycam"].Position = UDim2.new(0.860000014, 0, 0.910000026, 0)
 Converted["_Bodycam"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Bodycam"].Name = "Bodycam"
-Converted["_Bodycam"].Parent = Converted["_Players1"]
+Converted["_Bodycam"].Parent = Converted["_Players"]
 
-Converted["_UICorner85"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner85"].Parent = Converted["_Bodycam"]
+Converted["_UICorner93"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner93"].Parent = Converted["_Bodycam"]
 
-Converted["_Bindable73"].Value = true
-Converted["_Bindable73"].Name = "Bindable"
-Converted["_Bindable73"].Parent = Converted["_Bodycam"]
+Converted["_Bindable75"].Value = true
+Converted["_Bindable75"].Name = "Bindable"
+Converted["_Bindable75"].Parent = Converted["_Bodycam"]
 
 Converted["_Input4"].Font = Enum.Font.TitilliumWeb
 Converted["_Input4"].PlaceholderText = "Player Name"
@@ -3599,10 +4136,10 @@ Converted["_Input4"].BorderSizePixel = 0
 Converted["_Input4"].Position = UDim2.new(0.5, 0, 0.910000026, 0)
 Converted["_Input4"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
 Converted["_Input4"].Name = "Input"
-Converted["_Input4"].Parent = Converted["_Players1"]
+Converted["_Input4"].Parent = Converted["_Players"]
 
-Converted["_UICorner86"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner86"].Parent = Converted["_Input4"]
+Converted["_UICorner94"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner94"].Parent = Converted["_Input4"]
 
 Converted["_View"].Font = Enum.Font.TitilliumWeb
 Converted["_View"].Text = "View"
@@ -3618,14 +4155,14 @@ Converted["_View"].BorderSizePixel = 0
 Converted["_View"].Position = UDim2.new(0.150000006, 0, 0.75, 0)
 Converted["_View"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_View"].Name = "View"
-Converted["_View"].Parent = Converted["_Players1"]
+Converted["_View"].Parent = Converted["_Players"]
 
-Converted["_UICorner87"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner87"].Parent = Converted["_View"]
+Converted["_UICorner95"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner95"].Parent = Converted["_View"]
 
-Converted["_Bindable74"].Value = true
-Converted["_Bindable74"].Name = "Bindable"
-Converted["_Bindable74"].Parent = Converted["_View"]
+Converted["_Bindable76"].Value = true
+Converted["_Bindable76"].Name = "Bindable"
+Converted["_Bindable76"].Parent = Converted["_View"]
 
 Converted["_Teleport"].Font = Enum.Font.TitilliumWeb
 Converted["_Teleport"].Text = "Teleport"
@@ -3641,14 +4178,14 @@ Converted["_Teleport"].BorderSizePixel = 0
 Converted["_Teleport"].Position = UDim2.new(0.850000024, 0, 0.75, 0)
 Converted["_Teleport"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Teleport"].Name = "Teleport"
-Converted["_Teleport"].Parent = Converted["_Players1"]
+Converted["_Teleport"].Parent = Converted["_Players"]
 
-Converted["_UICorner88"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner88"].Parent = Converted["_Teleport"]
+Converted["_UICorner96"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner96"].Parent = Converted["_Teleport"]
 
-Converted["_Bindable75"].Value = true
-Converted["_Bindable75"].Name = "Bindable"
-Converted["_Bindable75"].Parent = Converted["_Teleport"]
+Converted["_Bindable77"].Value = true
+Converted["_Bindable77"].Name = "Bindable"
+Converted["_Bindable77"].Parent = Converted["_Teleport"]
 
 Converted["_Pisswater"].Font = Enum.Font.TitilliumWeb
 Converted["_Pisswater"].Text = "fart4"
@@ -3665,10 +4202,10 @@ Converted["_Pisswater"].Position = UDim2.new(0.5, 0, 0.850000024, 0)
 Converted["_Pisswater"].Size = UDim2.new(0.200000003, 0, 0.075000003, 0)
 Converted["_Pisswater"].Visible = false
 Converted["_Pisswater"].Name = "Pisswater"
-Converted["_Pisswater"].Parent = Converted["_Players1"]
+Converted["_Pisswater"].Parent = Converted["_Players"]
 
-Converted["_UICorner89"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner89"].Parent = Converted["_Pisswater"]
+Converted["_UICorner97"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner97"].Parent = Converted["_Pisswater"]
 
 Converted["_Tools"].Font = Enum.Font.TitilliumWeb
 Converted["_Tools"].Text = "Copy Tools"
@@ -3684,14 +4221,14 @@ Converted["_Tools"].BorderSizePixel = 0
 Converted["_Tools"].Position = UDim2.new(0.610000014, 0, 0.75, 0)
 Converted["_Tools"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Tools"].Name = "Tools"
-Converted["_Tools"].Parent = Converted["_Players1"]
+Converted["_Tools"].Parent = Converted["_Players"]
 
-Converted["_UICorner90"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner90"].Parent = Converted["_Tools"]
+Converted["_UICorner98"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner98"].Parent = Converted["_Tools"]
 
-Converted["_Bindable76"].Value = true
-Converted["_Bindable76"].Name = "Bindable"
-Converted["_Bindable76"].Parent = Converted["_Tools"]
+Converted["_Bindable78"].Value = true
+Converted["_Bindable78"].Name = "Bindable"
+Converted["_Bindable78"].Parent = Converted["_Tools"]
 
 Converted["_UserId"].Font = Enum.Font.TitilliumWeb
 Converted["_UserId"].Text = "Unknown"
@@ -3706,13 +4243,12 @@ Converted["_UserId"].BackgroundTransparency = 0.5
 Converted["_UserId"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_UserId"].BorderSizePixel = 0
 Converted["_UserId"].Position = UDim2.new(0.140000001, 0, 0.910000026, 0)
-Converted["_UserId"].Selectable = true
 Converted["_UserId"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_UserId"].Name = "UserId"
-Converted["_UserId"].Parent = Converted["_Players1"]
+Converted["_UserId"].Parent = Converted["_Players"]
 
-Converted["_UICorner91"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner91"].Parent = Converted["_UserId"]
+Converted["_UICorner99"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner99"].Parent = Converted["_UserId"]
 
 Converted["_CopyName"].Font = Enum.Font.TitilliumWeb
 Converted["_CopyName"].Text = "Copy Name"
@@ -3728,14 +4264,14 @@ Converted["_CopyName"].BorderSizePixel = 0
 Converted["_CopyName"].Position = UDim2.new(0.379999995, 0, 0.75, 0)
 Converted["_CopyName"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_CopyName"].Name = "CopyName"
-Converted["_CopyName"].Parent = Converted["_Players1"]
+Converted["_CopyName"].Parent = Converted["_Players"]
 
-Converted["_UICorner92"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner92"].Parent = Converted["_CopyName"]
+Converted["_UICorner100"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner100"].Parent = Converted["_CopyName"]
 
-Converted["_Bindable77"].Value = true
-Converted["_Bindable77"].Name = "Bindable"
-Converted["_Bindable77"].Parent = Converted["_CopyName"]
+Converted["_Bindable79"].Value = true
+Converted["_Bindable79"].Name = "Bindable"
+Converted["_Bindable79"].Parent = Converted["_CopyName"]
 
 Converted["_Refresh1"].Font = Enum.Font.TitilliumWeb
 Converted["_Refresh1"].Text = "Bodycam"
@@ -3752,14 +4288,14 @@ Converted["_Refresh1"].Position = UDim2.new(0.860000014, 0, 0.910000026, 0)
 Converted["_Refresh1"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Refresh1"].Visible = false
 Converted["_Refresh1"].Name = "Refresh"
-Converted["_Refresh1"].Parent = Converted["_Players1"]
+Converted["_Refresh1"].Parent = Converted["_Players"]
 
-Converted["_UICorner93"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner93"].Parent = Converted["_Refresh1"]
+Converted["_UICorner101"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner101"].Parent = Converted["_Refresh1"]
 
-Converted["_Bindable78"].Value = true
-Converted["_Bindable78"].Name = "Bindable"
-Converted["_Bindable78"].Parent = Converted["_Refresh1"]
+Converted["_Bindable80"].Value = true
+Converted["_Bindable80"].Name = "Bindable"
+Converted["_Bindable80"].Parent = Converted["_Refresh1"]
 
 Converted["_Places"].GroupTransparency = 1
 Converted["_Places"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -3768,7 +4304,7 @@ Converted["_Places"].BackgroundTransparency = 1
 Converted["_Places"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Places"].BorderSizePixel = 0
 Converted["_Places"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Places"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_Places"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_Places"].Visible = false
 Converted["_Places"].Name = "Places"
 Converted["_Places"].Parent = Converted["_Menus"]
@@ -3792,8 +4328,8 @@ Converted["_Washiez"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Washiez"].Name = "Washiez"
 Converted["_Washiez"].Parent = Converted["_Teleports1"]
 
-Converted["_UICorner94"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner94"].Parent = Converted["_Washiez"]
+Converted["_UICorner102"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner102"].Parent = Converted["_Washiez"]
 
 Converted["_OilUp"].Font = Enum.Font.TitilliumWeb
 Converted["_OilUp"].Text = "Oil Up"
@@ -3811,8 +4347,8 @@ Converted["_OilUp"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_OilUp"].Name = "OilUp"
 Converted["_OilUp"].Parent = Converted["_Teleports1"]
 
-Converted["_UICorner95"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner95"].Parent = Converted["_OilUp"]
+Converted["_UICorner103"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner103"].Parent = Converted["_OilUp"]
 
 Converted["_PrisonLife1"].Font = Enum.Font.TitilliumWeb
 Converted["_PrisonLife1"].Text = "Prison Life"
@@ -3830,8 +4366,8 @@ Converted["_PrisonLife1"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_PrisonLife1"].Name = "PrisonLife"
 Converted["_PrisonLife1"].Parent = Converted["_Teleports1"]
 
-Converted["_UICorner96"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner96"].Parent = Converted["_PrisonLife1"]
+Converted["_UICorner104"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner104"].Parent = Converted["_PrisonLife1"]
 
 Converted["_WashiezTC"].Font = Enum.Font.TitilliumWeb
 Converted["_WashiezTC"].Text = "Training Center"
@@ -3849,8 +4385,8 @@ Converted["_WashiezTC"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_WashiezTC"].Name = "WashiezTC"
 Converted["_WashiezTC"].Parent = Converted["_Teleports1"]
 
-Converted["_UICorner97"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner97"].Parent = Converted["_WashiezTC"]
+Converted["_UICorner105"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner105"].Parent = Converted["_WashiezTC"]
 
 Converted["_SCCSimulator"].Font = Enum.Font.TitilliumWeb
 Converted["_SCCSimulator"].Text = "Scam Simulator"
@@ -3863,13 +4399,13 @@ Converted["_SCCSimulator"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 
 Converted["_SCCSimulator"].BackgroundTransparency = 0.25
 Converted["_SCCSimulator"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_SCCSimulator"].BorderSizePixel = 0
-Converted["_SCCSimulator"].Position = UDim2.new(0.485819578, 0, 0.372058153, 0)
+Converted["_SCCSimulator"].Position = UDim2.new(0.5, 0, 0.375, 0)
 Converted["_SCCSimulator"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_SCCSimulator"].Name = "SCCSimulator"
 Converted["_SCCSimulator"].Parent = Converted["_Teleports1"]
 
-Converted["_UICorner98"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner98"].Parent = Converted["_SCCSimulator"]
+Converted["_UICorner106"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner106"].Parent = Converted["_SCCSimulator"]
 
 Converted["_MM2"].Font = Enum.Font.TitilliumWeb
 Converted["_MM2"].Text = "MM2"
@@ -3882,13 +4418,13 @@ Converted["_MM2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.000001
 Converted["_MM2"].BackgroundTransparency = 0.25
 Converted["_MM2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_MM2"].BorderSizePixel = 0
-Converted["_MM2"].Position = UDim2.new(0.75, 0, 0.370000005, 0)
+Converted["_MM2"].Position = UDim2.new(0.699999988, 0, 0.375, 0)
 Converted["_MM2"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_MM2"].Name = "MM2"
 Converted["_MM2"].Parent = Converted["_Teleports1"]
 
-Converted["_UICorner99"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner99"].Parent = Converted["_MM2"]
+Converted["_UICorner107"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner107"].Parent = Converted["_MM2"]
 
 Converted["_WashiezRank"].Font = Enum.Font.TitilliumWeb
 Converted["_WashiezRank"].Text = "Washiez Ranker"
@@ -3901,13 +4437,32 @@ Converted["_WashiezRank"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 4
 Converted["_WashiezRank"].BackgroundTransparency = 0.25
 Converted["_WashiezRank"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_WashiezRank"].BorderSizePixel = 0
-Converted["_WashiezRank"].Position = UDim2.new(0.25, 0, 0.370000005, 0)
+Converted["_WashiezRank"].Position = UDim2.new(0.300000012, 0, 0.375, 0)
 Converted["_WashiezRank"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_WashiezRank"].Name = "WashiezRank"
 Converted["_WashiezRank"].Parent = Converted["_Teleports1"]
 
-Converted["_UICorner100"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner100"].Parent = Converted["_WashiezRank"]
+Converted["_UICorner108"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner108"].Parent = Converted["_WashiezRank"]
+
+Converted["_AimbotFFA"].Font = Enum.Font.TitilliumWeb
+Converted["_AimbotFFA"].Text = "Aimbot FFA"
+Converted["_AimbotFFA"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_AimbotFFA"].TextScaled = true
+Converted["_AimbotFFA"].TextSize = 14
+Converted["_AimbotFFA"].TextWrapped = true
+Converted["_AimbotFFA"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_AimbotFFA"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_AimbotFFA"].BackgroundTransparency = 0.25
+Converted["_AimbotFFA"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_AimbotFFA"].BorderSizePixel = 0
+Converted["_AimbotFFA"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_AimbotFFA"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_AimbotFFA"].Name = "AimbotFFA"
+Converted["_AimbotFFA"].Parent = Converted["_Teleports1"]
+
+Converted["_UICorner109"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner109"].Parent = Converted["_AimbotFFA"]
 
 Converted["_Washiez1"].GroupTransparency = 1
 Converted["_Washiez1"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -3916,7 +4471,7 @@ Converted["_Washiez1"].BackgroundTransparency = 1
 Converted["_Washiez1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Washiez1"].BorderSizePixel = 0
 Converted["_Washiez1"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Washiez1"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_Washiez1"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_Washiez1"].Visible = false
 Converted["_Washiez1"].Name = "Washiez"
 Converted["_Washiez1"].Parent = Converted["_Menus"]
@@ -3937,12 +4492,12 @@ Converted["_RMenu"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_RMenu"].Name = "RMenu"
 Converted["_RMenu"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner101"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner101"].Parent = Converted["_RMenu"]
+Converted["_UICorner110"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner110"].Parent = Converted["_RMenu"]
 
-Converted["_Bindable79"].Value = true
-Converted["_Bindable79"].Name = "Bindable"
-Converted["_Bindable79"].Parent = Converted["_RMenu"]
+Converted["_Bindable81"].Value = true
+Converted["_Bindable81"].Name = "Bindable"
+Converted["_Bindable81"].Parent = Converted["_RMenu"]
 
 Converted["_NFuel"].Font = Enum.Font.TitilliumWeb
 Converted["_NFuel"].Text = "0 Fuel"
@@ -3960,12 +4515,12 @@ Converted["_NFuel"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_NFuel"].Name = "NFuel"
 Converted["_NFuel"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner102"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner102"].Parent = Converted["_NFuel"]
+Converted["_UICorner111"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner111"].Parent = Converted["_NFuel"]
 
-Converted["_Bindable80"].Value = true
-Converted["_Bindable80"].Name = "Bindable"
-Converted["_Bindable80"].Parent = Converted["_NFuel"]
+Converted["_Bindable82"].Value = true
+Converted["_Bindable82"].Name = "Bindable"
+Converted["_Bindable82"].Parent = Converted["_NFuel"]
 
 Converted["_TP1"].Font = Enum.Font.TitilliumWeb
 Converted["_TP1"].Text = "Teleports"
@@ -3983,12 +4538,12 @@ Converted["_TP1"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_TP1"].Name = "TP"
 Converted["_TP1"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner103"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner103"].Parent = Converted["_TP1"]
+Converted["_UICorner112"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner112"].Parent = Converted["_TP1"]
 
-Converted["_Bindable81"].Value = true
-Converted["_Bindable81"].Name = "Bindable"
-Converted["_Bindable81"].Parent = Converted["_TP1"]
+Converted["_Bindable83"].Value = true
+Converted["_Bindable83"].Name = "Bindable"
+Converted["_Bindable83"].Parent = Converted["_TP1"]
 
 Converted["_IFuel"].Font = Enum.Font.TitilliumWeb
 Converted["_IFuel"].Text = "Inf Fuel"
@@ -4006,12 +4561,12 @@ Converted["_IFuel"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_IFuel"].Name = "IFuel"
 Converted["_IFuel"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner104"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner104"].Parent = Converted["_IFuel"]
+Converted["_UICorner113"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner113"].Parent = Converted["_IFuel"]
 
-Converted["_Bindable82"].Value = true
-Converted["_Bindable82"].Name = "Bindable"
-Converted["_Bindable82"].Parent = Converted["_IFuel"]
+Converted["_Bindable84"].Value = true
+Converted["_Bindable84"].Name = "Bindable"
+Converted["_Bindable84"].Parent = Converted["_IFuel"]
 
 Converted["_Teleports2"].GroupTransparency = 1
 Converted["_Teleports2"].Active = true
@@ -4044,12 +4599,12 @@ Converted["_Close2"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
 Converted["_Close2"].Name = "Close"
 Converted["_Close2"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner105"].CornerRadius = UDim.new(0.300000012, 0)
-Converted["_UICorner105"].Parent = Converted["_Close2"]
+Converted["_UICorner114"].CornerRadius = UDim.new(0.300000012, 0)
+Converted["_UICorner114"].Parent = Converted["_Close2"]
 
-Converted["_Bindable83"].Value = true
-Converted["_Bindable83"].Name = "Bindable"
-Converted["_Bindable83"].Parent = Converted["_Close2"]
+Converted["_Bindable85"].Value = true
+Converted["_Bindable85"].Name = "Bindable"
+Converted["_Bindable85"].Parent = Converted["_Close2"]
 
 Converted["_Jail"].Font = Enum.Font.TitilliumWeb
 Converted["_Jail"].Text = "Jail"
@@ -4067,12 +4622,12 @@ Converted["_Jail"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Jail"].Name = "Jail"
 Converted["_Jail"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner106"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner106"].Parent = Converted["_Jail"]
+Converted["_UICorner115"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner115"].Parent = Converted["_Jail"]
 
-Converted["_Bindable84"].Value = true
-Converted["_Bindable84"].Name = "Bindable"
-Converted["_Bindable84"].Parent = Converted["_Jail"]
+Converted["_Bindable86"].Value = true
+Converted["_Bindable86"].Name = "Bindable"
+Converted["_Bindable86"].Parent = Converted["_Jail"]
 
 Converted["_Store"].Font = Enum.Font.TitilliumWeb
 Converted["_Store"].Text = "Store"
@@ -4090,12 +4645,12 @@ Converted["_Store"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Store"].Name = "Store"
 Converted["_Store"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner107"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner107"].Parent = Converted["_Store"]
+Converted["_UICorner116"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner116"].Parent = Converted["_Store"]
 
-Converted["_Bindable85"].Value = true
-Converted["_Bindable85"].Name = "Bindable"
-Converted["_Bindable85"].Parent = Converted["_Store"]
+Converted["_Bindable87"].Value = true
+Converted["_Bindable87"].Name = "Bindable"
+Converted["_Bindable87"].Parent = Converted["_Store"]
 
 Converted["_Staff"].Font = Enum.Font.TitilliumWeb
 Converted["_Staff"].Text = "Staff Spawn"
@@ -4113,12 +4668,12 @@ Converted["_Staff"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Staff"].Name = "Staff"
 Converted["_Staff"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner108"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner108"].Parent = Converted["_Staff"]
+Converted["_UICorner117"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner117"].Parent = Converted["_Staff"]
 
-Converted["_Bindable86"].Value = true
-Converted["_Bindable86"].Name = "Bindable"
-Converted["_Bindable86"].Parent = Converted["_Staff"]
+Converted["_Bindable88"].Value = true
+Converted["_Bindable88"].Name = "Bindable"
+Converted["_Bindable88"].Parent = Converted["_Staff"]
 
 Converted["_Spawn"].Font = Enum.Font.TitilliumWeb
 Converted["_Spawn"].Text = "Spawn"
@@ -4136,12 +4691,12 @@ Converted["_Spawn"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Spawn"].Name = "Spawn"
 Converted["_Spawn"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner109"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner109"].Parent = Converted["_Spawn"]
+Converted["_UICorner118"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner118"].Parent = Converted["_Spawn"]
 
-Converted["_Bindable87"].Value = true
-Converted["_Bindable87"].Name = "Bindable"
-Converted["_Bindable87"].Parent = Converted["_Spawn"]
+Converted["_Bindable89"].Value = true
+Converted["_Bindable89"].Name = "Bindable"
+Converted["_Bindable89"].Parent = Converted["_Spawn"]
 
 Converted["_Kitchen"].Font = Enum.Font.TitilliumWeb
 Converted["_Kitchen"].Text = "Kitchen"
@@ -4159,12 +4714,12 @@ Converted["_Kitchen"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Kitchen"].Name = "Kitchen"
 Converted["_Kitchen"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner110"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner110"].Parent = Converted["_Kitchen"]
+Converted["_UICorner119"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner119"].Parent = Converted["_Kitchen"]
 
-Converted["_Bindable88"].Value = true
-Converted["_Bindable88"].Name = "Bindable"
-Converted["_Bindable88"].Parent = Converted["_Kitchen"]
+Converted["_Bindable90"].Value = true
+Converted["_Bindable90"].Name = "Bindable"
+Converted["_Bindable90"].Parent = Converted["_Kitchen"]
 
 Converted["_Key"].Font = Enum.Font.TitilliumWeb
 Converted["_Key"].Text = "Key Room"
@@ -4182,12 +4737,12 @@ Converted["_Key"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Key"].Name = "Key"
 Converted["_Key"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner111"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner111"].Parent = Converted["_Key"]
+Converted["_UICorner120"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner120"].Parent = Converted["_Key"]
 
-Converted["_Bindable89"].Value = true
-Converted["_Bindable89"].Name = "Bindable"
-Converted["_Bindable89"].Parent = Converted["_Key"]
+Converted["_Bindable91"].Value = true
+Converted["_Bindable91"].Name = "Bindable"
+Converted["_Bindable91"].Parent = Converted["_Key"]
 
 Converted["_VIP"].Font = Enum.Font.TitilliumWeb
 Converted["_VIP"].Text = "VIP Room"
@@ -4205,12 +4760,12 @@ Converted["_VIP"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_VIP"].Name = "VIP"
 Converted["_VIP"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner112"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner112"].Parent = Converted["_VIP"]
+Converted["_UICorner121"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner121"].Parent = Converted["_VIP"]
 
-Converted["_Bindable90"].Value = true
-Converted["_Bindable90"].Name = "Bindable"
-Converted["_Bindable90"].Parent = Converted["_VIP"]
+Converted["_Bindable92"].Value = true
+Converted["_Bindable92"].Name = "Bindable"
+Converted["_Bindable92"].Parent = Converted["_VIP"]
 
 Converted["_CarWash"].Font = Enum.Font.TitilliumWeb
 Converted["_CarWash"].Text = "Car Wash"
@@ -4228,12 +4783,12 @@ Converted["_CarWash"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_CarWash"].Name = "CarWash"
 Converted["_CarWash"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner113"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner113"].Parent = Converted["_CarWash"]
+Converted["_UICorner122"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner122"].Parent = Converted["_CarWash"]
 
-Converted["_Bindable91"].Value = true
-Converted["_Bindable91"].Name = "Bindable"
-Converted["_Bindable91"].Parent = Converted["_CarWash"]
+Converted["_Bindable93"].Value = true
+Converted["_Bindable93"].Name = "Bindable"
+Converted["_Bindable93"].Parent = Converted["_CarWash"]
 
 Converted["_Warehouse"].Font = Enum.Font.TitilliumWeb
 Converted["_Warehouse"].Text = "Warehouse"
@@ -4251,12 +4806,12 @@ Converted["_Warehouse"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Warehouse"].Name = "Warehouse"
 Converted["_Warehouse"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner114"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner114"].Parent = Converted["_Warehouse"]
+Converted["_UICorner123"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner123"].Parent = Converted["_Warehouse"]
 
-Converted["_Bindable92"].Value = true
-Converted["_Bindable92"].Name = "Bindable"
-Converted["_Bindable92"].Parent = Converted["_Warehouse"]
+Converted["_Bindable94"].Value = true
+Converted["_Bindable94"].Name = "Bindable"
+Converted["_Bindable94"].Parent = Converted["_Warehouse"]
 
 Converted["_Campsite"].Font = Enum.Font.TitilliumWeb
 Converted["_Campsite"].Text = "Campsite"
@@ -4274,12 +4829,12 @@ Converted["_Campsite"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Campsite"].Name = "Campsite"
 Converted["_Campsite"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner115"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner115"].Parent = Converted["_Campsite"]
+Converted["_UICorner124"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner124"].Parent = Converted["_Campsite"]
 
-Converted["_Bindable93"].Value = true
-Converted["_Bindable93"].Name = "Bindable"
-Converted["_Bindable93"].Parent = Converted["_Campsite"]
+Converted["_Bindable95"].Value = true
+Converted["_Bindable95"].Name = "Bindable"
+Converted["_Bindable95"].Parent = Converted["_Campsite"]
 
 Converted["_Obbies"].Font = Enum.Font.TitilliumWeb
 Converted["_Obbies"].Text = "Obbies"
@@ -4297,12 +4852,12 @@ Converted["_Obbies"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Obbies"].Name = "Obbies"
 Converted["_Obbies"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner116"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner116"].Parent = Converted["_Obbies"]
+Converted["_UICorner125"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner125"].Parent = Converted["_Obbies"]
 
-Converted["_Bindable94"].Value = true
-Converted["_Bindable94"].Name = "Bindable"
-Converted["_Bindable94"].Parent = Converted["_Obbies"]
+Converted["_Bindable96"].Value = true
+Converted["_Bindable96"].Name = "Bindable"
+Converted["_Bindable96"].Parent = Converted["_Obbies"]
 
 Converted["_Raceway"].Font = Enum.Font.TitilliumWeb
 Converted["_Raceway"].Text = "Raceway"
@@ -4320,12 +4875,12 @@ Converted["_Raceway"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Raceway"].Name = "Raceway"
 Converted["_Raceway"].Parent = Converted["_Teleports2"]
 
-Converted["_UICorner117"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner117"].Parent = Converted["_Raceway"]
+Converted["_UICorner126"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner126"].Parent = Converted["_Raceway"]
 
-Converted["_Bindable95"].Value = true
-Converted["_Bindable95"].Name = "Bindable"
-Converted["_Bindable95"].Parent = Converted["_Raceway"]
+Converted["_Bindable97"].Value = true
+Converted["_Bindable97"].Name = "Bindable"
+Converted["_Bindable97"].Parent = Converted["_Raceway"]
 
 Converted["_MFuel"].Font = Enum.Font.TitilliumWeb
 Converted["_MFuel"].Text = "Max Fuel"
@@ -4343,12 +4898,12 @@ Converted["_MFuel"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_MFuel"].Name = "MFuel"
 Converted["_MFuel"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner118"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner118"].Parent = Converted["_MFuel"]
+Converted["_UICorner127"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner127"].Parent = Converted["_MFuel"]
 
-Converted["_Bindable96"].Value = true
-Converted["_Bindable96"].Name = "Bindable"
-Converted["_Bindable96"].Parent = Converted["_MFuel"]
+Converted["_Bindable98"].Value = true
+Converted["_Bindable98"].Name = "Bindable"
+Converted["_Bindable98"].Parent = Converted["_MFuel"]
 
 Converted["_RankDown"].Font = Enum.Font.TitilliumWeb
 Converted["_RankDown"].Text = "Rank 0"
@@ -4366,12 +4921,12 @@ Converted["_RankDown"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_RankDown"].Name = "RankDown"
 Converted["_RankDown"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner119"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner119"].Parent = Converted["_RankDown"]
+Converted["_UICorner128"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner128"].Parent = Converted["_RankDown"]
 
-Converted["_Bindable97"].Value = true
-Converted["_Bindable97"].Name = "Bindable"
-Converted["_Bindable97"].Parent = Converted["_RankDown"]
+Converted["_Bindable99"].Value = true
+Converted["_Bindable99"].Name = "Bindable"
+Converted["_Bindable99"].Parent = Converted["_RankDown"]
 
 Converted["_RankUp"].Font = Enum.Font.TitilliumWeb
 Converted["_RankUp"].Text = "Rank 200"
@@ -4389,12 +4944,12 @@ Converted["_RankUp"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_RankUp"].Name = "RankUp"
 Converted["_RankUp"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner120"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner120"].Parent = Converted["_RankUp"]
+Converted["_UICorner129"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner129"].Parent = Converted["_RankUp"]
 
-Converted["_Bindable98"].Value = true
-Converted["_Bindable98"].Name = "Bindable"
-Converted["_Bindable98"].Parent = Converted["_RankUp"]
+Converted["_Bindable100"].Value = true
+Converted["_Bindable100"].Name = "Bindable"
+Converted["_Bindable100"].Parent = Converted["_RankUp"]
 
 Converted["_Rank"].Font = Enum.Font.TitilliumWeb
 Converted["_Rank"].Text = "Current Rank: 0"
@@ -4412,8 +4967,8 @@ Converted["_Rank"].Size = UDim2.new(0.818000019, 0, 0.075000003, 0)
 Converted["_Rank"].Name = "Rank"
 Converted["_Rank"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner121"].CornerRadius = UDim.new(0.200000003, 0)
-Converted["_UICorner121"].Parent = Converted["_Rank"]
+Converted["_UICorner130"].CornerRadius = UDim.new(0.200000003, 0)
+Converted["_UICorner130"].Parent = Converted["_Rank"]
 
 Converted["_Radio"].ClearTextOnFocus = false
 Converted["_Radio"].Font = Enum.Font.TitilliumWeb
@@ -4433,8 +4988,8 @@ Converted["_Radio"].Size = UDim2.new(0.349999994, 0, 0.100000001, 0)
 Converted["_Radio"].Name = "Radio"
 Converted["_Radio"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner122"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner122"].Parent = Converted["_Radio"]
+Converted["_UICorner131"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner131"].Parent = Converted["_Radio"]
 
 Converted["_Tickets"].GroupTransparency = 1
 Converted["_Tickets"].Active = true
@@ -4466,12 +5021,12 @@ Converted["_TicketSpam"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_TicketSpam"].Name = "TicketSpam"
 Converted["_TicketSpam"].Parent = Converted["_Tickets"]
 
-Converted["_UICorner123"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner123"].Parent = Converted["_TicketSpam"]
+Converted["_UICorner132"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner132"].Parent = Converted["_TicketSpam"]
 
-Converted["_Bindable99"].Value = true
-Converted["_Bindable99"].Name = "Bindable"
-Converted["_Bindable99"].Parent = Converted["_TicketSpam"]
+Converted["_Bindable101"].Value = true
+Converted["_Bindable101"].Name = "Bindable"
+Converted["_Bindable101"].Parent = Converted["_TicketSpam"]
 
 Converted["_DTickets"].Font = Enum.Font.TitilliumWeb
 Converted["_DTickets"].Text = "Disable Tickets"
@@ -4489,12 +5044,12 @@ Converted["_DTickets"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_DTickets"].Name = "DTickets"
 Converted["_DTickets"].Parent = Converted["_Tickets"]
 
-Converted["_UICorner124"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner124"].Parent = Converted["_DTickets"]
+Converted["_UICorner133"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner133"].Parent = Converted["_DTickets"]
 
-Converted["_Bindable100"].Value = true
-Converted["_Bindable100"].Name = "Bindable"
-Converted["_Bindable100"].Parent = Converted["_DTickets"]
+Converted["_Bindable102"].Value = true
+Converted["_Bindable102"].Name = "Bindable"
+Converted["_Bindable102"].Parent = Converted["_DTickets"]
 
 Converted["_SpamTarget"].Font = Enum.Font.TitilliumWeb
 Converted["_SpamTarget"].Text = "Spam Target"
@@ -4512,12 +5067,12 @@ Converted["_SpamTarget"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_SpamTarget"].Name = "SpamTarget"
 Converted["_SpamTarget"].Parent = Converted["_Tickets"]
 
-Converted["_UICorner125"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner125"].Parent = Converted["_SpamTarget"]
+Converted["_UICorner134"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner134"].Parent = Converted["_SpamTarget"]
 
-Converted["_Bindable101"].Value = true
-Converted["_Bindable101"].Name = "Bindable"
-Converted["_Bindable101"].Parent = Converted["_SpamTarget"]
+Converted["_Bindable103"].Value = true
+Converted["_Bindable103"].Name = "Bindable"
+Converted["_Bindable103"].Parent = Converted["_SpamTarget"]
 
 Converted["_CTicket"].Font = Enum.Font.TitilliumWeb
 Converted["_CTicket"].Text = "Current Ticket: None"
@@ -4535,8 +5090,8 @@ Converted["_CTicket"].Size = UDim2.new(0.449999988, 0, 0.150000006, 0)
 Converted["_CTicket"].Name = "CTicket"
 Converted["_CTicket"].Parent = Converted["_Tickets"]
 
-Converted["_UICorner126"].CornerRadius = UDim.new(0.300000012, 0)
-Converted["_UICorner126"].Parent = Converted["_CTicket"]
+Converted["_UICorner135"].CornerRadius = UDim.new(0.300000012, 0)
+Converted["_UICorner135"].Parent = Converted["_CTicket"]
 
 Converted["_CTickets"].Font = Enum.Font.TitilliumWeb
 Converted["_CTickets"].Text = "Remove Ticket"
@@ -4554,12 +5109,12 @@ Converted["_CTickets"].Size = UDim2.new(0.400000006, 0, 0.100000001, 0)
 Converted["_CTickets"].Name = "CTickets"
 Converted["_CTickets"].Parent = Converted["_Tickets"]
 
-Converted["_UICorner127"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner127"].Parent = Converted["_CTickets"]
+Converted["_UICorner136"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner136"].Parent = Converted["_CTickets"]
 
-Converted["_Bindable102"].Value = true
-Converted["_Bindable102"].Name = "Bindable"
-Converted["_Bindable102"].Parent = Converted["_CTickets"]
+Converted["_Bindable104"].Value = true
+Converted["_Bindable104"].Name = "Bindable"
+Converted["_Bindable104"].Parent = Converted["_CTickets"]
 
 Converted["_Deluxe"].Font = Enum.Font.TitilliumWeb
 Converted["_Deluxe"].Text = "Deluxe"
@@ -4577,12 +5132,12 @@ Converted["_Deluxe"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Deluxe"].Name = "Deluxe"
 Converted["_Deluxe"].Parent = Converted["_Tickets"]
 
-Converted["_UICorner128"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner128"].Parent = Converted["_Deluxe"]
+Converted["_UICorner137"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner137"].Parent = Converted["_Deluxe"]
 
-Converted["_Bindable103"].Value = true
-Converted["_Bindable103"].Name = "Bindable"
-Converted["_Bindable103"].Parent = Converted["_Deluxe"]
+Converted["_Bindable105"].Value = true
+Converted["_Bindable105"].Name = "Bindable"
+Converted["_Bindable105"].Parent = Converted["_Deluxe"]
 
 Converted["_Extra"].Font = Enum.Font.TitilliumWeb
 Converted["_Extra"].Text = "Extra"
@@ -4600,12 +5155,12 @@ Converted["_Extra"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Extra"].Name = "Extra"
 Converted["_Extra"].Parent = Converted["_Tickets"]
 
-Converted["_UICorner129"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner129"].Parent = Converted["_Extra"]
+Converted["_UICorner138"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner138"].Parent = Converted["_Extra"]
 
-Converted["_Bindable104"].Value = true
-Converted["_Bindable104"].Name = "Bindable"
-Converted["_Bindable104"].Parent = Converted["_Extra"]
+Converted["_Bindable106"].Value = true
+Converted["_Bindable106"].Name = "Bindable"
+Converted["_Bindable106"].Parent = Converted["_Extra"]
 
 Converted["_Regular"].Font = Enum.Font.TitilliumWeb
 Converted["_Regular"].Text = "Regular"
@@ -4623,12 +5178,12 @@ Converted["_Regular"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Regular"].Name = "Regular"
 Converted["_Regular"].Parent = Converted["_Tickets"]
 
-Converted["_UICorner130"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner130"].Parent = Converted["_Regular"]
+Converted["_UICorner139"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner139"].Parent = Converted["_Regular"]
 
-Converted["_Bindable105"].Value = true
-Converted["_Bindable105"].Name = "Bindable"
-Converted["_Bindable105"].Parent = Converted["_Regular"]
+Converted["_Bindable107"].Value = true
+Converted["_Bindable107"].Name = "Bindable"
+Converted["_Bindable107"].Parent = Converted["_Regular"]
 
 Converted["_Input5"].Font = Enum.Font.TitilliumWeb
 Converted["_Input5"].PlaceholderText = "Player Name"
@@ -4647,8 +5202,8 @@ Converted["_Input5"].Size = UDim2.new(0.899999976, 0, 0.100000001, 0)
 Converted["_Input5"].Name = "Input"
 Converted["_Input5"].Parent = Converted["_Tickets"]
 
-Converted["_UICorner131"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner131"].Parent = Converted["_Input5"]
+Converted["_UICorner140"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner140"].Parent = Converted["_Input5"]
 
 Converted["_Close3"].Font = Enum.Font.TitilliumWeb
 Converted["_Close3"].Text = "Close"
@@ -4666,12 +5221,12 @@ Converted["_Close3"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Close3"].Name = "Close"
 Converted["_Close3"].Parent = Converted["_Tickets"]
 
-Converted["_UICorner132"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner132"].Parent = Converted["_Close3"]
+Converted["_UICorner141"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner141"].Parent = Converted["_Close3"]
 
-Converted["_Bindable106"].Value = true
-Converted["_Bindable106"].Name = "Bindable"
-Converted["_Bindable106"].Parent = Converted["_Close3"]
+Converted["_Bindable108"].Value = true
+Converted["_Bindable108"].Name = "Bindable"
+Converted["_Bindable108"].Parent = Converted["_Close3"]
 
 Converted["_TCK"].Font = Enum.Font.TitilliumWeb
 Converted["_TCK"].Text = "Tickets"
@@ -4686,15 +5241,16 @@ Converted["_TCK"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_TCK"].BorderSizePixel = 0
 Converted["_TCK"].Position = UDim2.new(0.675000012, 0, 0.925000012, 0)
 Converted["_TCK"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_TCK"].Visible = false
 Converted["_TCK"].Name = "TCK"
 Converted["_TCK"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner133"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner133"].Parent = Converted["_TCK"]
+Converted["_UICorner142"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner142"].Parent = Converted["_TCK"]
 
-Converted["_Bindable107"].Value = true
-Converted["_Bindable107"].Name = "Bindable"
-Converted["_Bindable107"].Parent = Converted["_TCK"]
+Converted["_Bindable109"].Value = true
+Converted["_Bindable109"].Name = "Bindable"
+Converted["_Bindable109"].Parent = Converted["_TCK"]
 
 Converted["_CRank"].Font = Enum.Font.TitilliumWeb
 Converted["_CRank"].PlaceholderText = "Custom Rank ID"
@@ -4713,8 +5269,8 @@ Converted["_CRank"].Size = UDim2.new(0.394999981, 0, 0.100000016, 0)
 Converted["_CRank"].Name = "CRank"
 Converted["_CRank"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner134"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner134"].Parent = Converted["_CRank"]
+Converted["_UICorner143"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner143"].Parent = Converted["_CRank"]
 
 Converted["_FF"].Font = Enum.Font.TitilliumWeb
 Converted["_FF"].Text = "FF"
@@ -4732,12 +5288,12 @@ Converted["_FF"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_FF"].Name = "FF"
 Converted["_FF"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner135"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner135"].Parent = Converted["_FF"]
+Converted["_UICorner144"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner144"].Parent = Converted["_FF"]
 
-Converted["_Bindable108"].Value = true
-Converted["_Bindable108"].Name = "Bindable"
-Converted["_Bindable108"].Parent = Converted["_FF"]
+Converted["_Bindable110"].Value = true
+Converted["_Bindable110"].Name = "Bindable"
+Converted["_Bindable110"].Parent = Converted["_FF"]
 
 Converted["_Obby"].Font = Enum.Font.TitilliumWeb
 Converted["_Obby"].Text = "Nature Obby"
@@ -4753,13 +5309,12 @@ Converted["_Obby"].BackgroundTransparency = 0.5
 Converted["_Obby"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Obby"].BorderSizePixel = 0
 Converted["_Obby"].Position = UDim2.new(0.5, 0, 0.800000012, 0)
-Converted["_Obby"].Selectable = true
 Converted["_Obby"].Size = UDim2.new(0.394999981, 0, 0.100000016, 0)
 Converted["_Obby"].Name = "Obby"
 Converted["_Obby"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner136"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner136"].Parent = Converted["_Obby"]
+Converted["_UICorner145"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner145"].Parent = Converted["_Obby"]
 
 Converted["_ObbyR"].Font = Enum.Font.Roboto
 Converted["_ObbyR"].Text = ">"
@@ -4777,12 +5332,12 @@ Converted["_ObbyR"].Size = UDim2.new(0.0599999949, 0, 0.100000016, 0)
 Converted["_ObbyR"].Name = "ObbyR"
 Converted["_ObbyR"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner137"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner137"].Parent = Converted["_ObbyR"]
+Converted["_UICorner146"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner146"].Parent = Converted["_ObbyR"]
 
-Converted["_Bindable109"].Value = true
-Converted["_Bindable109"].Name = "Bindable"
-Converted["_Bindable109"].Parent = Converted["_ObbyR"]
+Converted["_Bindable111"].Value = true
+Converted["_Bindable111"].Name = "Bindable"
+Converted["_Bindable111"].Parent = Converted["_ObbyR"]
 
 Converted["_ObbyL"].Font = Enum.Font.Roboto
 Converted["_ObbyL"].Text = "<"
@@ -4800,12 +5355,12 @@ Converted["_ObbyL"].Size = UDim2.new(0.0607470796, 0, 0.100000009, 0)
 Converted["_ObbyL"].Name = "ObbyL"
 Converted["_ObbyL"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner138"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner138"].Parent = Converted["_ObbyL"]
+Converted["_UICorner147"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner147"].Parent = Converted["_ObbyL"]
 
-Converted["_Bindable110"].Value = true
-Converted["_Bindable110"].Name = "Bindable"
-Converted["_Bindable110"].Parent = Converted["_ObbyL"]
+Converted["_Bindable112"].Value = true
+Converted["_Bindable112"].Name = "Bindable"
+Converted["_Bindable112"].Parent = Converted["_ObbyL"]
 
 Converted["_AutoObby"].Font = Enum.Font.TitilliumWeb
 Converted["_AutoObby"].Text = "AutoFarm Obby"
@@ -4823,12 +5378,12 @@ Converted["_AutoObby"].Size = UDim2.new(0.300000012, 0, 0.100000001, 0)
 Converted["_AutoObby"].Name = "AutoObby"
 Converted["_AutoObby"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner139"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner139"].Parent = Converted["_AutoObby"]
+Converted["_UICorner148"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner148"].Parent = Converted["_AutoObby"]
 
-Converted["_Bindable111"].Value = true
-Converted["_Bindable111"].Name = "Bindable"
-Converted["_Bindable111"].Parent = Converted["_AutoObby"]
+Converted["_Bindable113"].Value = true
+Converted["_Bindable113"].Name = "Bindable"
+Converted["_Bindable113"].Parent = Converted["_AutoObby"]
 
 Converted["_NIFuel"].Font = Enum.Font.TitilliumWeb
 Converted["_NIFuel"].Text = "-Inf Fuel"
@@ -4846,12 +5401,12 @@ Converted["_NIFuel"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_NIFuel"].Name = "NIFuel"
 Converted["_NIFuel"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner140"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner140"].Parent = Converted["_NIFuel"]
+Converted["_UICorner149"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner149"].Parent = Converted["_NIFuel"]
 
-Converted["_Bindable112"].Value = true
-Converted["_Bindable112"].Name = "Bindable"
-Converted["_Bindable112"].Parent = Converted["_NIFuel"]
+Converted["_Bindable114"].Value = true
+Converted["_Bindable114"].Name = "Bindable"
+Converted["_Bindable114"].Parent = Converted["_NIFuel"]
 
 Converted["_Gates"].Font = Enum.Font.TitilliumWeb
 Converted["_Gates"].Text = "Hide Gates"
@@ -4869,12 +5424,12 @@ Converted["_Gates"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Gates"].Name = "Gates"
 Converted["_Gates"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner141"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner141"].Parent = Converted["_Gates"]
+Converted["_UICorner150"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner150"].Parent = Converted["_Gates"]
 
-Converted["_Bindable113"].Value = true
-Converted["_Bindable113"].Name = "Bindable"
-Converted["_Bindable113"].Parent = Converted["_Gates"]
+Converted["_Bindable115"].Value = true
+Converted["_Bindable115"].Name = "Bindable"
+Converted["_Bindable115"].Parent = Converted["_Gates"]
 
 Converted["_Key1"].Font = Enum.Font.TitilliumWeb
 Converted["_Key1"].Text = "Get Key"
@@ -4892,12 +5447,12 @@ Converted["_Key1"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Key1"].Name = "Key"
 Converted["_Key1"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner142"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner142"].Parent = Converted["_Key1"]
+Converted["_UICorner151"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner151"].Parent = Converted["_Key1"]
 
-Converted["_Bindable114"].Value = true
-Converted["_Bindable114"].Name = "Bindable"
-Converted["_Bindable114"].Parent = Converted["_Key1"]
+Converted["_Bindable116"].Value = true
+Converted["_Bindable116"].Name = "Bindable"
+Converted["_Bindable116"].Parent = Converted["_Key1"]
 
 Converted["_Collision"].Font = Enum.Font.TitilliumWeb
 Converted["_Collision"].Text = "Car Noclip"
@@ -4915,12 +5470,12 @@ Converted["_Collision"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Collision"].Name = "Collision"
 Converted["_Collision"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner143"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner143"].Parent = Converted["_Collision"]
+Converted["_UICorner152"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner152"].Parent = Converted["_Collision"]
 
-Converted["_Bindable115"].Value = true
-Converted["_Bindable115"].Name = "Bindable"
-Converted["_Bindable115"].Parent = Converted["_Collision"]
+Converted["_Bindable117"].Value = true
+Converted["_Bindable117"].Name = "Bindable"
+Converted["_Bindable117"].Parent = Converted["_Collision"]
 
 Converted["_WLOL"].Font = Enum.Font.TitilliumWeb
 Converted["_WLOL"].Text = "Washiez.lol"
@@ -4938,12 +5493,12 @@ Converted["_WLOL"].Size = UDim2.new(0.230000004, 0, 0.075000003, 0)
 Converted["_WLOL"].Name = "WLOL"
 Converted["_WLOL"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner144"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner144"].Parent = Converted["_WLOL"]
+Converted["_UICorner153"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner153"].Parent = Converted["_WLOL"]
 
-Converted["_Bindable116"].Value = true
-Converted["_Bindable116"].Name = "Bindable"
-Converted["_Bindable116"].Parent = Converted["_WLOL"]
+Converted["_Bindable118"].Value = true
+Converted["_Bindable118"].Name = "Bindable"
+Converted["_Bindable118"].Parent = Converted["_WLOL"]
 
 Converted["_OStats"].Font = Enum.Font.TitilliumWeb
 Converted["_OStats"].Text = "Stage 0 | Completions 0"
@@ -4960,13 +5515,12 @@ Converted["_OStats"].BackgroundTransparency = 0.75
 Converted["_OStats"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_OStats"].BorderSizePixel = 0
 Converted["_OStats"].Position = UDim2.new(0.5, 0, 0.589999974, 0)
-Converted["_OStats"].Selectable = true
 Converted["_OStats"].Size = UDim2.new(0.300000012, 0, 0.0500000007, 0)
 Converted["_OStats"].Name = "OStats"
 Converted["_OStats"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner145"].CornerRadius = UDim.new(0.300000012, 0)
-Converted["_UICorner145"].Parent = Converted["_OStats"]
+Converted["_UICorner154"].CornerRadius = UDim.new(0.300000012, 0)
+Converted["_UICorner154"].Parent = Converted["_OStats"]
 
 Converted["_CarPad"].Font = Enum.Font.TitilliumWeb
 Converted["_CarPad"].Text = "Disable Car Pads"
@@ -4984,12 +5538,12 @@ Converted["_CarPad"].Size = UDim2.new(0.230000004, 0, 0.075000003, 0)
 Converted["_CarPad"].Name = "CarPad"
 Converted["_CarPad"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner146"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner146"].Parent = Converted["_CarPad"]
+Converted["_UICorner155"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner155"].Parent = Converted["_CarPad"]
 
-Converted["_Bindable117"].Value = true
-Converted["_Bindable117"].Name = "Bindable"
-Converted["_Bindable117"].Parent = Converted["_CarPad"]
+Converted["_Bindable119"].Value = true
+Converted["_Bindable119"].Name = "Bindable"
+Converted["_Bindable119"].Parent = Converted["_CarPad"]
 
 Converted["_OpenDoors"].Font = Enum.Font.TitilliumWeb
 Converted["_OpenDoors"].Text = "Open Doors"
@@ -5007,12 +5561,12 @@ Converted["_OpenDoors"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_OpenDoors"].Name = "OpenDoors"
 Converted["_OpenDoors"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner147"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner147"].Parent = Converted["_OpenDoors"]
+Converted["_UICorner156"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner156"].Parent = Converted["_OpenDoors"]
 
-Converted["_Bindable118"].Value = true
-Converted["_Bindable118"].Name = "Bindable"
-Converted["_Bindable118"].Parent = Converted["_OpenDoors"]
+Converted["_Bindable120"].Value = true
+Converted["_Bindable120"].Name = "Bindable"
+Converted["_Bindable120"].Parent = Converted["_OpenDoors"]
 
 Converted["_Doors"].Font = Enum.Font.TitilliumWeb
 Converted["_Doors"].Text = "Hide Doors"
@@ -5030,12 +5584,12 @@ Converted["_Doors"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Doors"].Name = "Doors"
 Converted["_Doors"].Parent = Converted["_Washiez1"]
 
-Converted["_UICorner148"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner148"].Parent = Converted["_Doors"]
+Converted["_UICorner157"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner157"].Parent = Converted["_Doors"]
 
-Converted["_Bindable119"].Value = true
-Converted["_Bindable119"].Name = "Bindable"
-Converted["_Bindable119"].Parent = Converted["_Doors"]
+Converted["_Bindable121"].Value = true
+Converted["_Bindable121"].Name = "Bindable"
+Converted["_Bindable121"].Parent = Converted["_Doors"]
 
 Converted["_Ranks"].Active = true
 Converted["_Ranks"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -5067,12 +5621,12 @@ Converted["_Close4"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
 Converted["_Close4"].Name = "Close"
 Converted["_Close4"].Parent = Converted["_Ranks"]
 
-Converted["_UICorner149"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner149"].Parent = Converted["_Close4"]
+Converted["_UICorner158"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner158"].Parent = Converted["_Close4"]
 
-Converted["_Bindable120"].Value = true
-Converted["_Bindable120"].Name = "Bindable"
-Converted["_Bindable120"].Parent = Converted["_Close4"]
+Converted["_Bindable122"].Value = true
+Converted["_Bindable122"].Name = "Bindable"
+Converted["_Bindable122"].Parent = Converted["_Close4"]
 
 Converted["_Info"].Font = Enum.Font.TitilliumWeb
 Converted["_Info"].Text = "Added by script so no error."
@@ -5108,12 +5662,12 @@ Converted["_NotifyMGMT"].Size = UDim2.new(0.275000006, 0, 0.125, 0)
 Converted["_NotifyMGMT"].Name = "NotifyMGMT"
 Converted["_NotifyMGMT"].Parent = Converted["_Ranks"]
 
-Converted["_UICorner150"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner150"].Parent = Converted["_NotifyMGMT"]
+Converted["_UICorner159"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner159"].Parent = Converted["_NotifyMGMT"]
 
-Converted["_Bindable121"].Value = true
-Converted["_Bindable121"].Name = "Bindable"
-Converted["_Bindable121"].Parent = Converted["_NotifyMGMT"]
+Converted["_Bindable123"].Value = true
+Converted["_Bindable123"].Name = "Bindable"
+Converted["_Bindable123"].Parent = Converted["_NotifyMGMT"]
 
 Converted["_NotifyST"].Font = Enum.Font.TitilliumWeb
 Converted["_NotifyST"].Text = "Notify ST [F]"
@@ -5131,12 +5685,59 @@ Converted["_NotifyST"].Size = UDim2.new(0.275000006, 0, 0.125, 0)
 Converted["_NotifyST"].Name = "NotifyST"
 Converted["_NotifyST"].Parent = Converted["_Ranks"]
 
-Converted["_UICorner151"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner151"].Parent = Converted["_NotifyST"]
+Converted["_UICorner160"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner160"].Parent = Converted["_NotifyST"]
 
-Converted["_Bindable122"].Value = true
-Converted["_Bindable122"].Name = "Bindable"
-Converted["_Bindable122"].Parent = Converted["_NotifyST"]
+Converted["_Bindable124"].Value = true
+Converted["_Bindable124"].Name = "Bindable"
+Converted["_Bindable124"].Parent = Converted["_NotifyST"]
+
+Converted["_Event"].Font = Enum.Font.TitilliumWeb
+Converted["_Event"].Text = "Complete Event"
+Converted["_Event"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Event"].TextScaled = true
+Converted["_Event"].TextSize = 14
+Converted["_Event"].TextWrapped = true
+Converted["_Event"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Event"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Event"].BackgroundTransparency = 0.25
+Converted["_Event"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Event"].BorderSizePixel = 0
+Converted["_Event"].Position = UDim2.new(0.104999997, 0, 0.699999988, 0)
+Converted["_Event"].Size = UDim2.new(0.150000006, 0, 0.075000003, 0)
+Converted["_Event"].Visible = false
+Converted["_Event"].Name = "Event"
+Converted["_Event"].Parent = Converted["_Washiez1"]
+
+Converted["_UICorner161"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner161"].Parent = Converted["_Event"]
+
+Converted["_Bindable125"].Value = true
+Converted["_Bindable125"].Name = "Bindable"
+Converted["_Bindable125"].Parent = Converted["_Event"]
+
+Converted["_LOD"].Font = Enum.Font.TitilliumWeb
+Converted["_LOD"].Text = "Loop Open Doors"
+Converted["_LOD"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_LOD"].TextScaled = true
+Converted["_LOD"].TextSize = 14
+Converted["_LOD"].TextWrapped = true
+Converted["_LOD"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_LOD"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_LOD"].BackgroundTransparency = 0.25
+Converted["_LOD"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_LOD"].BorderSizePixel = 0
+Converted["_LOD"].Position = UDim2.new(0.675000012, 0, 0.925000012, 0)
+Converted["_LOD"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_LOD"].Name = "LOD"
+Converted["_LOD"].Parent = Converted["_Washiez1"]
+
+Converted["_UICorner162"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner162"].Parent = Converted["_LOD"]
+
+Converted["_Bindable126"].Value = true
+Converted["_Bindable126"].Name = "Bindable"
+Converted["_Bindable126"].Parent = Converted["_LOD"]
 
 Converted["_WashiezTC1"].GroupTransparency = 1
 Converted["_WashiezTC1"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -5145,7 +5746,7 @@ Converted["_WashiezTC1"].BackgroundTransparency = 1
 Converted["_WashiezTC1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_WashiezTC1"].BorderSizePixel = 0
 Converted["_WashiezTC1"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_WashiezTC1"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_WashiezTC1"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_WashiezTC1"].Visible = false
 Converted["_WashiezTC1"].Name = "WashiezTC"
 Converted["_WashiezTC1"].Parent = Converted["_Menus"]
@@ -5166,12 +5767,12 @@ Converted["_VSeat"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_VSeat"].Name = "VSeat"
 Converted["_VSeat"].Parent = Converted["_WashiezTC1"]
 
-Converted["_UICorner152"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner152"].Parent = Converted["_VSeat"]
+Converted["_UICorner163"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner163"].Parent = Converted["_VSeat"]
 
-Converted["_Bindable123"].Value = true
-Converted["_Bindable123"].Name = "Bindable"
-Converted["_Bindable123"].Parent = Converted["_VSeat"]
+Converted["_Bindable127"].Value = true
+Converted["_Bindable127"].Name = "Bindable"
+Converted["_Bindable127"].Parent = Converted["_VSeat"]
 
 Converted["_OG"].Font = Enum.Font.TitilliumWeb
 Converted["_OG"].Text = "Join OG TC"
@@ -5189,12 +5790,12 @@ Converted["_OG"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_OG"].Name = "OG"
 Converted["_OG"].Parent = Converted["_WashiezTC1"]
 
-Converted["_UICorner153"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner153"].Parent = Converted["_OG"]
+Converted["_UICorner164"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner164"].Parent = Converted["_OG"]
 
-Converted["_Bindable124"].Value = true
-Converted["_Bindable124"].Name = "Bindable"
-Converted["_Bindable124"].Parent = Converted["_OG"]
+Converted["_Bindable128"].Value = true
+Converted["_Bindable128"].Name = "Bindable"
+Converted["_Bindable128"].Parent = Converted["_OG"]
 
 Converted["_Doors1"].Font = Enum.Font.TitilliumWeb
 Converted["_Doors1"].Text = "Hide Doors"
@@ -5212,12 +5813,12 @@ Converted["_Doors1"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Doors1"].Name = "Doors"
 Converted["_Doors1"].Parent = Converted["_WashiezTC1"]
 
-Converted["_UICorner154"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner154"].Parent = Converted["_Doors1"]
+Converted["_UICorner165"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner165"].Parent = Converted["_Doors1"]
 
-Converted["_Bindable125"].Value = true
-Converted["_Bindable125"].Name = "Bindable"
-Converted["_Bindable125"].Parent = Converted["_Doors1"]
+Converted["_Bindable129"].Value = true
+Converted["_Bindable129"].Name = "Bindable"
+Converted["_Bindable129"].Parent = Converted["_Doors1"]
 
 Converted["_Teleports3"].GroupTransparency = 1
 Converted["_Teleports3"].Active = true
@@ -5249,12 +5850,12 @@ Converted["_Upstairs"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Upstairs"].Name = "Upstairs"
 Converted["_Upstairs"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner155"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner155"].Parent = Converted["_Upstairs"]
+Converted["_UICorner166"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner166"].Parent = Converted["_Upstairs"]
 
-Converted["_Bindable126"].Value = true
-Converted["_Bindable126"].Name = "Bindable"
-Converted["_Bindable126"].Parent = Converted["_Upstairs"]
+Converted["_Bindable130"].Value = true
+Converted["_Bindable130"].Name = "Bindable"
+Converted["_Bindable130"].Parent = Converted["_Upstairs"]
 
 Converted["_Trainee"].Font = Enum.Font.TitilliumWeb
 Converted["_Trainee"].Text = "Trainee Hallway"
@@ -5272,12 +5873,12 @@ Converted["_Trainee"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Trainee"].Name = "Trainee"
 Converted["_Trainee"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner156"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner156"].Parent = Converted["_Trainee"]
+Converted["_UICorner167"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner167"].Parent = Converted["_Trainee"]
 
-Converted["_Bindable127"].Value = true
-Converted["_Bindable127"].Name = "Bindable"
-Converted["_Bindable127"].Parent = Converted["_Trainee"]
+Converted["_Bindable131"].Value = true
+Converted["_Bindable131"].Name = "Bindable"
+Converted["_Bindable131"].Parent = Converted["_Trainee"]
 
 Converted["_Test"].Font = Enum.Font.TitilliumWeb
 Converted["_Test"].Text = "Testing Area"
@@ -5295,12 +5896,12 @@ Converted["_Test"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Test"].Name = "Test"
 Converted["_Test"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner157"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner157"].Parent = Converted["_Test"]
+Converted["_UICorner168"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner168"].Parent = Converted["_Test"]
 
-Converted["_Bindable128"].Value = true
-Converted["_Bindable128"].Name = "Bindable"
-Converted["_Bindable128"].Parent = Converted["_Test"]
+Converted["_Bindable132"].Value = true
+Converted["_Bindable132"].Name = "Bindable"
+Converted["_Bindable132"].Parent = Converted["_Test"]
 
 Converted["_Staff1"].Font = Enum.Font.TitilliumWeb
 Converted["_Staff1"].Text = "Staff Spawn"
@@ -5318,12 +5919,12 @@ Converted["_Staff1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Staff1"].Name = "Staff"
 Converted["_Staff1"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner158"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner158"].Parent = Converted["_Staff1"]
+Converted["_UICorner169"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner169"].Parent = Converted["_Staff1"]
 
-Converted["_Bindable129"].Value = true
-Converted["_Bindable129"].Name = "Bindable"
-Converted["_Bindable129"].Parent = Converted["_Staff1"]
+Converted["_Bindable133"].Value = true
+Converted["_Bindable133"].Name = "Bindable"
+Converted["_Bindable133"].Parent = Converted["_Staff1"]
 
 Converted["_Spawn1"].Font = Enum.Font.TitilliumWeb
 Converted["_Spawn1"].Text = "Spawn"
@@ -5341,12 +5942,12 @@ Converted["_Spawn1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Spawn1"].Name = "Spawn"
 Converted["_Spawn1"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner159"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner159"].Parent = Converted["_Spawn1"]
+Converted["_UICorner170"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner170"].Parent = Converted["_Spawn1"]
 
-Converted["_Bindable130"].Value = true
-Converted["_Bindable130"].Name = "Bindable"
-Converted["_Bindable130"].Parent = Converted["_Spawn1"]
+Converted["_Bindable134"].Value = true
+Converted["_Bindable134"].Name = "Bindable"
+Converted["_Bindable134"].Parent = Converted["_Spawn1"]
 
 Converted["_JO"].Font = Enum.Font.TitilliumWeb
 Converted["_JO"].Text = "JO Hallway"
@@ -5364,12 +5965,12 @@ Converted["_JO"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_JO"].Name = "JO"
 Converted["_JO"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner160"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner160"].Parent = Converted["_JO"]
+Converted["_UICorner171"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner171"].Parent = Converted["_JO"]
 
-Converted["_Bindable131"].Value = true
-Converted["_Bindable131"].Name = "Bindable"
-Converted["_Bindable131"].Parent = Converted["_JO"]
+Converted["_Bindable135"].Value = true
+Converted["_Bindable135"].Name = "Bindable"
+Converted["_Bindable135"].Parent = Converted["_JO"]
 
 Converted["_SO"].Font = Enum.Font.TitilliumWeb
 Converted["_SO"].Text = "SO Hallway"
@@ -5387,12 +5988,12 @@ Converted["_SO"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_SO"].Name = "SO"
 Converted["_SO"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner161"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner161"].Parent = Converted["_SO"]
+Converted["_UICorner172"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner172"].Parent = Converted["_SO"]
 
-Converted["_Bindable132"].Value = true
-Converted["_Bindable132"].Name = "Bindable"
-Converted["_Bindable132"].Parent = Converted["_SO"]
+Converted["_Bindable136"].Value = true
+Converted["_Bindable136"].Name = "Bindable"
+Converted["_Bindable136"].Parent = Converted["_SO"]
 
 Converted["_Entrance"].Font = Enum.Font.TitilliumWeb
 Converted["_Entrance"].Text = "Entrance"
@@ -5410,12 +6011,12 @@ Converted["_Entrance"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Entrance"].Name = "Entrance"
 Converted["_Entrance"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner162"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner162"].Parent = Converted["_Entrance"]
+Converted["_UICorner173"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner173"].Parent = Converted["_Entrance"]
 
-Converted["_Bindable133"].Value = true
-Converted["_Bindable133"].Name = "Bindable"
-Converted["_Bindable133"].Parent = Converted["_Entrance"]
+Converted["_Bindable137"].Value = true
+Converted["_Bindable137"].Name = "Bindable"
+Converted["_Bindable137"].Parent = Converted["_Entrance"]
 
 Converted["_Chair"].Font = Enum.Font.TitilliumWeb
 Converted["_Chair"].Text = "Chair"
@@ -5433,12 +6034,12 @@ Converted["_Chair"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Chair"].Name = "Chair"
 Converted["_Chair"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner163"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner163"].Parent = Converted["_Chair"]
+Converted["_UICorner174"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner174"].Parent = Converted["_Chair"]
 
-Converted["_Bindable134"].Value = true
-Converted["_Bindable134"].Name = "Bindable"
-Converted["_Bindable134"].Parent = Converted["_Chair"]
+Converted["_Bindable138"].Value = true
+Converted["_Bindable138"].Name = "Bindable"
+Converted["_Bindable138"].Parent = Converted["_Chair"]
 
 Converted["_Close5"].Font = Enum.Font.Nunito
 Converted["_Close5"].Text = "X"
@@ -5457,14 +6058,13 @@ Converted["_Close5"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
 Converted["_Close5"].Name = "Close"
 Converted["_Close5"].Parent = Converted["_Teleports3"]
 
-Converted["_UICorner164"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner164"].Parent = Converted["_Close5"]
+Converted["_UICorner175"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner175"].Parent = Converted["_Close5"]
 
-Converted["_Bindable135"].Value = true
-Converted["_Bindable135"].Name = "Bindable"
-Converted["_Bindable135"].Parent = Converted["_Close5"]
+Converted["_Bindable139"].Value = true
+Converted["_Bindable139"].Name = "Bindable"
+Converted["_Bindable139"].Parent = Converted["_Close5"]
 
-Converted["_CarInfo"].Font = Enum.Font.Unknown
 Converted["_CarInfo"].Text = "69 Cars | 420 Available"
 Converted["_CarInfo"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
 Converted["_CarInfo"].TextScaled = true
@@ -5480,8 +6080,8 @@ Converted["_CarInfo"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
 Converted["_CarInfo"].Name = "CarInfo"
 Converted["_CarInfo"].Parent = Converted["_WashiezTC1"]
 
-Converted["_UICorner165"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner165"].Parent = Converted["_CarInfo"]
+Converted["_UICorner176"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner176"].Parent = Converted["_CarInfo"]
 
 Converted["_CM"].Font = Enum.Font.TitilliumWeb
 Converted["_CM"].Text = "Cars"
@@ -5499,12 +6099,12 @@ Converted["_CM"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_CM"].Name = "CM"
 Converted["_CM"].Parent = Converted["_WashiezTC1"]
 
-Converted["_UICorner166"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner166"].Parent = Converted["_CM"]
+Converted["_UICorner177"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner177"].Parent = Converted["_CM"]
 
-Converted["_Bindable136"].Value = true
-Converted["_Bindable136"].Name = "Bindable"
-Converted["_Bindable136"].Parent = Converted["_CM"]
+Converted["_Bindable140"].Value = true
+Converted["_Bindable140"].Name = "Bindable"
+Converted["_Bindable140"].Parent = Converted["_CM"]
 
 Converted["_TP2"].Font = Enum.Font.TitilliumWeb
 Converted["_TP2"].Text = "Teleports"
@@ -5522,12 +6122,12 @@ Converted["_TP2"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_TP2"].Name = "TP"
 Converted["_TP2"].Parent = Converted["_WashiezTC1"]
 
-Converted["_UICorner167"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner167"].Parent = Converted["_TP2"]
+Converted["_UICorner178"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner178"].Parent = Converted["_TP2"]
 
-Converted["_Bindable137"].Value = true
-Converted["_Bindable137"].Name = "Bindable"
-Converted["_Bindable137"].Parent = Converted["_TP2"]
+Converted["_Bindable141"].Value = true
+Converted["_Bindable141"].Name = "Bindable"
+Converted["_Bindable141"].Parent = Converted["_TP2"]
 
 Converted["_Cars"].GroupTransparency = 1
 Converted["_Cars"].Active = true
@@ -5559,12 +6159,12 @@ Converted["_Teleport1"].Size = UDim2.new(0.375, 0, 0.100000001, 0)
 Converted["_Teleport1"].Name = "Teleport"
 Converted["_Teleport1"].Parent = Converted["_Cars"]
 
-Converted["_UICorner168"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner168"].Parent = Converted["_Teleport1"]
+Converted["_UICorner179"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner179"].Parent = Converted["_Teleport1"]
 
-Converted["_Bindable138"].Value = true
-Converted["_Bindable138"].Name = "Bindable"
-Converted["_Bindable138"].Parent = Converted["_Teleport1"]
+Converted["_Bindable142"].Value = true
+Converted["_Bindable142"].Name = "Bindable"
+Converted["_Bindable142"].Parent = Converted["_Teleport1"]
 
 Converted["_Close6"].Font = Enum.Font.Nunito
 Converted["_Close6"].Text = "X"
@@ -5583,12 +6183,12 @@ Converted["_Close6"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
 Converted["_Close6"].Name = "Close"
 Converted["_Close6"].Parent = Converted["_Cars"]
 
-Converted["_UICorner169"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner169"].Parent = Converted["_Close6"]
+Converted["_UICorner180"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner180"].Parent = Converted["_Close6"]
 
-Converted["_Bindable139"].Value = true
-Converted["_Bindable139"].Name = "Bindable"
-Converted["_Bindable139"].Parent = Converted["_Close6"]
+Converted["_Bindable143"].Value = true
+Converted["_Bindable143"].Name = "Bindable"
+Converted["_Bindable143"].Parent = Converted["_Close6"]
 
 Converted["_Input6"].Font = Enum.Font.TitilliumWeb
 Converted["_Input6"].PlaceholderText = "Player Name"
@@ -5607,8 +6207,8 @@ Converted["_Input6"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
 Converted["_Input6"].Name = "Input"
 Converted["_Input6"].Parent = Converted["_Cars"]
 
-Converted["_UICorner170"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner170"].Parent = Converted["_Input6"]
+Converted["_UICorner181"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner181"].Parent = Converted["_Input6"]
 
 Converted["_Delete"].Font = Enum.Font.TitilliumWeb
 Converted["_Delete"].Text = "Delete Car"
@@ -5626,12 +6226,12 @@ Converted["_Delete"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Delete"].Name = "Delete"
 Converted["_Delete"].Parent = Converted["_Cars"]
 
-Converted["_UICorner171"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner171"].Parent = Converted["_Delete"]
+Converted["_UICorner182"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner182"].Parent = Converted["_Delete"]
 
-Converted["_Bindable140"].Value = true
-Converted["_Bindable140"].Name = "Bindable"
-Converted["_Bindable140"].Parent = Converted["_Delete"]
+Converted["_Bindable144"].Value = true
+Converted["_Bindable144"].Name = "Bindable"
+Converted["_Bindable144"].Parent = Converted["_Delete"]
 
 Converted["_Main"].Font = Enum.Font.TitilliumWeb
 Converted["_Main"].Text = "Main Area"
@@ -5649,12 +6249,12 @@ Converted["_Main"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Main"].Name = "Main"
 Converted["_Main"].Parent = Converted["_Cars"]
 
-Converted["_UICorner172"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner172"].Parent = Converted["_Main"]
+Converted["_UICorner183"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner183"].Parent = Converted["_Main"]
 
-Converted["_Bindable141"].Value = true
-Converted["_Bindable141"].Name = "Bindable"
-Converted["_Bindable141"].Parent = Converted["_Main"]
+Converted["_Bindable145"].Value = true
+Converted["_Bindable145"].Name = "Bindable"
+Converted["_Bindable145"].Parent = Converted["_Main"]
 
 Converted["_Stage"].Font = Enum.Font.TitilliumWeb
 Converted["_Stage"].Text = "Stage"
@@ -5672,12 +6272,12 @@ Converted["_Stage"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Stage"].Name = "Stage"
 Converted["_Stage"].Parent = Converted["_Cars"]
 
-Converted["_UICorner173"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner173"].Parent = Converted["_Stage"]
+Converted["_UICorner184"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner184"].Parent = Converted["_Stage"]
 
-Converted["_Bindable142"].Value = true
-Converted["_Bindable142"].Name = "Bindable"
-Converted["_Bindable142"].Parent = Converted["_Stage"]
+Converted["_Bindable146"].Value = true
+Converted["_Bindable146"].Name = "Bindable"
+Converted["_Bindable146"].Parent = Converted["_Stage"]
 
 Converted["_Roof"].Font = Enum.Font.TitilliumWeb
 Converted["_Roof"].Text = "Roof"
@@ -5695,12 +6295,12 @@ Converted["_Roof"].Size = UDim2.new(0.25000003, 0, 0.151191622, 0)
 Converted["_Roof"].Name = "Roof"
 Converted["_Roof"].Parent = Converted["_Cars"]
 
-Converted["_UICorner174"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner174"].Parent = Converted["_Roof"]
+Converted["_UICorner185"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner185"].Parent = Converted["_Roof"]
 
-Converted["_Bindable143"].Value = true
-Converted["_Bindable143"].Name = "Bindable"
-Converted["_Bindable143"].Parent = Converted["_Roof"]
+Converted["_Bindable147"].Value = true
+Converted["_Bindable147"].Name = "Bindable"
+Converted["_Bindable147"].Parent = Converted["_Roof"]
 
 Converted["_Outside"].Font = Enum.Font.TitilliumWeb
 Converted["_Outside"].Text = "Outside"
@@ -5718,12 +6318,12 @@ Converted["_Outside"].Size = UDim2.new(0.25000003, 0, 0.151191622, 0)
 Converted["_Outside"].Name = "Outside"
 Converted["_Outside"].Parent = Converted["_Cars"]
 
-Converted["_UICorner175"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner175"].Parent = Converted["_Outside"]
+Converted["_UICorner186"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner186"].Parent = Converted["_Outside"]
 
-Converted["_Bindable144"].Value = true
-Converted["_Bindable144"].Name = "Bindable"
-Converted["_Bindable144"].Parent = Converted["_Outside"]
+Converted["_Bindable148"].Value = true
+Converted["_Bindable148"].Name = "Bindable"
+Converted["_Bindable148"].Parent = Converted["_Outside"]
 
 Converted["_DeleteAll"].Font = Enum.Font.TitilliumWeb
 Converted["_DeleteAll"].Text = "Delete All Cars"
@@ -5741,12 +6341,12 @@ Converted["_DeleteAll"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_DeleteAll"].Name = "DeleteAll"
 Converted["_DeleteAll"].Parent = Converted["_Cars"]
 
-Converted["_UICorner176"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner176"].Parent = Converted["_DeleteAll"]
+Converted["_UICorner187"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner187"].Parent = Converted["_DeleteAll"]
 
-Converted["_Bindable145"].Value = true
-Converted["_Bindable145"].Name = "Bindable"
-Converted["_Bindable145"].Parent = Converted["_DeleteAll"]
+Converted["_Bindable149"].Value = true
+Converted["_Bindable149"].Name = "Bindable"
+Converted["_Bindable149"].Parent = Converted["_DeleteAll"]
 
 Converted["_Flip"].Font = Enum.Font.TitilliumWeb
 Converted["_Flip"].Text = "Flip Car"
@@ -5764,12 +6364,12 @@ Converted["_Flip"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Flip"].Name = "Flip"
 Converted["_Flip"].Parent = Converted["_Cars"]
 
-Converted["_UICorner177"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner177"].Parent = Converted["_Flip"]
+Converted["_UICorner188"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner188"].Parent = Converted["_Flip"]
 
-Converted["_Bindable146"].Value = true
-Converted["_Bindable146"].Name = "Bindable"
-Converted["_Bindable146"].Parent = Converted["_Flip"]
+Converted["_Bindable150"].Value = true
+Converted["_Bindable150"].Name = "Bindable"
+Converted["_Bindable150"].Parent = Converted["_Flip"]
 
 Converted["_Fling1"].Font = Enum.Font.TitilliumWeb
 Converted["_Fling1"].Text = "Fling Target"
@@ -5787,12 +6387,12 @@ Converted["_Fling1"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Fling1"].Name = "Fling"
 Converted["_Fling1"].Parent = Converted["_Cars"]
 
-Converted["_UICorner178"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner178"].Parent = Converted["_Fling1"]
+Converted["_UICorner189"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner189"].Parent = Converted["_Fling1"]
 
-Converted["_Bindable147"].Value = true
-Converted["_Bindable147"].Name = "Bindable"
-Converted["_Bindable147"].Parent = Converted["_Fling1"]
+Converted["_Bindable151"].Value = true
+Converted["_Bindable151"].Name = "Bindable"
+Converted["_Bindable151"].Parent = Converted["_Fling1"]
 
 Converted["_FlingAll"].Font = Enum.Font.TitilliumWeb
 Converted["_FlingAll"].Text = "Fling All"
@@ -5810,12 +6410,12 @@ Converted["_FlingAll"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_FlingAll"].Name = "FlingAll"
 Converted["_FlingAll"].Parent = Converted["_Cars"]
 
-Converted["_UICorner179"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner179"].Parent = Converted["_FlingAll"]
+Converted["_UICorner190"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner190"].Parent = Converted["_FlingAll"]
 
-Converted["_Bindable148"].Value = true
-Converted["_Bindable148"].Name = "Bindable"
-Converted["_Bindable148"].Parent = Converted["_FlingAll"]
+Converted["_Bindable152"].Value = true
+Converted["_Bindable152"].Name = "Bindable"
+Converted["_Bindable152"].Parent = Converted["_FlingAll"]
 
 Converted["_Fix"].Font = Enum.Font.TitilliumWeb
 Converted["_Fix"].Text = "Fix Wheels"
@@ -5833,12 +6433,12 @@ Converted["_Fix"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Fix"].Name = "Fix"
 Converted["_Fix"].Parent = Converted["_Cars"]
 
-Converted["_UICorner180"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner180"].Parent = Converted["_Fix"]
+Converted["_UICorner191"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner191"].Parent = Converted["_Fix"]
 
-Converted["_Bindable149"].Value = true
-Converted["_Bindable149"].Name = "Bindable"
-Converted["_Bindable149"].Parent = Converted["_Fix"]
+Converted["_Bindable153"].Value = true
+Converted["_Bindable153"].Name = "Bindable"
+Converted["_Bindable153"].Parent = Converted["_Fix"]
 
 Converted["_OpenDoors1"].Font = Enum.Font.TitilliumWeb
 Converted["_OpenDoors1"].Text = "Open Doors"
@@ -5856,12 +6456,12 @@ Converted["_OpenDoors1"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_OpenDoors1"].Name = "OpenDoors"
 Converted["_OpenDoors1"].Parent = Converted["_WashiezTC1"]
 
-Converted["_UICorner181"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner181"].Parent = Converted["_OpenDoors1"]
+Converted["_UICorner192"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner192"].Parent = Converted["_OpenDoors1"]
 
-Converted["_Bindable150"].Value = true
-Converted["_Bindable150"].Name = "Bindable"
-Converted["_Bindable150"].Parent = Converted["_OpenDoors1"]
+Converted["_Bindable154"].Value = true
+Converted["_Bindable154"].Name = "Bindable"
+Converted["_Bindable154"].Parent = Converted["_OpenDoors1"]
 
 Converted["_FF1"].Font = Enum.Font.TitilliumWeb
 Converted["_FF1"].Text = "FF"
@@ -5879,12 +6479,12 @@ Converted["_FF1"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_FF1"].Name = "FF"
 Converted["_FF1"].Parent = Converted["_WashiezTC1"]
 
-Converted["_UICorner182"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner182"].Parent = Converted["_FF1"]
+Converted["_UICorner193"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner193"].Parent = Converted["_FF1"]
 
-Converted["_Bindable151"].Value = true
-Converted["_Bindable151"].Name = "Bindable"
-Converted["_Bindable151"].Parent = Converted["_FF1"]
+Converted["_Bindable155"].Value = true
+Converted["_Bindable155"].Name = "Bindable"
+Converted["_Bindable155"].Parent = Converted["_FF1"]
 
 Converted["_CarAdded"].Font = Enum.Font.TitilliumWeb
 Converted["_CarAdded"].Text = "Notify Car Added [F]"
@@ -5902,12 +6502,12 @@ Converted["_CarAdded"].Size = UDim2.new(0.224999994, 0, 0.100000001, 0)
 Converted["_CarAdded"].Name = "CarAdded"
 Converted["_CarAdded"].Parent = Converted["_WashiezTC1"]
 
-Converted["_UICorner183"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner183"].Parent = Converted["_CarAdded"]
+Converted["_UICorner194"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner194"].Parent = Converted["_CarAdded"]
 
-Converted["_Bindable152"].Value = true
-Converted["_Bindable152"].Name = "Bindable"
-Converted["_Bindable152"].Parent = Converted["_CarAdded"]
+Converted["_Bindable156"].Value = true
+Converted["_Bindable156"].Name = "Bindable"
+Converted["_Bindable156"].Parent = Converted["_CarAdded"]
 
 Converted["_CarDeleted"].Font = Enum.Font.TitilliumWeb
 Converted["_CarDeleted"].Text = "Notify Car Deleted [F]"
@@ -5925,12 +6525,12 @@ Converted["_CarDeleted"].Size = UDim2.new(0.224999994, 0, 0.100000001, 0)
 Converted["_CarDeleted"].Name = "CarDeleted"
 Converted["_CarDeleted"].Parent = Converted["_WashiezTC1"]
 
-Converted["_UICorner184"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner184"].Parent = Converted["_CarDeleted"]
+Converted["_UICorner195"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner195"].Parent = Converted["_CarDeleted"]
 
-Converted["_Bindable153"].Value = true
-Converted["_Bindable153"].Name = "Bindable"
-Converted["_Bindable153"].Parent = Converted["_CarDeleted"]
+Converted["_Bindable157"].Value = true
+Converted["_Bindable157"].Name = "Bindable"
+Converted["_Bindable157"].Parent = Converted["_CarDeleted"]
 
 Converted["_RMenu1"].Font = Enum.Font.TitilliumWeb
 Converted["_RMenu1"].Text = "Ranks"
@@ -5948,12 +6548,12 @@ Converted["_RMenu1"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_RMenu1"].Name = "RMenu"
 Converted["_RMenu1"].Parent = Converted["_WashiezTC1"]
 
-Converted["_UICorner185"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner185"].Parent = Converted["_RMenu1"]
+Converted["_UICorner196"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner196"].Parent = Converted["_RMenu1"]
 
-Converted["_Bindable154"].Value = true
-Converted["_Bindable154"].Name = "Bindable"
-Converted["_Bindable154"].Parent = Converted["_RMenu1"]
+Converted["_Bindable158"].Value = true
+Converted["_Bindable158"].Name = "Bindable"
+Converted["_Bindable158"].Parent = Converted["_RMenu1"]
 
 Converted["_Ranks1"].GroupTransparency = 1
 Converted["_Ranks1"].Active = true
@@ -5986,12 +6586,12 @@ Converted["_Close7"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
 Converted["_Close7"].Name = "Close"
 Converted["_Close7"].Parent = Converted["_Ranks1"]
 
-Converted["_UICorner186"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner186"].Parent = Converted["_Close7"]
+Converted["_UICorner197"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner197"].Parent = Converted["_Close7"]
 
-Converted["_Bindable155"].Value = true
-Converted["_Bindable155"].Name = "Bindable"
-Converted["_Bindable155"].Parent = Converted["_Close7"]
+Converted["_Bindable159"].Value = true
+Converted["_Bindable159"].Name = "Bindable"
+Converted["_Bindable159"].Parent = Converted["_Close7"]
 
 Converted["_Info1"].Font = Enum.Font.TitilliumWeb
 Converted["_Info1"].Text = "Added by script so no error."
@@ -6027,12 +6627,12 @@ Converted["_NotifyST1"].Size = UDim2.new(0.275000006, 0, 0.125, 0)
 Converted["_NotifyST1"].Name = "NotifyST"
 Converted["_NotifyST1"].Parent = Converted["_Ranks1"]
 
-Converted["_UICorner187"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner187"].Parent = Converted["_NotifyST1"]
+Converted["_UICorner198"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner198"].Parent = Converted["_NotifyST1"]
 
-Converted["_Bindable156"].Value = true
-Converted["_Bindable156"].Name = "Bindable"
-Converted["_Bindable156"].Parent = Converted["_NotifyST1"]
+Converted["_Bindable160"].Value = true
+Converted["_Bindable160"].Name = "Bindable"
+Converted["_Bindable160"].Parent = Converted["_NotifyST1"]
 
 Converted["_NotifyMGMT1"].Font = Enum.Font.TitilliumWeb
 Converted["_NotifyMGMT1"].Text = "Notify MGMT [F]"
@@ -6050,35 +6650,35 @@ Converted["_NotifyMGMT1"].Size = UDim2.new(0.275000006, 0, 0.125, 0)
 Converted["_NotifyMGMT1"].Name = "NotifyMGMT"
 Converted["_NotifyMGMT1"].Parent = Converted["_Ranks1"]
 
-Converted["_UICorner188"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner188"].Parent = Converted["_NotifyMGMT1"]
+Converted["_UICorner199"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner199"].Parent = Converted["_NotifyMGMT1"]
 
-Converted["_Bindable157"].Value = true
-Converted["_Bindable157"].Name = "Bindable"
-Converted["_Bindable157"].Parent = Converted["_NotifyMGMT1"]
+Converted["_Bindable161"].Value = true
+Converted["_Bindable161"].Name = "Bindable"
+Converted["_Bindable161"].Parent = Converted["_NotifyMGMT1"]
 
-Converted["_Spark"].Font = Enum.Font.TitilliumWeb
-Converted["_Spark"].Text = "Spark V3"
-Converted["_Spark"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Spark"].TextScaled = true
-Converted["_Spark"].TextSize = 14
-Converted["_Spark"].TextWrapped = true
-Converted["_Spark"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Spark"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Spark"].BackgroundTransparency = 0.25
-Converted["_Spark"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Spark"].BorderSizePixel = 0
-Converted["_Spark"].Position = UDim2.new(0.5, 0, 0.524999976, 0)
-Converted["_Spark"].Size = UDim2.new(0.230000004, 0, 0.075000003, 0)
-Converted["_Spark"].Name = "Spark"
-Converted["_Spark"].Parent = Converted["_WashiezTC1"]
+Converted["_LOD1"].Font = Enum.Font.TitilliumWeb
+Converted["_LOD1"].Text = "Loop Open Doors"
+Converted["_LOD1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_LOD1"].TextScaled = true
+Converted["_LOD1"].TextSize = 14
+Converted["_LOD1"].TextWrapped = true
+Converted["_LOD1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_LOD1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_LOD1"].BackgroundTransparency = 0.25
+Converted["_LOD1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_LOD1"].BorderSizePixel = 0
+Converted["_LOD1"].Position = UDim2.new(0.5, 0, 0.524999976, 0)
+Converted["_LOD1"].Size = UDim2.new(0.230000004, 0, 0.075000003, 0)
+Converted["_LOD1"].Name = "LOD"
+Converted["_LOD1"].Parent = Converted["_WashiezTC1"]
 
-Converted["_UICorner189"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner189"].Parent = Converted["_Spark"]
+Converted["_UICorner200"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner200"].Parent = Converted["_LOD1"]
 
-Converted["_Bindable158"].Value = true
-Converted["_Bindable158"].Name = "Bindable"
-Converted["_Bindable158"].Parent = Converted["_Spark"]
+Converted["_Bindable162"].Value = true
+Converted["_Bindable162"].Name = "Bindable"
+Converted["_Bindable162"].Parent = Converted["_LOD1"]
 
 Converted["_OilUp1"].GroupTransparency = 1
 Converted["_OilUp1"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -6087,7 +6687,7 @@ Converted["_OilUp1"].BackgroundTransparency = 1
 Converted["_OilUp1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_OilUp1"].BorderSizePixel = 0
 Converted["_OilUp1"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_OilUp1"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_OilUp1"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_OilUp1"].Visible = false
 Converted["_OilUp1"].Name = "OilUp"
 Converted["_OilUp1"].Parent = Converted["_Menus"]
@@ -6108,12 +6708,12 @@ Converted["_AutoFarm"].Size = UDim2.new(0.5, 0, 0.200000003, 0)
 Converted["_AutoFarm"].Name = "AutoFarm"
 Converted["_AutoFarm"].Parent = Converted["_OilUp1"]
 
-Converted["_UICorner190"].CornerRadius = UDim.new(0.0500000007, 0)
-Converted["_UICorner190"].Parent = Converted["_AutoFarm"]
+Converted["_UICorner201"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner201"].Parent = Converted["_AutoFarm"]
 
-Converted["_Bindable159"].Value = true
-Converted["_Bindable159"].Name = "Bindable"
-Converted["_Bindable159"].Parent = Converted["_AutoFarm"]
+Converted["_Bindable163"].Value = true
+Converted["_Bindable163"].Name = "Bindable"
+Converted["_Bindable163"].Parent = Converted["_AutoFarm"]
 
 Converted["_Input7"].Font = Enum.Font.TitilliumWeb
 Converted["_Input7"].PlaceholderText = "Oil Amount"
@@ -6132,8 +6732,8 @@ Converted["_Input7"].Size = UDim2.new(0.275000006, 0, 0.100000001, 0)
 Converted["_Input7"].Name = "Input"
 Converted["_Input7"].Parent = Converted["_OilUp1"]
 
-Converted["_UICorner191"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner191"].Parent = Converted["_Input7"]
+Converted["_UICorner202"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner202"].Parent = Converted["_Input7"]
 
 Converted["_Set"].Font = Enum.Font.TitilliumWeb
 Converted["_Set"].Text = "Set Oil"
@@ -6151,12 +6751,12 @@ Converted["_Set"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Set"].Name = "Set"
 Converted["_Set"].Parent = Converted["_OilUp1"]
 
-Converted["_UICorner192"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner192"].Parent = Converted["_Set"]
+Converted["_UICorner203"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner203"].Parent = Converted["_Set"]
 
-Converted["_Bindable160"].Value = true
-Converted["_Bindable160"].Name = "Bindable"
-Converted["_Bindable160"].Parent = Converted["_Set"]
+Converted["_Bindable164"].Value = true
+Converted["_Bindable164"].Name = "Bindable"
+Converted["_Bindable164"].Parent = Converted["_Set"]
 
 Converted["_Add"].Font = Enum.Font.TitilliumWeb
 Converted["_Add"].Text = "Add Oil"
@@ -6174,12 +6774,12 @@ Converted["_Add"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Add"].Name = "Add"
 Converted["_Add"].Parent = Converted["_OilUp1"]
 
-Converted["_UICorner193"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner193"].Parent = Converted["_Add"]
+Converted["_UICorner204"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner204"].Parent = Converted["_Add"]
 
-Converted["_Bindable161"].Value = true
-Converted["_Bindable161"].Name = "Bindable"
-Converted["_Bindable161"].Parent = Converted["_Add"]
+Converted["_Bindable165"].Value = true
+Converted["_Bindable165"].Name = "Bindable"
+Converted["_Bindable165"].Parent = Converted["_Add"]
 
 Converted["_Play"].Font = Enum.Font.TitilliumWeb
 Converted["_Play"].Text = "Play Music"
@@ -6192,17 +6792,17 @@ Converted["_Play"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000
 Converted["_Play"].BackgroundTransparency = 0.25
 Converted["_Play"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Play"].BorderSizePixel = 0
-Converted["_Play"].Position = UDim2.new(0.200000003, 0, 0.174999997, 0)
+Converted["_Play"].Position = UDim2.new(0.200000003, 0, 0.200000003, 0)
 Converted["_Play"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Play"].Name = "Play"
 Converted["_Play"].Parent = Converted["_OilUp1"]
 
-Converted["_UICorner194"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner194"].Parent = Converted["_Play"]
+Converted["_UICorner205"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner205"].Parent = Converted["_Play"]
 
-Converted["_Bindable162"].Value = true
-Converted["_Bindable162"].Name = "Bindable"
-Converted["_Bindable162"].Parent = Converted["_Play"]
+Converted["_Bindable166"].Value = true
+Converted["_Bindable166"].Name = "Bindable"
+Converted["_Bindable166"].Parent = Converted["_Play"]
 
 Converted["_Pause"].Font = Enum.Font.TitilliumWeb
 Converted["_Pause"].Text = "Pause Music"
@@ -6215,17 +6815,17 @@ Converted["_Pause"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.0000
 Converted["_Pause"].BackgroundTransparency = 0.25
 Converted["_Pause"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Pause"].BorderSizePixel = 0
-Converted["_Pause"].Position = UDim2.new(0.5, 0, 0.174999997, 0)
+Converted["_Pause"].Position = UDim2.new(0.5, 0, 0.200000003, 0)
 Converted["_Pause"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Pause"].Name = "Pause"
 Converted["_Pause"].Parent = Converted["_OilUp1"]
 
-Converted["_UICorner195"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner195"].Parent = Converted["_Pause"]
+Converted["_UICorner206"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner206"].Parent = Converted["_Pause"]
 
-Converted["_Bindable163"].Value = true
-Converted["_Bindable163"].Name = "Bindable"
-Converted["_Bindable163"].Parent = Converted["_Pause"]
+Converted["_Bindable167"].Value = true
+Converted["_Bindable167"].Name = "Bindable"
+Converted["_Bindable167"].Parent = Converted["_Pause"]
 
 Converted["_Stop"].Font = Enum.Font.TitilliumWeb
 Converted["_Stop"].Text = "Stop Music"
@@ -6238,17 +6838,17 @@ Converted["_Stop"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000
 Converted["_Stop"].BackgroundTransparency = 0.25
 Converted["_Stop"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Stop"].BorderSizePixel = 0
-Converted["_Stop"].Position = UDim2.new(0.800000012, 0, 0.174999997, 0)
+Converted["_Stop"].Position = UDim2.new(0.800000012, 0, 0.200000003, 0)
 Converted["_Stop"].Size = UDim2.new(0.25, 0, 0.125, 0)
 Converted["_Stop"].Name = "Stop"
 Converted["_Stop"].Parent = Converted["_OilUp1"]
 
-Converted["_UICorner196"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner196"].Parent = Converted["_Stop"]
+Converted["_UICorner207"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner207"].Parent = Converted["_Stop"]
 
-Converted["_Bindable164"].Value = true
-Converted["_Bindable164"].Name = "Bindable"
-Converted["_Bindable164"].Parent = Converted["_Stop"]
+Converted["_Bindable168"].Value = true
+Converted["_Bindable168"].Name = "Bindable"
+Converted["_Bindable168"].Parent = Converted["_Stop"]
 
 Converted["_Status"].Font = Enum.Font.TitilliumWeb
 Converted["_Status"].Text = "Stopped"
@@ -6263,18 +6863,17 @@ Converted["_Status"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.000
 Converted["_Status"].BackgroundTransparency = 0.5
 Converted["_Status"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Status"].BorderSizePixel = 0
-Converted["_Status"].Position = UDim2.new(0.5, 0, 0.0500000007, 0)
-Converted["_Status"].Selectable = true
+Converted["_Status"].Position = UDim2.new(0.200000003, 0, 0.075000003, 0)
 Converted["_Status"].Size = UDim2.new(0.25, 0, 0.075000003, 0)
 Converted["_Status"].Name = "Status"
 Converted["_Status"].Parent = Converted["_OilUp1"]
 
-Converted["_UICorner197"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner197"].Parent = Converted["_Status"]
+Converted["_UICorner208"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner208"].Parent = Converted["_Status"]
 
-Converted["_Bindable165"].Value = true
-Converted["_Bindable165"].Name = "Bindable"
-Converted["_Bindable165"].Parent = Converted["_Status"]
+Converted["_Bindable169"].Value = true
+Converted["_Bindable169"].Name = "Bindable"
+Converted["_Bindable169"].Parent = Converted["_Status"]
 
 Converted["_Length"].Font = Enum.Font.TitilliumWeb
 Converted["_Length"].Text = "0%"
@@ -6289,18 +6888,85 @@ Converted["_Length"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.000
 Converted["_Length"].BackgroundTransparency = 0.5
 Converted["_Length"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Length"].BorderSizePixel = 0
-Converted["_Length"].Position = UDim2.new(0.5, 0, 0.300000012, 0)
-Converted["_Length"].Selectable = true
+Converted["_Length"].Position = UDim2.new(0.800000012, 0, 0.075000003, 0)
 Converted["_Length"].Size = UDim2.new(0.25, 0, 0.075000003, 0)
 Converted["_Length"].Name = "Length"
 Converted["_Length"].Parent = Converted["_OilUp1"]
 
-Converted["_UICorner198"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner198"].Parent = Converted["_Length"]
+Converted["_UICorner209"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner209"].Parent = Converted["_Length"]
 
-Converted["_Bindable166"].Value = true
-Converted["_Bindable166"].Name = "Bindable"
-Converted["_Bindable166"].Parent = Converted["_Length"]
+Converted["_Bindable170"].Value = true
+Converted["_Bindable170"].Name = "Bindable"
+Converted["_Bindable170"].Parent = Converted["_Length"]
+
+Converted["_MDisabled"].Font = Enum.Font.SourceSans
+Converted["_MDisabled"].Text = "Music Unavailable:  getcustomasset Not Supported"
+Converted["_MDisabled"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_MDisabled"].TextScaled = true
+Converted["_MDisabled"].TextSize = 14
+Converted["_MDisabled"].TextWrapped = true
+Converted["_MDisabled"].Active = true
+Converted["_MDisabled"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_MDisabled"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_MDisabled"].BackgroundTransparency = 0.10000000149011612
+Converted["_MDisabled"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MDisabled"].BorderSizePixel = 0
+Converted["_MDisabled"].Position = UDim2.new(0.5, 0, 0.200000003, 0)
+Converted["_MDisabled"].Size = UDim2.new(0.899999976, 0, 0.349999994, 0)
+Converted["_MDisabled"].Visible = false
+Converted["_MDisabled"].ZIndex = 5
+Converted["_MDisabled"].Name = "MDisabled"
+Converted["_MDisabled"].Parent = Converted["_OilUp1"]
+
+Converted["_UICorner210"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner210"].Parent = Converted["_MDisabled"]
+
+Converted["_Mute"].Font = Enum.Font.TitilliumWeb
+Converted["_Mute"].Text = "Mute NPCs [F]"
+Converted["_Mute"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Mute"].TextScaled = true
+Converted["_Mute"].TextSize = 14
+Converted["_Mute"].TextWrapped = true
+Converted["_Mute"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Mute"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Mute"].BackgroundTransparency = 0.25
+Converted["_Mute"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Mute"].BorderSizePixel = 0
+Converted["_Mute"].Position = UDim2.new(0.49845463, 0, 0.450106412, 0)
+Converted["_Mute"].Size = UDim2.new(0.25, 0, 0.0625, 0)
+Converted["_Mute"].Name = "Mute"
+Converted["_Mute"].Parent = Converted["_OilUp1"]
+
+Converted["_UICorner211"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner211"].Parent = Converted["_Mute"]
+
+Converted["_Bindable171"].Value = true
+Converted["_Bindable171"].Name = "Bindable"
+Converted["_Bindable171"].Parent = Converted["_Mute"]
+
+Converted["_FView"].Font = Enum.Font.TitilliumWeb
+Converted["_FView"].Text = "Open In File Viewer"
+Converted["_FView"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_FView"].TextScaled = true
+Converted["_FView"].TextSize = 14
+Converted["_FView"].TextWrapped = true
+Converted["_FView"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_FView"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_FView"].BackgroundTransparency = 0.25
+Converted["_FView"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_FView"].BorderSizePixel = 0
+Converted["_FView"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
+Converted["_FView"].Size = UDim2.new(0.25, 0, 0.075000003, 0)
+Converted["_FView"].Name = "FView"
+Converted["_FView"].Parent = Converted["_OilUp1"]
+
+Converted["_UICorner212"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner212"].Parent = Converted["_FView"]
+
+Converted["_Bindable172"].Value = true
+Converted["_Bindable172"].Name = "Bindable"
+Converted["_Bindable172"].Parent = Converted["_FView"]
 
 Converted["_SCCSimulator1"].GroupTransparency = 1
 Converted["_SCCSimulator1"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -6309,7 +6975,7 @@ Converted["_SCCSimulator1"].BackgroundTransparency = 1
 Converted["_SCCSimulator1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_SCCSimulator1"].BorderSizePixel = 0
 Converted["_SCCSimulator1"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_SCCSimulator1"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_SCCSimulator1"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_SCCSimulator1"].Visible = false
 Converted["_SCCSimulator1"].Name = "SCCSimulator"
 Converted["_SCCSimulator1"].Parent = Converted["_Menus"]
@@ -6330,12 +6996,12 @@ Converted["_Audio"].Size = UDim2.new(0.275000006, 0, 0.100000001, 0)
 Converted["_Audio"].Name = "Audio"
 Converted["_Audio"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner199"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner199"].Parent = Converted["_Audio"]
+Converted["_UICorner213"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner213"].Parent = Converted["_Audio"]
 
-Converted["_Bindable167"].Value = true
-Converted["_Bindable167"].Name = "Bindable"
-Converted["_Bindable167"].Parent = Converted["_Audio"]
+Converted["_Bindable173"].Value = true
+Converted["_Bindable173"].Name = "Bindable"
+Converted["_Bindable173"].Parent = Converted["_Audio"]
 
 Converted["_AutoFarm1"].Font = Enum.Font.TitilliumWeb
 Converted["_AutoFarm1"].Text = "Enable AutoFarm"
@@ -6353,12 +7019,12 @@ Converted["_AutoFarm1"].Size = UDim2.new(0.275000006, 0, 0.100000001, 0)
 Converted["_AutoFarm1"].Name = "AutoFarm"
 Converted["_AutoFarm1"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner200"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner200"].Parent = Converted["_AutoFarm1"]
+Converted["_UICorner214"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner214"].Parent = Converted["_AutoFarm1"]
 
-Converted["_Bindable168"].Value = true
-Converted["_Bindable168"].Name = "Bindable"
-Converted["_Bindable168"].Parent = Converted["_AutoFarm1"]
+Converted["_Bindable174"].Value = true
+Converted["_Bindable174"].Name = "Bindable"
+Converted["_Bindable174"].Parent = Converted["_AutoFarm1"]
 
 Converted["_SCC"].Font = Enum.Font.TitilliumWeb
 Converted["_SCC"].Text = "Spam Chat Connections"
@@ -6376,12 +7042,12 @@ Converted["_SCC"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_SCC"].Name = "SCC"
 Converted["_SCC"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner201"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner201"].Parent = Converted["_SCC"]
+Converted["_UICorner215"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner215"].Parent = Converted["_SCC"]
 
-Converted["_Bindable169"].Value = true
-Converted["_Bindable169"].Name = "Bindable"
-Converted["_Bindable169"].Parent = Converted["_SCC"]
+Converted["_Bindable175"].Value = true
+Converted["_Bindable175"].Name = "Bindable"
+Converted["_Bindable175"].Parent = Converted["_SCC"]
 
 Converted["_HCC"].Font = Enum.Font.TitilliumWeb
 Converted["_HCC"].Text = "Spam Chat Disconnect"
@@ -6399,12 +7065,12 @@ Converted["_HCC"].Size = UDim2.new(0.349999994, 0, 0.100000001, 0)
 Converted["_HCC"].Name = "HCC"
 Converted["_HCC"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner202"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner202"].Parent = Converted["_HCC"]
+Converted["_UICorner216"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner216"].Parent = Converted["_HCC"]
 
-Converted["_Bindable170"].Value = true
-Converted["_Bindable170"].Name = "Bindable"
-Converted["_Bindable170"].Parent = Converted["_HCC"]
+Converted["_Bindable176"].Value = true
+Converted["_Bindable176"].Name = "Bindable"
+Converted["_Bindable176"].Parent = Converted["_HCC"]
 
 Converted["_Message1"].ClearTextOnFocus = false
 Converted["_Message1"].Font = Enum.Font.TitilliumWeb
@@ -6426,8 +7092,8 @@ Converted["_Message1"].Size = UDim2.new(0.600000024, 0, 0.275000006, 0)
 Converted["_Message1"].Name = "Message"
 Converted["_Message1"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner203"].CornerRadius = UDim.new(0.0500000007, 0)
-Converted["_UICorner203"].Parent = Converted["_Message1"]
+Converted["_UICorner217"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner217"].Parent = Converted["_Message1"]
 
 Converted["_Send1"].Font = Enum.Font.TitilliumWeb
 Converted["_Send1"].Text = "Send Message"
@@ -6445,12 +7111,12 @@ Converted["_Send1"].Size = UDim2.new(0.349999994, 0, 0.100000001, 0)
 Converted["_Send1"].Name = "Send"
 Converted["_Send1"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner204"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner204"].Parent = Converted["_Send1"]
+Converted["_UICorner218"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner218"].Parent = Converted["_Send1"]
 
-Converted["_Bindable171"].Value = true
-Converted["_Bindable171"].Name = "Bindable"
-Converted["_Bindable171"].Parent = Converted["_Send1"]
+Converted["_Bindable177"].Value = true
+Converted["_Bindable177"].Name = "Bindable"
+Converted["_Bindable177"].Parent = Converted["_Send1"]
 
 Converted["_CD"].Font = Enum.Font.TitilliumWeb
 Converted["_CD"].Text = "Chat Disconnect"
@@ -6468,12 +7134,12 @@ Converted["_CD"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_CD"].Name = "CD"
 Converted["_CD"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner205"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner205"].Parent = Converted["_CD"]
+Converted["_UICorner219"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner219"].Parent = Converted["_CD"]
 
-Converted["_Bindable172"].Value = true
-Converted["_Bindable172"].Name = "Bindable"
-Converted["_Bindable172"].Parent = Converted["_CD"]
+Converted["_Bindable178"].Value = true
+Converted["_Bindable178"].Name = "Bindable"
+Converted["_Bindable178"].Parent = Converted["_CD"]
 
 Converted["_CC"].Font = Enum.Font.TitilliumWeb
 Converted["_CC"].Text = "Chat Connect"
@@ -6491,12 +7157,12 @@ Converted["_CC"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_CC"].Name = "CC"
 Converted["_CC"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner206"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner206"].Parent = Converted["_CC"]
+Converted["_UICorner220"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner220"].Parent = Converted["_CC"]
 
-Converted["_Bindable173"].Value = true
-Converted["_Bindable173"].Name = "Bindable"
-Converted["_Bindable173"].Parent = Converted["_CC"]
+Converted["_Bindable179"].Value = true
+Converted["_Bindable179"].Name = "Bindable"
+Converted["_Bindable179"].Parent = Converted["_CC"]
 
 Converted["_Clear1"].Font = Enum.Font.TitilliumWeb
 Converted["_Clear1"].Text = "Clear"
@@ -6514,12 +7180,12 @@ Converted["_Clear1"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Clear1"].Name = "Clear"
 Converted["_Clear1"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner207"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner207"].Parent = Converted["_Clear1"]
+Converted["_UICorner221"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner221"].Parent = Converted["_Clear1"]
 
-Converted["_Bindable174"].Value = true
-Converted["_Bindable174"].Name = "Bindable"
-Converted["_Bindable174"].Parent = Converted["_Clear1"]
+Converted["_Bindable180"].Value = true
+Converted["_Bindable180"].Name = "Bindable"
+Converted["_Bindable180"].Parent = Converted["_Clear1"]
 
 Converted["_Lag"].Font = Enum.Font.TitilliumWeb
 Converted["_Lag"].Text = "Lag Server"
@@ -6537,12 +7203,12 @@ Converted["_Lag"].Size = UDim2.new(0.349999994, 0, 0.100000001, 0)
 Converted["_Lag"].Name = "Lag"
 Converted["_Lag"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner208"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner208"].Parent = Converted["_Lag"]
+Converted["_UICorner222"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner222"].Parent = Converted["_Lag"]
 
-Converted["_Bindable175"].Value = true
-Converted["_Bindable175"].Name = "Bindable"
-Converted["_Bindable175"].Parent = Converted["_Lag"]
+Converted["_Bindable181"].Value = true
+Converted["_Bindable181"].Name = "Bindable"
+Converted["_Bindable181"].Parent = Converted["_Lag"]
 
 Converted["_Amount"].ClearTextOnFocus = false
 Converted["_Amount"].Font = Enum.Font.TitilliumWeb
@@ -6562,8 +7228,8 @@ Converted["_Amount"].Size = UDim2.new(0.275000006, 0, 0.075000003, 0)
 Converted["_Amount"].Name = "Amount"
 Converted["_Amount"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner209"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner209"].Parent = Converted["_Amount"]
+Converted["_UICorner223"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner223"].Parent = Converted["_Amount"]
 
 Converted["_Delay"].ClearTextOnFocus = false
 Converted["_Delay"].Font = Enum.Font.TitilliumWeb
@@ -6583,8 +7249,8 @@ Converted["_Delay"].Size = UDim2.new(0.275000006, 0, 0.075000003, 0)
 Converted["_Delay"].Name = "Delay"
 Converted["_Delay"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner210"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner210"].Parent = Converted["_Delay"]
+Converted["_UICorner224"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner224"].Parent = Converted["_Delay"]
 
 Converted["_UseCall"].Font = Enum.Font.TitilliumWeb
 Converted["_UseCall"].Text = "Call [T]"
@@ -6602,12 +7268,12 @@ Converted["_UseCall"].Size = UDim2.new(0.125, 0, 0.100000001, 0)
 Converted["_UseCall"].Name = "UseCall"
 Converted["_UseCall"].Parent = Converted["_SCCSimulator1"]
 
-Converted["_UICorner211"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner211"].Parent = Converted["_UseCall"]
+Converted["_UICorner225"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner225"].Parent = Converted["_UseCall"]
 
-Converted["_Bindable176"].Value = true
-Converted["_Bindable176"].Name = "Bindable"
-Converted["_Bindable176"].Parent = Converted["_UseCall"]
+Converted["_Bindable182"].Value = true
+Converted["_Bindable182"].Name = "Bindable"
+Converted["_Bindable182"].Parent = Converted["_UseCall"]
 
 Converted["_Utility"].GroupTransparency = 1
 Converted["_Utility"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -6616,7 +7282,7 @@ Converted["_Utility"].BackgroundTransparency = 1
 Converted["_Utility"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Utility"].BorderSizePixel = 0
 Converted["_Utility"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Utility"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_Utility"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_Utility"].Visible = false
 Converted["_Utility"].Name = "Utility"
 Converted["_Utility"].Parent = Converted["_Menus"]
@@ -6643,15 +7309,15 @@ Converted["_Divider"].Size = UDim2.new(0.0249999948, 0, 1.00000012, 0)
 Converted["_Divider"].Name = "Divider"
 Converted["_Divider"].Parent = Converted["_Container2"]
 
-Converted["_List1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_List1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_List1"].BackgroundTransparency = 0.5
-Converted["_List1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_List1"].BorderSizePixel = 0
-Converted["_List1"].Position = UDim2.new(0.920000017, 0, 0.699999988, 0)
-Converted["_List1"].Size = UDim2.new(0.165000007, 0, 0.600000024, 0)
-Converted["_List1"].Name = "List"
-Converted["_List1"].Parent = Converted["_Container2"]
+Converted["_List6"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_List6"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_List6"].BackgroundTransparency = 0.5
+Converted["_List6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_List6"].BorderSizePixel = 0
+Converted["_List6"].Position = UDim2.new(0.920000017, 0, 0.637499928, 0)
+Converted["_List6"].Size = UDim2.new(0.165000007, 0, 0.725000083, 0)
+Converted["_List6"].Name = "List"
+Converted["_List6"].Parent = Converted["_Container2"]
 
 Converted["_Exploits"].Font = Enum.Font.TitilliumWeb
 Converted["_Exploits"].Text = "Exploits"
@@ -6664,17 +7330,17 @@ Converted["_Exploits"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.0
 Converted["_Exploits"].BackgroundTransparency = 0.5
 Converted["_Exploits"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Exploits"].BorderSizePixel = 0
-Converted["_Exploits"].Position = UDim2.new(0.5, 0, 0.150000006, 0)
-Converted["_Exploits"].Size = UDim2.new(0.899999976, 0, 0.200000003, 0)
+Converted["_Exploits"].Position = UDim2.new(0.5, 0, 0.100000001, 0)
+Converted["_Exploits"].Size = UDim2.new(0.899999976, 0, 0.165000007, 0)
 Converted["_Exploits"].Name = "Exploits"
-Converted["_Exploits"].Parent = Converted["_List1"]
+Converted["_Exploits"].Parent = Converted["_List6"]
 
-Converted["_UICorner212"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner212"].Parent = Converted["_Exploits"]
+Converted["_UICorner226"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner226"].Parent = Converted["_Exploits"]
 
-Converted["_Bindable177"].Value = true
-Converted["_Bindable177"].Name = "Bindable"
-Converted["_Bindable177"].Parent = Converted["_Exploits"]
+Converted["_Bindable183"].Value = true
+Converted["_Bindable183"].Name = "Bindable"
+Converted["_Bindable183"].Parent = Converted["_Exploits"]
 
 Converted["_Executor"].Font = Enum.Font.TitilliumWeb
 Converted["_Executor"].Text = "Executor"
@@ -6687,17 +7353,17 @@ Converted["_Executor"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.0
 Converted["_Executor"].BackgroundTransparency = 0.5
 Converted["_Executor"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Executor"].BorderSizePixel = 0
-Converted["_Executor"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Executor"].Size = UDim2.new(0.899999976, 0, 0.200000003, 0)
+Converted["_Executor"].Position = UDim2.new(0.5, 0, 0.349999994, 0)
+Converted["_Executor"].Size = UDim2.new(0.899999976, 0, 0.165000007, 0)
 Converted["_Executor"].Name = "Executor"
-Converted["_Executor"].Parent = Converted["_List1"]
+Converted["_Executor"].Parent = Converted["_List6"]
 
-Converted["_UICorner213"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner213"].Parent = Converted["_Executor"]
+Converted["_UICorner227"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner227"].Parent = Converted["_Executor"]
 
-Converted["_Bindable178"].Value = true
-Converted["_Bindable178"].Name = "Bindable"
-Converted["_Bindable178"].Parent = Converted["_Executor"]
+Converted["_Bindable184"].Value = true
+Converted["_Bindable184"].Name = "Bindable"
+Converted["_Bindable184"].Parent = Converted["_Executor"]
 
 Converted["_Notepad"].Font = Enum.Font.TitilliumWeb
 Converted["_Notepad"].Text = "Notepad"
@@ -6710,17 +7376,40 @@ Converted["_Notepad"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00
 Converted["_Notepad"].BackgroundTransparency = 0.5
 Converted["_Notepad"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Notepad"].BorderSizePixel = 0
-Converted["_Notepad"].Position = UDim2.new(0.5, 0, 0.850000024, 0)
-Converted["_Notepad"].Size = UDim2.new(0.899999976, 0, 0.200000003, 0)
+Converted["_Notepad"].Position = UDim2.new(0.5, 0, 0.600000024, 0)
+Converted["_Notepad"].Size = UDim2.new(0.899999976, 0, 0.165000007, 0)
 Converted["_Notepad"].Name = "Notepad"
-Converted["_Notepad"].Parent = Converted["_List1"]
+Converted["_Notepad"].Parent = Converted["_List6"]
 
-Converted["_UICorner214"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner214"].Parent = Converted["_Notepad"]
+Converted["_UICorner228"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner228"].Parent = Converted["_Notepad"]
 
-Converted["_Bindable179"].Value = true
-Converted["_Bindable179"].Name = "Bindable"
-Converted["_Bindable179"].Parent = Converted["_Notepad"]
+Converted["_Bindable185"].Value = true
+Converted["_Bindable185"].Name = "Bindable"
+Converted["_Bindable185"].Parent = Converted["_Notepad"]
+
+Converted["_Files"].Font = Enum.Font.TitilliumWeb
+Converted["_Files"].Text = "Plugins"
+Converted["_Files"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Files"].TextScaled = true
+Converted["_Files"].TextSize = 14
+Converted["_Files"].TextWrapped = true
+Converted["_Files"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Files"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Files"].BackgroundTransparency = 0.5
+Converted["_Files"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Files"].BorderSizePixel = 0
+Converted["_Files"].Position = UDim2.new(0.5, 0, 0.850000024, 0)
+Converted["_Files"].Size = UDim2.new(0.899999976, 0, 0.165000007, 0)
+Converted["_Files"].Name = "Files"
+Converted["_Files"].Parent = Converted["_List6"]
+
+Converted["_UICorner229"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner229"].Parent = Converted["_Files"]
+
+Converted["_Bindable186"].Value = true
+Converted["_Bindable186"].Name = "Bindable"
+Converted["_Bindable186"].Parent = Converted["_Files"]
 
 Converted["_Divider1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Divider1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
@@ -6728,7 +7417,7 @@ Converted["_Divider1"].BackgroundTransparency = 0.5
 Converted["_Divider1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Divider1"].BorderSizePixel = 0
 Converted["_Divider1"].ClipsDescendants = true
-Converted["_Divider1"].Position = UDim2.new(0.920000017, 0, 0.373948276, 0)
+Converted["_Divider1"].Position = UDim2.new(0.920000017, 0, 0.25, 0)
 Converted["_Divider1"].Size = UDim2.new(0.165000007, 0, 0.0500000007, 0)
 Converted["_Divider1"].Name = "Divider"
 Converted["_Divider1"].Parent = Converted["_Container2"]
@@ -6793,7 +7482,6 @@ Converted["_Overlay"].BackgroundTransparency = 1
 Converted["_Overlay"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Overlay"].BorderSizePixel = 0
 Converted["_Overlay"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Overlay"].Selectable = true
 Converted["_Overlay"].Size = UDim2.new(1, 0, 1, 0)
 Converted["_Overlay"].ZIndex = 2
 Converted["_Overlay"].Name = "Overlay"
@@ -6815,12 +7503,12 @@ Converted["_Clear2"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Clear2"].Name = "Clear"
 Converted["_Clear2"].Parent = Converted["_Executor1"]
 
-Converted["_UICorner215"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner215"].Parent = Converted["_Clear2"]
+Converted["_UICorner230"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner230"].Parent = Converted["_Clear2"]
 
-Converted["_Bindable180"].Value = true
-Converted["_Bindable180"].Name = "Bindable"
-Converted["_Bindable180"].Parent = Converted["_Clear2"]
+Converted["_Bindable187"].Value = true
+Converted["_Bindable187"].Name = "Bindable"
+Converted["_Bindable187"].Parent = Converted["_Clear2"]
 
 Converted["_Execute"].Font = Enum.Font.TitilliumWeb
 Converted["_Execute"].Text = "Execute"
@@ -6838,12 +7526,12 @@ Converted["_Execute"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Execute"].Name = "Execute"
 Converted["_Execute"].Parent = Converted["_Executor1"]
 
-Converted["_UICorner216"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner216"].Parent = Converted["_Execute"]
+Converted["_UICorner231"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner231"].Parent = Converted["_Execute"]
 
-Converted["_Bindable181"].Value = true
-Converted["_Bindable181"].Name = "Bindable"
-Converted["_Bindable181"].Parent = Converted["_Execute"]
+Converted["_Bindable188"].Value = true
+Converted["_Bindable188"].Name = "Bindable"
+Converted["_Bindable188"].Parent = Converted["_Execute"]
 
 Converted["_Copy"].Font = Enum.Font.TitilliumWeb
 Converted["_Copy"].Text = "Copy"
@@ -6861,12 +7549,12 @@ Converted["_Copy"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Copy"].Name = "Copy"
 Converted["_Copy"].Parent = Converted["_Executor1"]
 
-Converted["_UICorner217"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner217"].Parent = Converted["_Copy"]
+Converted["_UICorner232"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner232"].Parent = Converted["_Copy"]
 
-Converted["_Bindable182"].Value = true
-Converted["_Bindable182"].Name = "Bindable"
-Converted["_Bindable182"].Parent = Converted["_Copy"]
+Converted["_Bindable189"].Value = true
+Converted["_Bindable189"].Name = "Bindable"
+Converted["_Bindable189"].Parent = Converted["_Copy"]
 
 Converted["_Toast"].Font = Enum.Font.TitilliumWeb
 Converted["_Toast"].Text = "Toast [T]"
@@ -6884,12 +7572,12 @@ Converted["_Toast"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Toast"].Name = "Toast"
 Converted["_Toast"].Parent = Converted["_Executor1"]
 
-Converted["_UICorner218"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner218"].Parent = Converted["_Toast"]
+Converted["_UICorner233"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner233"].Parent = Converted["_Toast"]
 
-Converted["_Bindable183"].Value = true
-Converted["_Bindable183"].Name = "Bindable"
-Converted["_Bindable183"].Parent = Converted["_Toast"]
+Converted["_Bindable190"].Value = true
+Converted["_Bindable190"].Name = "Bindable"
+Converted["_Bindable190"].Parent = Converted["_Toast"]
 
 Converted["_Exploits1"].GroupTransparency = 1
 Converted["_Exploits1"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -6916,13 +7604,13 @@ Converted["_WalkSpeed"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.
 Converted["_WalkSpeed"].BackgroundTransparency = 0.5
 Converted["_WalkSpeed"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_WalkSpeed"].BorderSizePixel = 0
-Converted["_WalkSpeed"].Position = UDim2.new(0.299370944, 0, 0.10302595, 0)
-Converted["_WalkSpeed"].Size = UDim2.new(0.349999994, 0, 0.150000006, 0)
+Converted["_WalkSpeed"].Position = UDim2.new(0.300000101, 0, 0.123207949, 0)
+Converted["_WalkSpeed"].Size = UDim2.new(0.349999994, 0, 0.125, 0)
 Converted["_WalkSpeed"].Name = "WalkSpeed"
 Converted["_WalkSpeed"].Parent = Converted["_Exploits1"]
 
-Converted["_UICorner219"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner219"].Parent = Converted["_WalkSpeed"]
+Converted["_UICorner234"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner234"].Parent = Converted["_WalkSpeed"]
 
 Converted["_JumpPower"].ClearTextOnFocus = false
 Converted["_JumpPower"].Font = Enum.Font.TitilliumWeb
@@ -6937,13 +7625,13 @@ Converted["_JumpPower"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.
 Converted["_JumpPower"].BackgroundTransparency = 0.5
 Converted["_JumpPower"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_JumpPower"].BorderSizePixel = 0
-Converted["_JumpPower"].Position = UDim2.new(0.69937098, 0, 0.10302595, 0)
-Converted["_JumpPower"].Size = UDim2.new(0.349999994, 0, 0.150000006, 0)
+Converted["_JumpPower"].Position = UDim2.new(0.699999988, 0, 0.123207949, 0)
+Converted["_JumpPower"].Size = UDim2.new(0.349999994, 0, 0.125, 0)
 Converted["_JumpPower"].Name = "JumpPower"
 Converted["_JumpPower"].Parent = Converted["_Exploits1"]
 
-Converted["_UICorner220"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner220"].Parent = Converted["_JumpPower"]
+Converted["_UICorner235"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner235"].Parent = Converted["_JumpPower"]
 
 Converted["_Reset"].Font = Enum.Font.TitilliumWeb
 Converted["_Reset"].Text = "Reset"
@@ -6956,17 +7644,17 @@ Converted["_Reset"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.0000
 Converted["_Reset"].BackgroundTransparency = 0.25
 Converted["_Reset"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Reset"].BorderSizePixel = 0
-Converted["_Reset"].Position = UDim2.new(0.299370944, 0, 0.328025907, 0)
-Converted["_Reset"].Size = UDim2.new(0.349999994, 0, 0.150000006, 0)
+Converted["_Reset"].Position = UDim2.new(0.300000101, 0, 0.423207879, 0)
+Converted["_Reset"].Size = UDim2.new(0.349999994, 0, 0.125, 0)
 Converted["_Reset"].Name = "Reset"
 Converted["_Reset"].Parent = Converted["_Exploits1"]
 
-Converted["_UICorner221"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner221"].Parent = Converted["_Reset"]
+Converted["_UICorner236"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner236"].Parent = Converted["_Reset"]
 
-Converted["_Bindable184"].Value = true
-Converted["_Bindable184"].Name = "Bindable"
-Converted["_Bindable184"].Parent = Converted["_Reset"]
+Converted["_Bindable191"].Value = true
+Converted["_Bindable191"].Name = "Bindable"
+Converted["_Bindable191"].Parent = Converted["_Reset"]
 
 Converted["_WalkFling"].Font = Enum.Font.TitilliumWeb
 Converted["_WalkFling"].Text = "Walkfling"
@@ -6979,17 +7667,17 @@ Converted["_WalkFling"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.
 Converted["_WalkFling"].BackgroundTransparency = 0.25
 Converted["_WalkFling"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_WalkFling"].BorderSizePixel = 0
-Converted["_WalkFling"].Position = UDim2.new(0.69937098, 0, 0.328025907, 0)
-Converted["_WalkFling"].Size = UDim2.new(0.349999994, 0, 0.150000006, 0)
+Converted["_WalkFling"].Position = UDim2.new(0.699999988, 0, 0.423207879, 0)
+Converted["_WalkFling"].Size = UDim2.new(0.349999994, 0, 0.125, 0)
 Converted["_WalkFling"].Name = "WalkFling"
 Converted["_WalkFling"].Parent = Converted["_Exploits1"]
 
-Converted["_UICorner222"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner222"].Parent = Converted["_WalkFling"]
+Converted["_UICorner237"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner237"].Parent = Converted["_WalkFling"]
 
-Converted["_Bindable185"].Value = true
-Converted["_Bindable185"].Name = "Bindable"
-Converted["_Bindable185"].Parent = Converted["_WalkFling"]
+Converted["_Bindable192"].Value = true
+Converted["_Bindable192"].Name = "Bindable"
+Converted["_Bindable192"].Parent = Converted["_WalkFling"]
 
 Converted["_God"].Font = Enum.Font.TitilliumWeb
 Converted["_God"].Text = "Semi-God"
@@ -7002,17 +7690,17 @@ Converted["_God"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.000001
 Converted["_God"].BackgroundTransparency = 0.25
 Converted["_God"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_God"].BorderSizePixel = 0
-Converted["_God"].Position = UDim2.new(0.299370944, 0, 0.503025889, 0)
-Converted["_God"].Size = UDim2.new(0.349999994, 0, 0.150000006, 0)
+Converted["_God"].Position = UDim2.new(0.300000101, 0, 0.573207855, 0)
+Converted["_God"].Size = UDim2.new(0.349999994, 0, 0.125, 0)
 Converted["_God"].Name = "God"
 Converted["_God"].Parent = Converted["_Exploits1"]
 
-Converted["_UICorner223"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner223"].Parent = Converted["_God"]
+Converted["_UICorner238"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner238"].Parent = Converted["_God"]
 
-Converted["_Bindable186"].Value = true
-Converted["_Bindable186"].Name = "Bindable"
-Converted["_Bindable186"].Parent = Converted["_God"]
+Converted["_Bindable193"].Value = true
+Converted["_Bindable193"].Name = "Bindable"
+Converted["_Bindable193"].Parent = Converted["_God"]
 
 Converted["_Fixcam"].Font = Enum.Font.TitilliumWeb
 Converted["_Fixcam"].Text = "Fix Camera"
@@ -7025,17 +7713,17 @@ Converted["_Fixcam"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.000
 Converted["_Fixcam"].BackgroundTransparency = 0.25
 Converted["_Fixcam"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Fixcam"].BorderSizePixel = 0
-Converted["_Fixcam"].Position = UDim2.new(0.69937098, 0, 0.503025889, 0)
-Converted["_Fixcam"].Size = UDim2.new(0.349999994, 0, 0.150000006, 0)
+Converted["_Fixcam"].Position = UDim2.new(0.699999988, 0, 0.573207855, 0)
+Converted["_Fixcam"].Size = UDim2.new(0.349999994, 0, 0.125, 0)
 Converted["_Fixcam"].Name = "Fixcam"
 Converted["_Fixcam"].Parent = Converted["_Exploits1"]
 
-Converted["_UICorner224"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner224"].Parent = Converted["_Fixcam"]
+Converted["_UICorner239"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner239"].Parent = Converted["_Fixcam"]
 
-Converted["_Bindable187"].Value = true
-Converted["_Bindable187"].Name = "Bindable"
-Converted["_Bindable187"].Parent = Converted["_Fixcam"]
+Converted["_Bindable194"].Value = true
+Converted["_Bindable194"].Name = "Bindable"
+Converted["_Bindable194"].Parent = Converted["_Fixcam"]
 
 Converted["_Fullbright"].Font = Enum.Font.TitilliumWeb
 Converted["_Fullbright"].Text = "Fullbright"
@@ -7048,17 +7736,17 @@ Converted["_Fullbright"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40
 Converted["_Fullbright"].BackgroundTransparency = 0.25
 Converted["_Fullbright"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Fullbright"].BorderSizePixel = 0
-Converted["_Fullbright"].Position = UDim2.new(0.299370944, 0, 0.678026021, 0)
-Converted["_Fullbright"].Size = UDim2.new(0.349999994, 0, 0.150000006, 0)
+Converted["_Fullbright"].Position = UDim2.new(0.300000101, 0, 0.723208129, 0)
+Converted["_Fullbright"].Size = UDim2.new(0.349999994, 0, 0.125, 0)
 Converted["_Fullbright"].Name = "Fullbright"
 Converted["_Fullbright"].Parent = Converted["_Exploits1"]
 
-Converted["_UICorner225"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner225"].Parent = Converted["_Fullbright"]
+Converted["_UICorner240"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner240"].Parent = Converted["_Fullbright"]
 
-Converted["_Bindable188"].Value = true
-Converted["_Bindable188"].Name = "Bindable"
-Converted["_Bindable188"].Parent = Converted["_Fullbright"]
+Converted["_Bindable195"].Value = true
+Converted["_Bindable195"].Name = "Bindable"
+Converted["_Bindable195"].Parent = Converted["_Fullbright"]
 
 Converted["_Jerk"].Font = Enum.Font.TitilliumWeb
 Converted["_Jerk"].Text = "Jerk"
@@ -7071,17 +7759,17 @@ Converted["_Jerk"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000
 Converted["_Jerk"].BackgroundTransparency = 0.25
 Converted["_Jerk"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Jerk"].BorderSizePixel = 0
-Converted["_Jerk"].Position = UDim2.new(0.69937098, 0, 0.678026021, 0)
-Converted["_Jerk"].Size = UDim2.new(0.349999994, 0, 0.150000006, 0)
+Converted["_Jerk"].Position = UDim2.new(0.699999988, 0, 0.723208129, 0)
+Converted["_Jerk"].Size = UDim2.new(0.349999994, 0, 0.125, 0)
 Converted["_Jerk"].Name = "Jerk"
 Converted["_Jerk"].Parent = Converted["_Exploits1"]
 
-Converted["_UICorner226"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner226"].Parent = Converted["_Jerk"]
+Converted["_UICorner241"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner241"].Parent = Converted["_Jerk"]
 
-Converted["_Bindable189"].Value = true
-Converted["_Bindable189"].Name = "Bindable"
-Converted["_Bindable189"].Parent = Converted["_Jerk"]
+Converted["_Bindable196"].Value = true
+Converted["_Bindable196"].Name = "Bindable"
+Converted["_Bindable196"].Parent = Converted["_Jerk"]
 
 Converted["_Nosit"].Font = Enum.Font.TitilliumWeb
 Converted["_Nosit"].Text = "Nosit"
@@ -7094,17 +7782,17 @@ Converted["_Nosit"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.0000
 Converted["_Nosit"].BackgroundTransparency = 0.25
 Converted["_Nosit"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Nosit"].BorderSizePixel = 0
-Converted["_Nosit"].Position = UDim2.new(0.299370944, 0, 0.899999976, 0)
-Converted["_Nosit"].Size = UDim2.new(0.349999994, 0, 0.150000006, 0)
+Converted["_Nosit"].Position = UDim2.new(0.300000101, 0, 0.873208046, 0)
+Converted["_Nosit"].Size = UDim2.new(0.349999994, 0, 0.125, 0)
 Converted["_Nosit"].Name = "Nosit"
 Converted["_Nosit"].Parent = Converted["_Exploits1"]
 
-Converted["_UICorner227"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner227"].Parent = Converted["_Nosit"]
+Converted["_UICorner242"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner242"].Parent = Converted["_Nosit"]
 
-Converted["_Bindable190"].Value = true
-Converted["_Bindable190"].Name = "Bindable"
-Converted["_Bindable190"].Parent = Converted["_Nosit"]
+Converted["_Bindable197"].Value = true
+Converted["_Bindable197"].Name = "Bindable"
+Converted["_Bindable197"].Parent = Converted["_Nosit"]
 
 Converted["_ESP"].Font = Enum.Font.TitilliumWeb
 Converted["_ESP"].Text = "ESP"
@@ -7117,17 +7805,61 @@ Converted["_ESP"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.000001
 Converted["_ESP"].BackgroundTransparency = 0.25
 Converted["_ESP"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_ESP"].BorderSizePixel = 0
-Converted["_ESP"].Position = UDim2.new(0.69937098, 0, 0.899999976, 0)
-Converted["_ESP"].Size = UDim2.new(0.349999994, 0, 0.150000006, 0)
+Converted["_ESP"].Position = UDim2.new(0.699999988, 0, 0.873208046, 0)
+Converted["_ESP"].Size = UDim2.new(0.349999994, 0, 0.125, 0)
 Converted["_ESP"].Name = "ESP"
 Converted["_ESP"].Parent = Converted["_Exploits1"]
 
-Converted["_UICorner228"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner228"].Parent = Converted["_ESP"]
+Converted["_UICorner243"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner243"].Parent = Converted["_ESP"]
 
-Converted["_Bindable191"].Value = true
-Converted["_Bindable191"].Name = "Bindable"
-Converted["_Bindable191"].Parent = Converted["_ESP"]
+Converted["_Bindable198"].Value = true
+Converted["_Bindable198"].Name = "Bindable"
+Converted["_Bindable198"].Parent = Converted["_ESP"]
+
+Converted["_Gravity"].ClearTextOnFocus = false
+Converted["_Gravity"].Font = Enum.Font.TitilliumWeb
+Converted["_Gravity"].PlaceholderText = "Enter Gravity"
+Converted["_Gravity"].Text = ""
+Converted["_Gravity"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Gravity"].TextScaled = true
+Converted["_Gravity"].TextSize = 14
+Converted["_Gravity"].TextWrapped = true
+Converted["_Gravity"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Gravity"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Gravity"].BackgroundTransparency = 0.5
+Converted["_Gravity"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Gravity"].BorderSizePixel = 0
+Converted["_Gravity"].Position = UDim2.new(0.699999988, 0, 0.273207933, 0)
+Converted["_Gravity"].Size = UDim2.new(0.349999994, 0, 0.125, 0)
+Converted["_Gravity"].Name = "Gravity"
+Converted["_Gravity"].Parent = Converted["_Exploits1"]
+
+Converted["_UICorner244"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner244"].Parent = Converted["_Gravity"]
+
+Converted["_Stun"].Font = Enum.Font.TitilliumWeb
+Converted["_Stun"].Text = "Stun"
+Converted["_Stun"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Stun"].TextScaled = true
+Converted["_Stun"].TextSize = 14
+Converted["_Stun"].TextWrapped = true
+Converted["_Stun"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Stun"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Stun"].BackgroundTransparency = 0.25
+Converted["_Stun"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Stun"].BorderSizePixel = 0
+Converted["_Stun"].Position = UDim2.new(0.300000101, 0, 0.273207933, 0)
+Converted["_Stun"].Size = UDim2.new(0.349999994, 0, 0.125, 0)
+Converted["_Stun"].Name = "Stun"
+Converted["_Stun"].Parent = Converted["_Exploits1"]
+
+Converted["_UICorner245"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner245"].Parent = Converted["_Stun"]
+
+Converted["_Bindable199"].Value = true
+Converted["_Bindable199"].Name = "Bindable"
+Converted["_Bindable199"].Parent = Converted["_Stun"]
 
 Converted["_Notepad1"].GroupTransparency = 1
 Converted["_Notepad1"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -7187,12 +7919,12 @@ Converted["_Save1"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Save1"].Name = "Save"
 Converted["_Save1"].Parent = Converted["_Notepad1"]
 
-Converted["_UICorner229"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner229"].Parent = Converted["_Save1"]
+Converted["_UICorner246"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner246"].Parent = Converted["_Save1"]
 
-Converted["_Bindable192"].Value = true
-Converted["_Bindable192"].Name = "Bindable"
-Converted["_Bindable192"].Parent = Converted["_Save1"]
+Converted["_Bindable200"].Value = true
+Converted["_Bindable200"].Name = "Bindable"
+Converted["_Bindable200"].Parent = Converted["_Save1"]
 
 Converted["_Copy1"].Font = Enum.Font.TitilliumWeb
 Converted["_Copy1"].Text = "Copy"
@@ -7210,12 +7942,12 @@ Converted["_Copy1"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Copy1"].Name = "Copy"
 Converted["_Copy1"].Parent = Converted["_Notepad1"]
 
-Converted["_UICorner230"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner230"].Parent = Converted["_Copy1"]
+Converted["_UICorner247"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner247"].Parent = Converted["_Copy1"]
 
-Converted["_Bindable193"].Value = true
-Converted["_Bindable193"].Name = "Bindable"
-Converted["_Bindable193"].Parent = Converted["_Copy1"]
+Converted["_Bindable201"].Value = true
+Converted["_Bindable201"].Name = "Bindable"
+Converted["_Bindable201"].Parent = Converted["_Copy1"]
 
 Converted["_Clear3"].Font = Enum.Font.TitilliumWeb
 Converted["_Clear3"].Text = "Clear"
@@ -7233,12 +7965,122 @@ Converted["_Clear3"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Clear3"].Name = "Clear"
 Converted["_Clear3"].Parent = Converted["_Notepad1"]
 
-Converted["_UICorner231"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner231"].Parent = Converted["_Clear3"]
+Converted["_UICorner248"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner248"].Parent = Converted["_Clear3"]
 
-Converted["_Bindable194"].Value = true
-Converted["_Bindable194"].Name = "Bindable"
-Converted["_Bindable194"].Parent = Converted["_Clear3"]
+Converted["_Bindable202"].Value = true
+Converted["_Bindable202"].Name = "Bindable"
+Converted["_Bindable202"].Parent = Converted["_Clear3"]
+
+Converted["_Files1"].GroupTransparency = 1
+Converted["_Files1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Files1"].BackgroundColor3 = Color3.fromRGB(25.000000409781933, 25.000000409781933, 25.000000409781933)
+Converted["_Files1"].BackgroundTransparency = 0.5
+Converted["_Files1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Files1"].BorderSizePixel = 0
+Converted["_Files1"].Position = UDim2.new(0.40624994, 0, 0.5, 0)
+Converted["_Files1"].Size = UDim2.new(0.812499881, 0, 1, 0)
+Converted["_Files1"].Visible = false
+Converted["_Files1"].Name = "Files"
+Converted["_Files1"].Parent = Converted["_Menus1"]
+
+Converted["_Plugins"].Font = Enum.Font.TitilliumWeb
+Converted["_Plugins"].Text = "Plugins"
+Converted["_Plugins"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Plugins"].TextScaled = true
+Converted["_Plugins"].TextSize = 14
+Converted["_Plugins"].TextWrapped = true
+Converted["_Plugins"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Plugins"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Plugins"].BackgroundTransparency = 0.25
+Converted["_Plugins"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Plugins"].BorderSizePixel = 0
+Converted["_Plugins"].Position = UDim2.new(0.5, 0, 0.200000003, 0)
+Converted["_Plugins"].Size = UDim2.new(0.75, 0, 0.150000006, 0)
+Converted["_Plugins"].Name = "Plugins"
+Converted["_Plugins"].Parent = Converted["_Files1"]
+
+Converted["_UICorner249"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner249"].Parent = Converted["_Plugins"]
+
+Converted["_FileSystem"].Font = Enum.Font.TitilliumWeb
+Converted["_FileSystem"].Text = "Explorer"
+Converted["_FileSystem"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_FileSystem"].TextScaled = true
+Converted["_FileSystem"].TextSize = 14
+Converted["_FileSystem"].TextWrapped = true
+Converted["_FileSystem"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_FileSystem"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_FileSystem"].BackgroundTransparency = 0.25
+Converted["_FileSystem"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_FileSystem"].BorderSizePixel = 0
+Converted["_FileSystem"].Position = UDim2.new(0.5, 0, 0.800000012, 0)
+Converted["_FileSystem"].Size = UDim2.new(0.75, 0, 0.150000006, 0)
+Converted["_FileSystem"].Name = "FileSystem"
+Converted["_FileSystem"].Parent = Converted["_Files1"]
+
+Converted["_UICorner250"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner250"].Parent = Converted["_FileSystem"]
+
+Converted["_Explorer"].Font = Enum.Font.TitilliumWeb
+Converted["_Explorer"].Text = "Explorer"
+Converted["_Explorer"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Explorer"].TextScaled = true
+Converted["_Explorer"].TextSize = 14
+Converted["_Explorer"].TextWrapped = true
+Converted["_Explorer"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Explorer"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Explorer"].BackgroundTransparency = 0.25
+Converted["_Explorer"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Explorer"].BorderSizePixel = 0
+Converted["_Explorer"].Position = UDim2.new(0.5, 0, 0.699999988, 0)
+Converted["_Explorer"].Size = UDim2.new(0.75, 0, 0.150000006, 0)
+Converted["_Explorer"].Visible = false
+Converted["_Explorer"].Name = "Explorer"
+Converted["_Explorer"].Parent = Converted["_Files1"]
+
+Converted["_UICorner251"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner251"].Parent = Converted["_Explorer"]
+
+Converted["_PCount"].Font = Enum.Font.TitilliumWeb
+Converted["_PCount"].RichText = true
+Converted["_PCount"].Text = "Plugins: 0"
+Converted["_PCount"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_PCount"].TextScaled = true
+Converted["_PCount"].TextWrapped = true
+Converted["_PCount"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_PCount"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_PCount"].BackgroundTransparency = 0.25
+Converted["_PCount"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_PCount"].BorderSizePixel = 0
+Converted["_PCount"].Position = UDim2.new(0.5, 0, 0.600000024, 0)
+Converted["_PCount"].Selectable = true
+Converted["_PCount"].Size = UDim2.new(0.75, 0, 0.150000006, 0)
+Converted["_PCount"].Name = "PCount"
+Converted["_PCount"].Parent = Converted["_Files1"]
+
+Converted["_UICorner252"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner252"].Parent = Converted["_PCount"]
+
+Converted["_Status1"].Font = Enum.Font.TitilliumWeb
+Converted["_Status1"].RichText = true
+Converted["_Status1"].Text = "Feature: Supported"
+Converted["_Status1"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_Status1"].TextScaled = true
+Converted["_Status1"].TextWrapped = true
+Converted["_Status1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Status1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Status1"].BackgroundTransparency = 0.25
+Converted["_Status1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Status1"].BorderSizePixel = 0
+Converted["_Status1"].Position = UDim2.new(0.5, 0, 0.400000006, 0)
+Converted["_Status1"].Selectable = true
+Converted["_Status1"].Size = UDim2.new(0.75, 0, 0.150000006, 0)
+Converted["_Status1"].Name = "Status"
+Converted["_Status1"].Parent = Converted["_Files1"]
+
+Converted["_UICorner253"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner253"].Parent = Converted["_Status1"]
 
 Converted["_SaveBox"].Active = true
 Converted["_SaveBox"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -7292,8 +8134,8 @@ Converted["_Save2"].Size = UDim2.new(0.200000003, 0, 0.600000024, 0)
 Converted["_Save2"].Name = "Save"
 Converted["_Save2"].Parent = Converted["_SaveBox"]
 
-Converted["_UICorner232"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner232"].Parent = Converted["_Save2"]
+Converted["_UICorner254"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner254"].Parent = Converted["_Save2"]
 
 Converted["_Cancel"].Font = Enum.Font.TitilliumWeb
 Converted["_Cancel"].Text = "Cancel"
@@ -7311,8 +8153,8 @@ Converted["_Cancel"].Size = UDim2.new(0.174999997, 0, 0.600000024, 0)
 Converted["_Cancel"].Name = "Cancel"
 Converted["_Cancel"].Parent = Converted["_SaveBox"]
 
-Converted["_UICorner233"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner233"].Parent = Converted["_Cancel"]
+Converted["_UICorner255"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner255"].Parent = Converted["_Cancel"]
 
 Converted["_WashiezOGTC"].GroupTransparency = 1
 Converted["_WashiezOGTC"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -7321,7 +8163,7 @@ Converted["_WashiezOGTC"].BackgroundTransparency = 1
 Converted["_WashiezOGTC"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_WashiezOGTC"].BorderSizePixel = 0
 Converted["_WashiezOGTC"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_WashiezOGTC"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_WashiezOGTC"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_WashiezOGTC"].Visible = false
 Converted["_WashiezOGTC"].Name = "WashiezOGTC"
 Converted["_WashiezOGTC"].Parent = Converted["_Menus"]
@@ -7341,8 +8183,8 @@ Converted["_OGTCMessage"].Size = UDim2.new(0.5, 0, 0.5, 0)
 Converted["_OGTCMessage"].Name = "OGTCMessage"
 Converted["_OGTCMessage"].Parent = Converted["_WashiezOGTC"]
 
-Converted["_UICorner234"].CornerRadius = UDim.new(0.150000006, 0)
-Converted["_UICorner234"].Parent = Converted["_OGTCMessage"]
+Converted["_UICorner256"].CornerRadius = UDim.new(0.150000006, 0)
+Converted["_UICorner256"].Parent = Converted["_OGTCMessage"]
 
 Converted["_Debug"].GroupTransparency = 1
 Converted["_Debug"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -7351,16 +8193,17 @@ Converted["_Debug"].BackgroundTransparency = 1
 Converted["_Debug"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Debug"].BorderSizePixel = 0
 Converted["_Debug"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Debug"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_Debug"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_Debug"].Visible = false
 Converted["_Debug"].Name = "Debug"
 Converted["_Debug"].Parent = Converted["_Menus"]
 
+Converted["_Logs4"].AutomaticCanvasSize = Enum.AutomaticSize.Y
 Converted["_Logs4"].CanvasSize = UDim2.new(0, 0, 0, 0)
 Converted["_Logs4"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Logs4"].Active = true
 Converted["_Logs4"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Logs4"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Logs4"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
 Converted["_Logs4"].BackgroundTransparency = 0.5
 Converted["_Logs4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Logs4"].BorderSizePixel = 0
@@ -7369,22 +8212,10 @@ Converted["_Logs4"].Size = UDim2.new(0.850000024, 0, 0.5, 0)
 Converted["_Logs4"].Name = "Logs"
 Converted["_Logs4"].Parent = Converted["_Debug"]
 
-Converted["_Log3"].Font = Enum.Font.TitilliumWeb
-Converted["_Log3"].RichText = true
-Converted["_Log3"].Text = ""
-Converted["_Log3"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Log3"].TextSize = 16
-Converted["_Log3"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_Log3"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_Log3"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Log3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Log3"].BackgroundTransparency = 1
-Converted["_Log3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Log3"].BorderSizePixel = 0
-Converted["_Log3"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Log3"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Log3"].Name = "Log"
-Converted["_Log3"].Parent = Converted["_Logs4"]
+Converted["_List7"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_List7"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_List7"].Name = "List"
+Converted["_List7"].Parent = Converted["_Logs4"]
 
 Converted["_DL"].Font = Enum.Font.TitilliumWeb
 Converted["_DL"].Text = "Debug Logs"
@@ -7418,12 +8249,12 @@ Converted["_Save3"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Save3"].Name = "Save"
 Converted["_Save3"].Parent = Converted["_Debug"]
 
-Converted["_UICorner235"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner235"].Parent = Converted["_Save3"]
+Converted["_UICorner257"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner257"].Parent = Converted["_Save3"]
 
-Converted["_Bindable195"].Value = true
-Converted["_Bindable195"].Name = "Bindable"
-Converted["_Bindable195"].Parent = Converted["_Save3"]
+Converted["_Bindable203"].Value = true
+Converted["_Bindable203"].Name = "Bindable"
+Converted["_Bindable203"].Parent = Converted["_Save3"]
 
 Converted["_Copy2"].Font = Enum.Font.TitilliumWeb
 Converted["_Copy2"].Text = "Copy Text"
@@ -7441,12 +8272,12 @@ Converted["_Copy2"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Copy2"].Name = "Copy"
 Converted["_Copy2"].Parent = Converted["_Debug"]
 
-Converted["_UICorner236"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner236"].Parent = Converted["_Copy2"]
+Converted["_UICorner258"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner258"].Parent = Converted["_Copy2"]
 
-Converted["_Bindable196"].Value = true
-Converted["_Bindable196"].Name = "Bindable"
-Converted["_Bindable196"].Parent = Converted["_Copy2"]
+Converted["_Bindable204"].Value = true
+Converted["_Bindable204"].Name = "Bindable"
+Converted["_Bindable204"].Parent = Converted["_Copy2"]
 
 Converted["_Clear4"].Font = Enum.Font.TitilliumWeb
 Converted["_Clear4"].Text = "Clear Logs"
@@ -7464,12 +8295,12 @@ Converted["_Clear4"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Clear4"].Name = "Clear"
 Converted["_Clear4"].Parent = Converted["_Debug"]
 
-Converted["_UICorner237"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner237"].Parent = Converted["_Clear4"]
+Converted["_UICorner259"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner259"].Parent = Converted["_Clear4"]
 
-Converted["_Bindable197"].Value = true
-Converted["_Bindable197"].Name = "Bindable"
-Converted["_Bindable197"].Parent = Converted["_Clear4"]
+Converted["_Bindable205"].Value = true
+Converted["_Bindable205"].Name = "Bindable"
+Converted["_Bindable205"].Parent = Converted["_Clear4"]
 
 Converted["_DToggle"].Font = Enum.Font.TitilliumWeb
 Converted["_DToggle"].Text = "Enable Debug"
@@ -7487,12 +8318,12 @@ Converted["_DToggle"].Size = UDim2.new(0.24999997, 0, 0.150000006, 0)
 Converted["_DToggle"].Name = "DToggle"
 Converted["_DToggle"].Parent = Converted["_Debug"]
 
-Converted["_UICorner238"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner238"].Parent = Converted["_DToggle"]
+Converted["_UICorner260"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner260"].Parent = Converted["_DToggle"]
 
-Converted["_Bindable198"].Value = true
-Converted["_Bindable198"].Name = "Bindable"
-Converted["_Bindable198"].Parent = Converted["_DToggle"]
+Converted["_Bindable206"].Value = true
+Converted["_Bindable206"].Name = "Bindable"
+Converted["_Bindable206"].Parent = Converted["_DToggle"]
 
 Converted["_ToastToggle1"].Font = Enum.Font.TitilliumWeb
 Converted["_ToastToggle1"].Text = "Enable Toast"
@@ -7510,12 +8341,12 @@ Converted["_ToastToggle1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_ToastToggle1"].Name = "ToastToggle"
 Converted["_ToastToggle1"].Parent = Converted["_Debug"]
 
-Converted["_UICorner239"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner239"].Parent = Converted["_ToastToggle1"]
+Converted["_UICorner261"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner261"].Parent = Converted["_ToastToggle1"]
 
-Converted["_Bindable199"].Value = true
-Converted["_Bindable199"].Name = "Bindable"
-Converted["_Bindable199"].Parent = Converted["_ToastToggle1"]
+Converted["_Bindable207"].Value = true
+Converted["_Bindable207"].Name = "Bindable"
+Converted["_Bindable207"].Parent = Converted["_ToastToggle1"]
 
 Converted["_Pause1"].Font = Enum.Font.TitilliumWeb
 Converted["_Pause1"].Text = "Pause Loop"
@@ -7533,12 +8364,12 @@ Converted["_Pause1"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Pause1"].Name = "Pause"
 Converted["_Pause1"].Parent = Converted["_Debug"]
 
-Converted["_UICorner240"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner240"].Parent = Converted["_Pause1"]
+Converted["_UICorner262"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner262"].Parent = Converted["_Pause1"]
 
-Converted["_Bindable200"].Value = true
-Converted["_Bindable200"].Name = "Bindable"
-Converted["_Bindable200"].Parent = Converted["_Pause1"]
+Converted["_Bindable208"].Value = true
+Converted["_Bindable208"].Name = "Bindable"
+Converted["_Bindable208"].Parent = Converted["_Pause1"]
 
 Converted["_Loops"].Font = Enum.Font.TitilliumWeb
 Converted["_Loops"].Text = "Loops: 0 | 0"
@@ -7553,17 +8384,16 @@ Converted["_Loops"].BackgroundTransparency = 0.5
 Converted["_Loops"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Loops"].BorderSizePixel = 0
 Converted["_Loops"].Position = UDim2.new(0.800000012, 0, 0.810000002, 0)
-Converted["_Loops"].Selectable = true
 Converted["_Loops"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Loops"].Name = "Loops"
 Converted["_Loops"].Parent = Converted["_Debug"]
 
-Converted["_UICorner241"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner241"].Parent = Converted["_Loops"]
+Converted["_UICorner263"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner263"].Parent = Converted["_Loops"]
 
-Converted["_Bindable201"].Value = true
-Converted["_Bindable201"].Name = "Bindable"
-Converted["_Bindable201"].Parent = Converted["_Loops"]
+Converted["_Bindable209"].Value = true
+Converted["_Bindable209"].Name = "Bindable"
+Converted["_Bindable209"].Parent = Converted["_Loops"]
 
 Converted["_Next"].Font = Enum.Font.TitilliumWeb
 Converted["_Next"].Text = "Next Loop"
@@ -7581,12 +8411,12 @@ Converted["_Next"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Next"].Name = "Next"
 Converted["_Next"].Parent = Converted["_Debug"]
 
-Converted["_UICorner242"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner242"].Parent = Converted["_Next"]
+Converted["_UICorner264"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner264"].Parent = Converted["_Next"]
 
-Converted["_Bindable202"].Value = true
-Converted["_Bindable202"].Name = "Bindable"
-Converted["_Bindable202"].Parent = Converted["_Next"]
+Converted["_Bindable210"].Value = true
+Converted["_Bindable210"].Name = "Bindable"
+Converted["_Bindable210"].Parent = Converted["_Next"]
 
 Converted["_MMenu"].Font = Enum.Font.TitilliumWeb
 Converted["_MMenu"].Text = "More"
@@ -7604,14 +8434,13 @@ Converted["_MMenu"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_MMenu"].Name = "MMenu"
 Converted["_MMenu"].Parent = Converted["_Debug"]
 
-Converted["_UICorner243"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner243"].Parent = Converted["_MMenu"]
+Converted["_UICorner265"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner265"].Parent = Converted["_MMenu"]
 
-Converted["_Bindable203"].Value = true
-Converted["_Bindable203"].Name = "Bindable"
-Converted["_Bindable203"].Parent = Converted["_MMenu"]
+Converted["_Bindable211"].Value = true
+Converted["_Bindable211"].Name = "Bindable"
+Converted["_Bindable211"].Parent = Converted["_MMenu"]
 
-Converted["_More"].GroupTransparency = 1
 Converted["_More"].Active = true
 Converted["_More"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_More"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
@@ -7642,12 +8471,12 @@ Converted["_Close8"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
 Converted["_Close8"].Name = "Close"
 Converted["_Close8"].Parent = Converted["_More"]
 
-Converted["_Bindable204"].Value = true
-Converted["_Bindable204"].Name = "Bindable"
-Converted["_Bindable204"].Parent = Converted["_Close8"]
+Converted["_Bindable212"].Value = true
+Converted["_Bindable212"].Name = "Bindable"
+Converted["_Bindable212"].Parent = Converted["_Close8"]
 
-Converted["_UICorner244"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner244"].Parent = Converted["_Close8"]
+Converted["_UICorner266"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner266"].Parent = Converted["_Close8"]
 
 Converted["_MInput"].Font = Enum.Font.TitilliumWeb
 Converted["_MInput"].PlaceholderText = "Menu Name"
@@ -7666,8 +8495,8 @@ Converted["_MInput"].Size = UDim2.new(0.349999994, 0, 0.100000001, 0)
 Converted["_MInput"].Name = "MInput"
 Converted["_MInput"].Parent = Converted["_More"]
 
-Converted["_UICorner245"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner245"].Parent = Converted["_MInput"]
+Converted["_UICorner267"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner267"].Parent = Converted["_MInput"]
 
 Converted["_CMenu"].Font = Enum.Font.TitilliumWeb
 Converted["_CMenu"].RichText = true
@@ -7718,12 +8547,12 @@ Converted["_GSet"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_GSet"].Name = "GSet"
 Converted["_GSet"].Parent = Converted["_More"]
 
-Converted["_UICorner246"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner246"].Parent = Converted["_GSet"]
+Converted["_UICorner268"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner268"].Parent = Converted["_GSet"]
 
-Converted["_Bindable205"].Value = true
-Converted["_Bindable205"].Name = "Bindable"
-Converted["_Bindable205"].Parent = Converted["_GSet"]
+Converted["_Bindable213"].Value = true
+Converted["_Bindable213"].Name = "Bindable"
+Converted["_Bindable213"].Parent = Converted["_GSet"]
 
 Converted["_AKStatus"].Font = Enum.Font.TitilliumWeb
 Converted["_AKStatus"].RichText = true
@@ -7808,8 +8637,8 @@ Converted["_GInput"].Size = UDim2.new(0.349999994, 0, 0.100000001, 0)
 Converted["_GInput"].Name = "GInput"
 Converted["_GInput"].Parent = Converted["_More"]
 
-Converted["_UICorner247"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner247"].Parent = Converted["_GInput"]
+Converted["_UICorner269"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner269"].Parent = Converted["_GInput"]
 
 Converted["_MSet"].Font = Enum.Font.TitilliumWeb
 Converted["_MSet"].Text = "Set Menu"
@@ -7827,12 +8656,12 @@ Converted["_MSet"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_MSet"].Name = "MSet"
 Converted["_MSet"].Parent = Converted["_More"]
 
-Converted["_UICorner248"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner248"].Parent = Converted["_MSet"]
+Converted["_UICorner270"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner270"].Parent = Converted["_MSet"]
 
-Converted["_Bindable206"].Value = true
-Converted["_Bindable206"].Name = "Bindable"
-Converted["_Bindable206"].Parent = Converted["_MSet"]
+Converted["_Bindable214"].Value = true
+Converted["_Bindable214"].Name = "Bindable"
+Converted["_Bindable214"].Parent = Converted["_MSet"]
 
 Converted["_Hide"].Font = Enum.Font.TitilliumWeb
 Converted["_Hide"].Text = "Hide Debug"
@@ -7850,12 +8679,12 @@ Converted["_Hide"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_Hide"].Name = "Hide"
 Converted["_Hide"].Parent = Converted["_More"]
 
-Converted["_UICorner249"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner249"].Parent = Converted["_Hide"]
+Converted["_UICorner271"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner271"].Parent = Converted["_Hide"]
 
-Converted["_Bindable207"].Value = true
-Converted["_Bindable207"].Name = "Bindable"
-Converted["_Bindable207"].Parent = Converted["_Hide"]
+Converted["_Bindable215"].Value = true
+Converted["_Bindable215"].Name = "Bindable"
+Converted["_Bindable215"].Parent = Converted["_Hide"]
 
 Converted["_RAK"].Font = Enum.Font.TitilliumWeb
 Converted["_RAK"].Text = "Run AntiKick"
@@ -7873,12 +8702,69 @@ Converted["_RAK"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
 Converted["_RAK"].Name = "RAK"
 Converted["_RAK"].Parent = Converted["_More"]
 
-Converted["_UICorner250"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner250"].Parent = Converted["_RAK"]
+Converted["_UICorner272"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner272"].Parent = Converted["_RAK"]
 
-Converted["_Bindable208"].Value = true
-Converted["_Bindable208"].Name = "Bindable"
-Converted["_Bindable208"].Parent = Converted["_RAK"]
+Converted["_Bindable216"].Value = true
+Converted["_Bindable216"].Name = "Bindable"
+Converted["_Bindable216"].Parent = Converted["_RAK"]
+
+Converted["_Reparent"].Font = Enum.Font.TitilliumWeb
+Converted["_Reparent"].Text = "Reparent Antihub"
+Converted["_Reparent"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Reparent"].TextScaled = true
+Converted["_Reparent"].TextSize = 14
+Converted["_Reparent"].TextWrapped = true
+Converted["_Reparent"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Reparent"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Reparent"].BackgroundTransparency = 0.25
+Converted["_Reparent"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Reparent"].BorderSizePixel = 0
+Converted["_Reparent"].Position = UDim2.new(0.754999995, 0, 0.875, 0)
+Converted["_Reparent"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_Reparent"].Name = "Reparent"
+Converted["_Reparent"].Parent = Converted["_More"]
+
+Converted["_UICorner273"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner273"].Parent = Converted["_Reparent"]
+
+Converted["_Bindable217"].Value = true
+Converted["_Bindable217"].Name = "Bindable"
+Converted["_Bindable217"].Parent = Converted["_Reparent"]
+
+Converted["_Template2"].Active = true
+Converted["_Template2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Template2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Template2"].BackgroundTransparency = 1
+Converted["_Template2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Template2"].BorderSizePixel = 0
+Converted["_Template2"].Size = UDim2.new(1, 0, 0.25, 0)
+Converted["_Template2"].Visible = false
+Converted["_Template2"].Name = "Template"
+Converted["_Template2"].Parent = Converted["_Debug"]
+
+Converted["_Log5"].Font = Enum.Font.TitilliumWeb
+Converted["_Log5"].RichText = true
+Converted["_Log5"].Text = ""
+Converted["_Log5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Log5"].TextScaled = true
+Converted["_Log5"].TextSize = 16
+Converted["_Log5"].TextWrapped = true
+Converted["_Log5"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Log5"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Log5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Log5"].BackgroundColor3 = Color3.fromRGB(25.000000409781933, 25.000000409781933, 25.000000409781933)
+Converted["_Log5"].BackgroundTransparency = 0.5
+Converted["_Log5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Log5"].BorderSizePixel = 0
+Converted["_Log5"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Log5"].Selectable = false
+Converted["_Log5"].Size = UDim2.new(0.949999988, 0, 0.800000012, 0)
+Converted["_Log5"].Name = "Log"
+Converted["_Log5"].Parent = Converted["_Template2"]
+
+Converted["_UICorner274"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner274"].Parent = Converted["_Log5"]
 
 Converted["_ScriptBlox"].GroupTransparency = 1
 Converted["_ScriptBlox"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -7887,7 +8773,7 @@ Converted["_ScriptBlox"].BackgroundTransparency = 1
 Converted["_ScriptBlox"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_ScriptBlox"].BorderSizePixel = 0
 Converted["_ScriptBlox"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_ScriptBlox"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_ScriptBlox"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_ScriptBlox"].Visible = false
 Converted["_ScriptBlox"].Name = "ScriptBlox"
 Converted["_ScriptBlox"].Parent = Converted["_Menus"]
@@ -7930,8 +8816,8 @@ Converted["_Search"].Size = UDim2.new(0.800000012, 0, 0.100000001, 0)
 Converted["_Search"].Name = "Search"
 Converted["_Search"].Parent = Converted["_ScriptBlox"]
 
-Converted["_UICorner251"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner251"].Parent = Converted["_Search"]
+Converted["_UICorner275"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner275"].Parent = Converted["_Search"]
 
 Converted["_Options"].Active = true
 Converted["_Options"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -7982,8 +8868,8 @@ Converted["_Current"].Size = UDim2.new(0.75, 0, 0.125, 0)
 Converted["_Current"].Name = "Current"
 Converted["_Current"].Parent = Converted["_Container4"]
 
-Converted["_UICorner252"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner252"].Parent = Converted["_Current"]
+Converted["_UICorner276"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner276"].Parent = Converted["_Current"]
 
 Converted["_Open"].Font = Enum.Font.TitilliumWeb
 Converted["_Open"].Text = "Open In Utility"
@@ -7997,13 +8883,12 @@ Converted["_Open"].BackgroundTransparency = 0.25
 Converted["_Open"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Open"].BorderSizePixel = 0
 Converted["_Open"].Position = UDim2.new(0.5, 0, 0.75, 0)
-Converted["_Open"].Selectable = false
 Converted["_Open"].Size = UDim2.new(0.649999976, 0, 0.125, 0)
 Converted["_Open"].Name = "Open"
 Converted["_Open"].Parent = Converted["_Container4"]
 
-Converted["_UICorner253"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner253"].Parent = Converted["_Open"]
+Converted["_UICorner277"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner277"].Parent = Converted["_Open"]
 
 Converted["_Copy3"].Font = Enum.Font.TitilliumWeb
 Converted["_Copy3"].Text = "Copy To Clipboard"
@@ -8017,13 +8902,12 @@ Converted["_Copy3"].BackgroundTransparency = 0.25
 Converted["_Copy3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Copy3"].BorderSizePixel = 0
 Converted["_Copy3"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
-Converted["_Copy3"].Selectable = false
 Converted["_Copy3"].Size = UDim2.new(0.75, 0, 0.125, 0)
 Converted["_Copy3"].Name = "Copy"
 Converted["_Copy3"].Parent = Converted["_Container4"]
 
-Converted["_UICorner254"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner254"].Parent = Converted["_Copy3"]
+Converted["_UICorner278"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner278"].Parent = Converted["_Copy3"]
 
 Converted["_RunS"].Font = Enum.Font.TitilliumWeb
 Converted["_RunS"].Text = "Execute Script"
@@ -8037,13 +8921,12 @@ Converted["_RunS"].BackgroundTransparency = 0.25
 Converted["_RunS"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_RunS"].BorderSizePixel = 0
 Converted["_RunS"].Position = UDim2.new(0.5, 0, 0.625, 0)
-Converted["_RunS"].Selectable = false
 Converted["_RunS"].Size = UDim2.new(0.550000012, 0, 0.075000003, 0)
 Converted["_RunS"].Name = "RunS"
 Converted["_RunS"].Parent = Converted["_Container4"]
 
-Converted["_UICorner255"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner255"].Parent = Converted["_RunS"]
+Converted["_UICorner279"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner279"].Parent = Converted["_RunS"]
 
 Converted["_GCurrent"].Font = Enum.Font.TitilliumWeb
 Converted["_GCurrent"].Text = "Getting Game Name"
@@ -8060,8 +8943,8 @@ Converted["_GCurrent"].Size = UDim2.new(0.699999988, 0, 0.125, 0)
 Converted["_GCurrent"].Name = "GCurrent"
 Converted["_GCurrent"].Parent = Converted["_Container4"]
 
-Converted["_UICorner256"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner256"].Parent = Converted["_GCurrent"]
+Converted["_UICorner280"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner280"].Parent = Converted["_GCurrent"]
 
 Converted["_Close9"].Font = Enum.Font.Nunito
 Converted["_Close9"].Text = "X"
@@ -8079,8 +8962,8 @@ Converted["_Close9"].Size = UDim2.new(0.0932557136, 0, 0.0818606019, 0)
 Converted["_Close9"].Name = "Close"
 Converted["_Close9"].Parent = Converted["_Container3"]
 
-Converted["_UICorner257"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner257"].Parent = Converted["_Close9"]
+Converted["_UICorner281"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner281"].Parent = Converted["_Close9"]
 
 Converted["_UIAspectRatioConstraint"].AspectRatio = 0.9887532591819763
 Converted["_UIAspectRatioConstraint"].Parent = Converted["_Close9"]
@@ -8100,23 +8983,23 @@ Converted["_Title"].Size = UDim2.new(0.650000036, 0, 0.0819999948, 0)
 Converted["_Title"].Name = "Title"
 Converted["_Title"].Parent = Converted["_Container3"]
 
-Converted["_UICorner258"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner258"].Parent = Converted["_Title"]
+Converted["_UICorner282"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner282"].Parent = Converted["_Title"]
 
-Converted["_UICorner259"].CornerRadius = UDim.new(0.0250000004, 0)
-Converted["_UICorner259"].Parent = Converted["_Container3"]
+Converted["_UICorner283"].CornerRadius = UDim.new(0.0250000004, 0)
+Converted["_UICorner283"].Parent = Converted["_Container3"]
 
-Converted["_Template"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Template"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Template"].BackgroundTransparency = 1
-Converted["_Template"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Template"].BorderSizePixel = 0
-Converted["_Template"].ClipsDescendants = true
-Converted["_Template"].Position = UDim2.new(0.474007308, 0, 0.397601724, 0)
-Converted["_Template"].Size = UDim2.new(0.21291475, 0, 0.277776539, 0)
-Converted["_Template"].Visible = false
-Converted["_Template"].Name = "Template"
-Converted["_Template"].Parent = Converted["_ScriptBlox"]
+Converted["_Template3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Template3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Template3"].BackgroundTransparency = 1
+Converted["_Template3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Template3"].BorderSizePixel = 0
+Converted["_Template3"].ClipsDescendants = true
+Converted["_Template3"].Position = UDim2.new(0.474007308, 0, 0.397601724, 0)
+Converted["_Template3"].Size = UDim2.new(0.21291475, 0, 0.277776539, 0)
+Converted["_Template3"].Visible = false
+Converted["_Template3"].Name = "Template"
+Converted["_Template3"].Parent = Converted["_ScriptBlox"]
 
 Converted["_Container5"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Container5"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
@@ -8125,7 +9008,7 @@ Converted["_Container5"].BorderSizePixel = 0
 Converted["_Container5"].Position = UDim2.new(0.5, 0, 0.5, 0)
 Converted["_Container5"].Size = UDim2.new(1, 0, 0.949999988, 0)
 Converted["_Container5"].Name = "Container"
-Converted["_Container5"].Parent = Converted["_Template"]
+Converted["_Container5"].Parent = Converted["_Template3"]
 
 Converted["_Open1"].Font = Enum.Font.TitilliumWeb
 Converted["_Open1"].Text = "More Options"
@@ -8138,7 +9021,6 @@ Converted["_Open1"].BackgroundTransparency = 0.25
 Converted["_Open1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Open1"].BorderSizePixel = 0
 Converted["_Open1"].Position = UDim2.new(0.5, 0, 0.875, 0)
-Converted["_Open1"].Selectable = false
 Converted["_Open1"].Size = UDim2.new(1, 0, 0.25, 0)
 Converted["_Open1"].Name = "Open"
 Converted["_Open1"].Parent = Converted["_Container5"]
@@ -8162,17 +9044,17 @@ Converted["_Info2"].Size = UDim2.new(1, 0, 0.750000179, 0)
 Converted["_Info2"].Name = "Info"
 Converted["_Info2"].Parent = Converted["_Container5"]
 
-Converted["_UICorner260"].CornerRadius = UDim.new(0.0500000007, 0)
-Converted["_UICorner260"].Parent = Converted["_Container5"]
+Converted["_UICorner284"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner284"].Parent = Converted["_Container5"]
 
 Converted["_Output"].Name = "Output"
-Converted["_Output"].Parent = Converted["_Template"]
+Converted["_Output"].Parent = Converted["_Template3"]
 
 Converted["_SName"].Name = "SName"
-Converted["_SName"].Parent = Converted["_Template"]
+Converted["_SName"].Parent = Converted["_Template3"]
 
 Converted["_GName"].Name = "GName"
-Converted["_GName"].Parent = Converted["_Template"]
+Converted["_GName"].Parent = Converted["_Template3"]
 
 Converted["_None"].GroupTransparency = 1
 Converted["_None"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -8181,7 +9063,7 @@ Converted["_None"].BackgroundTransparency = 1
 Converted["_None"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_None"].BorderSizePixel = 0
 Converted["_None"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_None"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_None"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_None"].Visible = false
 Converted["_None"].Name = "None"
 Converted["_None"].Parent = Converted["_Menus"]
@@ -8202,8 +9084,8 @@ Converted["_Message2"].Size = UDim2.new(0.5, 0, 0.5, 0)
 Converted["_Message2"].Name = "Message"
 Converted["_Message2"].Parent = Converted["_None"]
 
-Converted["_UICorner261"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner261"].Parent = Converted["_Message2"]
+Converted["_UICorner285"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner285"].Parent = Converted["_Message2"]
 
 Converted["_AntiKick"].GroupTransparency = 1
 Converted["_AntiKick"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -8212,7 +9094,7 @@ Converted["_AntiKick"].BackgroundTransparency = 1
 Converted["_AntiKick"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_AntiKick"].BorderSizePixel = 0
 Converted["_AntiKick"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_AntiKick"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_AntiKick"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_AntiKick"].Visible = false
 Converted["_AntiKick"].Name = "AntiKick"
 Converted["_AntiKick"].Parent = Converted["_Menus"]
@@ -8235,8 +9117,8 @@ Converted["_Input9"].Size = UDim2.new(0.800000012, 0, 0.100000001, 0)
 Converted["_Input9"].Name = "Input"
 Converted["_Input9"].Parent = Converted["_AntiKick"]
 
-Converted["_UICorner262"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner262"].Parent = Converted["_Input9"]
+Converted["_UICorner286"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner286"].Parent = Converted["_Input9"]
 
 Converted["_Set1"].Font = Enum.Font.TitilliumWeb
 Converted["_Set1"].Text = "Set Chat Logs"
@@ -8254,12 +9136,12 @@ Converted["_Set1"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
 Converted["_Set1"].Name = "Set"
 Converted["_Set1"].Parent = Converted["_AntiKick"]
 
-Converted["_UICorner263"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner263"].Parent = Converted["_Set1"]
+Converted["_UICorner287"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner287"].Parent = Converted["_Set1"]
 
-Converted["_Bindable209"].Value = true
-Converted["_Bindable209"].Name = "Bindable"
-Converted["_Bindable209"].Parent = Converted["_Set1"]
+Converted["_Bindable218"].Value = true
+Converted["_Bindable218"].Name = "Bindable"
+Converted["_Bindable218"].Parent = Converted["_Set1"]
 
 Converted["_Current1"].Font = Enum.Font.TitilliumWeb
 Converted["_Current1"].Text = "Current Chat Logs: None"
@@ -8275,13 +9157,12 @@ Converted["_Current1"].BackgroundTransparency = 0.5
 Converted["_Current1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Current1"].BorderSizePixel = 0
 Converted["_Current1"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
-Converted["_Current1"].Selectable = true
 Converted["_Current1"].Size = UDim2.new(0.75, 0, 0.100000001, 0)
 Converted["_Current1"].Name = "Current"
 Converted["_Current1"].Parent = Converted["_AntiKick"]
 
-Converted["_UICorner264"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner264"].Parent = Converted["_Current1"]
+Converted["_UICorner288"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner288"].Parent = Converted["_Current1"]
 
 Converted["_Logs5"].CanvasSize = UDim2.new(0, 0, 0, 0)
 Converted["_Logs5"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
@@ -8296,23 +9177,23 @@ Converted["_Logs5"].Size = UDim2.new(0.899999976, 0, 0.5, 0)
 Converted["_Logs5"].Name = "Logs"
 Converted["_Logs5"].Parent = Converted["_AntiKick"]
 
-Converted["_Log4"].Font = Enum.Font.TitilliumWeb
-Converted["_Log4"].RichText = true
-Converted["_Log4"].Text = ""
-Converted["_Log4"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Log4"].TextSize = 16
-Converted["_Log4"].TextWrapped = true
-Converted["_Log4"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_Log4"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_Log4"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Log4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Log4"].BackgroundTransparency = 1
-Converted["_Log4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Log4"].BorderSizePixel = 0
-Converted["_Log4"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Log4"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Log4"].Name = "Log"
-Converted["_Log4"].Parent = Converted["_Logs5"]
+Converted["_Log6"].Font = Enum.Font.TitilliumWeb
+Converted["_Log6"].RichText = true
+Converted["_Log6"].Text = ""
+Converted["_Log6"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Log6"].TextSize = 16
+Converted["_Log6"].TextWrapped = true
+Converted["_Log6"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Log6"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Log6"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Log6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Log6"].BackgroundTransparency = 1
+Converted["_Log6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Log6"].BorderSizePixel = 0
+Converted["_Log6"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Log6"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Log6"].Name = "Log"
+Converted["_Log6"].Parent = Converted["_Logs5"]
 
 Converted["_BL"].Font = Enum.Font.TitilliumWeb
 Converted["_BL"].Text = "Blocked Webhooks"
@@ -8337,7 +9218,7 @@ Converted["_Keybinds"].BackgroundTransparency = 1
 Converted["_Keybinds"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Keybinds"].BorderSizePixel = 0
 Converted["_Keybinds"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Keybinds"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_Keybinds"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_Keybinds"].Visible = false
 Converted["_Keybinds"].Name = "Keybinds"
 Converted["_Keybinds"].Parent = Converted["_Menus"]
@@ -8382,25 +9263,24 @@ Converted["_Refresh2"].BackgroundTransparency = 0.5
 Converted["_Refresh2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Refresh2"].BorderSizePixel = 0
 Converted["_Refresh2"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
-Converted["_Refresh2"].Selectable = false
 Converted["_Refresh2"].Size = UDim2.new(0.949999988, 0, 0.100000001, 0)
 Converted["_Refresh2"].Name = "Refresh"
 Converted["_Refresh2"].Parent = Converted["_Keybinds"]
 
-Converted["_UICorner265"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner265"].Parent = Converted["_Refresh2"]
+Converted["_UICorner289"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner289"].Parent = Converted["_Refresh2"]
 
-Converted["_Template1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Template1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Template1"].BackgroundTransparency = 1
-Converted["_Template1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Template1"].BorderSizePixel = 0
-Converted["_Template1"].ClipsDescendants = true
-Converted["_Template1"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Template1"].Size = UDim2.new(0.975000024, 0, 0.324999988, 0)
-Converted["_Template1"].Visible = false
-Converted["_Template1"].Name = "Template"
-Converted["_Template1"].Parent = Converted["_Keybinds"]
+Converted["_Template4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Template4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Template4"].BackgroundTransparency = 1
+Converted["_Template4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Template4"].BorderSizePixel = 0
+Converted["_Template4"].ClipsDescendants = true
+Converted["_Template4"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Template4"].Size = UDim2.new(0.975000024, 0, 0.324999988, 0)
+Converted["_Template4"].Visible = false
+Converted["_Template4"].Name = "Template"
+Converted["_Template4"].Parent = Converted["_Keybinds"]
 
 Converted["_Container6"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Container6"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
@@ -8410,7 +9290,7 @@ Converted["_Container6"].Position = UDim2.new(0.5, 0, 0.5, 0)
 Converted["_Container6"].Size = UDim2.new(1, 0, 0.899999976, 0)
 Converted["_Container6"].ZIndex = 0
 Converted["_Container6"].Name = "Container"
-Converted["_Container6"].Parent = Converted["_Template1"]
+Converted["_Container6"].Parent = Converted["_Template4"]
 
 Converted["_Open2"].Font = Enum.Font.TitilliumWeb
 Converted["_Open2"].Text = "More Options"
@@ -8423,7 +9303,6 @@ Converted["_Open2"].BackgroundTransparency = 0.25
 Converted["_Open2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Open2"].BorderSizePixel = 0
 Converted["_Open2"].Position = UDim2.new(0.5, 0, 0.875, 0)
-Converted["_Open2"].Selectable = false
 Converted["_Open2"].Size = UDim2.new(1, 0, 0.25, 0)
 Converted["_Open2"].Name = "Open"
 Converted["_Open2"].Parent = Converted["_Container6"]
@@ -8447,11 +9326,11 @@ Converted["_Info3"].Size = UDim2.new(1, 0, 0.750000179, 0)
 Converted["_Info3"].Name = "Info"
 Converted["_Info3"].Parent = Converted["_Container6"]
 
-Converted["_UICorner266"].CornerRadius = UDim.new(0.100000001, 0)
-Converted["_UICorner266"].Parent = Converted["_Container6"]
+Converted["_UICorner290"].CornerRadius = UDim.new(0.100000001, 0)
+Converted["_UICorner290"].Parent = Converted["_Container6"]
 
 Converted["_Index"].Name = "Index"
-Converted["_Index"].Parent = Converted["_Template1"]
+Converted["_Index"].Parent = Converted["_Template4"]
 
 Converted["_Credits"].GroupTransparency = 1
 Converted["_Credits"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -8460,7 +9339,7 @@ Converted["_Credits"].BackgroundTransparency = 1
 Converted["_Credits"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Credits"].BorderSizePixel = 0
 Converted["_Credits"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Credits"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_Credits"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_Credits"].Visible = false
 Converted["_Credits"].Name = "Credits"
 Converted["_Credits"].Parent = Converted["_Menus"]
@@ -8484,8 +9363,8 @@ Converted["_Credits1"].Size = UDim2.new(0.899999976, 0, 0.75, 0)
 Converted["_Credits1"].Name = "Credits"
 Converted["_Credits1"].Parent = Converted["_Credits"]
 
-Converted["_UICorner267"].CornerRadius = UDim.new(0.0250000004, 0)
-Converted["_UICorner267"].Parent = Converted["_Credits1"]
+Converted["_UICorner291"].CornerRadius = UDim.new(0.0250000004, 0)
+Converted["_UICorner291"].Parent = Converted["_Credits1"]
 
 Converted["_Discord"].Font = Enum.Font.TitilliumWeb
 Converted["_Discord"].Text = "Copy Discord Invite"
@@ -8503,8 +9382,8 @@ Converted["_Discord"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
 Converted["_Discord"].Name = "Discord"
 Converted["_Discord"].Parent = Converted["_Credits"]
 
-Converted["_UICorner268"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner268"].Parent = Converted["_Discord"]
+Converted["_UICorner292"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner292"].Parent = Converted["_Discord"]
 
 Converted["_Donate"].Font = Enum.Font.TitilliumWeb
 Converted["_Donate"].Text = "Donate"
@@ -8522,8 +9401,8 @@ Converted["_Donate"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Donate"].Name = "Donate"
 Converted["_Donate"].Parent = Converted["_Credits"]
 
-Converted["_UICorner269"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner269"].Parent = Converted["_Donate"]
+Converted["_UICorner293"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner293"].Parent = Converted["_Donate"]
 
 Converted["_Donations"].GroupTransparency = 1
 Converted["_Donations"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -8553,8 +9432,8 @@ Converted["_Copy4"].Size = UDim2.new(0.349999994, 0, 0.200000003, 0)
 Converted["_Copy4"].Name = "Copy"
 Converted["_Copy4"].Parent = Converted["_Donations"]
 
-Converted["_UICorner270"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner270"].Parent = Converted["_Copy4"]
+Converted["_UICorner294"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner294"].Parent = Converted["_Copy4"]
 
 Converted["_Join"].Font = Enum.Font.TitilliumWeb
 Converted["_Join"].Text = "Join Place"
@@ -8572,8 +9451,8 @@ Converted["_Join"].Size = UDim2.new(0.349999994, 0, 0.200000003, 0)
 Converted["_Join"].Name = "Join"
 Converted["_Join"].Parent = Converted["_Donations"]
 
-Converted["_UICorner271"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner271"].Parent = Converted["_Join"]
+Converted["_UICorner295"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner295"].Parent = Converted["_Join"]
 
 Converted["_Close10"].Font = Enum.Font.Nunito
 Converted["_Close10"].Text = "X"
@@ -8592,12 +9471,12 @@ Converted["_Close10"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
 Converted["_Close10"].Name = "Close"
 Converted["_Close10"].Parent = Converted["_Donations"]
 
-Converted["_UICorner272"].CornerRadius = UDim.new(0.300000012, 0)
-Converted["_UICorner272"].Parent = Converted["_Close10"]
+Converted["_UICorner296"].CornerRadius = UDim.new(0.300000012, 0)
+Converted["_UICorner296"].Parent = Converted["_Close10"]
 
-Converted["_Bindable210"].Value = true
-Converted["_Bindable210"].Name = "Bindable"
-Converted["_Bindable210"].Parent = Converted["_Close10"]
+Converted["_Bindable219"].Value = true
+Converted["_Bindable219"].Name = "Bindable"
+Converted["_Bindable219"].Parent = Converted["_Close10"]
 
 Converted["_Trolling"].GroupTransparency = 1
 Converted["_Trolling"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -8606,7 +9485,7 @@ Converted["_Trolling"].BackgroundTransparency = 1
 Converted["_Trolling"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Trolling"].BorderSizePixel = 0
 Converted["_Trolling"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Trolling"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_Trolling"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_Trolling"].Visible = false
 Converted["_Trolling"].Name = "Trolling"
 Converted["_Trolling"].Parent = Converted["_Menus"]
@@ -8630,8 +9509,8 @@ Converted["_PlaceId"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
 Converted["_PlaceId"].Name = "PlaceId"
 Converted["_PlaceId"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner273"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner273"].Parent = Converted["_PlaceId"]
+Converted["_UICorner297"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner297"].Parent = Converted["_PlaceId"]
 
 Converted["_Send2"].Font = Enum.Font.TitilliumWeb
 Converted["_Send2"].Text = "Send Message"
@@ -8649,12 +9528,12 @@ Converted["_Send2"].Size = UDim2.new(0.324692219, 0, 0.100000001, 0)
 Converted["_Send2"].Name = "Send"
 Converted["_Send2"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner274"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner274"].Parent = Converted["_Send2"]
+Converted["_UICorner298"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner298"].Parent = Converted["_Send2"]
 
-Converted["_Bindable211"].Value = true
-Converted["_Bindable211"].Name = "Bindable"
-Converted["_Bindable211"].Parent = Converted["_Send2"]
+Converted["_Bindable220"].Value = true
+Converted["_Bindable220"].Name = "Bindable"
+Converted["_Bindable220"].Parent = Converted["_Send2"]
 
 Converted["_JobId"].Font = Enum.Font.TitilliumWeb
 Converted["_JobId"].PlaceholderColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
@@ -8675,8 +9554,8 @@ Converted["_JobId"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
 Converted["_JobId"].Name = "JobId"
 Converted["_JobId"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner275"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner275"].Parent = Converted["_JobId"]
+Converted["_UICorner299"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner299"].Parent = Converted["_JobId"]
 
 Converted["_Join1"].Font = Enum.Font.TitilliumWeb
 Converted["_Join1"].Text = "Join Server"
@@ -8694,12 +9573,12 @@ Converted["_Join1"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Join1"].Name = "Join"
 Converted["_Join1"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner276"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner276"].Parent = Converted["_Join1"]
+Converted["_UICorner300"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner300"].Parent = Converted["_Join1"]
 
-Converted["_Bindable212"].Value = true
-Converted["_Bindable212"].Name = "Bindable"
-Converted["_Bindable212"].Parent = Converted["_Join1"]
+Converted["_Bindable221"].Value = true
+Converted["_Bindable221"].Name = "Bindable"
+Converted["_Bindable221"].Parent = Converted["_Join1"]
 
 Converted["_CopyJID"].Font = Enum.Font.TitilliumWeb
 Converted["_CopyJID"].Text = "Copy JobId"
@@ -8717,12 +9596,12 @@ Converted["_CopyJID"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_CopyJID"].Name = "CopyJID"
 Converted["_CopyJID"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner277"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner277"].Parent = Converted["_CopyJID"]
+Converted["_UICorner301"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner301"].Parent = Converted["_CopyJID"]
 
-Converted["_Bindable213"].Value = true
-Converted["_Bindable213"].Name = "Bindable"
-Converted["_Bindable213"].Parent = Converted["_CopyJID"]
+Converted["_Bindable222"].Value = true
+Converted["_Bindable222"].Name = "Bindable"
+Converted["_Bindable222"].Parent = Converted["_CopyJID"]
 
 Converted["_Message3"].ClearTextOnFocus = false
 Converted["_Message3"].Font = Enum.Font.TitilliumWeb
@@ -8744,8 +9623,8 @@ Converted["_Message3"].Size = UDim2.new(0.610000014, 0, 0.25, 0)
 Converted["_Message3"].Name = "Message"
 Converted["_Message3"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner278"].CornerRadius = UDim.new(0.0500000007, 0)
-Converted["_UICorner278"].Parent = Converted["_Message3"]
+Converted["_UICorner302"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner302"].Parent = Converted["_Message3"]
 
 Converted["_Show"].Font = Enum.Font.TitilliumWeb
 Converted["_Show"].Text = "Show Message"
@@ -8763,12 +9642,12 @@ Converted["_Show"].Size = UDim2.new(0.324999988, 0, 0.100000001, 0)
 Converted["_Show"].Name = "Show"
 Converted["_Show"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner279"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner279"].Parent = Converted["_Show"]
+Converted["_UICorner303"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner303"].Parent = Converted["_Show"]
 
-Converted["_Bindable214"].Value = true
-Converted["_Bindable214"].Name = "Bindable"
-Converted["_Bindable214"].Parent = Converted["_Show"]
+Converted["_Bindable223"].Value = true
+Converted["_Bindable223"].Name = "Bindable"
+Converted["_Bindable223"].Parent = Converted["_Show"]
 
 Converted["_Prefix"].Font = Enum.Font.TitilliumWeb
 Converted["_Prefix"].PlaceholderColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
@@ -8789,8 +9668,8 @@ Converted["_Prefix"].Size = UDim2.new(0.324999988, 0, 0.100000001, 0)
 Converted["_Prefix"].Name = "Prefix"
 Converted["_Prefix"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner280"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner280"].Parent = Converted["_Prefix"]
+Converted["_UICorner304"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner304"].Parent = Converted["_Prefix"]
 
 Converted["_User"].Font = Enum.Font.TitilliumWeb
 Converted["_User"].PlaceholderColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
@@ -8811,8 +9690,8 @@ Converted["_User"].Size = UDim2.new(0.300000012, 0, 0.100000001, 0)
 Converted["_User"].Name = "User"
 Converted["_User"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner281"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner281"].Parent = Converted["_User"]
+Converted["_UICorner305"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner305"].Parent = Converted["_User"]
 
 Converted["_Disguise"].Font = Enum.Font.TitilliumWeb
 Converted["_Disguise"].PlaceholderColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
@@ -8832,8 +9711,8 @@ Converted["_Disguise"].Size = UDim2.new(0.300000012, 0, 0.100000001, 0)
 Converted["_Disguise"].Name = "Disguise"
 Converted["_Disguise"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner282"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner282"].Parent = Converted["_Disguise"]
+Converted["_UICorner306"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner306"].Parent = Converted["_Disguise"]
 
 Converted["_Clear5"].Font = Enum.Font.TitilliumWeb
 Converted["_Clear5"].Text = "Clear Message"
@@ -8851,12 +9730,12 @@ Converted["_Clear5"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Clear5"].Name = "Clear"
 Converted["_Clear5"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner283"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner283"].Parent = Converted["_Clear5"]
+Converted["_UICorner307"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner307"].Parent = Converted["_Clear5"]
 
-Converted["_Bindable215"].Value = true
-Converted["_Bindable215"].Name = "Bindable"
-Converted["_Bindable215"].Parent = Converted["_Clear5"]
+Converted["_Bindable224"].Value = true
+Converted["_Bindable224"].Name = "Bindable"
+Converted["_Bindable224"].Parent = Converted["_Clear5"]
 
 Converted["_CopyPID"].Font = Enum.Font.TitilliumWeb
 Converted["_CopyPID"].Text = "Copy PlaceId"
@@ -8874,12 +9753,12 @@ Converted["_CopyPID"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_CopyPID"].Name = "CopyPID"
 Converted["_CopyPID"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner284"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner284"].Parent = Converted["_CopyPID"]
+Converted["_UICorner308"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner308"].Parent = Converted["_CopyPID"]
 
-Converted["_Bindable216"].Value = true
-Converted["_Bindable216"].Name = "Bindable"
-Converted["_Bindable216"].Parent = Converted["_CopyPID"]
+Converted["_Bindable225"].Value = true
+Converted["_Bindable225"].Name = "Bindable"
+Converted["_Bindable225"].Parent = Converted["_CopyPID"]
 
 Converted["_CopyJURL"].Font = Enum.Font.TitilliumWeb
 Converted["_CopyJURL"].Text = "Copy Join URL"
@@ -8897,12 +9776,12 @@ Converted["_CopyJURL"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_CopyJURL"].Name = "CopyJURL"
 Converted["_CopyJURL"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner285"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner285"].Parent = Converted["_CopyJURL"]
+Converted["_UICorner309"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner309"].Parent = Converted["_CopyJURL"]
 
-Converted["_Bindable217"].Value = true
-Converted["_Bindable217"].Name = "Bindable"
-Converted["_Bindable217"].Parent = Converted["_CopyJURL"]
+Converted["_Bindable226"].Value = true
+Converted["_Bindable226"].Name = "Bindable"
+Converted["_Bindable226"].Parent = Converted["_CopyJURL"]
 
 Converted["_Fill"].Font = Enum.Font.TitilliumWeb
 Converted["_Fill"].Text = "AutoFill"
@@ -8920,12 +9799,12 @@ Converted["_Fill"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Fill"].Name = "Fill"
 Converted["_Fill"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner286"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner286"].Parent = Converted["_Fill"]
+Converted["_UICorner310"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner310"].Parent = Converted["_Fill"]
 
-Converted["_Bindable218"].Value = true
-Converted["_Bindable218"].Name = "Bindable"
-Converted["_Bindable218"].Parent = Converted["_Fill"]
+Converted["_Bindable227"].Value = true
+Converted["_Bindable227"].Name = "Bindable"
+Converted["_Bindable227"].Parent = Converted["_Fill"]
 
 Converted["_Preview"].Font = Enum.Font.TitilliumWeb
 Converted["_Preview"].RichText = true
@@ -8942,13 +9821,12 @@ Converted["_Preview"].BackgroundTransparency = 0.5
 Converted["_Preview"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Preview"].BorderSizePixel = 0
 Converted["_Preview"].Position = UDim2.new(0.385199994, 0, 0.5, 0)
-Converted["_Preview"].Selectable = true
 Converted["_Preview"].Size = UDim2.new(0.725000024, 0, 0.100000001, 0)
 Converted["_Preview"].Name = "Preview"
 Converted["_Preview"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner287"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner287"].Parent = Converted["_Preview"]
+Converted["_UICorner311"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner311"].Parent = Converted["_Preview"]
 
 Converted["_Tag"].ClearTextOnFocus = false
 Converted["_Tag"].Font = Enum.Font.TitilliumWeb
@@ -8970,8 +9848,8 @@ Converted["_Tag"].Size = UDim2.new(0.324999988, 0, 0.075000003, 0)
 Converted["_Tag"].Name = "Tag"
 Converted["_Tag"].Parent = Converted["_Trolling"]
 
-Converted["_UICorner288"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner288"].Parent = Converted["_Tag"]
+Converted["_UICorner312"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner312"].Parent = Converted["_Tag"]
 
 Converted["_Commands"].GroupTransparency = 1
 Converted["_Commands"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -8980,11 +9858,12 @@ Converted["_Commands"].BackgroundTransparency = 1
 Converted["_Commands"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Commands"].BorderSizePixel = 0
 Converted["_Commands"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Commands"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_Commands"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_Commands"].Visible = false
 Converted["_Commands"].Name = "Commands"
 Converted["_Commands"].Parent = Converted["_Menus"]
 
+Converted["_Scroll4"].AutomaticCanvasSize = Enum.AutomaticSize.Y
 Converted["_Scroll4"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Scroll4"].ScrollBarThickness = 6
 Converted["_Scroll4"].Active = true
@@ -8998,23 +9877,11 @@ Converted["_Scroll4"].Size = UDim2.new(0.949999988, 0, 0.75, 0)
 Converted["_Scroll4"].Name = "Scroll"
 Converted["_Scroll4"].Parent = Converted["_Commands"]
 
-Converted["_Scroll5"].Font = Enum.Font.TitilliumWeb
-Converted["_Scroll5"].Text = ""
-Converted["_Scroll5"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Scroll5"].TextSize = 24
-Converted["_Scroll5"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_Scroll5"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_Scroll5"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Scroll5"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Scroll5"].BackgroundTransparency = 0.5
-Converted["_Scroll5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Scroll5"].BorderSizePixel = 0
-Converted["_Scroll5"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Scroll5"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Scroll5"].Name = "Scroll"
-Converted["_Scroll5"].Parent = Converted["_Scroll4"]
+Converted["_List8"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_List8"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_List8"].Name = "List"
+Converted["_List8"].Parent = Converted["_Scroll4"]
 
-Converted["_Input10"].Font = Enum.Font.Unknown
 Converted["_Input10"].PlaceholderColor3 = Color3.fromRGB(128.0000075697899, 128.0000075697899, 128.0000075697899)
 Converted["_Input10"].PlaceholderText = "Command Bar"
 Converted["_Input10"].Text = ""
@@ -9033,8 +9900,42 @@ Converted["_Input10"].Size = UDim2.new(0.899999976, 0, 0.150000006, 0)
 Converted["_Input10"].Name = "Input"
 Converted["_Input10"].Parent = Converted["_Commands"]
 
-Converted["_UICorner289"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner289"].Parent = Converted["_Input10"]
+Converted["_UICorner313"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner313"].Parent = Converted["_Input10"]
+
+Converted["_Template5"].Active = true
+Converted["_Template5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Template5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Template5"].BackgroundTransparency = 1
+Converted["_Template5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Template5"].BorderSizePixel = 0
+Converted["_Template5"].Size = UDim2.new(1, 0, 0.25, 0)
+Converted["_Template5"].Visible = false
+Converted["_Template5"].Name = "Template"
+Converted["_Template5"].Parent = Converted["_Commands"]
+
+Converted["_Log7"].Font = Enum.Font.TitilliumWeb
+Converted["_Log7"].RichText = true
+Converted["_Log7"].Text = ""
+Converted["_Log7"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Log7"].TextScaled = true
+Converted["_Log7"].TextSize = 16
+Converted["_Log7"].TextWrapped = true
+Converted["_Log7"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Log7"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Log7"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Log7"].BackgroundColor3 = Color3.fromRGB(25.000000409781933, 25.000000409781933, 25.000000409781933)
+Converted["_Log7"].BackgroundTransparency = 0.5
+Converted["_Log7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Log7"].BorderSizePixel = 0
+Converted["_Log7"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Log7"].Selectable = false
+Converted["_Log7"].Size = UDim2.new(0.949999988, 0, 0.800000012, 0)
+Converted["_Log7"].Name = "Log"
+Converted["_Log7"].Parent = Converted["_Template5"]
+
+Converted["_UICorner314"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner314"].Parent = Converted["_Log7"]
 
 Converted["_Misc"].GroupTransparency = 1
 Converted["_Misc"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -9043,7 +9944,7 @@ Converted["_Misc"].BackgroundTransparency = 1
 Converted["_Misc"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Misc"].BorderSizePixel = 0
 Converted["_Misc"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_Misc"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_Misc"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_Misc"].Visible = false
 Converted["_Misc"].Name = "Misc"
 Converted["_Misc"].Parent = Converted["_Menus"]
@@ -9064,12 +9965,12 @@ Converted["_DEXPP"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_DEXPP"].Name = "DEXPP"
 Converted["_DEXPP"].Parent = Converted["_Misc"]
 
-Converted["_UICorner290"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner290"].Parent = Converted["_DEXPP"]
+Converted["_UICorner315"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner315"].Parent = Converted["_DEXPP"]
 
-Converted["_Bindable219"].Value = true
-Converted["_Bindable219"].Name = "Bindable"
-Converted["_Bindable219"].Parent = Converted["_DEXPP"]
+Converted["_Bindable228"].Value = true
+Converted["_Bindable228"].Name = "Bindable"
+Converted["_Bindable228"].Parent = Converted["_DEXPP"]
 
 Converted["_NCCam"].Font = Enum.Font.TitilliumWeb
 Converted["_NCCam"].Text = "NCCam"
@@ -9087,12 +9988,12 @@ Converted["_NCCam"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_NCCam"].Name = "NCCam"
 Converted["_NCCam"].Parent = Converted["_Misc"]
 
-Converted["_UICorner291"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner291"].Parent = Converted["_NCCam"]
+Converted["_UICorner316"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner316"].Parent = Converted["_NCCam"]
 
-Converted["_Bindable220"].Value = true
-Converted["_Bindable220"].Name = "Bindable"
-Converted["_Bindable220"].Parent = Converted["_NCCam"]
+Converted["_Bindable229"].Value = true
+Converted["_Bindable229"].Name = "Bindable"
+Converted["_Bindable229"].Parent = Converted["_NCCam"]
 
 Converted["_RSpy"].Font = Enum.Font.TitilliumWeb
 Converted["_RSpy"].Text = "Remote Spy"
@@ -9110,12 +10011,12 @@ Converted["_RSpy"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_RSpy"].Name = "RSpy"
 Converted["_RSpy"].Parent = Converted["_Misc"]
 
-Converted["_UICorner292"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner292"].Parent = Converted["_RSpy"]
+Converted["_UICorner317"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner317"].Parent = Converted["_RSpy"]
 
-Converted["_Bindable221"].Value = true
-Converted["_Bindable221"].Name = "Bindable"
-Converted["_Bindable221"].Parent = Converted["_RSpy"]
+Converted["_Bindable230"].Value = true
+Converted["_Bindable230"].Name = "Bindable"
+Converted["_Bindable230"].Parent = Converted["_RSpy"]
 
 Converted["_SRSpy"].Font = Enum.Font.TitilliumWeb
 Converted["_SRSpy"].Text = "Server RSpy"
@@ -9133,12 +10034,12 @@ Converted["_SRSpy"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_SRSpy"].Name = "SRSpy"
 Converted["_SRSpy"].Parent = Converted["_Misc"]
 
-Converted["_UICorner293"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner293"].Parent = Converted["_SRSpy"]
+Converted["_UICorner318"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner318"].Parent = Converted["_SRSpy"]
 
-Converted["_Bindable222"].Value = true
-Converted["_Bindable222"].Name = "Bindable"
-Converted["_Bindable222"].Parent = Converted["_SRSpy"]
+Converted["_Bindable231"].Value = true
+Converted["_Bindable231"].Name = "Bindable"
+Converted["_Bindable231"].Parent = Converted["_SRSpy"]
 
 Converted["_TPUI"].Font = Enum.Font.TitilliumWeb
 Converted["_TPUI"].Text = "UViewer"
@@ -9156,12 +10057,12 @@ Converted["_TPUI"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_TPUI"].Name = "TPUI"
 Converted["_TPUI"].Parent = Converted["_Misc"]
 
-Converted["_UICorner294"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner294"].Parent = Converted["_TPUI"]
+Converted["_UICorner319"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner319"].Parent = Converted["_TPUI"]
 
-Converted["_Bindable223"].Value = true
-Converted["_Bindable223"].Name = "Bindable"
-Converted["_Bindable223"].Parent = Converted["_TPUI"]
+Converted["_Bindable232"].Value = true
+Converted["_Bindable232"].Name = "Bindable"
+Converted["_Bindable232"].Parent = Converted["_TPUI"]
 
 Converted["_TurtleSpy"].Font = Enum.Font.TitilliumWeb
 Converted["_TurtleSpy"].Text = "TSpy"
@@ -9179,12 +10080,12 @@ Converted["_TurtleSpy"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_TurtleSpy"].Name = "TurtleSpy"
 Converted["_TurtleSpy"].Parent = Converted["_Misc"]
 
-Converted["_UICorner295"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner295"].Parent = Converted["_TurtleSpy"]
+Converted["_UICorner320"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner320"].Parent = Converted["_TurtleSpy"]
 
-Converted["_Bindable224"].Value = true
-Converted["_Bindable224"].Name = "Bindable"
-Converted["_Bindable224"].Parent = Converted["_TurtleSpy"]
+Converted["_Bindable233"].Value = true
+Converted["_Bindable233"].Name = "Bindable"
+Converted["_Bindable233"].Parent = Converted["_TurtleSpy"]
 
 Converted["_BTools"].Font = Enum.Font.TitilliumWeb
 Converted["_BTools"].Text = "F3X"
@@ -9202,12 +10103,12 @@ Converted["_BTools"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_BTools"].Name = "BTools"
 Converted["_BTools"].Parent = Converted["_Misc"]
 
-Converted["_UICorner296"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner296"].Parent = Converted["_BTools"]
+Converted["_UICorner321"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner321"].Parent = Converted["_BTools"]
 
-Converted["_Bindable225"].Value = true
-Converted["_Bindable225"].Name = "Bindable"
-Converted["_Bindable225"].Parent = Converted["_BTools"]
+Converted["_Bindable234"].Value = true
+Converted["_Bindable234"].Name = "Bindable"
+Converted["_Bindable234"].Parent = Converted["_BTools"]
 
 Converted["_Expn"].Font = Enum.Font.Ubuntu
 Converted["_Expn"].RichText = true
@@ -9227,8 +10128,8 @@ Converted["_Expn"].Size = UDim2.new(0.165000007, 0, 0.0500000007, 0)
 Converted["_Expn"].Name = "Expn"
 Converted["_Expn"].Parent = Converted["_Misc"]
 
-Converted["_UICorner297"].CornerRadius = UDim.new(0.25, 0)
-Converted["_UICorner297"].Parent = Converted["_Expn"]
+Converted["_UICorner322"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner322"].Parent = Converted["_Expn"]
 
 Converted["_PlayerCount"].Font = Enum.Font.Ubuntu
 Converted["_PlayerCount"].RichText = true
@@ -9248,8 +10149,8 @@ Converted["_PlayerCount"].Size = UDim2.new(0.165000007, 0, 0.0500000007, 0)
 Converted["_PlayerCount"].Name = "PlayerCount"
 Converted["_PlayerCount"].Parent = Converted["_Misc"]
 
-Converted["_UICorner298"].CornerRadius = UDim.new(0.25, 0)
-Converted["_UICorner298"].Parent = Converted["_PlayerCount"]
+Converted["_UICorner323"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner323"].Parent = Converted["_PlayerCount"]
 
 Converted["_MM21"].GroupTransparency = 1
 Converted["_MM21"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -9258,7 +10159,7 @@ Converted["_MM21"].BackgroundTransparency = 1
 Converted["_MM21"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_MM21"].BorderSizePixel = 0
 Converted["_MM21"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_MM21"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_MM21"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_MM21"].Visible = false
 Converted["_MM21"].Name = "MM2"
 Converted["_MM21"].Parent = Converted["_Menus"]
@@ -9279,12 +10180,12 @@ Converted["_TLobby"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_TLobby"].Name = "TLobby"
 Converted["_TLobby"].Parent = Converted["_MM21"]
 
-Converted["_UICorner299"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner299"].Parent = Converted["_TLobby"]
+Converted["_UICorner324"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner324"].Parent = Converted["_TLobby"]
 
-Converted["_Bindable226"].Value = true
-Converted["_Bindable226"].Name = "Bindable"
-Converted["_Bindable226"].Parent = Converted["_TLobby"]
+Converted["_Bindable235"].Value = true
+Converted["_Bindable235"].Name = "Bindable"
+Converted["_Bindable235"].Parent = Converted["_TLobby"]
 
 Converted["_Shoot"].Font = Enum.Font.TitilliumWeb
 Converted["_Shoot"].Text = "Shoot"
@@ -9302,12 +10203,12 @@ Converted["_Shoot"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Shoot"].Name = "Shoot"
 Converted["_Shoot"].Parent = Converted["_MM21"]
 
-Converted["_UICorner300"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner300"].Parent = Converted["_Shoot"]
+Converted["_UICorner325"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner325"].Parent = Converted["_Shoot"]
 
-Converted["_Bindable227"].Value = true
-Converted["_Bindable227"].Name = "Bindable"
-Converted["_Bindable227"].Parent = Converted["_Shoot"]
+Converted["_Bindable236"].Value = true
+Converted["_Bindable236"].Name = "Bindable"
+Converted["_Bindable236"].Parent = Converted["_Shoot"]
 
 Converted["_StabSheriff"].Font = Enum.Font.TitilliumWeb
 Converted["_StabSheriff"].Text = "Stab Sheriff"
@@ -9325,12 +10226,12 @@ Converted["_StabSheriff"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_StabSheriff"].Name = "StabSheriff"
 Converted["_StabSheriff"].Parent = Converted["_MM21"]
 
-Converted["_UICorner301"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner301"].Parent = Converted["_StabSheriff"]
+Converted["_UICorner326"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner326"].Parent = Converted["_StabSheriff"]
 
-Converted["_Bindable228"].Value = true
-Converted["_Bindable228"].Name = "Bindable"
-Converted["_Bindable228"].Parent = Converted["_StabSheriff"]
+Converted["_Bindable237"].Value = true
+Converted["_Bindable237"].Name = "Bindable"
+Converted["_Bindable237"].Parent = Converted["_StabSheriff"]
 
 Converted["_Sheriff"].Font = Enum.Font.TitilliumWeb
 Converted["_Sheriff"].RichText = true
@@ -9350,8 +10251,8 @@ Converted["_Sheriff"].Size = UDim2.new(0.165000007, 0, 0.0500000007, 0)
 Converted["_Sheriff"].Name = "Sheriff"
 Converted["_Sheriff"].Parent = Converted["_MM21"]
 
-Converted["_UICorner302"].CornerRadius = UDim.new(0.25, 0)
-Converted["_UICorner302"].Parent = Converted["_Sheriff"]
+Converted["_UICorner327"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner327"].Parent = Converted["_Sheriff"]
 
 Converted["_Input11"].Font = Enum.Font.TitilliumWeb
 Converted["_Input11"].PlaceholderText = "Player Name"
@@ -9370,8 +10271,8 @@ Converted["_Input11"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
 Converted["_Input11"].Name = "Input"
 Converted["_Input11"].Parent = Converted["_MM21"]
 
-Converted["_UICorner303"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner303"].Parent = Converted["_Input11"]
+Converted["_UICorner328"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner328"].Parent = Converted["_Input11"]
 
 Converted["_Kick1"].Font = Enum.Font.TitilliumWeb
 Converted["_Kick1"].Text = "Kick"
@@ -9391,12 +10292,12 @@ Converted["_Kick1"].Visible = false
 Converted["_Kick1"].Name = "Kick"
 Converted["_Kick1"].Parent = Converted["_MM21"]
 
-Converted["_UICorner304"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner304"].Parent = Converted["_Kick1"]
+Converted["_UICorner329"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner329"].Parent = Converted["_Kick1"]
 
-Converted["_Bindable229"].Value = true
-Converted["_Bindable229"].Name = "Bindable"
-Converted["_Bindable229"].Parent = Converted["_Kick1"]
+Converted["_Bindable238"].Value = true
+Converted["_Bindable238"].Name = "Bindable"
+Converted["_Bindable238"].Parent = Converted["_Kick1"]
 
 Converted["_StabAll"].Font = Enum.Font.TitilliumWeb
 Converted["_StabAll"].Text = "Stab All"
@@ -9414,12 +10315,12 @@ Converted["_StabAll"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_StabAll"].Name = "StabAll"
 Converted["_StabAll"].Parent = Converted["_MM21"]
 
-Converted["_UICorner305"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner305"].Parent = Converted["_StabAll"]
+Converted["_UICorner330"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner330"].Parent = Converted["_StabAll"]
 
-Converted["_Bindable230"].Value = true
-Converted["_Bindable230"].Name = "Bindable"
-Converted["_Bindable230"].Parent = Converted["_StabAll"]
+Converted["_Bindable239"].Value = true
+Converted["_Bindable239"].Name = "Bindable"
+Converted["_Bindable239"].Parent = Converted["_StabAll"]
 
 Converted["_ShootM"].Font = Enum.Font.TitilliumWeb
 Converted["_ShootM"].Text = "Shoot Murderer"
@@ -9437,12 +10338,12 @@ Converted["_ShootM"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_ShootM"].Name = "ShootM"
 Converted["_ShootM"].Parent = Converted["_MM21"]
 
-Converted["_UICorner306"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner306"].Parent = Converted["_ShootM"]
+Converted["_UICorner331"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner331"].Parent = Converted["_ShootM"]
 
-Converted["_Bindable231"].Value = true
-Converted["_Bindable231"].Name = "Bindable"
-Converted["_Bindable231"].Parent = Converted["_ShootM"]
+Converted["_Bindable240"].Value = true
+Converted["_Bindable240"].Name = "Bindable"
+Converted["_Bindable240"].Parent = Converted["_ShootM"]
 
 Converted["_Stab"].Font = Enum.Font.TitilliumWeb
 Converted["_Stab"].Text = "Stab"
@@ -9460,12 +10361,12 @@ Converted["_Stab"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Stab"].Name = "Stab"
 Converted["_Stab"].Parent = Converted["_MM21"]
 
-Converted["_UICorner307"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner307"].Parent = Converted["_Stab"]
+Converted["_UICorner332"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner332"].Parent = Converted["_Stab"]
 
-Converted["_Bindable232"].Value = true
-Converted["_Bindable232"].Name = "Bindable"
-Converted["_Bindable232"].Parent = Converted["_Stab"]
+Converted["_Bindable241"].Value = true
+Converted["_Bindable241"].Name = "Bindable"
+Converted["_Bindable241"].Parent = Converted["_Stab"]
 
 Converted["_Murderer"].Font = Enum.Font.TitilliumWeb
 Converted["_Murderer"].RichText = true
@@ -9485,8 +10386,8 @@ Converted["_Murderer"].Size = UDim2.new(0.165000007, 0, 0.0500000007, 0)
 Converted["_Murderer"].Name = "Murderer"
 Converted["_Murderer"].Parent = Converted["_MM21"]
 
-Converted["_UICorner308"].CornerRadius = UDim.new(0.25, 0)
-Converted["_UICorner308"].Parent = Converted["_Murderer"]
+Converted["_UICorner333"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner333"].Parent = Converted["_Murderer"]
 
 Converted["_TMap"].Font = Enum.Font.TitilliumWeb
 Converted["_TMap"].Text = "Teleport To Map"
@@ -9504,12 +10405,12 @@ Converted["_TMap"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_TMap"].Name = "TMap"
 Converted["_TMap"].Parent = Converted["_MM21"]
 
-Converted["_UICorner309"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner309"].Parent = Converted["_TMap"]
+Converted["_UICorner334"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner334"].Parent = Converted["_TMap"]
 
-Converted["_Bindable233"].Value = true
-Converted["_Bindable233"].Name = "Bindable"
-Converted["_Bindable233"].Parent = Converted["_TMap"]
+Converted["_Bindable242"].Value = true
+Converted["_Bindable242"].Name = "Bindable"
+Converted["_Bindable242"].Parent = Converted["_TMap"]
 
 Converted["_Throw"].Font = Enum.Font.TitilliumWeb
 Converted["_Throw"].Text = "Throw"
@@ -9527,12 +10428,12 @@ Converted["_Throw"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Throw"].Name = "Throw"
 Converted["_Throw"].Parent = Converted["_MM21"]
 
-Converted["_UICorner310"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner310"].Parent = Converted["_Throw"]
+Converted["_UICorner335"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner335"].Parent = Converted["_Throw"]
 
-Converted["_Bindable234"].Value = true
-Converted["_Bindable234"].Name = "Bindable"
-Converted["_Bindable234"].Parent = Converted["_Throw"]
+Converted["_Bindable243"].Value = true
+Converted["_Bindable243"].Name = "Bindable"
+Converted["_Bindable243"].Parent = Converted["_Throw"]
 
 Converted["_TVoid"].Font = Enum.Font.TitilliumWeb
 Converted["_TVoid"].Text = "Teleport To Void"
@@ -9550,12 +10451,12 @@ Converted["_TVoid"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_TVoid"].Name = "TVoid"
 Converted["_TVoid"].Parent = Converted["_MM21"]
 
-Converted["_UICorner311"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner311"].Parent = Converted["_TVoid"]
+Converted["_UICorner336"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner336"].Parent = Converted["_TVoid"]
 
-Converted["_Bindable235"].Value = true
-Converted["_Bindable235"].Name = "Bindable"
-Converted["_Bindable235"].Parent = Converted["_TVoid"]
+Converted["_Bindable244"].Value = true
+Converted["_Bindable244"].Name = "Bindable"
+Converted["_Bindable244"].Parent = Converted["_TVoid"]
 
 Converted["_Self"].Font = Enum.Font.TitilliumWeb
 Converted["_Self"].RichText = true
@@ -9570,13 +10471,13 @@ Converted["_Self"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000
 Converted["_Self"].BackgroundTransparency = 0.5
 Converted["_Self"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Self"].BorderSizePixel = 0
-Converted["_Self"].Position = UDim2.new(0.5, 0, 0.497000009, 0)
+Converted["_Self"].Position = UDim2.new(0.400000006, 0, 0.497000009, 0)
 Converted["_Self"].Size = UDim2.new(0.165000007, 0, 0.0500000007, 0)
 Converted["_Self"].Name = "Self"
 Converted["_Self"].Parent = Converted["_MM21"]
 
-Converted["_UICorner312"].CornerRadius = UDim.new(0.25, 0)
-Converted["_UICorner312"].Parent = Converted["_Self"]
+Converted["_UICorner337"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner337"].Parent = Converted["_Self"]
 
 Converted["_GrabGun"].Font = Enum.Font.TitilliumWeb
 Converted["_GrabGun"].Text = "Grab Gun"
@@ -9594,12 +10495,12 @@ Converted["_GrabGun"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_GrabGun"].Name = "GrabGun"
 Converted["_GrabGun"].Parent = Converted["_MM21"]
 
-Converted["_UICorner313"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner313"].Parent = Converted["_GrabGun"]
+Converted["_UICorner338"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner338"].Parent = Converted["_GrabGun"]
 
-Converted["_Bindable236"].Value = true
-Converted["_Bindable236"].Name = "Bindable"
-Converted["_Bindable236"].Parent = Converted["_GrabGun"]
+Converted["_Bindable245"].Value = true
+Converted["_Bindable245"].Name = "Bindable"
+Converted["_Bindable245"].Parent = Converted["_GrabGun"]
 
 Converted["_NRole"].Font = Enum.Font.TitilliumWeb
 Converted["_NRole"].Text = "Notify Role [F]"
@@ -9617,12 +10518,12 @@ Converted["_NRole"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_NRole"].Name = "NRole"
 Converted["_NRole"].Parent = Converted["_MM21"]
 
-Converted["_UICorner314"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner314"].Parent = Converted["_NRole"]
+Converted["_UICorner339"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner339"].Parent = Converted["_NRole"]
 
-Converted["_Bindable237"].Value = true
-Converted["_Bindable237"].Name = "Bindable"
-Converted["_Bindable237"].Parent = Converted["_NRole"]
+Converted["_Bindable246"].Value = true
+Converted["_Bindable246"].Name = "Bindable"
+Converted["_Bindable246"].Parent = Converted["_NRole"]
 
 Converted["_Expose"].Font = Enum.Font.TitilliumWeb
 Converted["_Expose"].Text = "Expose Roles"
@@ -9640,12 +10541,12 @@ Converted["_Expose"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_Expose"].Name = "Expose"
 Converted["_Expose"].Parent = Converted["_MM21"]
 
-Converted["_UICorner315"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner315"].Parent = Converted["_Expose"]
+Converted["_UICorner340"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner340"].Parent = Converted["_Expose"]
 
-Converted["_Bindable238"].Value = true
-Converted["_Bindable238"].Name = "Bindable"
-Converted["_Bindable238"].Parent = Converted["_Expose"]
+Converted["_Bindable247"].Value = true
+Converted["_Bindable247"].Name = "Bindable"
+Converted["_Bindable247"].Parent = Converted["_Expose"]
 
 Converted["_NDrop"].Font = Enum.Font.TitilliumWeb
 Converted["_NDrop"].Text = "Notify Gun Drop [F]"
@@ -9663,12 +10564,56 @@ Converted["_NDrop"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
 Converted["_NDrop"].Name = "NDrop"
 Converted["_NDrop"].Parent = Converted["_MM21"]
 
-Converted["_UICorner316"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner316"].Parent = Converted["_NDrop"]
+Converted["_UICorner341"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner341"].Parent = Converted["_NDrop"]
 
-Converted["_Bindable239"].Value = true
-Converted["_Bindable239"].Name = "Bindable"
-Converted["_Bindable239"].Parent = Converted["_NDrop"]
+Converted["_Bindable248"].Value = true
+Converted["_Bindable248"].Name = "Bindable"
+Converted["_Bindable248"].Parent = Converted["_NDrop"]
+
+Converted["_HidStab"].Font = Enum.Font.TitilliumWeb
+Converted["_HidStab"].Text = "New Stab [F]"
+Converted["_HidStab"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_HidStab"].TextScaled = true
+Converted["_HidStab"].TextSize = 14
+Converted["_HidStab"].TextWrapped = true
+Converted["_HidStab"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_HidStab"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_HidStab"].BackgroundTransparency = 0.25
+Converted["_HidStab"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_HidStab"].BorderSizePixel = 0
+Converted["_HidStab"].Position = UDim2.new(0.125, 0, 0.675000012, 0)
+Converted["_HidStab"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_HidStab"].Name = "HidStab"
+Converted["_HidStab"].Parent = Converted["_MM21"]
+
+Converted["_UICorner342"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner342"].Parent = Converted["_HidStab"]
+
+Converted["_Bindable249"].Value = true
+Converted["_Bindable249"].Name = "Bindable"
+Converted["_Bindable249"].Parent = Converted["_HidStab"]
+
+Converted["_MChance"].Font = Enum.Font.TitilliumWeb
+Converted["_MChance"].RichText = true
+Converted["_MChance"].Text = "Murderer Chance: 0%"
+Converted["_MChance"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_MChance"].TextScaled = true
+Converted["_MChance"].TextSize = 14
+Converted["_MChance"].TextWrapped = true
+Converted["_MChance"].Active = true
+Converted["_MChance"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_MChance"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_MChance"].BackgroundTransparency = 0.5
+Converted["_MChance"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MChance"].BorderSizePixel = 0
+Converted["_MChance"].Position = UDim2.new(0.600000024, 0, 0.497000009, 0)
+Converted["_MChance"].Size = UDim2.new(0.165000007, 0, 0.0500000007, 0)
+Converted["_MChance"].Name = "MChance"
+Converted["_MChance"].Parent = Converted["_MM21"]
+
+Converted["_UICorner343"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner343"].Parent = Converted["_MChance"]
 
 Converted["_WashiezRank1"].GroupTransparency = 1
 Converted["_WashiezRank1"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -9677,7 +10622,7 @@ Converted["_WashiezRank1"].BackgroundTransparency = 1
 Converted["_WashiezRank1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_WashiezRank1"].BorderSizePixel = 0
 Converted["_WashiezRank1"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
-Converted["_WashiezRank1"].Size = UDim2.new(0.850000024, 0, 0.985000014, 0)
+Converted["_WashiezRank1"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
 Converted["_WashiezRank1"].Visible = false
 Converted["_WashiezRank1"].Name = "WashiezRank"
 Converted["_WashiezRank1"].Parent = Converted["_Menus"]
@@ -9698,12 +10643,957 @@ Converted["_Complete"].Size = UDim2.new(0.5, 0, 0.200000003, 0)
 Converted["_Complete"].Name = "Complete"
 Converted["_Complete"].Parent = Converted["_WashiezRank1"]
 
-Converted["_UICorner317"].CornerRadius = UDim.new(0.0500000007, 0)
-Converted["_UICorner317"].Parent = Converted["_Complete"]
+Converted["_UICorner344"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner344"].Parent = Converted["_Complete"]
 
-Converted["_Bindable240"].Value = true
-Converted["_Bindable240"].Name = "Bindable"
-Converted["_Bindable240"].Parent = Converted["_Complete"]
+Converted["_Bindable250"].Value = true
+Converted["_Bindable250"].Name = "Bindable"
+Converted["_Bindable250"].Parent = Converted["_Complete"]
+
+Converted["_Plugins1"].GroupTransparency = 1
+Converted["_Plugins1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Plugins1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Plugins1"].BackgroundTransparency = 1
+Converted["_Plugins1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Plugins1"].BorderSizePixel = 0
+Converted["_Plugins1"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
+Converted["_Plugins1"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
+Converted["_Plugins1"].Visible = false
+Converted["_Plugins1"].Name = "Plugins"
+Converted["_Plugins1"].Parent = Converted["_Menus"]
+
+Converted["_Scroll5"].AutomaticCanvasSize = Enum.AutomaticSize.Y
+Converted["_Scroll5"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_Scroll5"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Scroll5"].ScrollBarThickness = 6
+Converted["_Scroll5"].ScrollingDirection = Enum.ScrollingDirection.Y
+Converted["_Scroll5"].Active = true
+Converted["_Scroll5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Scroll5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Scroll5"].BackgroundTransparency = 1
+Converted["_Scroll5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Scroll5"].BorderSizePixel = 0
+Converted["_Scroll5"].Position = UDim2.new(0.5, 0, 0.449999988, 0)
+Converted["_Scroll5"].Size = UDim2.new(1, 0, 0.899999976, 0)
+Converted["_Scroll5"].Name = "Scroll"
+Converted["_Scroll5"].Parent = Converted["_Plugins1"]
+
+Converted["_UIListLayout1"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_UIListLayout1"].Parent = Converted["_Scroll5"]
+
+Converted["_Options1"].Active = true
+Converted["_Options1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Options1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Options1"].BackgroundTransparency = 0.05000000074505806
+Converted["_Options1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Options1"].BorderSizePixel = 0
+Converted["_Options1"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Options1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Options1"].Visible = false
+Converted["_Options1"].ZIndex = 2
+Converted["_Options1"].Name = "Options"
+Converted["_Options1"].Parent = Converted["_Plugins1"]
+
+Converted["_Close11"].Font = Enum.Font.TitilliumWeb
+Converted["_Close11"].Text = "Close"
+Converted["_Close11"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close11"].TextScaled = true
+Converted["_Close11"].TextSize = 14
+Converted["_Close11"].TextWrapped = true
+Converted["_Close11"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close11"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
+Converted["_Close11"].BackgroundTransparency = 0.25
+Converted["_Close11"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close11"].BorderSizePixel = 0
+Converted["_Close11"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Close11"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Close11"].Name = "Close"
+Converted["_Close11"].Parent = Converted["_Options1"]
+
+Converted["_UICorner345"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner345"].Parent = Converted["_Close11"]
+
+Converted["_PName"].Font = Enum.Font.TitilliumWeb
+Converted["_PName"].Text = "Plugin Name"
+Converted["_PName"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_PName"].TextScaled = true
+Converted["_PName"].TextSize = 14
+Converted["_PName"].TextWrapped = true
+Converted["_PName"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_PName"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
+Converted["_PName"].BackgroundTransparency = 0.25
+Converted["_PName"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_PName"].BorderSizePixel = 0
+Converted["_PName"].Position = UDim2.new(0.5, 0, 0.100000001, 0)
+Converted["_PName"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_PName"].Name = "PName"
+Converted["_PName"].Parent = Converted["_Options1"]
+
+Converted["_UICorner346"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner346"].Parent = Converted["_PName"]
+
+Converted["_Description"].Font = Enum.Font.TitilliumWeb
+Converted["_Description"].Text = "Plugin Description"
+Converted["_Description"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Description"].TextScaled = true
+Converted["_Description"].TextSize = 14
+Converted["_Description"].TextWrapped = true
+Converted["_Description"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Description"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Description"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Description"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
+Converted["_Description"].BackgroundTransparency = 0.25
+Converted["_Description"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Description"].BorderSizePixel = 0
+Converted["_Description"].Position = UDim2.new(0.5, 0, 0.349999994, 0)
+Converted["_Description"].Size = UDim2.new(0.699999988, 0, 0.300000012, 0)
+Converted["_Description"].Name = "Description"
+Converted["_Description"].Parent = Converted["_Options1"]
+
+Converted["_UICorner347"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner347"].Parent = Converted["_Description"]
+
+Converted["_Current2"].Name = "Current"
+Converted["_Current2"].Parent = Converted["_Options1"]
+
+Converted["_Delete1"].Font = Enum.Font.TitilliumWeb
+Converted["_Delete1"].Text = "Remove"
+Converted["_Delete1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Delete1"].TextScaled = true
+Converted["_Delete1"].TextSize = 14
+Converted["_Delete1"].TextWrapped = true
+Converted["_Delete1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Delete1"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
+Converted["_Delete1"].BackgroundTransparency = 0.25
+Converted["_Delete1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Delete1"].BorderSizePixel = 0
+Converted["_Delete1"].Position = UDim2.new(0.224999994, 0, 0.75, 0)
+Converted["_Delete1"].Size = UDim2.new(0.200000003, 0, 0.125, 0)
+Converted["_Delete1"].Name = "Delete"
+Converted["_Delete1"].Parent = Converted["_Options1"]
+
+Converted["_UICorner348"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner348"].Parent = Converted["_Delete1"]
+
+Converted["_Edit"].Font = Enum.Font.TitilliumWeb
+Converted["_Edit"].Text = "Edit"
+Converted["_Edit"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Edit"].TextScaled = true
+Converted["_Edit"].TextSize = 14
+Converted["_Edit"].TextWrapped = true
+Converted["_Edit"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Edit"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
+Converted["_Edit"].BackgroundTransparency = 0.25
+Converted["_Edit"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Edit"].BorderSizePixel = 0
+Converted["_Edit"].Position = UDim2.new(0.5, 0, 0.75, 0)
+Converted["_Edit"].Size = UDim2.new(0.25, 0, 0.125, 0)
+Converted["_Edit"].Name = "Edit"
+Converted["_Edit"].Parent = Converted["_Options1"]
+
+Converted["_UICorner349"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner349"].Parent = Converted["_Edit"]
+
+Converted["_Reload"].Font = Enum.Font.TitilliumWeb
+Converted["_Reload"].Text = "Reload"
+Converted["_Reload"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Reload"].TextScaled = true
+Converted["_Reload"].TextSize = 14
+Converted["_Reload"].TextWrapped = true
+Converted["_Reload"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Reload"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
+Converted["_Reload"].BackgroundTransparency = 0.25
+Converted["_Reload"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Reload"].BorderSizePixel = 0
+Converted["_Reload"].Position = UDim2.new(0.774999976, 0, 0.75, 0)
+Converted["_Reload"].Size = UDim2.new(0.200000003, 0, 0.125, 0)
+Converted["_Reload"].Name = "Reload"
+Converted["_Reload"].Parent = Converted["_Options1"]
+
+Converted["_UICorner350"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner350"].Parent = Converted["_Reload"]
+
+Converted["_Menu"].Font = Enum.Font.TitilliumWeb
+Converted["_Menu"].Text = "Open Menu"
+Converted["_Menu"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Menu"].TextScaled = true
+Converted["_Menu"].TextSize = 14
+Converted["_Menu"].TextWrapped = true
+Converted["_Menu"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Menu"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
+Converted["_Menu"].BackgroundTransparency = 0.25
+Converted["_Menu"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Menu"].BorderSizePixel = 0
+Converted["_Menu"].Position = UDim2.new(0.5, 0, 0.625, 0)
+Converted["_Menu"].Size = UDim2.new(0.25, 0, 0.075000003, 0)
+Converted["_Menu"].Name = "Menu"
+Converted["_Menu"].Parent = Converted["_Options1"]
+
+Converted["_UICorner351"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner351"].Parent = Converted["_Menu"]
+
+Converted["_Bar"].Active = true
+Converted["_Bar"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Bar"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Bar"].BackgroundTransparency = 0.5
+Converted["_Bar"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Bar"].BorderSizePixel = 0
+Converted["_Bar"].Position = UDim2.new(0.5, 0, 0.949999988, 0)
+Converted["_Bar"].Size = UDim2.new(1, 0, 0.100000001, 0)
+Converted["_Bar"].Name = "Bar"
+Converted["_Bar"].Parent = Converted["_Plugins1"]
+
+Converted["_AddPlugin"].Font = Enum.Font.TitilliumWeb
+Converted["_AddPlugin"].Text = "Add Plugin"
+Converted["_AddPlugin"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_AddPlugin"].TextScaled = true
+Converted["_AddPlugin"].TextSize = 14
+Converted["_AddPlugin"].TextWrapped = true
+Converted["_AddPlugin"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_AddPlugin"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_AddPlugin"].BackgroundTransparency = 0.5
+Converted["_AddPlugin"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_AddPlugin"].BorderSizePixel = 0
+Converted["_AddPlugin"].Position = UDim2.new(0.25, 0, 0.5, 0)
+Converted["_AddPlugin"].Size = UDim2.new(0.449999988, 0, 0.800000012, 0)
+Converted["_AddPlugin"].Name = "AddPlugin"
+Converted["_AddPlugin"].Parent = Converted["_Bar"]
+
+Converted["_UICorner352"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner352"].Parent = Converted["_AddPlugin"]
+
+Converted["_Featured"].Font = Enum.Font.TitilliumWeb
+Converted["_Featured"].Text = "Featured Plugins"
+Converted["_Featured"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Featured"].TextScaled = true
+Converted["_Featured"].TextSize = 14
+Converted["_Featured"].TextWrapped = true
+Converted["_Featured"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Featured"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Featured"].BackgroundTransparency = 0.5
+Converted["_Featured"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Featured"].BorderSizePixel = 0
+Converted["_Featured"].Position = UDim2.new(0.75, 0, 0.5, 0)
+Converted["_Featured"].Size = UDim2.new(0.449999988, 0, 0.800000012, 0)
+Converted["_Featured"].Name = "Featured"
+Converted["_Featured"].Parent = Converted["_Bar"]
+
+Converted["_UICorner353"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner353"].Parent = Converted["_Featured"]
+
+Converted["_Saved"].Font = Enum.Font.TitilliumWeb
+Converted["_Saved"].Text = "View Saved Plugins"
+Converted["_Saved"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Saved"].TextScaled = true
+Converted["_Saved"].TextSize = 14
+Converted["_Saved"].TextWrapped = true
+Converted["_Saved"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Saved"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Saved"].BackgroundTransparency = 0.5
+Converted["_Saved"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Saved"].BorderSizePixel = 0
+Converted["_Saved"].Position = UDim2.new(0.5, 0, 0.499999642, 0)
+Converted["_Saved"].Size = UDim2.new(0.950000107, 0, 0.800000012, 0)
+Converted["_Saved"].Visible = false
+Converted["_Saved"].Name = "Saved"
+Converted["_Saved"].Parent = Converted["_Bar"]
+
+Converted["_UICorner354"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner354"].Parent = Converted["_Saved"]
+
+Converted["_Template6"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Template6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Template6"].BackgroundTransparency = 1
+Converted["_Template6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Template6"].BorderSizePixel = 0
+Converted["_Template6"].Size = UDim2.new(0.975000024, 0, 0.25, 0)
+Converted["_Template6"].Visible = false
+Converted["_Template6"].Name = "Template"
+Converted["_Template6"].Parent = Converted["_Plugins1"]
+
+Converted["_Container7"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Container7"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
+Converted["_Container7"].BackgroundTransparency = 0.125
+Converted["_Container7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Container7"].BorderSizePixel = 0
+Converted["_Container7"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Container7"].Size = UDim2.new(1, 0, 0.899999976, 0)
+Converted["_Container7"].Name = "Container"
+Converted["_Container7"].Parent = Converted["_Template6"]
+
+Converted["_Open3"].Font = Enum.Font.TitilliumWeb
+Converted["_Open3"].Text = "More Options"
+Converted["_Open3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Open3"].TextScaled = true
+Converted["_Open3"].TextWrapped = true
+Converted["_Open3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Open3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Open3"].BackgroundTransparency = 0.5
+Converted["_Open3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Open3"].BorderSizePixel = 0
+Converted["_Open3"].Position = UDim2.new(0.5, 0, 0.875, 0)
+Converted["_Open3"].Size = UDim2.new(1, 0, 0.25, 0)
+Converted["_Open3"].Name = "Open"
+Converted["_Open3"].Parent = Converted["_Container7"]
+
+Converted["_Title1"].Font = Enum.Font.TitilliumWeb
+Converted["_Title1"].RichText = true
+Converted["_Title1"].Text = "Plugin"
+Converted["_Title1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title1"].TextScaled = true
+Converted["_Title1"].TextSize = 14
+Converted["_Title1"].TextWrapped = true
+Converted["_Title1"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Title1"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Title1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Title1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title1"].BackgroundTransparency = 1
+Converted["_Title1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Title1"].BorderSizePixel = 0
+Converted["_Title1"].Position = UDim2.new(0.5, 0, 0.375000089, 0)
+Converted["_Title1"].Size = UDim2.new(1, 0, 0.750000179, 0)
+Converted["_Title1"].Name = "Title"
+Converted["_Title1"].Parent = Converted["_Container7"]
+
+Converted["_Description1"].Name = "Description"
+Converted["_Description1"].Parent = Converted["_Container7"]
+
+Converted["_Path"].Name = "Path"
+Converted["_Path"].Parent = Converted["_Container7"]
+
+Converted["_Menu1"].Name = "Menu"
+Converted["_Menu1"].Parent = Converted["_Container7"]
+
+Converted["_Featured1"].AutomaticCanvasSize = Enum.AutomaticSize.Y
+Converted["_Featured1"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_Featured1"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Featured1"].ScrollBarThickness = 6
+Converted["_Featured1"].ScrollingDirection = Enum.ScrollingDirection.Y
+Converted["_Featured1"].Active = true
+Converted["_Featured1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Featured1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Featured1"].BackgroundTransparency = 1
+Converted["_Featured1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Featured1"].BorderSizePixel = 0
+Converted["_Featured1"].Position = UDim2.new(0.5, 0, 0.449999988, 0)
+Converted["_Featured1"].Size = UDim2.new(1, 0, 0.899999976, 0)
+Converted["_Featured1"].Visible = false
+Converted["_Featured1"].Name = "Featured"
+Converted["_Featured1"].Parent = Converted["_Plugins1"]
+
+Converted["_UIListLayout2"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_UIListLayout2"].Parent = Converted["_Featured1"]
+
+Converted["_FTemplate"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_FTemplate"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_FTemplate"].BackgroundTransparency = 1
+Converted["_FTemplate"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_FTemplate"].BorderSizePixel = 0
+Converted["_FTemplate"].Size = UDim2.new(0.975000024, 0, 0.25, 0)
+Converted["_FTemplate"].Visible = false
+Converted["_FTemplate"].Name = "FTemplate"
+Converted["_FTemplate"].Parent = Converted["_Plugins1"]
+
+Converted["_Container8"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Container8"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
+Converted["_Container8"].BackgroundTransparency = 0.125
+Converted["_Container8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Container8"].BorderSizePixel = 0
+Converted["_Container8"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Container8"].Size = UDim2.new(1, 0, 0.899999976, 0)
+Converted["_Container8"].Name = "Container"
+Converted["_Container8"].Parent = Converted["_FTemplate"]
+
+Converted["_Save4"].Font = Enum.Font.TitilliumWeb
+Converted["_Save4"].Text = "Download"
+Converted["_Save4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Save4"].TextScaled = true
+Converted["_Save4"].TextWrapped = true
+Converted["_Save4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Save4"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Save4"].BackgroundTransparency = 0.5
+Converted["_Save4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Save4"].BorderSizePixel = 0
+Converted["_Save4"].Position = UDim2.new(0.5, 0, 0.875, 0)
+Converted["_Save4"].Size = UDim2.new(1, 0, 0.25, 0)
+Converted["_Save4"].Name = "Save"
+Converted["_Save4"].Parent = Converted["_Container8"]
+
+Converted["_Title2"].Font = Enum.Font.TitilliumWeb
+Converted["_Title2"].RichText = true
+Converted["_Title2"].Text = "Plugin"
+Converted["_Title2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title2"].TextScaled = true
+Converted["_Title2"].TextSize = 14
+Converted["_Title2"].TextWrapped = true
+Converted["_Title2"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Title2"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Title2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Title2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title2"].BackgroundTransparency = 1
+Converted["_Title2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Title2"].BorderSizePixel = 0
+Converted["_Title2"].Position = UDim2.new(0.5, 0, 0.375000089, 0)
+Converted["_Title2"].Size = UDim2.new(1, 0, 0.750000179, 0)
+Converted["_Title2"].Name = "Title"
+Converted["_Title2"].Parent = Converted["_Container8"]
+
+Converted["_URL"].Name = "URL"
+Converted["_URL"].Parent = Converted["_Container8"]
+
+Converted["_FileSystem1"].GroupTransparency = 1
+Converted["_FileSystem1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_FileSystem1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_FileSystem1"].BackgroundTransparency = 1
+Converted["_FileSystem1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_FileSystem1"].BorderSizePixel = 0
+Converted["_FileSystem1"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
+Converted["_FileSystem1"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
+Converted["_FileSystem1"].Visible = false
+Converted["_FileSystem1"].Name = "FileSystem"
+Converted["_FileSystem1"].Parent = Converted["_Menus"]
+
+Converted["_Message4"].Font = Enum.Font.TitilliumWeb
+Converted["_Message4"].Text = "Blank Page"
+Converted["_Message4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Message4"].TextScaled = true
+Converted["_Message4"].TextSize = 14
+Converted["_Message4"].TextWrapped = true
+Converted["_Message4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Message4"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Message4"].BackgroundTransparency = 0.5
+Converted["_Message4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Message4"].BorderSizePixel = 0
+Converted["_Message4"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Message4"].Size = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Message4"].Name = "Message"
+Converted["_Message4"].Parent = Converted["_FileSystem1"]
+
+Converted["_UICorner355"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner355"].Parent = Converted["_Message4"]
+
+Converted["_Explorer1"].GroupTransparency = 1
+Converted["_Explorer1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Explorer1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Explorer1"].BackgroundTransparency = 1
+Converted["_Explorer1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Explorer1"].BorderSizePixel = 0
+Converted["_Explorer1"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
+Converted["_Explorer1"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
+Converted["_Explorer1"].Visible = false
+Converted["_Explorer1"].Name = "Explorer"
+Converted["_Explorer1"].Parent = Converted["_Menus"]
+
+Converted["_Message5"].Font = Enum.Font.TitilliumWeb
+Converted["_Message5"].Text = "If you're seeing this, this is a bug."
+Converted["_Message5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Message5"].TextScaled = true
+Converted["_Message5"].TextSize = 14
+Converted["_Message5"].TextWrapped = true
+Converted["_Message5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Message5"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Message5"].BackgroundTransparency = 0.5
+Converted["_Message5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Message5"].BorderSizePixel = 0
+Converted["_Message5"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Message5"].Size = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Message5"].Name = "Message"
+Converted["_Message5"].Parent = Converted["_Explorer1"]
+
+Converted["_UICorner356"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner356"].Parent = Converted["_Message5"]
+
+Converted["_AimbotFFA1"].GroupTransparency = 1
+Converted["_AimbotFFA1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_AimbotFFA1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_AimbotFFA1"].BackgroundTransparency = 1
+Converted["_AimbotFFA1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_AimbotFFA1"].BorderSizePixel = 0
+Converted["_AimbotFFA1"].Position = UDim2.new(0.574999988, 0, 0.495000005, 0)
+Converted["_AimbotFFA1"].Size = UDim2.new(0.850000024, 0, 0.99000001, 0)
+Converted["_AimbotFFA1"].Visible = false
+Converted["_AimbotFFA1"].Name = "AimbotFFA"
+Converted["_AimbotFFA1"].Parent = Converted["_Menus"]
+
+Converted["_Input12"].Font = Enum.Font.TitilliumWeb
+Converted["_Input12"].PlaceholderText = "Player Name"
+Converted["_Input12"].Text = ""
+Converted["_Input12"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input12"].TextScaled = true
+Converted["_Input12"].TextSize = 14
+Converted["_Input12"].TextWrapped = true
+Converted["_Input12"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input12"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input12"].BackgroundTransparency = 0.5
+Converted["_Input12"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input12"].BorderSizePixel = 0
+Converted["_Input12"].Position = UDim2.new(0.5, 0, 0.925000012, 0)
+Converted["_Input12"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
+Converted["_Input12"].Name = "Input"
+Converted["_Input12"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner357"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner357"].Parent = Converted["_Input12"]
+
+Converted["_KillAll"].Font = Enum.Font.TitilliumWeb
+Converted["_KillAll"].Text = "Kill All"
+Converted["_KillAll"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_KillAll"].TextScaled = true
+Converted["_KillAll"].TextSize = 14
+Converted["_KillAll"].TextWrapped = true
+Converted["_KillAll"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_KillAll"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_KillAll"].BackgroundTransparency = 0.25
+Converted["_KillAll"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_KillAll"].BorderSizePixel = 0
+Converted["_KillAll"].Position = UDim2.new(0.349999994, 0, 0.675000012, 0)
+Converted["_KillAll"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_KillAll"].Name = "KillAll"
+Converted["_KillAll"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner358"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner358"].Parent = Converted["_KillAll"]
+
+Converted["_Bindable251"].Value = true
+Converted["_Bindable251"].Name = "Bindable"
+Converted["_Bindable251"].Parent = Converted["_KillAll"]
+
+Converted["_Aimbot"].Font = Enum.Font.TitilliumWeb
+Converted["_Aimbot"].Text = "Allow Aimbot"
+Converted["_Aimbot"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Aimbot"].TextScaled = true
+Converted["_Aimbot"].TextSize = 14
+Converted["_Aimbot"].TextWrapped = true
+Converted["_Aimbot"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Aimbot"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Aimbot"].BackgroundTransparency = 0.25
+Converted["_Aimbot"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Aimbot"].BorderSizePixel = 0
+Converted["_Aimbot"].Position = UDim2.new(0.649999976, 0, 0.800000012, 0)
+Converted["_Aimbot"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+Converted["_Aimbot"].Name = "Aimbot"
+Converted["_Aimbot"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner359"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner359"].Parent = Converted["_Aimbot"]
+
+Converted["_Bindable252"].Value = true
+Converted["_Bindable252"].Name = "Bindable"
+Converted["_Bindable252"].Parent = Converted["_Aimbot"]
+
+Converted["_Kill1"].Font = Enum.Font.TitilliumWeb
+Converted["_Kill1"].Text = "Kill"
+Converted["_Kill1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Kill1"].TextScaled = true
+Converted["_Kill1"].TextSize = 14
+Converted["_Kill1"].TextWrapped = true
+Converted["_Kill1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Kill1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Kill1"].BackgroundTransparency = 0.25
+Converted["_Kill1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Kill1"].BorderSizePixel = 0
+Converted["_Kill1"].Position = UDim2.new(0.349999994, 0, 0.800000012, 0)
+Converted["_Kill1"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+Converted["_Kill1"].Name = "Kill"
+Converted["_Kill1"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner360"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner360"].Parent = Converted["_Kill1"]
+
+Converted["_Bindable253"].Value = true
+Converted["_Bindable253"].Name = "Bindable"
+Converted["_Bindable253"].Parent = Converted["_Kill1"]
+
+Converted["_LKAll"].Font = Enum.Font.TitilliumWeb
+Converted["_LKAll"].Text = "Loopkill All"
+Converted["_LKAll"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_LKAll"].TextScaled = true
+Converted["_LKAll"].TextSize = 14
+Converted["_LKAll"].TextWrapped = true
+Converted["_LKAll"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_LKAll"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_LKAll"].BackgroundTransparency = 0.25
+Converted["_LKAll"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_LKAll"].BorderSizePixel = 0
+Converted["_LKAll"].Position = UDim2.new(0.649999976, 0, 0.675000012, 0)
+Converted["_LKAll"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_LKAll"].Name = "LKAll"
+Converted["_LKAll"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner361"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner361"].Parent = Converted["_LKAll"]
+
+Converted["_Bindable254"].Value = true
+Converted["_Bindable254"].Name = "Bindable"
+Converted["_Bindable254"].Parent = Converted["_LKAll"]
+
+Converted["_GunMods"].Font = Enum.Font.TitilliumWeb
+Converted["_GunMods"].Text = "Gun Mods [F]"
+Converted["_GunMods"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_GunMods"].TextScaled = true
+Converted["_GunMods"].TextSize = 14
+Converted["_GunMods"].TextWrapped = true
+Converted["_GunMods"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_GunMods"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_GunMods"].BackgroundTransparency = 0.25
+Converted["_GunMods"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_GunMods"].BorderSizePixel = 0
+Converted["_GunMods"].Position = UDim2.new(0.125, 0, 0.925000012, 0)
+Converted["_GunMods"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_GunMods"].Name = "GunMods"
+Converted["_GunMods"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner362"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner362"].Parent = Converted["_GunMods"]
+
+Converted["_Bindable255"].Value = true
+Converted["_Bindable255"].Name = "Bindable"
+Converted["_Bindable255"].Parent = Converted["_GunMods"]
+
+Converted["_NoGun"].Font = Enum.Font.TitilliumWeb
+Converted["_NoGun"].Text = "Remove Gun"
+Converted["_NoGun"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_NoGun"].TextScaled = true
+Converted["_NoGun"].TextSize = 14
+Converted["_NoGun"].TextWrapped = true
+Converted["_NoGun"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_NoGun"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_NoGun"].BackgroundTransparency = 0.25
+Converted["_NoGun"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_NoGun"].BorderSizePixel = 0
+Converted["_NoGun"].Position = UDim2.new(0.875, 0, 0.925000012, 0)
+Converted["_NoGun"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_NoGun"].Name = "NoGun"
+Converted["_NoGun"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner363"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner363"].Parent = Converted["_NoGun"]
+
+Converted["_Bindable256"].Value = true
+Converted["_Bindable256"].Name = "Bindable"
+Converted["_Bindable256"].Parent = Converted["_NoGun"]
+
+Converted["_Crash1"].Font = Enum.Font.TitilliumWeb
+Converted["_Crash1"].Text = "Crash Server"
+Converted["_Crash1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Crash1"].TextScaled = true
+Converted["_Crash1"].TextSize = 14
+Converted["_Crash1"].TextWrapped = true
+Converted["_Crash1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Crash1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Crash1"].BackgroundTransparency = 0.25
+Converted["_Crash1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Crash1"].BorderSizePixel = 0
+Converted["_Crash1"].Position = UDim2.new(0.125, 0, 0.800000012, 0)
+Converted["_Crash1"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Crash1"].Name = "Crash"
+Converted["_Crash1"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner364"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner364"].Parent = Converted["_Crash1"]
+
+Converted["_Bindable257"].Value = true
+Converted["_Bindable257"].Name = "Bindable"
+Converted["_Bindable257"].Parent = Converted["_Crash1"]
+
+Converted["_SuperCrash"].Font = Enum.Font.TitilliumWeb
+Converted["_SuperCrash"].Text = "Super Crash [F]"
+Converted["_SuperCrash"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_SuperCrash"].TextScaled = true
+Converted["_SuperCrash"].TextSize = 14
+Converted["_SuperCrash"].TextWrapped = true
+Converted["_SuperCrash"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_SuperCrash"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_SuperCrash"].BackgroundTransparency = 0.25
+Converted["_SuperCrash"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SuperCrash"].BorderSizePixel = 0
+Converted["_SuperCrash"].Position = UDim2.new(0.875, 0, 0.800000012, 0)
+Converted["_SuperCrash"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_SuperCrash"].Name = "SuperCrash"
+Converted["_SuperCrash"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner365"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner365"].Parent = Converted["_SuperCrash"]
+
+Converted["_Bindable258"].Value = true
+Converted["_Bindable258"].Name = "Bindable"
+Converted["_Bindable258"].Parent = Converted["_SuperCrash"]
+
+Converted["_MMenu1"].Font = Enum.Font.TitilliumWeb
+Converted["_MMenu1"].Text = "Open Mod Menu"
+Converted["_MMenu1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_MMenu1"].TextScaled = true
+Converted["_MMenu1"].TextSize = 14
+Converted["_MMenu1"].TextWrapped = true
+Converted["_MMenu1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_MMenu1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_MMenu1"].BackgroundTransparency = 0.25
+Converted["_MMenu1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MMenu1"].BorderSizePixel = 0
+Converted["_MMenu1"].Position = UDim2.new(0.400000006, 0, 0.150000006, 0)
+Converted["_MMenu1"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_MMenu1"].Name = "MMenu"
+Converted["_MMenu1"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner366"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner366"].Parent = Converted["_MMenu1"]
+
+Converted["_Bindable259"].Value = true
+Converted["_Bindable259"].Name = "Bindable"
+Converted["_Bindable259"].Parent = Converted["_MMenu1"]
+
+Converted["_NMenu"].Font = Enum.Font.TitilliumWeb
+Converted["_NMenu"].Text = "Close Mod Menu"
+Converted["_NMenu"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_NMenu"].TextScaled = true
+Converted["_NMenu"].TextSize = 14
+Converted["_NMenu"].TextWrapped = true
+Converted["_NMenu"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_NMenu"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_NMenu"].BackgroundTransparency = 0.25
+Converted["_NMenu"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_NMenu"].BorderSizePixel = 0
+Converted["_NMenu"].Position = UDim2.new(0.600000024, 0, 0.150000006, 0)
+Converted["_NMenu"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_NMenu"].Name = "NMenu"
+Converted["_NMenu"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner367"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner367"].Parent = Converted["_NMenu"]
+
+Converted["_Bindable260"].Value = true
+Converted["_Bindable260"].Name = "Bindable"
+Converted["_Bindable260"].Parent = Converted["_NMenu"]
+
+Converted["_Thorns"].Font = Enum.Font.TitilliumWeb
+Converted["_Thorns"].Text = "Thorns (God) [F]"
+Converted["_Thorns"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Thorns"].TextScaled = true
+Converted["_Thorns"].TextSize = 14
+Converted["_Thorns"].TextWrapped = true
+Converted["_Thorns"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Thorns"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Thorns"].BackgroundTransparency = 0.25
+Converted["_Thorns"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Thorns"].BorderSizePixel = 0
+Converted["_Thorns"].Position = UDim2.new(0.5, 0, 0.274999946, 0)
+Converted["_Thorns"].Size = UDim2.new(0.384999871, 0, 0.100000009, 0)
+Converted["_Thorns"].Name = "Thorns"
+Converted["_Thorns"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner368"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner368"].Parent = Converted["_Thorns"]
+
+Converted["_Bindable261"].Value = true
+Converted["_Bindable261"].Name = "Bindable"
+Converted["_Bindable261"].Parent = Converted["_Thorns"]
+
+Converted["_Whitelist1"].GroupTransparency = 1
+Converted["_Whitelist1"].Active = true
+Converted["_Whitelist1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Whitelist1"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
+Converted["_Whitelist1"].BackgroundTransparency = 0.25
+Converted["_Whitelist1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Whitelist1"].BorderSizePixel = 0
+Converted["_Whitelist1"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Whitelist1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Whitelist1"].Visible = false
+Converted["_Whitelist1"].ZIndex = 2
+Converted["_Whitelist1"].Name = "Whitelist"
+Converted["_Whitelist1"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_Close12"].Font = Enum.Font.Nunito
+Converted["_Close12"].Text = "X"
+Converted["_Close12"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close12"].TextScaled = true
+Converted["_Close12"].TextSize = 14
+Converted["_Close12"].TextWrapped = true
+Converted["_Close12"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Close12"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close12"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Close12"].BackgroundTransparency = 0.25
+Converted["_Close12"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close12"].BorderSizePixel = 0
+Converted["_Close12"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
+Converted["_Close12"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+Converted["_Close12"].Name = "Close"
+Converted["_Close12"].Parent = Converted["_Whitelist1"]
+
+Converted["_UICorner369"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner369"].Parent = Converted["_Close12"]
+
+Converted["_Bindable262"].Value = true
+Converted["_Bindable262"].Name = "Bindable"
+Converted["_Bindable262"].Parent = Converted["_Close12"]
+
+Converted["_Add1"].Font = Enum.Font.TitilliumWeb
+Converted["_Add1"].Text = "Add Whitelist"
+Converted["_Add1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Add1"].TextScaled = true
+Converted["_Add1"].TextSize = 14
+Converted["_Add1"].TextWrapped = true
+Converted["_Add1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Add1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Add1"].BackgroundTransparency = 0.25
+Converted["_Add1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Add1"].BorderSizePixel = 0
+Converted["_Add1"].Position = UDim2.new(0.224999994, 0, 0.925000012, 0)
+Converted["_Add1"].Size = UDim2.new(0.384999871, 0, 0.100000009, 0)
+Converted["_Add1"].Name = "Add"
+Converted["_Add1"].Parent = Converted["_Whitelist1"]
+
+Converted["_UICorner370"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner370"].Parent = Converted["_Add1"]
+
+Converted["_Bindable263"].Value = true
+Converted["_Bindable263"].Name = "Bindable"
+Converted["_Bindable263"].Parent = Converted["_Add1"]
+
+Converted["_Scroll6"].AutomaticCanvasSize = Enum.AutomaticSize.Y
+Converted["_Scroll6"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Scroll6"].ScrollBarThickness = 6
+Converted["_Scroll6"].ScrollingDirection = Enum.ScrollingDirection.Y
+Converted["_Scroll6"].Active = true
+Converted["_Scroll6"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Scroll6"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Scroll6"].BackgroundTransparency = 0.25
+Converted["_Scroll6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Scroll6"].BorderSizePixel = 0
+Converted["_Scroll6"].Position = UDim2.new(0.5, 0, 0.375, 0)
+Converted["_Scroll6"].Size = UDim2.new(0.949999988, 0, 0.699999988, 0)
+Converted["_Scroll6"].Name = "Scroll"
+Converted["_Scroll6"].Parent = Converted["_Whitelist1"]
+
+Converted["_List9"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_List9"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_List9"].Name = "List"
+Converted["_List9"].Parent = Converted["_Scroll6"]
+
+Converted["_Delete2"].Font = Enum.Font.TitilliumWeb
+Converted["_Delete2"].Text = "Remove Whitelist"
+Converted["_Delete2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Delete2"].TextScaled = true
+Converted["_Delete2"].TextSize = 14
+Converted["_Delete2"].TextWrapped = true
+Converted["_Delete2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Delete2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Delete2"].BackgroundTransparency = 0.25
+Converted["_Delete2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Delete2"].BorderSizePixel = 0
+Converted["_Delete2"].Position = UDim2.new(0.675000012, 0, 0.925000012, 0)
+Converted["_Delete2"].Size = UDim2.new(0.384999871, 0, 0.100000009, 0)
+Converted["_Delete2"].Name = "Delete"
+Converted["_Delete2"].Parent = Converted["_Whitelist1"]
+
+Converted["_UICorner371"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner371"].Parent = Converted["_Delete2"]
+
+Converted["_Bindable264"].Value = true
+Converted["_Bindable264"].Name = "Bindable"
+Converted["_Bindable264"].Parent = Converted["_Delete2"]
+
+Converted["_Input13"].Font = Enum.Font.TitilliumWeb
+Converted["_Input13"].PlaceholderText = "Player Name"
+Converted["_Input13"].Text = ""
+Converted["_Input13"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input13"].TextScaled = true
+Converted["_Input13"].TextSize = 14
+Converted["_Input13"].TextWrapped = true
+Converted["_Input13"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input13"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Input13"].BackgroundTransparency = 0.5
+Converted["_Input13"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input13"].BorderSizePixel = 0
+Converted["_Input13"].Position = UDim2.new(0.5, 0, 0.800000012, 0)
+Converted["_Input13"].Size = UDim2.new(0.5, 0, 0.100000001, 0)
+Converted["_Input13"].Name = "Input"
+Converted["_Input13"].Parent = Converted["_Whitelist1"]
+
+Converted["_UICorner372"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner372"].Parent = Converted["_Input13"]
+
+Converted["_Whitelist2"].Name = "Whitelist"
+Converted["_Whitelist2"].Parent = Converted["_Whitelist1"]
+
+Converted["_Template7"].Active = true
+Converted["_Template7"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Template7"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Template7"].BackgroundTransparency = 1
+Converted["_Template7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Template7"].BorderSizePixel = 0
+Converted["_Template7"].Size = UDim2.new(1, 0, 0.200000003, 0)
+Converted["_Template7"].Visible = false
+Converted["_Template7"].Name = "Template"
+Converted["_Template7"].Parent = Converted["_Whitelist1"]
+
+Converted["_Log8"].Font = Enum.Font.TitilliumWeb
+Converted["_Log8"].RichText = true
+Converted["_Log8"].Text = ""
+Converted["_Log8"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Log8"].TextScaled = true
+Converted["_Log8"].TextSize = 16
+Converted["_Log8"].TextWrapped = true
+Converted["_Log8"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Log8"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Log8"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Log8"].BackgroundColor3 = Color3.fromRGB(25.000000409781933, 25.000000409781933, 25.000000409781933)
+Converted["_Log8"].BackgroundTransparency = 0.5
+Converted["_Log8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Log8"].BorderSizePixel = 0
+Converted["_Log8"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Log8"].Selectable = false
+Converted["_Log8"].Size = UDim2.new(0.949999988, 0, 0.800000012, 0)
+Converted["_Log8"].Name = "Log"
+Converted["_Log8"].Parent = Converted["_Template7"]
+
+Converted["_UICorner373"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner373"].Parent = Converted["_Log8"]
+
+Converted["_WL2"].Font = Enum.Font.TitilliumWeb
+Converted["_WL2"].Text = "Whitelist"
+Converted["_WL2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_WL2"].TextScaled = true
+Converted["_WL2"].TextSize = 14
+Converted["_WL2"].TextWrapped = true
+Converted["_WL2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_WL2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_WL2"].BackgroundTransparency = 0.25
+Converted["_WL2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_WL2"].BorderSizePixel = 0
+Converted["_WL2"].Position = UDim2.new(0.5, 0, 0.400000006, 0)
+Converted["_WL2"].Size = UDim2.new(0.384999871, 0, 0.100000009, 0)
+Converted["_WL2"].Name = "WL"
+Converted["_WL2"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner374"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner374"].Parent = Converted["_WL2"]
+
+Converted["_Bindable265"].Value = true
+Converted["_Bindable265"].Name = "Bindable"
+Converted["_Bindable265"].Parent = Converted["_WL2"]
+
+Converted["_Mute1"].Font = Enum.Font.TitilliumWeb
+Converted["_Mute1"].Text = "Mute Music"
+Converted["_Mute1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Mute1"].TextScaled = true
+Converted["_Mute1"].TextSize = 14
+Converted["_Mute1"].TextWrapped = true
+Converted["_Mute1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Mute1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Mute1"].BackgroundTransparency = 0.25
+Converted["_Mute1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Mute1"].BorderSizePixel = 0
+Converted["_Mute1"].Position = UDim2.new(0.125, 0, 0.675000012, 0)
+Converted["_Mute1"].Size = UDim2.new(0.185000002, 0, 0.100000001, 0)
+Converted["_Mute1"].Name = "Mute"
+Converted["_Mute1"].Parent = Converted["_AimbotFFA1"]
+
+Converted["_UICorner375"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner375"].Parent = Converted["_Mute1"]
+
+Converted["_Bindable266"].Value = true
+Converted["_Bindable266"].Name = "Bindable"
+Converted["_Bindable266"].Parent = Converted["_Mute1"]
 
 Converted["_Time"].Font = Enum.Font.Ubuntu
 Converted["_Time"].Text = "12:30:00"
@@ -9723,20 +11613,21 @@ Converted["_Time"].ZIndex = 2
 Converted["_Time"].Name = "Time"
 Converted["_Time"].Parent = Converted["_Container1"]
 
-Converted["_UICorner318"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner318"].Parent = Converted["_Time"]
+Converted["_UICorner376"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner376"].Parent = Converted["_Time"]
 
-Converted["_List2"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_List2"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
-Converted["_List2"].BackgroundTransparency = 0.5
-Converted["_List2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_List2"].BorderSizePixel = 0
-Converted["_List2"].ClipsDescendants = true
-Converted["_List2"].Position = UDim2.new(0.075000003, 0, 0.495000005, 0)
-Converted["_List2"].Size = UDim2.new(0.150000006, 0, 0.985000014, 0)
-Converted["_List2"].ZIndex = 2
-Converted["_List2"].Name = "List"
-Converted["_List2"].Parent = Converted["_Container1"]
+Converted["_List10"].Active = true
+Converted["_List10"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_List10"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
+Converted["_List10"].BackgroundTransparency = 0.5
+Converted["_List10"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_List10"].BorderSizePixel = 0
+Converted["_List10"].ClipsDescendants = true
+Converted["_List10"].Position = UDim2.new(0.075000003, 0, 0.495000005, 0)
+Converted["_List10"].Size = UDim2.new(0.150000006, 0, 0.985000014, 0)
+Converted["_List10"].ZIndex = 2
+Converted["_List10"].Name = "List"
+Converted["_List10"].Parent = Converted["_Container1"]
 
 Converted["_PrisonLife2"].Font = Enum.Font.TitilliumWeb
 Converted["_PrisonLife2"].Text = "Prison Life"
@@ -9753,11 +11644,11 @@ Converted["_PrisonLife2"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_PrisonLife2"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_PrisonLife2"].Visible = false
 Converted["_PrisonLife2"].Name = "PrisonLife"
-Converted["_PrisonLife2"].Parent = Converted["_List2"]
+Converted["_PrisonLife2"].Parent = Converted["_List10"]
 
-Converted["_Bindable241"].Value = true
-Converted["_Bindable241"].Name = "Bindable"
-Converted["_Bindable241"].Parent = Converted["_PrisonLife2"]
+Converted["_Bindable267"].Value = true
+Converted["_Bindable267"].Name = "Bindable"
+Converted["_Bindable267"].Parent = Converted["_PrisonLife2"]
 
 Converted["_Overflow"].Name = "Overflow"
 Converted["_Overflow"].Parent = Converted["_PrisonLife2"]
@@ -9780,11 +11671,11 @@ Converted["_Universal1"].BorderSizePixel = 0
 Converted["_Universal1"].Position = UDim2.new(0.5, 0, 0.200000003, 0)
 Converted["_Universal1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_Universal1"].Name = "Universal"
-Converted["_Universal1"].Parent = Converted["_List2"]
+Converted["_Universal1"].Parent = Converted["_List10"]
 
-Converted["_Bindable242"].Value = true
-Converted["_Bindable242"].Name = "Bindable"
-Converted["_Bindable242"].Parent = Converted["_Universal1"]
+Converted["_Bindable268"].Value = true
+Converted["_Bindable268"].Name = "Bindable"
+Converted["_Bindable268"].Parent = Converted["_Universal1"]
 
 Converted["_Overflow1"].Name = "Overflow"
 Converted["_Overflow1"].Parent = Converted["_Universal1"]
@@ -9807,11 +11698,11 @@ Converted["_AntiCheat1"].BorderSizePixel = 0
 Converted["_AntiCheat1"].Position = UDim2.new(0.5, 0, 0.449999988, 0)
 Converted["_AntiCheat1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_AntiCheat1"].Name = "AntiCheat"
-Converted["_AntiCheat1"].Parent = Converted["_List2"]
+Converted["_AntiCheat1"].Parent = Converted["_List10"]
 
-Converted["_Bindable243"].Value = true
-Converted["_Bindable243"].Name = "Bindable"
-Converted["_Bindable243"].Parent = Converted["_AntiCheat1"]
+Converted["_Bindable269"].Value = true
+Converted["_Bindable269"].Name = "Bindable"
+Converted["_Bindable269"].Parent = Converted["_AntiCheat1"]
 
 Converted["_Overflow2"].Name = "Overflow"
 Converted["_Overflow2"].Parent = Converted["_AntiCheat1"]
@@ -9820,61 +11711,61 @@ Converted["_Tooltip2"].Value = "A Client-Side AntiCheat With Whitelist."
 Converted["_Tooltip2"].Name = "Tooltip"
 Converted["_Tooltip2"].Parent = Converted["_AntiCheat1"]
 
-Converted["_Chat3"].Font = Enum.Font.TitilliumWeb
-Converted["_Chat3"].Text = "Chat"
-Converted["_Chat3"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Chat3"].TextScaled = true
-Converted["_Chat3"].TextSize = 14
-Converted["_Chat3"].TextWrapped = true
-Converted["_Chat3"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Chat3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Chat3"].BackgroundTransparency = 0.5
-Converted["_Chat3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Chat3"].BorderSizePixel = 0
-Converted["_Chat3"].Position = UDim2.new(0.5, 0, 0.574999988, 0)
-Converted["_Chat3"].Size = UDim2.new(1, 0, 0.100000001, 0)
-Converted["_Chat3"].Visible = false
-Converted["_Chat3"].Name = "Chat"
-Converted["_Chat3"].Parent = Converted["_List2"]
+Converted["_Chat2"].Font = Enum.Font.TitilliumWeb
+Converted["_Chat2"].Text = "Chat"
+Converted["_Chat2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Chat2"].TextScaled = true
+Converted["_Chat2"].TextSize = 14
+Converted["_Chat2"].TextWrapped = true
+Converted["_Chat2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Chat2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Chat2"].BackgroundTransparency = 0.5
+Converted["_Chat2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Chat2"].BorderSizePixel = 0
+Converted["_Chat2"].Position = UDim2.new(0.5, 0, 0.574999988, 0)
+Converted["_Chat2"].Size = UDim2.new(1, 0, 0.100000001, 0)
+Converted["_Chat2"].Visible = false
+Converted["_Chat2"].Name = "Chat"
+Converted["_Chat2"].Parent = Converted["_List10"]
 
-Converted["_Bindable244"].Value = true
-Converted["_Bindable244"].Name = "Bindable"
-Converted["_Bindable244"].Parent = Converted["_Chat3"]
+Converted["_Bindable270"].Value = true
+Converted["_Bindable270"].Name = "Bindable"
+Converted["_Bindable270"].Parent = Converted["_Chat2"]
 
 Converted["_Overflow3"].Value = true
 Converted["_Overflow3"].Name = "Overflow"
-Converted["_Overflow3"].Parent = Converted["_Chat3"]
+Converted["_Overflow3"].Parent = Converted["_Chat2"]
 
 Converted["_Tooltip3"].Value = "Chat With Other AntiHub Users In Your Server."
 Converted["_Tooltip3"].Name = "Tooltip"
-Converted["_Tooltip3"].Parent = Converted["_Chat3"]
+Converted["_Tooltip3"].Parent = Converted["_Chat2"]
 
-Converted["_Players3"].Font = Enum.Font.TitilliumWeb
-Converted["_Players3"].Text = "Player List"
-Converted["_Players3"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Players3"].TextScaled = true
-Converted["_Players3"].TextSize = 14
-Converted["_Players3"].TextWrapped = true
-Converted["_Players3"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Players3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Players3"].BackgroundTransparency = 0.5
-Converted["_Players3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Players3"].BorderSizePixel = 0
-Converted["_Players3"].Position = UDim2.new(0.5, 0, 0.699999988, 0)
-Converted["_Players3"].Size = UDim2.new(1, 0, 0.100000001, 0)
-Converted["_Players3"].Name = "Players"
-Converted["_Players3"].Parent = Converted["_List2"]
+Converted["_Players2"].Font = Enum.Font.TitilliumWeb
+Converted["_Players2"].Text = "Player List"
+Converted["_Players2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Players2"].TextScaled = true
+Converted["_Players2"].TextSize = 14
+Converted["_Players2"].TextWrapped = true
+Converted["_Players2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Players2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Players2"].BackgroundTransparency = 0.5
+Converted["_Players2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Players2"].BorderSizePixel = 0
+Converted["_Players2"].Position = UDim2.new(0.5, 0, 0.699999988, 0)
+Converted["_Players2"].Size = UDim2.new(1, 0, 0.100000001, 0)
+Converted["_Players2"].Name = "Players"
+Converted["_Players2"].Parent = Converted["_List10"]
 
-Converted["_Bindable245"].Value = true
-Converted["_Bindable245"].Name = "Bindable"
-Converted["_Bindable245"].Parent = Converted["_Players3"]
+Converted["_Bindable271"].Value = true
+Converted["_Bindable271"].Name = "Bindable"
+Converted["_Bindable271"].Parent = Converted["_Players2"]
 
 Converted["_Overflow4"].Name = "Overflow"
-Converted["_Overflow4"].Parent = Converted["_Players3"]
+Converted["_Overflow4"].Parent = Converted["_Players2"]
 
 Converted["_Tooltip4"].Value = "A Player List With Information And Actions."
 Converted["_Tooltip4"].Name = "Tooltip"
-Converted["_Tooltip4"].Parent = Converted["_Players3"]
+Converted["_Tooltip4"].Parent = Converted["_Players2"]
 
 Converted["_Places1"].Font = Enum.Font.TitilliumWeb
 Converted["_Places1"].Text = "Places"
@@ -9890,11 +11781,11 @@ Converted["_Places1"].BorderSizePixel = 0
 Converted["_Places1"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_Places1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_Places1"].Name = "Places"
-Converted["_Places1"].Parent = Converted["_List2"]
+Converted["_Places1"].Parent = Converted["_List10"]
 
-Converted["_Bindable246"].Value = true
-Converted["_Bindable246"].Name = "Bindable"
-Converted["_Bindable246"].Parent = Converted["_Places1"]
+Converted["_Bindable272"].Value = true
+Converted["_Bindable272"].Name = "Bindable"
+Converted["_Bindable272"].Parent = Converted["_Places1"]
 
 Converted["_Overflow5"].Name = "Overflow"
 Converted["_Overflow5"].Parent = Converted["_Places1"]
@@ -9918,11 +11809,11 @@ Converted["_Washiez2"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_Washiez2"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_Washiez2"].Visible = false
 Converted["_Washiez2"].Name = "Washiez"
-Converted["_Washiez2"].Parent = Converted["_List2"]
+Converted["_Washiez2"].Parent = Converted["_List10"]
 
-Converted["_Bindable247"].Value = true
-Converted["_Bindable247"].Name = "Bindable"
-Converted["_Bindable247"].Parent = Converted["_Washiez2"]
+Converted["_Bindable273"].Value = true
+Converted["_Bindable273"].Name = "Bindable"
+Converted["_Bindable273"].Parent = Converted["_Washiez2"]
 
 Converted["_Overflow6"].Name = "Overflow"
 Converted["_Overflow6"].Parent = Converted["_Washiez2"]
@@ -9946,11 +11837,11 @@ Converted["_WashiezTC2"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_WashiezTC2"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_WashiezTC2"].Visible = false
 Converted["_WashiezTC2"].Name = "WashiezTC"
-Converted["_WashiezTC2"].Parent = Converted["_List2"]
+Converted["_WashiezTC2"].Parent = Converted["_List10"]
 
-Converted["_Bindable248"].Value = true
-Converted["_Bindable248"].Name = "Bindable"
-Converted["_Bindable248"].Parent = Converted["_WashiezTC2"]
+Converted["_Bindable274"].Value = true
+Converted["_Bindable274"].Name = "Bindable"
+Converted["_Bindable274"].Parent = Converted["_WashiezTC2"]
 
 Converted["_Overflow7"].Name = "Overflow"
 Converted["_Overflow7"].Parent = Converted["_WashiezTC2"]
@@ -9974,16 +11865,16 @@ Converted["_OilUp2"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_OilUp2"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_OilUp2"].Visible = false
 Converted["_OilUp2"].Name = "OilUp"
-Converted["_OilUp2"].Parent = Converted["_List2"]
+Converted["_OilUp2"].Parent = Converted["_List10"]
 
-Converted["_Bindable249"].Value = true
-Converted["_Bindable249"].Name = "Bindable"
-Converted["_Bindable249"].Parent = Converted["_OilUp2"]
+Converted["_Bindable275"].Value = true
+Converted["_Bindable275"].Name = "Bindable"
+Converted["_Bindable275"].Parent = Converted["_OilUp2"]
 
 Converted["_Overflow8"].Name = "Overflow"
 Converted["_Overflow8"].Parent = Converted["_OilUp2"]
 
-Converted["_Tooltip8"].Value = "The Menu For The Game \"Oil Up\""
+Converted["_Tooltip8"].Value = "The Menu For The Game \"Oil Up\" (BABEH OIL!)"
 Converted["_Tooltip8"].Name = "Tooltip"
 Converted["_Tooltip8"].Parent = Converted["_OilUp2"]
 
@@ -10002,11 +11893,11 @@ Converted["_WashiezOGTC1"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_WashiezOGTC1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_WashiezOGTC1"].Visible = false
 Converted["_WashiezOGTC1"].Name = "WashiezOGTC"
-Converted["_WashiezOGTC1"].Parent = Converted["_List2"]
+Converted["_WashiezOGTC1"].Parent = Converted["_List10"]
 
-Converted["_Bindable250"].Value = true
-Converted["_Bindable250"].Name = "Bindable"
-Converted["_Bindable250"].Parent = Converted["_WashiezOGTC1"]
+Converted["_Bindable276"].Value = true
+Converted["_Bindable276"].Name = "Bindable"
+Converted["_Bindable276"].Parent = Converted["_WashiezOGTC1"]
 
 Converted["_Overflow9"].Name = "Overflow"
 Converted["_Overflow9"].Parent = Converted["_WashiezOGTC1"]
@@ -10030,11 +11921,11 @@ Converted["_SCCSimulator2"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_SCCSimulator2"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_SCCSimulator2"].Visible = false
 Converted["_SCCSimulator2"].Name = "SCCSimulator"
-Converted["_SCCSimulator2"].Parent = Converted["_List2"]
+Converted["_SCCSimulator2"].Parent = Converted["_List10"]
 
-Converted["_Bindable251"].Value = true
-Converted["_Bindable251"].Name = "Bindable"
-Converted["_Bindable251"].Parent = Converted["_SCCSimulator2"]
+Converted["_Bindable277"].Value = true
+Converted["_Bindable277"].Name = "Bindable"
+Converted["_Bindable277"].Parent = Converted["_SCCSimulator2"]
 
 Converted["_Overflow10"].Name = "Overflow"
 Converted["_Overflow10"].Parent = Converted["_SCCSimulator2"]
@@ -10057,11 +11948,11 @@ Converted["_Utility1"].BorderSizePixel = 0
 Converted["_Utility1"].Position = UDim2.new(0.5, 0, 0.324999988, 0)
 Converted["_Utility1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_Utility1"].Name = "Utility"
-Converted["_Utility1"].Parent = Converted["_List2"]
+Converted["_Utility1"].Parent = Converted["_List10"]
 
-Converted["_Bindable252"].Value = true
-Converted["_Bindable252"].Name = "Bindable"
-Converted["_Bindable252"].Parent = Converted["_Utility1"]
+Converted["_Bindable278"].Value = true
+Converted["_Bindable278"].Name = "Bindable"
+Converted["_Bindable278"].Parent = Converted["_Utility1"]
 
 Converted["_Overflow11"].Name = "Overflow"
 Converted["_Overflow11"].Parent = Converted["_Utility1"]
@@ -10084,11 +11975,11 @@ Converted["_Logs6"].BorderSizePixel = 0
 Converted["_Logs6"].Position = UDim2.new(0.5, 0, 0.574999988, 0)
 Converted["_Logs6"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_Logs6"].Name = "Logs"
-Converted["_Logs6"].Parent = Converted["_List2"]
+Converted["_Logs6"].Parent = Converted["_List10"]
 
-Converted["_Bindable253"].Value = true
-Converted["_Bindable253"].Name = "Bindable"
-Converted["_Bindable253"].Parent = Converted["_Logs6"]
+Converted["_Bindable279"].Value = true
+Converted["_Bindable279"].Name = "Bindable"
+Converted["_Bindable279"].Parent = Converted["_Logs6"]
 
 Converted["_Overflow12"].Name = "Overflow"
 Converted["_Overflow12"].Parent = Converted["_Logs6"]
@@ -10112,11 +12003,11 @@ Converted["_Debug1"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_Debug1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_Debug1"].Visible = false
 Converted["_Debug1"].Name = "Debug"
-Converted["_Debug1"].Parent = Converted["_List2"]
+Converted["_Debug1"].Parent = Converted["_List10"]
 
-Converted["_Bindable254"].Value = true
-Converted["_Bindable254"].Name = "Bindable"
-Converted["_Bindable254"].Parent = Converted["_Debug1"]
+Converted["_Bindable280"].Value = true
+Converted["_Bindable280"].Name = "Bindable"
+Converted["_Bindable280"].Parent = Converted["_Debug1"]
 
 Converted["_Overflow13"].Value = true
 Converted["_Overflow13"].Name = "Overflow"
@@ -10141,11 +12032,11 @@ Converted["_ScriptBlox1"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_ScriptBlox1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_ScriptBlox1"].Visible = false
 Converted["_ScriptBlox1"].Name = "ScriptBlox"
-Converted["_ScriptBlox1"].Parent = Converted["_List2"]
+Converted["_ScriptBlox1"].Parent = Converted["_List10"]
 
-Converted["_Bindable255"].Value = true
-Converted["_Bindable255"].Name = "Bindable"
-Converted["_Bindable255"].Parent = Converted["_ScriptBlox1"]
+Converted["_Bindable281"].Value = true
+Converted["_Bindable281"].Name = "Bindable"
+Converted["_Bindable281"].Parent = Converted["_ScriptBlox1"]
 
 Converted["_Overflow14"].Value = true
 Converted["_Overflow14"].Name = "Overflow"
@@ -10170,11 +12061,11 @@ Converted["_Stats"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_Stats"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_Stats"].Visible = false
 Converted["_Stats"].Name = "Stats"
-Converted["_Stats"].Parent = Converted["_List2"]
+Converted["_Stats"].Parent = Converted["_List10"]
 
-Converted["_Bindable256"].Value = true
-Converted["_Bindable256"].Name = "Bindable"
-Converted["_Bindable256"].Parent = Converted["_Stats"]
+Converted["_Bindable282"].Value = true
+Converted["_Bindable282"].Name = "Bindable"
+Converted["_Bindable282"].Parent = Converted["_Stats"]
 
 Converted["_Overflow15"].Value = true
 Converted["_Overflow15"].Name = "Overflow"
@@ -10199,11 +12090,11 @@ Converted["_Keybinds1"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_Keybinds1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_Keybinds1"].Visible = false
 Converted["_Keybinds1"].Name = "Keybinds"
-Converted["_Keybinds1"].Parent = Converted["_List2"]
+Converted["_Keybinds1"].Parent = Converted["_List10"]
 
-Converted["_Bindable257"].Value = true
-Converted["_Bindable257"].Name = "Bindable"
-Converted["_Bindable257"].Parent = Converted["_Keybinds1"]
+Converted["_Bindable283"].Value = true
+Converted["_Bindable283"].Name = "Bindable"
+Converted["_Bindable283"].Parent = Converted["_Keybinds1"]
 
 Converted["_Overflow16"].Value = true
 Converted["_Overflow16"].Name = "Overflow"
@@ -10228,11 +12119,11 @@ Converted["_AntiKick1"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_AntiKick1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_AntiKick1"].Visible = false
 Converted["_AntiKick1"].Name = "AntiKick"
-Converted["_AntiKick1"].Parent = Converted["_List2"]
+Converted["_AntiKick1"].Parent = Converted["_List10"]
 
-Converted["_Bindable258"].Value = true
-Converted["_Bindable258"].Name = "Bindable"
-Converted["_Bindable258"].Parent = Converted["_AntiKick1"]
+Converted["_Bindable284"].Value = true
+Converted["_Bindable284"].Name = "Bindable"
+Converted["_Bindable284"].Parent = Converted["_AntiKick1"]
 
 Converted["_Overflow17"].Value = true
 Converted["_Overflow17"].Name = "Overflow"
@@ -10257,11 +12148,11 @@ Converted["_None1"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_None1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_None1"].Visible = false
 Converted["_None1"].Name = "None"
-Converted["_None1"].Parent = Converted["_List2"]
+Converted["_None1"].Parent = Converted["_List10"]
 
-Converted["_Bindable259"].Value = true
-Converted["_Bindable259"].Name = "Bindable"
-Converted["_Bindable259"].Parent = Converted["_None1"]
+Converted["_Bindable285"].Value = true
+Converted["_Bindable285"].Name = "Bindable"
+Converted["_Bindable285"].Parent = Converted["_None1"]
 
 Converted["_Overflow18"].Value = true
 Converted["_Overflow18"].Name = "Overflow"
@@ -10286,11 +12177,11 @@ Converted["_Credits2"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_Credits2"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_Credits2"].Visible = false
 Converted["_Credits2"].Name = "Credits"
-Converted["_Credits2"].Parent = Converted["_List2"]
+Converted["_Credits2"].Parent = Converted["_List10"]
 
-Converted["_Bindable260"].Value = true
-Converted["_Bindable260"].Name = "Bindable"
-Converted["_Bindable260"].Parent = Converted["_Credits2"]
+Converted["_Bindable286"].Value = true
+Converted["_Bindable286"].Name = "Bindable"
+Converted["_Bindable286"].Parent = Converted["_Credits2"]
 
 Converted["_Overflow19"].Value = true
 Converted["_Overflow19"].Name = "Overflow"
@@ -10315,11 +12206,11 @@ Converted["_Trolling1"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_Trolling1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_Trolling1"].Visible = false
 Converted["_Trolling1"].Name = "Trolling"
-Converted["_Trolling1"].Parent = Converted["_List2"]
+Converted["_Trolling1"].Parent = Converted["_List10"]
 
-Converted["_Bindable261"].Value = true
-Converted["_Bindable261"].Name = "Bindable"
-Converted["_Bindable261"].Parent = Converted["_Trolling1"]
+Converted["_Bindable287"].Value = true
+Converted["_Bindable287"].Name = "Bindable"
+Converted["_Bindable287"].Parent = Converted["_Trolling1"]
 
 Converted["_Overflow20"].Value = true
 Converted["_Overflow20"].Name = "Overflow"
@@ -10344,11 +12235,11 @@ Converted["_Commands1"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_Commands1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_Commands1"].Visible = false
 Converted["_Commands1"].Name = "Commands"
-Converted["_Commands1"].Parent = Converted["_List2"]
+Converted["_Commands1"].Parent = Converted["_List10"]
 
-Converted["_Bindable262"].Value = true
-Converted["_Bindable262"].Name = "Bindable"
-Converted["_Bindable262"].Parent = Converted["_Commands1"]
+Converted["_Bindable288"].Value = true
+Converted["_Bindable288"].Name = "Bindable"
+Converted["_Bindable288"].Parent = Converted["_Commands1"]
 
 Converted["_Overflow21"].Value = true
 Converted["_Overflow21"].Name = "Overflow"
@@ -10373,11 +12264,11 @@ Converted["_Misc1"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_Misc1"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_Misc1"].Visible = false
 Converted["_Misc1"].Name = "Misc"
-Converted["_Misc1"].Parent = Converted["_List2"]
+Converted["_Misc1"].Parent = Converted["_List10"]
 
-Converted["_Bindable263"].Value = true
-Converted["_Bindable263"].Name = "Bindable"
-Converted["_Bindable263"].Parent = Converted["_Misc1"]
+Converted["_Bindable289"].Value = true
+Converted["_Bindable289"].Name = "Bindable"
+Converted["_Bindable289"].Parent = Converted["_Misc1"]
 
 Converted["_Overflow22"].Value = true
 Converted["_Overflow22"].Name = "Overflow"
@@ -10402,11 +12293,11 @@ Converted["_MM22"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_MM22"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_MM22"].Visible = false
 Converted["_MM22"].Name = "MM2"
-Converted["_MM22"].Parent = Converted["_List2"]
+Converted["_MM22"].Parent = Converted["_List10"]
 
-Converted["_Bindable264"].Value = true
-Converted["_Bindable264"].Name = "Bindable"
-Converted["_Bindable264"].Parent = Converted["_MM22"]
+Converted["_Bindable290"].Value = true
+Converted["_Bindable290"].Name = "Bindable"
+Converted["_Bindable290"].Parent = Converted["_MM22"]
 
 Converted["_Overflow23"].Name = "Overflow"
 Converted["_Overflow23"].Parent = Converted["_MM22"]
@@ -10430,18 +12321,102 @@ Converted["_WashiezRank2"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_WashiezRank2"].Size = UDim2.new(1, 0, 0.100000001, 0)
 Converted["_WashiezRank2"].Visible = false
 Converted["_WashiezRank2"].Name = "WashiezRank"
-Converted["_WashiezRank2"].Parent = Converted["_List2"]
+Converted["_WashiezRank2"].Parent = Converted["_List10"]
 
-Converted["_Bindable265"].Value = true
-Converted["_Bindable265"].Name = "Bindable"
-Converted["_Bindable265"].Parent = Converted["_WashiezRank2"]
+Converted["_Bindable291"].Value = true
+Converted["_Bindable291"].Name = "Bindable"
+Converted["_Bindable291"].Parent = Converted["_WashiezRank2"]
 
 Converted["_Overflow24"].Name = "Overflow"
 Converted["_Overflow24"].Parent = Converted["_WashiezRank2"]
 
-Converted["_Tooltip24"].Value = "The Menu For The Game \"Murder Mystery 2\""
+Converted["_Tooltip24"].Value = "The Menu For The Game \"Washiez Application Center\""
 Converted["_Tooltip24"].Name = "Tooltip"
 Converted["_Tooltip24"].Parent = Converted["_WashiezRank2"]
+
+Converted["_AimbotFFA2"].Font = Enum.Font.TitilliumWeb
+Converted["_AimbotFFA2"].Text = "Aimbot FFA"
+Converted["_AimbotFFA2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_AimbotFFA2"].TextScaled = true
+Converted["_AimbotFFA2"].TextSize = 14
+Converted["_AimbotFFA2"].TextWrapped = true
+Converted["_AimbotFFA2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_AimbotFFA2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_AimbotFFA2"].BackgroundTransparency = 0.5
+Converted["_AimbotFFA2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_AimbotFFA2"].BorderSizePixel = 0
+Converted["_AimbotFFA2"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
+Converted["_AimbotFFA2"].Size = UDim2.new(1, 0, 0.100000001, 0)
+Converted["_AimbotFFA2"].Visible = false
+Converted["_AimbotFFA2"].Name = "AimbotFFA"
+Converted["_AimbotFFA2"].Parent = Converted["_List10"]
+
+Converted["_Bindable292"].Value = true
+Converted["_Bindable292"].Name = "Bindable"
+Converted["_Bindable292"].Parent = Converted["_AimbotFFA2"]
+
+Converted["_Overflow25"].Name = "Overflow"
+Converted["_Overflow25"].Parent = Converted["_AimbotFFA2"]
+
+Converted["_Tooltip25"].Value = "The Menu For The Game \"Aimbot FFA\""
+Converted["_Tooltip25"].Name = "Tooltip"
+Converted["_Tooltip25"].Parent = Converted["_AimbotFFA2"]
+
+Converted["_Explorer2"].Font = Enum.Font.TitilliumWeb
+Converted["_Explorer2"].Text = "Aimbot FFA"
+Converted["_Explorer2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Explorer2"].TextScaled = true
+Converted["_Explorer2"].TextSize = 14
+Converted["_Explorer2"].TextWrapped = true
+Converted["_Explorer2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Explorer2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Explorer2"].BackgroundTransparency = 0.5
+Converted["_Explorer2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Explorer2"].BorderSizePixel = 0
+Converted["_Explorer2"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
+Converted["_Explorer2"].Size = UDim2.new(1, 0, 0.100000001, 0)
+Converted["_Explorer2"].Visible = false
+Converted["_Explorer2"].Name = "Explorer"
+Converted["_Explorer2"].Parent = Converted["_List10"]
+
+Converted["_Bindable293"].Name = "Bindable"
+Converted["_Bindable293"].Parent = Converted["_Explorer2"]
+
+Converted["_Overflow26"].Value = true
+Converted["_Overflow26"].Name = "Overflow"
+Converted["_Overflow26"].Parent = Converted["_Explorer2"]
+
+Converted["_Tooltip26"].Value = "An Instance Explorer Like DEX."
+Converted["_Tooltip26"].Name = "Tooltip"
+Converted["_Tooltip26"].Parent = Converted["_Explorer2"]
+
+Converted["_Plugins2"].Font = Enum.Font.TitilliumWeb
+Converted["_Plugins2"].Text = "I'm just forced to add this"
+Converted["_Plugins2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Plugins2"].TextScaled = true
+Converted["_Plugins2"].TextSize = 14
+Converted["_Plugins2"].TextWrapped = true
+Converted["_Plugins2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Plugins2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Plugins2"].BackgroundTransparency = 0.5
+Converted["_Plugins2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Plugins2"].BorderSizePixel = 0
+Converted["_Plugins2"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
+Converted["_Plugins2"].Size = UDim2.new(1, 0, 0.100000001, 0)
+Converted["_Plugins2"].Visible = false
+Converted["_Plugins2"].Name = "Plugins"
+Converted["_Plugins2"].Parent = Converted["_List10"]
+
+Converted["_Bindable294"].Name = "Bindable"
+Converted["_Bindable294"].Parent = Converted["_Plugins2"]
+
+Converted["_Overflow27"].Value = true
+Converted["_Overflow27"].Name = "Overflow"
+Converted["_Overflow27"].Parent = Converted["_Plugins2"]
+
+Converted["_Tooltip27"].Value = "A Way To Add And Remove Plugins In AntiHub."
+Converted["_Tooltip27"].Name = "Tooltip"
+Converted["_Tooltip27"].Parent = Converted["_Plugins2"]
 
 Converted["_Player1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Player1"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
@@ -10463,8 +12438,8 @@ Converted["_Settings"].Size = UDim2.new(0.324999988, 0, 0.800000012, 0)
 Converted["_Settings"].Name = "Settings"
 Converted["_Settings"].Parent = Converted["_Player1"]
 
-Converted["_UICorner319"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner319"].Parent = Converted["_Settings"]
+Converted["_UICorner377"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner377"].Parent = Converted["_Settings"]
 
 Converted["_KeepShapePlz"].AspectRatio = 1.0068495273590088
 Converted["_KeepShapePlz"].Name = "KeepShapePlz"
@@ -10476,13 +12451,12 @@ Converted["_Profile"].BackgroundTransparency = 1
 Converted["_Profile"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Profile"].BorderSizePixel = 0
 Converted["_Profile"].Position = UDim2.new(0.300000012, 0, 0.5, 0)
-Converted["_Profile"].Selectable = false
 Converted["_Profile"].Size = UDim2.new(0.349999994, 0, 0.850000024, 0)
 Converted["_Profile"].Name = "Profile"
 Converted["_Profile"].Parent = Converted["_Player1"]
 
-Converted["_UICorner320"].CornerRadius = UDim.new(1, 0)
-Converted["_UICorner320"].Parent = Converted["_Profile"]
+Converted["_UICorner378"].CornerRadius = UDim.new(1, 0)
+Converted["_UICorner378"].Parent = Converted["_Profile"]
 
 Converted["_Outline"].Color = Color3.fromRGB(255, 255, 255)
 Converted["_Outline"].Name = "Outline"
@@ -10519,27 +12493,27 @@ Converted["_Keybind"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Keybind"].Name = "Keybind"
 Converted["_Keybind"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner321"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner321"].Parent = Converted["_Keybind"]
+Converted["_UICorner379"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner379"].Parent = Converted["_Keybind"]
 
-Converted["_Close11"].Font = Enum.Font.Nunito
-Converted["_Close11"].Text = "X"
-Converted["_Close11"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close11"].TextScaled = true
-Converted["_Close11"].TextSize = 14
-Converted["_Close11"].TextWrapped = true
-Converted["_Close11"].TextYAlignment = Enum.TextYAlignment.Bottom
-Converted["_Close11"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close11"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
-Converted["_Close11"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close11"].BorderSizePixel = 0
-Converted["_Close11"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
-Converted["_Close11"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
-Converted["_Close11"].Name = "Close"
-Converted["_Close11"].Parent = Converted["_Settings1"]
+Converted["_Close13"].Font = Enum.Font.Nunito
+Converted["_Close13"].Text = "X"
+Converted["_Close13"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close13"].TextScaled = true
+Converted["_Close13"].TextSize = 14
+Converted["_Close13"].TextWrapped = true
+Converted["_Close13"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Close13"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close13"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Close13"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close13"].BorderSizePixel = 0
+Converted["_Close13"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
+Converted["_Close13"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+Converted["_Close13"].Name = "Close"
+Converted["_Close13"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner322"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner322"].Parent = Converted["_Close11"]
+Converted["_UICorner380"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner380"].Parent = Converted["_Close13"]
 
 Converted["_ResetKeybind"].Font = Enum.Font.TitilliumWeb
 Converted["_ResetKeybind"].Text = "Reset keybind"
@@ -10556,8 +12530,8 @@ Converted["_ResetKeybind"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_ResetKeybind"].Name = "ResetKeybind"
 Converted["_ResetKeybind"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner323"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner323"].Parent = Converted["_ResetKeybind"]
+Converted["_UICorner381"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner381"].Parent = Converted["_ResetKeybind"]
 
 Converted["_NotifyJoin"].Font = Enum.Font.TitilliumWeb
 Converted["_NotifyJoin"].Text = "Notify AntiHub Join [T]"
@@ -10571,11 +12545,12 @@ Converted["_NotifyJoin"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_NotifyJoin"].BorderSizePixel = 0
 Converted["_NotifyJoin"].Position = UDim2.new(0.5, 0, 0.770150125, 0)
 Converted["_NotifyJoin"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_NotifyJoin"].Visible = false
 Converted["_NotifyJoin"].Name = "NotifyJoin"
 Converted["_NotifyJoin"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner324"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner324"].Parent = Converted["_NotifyJoin"]
+Converted["_UICorner382"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner382"].Parent = Converted["_NotifyJoin"]
 
 Converted["_NotifyUnread"].Font = Enum.Font.TitilliumWeb
 Converted["_NotifyUnread"].Text = "Notify Unread [T]"
@@ -10587,13 +12562,14 @@ Converted["_NotifyUnread"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_NotifyUnread"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_NotifyUnread"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_NotifyUnread"].BorderSizePixel = 0
-Converted["_NotifyUnread"].Position = UDim2.new(0.175000012, 0, 0.770150125, 0)
+Converted["_NotifyUnread"].Position = UDim2.new(0.824999988, 0, 0.769999981, 0)
 Converted["_NotifyUnread"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_NotifyUnread"].Visible = false
 Converted["_NotifyUnread"].Name = "NotifyUnread"
 Converted["_NotifyUnread"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner325"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner325"].Parent = Converted["_NotifyUnread"]
+Converted["_UICorner383"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner383"].Parent = Converted["_NotifyUnread"]
 
 Converted["_SaveConfig"].Font = Enum.Font.TitilliumWeb
 Converted["_SaveConfig"].Text = "Save"
@@ -10610,24 +12586,24 @@ Converted["_SaveConfig"].Size = UDim2.new(0.174999997, 0, 0.100000001, 0)
 Converted["_SaveConfig"].Name = "SaveConfig"
 Converted["_SaveConfig"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner326"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner326"].Parent = Converted["_SaveConfig"]
+Converted["_UICorner384"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner384"].Parent = Converted["_SaveConfig"]
 
-Converted["_Status1"].Font = Enum.Font.TitilliumWeb
-Converted["_Status1"].RichText = true
-Converted["_Status1"].Text = "Text Added By Script So No Error"
-Converted["_Status1"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
-Converted["_Status1"].TextScaled = true
-Converted["_Status1"].TextSize = 14
-Converted["_Status1"].TextWrapped = true
-Converted["_Status1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Status1"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 50.000000819563866, 50.000000819563866)
-Converted["_Status1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Status1"].BorderSizePixel = 0
-Converted["_Status1"].Position = UDim2.new(0.800000012, 0, 0.939999998, 0)
-Converted["_Status1"].Size = UDim2.new(0.25, 0, 0.109999999, 0)
-Converted["_Status1"].Name = "Status"
-Converted["_Status1"].Parent = Converted["_Settings1"]
+Converted["_Status2"].Font = Enum.Font.TitilliumWeb
+Converted["_Status2"].RichText = true
+Converted["_Status2"].Text = "Text Added By Script So No Error"
+Converted["_Status2"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_Status2"].TextScaled = true
+Converted["_Status2"].TextSize = 14
+Converted["_Status2"].TextWrapped = true
+Converted["_Status2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Status2"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 50.000000819563866, 50.000000819563866)
+Converted["_Status2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Status2"].BorderSizePixel = 0
+Converted["_Status2"].Position = UDim2.new(0.800000012, 0, 0.939999998, 0)
+Converted["_Status2"].Size = UDim2.new(0.25, 0, 0.109999999, 0)
+Converted["_Status2"].Name = "Status"
+Converted["_Status2"].Parent = Converted["_Settings1"]
 
 Converted["_Version"].Font = Enum.Font.Ubuntu
 Converted["_Version"].Text = "Version: 69.420"
@@ -10647,8 +12623,8 @@ Converted["_Version"].Size = UDim2.new(0.200000003, 0, 0.0500000007, 0)
 Converted["_Version"].Name = "Version"
 Converted["_Version"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner327"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner327"].Parent = Converted["_Version"]
+Converted["_UICorner385"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner385"].Parent = Converted["_Version"]
 
 Converted["_Unload"].Font = Enum.Font.TitilliumWeb
 Converted["_Unload"].Text = "Unload"
@@ -10665,8 +12641,8 @@ Converted["_Unload"].Size = UDim2.new(0.174999997, 0, 0.100000001, 0)
 Converted["_Unload"].Name = "Unload"
 Converted["_Unload"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner328"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner328"].Parent = Converted["_Unload"]
+Converted["_UICorner386"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner386"].Parent = Converted["_Unload"]
 
 Converted["_DeleteConfig"].Font = Enum.Font.TitilliumWeb
 Converted["_DeleteConfig"].Text = "Delete"
@@ -10683,8 +12659,8 @@ Converted["_DeleteConfig"].Size = UDim2.new(0.174999997, 0, 0.100000001, 0)
 Converted["_DeleteConfig"].Name = "DeleteConfig"
 Converted["_DeleteConfig"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner329"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner329"].Parent = Converted["_DeleteConfig"]
+Converted["_UICorner387"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner387"].Parent = Converted["_DeleteConfig"]
 
 Converted["_Frame"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
@@ -10711,8 +12687,8 @@ Converted["_LoadConfig"].Visible = false
 Converted["_LoadConfig"].Name = "LoadConfig"
 Converted["_LoadConfig"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner330"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner330"].Parent = Converted["_LoadConfig"]
+Converted["_UICorner388"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner388"].Parent = Converted["_LoadConfig"]
 
 Converted["_Toast1"].Font = Enum.Font.TitilliumWeb
 Converted["_Toast1"].Text = "Notify Via Toast [T]"
@@ -10729,12 +12705,12 @@ Converted["_Toast1"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Toast1"].Name = "Toast"
 Converted["_Toast1"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner331"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner331"].Parent = Converted["_Toast1"]
+Converted["_UICorner389"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner389"].Parent = Converted["_Toast1"]
 
-Converted["_Bindable266"].Value = true
-Converted["_Bindable266"].Name = "Bindable"
-Converted["_Bindable266"].Parent = Converted["_Toast1"]
+Converted["_Bindable295"].Value = true
+Converted["_Bindable295"].Name = "Bindable"
+Converted["_Bindable295"].Parent = Converted["_Toast1"]
 
 Converted["_Tween"].Font = Enum.Font.TitilliumWeb
 Converted["_Tween"].Text = "Tween TP [F]"
@@ -10751,12 +12727,12 @@ Converted["_Tween"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Tween"].Name = "Tween"
 Converted["_Tween"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner332"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner332"].Parent = Converted["_Tween"]
+Converted["_UICorner390"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner390"].Parent = Converted["_Tween"]
 
-Converted["_Bindable267"].Value = true
-Converted["_Bindable267"].Name = "Bindable"
-Converted["_Bindable267"].Parent = Converted["_Tween"]
+Converted["_Bindable296"].Value = true
+Converted["_Bindable296"].Name = "Bindable"
+Converted["_Bindable296"].Parent = Converted["_Tween"]
 
 Converted["_TSPS"].Font = Enum.Font.TitilliumWeb
 Converted["_TSPS"].PlaceholderText = "Tween SPS (25)"
@@ -10774,40 +12750,100 @@ Converted["_TSPS"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_TSPS"].Name = "TSPS"
 Converted["_TSPS"].Parent = Converted["_Settings1"]
 
-Converted["_UICorner333"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner333"].Parent = Converted["_TSPS"]
+Converted["_UICorner391"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner391"].Parent = Converted["_TSPS"]
 
-Converted["_Overflow25"].GroupTransparency = 1
-Converted["_Overflow25"].Active = true
-Converted["_Overflow25"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Overflow25"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
-Converted["_Overflow25"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Overflow25"].BorderSizePixel = 0
-Converted["_Overflow25"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Overflow25"].Size = UDim2.new(1, 0, 1.04999995, 0)
-Converted["_Overflow25"].Visible = false
-Converted["_Overflow25"].ZIndex = 4
-Converted["_Overflow25"].Name = "Overflow"
-Converted["_Overflow25"].Parent = Converted["_Container1"]
+Converted["_FSType"].Font = Enum.Font.TitilliumWeb
+Converted["_FSType"].Text = "FileSystem: Unix"
+Converted["_FSType"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_FSType"].TextScaled = true
+Converted["_FSType"].TextSize = 14
+Converted["_FSType"].TextWrapped = true
+Converted["_FSType"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_FSType"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_FSType"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_FSType"].BorderSizePixel = 0
+Converted["_FSType"].Position = UDim2.new(0.824999988, 0, 0.375, 0)
+Converted["_FSType"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
+Converted["_FSType"].Name = "FSType"
+Converted["_FSType"].Parent = Converted["_Settings1"]
 
-Converted["_Close12"].Font = Enum.Font.Nunito
-Converted["_Close12"].Text = "X"
-Converted["_Close12"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close12"].TextScaled = true
-Converted["_Close12"].TextSize = 14
-Converted["_Close12"].TextWrapped = true
-Converted["_Close12"].TextYAlignment = Enum.TextYAlignment.Bottom
-Converted["_Close12"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close12"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
-Converted["_Close12"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close12"].BorderSizePixel = 0
-Converted["_Close12"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
-Converted["_Close12"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
-Converted["_Close12"].Name = "Close"
-Converted["_Close12"].Parent = Converted["_Overflow25"]
+Converted["_UICorner392"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner392"].Parent = Converted["_FSType"]
 
-Converted["_UICorner334"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner334"].Parent = Converted["_Close12"]
+Converted["_Bindable297"].Value = true
+Converted["_Bindable297"].Name = "Bindable"
+Converted["_Bindable297"].Parent = Converted["_FSType"]
+
+Converted["_ColorMode"].Font = Enum.Font.TitilliumWeb
+Converted["_ColorMode"].Text = "Dark Mode"
+Converted["_ColorMode"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ColorMode"].TextScaled = true
+Converted["_ColorMode"].TextSize = 14
+Converted["_ColorMode"].TextWrapped = true
+Converted["_ColorMode"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_ColorMode"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_ColorMode"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ColorMode"].BorderSizePixel = 0
+Converted["_ColorMode"].Position = UDim2.new(0.824999988, 0, 0.769999981, 0)
+Converted["_ColorMode"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_ColorMode"].Visible = false
+Converted["_ColorMode"].Name = "ColorMode"
+Converted["_ColorMode"].Parent = Converted["_Settings1"]
+
+Converted["_UICorner393"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner393"].Parent = Converted["_ColorMode"]
+
+Converted["_LSpeed"].Font = Enum.Font.TitilliumWeb
+Converted["_LSpeed"].PlaceholderText = "Loop Cooldown (0.1)"
+Converted["_LSpeed"].Text = ""
+Converted["_LSpeed"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_LSpeed"].TextScaled = true
+Converted["_LSpeed"].TextSize = 14
+Converted["_LSpeed"].TextWrapped = true
+Converted["_LSpeed"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_LSpeed"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
+Converted["_LSpeed"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_LSpeed"].BorderSizePixel = 0
+Converted["_LSpeed"].Position = UDim2.new(0.174999997, 0, 0.769999981, 0)
+Converted["_LSpeed"].Size = UDim2.new(0.25, 0, 0.100000001, 0)
+Converted["_LSpeed"].Name = "LSpeed"
+Converted["_LSpeed"].Parent = Converted["_Settings1"]
+
+Converted["_UICorner394"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner394"].Parent = Converted["_LSpeed"]
+
+Converted["_Overflow28"].GroupTransparency = 1
+Converted["_Overflow28"].Active = true
+Converted["_Overflow28"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Overflow28"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
+Converted["_Overflow28"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Overflow28"].BorderSizePixel = 0
+Converted["_Overflow28"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Overflow28"].Size = UDim2.new(1, 0, 1.04999995, 0)
+Converted["_Overflow28"].Visible = false
+Converted["_Overflow28"].ZIndex = 4
+Converted["_Overflow28"].Name = "Overflow"
+Converted["_Overflow28"].Parent = Converted["_Container1"]
+
+Converted["_Close14"].Font = Enum.Font.Nunito
+Converted["_Close14"].Text = "X"
+Converted["_Close14"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close14"].TextScaled = true
+Converted["_Close14"].TextSize = 14
+Converted["_Close14"].TextWrapped = true
+Converted["_Close14"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Close14"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close14"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Close14"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close14"].BorderSizePixel = 0
+Converted["_Close14"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
+Converted["_Close14"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+Converted["_Close14"].Name = "Close"
+Converted["_Close14"].Parent = Converted["_Overflow28"]
+
+Converted["_UICorner395"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner395"].Parent = Converted["_Close14"]
 
 Converted["_Version1"].Font = Enum.Font.Ubuntu
 Converted["_Version1"].Text = "Version: 69.420"
@@ -10825,13 +12861,13 @@ Converted["_Version1"].BorderSizePixel = 0
 Converted["_Version1"].Position = UDim2.new(0.104999997, 0, 0.925000012, 0)
 Converted["_Version1"].Size = UDim2.new(0.174999997, 0, 0.0500000007, 0)
 Converted["_Version1"].Name = "Version"
-Converted["_Version1"].Parent = Converted["_Overflow25"]
+Converted["_Version1"].Parent = Converted["_Overflow28"]
 
-Converted["_UICorner335"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner335"].Parent = Converted["_Version1"]
+Converted["_UICorner396"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner396"].Parent = Converted["_Version1"]
 
-Converted["_List3"].Name = "List"
-Converted["_List3"].Parent = Converted["_Overflow25"]
+Converted["_List11"].Name = "List"
+Converted["_List11"].Parent = Converted["_Overflow28"]
 
 Converted["_Debug2"].Font = Enum.Font.TitilliumWeb
 Converted["_Debug2"].Text = "Debug Panel"
@@ -10846,14 +12882,14 @@ Converted["_Debug2"].BorderSizePixel = 0
 Converted["_Debug2"].Position = UDim2.new(0.824999988, 0, 0.200000003, 0)
 Converted["_Debug2"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_Debug2"].Name = "Debug"
-Converted["_Debug2"].Parent = Converted["_List3"]
+Converted["_Debug2"].Parent = Converted["_List11"]
 
-Converted["_UICorner336"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner336"].Parent = Converted["_Debug2"]
+Converted["_UICorner397"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner397"].Parent = Converted["_Debug2"]
 
-Converted["_Bindable268"].Value = true
-Converted["_Bindable268"].Name = "Bindable"
-Converted["_Bindable268"].Parent = Converted["_Debug2"]
+Converted["_Bindable298"].Value = true
+Converted["_Bindable298"].Name = "Bindable"
+Converted["_Bindable298"].Parent = Converted["_Debug2"]
 
 Converted["_AntiKick2"].Font = Enum.Font.TitilliumWeb
 Converted["_AntiKick2"].Text = "AntiKick"
@@ -10868,14 +12904,14 @@ Converted["_AntiKick2"].BorderSizePixel = 0
 Converted["_AntiKick2"].Position = UDim2.new(0.5, 0, 0.200000003, 0)
 Converted["_AntiKick2"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_AntiKick2"].Name = "AntiKick"
-Converted["_AntiKick2"].Parent = Converted["_List3"]
+Converted["_AntiKick2"].Parent = Converted["_List11"]
 
-Converted["_UICorner337"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner337"].Parent = Converted["_AntiKick2"]
+Converted["_UICorner398"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner398"].Parent = Converted["_AntiKick2"]
 
-Converted["_Bindable269"].Value = true
-Converted["_Bindable269"].Name = "Bindable"
-Converted["_Bindable269"].Parent = Converted["_AntiKick2"]
+Converted["_Bindable299"].Value = true
+Converted["_Bindable299"].Name = "Bindable"
+Converted["_Bindable299"].Parent = Converted["_AntiKick2"]
 
 Converted["_ScriptBlox2"].Font = Enum.Font.TitilliumWeb
 Converted["_ScriptBlox2"].Text = "ScriptBlox"
@@ -10890,14 +12926,14 @@ Converted["_ScriptBlox2"].BorderSizePixel = 0
 Converted["_ScriptBlox2"].Position = UDim2.new(0.175000012, 0, 0.200000003, 0)
 Converted["_ScriptBlox2"].Size = UDim2.new(0.25, 0, 0.150000006, 0)
 Converted["_ScriptBlox2"].Name = "ScriptBlox"
-Converted["_ScriptBlox2"].Parent = Converted["_List3"]
+Converted["_ScriptBlox2"].Parent = Converted["_List11"]
 
-Converted["_UICorner338"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner338"].Parent = Converted["_ScriptBlox2"]
+Converted["_UICorner399"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner399"].Parent = Converted["_ScriptBlox2"]
 
-Converted["_Bindable270"].Value = true
-Converted["_Bindable270"].Name = "Bindable"
-Converted["_Bindable270"].Parent = Converted["_ScriptBlox2"]
+Converted["_Bindable300"].Value = true
+Converted["_Bindable300"].Name = "Bindable"
+Converted["_Bindable300"].Parent = Converted["_ScriptBlox2"]
 
 Converted["_None2"].Font = Enum.Font.TitilliumWeb
 Converted["_None2"].Text = "None"
@@ -10912,14 +12948,14 @@ Converted["_None2"].BorderSizePixel = 0
 Converted["_None2"].Position = UDim2.new(0.148920298, 0, 0.736949563, 0)
 Converted["_None2"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_None2"].Name = "None"
-Converted["_None2"].Parent = Converted["_List3"]
+Converted["_None2"].Parent = Converted["_List11"]
 
-Converted["_UICorner339"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner339"].Parent = Converted["_None2"]
+Converted["_UICorner400"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner400"].Parent = Converted["_None2"]
 
-Converted["_Bindable271"].Value = true
-Converted["_Bindable271"].Name = "Bindable"
-Converted["_Bindable271"].Parent = Converted["_None2"]
+Converted["_Bindable301"].Value = true
+Converted["_Bindable301"].Name = "Bindable"
+Converted["_Bindable301"].Parent = Converted["_None2"]
 
 Converted["_Commands2"].Font = Enum.Font.TitilliumWeb
 Converted["_Commands2"].Text = "Commands"
@@ -10934,14 +12970,14 @@ Converted["_Commands2"].BorderSizePixel = 0
 Converted["_Commands2"].Position = UDim2.new(0.32392022, 0, 0.611999989, 0)
 Converted["_Commands2"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Commands2"].Name = "Commands"
-Converted["_Commands2"].Parent = Converted["_List3"]
+Converted["_Commands2"].Parent = Converted["_List11"]
 
-Converted["_UICorner340"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner340"].Parent = Converted["_Commands2"]
+Converted["_UICorner401"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner401"].Parent = Converted["_Commands2"]
 
-Converted["_Bindable272"].Value = true
-Converted["_Bindable272"].Name = "Bindable"
-Converted["_Bindable272"].Parent = Converted["_Commands2"]
+Converted["_Bindable302"].Value = true
+Converted["_Bindable302"].Name = "Bindable"
+Converted["_Bindable302"].Parent = Converted["_Commands2"]
 
 Converted["_Trolling2"].Font = Enum.Font.TitilliumWeb
 Converted["_Trolling2"].Text = "Trolling"
@@ -10956,36 +12992,36 @@ Converted["_Trolling2"].BorderSizePixel = 0
 Converted["_Trolling2"].Position = UDim2.new(0.498920262, 0, 0.611999989, 0)
 Converted["_Trolling2"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Trolling2"].Name = "Trolling"
-Converted["_Trolling2"].Parent = Converted["_List3"]
+Converted["_Trolling2"].Parent = Converted["_List11"]
 
-Converted["_UICorner341"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner341"].Parent = Converted["_Trolling2"]
+Converted["_UICorner402"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner402"].Parent = Converted["_Trolling2"]
 
-Converted["_Bindable273"].Value = true
-Converted["_Bindable273"].Name = "Bindable"
-Converted["_Bindable273"].Parent = Converted["_Trolling2"]
+Converted["_Bindable303"].Value = true
+Converted["_Bindable303"].Name = "Bindable"
+Converted["_Bindable303"].Parent = Converted["_Trolling2"]
 
-Converted["_Chat4"].Font = Enum.Font.TitilliumWeb
-Converted["_Chat4"].Text = "Chat"
-Converted["_Chat4"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Chat4"].TextScaled = true
-Converted["_Chat4"].TextSize = 14
-Converted["_Chat4"].TextWrapped = true
-Converted["_Chat4"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Chat4"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Chat4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Chat4"].BorderSizePixel = 0
-Converted["_Chat4"].Position = UDim2.new(0.673920274, 0, 0.611999989, 0)
-Converted["_Chat4"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
-Converted["_Chat4"].Name = "Chat"
-Converted["_Chat4"].Parent = Converted["_List3"]
+Converted["_Chat3"].Font = Enum.Font.TitilliumWeb
+Converted["_Chat3"].Text = "Chat"
+Converted["_Chat3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Chat3"].TextScaled = true
+Converted["_Chat3"].TextSize = 14
+Converted["_Chat3"].TextWrapped = true
+Converted["_Chat3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Chat3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Chat3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Chat3"].BorderSizePixel = 0
+Converted["_Chat3"].Position = UDim2.new(0.673920274, 0, 0.611999989, 0)
+Converted["_Chat3"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
+Converted["_Chat3"].Name = "Chat"
+Converted["_Chat3"].Parent = Converted["_List11"]
 
-Converted["_UICorner342"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner342"].Parent = Converted["_Chat4"]
+Converted["_UICorner403"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner403"].Parent = Converted["_Chat3"]
 
-Converted["_Bindable274"].Value = true
-Converted["_Bindable274"].Name = "Bindable"
-Converted["_Bindable274"].Parent = Converted["_Chat4"]
+Converted["_Bindable304"].Value = true
+Converted["_Bindable304"].Name = "Bindable"
+Converted["_Bindable304"].Parent = Converted["_Chat3"]
 
 Converted["_Misc2"].Font = Enum.Font.TitilliumWeb
 Converted["_Misc2"].Text = "Misc"
@@ -11000,14 +13036,14 @@ Converted["_Misc2"].BorderSizePixel = 0
 Converted["_Misc2"].Position = UDim2.new(0.848920226, 0, 0.611999989, 0)
 Converted["_Misc2"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Misc2"].Name = "Misc"
-Converted["_Misc2"].Parent = Converted["_List3"]
+Converted["_Misc2"].Parent = Converted["_List11"]
 
-Converted["_UICorner343"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner343"].Parent = Converted["_Misc2"]
+Converted["_UICorner404"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner404"].Parent = Converted["_Misc2"]
 
-Converted["_Bindable275"].Value = true
-Converted["_Bindable275"].Name = "Bindable"
-Converted["_Bindable275"].Parent = Converted["_Misc2"]
+Converted["_Bindable305"].Value = true
+Converted["_Bindable305"].Name = "Bindable"
+Converted["_Bindable305"].Parent = Converted["_Misc2"]
 
 Converted["_Places2"].Font = Enum.Font.TitilliumWeb
 Converted["_Places2"].Text = "Places"
@@ -11022,14 +13058,14 @@ Converted["_Places2"].BorderSizePixel = 0
 Converted["_Places2"].Position = UDim2.new(0.148920298, 0, 0.611949563, 0)
 Converted["_Places2"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Places2"].Name = "Places"
-Converted["_Places2"].Parent = Converted["_List3"]
+Converted["_Places2"].Parent = Converted["_List11"]
 
-Converted["_UICorner344"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner344"].Parent = Converted["_Places2"]
+Converted["_UICorner405"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner405"].Parent = Converted["_Places2"]
 
-Converted["_Bindable276"].Value = true
-Converted["_Bindable276"].Name = "Bindable"
-Converted["_Bindable276"].Parent = Converted["_Places2"]
+Converted["_Bindable306"].Value = true
+Converted["_Bindable306"].Name = "Bindable"
+Converted["_Bindable306"].Parent = Converted["_Places2"]
 
 Converted["_None3"].Font = Enum.Font.TitilliumWeb
 Converted["_None3"].Text = "None"
@@ -11044,14 +13080,14 @@ Converted["_None3"].BorderSizePixel = 0
 Converted["_None3"].Position = UDim2.new(0.32392022, 0, 0.736999989, 0)
 Converted["_None3"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_None3"].Name = "None"
-Converted["_None3"].Parent = Converted["_List3"]
+Converted["_None3"].Parent = Converted["_List11"]
 
-Converted["_UICorner345"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner345"].Parent = Converted["_None3"]
+Converted["_UICorner406"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner406"].Parent = Converted["_None3"]
 
-Converted["_Bindable277"].Value = true
-Converted["_Bindable277"].Name = "Bindable"
-Converted["_Bindable277"].Parent = Converted["_None3"]
+Converted["_Bindable307"].Value = true
+Converted["_Bindable307"].Name = "Bindable"
+Converted["_Bindable307"].Parent = Converted["_None3"]
 
 Converted["_None4"].Font = Enum.Font.TitilliumWeb
 Converted["_None4"].Text = "None"
@@ -11066,14 +13102,14 @@ Converted["_None4"].BorderSizePixel = 0
 Converted["_None4"].Position = UDim2.new(0.498920262, 0, 0.736999989, 0)
 Converted["_None4"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_None4"].Name = "None"
-Converted["_None4"].Parent = Converted["_List3"]
+Converted["_None4"].Parent = Converted["_List11"]
 
-Converted["_UICorner346"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner346"].Parent = Converted["_None4"]
+Converted["_UICorner407"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner407"].Parent = Converted["_None4"]
 
-Converted["_Bindable278"].Value = true
-Converted["_Bindable278"].Name = "Bindable"
-Converted["_Bindable278"].Parent = Converted["_None4"]
+Converted["_Bindable308"].Value = true
+Converted["_Bindable308"].Name = "Bindable"
+Converted["_Bindable308"].Parent = Converted["_None4"]
 
 Converted["_None5"].Font = Enum.Font.TitilliumWeb
 Converted["_None5"].Text = "None"
@@ -11088,14 +13124,14 @@ Converted["_None5"].BorderSizePixel = 0
 Converted["_None5"].Position = UDim2.new(0.673920274, 0, 0.736999989, 0)
 Converted["_None5"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_None5"].Name = "None"
-Converted["_None5"].Parent = Converted["_List3"]
+Converted["_None5"].Parent = Converted["_List11"]
 
-Converted["_UICorner347"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner347"].Parent = Converted["_None5"]
+Converted["_UICorner408"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner408"].Parent = Converted["_None5"]
 
-Converted["_Bindable279"].Value = true
-Converted["_Bindable279"].Name = "Bindable"
-Converted["_Bindable279"].Parent = Converted["_None5"]
+Converted["_Bindable309"].Value = true
+Converted["_Bindable309"].Name = "Bindable"
+Converted["_Bindable309"].Parent = Converted["_None5"]
 
 Converted["_Credits3"].Font = Enum.Font.TitilliumWeb
 Converted["_Credits3"].Text = "Credits"
@@ -11110,14 +13146,14 @@ Converted["_Credits3"].BorderSizePixel = 0
 Converted["_Credits3"].Position = UDim2.new(0.848920226, 0, 0.736999989, 0)
 Converted["_Credits3"].Size = UDim2.new(0.150000006, 0, 0.100000001, 0)
 Converted["_Credits3"].Name = "Credits"
-Converted["_Credits3"].Parent = Converted["_List3"]
+Converted["_Credits3"].Parent = Converted["_List11"]
 
-Converted["_UICorner348"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner348"].Parent = Converted["_Credits3"]
+Converted["_UICorner409"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner409"].Parent = Converted["_Credits3"]
 
-Converted["_Bindable280"].Value = true
-Converted["_Bindable280"].Name = "Bindable"
-Converted["_Bindable280"].Parent = Converted["_Credits3"]
+Converted["_Bindable310"].Value = true
+Converted["_Bindable310"].Name = "Bindable"
+Converted["_Bindable310"].Parent = Converted["_Credits3"]
 
 Converted["_Keybinds2"].Font = Enum.Font.TitilliumWeb
 Converted["_Keybinds2"].Text = "Keybinds"
@@ -11132,14 +13168,14 @@ Converted["_Keybinds2"].BorderSizePixel = 0
 Converted["_Keybinds2"].Position = UDim2.new(0.5, 0, 0.449999988, 0)
 Converted["_Keybinds2"].Size = UDim2.new(0.899999976, 0, 0.100000001, 0)
 Converted["_Keybinds2"].Name = "Keybinds"
-Converted["_Keybinds2"].Parent = Converted["_List3"]
+Converted["_Keybinds2"].Parent = Converted["_List11"]
 
-Converted["_UICorner349"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner349"].Parent = Converted["_Keybinds2"]
+Converted["_UICorner410"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner410"].Parent = Converted["_Keybinds2"]
 
-Converted["_Bindable281"].Value = true
-Converted["_Bindable281"].Name = "Bindable"
-Converted["_Bindable281"].Parent = Converted["_Keybinds2"]
+Converted["_Bindable311"].Value = true
+Converted["_Bindable311"].Name = "Bindable"
+Converted["_Bindable311"].Parent = Converted["_Keybinds2"]
 
 Converted["_Rejoin"].Font = Enum.Font.TitilliumWeb
 Converted["_Rejoin"].Text = "Rejoin"
@@ -11154,10 +13190,10 @@ Converted["_Rejoin"].BorderSizePixel = 0
 Converted["_Rejoin"].Position = UDim2.new(0.300000012, 0, 0.925000012, 0)
 Converted["_Rejoin"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_Rejoin"].Name = "Rejoin"
-Converted["_Rejoin"].Parent = Converted["_Overflow25"]
+Converted["_Rejoin"].Parent = Converted["_Overflow28"]
 
-Converted["_UICorner350"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner350"].Parent = Converted["_Rejoin"]
+Converted["_UICorner411"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner411"].Parent = Converted["_Rejoin"]
 
 Converted["_SHop"].Font = Enum.Font.TitilliumWeb
 Converted["_SHop"].Text = "Server Hop"
@@ -11172,10 +13208,10 @@ Converted["_SHop"].BorderSizePixel = 0
 Converted["_SHop"].Position = UDim2.new(0.550000012, 0, 0.925000012, 0)
 Converted["_SHop"].Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
 Converted["_SHop"].Name = "SHop"
-Converted["_SHop"].Parent = Converted["_Overflow25"]
+Converted["_SHop"].Parent = Converted["_Overflow28"]
 
-Converted["_UICorner351"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner351"].Parent = Converted["_SHop"]
+Converted["_UICorner412"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner412"].Parent = Converted["_SHop"]
 
 Converted["_Frame1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Frame1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
@@ -11184,7 +13220,7 @@ Converted["_Frame1"].BorderSizePixel = 0
 Converted["_Frame1"].Position = UDim2.new(0.5, 0, 0.930000007, 0)
 Converted["_Frame1"].Size = UDim2.new(1, 0, 0.129999995, 0)
 Converted["_Frame1"].ZIndex = 0
-Converted["_Frame1"].Parent = Converted["_Overflow25"]
+Converted["_Frame1"].Parent = Converted["_Overflow28"]
 
 Converted["_Frame2"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Frame2"].BackgroundColor3 = Color3.fromRGB(25.000000409781933, 25.000000409781933, 25.000000409781933)
@@ -11193,7 +13229,7 @@ Converted["_Frame2"].BorderSizePixel = 0
 Converted["_Frame2"].Position = UDim2.new(0.5, 0, 0.675000012, 0)
 Converted["_Frame2"].Size = UDim2.new(1, 0, 0.300000012, 0)
 Converted["_Frame2"].ZIndex = 0
-Converted["_Frame2"].Parent = Converted["_Overflow25"]
+Converted["_Frame2"].Parent = Converted["_Overflow28"]
 
 Converted["_Welcome"].Font = Enum.Font.SciFi
 Converted["_Welcome"].Text = "Welcome To AntiHub, Skid."
@@ -11210,7 +13246,7 @@ Converted["_Welcome"].BorderSizePixel = 0
 Converted["_Welcome"].Position = UDim2.new(0.5, 0, 0.075000003, 0)
 Converted["_Welcome"].Size = UDim2.new(0.375, 0, 0.0799999461, 0)
 Converted["_Welcome"].Name = "Welcome"
-Converted["_Welcome"].Parent = Converted["_Overflow25"]
+Converted["_Welcome"].Parent = Converted["_Overflow28"]
 
 Converted["_Help"].GroupTransparency = 1
 Converted["_Help"].Active = true
@@ -11225,24 +13261,24 @@ Converted["_Help"].ZIndex = 5
 Converted["_Help"].Name = "Help"
 Converted["_Help"].Parent = Converted["_Container1"]
 
-Converted["_Close13"].Font = Enum.Font.Nunito
-Converted["_Close13"].Text = "X"
-Converted["_Close13"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close13"].TextScaled = true
-Converted["_Close13"].TextSize = 14
-Converted["_Close13"].TextWrapped = true
-Converted["_Close13"].TextYAlignment = Enum.TextYAlignment.Bottom
-Converted["_Close13"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close13"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
-Converted["_Close13"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close13"].BorderSizePixel = 0
-Converted["_Close13"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
-Converted["_Close13"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
-Converted["_Close13"].Name = "Close"
-Converted["_Close13"].Parent = Converted["_Help"]
+Converted["_Close15"].Font = Enum.Font.Nunito
+Converted["_Close15"].Text = "X"
+Converted["_Close15"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close15"].TextScaled = true
+Converted["_Close15"].TextSize = 14
+Converted["_Close15"].TextWrapped = true
+Converted["_Close15"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Close15"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close15"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Close15"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close15"].BorderSizePixel = 0
+Converted["_Close15"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
+Converted["_Close15"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+Converted["_Close15"].Name = "Close"
+Converted["_Close15"].Parent = Converted["_Help"]
 
-Converted["_UICorner352"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner352"].Parent = Converted["_Close13"]
+Converted["_UICorner413"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner413"].Parent = Converted["_Close15"]
 
 Converted["_Frame3"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Frame3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
@@ -11282,30 +13318,518 @@ Converted["_Warning"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00
 Converted["_Warning"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Warning"].BorderSizePixel = 0
 Converted["_Warning"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Warning"].Selectable = false
-Converted["_Warning"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Warning"].Size = UDim2.new(0.649999976, 0, 0.824999988, 0)
 Converted["_Warning"].Visible = false
 Converted["_Warning"].ZIndex = 10
 Converted["_Warning"].Name = "Warning"
 Converted["_Warning"].Parent = Converted["_Container1"]
 
-Converted["_Background"].ImageTransparency = 0.25
-Converted["_Background"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Background"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Background"].BackgroundTransparency = 1
-Converted["_Background"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Background"].BorderSizePixel = 0
-Converted["_Background"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Background"].Size = UDim2.new(2, 0, 2, 0)
-Converted["_Background"].ZIndex = -1
-Converted["_Background"].Name = "Background"
-Converted["_Background"].Parent = Converted["_Container"]
+Converted["_UICorner414"].CornerRadius = UDim.new(0.0250000004, 0)
+Converted["_UICorner414"].Parent = Converted["_Warning"]
 
-Converted["_UICorner353"].CornerRadius = UDim.new(0.0199999996, 0)
-Converted["_UICorner353"].Parent = Converted["_Container"]
+Converted["_Explorer3"].Active = true
+Converted["_Explorer3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Explorer3"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 30.00000011175871)
+Converted["_Explorer3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Explorer3"].BorderSizePixel = 0
+Converted["_Explorer3"].ClipsDescendants = true
+Converted["_Explorer3"].Position = UDim2.new(0.5, 0, 0.524999976, 0)
+Converted["_Explorer3"].Size = UDim2.new(1, 0, 0.975000024, 0)
+Converted["_Explorer3"].Visible = false
+Converted["_Explorer3"].ZIndex = 4
+Converted["_Explorer3"].Name = "Explorer"
+Converted["_Explorer3"].Parent = Converted["_Container"]
 
-Converted["_UICorner354"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner354"].Parent = Converted["_TitleBar"]
+Converted["_MainControls"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_MainControls"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_MainControls"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MainControls"].BorderSizePixel = 0
+Converted["_MainControls"].Position = UDim2.new(0.5, 0, 0.925000012, 0)
+Converted["_MainControls"].Size = UDim2.new(1, 0, 0.125, 0)
+Converted["_MainControls"].Name = "MainControls"
+Converted["_MainControls"].Parent = Converted["_Explorer3"]
+
+Converted["_Open4"].Font = Enum.Font.TitilliumWeb
+Converted["_Open4"].Text = "Open File"
+Converted["_Open4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Open4"].TextScaled = true
+Converted["_Open4"].TextSize = 14
+Converted["_Open4"].TextWrapped = true
+Converted["_Open4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Open4"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Open4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Open4"].BorderSizePixel = 0
+Converted["_Open4"].Position = UDim2.new(0.875, 0, 0.5, 0)
+Converted["_Open4"].Size = UDim2.new(0.100000001, 0, 0.5, 0)
+Converted["_Open4"].Name = "Open"
+Converted["_Open4"].Parent = Converted["_MainControls"]
+
+Converted["_UICorner415"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner415"].Parent = Converted["_Open4"]
+
+Converted["_Delete3"].Font = Enum.Font.TitilliumWeb
+Converted["_Delete3"].Text = "Delete File"
+Converted["_Delete3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Delete3"].TextScaled = true
+Converted["_Delete3"].TextSize = 14
+Converted["_Delete3"].TextWrapped = true
+Converted["_Delete3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Delete3"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Delete3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Delete3"].BorderSizePixel = 0
+Converted["_Delete3"].Position = UDim2.new(0.075000003, 0, 0.5, 0)
+Converted["_Delete3"].Size = UDim2.new(0.100000001, 0, 0.5, 0)
+Converted["_Delete3"].Name = "Delete"
+Converted["_Delete3"].Parent = Converted["_MainControls"]
+
+Converted["_UICorner416"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner416"].Parent = Converted["_Delete3"]
+
+Converted["_Copy5"].Font = Enum.Font.TitilliumWeb
+Converted["_Copy5"].Text = "Copy FIle"
+Converted["_Copy5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Copy5"].TextScaled = true
+Converted["_Copy5"].TextSize = 14
+Converted["_Copy5"].TextWrapped = true
+Converted["_Copy5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Copy5"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Copy5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Copy5"].BorderSizePixel = 0
+Converted["_Copy5"].Position = UDim2.new(0.200000003, 0, 0.5, 0)
+Converted["_Copy5"].Size = UDim2.new(0.100000001, 0, 0.5, 0)
+Converted["_Copy5"].Name = "Copy"
+Converted["_Copy5"].Parent = Converted["_MainControls"]
+
+Converted["_UICorner417"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner417"].Parent = Converted["_Copy5"]
+
+Converted["_Cut"].Font = Enum.Font.TitilliumWeb
+Converted["_Cut"].Text = "Cut FIle"
+Converted["_Cut"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Cut"].TextScaled = true
+Converted["_Cut"].TextSize = 14
+Converted["_Cut"].TextWrapped = true
+Converted["_Cut"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Cut"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Cut"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Cut"].BorderSizePixel = 0
+Converted["_Cut"].Position = UDim2.new(0.324999988, 0, 0.5, 0)
+Converted["_Cut"].Size = UDim2.new(0.100000001, 0, 0.5, 0)
+Converted["_Cut"].Name = "Cut"
+Converted["_Cut"].Parent = Converted["_MainControls"]
+
+Converted["_UICorner418"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner418"].Parent = Converted["_Cut"]
+
+Converted["_Paste"].Font = Enum.Font.TitilliumWeb
+Converted["_Paste"].Text = "Paste"
+Converted["_Paste"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Paste"].TextScaled = true
+Converted["_Paste"].TextSize = 14
+Converted["_Paste"].TextWrapped = true
+Converted["_Paste"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Paste"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Paste"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Paste"].BorderSizePixel = 0
+Converted["_Paste"].Position = UDim2.new(0.75, 0, 0.5, 0)
+Converted["_Paste"].Size = UDim2.new(0.100000001, 0, 0.5, 0)
+Converted["_Paste"].Name = "Paste"
+Converted["_Paste"].Parent = Converted["_MainControls"]
+
+Converted["_UICorner419"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner419"].Parent = Converted["_Paste"]
+
+Converted["_Rename"].Font = Enum.Font.TitilliumWeb
+Converted["_Rename"].Text = "Rename File"
+Converted["_Rename"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Rename"].TextScaled = true
+Converted["_Rename"].TextSize = 14
+Converted["_Rename"].TextWrapped = true
+Converted["_Rename"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Rename"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Rename"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Rename"].BorderSizePixel = 0
+Converted["_Rename"].Position = UDim2.new(0.449999988, 0, 0.5, 0)
+Converted["_Rename"].Size = UDim2.new(0.100000001, 0, 0.5, 0)
+Converted["_Rename"].Name = "Rename"
+Converted["_Rename"].Parent = Converted["_MainControls"]
+
+Converted["_UICorner420"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner420"].Parent = Converted["_Rename"]
+
+Converted["_RInput"].Font = Enum.Font.TitilliumWeb
+Converted["_RInput"].PlaceholderText = "FIle Name Here"
+Converted["_RInput"].Text = ""
+Converted["_RInput"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_RInput"].TextScaled = true
+Converted["_RInput"].TextSize = 14
+Converted["_RInput"].TextWrapped = true
+Converted["_RInput"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_RInput"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_RInput"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_RInput"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_RInput"].BorderSizePixel = 0
+Converted["_RInput"].Position = UDim2.new(0.474999994, 0, 0.499999225, 0)
+Converted["_RInput"].Size = UDim2.new(0.15000008, 0, 0.5, 0)
+Converted["_RInput"].Visible = false
+Converted["_RInput"].Name = "RInput"
+Converted["_RInput"].Parent = Converted["_MainControls"]
+
+Converted["_UICorner421"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner421"].Parent = Converted["_RInput"]
+
+Converted["_New"].Font = Enum.Font.TitilliumWeb
+Converted["_New"].Text = "New"
+Converted["_New"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_New"].TextScaled = true
+Converted["_New"].TextSize = 14
+Converted["_New"].TextWrapped = true
+Converted["_New"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_New"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_New"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_New"].BorderSizePixel = 0
+Converted["_New"].Position = UDim2.new(0.625, 0, 0.5, 0)
+Converted["_New"].Size = UDim2.new(0.100000001, 0, 0.5, 0)
+Converted["_New"].Name = "New"
+Converted["_New"].Parent = Converted["_MainControls"]
+
+Converted["_UICorner422"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner422"].Parent = Converted["_New"]
+
+Converted["_Scroll7"].AutomaticCanvasSize = Enum.AutomaticSize.Y
+Converted["_Scroll7"].ScrollBarThickness = 6
+Converted["_Scroll7"].ScrollingDirection = Enum.ScrollingDirection.Y
+Converted["_Scroll7"].Active = true
+Converted["_Scroll7"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Scroll7"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
+Converted["_Scroll7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Scroll7"].BorderSizePixel = 0
+Converted["_Scroll7"].Position = UDim2.new(0.5, 0, 0.474999994, 0)
+Converted["_Scroll7"].Size = UDim2.new(1, 0, 0.800000012, 0)
+Converted["_Scroll7"].ZIndex = 2
+Converted["_Scroll7"].Name = "Scroll"
+Converted["_Scroll7"].Parent = Converted["_Explorer3"]
+
+Converted["_List12"].Name = "List"
+Converted["_List12"].Parent = Converted["_Scroll7"]
+
+Converted["_Controls"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Controls"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Controls"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Controls"].BorderSizePixel = 0
+Converted["_Controls"].Position = UDim2.new(0.498649567, 0, 0.0384890065, 0)
+Converted["_Controls"].Size = UDim2.new(1, 0, 0.100000001, 0)
+Converted["_Controls"].ZIndex = 2
+Converted["_Controls"].Name = "Controls"
+Converted["_Controls"].Parent = Converted["_Explorer3"]
+
+Converted["_Back"].Font = Enum.Font.SciFi
+Converted["_Back"].Text = "←"
+Converted["_Back"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Back"].TextScaled = true
+Converted["_Back"].TextSize = 14
+Converted["_Back"].TextWrapped = true
+Converted["_Back"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Back"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Back"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Back"].BorderSizePixel = 0
+Converted["_Back"].Position = UDim2.new(0.075000003, 0, 0.5, 0)
+Converted["_Back"].Size = UDim2.new(0.100000001, 0, 0.5, 0)
+Converted["_Back"].Name = "Back"
+Converted["_Back"].Parent = Converted["_Controls"]
+
+Converted["_UICorner423"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner423"].Parent = Converted["_Back"]
+
+Converted["_Home"].ScaleType = Enum.ScaleType.Fit
+Converted["_Home"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Home"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Home"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Home"].BorderSizePixel = 0
+Converted["_Home"].Position = UDim2.new(0.949999988, 0, 0.5, 0)
+Converted["_Home"].Size = UDim2.new(0.0389737934, 0, 0.5, 0)
+Converted["_Home"].Name = "Home"
+Converted["_Home"].Parent = Converted["_Controls"]
+
+Converted["_UICorner424"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner424"].Parent = Converted["_Home"]
+
+Converted["_UIAspectRatioConstraint2"].AspectRatio = 1.519667148590088
+Converted["_UIAspectRatioConstraint2"].Parent = Converted["_Home"]
+
+Converted["_Current3"].ClearTextOnFocus = false
+Converted["_Current3"].Font = Enum.Font.SciFi
+Converted["_Current3"].PlaceholderColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_Current3"].Text = "Workspace"
+Converted["_Current3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Current3"].TextEditable = false
+Converted["_Current3"].TextScaled = true
+Converted["_Current3"].TextSize = 14
+Converted["_Current3"].TextWrapped = true
+Converted["_Current3"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Current3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Current3"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Current3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Current3"].BorderSizePixel = 0
+Converted["_Current3"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Current3"].Size = UDim2.new(0.600000024, 0, 0.5, 0)
+Converted["_Current3"].Name = "Current"
+Converted["_Current3"].Parent = Converted["_Controls"]
+
+Converted["_UICorner425"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner425"].Parent = Converted["_Current3"]
+
+Converted["_Refresh3"].ScaleType = Enum.ScaleType.Fit
+Converted["_Refresh3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Refresh3"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Refresh3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Refresh3"].BorderSizePixel = 0
+Converted["_Refresh3"].Position = UDim2.new(0.875, 0, 0.5, 0)
+Converted["_Refresh3"].Size = UDim2.new(0.0389737934, 0, 0.5, 0)
+Converted["_Refresh3"].Name = "Refresh"
+Converted["_Refresh3"].Parent = Converted["_Controls"]
+
+Converted["_UICorner426"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner426"].Parent = Converted["_Refresh3"]
+
+Converted["_UIAspectRatioConstraint3"].AspectRatio = 1.519667148590088
+Converted["_UIAspectRatioConstraint3"].Parent = Converted["_Refresh3"]
+
+Converted["_Close16"].Font = Enum.Font.Nunito
+Converted["_Close16"].Text = "X"
+Converted["_Close16"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close16"].TextScaled = true
+Converted["_Close16"].TextSize = 14
+Converted["_Close16"].TextWrapped = true
+Converted["_Close16"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Close16"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close16"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Close16"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close16"].BorderSizePixel = 0
+Converted["_Close16"].Position = UDim2.new(0.974774659, 0, 0.943043768, 0)
+Converted["_Close16"].Size = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+Converted["_Close16"].Name = "Close"
+Converted["_Close16"].Parent = Converted["_Explorer3"]
+
+Converted["_UICorner427"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner427"].Parent = Converted["_Close16"]
+
+Converted["_Template8"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Template8"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Template8"].BackgroundTransparency = 1
+Converted["_Template8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Template8"].BorderSizePixel = 0
+Converted["_Template8"].Size = UDim2.new(1, 0, 0.174999997, 0)
+Converted["_Template8"].Visible = false
+Converted["_Template8"].Name = "Template"
+Converted["_Template8"].Parent = Converted["_Explorer3"]
+
+Converted["_Container9"].Font = Enum.Font.SourceSans
+Converted["_Container9"].Text = ""
+Converted["_Container9"].TextColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Container9"].TextSize = 1
+Converted["_Container9"].TextWrapped = true
+Converted["_Container9"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Container9"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Container9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Container9"].BorderSizePixel = 0
+Converted["_Container9"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Container9"].Size = UDim2.new(0.975000024, 0, 0.875, 0)
+Converted["_Container9"].Name = "Container"
+Converted["_Container9"].Parent = Converted["_Template8"]
+
+Converted["_Type"].ImageColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_Type"].ScaleType = Enum.ScaleType.Fit
+Converted["_Type"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Type"].BackgroundTransparency = 0.5
+Converted["_Type"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type"].BorderSizePixel = 0
+Converted["_Type"].Position = UDim2.new(0.0500000007, 0, 0.522000015, 0)
+Converted["_Type"].Size = UDim2.new(0.0560746714, 0, 0.900000095, 0)
+Converted["_Type"].Name = "Type"
+Converted["_Type"].Parent = Converted["_Container9"]
+
+Converted["_UICorner428"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner428"].Parent = Converted["_Type"]
+
+Converted["_UIAspectRatioConstraint4"].AspectRatio = 0.9929239749908447
+Converted["_UIAspectRatioConstraint4"].Parent = Converted["_Type"]
+
+Converted["_Title3"].Font = Enum.Font.SciFi
+Converted["_Title3"].Text = "File.txt"
+Converted["_Title3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title3"].TextScaled = true
+Converted["_Title3"].TextSize = 14
+Converted["_Title3"].TextWrapped = true
+Converted["_Title3"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Title3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Title3"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Title3"].BackgroundTransparency = 0.5
+Converted["_Title3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Title3"].BorderSizePixel = 0
+Converted["_Title3"].Position = UDim2.new(0.425000012, 0, 0.5, 0)
+Converted["_Title3"].Size = UDim2.new(0.649999976, 0, 0.75, 0)
+Converted["_Title3"].Name = "Title"
+Converted["_Title3"].Parent = Converted["_Container9"]
+
+Converted["_UICorner429"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner429"].Parent = Converted["_Title3"]
+
+Converted["_Path1"].Name = "Path"
+Converted["_Path1"].Parent = Converted["_Container9"]
+
+Converted["_Clicked"].Name = "Clicked"
+Converted["_Clicked"].Parent = Converted["_Container9"]
+
+Converted["_FileType"].Name = "FileType"
+Converted["_FileType"].Parent = Converted["_Container9"]
+
+Converted["_Rename1"].Font = Enum.Font.SciFi
+Converted["_Rename1"].PlaceholderText = "Rename File.txt"
+Converted["_Rename1"].Text = ""
+Converted["_Rename1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Rename1"].TextScaled = true
+Converted["_Rename1"].TextSize = 14
+Converted["_Rename1"].TextWrapped = true
+Converted["_Rename1"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Rename1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Rename1"].BackgroundColor3 = Color3.fromRGB(80.00000283122063, 80.00000283122063, 80.00000283122063)
+Converted["_Rename1"].BackgroundTransparency = 0.5
+Converted["_Rename1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Rename1"].BorderSizePixel = 0
+Converted["_Rename1"].Position = UDim2.new(0.425000012, 0, 0.5, 0)
+Converted["_Rename1"].Size = UDim2.new(0.649999976, 0, 0.75, 0)
+Converted["_Rename1"].Visible = false
+Converted["_Rename1"].Name = "Rename"
+Converted["_Rename1"].Parent = Converted["_Container9"]
+
+Converted["_UICorner430"].CornerRadius = UDim.new(0.25, 0)
+Converted["_UICorner430"].Parent = Converted["_Rename1"]
+
+Converted["_New1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_New1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_New1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_New1"].BorderSizePixel = 0
+Converted["_New1"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_New1"].Size = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_New1"].Visible = false
+Converted["_New1"].ZIndex = 5
+Converted["_New1"].Name = "New"
+Converted["_New1"].Parent = Converted["_Explorer3"]
+
+Converted["_Folder"].Font = Enum.Font.TitilliumWeb
+Converted["_Folder"].Text = "New Folder"
+Converted["_Folder"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Folder"].TextScaled = true
+Converted["_Folder"].TextSize = 14
+Converted["_Folder"].TextWrapped = true
+Converted["_Folder"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Folder"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Folder"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Folder"].BorderSizePixel = 0
+Converted["_Folder"].Position = UDim2.new(0.5, 0, 0.400000006, 0)
+Converted["_Folder"].Size = UDim2.new(0.800000012, 0, 0.200000003, 0)
+Converted["_Folder"].Name = "Folder"
+Converted["_Folder"].Parent = Converted["_New1"]
+
+Converted["_UICorner431"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner431"].Parent = Converted["_Folder"]
+
+Converted["_RInput1"].Font = Enum.Font.TitilliumWeb
+Converted["_RInput1"].PlaceholderText = "File Name Here"
+Converted["_RInput1"].Text = ""
+Converted["_RInput1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_RInput1"].TextScaled = true
+Converted["_RInput1"].TextSize = 14
+Converted["_RInput1"].TextWrapped = true
+Converted["_RInput1"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_RInput1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_RInput1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_RInput1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_RInput1"].BorderSizePixel = 0
+Converted["_RInput1"].Position = UDim2.new(0.5, 0, 0.150000006, 0)
+Converted["_RInput1"].Size = UDim2.new(0.800000012, 0, 0.200000003, 0)
+Converted["_RInput1"].Name = "RInput"
+Converted["_RInput1"].Parent = Converted["_New1"]
+
+Converted["_UICorner432"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner432"].Parent = Converted["_RInput1"]
+
+Converted["_File"].Font = Enum.Font.TitilliumWeb
+Converted["_File"].Text = "New File"
+Converted["_File"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_File"].TextScaled = true
+Converted["_File"].TextSize = 14
+Converted["_File"].TextWrapped = true
+Converted["_File"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_File"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_File"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_File"].BorderSizePixel = 0
+Converted["_File"].Position = UDim2.new(0.5, 0, 0.649999976, 0)
+Converted["_File"].Size = UDim2.new(0.800000012, 0, 0.200000003, 0)
+Converted["_File"].Name = "File"
+Converted["_File"].Parent = Converted["_New1"]
+
+Converted["_UICorner433"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner433"].Parent = Converted["_File"]
+
+Converted["_Cancel1"].Font = Enum.Font.TitilliumWeb
+Converted["_Cancel1"].Text = "Cancel"
+Converted["_Cancel1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Cancel1"].TextScaled = true
+Converted["_Cancel1"].TextSize = 14
+Converted["_Cancel1"].TextWrapped = true
+Converted["_Cancel1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Cancel1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Cancel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Cancel1"].BorderSizePixel = 0
+Converted["_Cancel1"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Cancel1"].Size = UDim2.new(0.800000012, 0, 0.100000001, 0)
+Converted["_Cancel1"].Name = "Cancel"
+Converted["_Cancel1"].Parent = Converted["_New1"]
+
+Converted["_UICorner434"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner434"].Parent = Converted["_Cancel1"]
+
+Converted["_UICorner435"].CornerRadius = UDim.new(0.0500000007, 0)
+Converted["_UICorner435"].Parent = Converted["_New1"]
+
+Converted["_Values"].Name = "Values"
+Converted["_Values"].Parent = Converted["_Explorer3"]
+
+Converted["_Path2"].Name = "Path"
+Converted["_Path2"].Parent = Converted["_Values"]
+
+Converted["_Copy6"].Name = "Copy"
+Converted["_Copy6"].Parent = Converted["_Values"]
+
+Converted["_UseCut"].Name = "UseCut"
+Converted["_UseCut"].Parent = Converted["_Values"]
+
+Converted["_Copied"].Name = "Copied"
+Converted["_Copied"].Parent = Converted["_Values"]
+
+Converted["_Requested"].Name = "Requested"
+Converted["_Requested"].Parent = Converted["_Values"]
+
+Converted["_Current4"].Name = "Current"
+Converted["_Current4"].Parent = Converted["_Values"]
+
+Converted["_Found"].Name = "Found"
+Converted["_Found"].Parent = Converted["_Values"]
+
+Converted["_UseFile"].Name = "UseFile"
+Converted["_UseFile"].Parent = Converted["_Values"]
+
+Converted["_ManualPath"].Name = "ManualPath"
+Converted["_ManualPath"].Parent = Converted["_Values"]
+
+Converted["_UsePath"].Name = "UsePath"
+Converted["_UsePath"].Parent = Converted["_Values"]
+
+Converted["_UICorner436"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner436"].Parent = Converted["_TitleBar"]
 
 Converted["_Buttons"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Buttons"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
@@ -11317,48 +13841,48 @@ Converted["_Buttons"].ZIndex = 2
 Converted["_Buttons"].Name = "Buttons"
 Converted["_Buttons"].Parent = Converted["_TitleBar"]
 
-Converted["_UICorner355"].CornerRadius = UDim.new(0.0149999997, 0)
-Converted["_UICorner355"].Parent = Converted["_Buttons"]
+Converted["_UICorner437"].CornerRadius = UDim.new(0.0149999997, 0)
+Converted["_UICorner437"].Parent = Converted["_Buttons"]
 
-Converted["_Title1"].Font = Enum.Font.Sarpanch
-Converted["_Title1"].Text = "AntiHub"
-Converted["_Title1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Title1"].TextScaled = true
-Converted["_Title1"].TextSize = 14
-Converted["_Title1"].TextWrapped = true
-Converted["_Title1"].Active = true
-Converted["_Title1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Title1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Title1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Title1"].BorderSizePixel = 0
-Converted["_Title1"].Position = UDim2.new(0.099737525, 0, 0.5, 0)
-Converted["_Title1"].Size = UDim2.new(0.174999997, 0, 0.800000012, 0)
-Converted["_Title1"].Name = "Title"
-Converted["_Title1"].Parent = Converted["_Buttons"]
+Converted["_Title4"].Font = Enum.Font.Sarpanch
+Converted["_Title4"].Text = "AntiHub"
+Converted["_Title4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title4"].TextScaled = true
+Converted["_Title4"].TextSize = 14
+Converted["_Title4"].TextWrapped = true
+Converted["_Title4"].Active = true
+Converted["_Title4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Title4"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Title4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Title4"].BorderSizePixel = 0
+Converted["_Title4"].Position = UDim2.new(0.099737525, 0, 0.5, 0)
+Converted["_Title4"].Size = UDim2.new(0.174999997, 0, 0.800000012, 0)
+Converted["_Title4"].Name = "Title"
+Converted["_Title4"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner356"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner356"].Parent = Converted["_Title1"]
+Converted["_UICorner438"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner438"].Parent = Converted["_Title4"]
 
-Converted["_Close14"].Font = Enum.Font.Nunito
-Converted["_Close14"].Text = "X"
-Converted["_Close14"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close14"].TextScaled = true
-Converted["_Close14"].TextSize = 14
-Converted["_Close14"].TextWrapped = true
-Converted["_Close14"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close14"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Close14"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close14"].BorderSizePixel = 0
-Converted["_Close14"].Position = UDim2.new(0.949999988, 0, 0.5, 0)
-Converted["_Close14"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
-Converted["_Close14"].Name = "Close"
-Converted["_Close14"].Parent = Converted["_Buttons"]
+Converted["_Close17"].Font = Enum.Font.Nunito
+Converted["_Close17"].Text = "X"
+Converted["_Close17"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close17"].TextScaled = true
+Converted["_Close17"].TextSize = 14
+Converted["_Close17"].TextWrapped = true
+Converted["_Close17"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close17"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Close17"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close17"].BorderSizePixel = 0
+Converted["_Close17"].Position = UDim2.new(0.949999988, 0, 0.5, 0)
+Converted["_Close17"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
+Converted["_Close17"].Name = "Close"
+Converted["_Close17"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner357"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner357"].Parent = Converted["_Close14"]
+Converted["_UICorner439"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner439"].Parent = Converted["_Close17"]
 
-Converted["_UIAspectRatioConstraint2"].AspectRatio = 0.9862900972366333
-Converted["_UIAspectRatioConstraint2"].Parent = Converted["_Close14"]
+Converted["_UIAspectRatioConstraint5"].AspectRatio = 0.9862900972366333
+Converted["_UIAspectRatioConstraint5"].Parent = Converted["_Close17"]
 
 Converted["_Collapse"].Font = Enum.Font.Nunito
 Converted["_Collapse"].Text = "-"
@@ -11375,15 +13899,15 @@ Converted["_Collapse"].Size = UDim2.new(0.0500000007, 0, 0.800000012, 0)
 Converted["_Collapse"].Name = "Collapse"
 Converted["_Collapse"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner358"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner358"].Parent = Converted["_Collapse"]
+Converted["_UICorner440"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner440"].Parent = Converted["_Collapse"]
 
-Converted["_UIAspectRatioConstraint3"].AspectRatio = 0.9862900972366333
-Converted["_UIAspectRatioConstraint3"].Parent = Converted["_Collapse"]
+Converted["_UIAspectRatioConstraint6"].AspectRatio = 0.9862900972366333
+Converted["_UIAspectRatioConstraint6"].Parent = Converted["_Collapse"]
 
-Converted["_Bindable282"].Value = true
-Converted["_Bindable282"].Name = "Bindable"
-Converted["_Bindable282"].Parent = Converted["_Collapse"]
+Converted["_Bindable312"].Value = true
+Converted["_Bindable312"].Name = "Bindable"
+Converted["_Bindable312"].Parent = Converted["_Collapse"]
 
 Converted["_Version2"].Font = Enum.Font.Ubuntu
 Converted["_Version2"].Text = "Version: 69.420"
@@ -11403,8 +13927,8 @@ Converted["_Version2"].Size = UDim2.new(0.174999997, 0, 0.25, 0)
 Converted["_Version2"].Name = "Version"
 Converted["_Version2"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner359"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner359"].Parent = Converted["_Version2"]
+Converted["_UICorner441"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner441"].Parent = Converted["_Version2"]
 
 Converted["_Help1"].Font = Enum.Font.Nunito
 Converted["_Help1"].Text = "?"
@@ -11421,8 +13945,100 @@ Converted["_Help1"].Size = UDim2.new(0.0299999975, 0, 0.473941892, 0)
 Converted["_Help1"].Name = "Help"
 Converted["_Help1"].Parent = Converted["_Buttons"]
 
-Converted["_UICorner360"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner360"].Parent = Converted["_Help1"]
+Converted["_UICorner442"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner442"].Parent = Converted["_Help1"]
+
+Converted["_Hints"].Name = "Hints"
+Converted["_Hints"].Parent = Converted["_Buttons"]
+
+Converted["_Close18"].Font = Enum.Font.TitilliumWeb
+Converted["_Close18"].Text = "Collapse And Close"
+Converted["_Close18"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close18"].TextScaled = true
+Converted["_Close18"].TextSize = 14
+Converted["_Close18"].TextWrapped = true
+Converted["_Close18"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close18"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close18"].BackgroundTransparency = 0.25
+Converted["_Close18"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close18"].BorderSizePixel = 0
+Converted["_Close18"].Position = UDim2.new(0.899999976, 0, -0.5, 0)
+Converted["_Close18"].Selectable = false
+Converted["_Close18"].Size = UDim2.new(0.200000003, 0, 0.800000012, 0)
+Converted["_Close18"].Visible = false
+Converted["_Close18"].Name = "Close"
+Converted["_Close18"].Parent = Converted["_Hints"]
+
+Converted["_UICorner443"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner443"].Parent = Converted["_Close18"]
+
+Converted["_Overflow29"].Font = Enum.Font.TitilliumWeb
+Converted["_Overflow29"].Text = "Find More Menus →"
+Converted["_Overflow29"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Overflow29"].TextScaled = true
+Converted["_Overflow29"].TextSize = 14
+Converted["_Overflow29"].TextWrapped = true
+Converted["_Overflow29"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Overflow29"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Overflow29"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Overflow29"].BackgroundTransparency = 0.25
+Converted["_Overflow29"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Overflow29"].BorderSizePixel = 0
+Converted["_Overflow29"].Position = UDim2.new(-0.100000001, 0, 7.75, 0)
+Converted["_Overflow29"].Selectable = false
+Converted["_Overflow29"].Size = UDim2.new(0.174999997, 0, 0.800000012, 0)
+Converted["_Overflow29"].Visible = false
+Converted["_Overflow29"].Name = "Overflow"
+Converted["_Overflow29"].Parent = Converted["_Hints"]
+
+Converted["_UICorner444"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner444"].Parent = Converted["_Overflow29"]
+
+Converted["_Stats1"].Font = Enum.Font.TitilliumWeb
+Converted["_Stats1"].Text = "Open And Close →"
+Converted["_Stats1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Stats1"].TextScaled = true
+Converted["_Stats1"].TextSize = 14
+Converted["_Stats1"].TextWrapped = true
+Converted["_Stats1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Stats1"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Stats1"].BackgroundTransparency = 0.25
+Converted["_Stats1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Stats1"].BorderSizePixel = 0
+Converted["_Stats1"].Position = UDim2.new(1.27499998, 0, -4.36499977, 0)
+Converted["_Stats1"].Selectable = false
+Converted["_Stats1"].Size = UDim2.new(0.200000003, 0, 0.896375, 0)
+Converted["_Stats1"].Visible = false
+Converted["_Stats1"].Name = "Stats"
+Converted["_Stats1"].Parent = Converted["_Hints"]
+
+Converted["_UICorner445"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner445"].Parent = Converted["_Stats1"]
+
+Converted["_Help2"].Font = Enum.Font.TitilliumWeb
+Converted["_Help2"].Text = "Open This For Help →"
+Converted["_Help2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Help2"].TextScaled = true
+Converted["_Help2"].TextSize = 14
+Converted["_Help2"].TextWrapped = true
+Converted["_Help2"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Help2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Help2"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Help2"].BackgroundTransparency = 0.25
+Converted["_Help2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Help2"].BorderSizePixel = 0
+Converted["_Help2"].Position = UDim2.new(0.699999988, 0, 0.5, 0)
+Converted["_Help2"].Selectable = false
+Converted["_Help2"].Size = UDim2.new(0.174999997, 0, 0.800000012, 0)
+Converted["_Help2"].Visible = false
+Converted["_Help2"].Name = "Help"
+Converted["_Help2"].Parent = Converted["_Hints"]
+
+Converted["_UICorner446"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner446"].Parent = Converted["_Help2"]
+
+Converted["_Drag"].Name = "Drag"
+Converted["_Drag"].Parent = Converted["_TitleBar"]
 
 Converted["_Inspector"].AlwaysOnTop = true
 Converted["_Inspector"].ClipsDescendants = true
@@ -11453,69 +14069,1009 @@ Converted["_Box"].Parent = Converted["_Inspector"]
 Converted["_UIStroke1"].Thickness = 2
 Converted["_UIStroke1"].Parent = Converted["_Box"]
 
-Converted["_Stats1"].Font = Enum.Font.SciFi
-Converted["_Stats1"].Text = "Loading AntiHub."
-Converted["_Stats1"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
-Converted["_Stats1"].TextScaled = true
-Converted["_Stats1"].TextSize = 14
-Converted["_Stats1"].TextTransparency = 0.5
-Converted["_Stats1"].TextWrapped = true
-Converted["_Stats1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Stats1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Stats1"].BackgroundTransparency = 0.5
-Converted["_Stats1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Stats1"].BorderSizePixel = 0
-Converted["_Stats1"].Position = UDim2.new(0.970000029, 0, 0.0350000001, 0)
-Converted["_Stats1"].Selectable = false
-Converted["_Stats1"].Size = UDim2.new(0.0500000007, 0, 0.0500000007, 0)
-Converted["_Stats1"].ZIndex = 4
-Converted["_Stats1"].Name = "Stats"
-Converted["_Stats1"].Parent = Converted["_AntiHub"]
+Converted["_Stats2"].Font = Enum.Font.SciFi
+Converted["_Stats2"].Text = "Loading AntiHub."
+Converted["_Stats2"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_Stats2"].TextScaled = true
+Converted["_Stats2"].TextSize = 14
+Converted["_Stats2"].TextTransparency = 0.5
+Converted["_Stats2"].TextWrapped = true
+Converted["_Stats2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Stats2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Stats2"].BackgroundTransparency = 0.5
+Converted["_Stats2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Stats2"].BorderSizePixel = 0
+Converted["_Stats2"].Position = UDim2.new(0.970000029, 0, 0.0350000001, 0)
+Converted["_Stats2"].Size = UDim2.new(0.0500000007, 0, 0.0500000007, 0)
+Converted["_Stats2"].ZIndex = 6
+Converted["_Stats2"].Name = "Stats"
+Converted["_Stats2"].Parent = Converted["_AntiHub"]
 
-Converted["_UICorner361"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner361"].Parent = Converted["_Stats1"]
+Converted["_UICorner447"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner447"].Parent = Converted["_Stats2"]
+
+Converted["_CommandBar"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_CommandBar"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_CommandBar"].BackgroundTransparency = 0.5
+Converted["_CommandBar"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CommandBar"].BorderSizePixel = 0
+Converted["_CommandBar"].Position = UDim2.new(-0.25, 0, 0.850000024, 0)
+Converted["_CommandBar"].Size = UDim2.new(0.449999988, 0, 0.075000003, 0)
+Converted["_CommandBar"].ZIndex = 2
+Converted["_CommandBar"].Name = "CommandBar"
+Converted["_CommandBar"].Parent = Converted["_AntiHub"]
+
+Converted["_Input14"].Font = Enum.Font.TitilliumWeb
+Converted["_Input14"].PlaceholderColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_Input14"].PlaceholderText = "AntiHub Admin"
+Converted["_Input14"].Text = ""
+Converted["_Input14"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input14"].TextScaled = true
+Converted["_Input14"].TextSize = 30
+Converted["_Input14"].TextWrapped = true
+Converted["_Input14"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input14"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input14"].BackgroundTransparency = 1
+Converted["_Input14"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input14"].BorderSizePixel = 0
+Converted["_Input14"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Input14"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Input14"].Name = "Input"
+Converted["_Input14"].Parent = Converted["_CommandBar"]
+
+Converted["_UIStroke2"].BorderOffset = UDim.new(0.100000001, 0)
+Converted["_UIStroke2"].BorderStrokePosition = Enum.BorderStrokePosition.Inner
+Converted["_UIStroke2"].Color = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_UIStroke2"].Thickness = 2
+Converted["_UIStroke2"].Parent = Converted["_CommandBar"]
+
+Converted["_UICorner448"].CornerRadius = UDim.new(0.215000004, 0)
+Converted["_UICorner448"].Parent = Converted["_CommandBar"]
+
+Converted["_Events"].Name = "Events"
+Converted["_Events"].Parent = Converted["_AntiHub"]
+
+Converted["_MenuOpened"].Name = "MenuOpened"
+Converted["_MenuOpened"].Parent = Converted["_Events"]
+
+Converted["_CustomMenus"].Name = "CustomMenus"
+Converted["_CustomMenus"].Parent = Converted["_AntiHub"]
+
+Converted["_Template9"].Active = true
+Converted["_Template9"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Template9"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
+Converted["_Template9"].BackgroundTransparency = 1
+Converted["_Template9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Template9"].BorderSizePixel = 0
+Converted["_Template9"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Template9"].Size = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Template9"].Visible = false
+Converted["_Template9"].ZIndex = 3
+Converted["_Template9"].Name = "Template"
+Converted["_Template9"].Parent = Converted["_CustomMenus"]
+
+Converted["_Background1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Background1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Background1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Background1"].BorderSizePixel = 0
+Converted["_Background1"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Background1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Background1"].ZIndex = -1
+Converted["_Background1"].Name = "Background"
+Converted["_Background1"].Parent = Converted["_Template9"]
+
+Converted["_UICorner449"].CornerRadius = UDim.new(0.0250000004, 0)
+Converted["_UICorner449"].Parent = Converted["_Background1"]
+
+Converted["_Close19"].Font = Enum.Font.Nunito
+Converted["_Close19"].Text = "X"
+Converted["_Close19"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close19"].TextScaled = true
+Converted["_Close19"].TextSize = 14
+Converted["_Close19"].TextWrapped = true
+Converted["_Close19"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close19"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Close19"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close19"].BorderSizePixel = 0
+Converted["_Close19"].Position = UDim2.new(0.925000012, 0, 0.0500000007, 0)
+Converted["_Close19"].Size = UDim2.new(0.0932557136, 0, 0.0818606019, 0)
+Converted["_Close19"].ZIndex = 2
+Converted["_Close19"].Name = "Close"
+Converted["_Close19"].Parent = Converted["_Template9"]
+
+Converted["_UICorner450"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner450"].Parent = Converted["_Close19"]
+
+Converted["_UIAspectRatioConstraint7"].AspectRatio = 0.9887532591819763
+Converted["_UIAspectRatioConstraint7"].Parent = Converted["_Close19"]
+
+Converted["_Title5"].Font = Enum.Font.Sarpanch
+Converted["_Title5"].Text = "Template Menu"
+Converted["_Title5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title5"].TextScaled = true
+Converted["_Title5"].TextSize = 14
+Converted["_Title5"].TextWrapped = true
+Converted["_Title5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Title5"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Title5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Title5"].BorderSizePixel = 0
+Converted["_Title5"].Position = UDim2.new(0.425000012, 0, 0.0500000007, 0)
+Converted["_Title5"].Size = UDim2.new(0.650000036, 0, 0.0819999948, 0)
+Converted["_Title5"].ZIndex = 2
+Converted["_Title5"].Name = "Title"
+Converted["_Title5"].Parent = Converted["_Template9"]
+
+Converted["_UICorner451"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner451"].Parent = Converted["_Title5"]
+
+Converted["_TitleBar1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_TitleBar1"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
+Converted["_TitleBar1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TitleBar1"].BorderSizePixel = 0
+Converted["_TitleBar1"].Position = UDim2.new(0.5, 0, 0.0500000007, 0)
+Converted["_TitleBar1"].Size = UDim2.new(1, 0, 0.100000001, 0)
+Converted["_TitleBar1"].Name = "TitleBar"
+Converted["_TitleBar1"].Parent = Converted["_Template9"]
+
+Converted["_Drag1"].Name = "Drag"
+Converted["_Drag1"].Parent = Converted["_Template9"]
+
+Converted["_Container10"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Container10"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Container10"].BackgroundTransparency = 1
+Converted["_Container10"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Container10"].BorderSizePixel = 0
+Converted["_Container10"].Position = UDim2.new(0.499000013, 0, 0.540000021, 0)
+Converted["_Container10"].Size = UDim2.new(1, 0, 0.925000012, 0)
+Converted["_Container10"].ZIndex = 0
+Converted["_Container10"].Name = "Container"
+Converted["_Container10"].Parent = Converted["_Template9"]
+
+Converted["_Events1"].Name = "Events"
+Converted["_Events1"].Parent = Converted["_Template9"]
+
+Converted["_Open5"].Name = "Open"
+Converted["_Open5"].Parent = Converted["_Events1"]
+
+Converted["_Open6"].Name = "Open"
+Converted["_Open6"].Parent = Converted["_Open5"]
+
+Converted["_AHMenus"].Name = "AHMenus"
+Converted["_AHMenus"].Parent = Converted["_AntiHub"]
+
+Converted["_MediaPlayer"].Active = true
+Converted["_MediaPlayer"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_MediaPlayer"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_MediaPlayer"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MediaPlayer"].BorderSizePixel = 0
+Converted["_MediaPlayer"].Position = UDim2.new(0.5, 0, 0.514999986, 0)
+Converted["_MediaPlayer"].Size = UDim2.new(1, 0, 0.975000024, 0)
+Converted["_MediaPlayer"].Visible = false
+Converted["_MediaPlayer"].ZIndex = 0
+Converted["_MediaPlayer"].Name = "MediaPlayer"
+Converted["_MediaPlayer"].Parent = Converted["_AHMenus"]
+
+Converted["_UICorner452"].CornerRadius = UDim.new(0.0250000004, 0)
+Converted["_UICorner452"].Parent = Converted["_MediaPlayer"]
+
+Converted["_Types"].Name = "Types"
+Converted["_Types"].Parent = Converted["_MediaPlayer"]
+
+Converted["_Audio1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Audio1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Audio1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Audio1"].BorderSizePixel = 0
+Converted["_Audio1"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Audio1"].Size = UDim2.new(1, 0, 0.850000024, 0)
+Converted["_Audio1"].ZIndex = 0
+Converted["_Audio1"].Name = "Audio"
+Converted["_Audio1"].Parent = Converted["_Types"]
+
+Converted["_Preview1"].RollOffMode = Enum.RollOffMode.InverseTapered
+Converted["_Preview1"].Name = "Preview"
+Converted["_Preview1"].Parent = Converted["_Audio1"]
+
+Converted["_Background2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Background2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Background2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Background2"].BorderSizePixel = 0
+Converted["_Background2"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Background2"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Background2"].Name = "Background"
+Converted["_Background2"].Parent = Converted["_Audio1"]
+
+Converted["_Fade"].ImageTransparency = 0.5
+Converted["_Fade"].ScaleType = Enum.ScaleType.Crop
+Converted["_Fade"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Fade"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Fade"].BackgroundTransparency = 1
+Converted["_Fade"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Fade"].BorderSizePixel = 0
+Converted["_Fade"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Fade"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Fade"].Name = "Fade"
+Converted["_Fade"].Parent = Converted["_Background2"]
+
+Converted["_Stats3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Stats3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Stats3"].BackgroundTransparency = 0.5
+Converted["_Stats3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Stats3"].BorderSizePixel = 0
+Converted["_Stats3"].Position = UDim2.new(0.5, 0, 0.875, 0)
+Converted["_Stats3"].Size = UDim2.new(0.949999988, 0, 0.224999994, 0)
+Converted["_Stats3"].Name = "Stats"
+Converted["_Stats3"].Parent = Converted["_Audio1"]
+
+Converted["_CPos"].Font = Enum.Font.TitilliumWeb
+Converted["_CPos"].Text = "0%"
+Converted["_CPos"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CPos"].TextScaled = true
+Converted["_CPos"].TextSize = 14
+Converted["_CPos"].TextWrapped = true
+Converted["_CPos"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_CPos"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_CPos"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_CPos"].BackgroundTransparency = 1
+Converted["_CPos"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CPos"].BorderSizePixel = 0
+Converted["_CPos"].Position = UDim2.new(0.625, 0, 0.5, 0)
+Converted["_CPos"].Size = UDim2.new(0.25, 0, 1, 0)
+Converted["_CPos"].Name = "CPos"
+Converted["_CPos"].Parent = Converted["_Stats3"]
+
+Converted["_Type1"].Font = Enum.Font.TitilliumWeb
+Converted["_Type1"].Text = "Audio"
+Converted["_Type1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Type1"].TextScaled = true
+Converted["_Type1"].TextSize = 14
+Converted["_Type1"].TextWrapped = true
+Converted["_Type1"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Type1"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Type1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Type1"].BackgroundTransparency = 1
+Converted["_Type1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type1"].BorderSizePixel = 0
+Converted["_Type1"].Position = UDim2.new(0.125, 0, 0.5, 0)
+Converted["_Type1"].Size = UDim2.new(0.25, 0, 1, 0)
+Converted["_Type1"].Name = "Type"
+Converted["_Type1"].Parent = Converted["_Stats3"]
+
+Converted["_Status3"].Font = Enum.Font.TitilliumWeb
+Converted["_Status3"].Text = "Playing"
+Converted["_Status3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Status3"].TextScaled = true
+Converted["_Status3"].TextSize = 14
+Converted["_Status3"].TextWrapped = true
+Converted["_Status3"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Status3"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Status3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Status3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Status3"].BackgroundTransparency = 1
+Converted["_Status3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Status3"].BorderSizePixel = 0
+Converted["_Status3"].Position = UDim2.new(0.375, 0, 0.5, 0)
+Converted["_Status3"].Size = UDim2.new(0.25, 0, 1, 0)
+Converted["_Status3"].Name = "Status"
+Converted["_Status3"].Parent = Converted["_Stats3"]
+
+Converted["_Length1"].Font = Enum.Font.TitilliumWeb
+Converted["_Length1"].Text = "0/60s"
+Converted["_Length1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Length1"].TextScaled = true
+Converted["_Length1"].TextSize = 14
+Converted["_Length1"].TextWrapped = true
+Converted["_Length1"].TextXAlignment = Enum.TextXAlignment.Right
+Converted["_Length1"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Length1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Length1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Length1"].BackgroundTransparency = 1
+Converted["_Length1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Length1"].BorderSizePixel = 0
+Converted["_Length1"].Position = UDim2.new(0.875, 0, 0.5, 0)
+Converted["_Length1"].Size = UDim2.new(0.25, 0, 1, 0)
+Converted["_Length1"].Name = "Length"
+Converted["_Length1"].Parent = Converted["_Stats3"]
+
+Converted["_UICorner453"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner453"].Parent = Converted["_Stats3"]
+
+Converted["_Actions"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Actions"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Actions"].BackgroundTransparency = 0.5
+Converted["_Actions"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Actions"].BorderSizePixel = 0
+Converted["_Actions"].Position = UDim2.new(0.5, 0, 0.125, 0)
+Converted["_Actions"].Size = UDim2.new(0.949999988, 0, 0.224999994, 0)
+Converted["_Actions"].Name = "Actions"
+Converted["_Actions"].Parent = Converted["_Audio1"]
+
+Converted["_UICorner454"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner454"].Parent = Converted["_Actions"]
+
+Converted["_Continue"].Font = Enum.Font.SourceSans
+Converted["_Continue"].Text = ""
+Converted["_Continue"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Continue"].TextScaled = true
+Converted["_Continue"].TextSize = 14
+Converted["_Continue"].TextWrapped = true
+Converted["_Continue"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Continue"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 30.00000011175871, 30.00000011175871)
+Converted["_Continue"].BackgroundTransparency = 0.25
+Converted["_Continue"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Continue"].BorderSizePixel = 0
+Converted["_Continue"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Continue"].Size = UDim2.new(0.0970228985, 0, 0.900000036, 0)
+Converted["_Continue"].Name = "Continue"
+Converted["_Continue"].Parent = Converted["_Actions"]
+
+Converted["_UICorner455"].CornerRadius = UDim.new(1, 0)
+Converted["_UICorner455"].Parent = Converted["_Continue"]
+
+Converted["_UIAspectRatioConstraint8"].AspectRatio = 1.0101830959320068
+Converted["_UIAspectRatioConstraint8"].Parent = Converted["_Continue"]
+
+Converted["_Loop"].Font = Enum.Font.SourceSans
+Converted["_Loop"].Text = "Loop"
+Converted["_Loop"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Loop"].TextScaled = true
+Converted["_Loop"].TextSize = 14
+Converted["_Loop"].TextWrapped = true
+Converted["_Loop"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Loop"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Loop"].BackgroundTransparency = 0.25
+Converted["_Loop"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Loop"].BorderSizePixel = 0
+Converted["_Loop"].Position = UDim2.new(0.649999976, 0, 0.625, 0)
+Converted["_Loop"].Size = UDim2.new(0.150000006, 0, 0.5, 0)
+Converted["_Loop"].Name = "Loop"
+Converted["_Loop"].Parent = Converted["_Actions"]
+
+Converted["_UICorner456"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner456"].Parent = Converted["_Loop"]
+
+Converted["_SInput"].Font = Enum.Font.TitilliumWeb
+Converted["_SInput"].PlaceholderText = "Number"
+Converted["_SInput"].Text = ""
+Converted["_SInput"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_SInput"].TextScaled = true
+Converted["_SInput"].TextSize = 14
+Converted["_SInput"].TextWrapped = true
+Converted["_SInput"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_SInput"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_SInput"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_SInput"].BackgroundTransparency = 0.25
+Converted["_SInput"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SInput"].BorderSizePixel = 0
+Converted["_SInput"].Position = UDim2.new(0.850000024, 0, 0.625, 0)
+Converted["_SInput"].Size = UDim2.new(0.150000006, 0, 0.5, 0)
+Converted["_SInput"].Visible = false
+Converted["_SInput"].ZIndex = 2
+Converted["_SInput"].Name = "SInput"
+Converted["_SInput"].Parent = Converted["_Actions"]
+
+Converted["_UICorner457"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner457"].Parent = Converted["_SInput"]
+
+Converted["_Seek"].Font = Enum.Font.SourceSans
+Converted["_Seek"].Text = "Seek"
+Converted["_Seek"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Seek"].TextScaled = true
+Converted["_Seek"].TextSize = 14
+Converted["_Seek"].TextWrapped = true
+Converted["_Seek"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Seek"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Seek"].BackgroundTransparency = 0.25
+Converted["_Seek"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Seek"].BorderSizePixel = 0
+Converted["_Seek"].Position = UDim2.new(0.850000024, 0, 0.625, 0)
+Converted["_Seek"].Size = UDim2.new(0.150000006, 0, 0.5, 0)
+Converted["_Seek"].Name = "Seek"
+Converted["_Seek"].Parent = Converted["_Actions"]
+
+Converted["_UICorner458"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner458"].Parent = Converted["_Seek"]
+
+Converted["_Volume"].Font = Enum.Font.SourceSans
+Converted["_Volume"].Text = "Volume"
+Converted["_Volume"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Volume"].TextScaled = true
+Converted["_Volume"].TextSize = 14
+Converted["_Volume"].TextWrapped = true
+Converted["_Volume"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Volume"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Volume"].BackgroundTransparency = 0.25
+Converted["_Volume"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Volume"].BorderSizePixel = 0
+Converted["_Volume"].Position = UDim2.new(0.150000006, 0, 0.625, 0)
+Converted["_Volume"].Size = UDim2.new(0.150000006, 0, 0.5, 0)
+Converted["_Volume"].Name = "Volume"
+Converted["_Volume"].Parent = Converted["_Actions"]
+
+Converted["_UICorner459"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner459"].Parent = Converted["_Volume"]
+
+Converted["_Stop1"].Font = Enum.Font.SourceSans
+Converted["_Stop1"].Text = "Stop"
+Converted["_Stop1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Stop1"].TextScaled = true
+Converted["_Stop1"].TextSize = 14
+Converted["_Stop1"].TextWrapped = true
+Converted["_Stop1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Stop1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Stop1"].BackgroundTransparency = 0.25
+Converted["_Stop1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Stop1"].BorderSizePixel = 0
+Converted["_Stop1"].Position = UDim2.new(0.349999994, 0, 0.625, 0)
+Converted["_Stop1"].Size = UDim2.new(0.150000006, 0, 0.5, 0)
+Converted["_Stop1"].Name = "Stop"
+Converted["_Stop1"].Parent = Converted["_Actions"]
+
+Converted["_UICorner460"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner460"].Parent = Converted["_Stop1"]
+
+Converted["_VControls"].Active = true
+Converted["_VControls"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_VControls"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_VControls"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_VControls"].BorderSizePixel = 0
+Converted["_VControls"].Position = UDim2.new(0.224999994, 0, 0.5, 0)
+Converted["_VControls"].Size = UDim2.new(0.425000012, 0, 0.75, 0)
+Converted["_VControls"].Visible = false
+Converted["_VControls"].ZIndex = 2
+Converted["_VControls"].Name = "VControls"
+Converted["_VControls"].Parent = Converted["_Actions"]
+
+Converted["_Mute2"].Font = Enum.Font.SourceSans
+Converted["_Mute2"].Text = "Mute"
+Converted["_Mute2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Mute2"].TextScaled = true
+Converted["_Mute2"].TextSize = 14
+Converted["_Mute2"].TextWrapped = true
+Converted["_Mute2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Mute2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Mute2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Mute2"].BorderSizePixel = 0
+Converted["_Mute2"].Position = UDim2.new(0.100000001, 0, 0.5, 0)
+Converted["_Mute2"].Size = UDim2.new(0.125, 0, 0.63739717, 0)
+Converted["_Mute2"].Name = "Mute"
+Converted["_Mute2"].Parent = Converted["_VControls"]
+
+Converted["_UICorner461"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner461"].Parent = Converted["_Mute2"]
+
+Converted["_UICorner462"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner462"].Parent = Converted["_VControls"]
+
+Converted["_Volume1"].Font = Enum.Font.SourceSans
+Converted["_Volume1"].PlaceholderText = "Volume (50%)"
+Converted["_Volume1"].Text = ""
+Converted["_Volume1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Volume1"].TextScaled = true
+Converted["_Volume1"].TextSize = 14
+Converted["_Volume1"].TextWrapped = true
+Converted["_Volume1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Volume1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Volume1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Volume1"].BorderSizePixel = 0
+Converted["_Volume1"].Position = UDim2.new(0.600000024, 0, 0.5, 0)
+Converted["_Volume1"].Size = UDim2.new(0.75, 0, 0.75, 0)
+Converted["_Volume1"].Name = "Volume"
+Converted["_Volume1"].Parent = Converted["_VControls"]
+
+Converted["_UICorner463"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner463"].Parent = Converted["_Volume1"]
+
+Converted["_Text"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Text"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Text"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Text"].BorderSizePixel = 0
+Converted["_Text"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Text"].Size = UDim2.new(1, 0, 0.850000024, 0)
+Converted["_Text"].Visible = false
+Converted["_Text"].ZIndex = 0
+Converted["_Text"].Name = "Text"
+Converted["_Text"].Parent = Converted["_Types"]
+
+Converted["_Scroll8"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Scroll8"].ScrollBarThickness = 6
+Converted["_Scroll8"].Active = true
+Converted["_Scroll8"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Scroll8"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Scroll8"].BackgroundTransparency = 1
+Converted["_Scroll8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Scroll8"].BorderSizePixel = 0
+Converted["_Scroll8"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Scroll8"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Scroll8"].Name = "Scroll"
+Converted["_Scroll8"].Parent = Converted["_Text"]
+
+Converted["_Input15"].ClearTextOnFocus = false
+Converted["_Input15"].Font = Enum.Font.SourceSans
+Converted["_Input15"].MultiLine = true
+Converted["_Input15"].Text = ""
+Converted["_Input15"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Input15"].TextSize = 26
+Converted["_Input15"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Input15"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Input15"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Input15"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Input15"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Input15"].BorderSizePixel = 0
+Converted["_Input15"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Input15"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Input15"].Name = "Input"
+Converted["_Input15"].Parent = Converted["_Scroll8"]
+
+Converted["_Video"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Video"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Video"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Video"].BorderSizePixel = 0
+Converted["_Video"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Video"].Size = UDim2.new(1, 0, 0.850000024, 0)
+Converted["_Video"].Visible = false
+Converted["_Video"].ZIndex = 0
+Converted["_Video"].Name = "Video"
+Converted["_Video"].Parent = Converted["_Types"]
+
+Converted["_Stats4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Stats4"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Stats4"].BackgroundTransparency = 0.5
+Converted["_Stats4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Stats4"].BorderSizePixel = 0
+Converted["_Stats4"].Position = UDim2.new(0.5, 0, 0.875, 0)
+Converted["_Stats4"].Size = UDim2.new(0.949999988, 0, 0.224999994, 0)
+Converted["_Stats4"].Name = "Stats"
+Converted["_Stats4"].Parent = Converted["_Video"]
+
+Converted["_CPos1"].Font = Enum.Font.TitilliumWeb
+Converted["_CPos1"].Text = "0%"
+Converted["_CPos1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CPos1"].TextScaled = true
+Converted["_CPos1"].TextSize = 14
+Converted["_CPos1"].TextWrapped = true
+Converted["_CPos1"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_CPos1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_CPos1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_CPos1"].BackgroundTransparency = 1
+Converted["_CPos1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CPos1"].BorderSizePixel = 0
+Converted["_CPos1"].Position = UDim2.new(0.625, 0, 0.5, 0)
+Converted["_CPos1"].Size = UDim2.new(0.25, 0, 1, 0)
+Converted["_CPos1"].Name = "CPos"
+Converted["_CPos1"].Parent = Converted["_Stats4"]
+
+Converted["_Type2"].Font = Enum.Font.TitilliumWeb
+Converted["_Type2"].Text = "Video"
+Converted["_Type2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Type2"].TextScaled = true
+Converted["_Type2"].TextSize = 14
+Converted["_Type2"].TextWrapped = true
+Converted["_Type2"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Type2"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Type2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Type2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Type2"].BackgroundTransparency = 1
+Converted["_Type2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Type2"].BorderSizePixel = 0
+Converted["_Type2"].Position = UDim2.new(0.125, 0, 0.5, 0)
+Converted["_Type2"].Size = UDim2.new(0.25, 0, 1, 0)
+Converted["_Type2"].Name = "Type"
+Converted["_Type2"].Parent = Converted["_Stats4"]
+
+Converted["_Status4"].Font = Enum.Font.TitilliumWeb
+Converted["_Status4"].Text = "Playing"
+Converted["_Status4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Status4"].TextScaled = true
+Converted["_Status4"].TextSize = 14
+Converted["_Status4"].TextWrapped = true
+Converted["_Status4"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Status4"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Status4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Status4"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Status4"].BackgroundTransparency = 1
+Converted["_Status4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Status4"].BorderSizePixel = 0
+Converted["_Status4"].Position = UDim2.new(0.375, 0, 0.5, 0)
+Converted["_Status4"].Size = UDim2.new(0.25, 0, 1, 0)
+Converted["_Status4"].Name = "Status"
+Converted["_Status4"].Parent = Converted["_Stats4"]
+
+Converted["_Length2"].Font = Enum.Font.TitilliumWeb
+Converted["_Length2"].Text = "0/60s"
+Converted["_Length2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Length2"].TextScaled = true
+Converted["_Length2"].TextSize = 14
+Converted["_Length2"].TextWrapped = true
+Converted["_Length2"].TextXAlignment = Enum.TextXAlignment.Right
+Converted["_Length2"].TextYAlignment = Enum.TextYAlignment.Bottom
+Converted["_Length2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Length2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Length2"].BackgroundTransparency = 1
+Converted["_Length2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Length2"].BorderSizePixel = 0
+Converted["_Length2"].Position = UDim2.new(0.875, 0, 0.5, 0)
+Converted["_Length2"].Size = UDim2.new(0.25, 0, 1, 0)
+Converted["_Length2"].Name = "Length"
+Converted["_Length2"].Parent = Converted["_Stats4"]
+
+Converted["_UICorner464"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner464"].Parent = Converted["_Stats4"]
+
+Converted["_Actions1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Actions1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Actions1"].BackgroundTransparency = 0.5
+Converted["_Actions1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Actions1"].BorderSizePixel = 0
+Converted["_Actions1"].Position = UDim2.new(0.5, 0, 0.125, 0)
+Converted["_Actions1"].Size = UDim2.new(0.949999988, 0, 0.224999994, 0)
+Converted["_Actions1"].Name = "Actions"
+Converted["_Actions1"].Parent = Converted["_Video"]
+
+Converted["_UICorner465"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner465"].Parent = Converted["_Actions1"]
+
+Converted["_Continue1"].Font = Enum.Font.SourceSans
+Converted["_Continue1"].Text = ""
+Converted["_Continue1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Continue1"].TextScaled = true
+Converted["_Continue1"].TextSize = 14
+Converted["_Continue1"].TextWrapped = true
+Converted["_Continue1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Continue1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 30.00000011175871, 30.00000011175871)
+Converted["_Continue1"].BackgroundTransparency = 0.25
+Converted["_Continue1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Continue1"].BorderSizePixel = 0
+Converted["_Continue1"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Continue1"].Size = UDim2.new(0.0970228985, 0, 0.900000036, 0)
+Converted["_Continue1"].Name = "Continue"
+Converted["_Continue1"].Parent = Converted["_Actions1"]
+
+Converted["_UICorner466"].CornerRadius = UDim.new(1, 0)
+Converted["_UICorner466"].Parent = Converted["_Continue1"]
+
+Converted["_UIAspectRatioConstraint9"].AspectRatio = 1.0101830959320068
+Converted["_UIAspectRatioConstraint9"].Parent = Converted["_Continue1"]
+
+Converted["_Stop2"].Font = Enum.Font.SourceSans
+Converted["_Stop2"].Text = "Stop"
+Converted["_Stop2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Stop2"].TextScaled = true
+Converted["_Stop2"].TextSize = 14
+Converted["_Stop2"].TextWrapped = true
+Converted["_Stop2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Stop2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Stop2"].BackgroundTransparency = 0.25
+Converted["_Stop2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Stop2"].BorderSizePixel = 0
+Converted["_Stop2"].Position = UDim2.new(0.349999994, 0, 0.625, 0)
+Converted["_Stop2"].Size = UDim2.new(0.150000006, 0, 0.5, 0)
+Converted["_Stop2"].Name = "Stop"
+Converted["_Stop2"].Parent = Converted["_Actions1"]
+
+Converted["_UICorner467"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner467"].Parent = Converted["_Stop2"]
+
+Converted["_Loop1"].Font = Enum.Font.SourceSans
+Converted["_Loop1"].Text = "Loop"
+Converted["_Loop1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Loop1"].TextScaled = true
+Converted["_Loop1"].TextSize = 14
+Converted["_Loop1"].TextWrapped = true
+Converted["_Loop1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Loop1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Loop1"].BackgroundTransparency = 0.25
+Converted["_Loop1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Loop1"].BorderSizePixel = 0
+Converted["_Loop1"].Position = UDim2.new(0.649999976, 0, 0.625, 0)
+Converted["_Loop1"].Size = UDim2.new(0.150000006, 0, 0.5, 0)
+Converted["_Loop1"].Name = "Loop"
+Converted["_Loop1"].Parent = Converted["_Actions1"]
+
+Converted["_UICorner468"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner468"].Parent = Converted["_Loop1"]
+
+Converted["_Seek1"].Font = Enum.Font.SourceSans
+Converted["_Seek1"].Text = "Seek"
+Converted["_Seek1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Seek1"].TextScaled = true
+Converted["_Seek1"].TextSize = 14
+Converted["_Seek1"].TextWrapped = true
+Converted["_Seek1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Seek1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Seek1"].BackgroundTransparency = 0.25
+Converted["_Seek1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Seek1"].BorderSizePixel = 0
+Converted["_Seek1"].Position = UDim2.new(0.850000024, 0, 0.625, 0)
+Converted["_Seek1"].Size = UDim2.new(0.150000006, 0, 0.5, 0)
+Converted["_Seek1"].Visible = false
+Converted["_Seek1"].Name = "Seek"
+Converted["_Seek1"].Parent = Converted["_Actions1"]
+
+Converted["_UICorner469"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner469"].Parent = Converted["_Seek1"]
+
+Converted["_SInput1"].Font = Enum.Font.TitilliumWeb
+Converted["_SInput1"].PlaceholderText = "Number"
+Converted["_SInput1"].Text = ""
+Converted["_SInput1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_SInput1"].TextScaled = true
+Converted["_SInput1"].TextSize = 14
+Converted["_SInput1"].TextWrapped = true
+Converted["_SInput1"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_SInput1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_SInput1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_SInput1"].BackgroundTransparency = 0.25
+Converted["_SInput1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SInput1"].BorderSizePixel = 0
+Converted["_SInput1"].Position = UDim2.new(0.850000024, 0, 0.625, 0)
+Converted["_SInput1"].Size = UDim2.new(0.150000006, 0, 0.5, 0)
+Converted["_SInput1"].Visible = false
+Converted["_SInput1"].ZIndex = 2
+Converted["_SInput1"].Name = "SInput"
+Converted["_SInput1"].Parent = Converted["_Actions1"]
+
+Converted["_UICorner470"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner470"].Parent = Converted["_SInput1"]
+
+Converted["_SWarning"].Font = Enum.Font.SourceSans
+Converted["_SWarning"].Text = "(Video Seeking Disabled)"
+Converted["_SWarning"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_SWarning"].TextScaled = true
+Converted["_SWarning"].TextSize = 14
+Converted["_SWarning"].TextWrapped = true
+Converted["_SWarning"].Active = true
+Converted["_SWarning"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_SWarning"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_SWarning"].BackgroundTransparency = 0.25
+Converted["_SWarning"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SWarning"].BorderSizePixel = 0
+Converted["_SWarning"].Position = UDim2.new(0.850000024, 0, 0.625, 0)
+Converted["_SWarning"].Selectable = true
+Converted["_SWarning"].Size = UDim2.new(0.150000006, 0, 0.5, 0)
+Converted["_SWarning"].Name = "SWarning"
+Converted["_SWarning"].Parent = Converted["_Actions1"]
+
+Converted["_UICorner471"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner471"].Parent = Converted["_SWarning"]
+
+Converted["_VControls1"].Active = true
+Converted["_VControls1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_VControls1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_VControls1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_VControls1"].BorderSizePixel = 0
+Converted["_VControls1"].Position = UDim2.new(0.224999994, 0, 0.5, 0)
+Converted["_VControls1"].Size = UDim2.new(0.425000012, 0, 0.75, 0)
+Converted["_VControls1"].Visible = false
+Converted["_VControls1"].ZIndex = 2
+Converted["_VControls1"].Name = "VControls"
+Converted["_VControls1"].Parent = Converted["_Actions1"]
+
+Converted["_Mute3"].Font = Enum.Font.SourceSans
+Converted["_Mute3"].Text = "Mute"
+Converted["_Mute3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Mute3"].TextScaled = true
+Converted["_Mute3"].TextSize = 14
+Converted["_Mute3"].TextWrapped = true
+Converted["_Mute3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Mute3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Mute3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Mute3"].BorderSizePixel = 0
+Converted["_Mute3"].Position = UDim2.new(0.100000001, 0, 0.5, 0)
+Converted["_Mute3"].Size = UDim2.new(0.125, 0, 0.63739717, 0)
+Converted["_Mute3"].Name = "Mute"
+Converted["_Mute3"].Parent = Converted["_VControls1"]
+
+Converted["_UICorner472"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner472"].Parent = Converted["_Mute3"]
+
+Converted["_Volume2"].Font = Enum.Font.SourceSans
+Converted["_Volume2"].PlaceholderText = "Volume (50%)"
+Converted["_Volume2"].Text = ""
+Converted["_Volume2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Volume2"].TextScaled = true
+Converted["_Volume2"].TextSize = 14
+Converted["_Volume2"].TextWrapped = true
+Converted["_Volume2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Volume2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Volume2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Volume2"].BorderSizePixel = 0
+Converted["_Volume2"].Position = UDim2.new(0.600000024, 0, 0.5, 0)
+Converted["_Volume2"].Size = UDim2.new(0.75, 0, 0.75, 0)
+Converted["_Volume2"].Name = "Volume"
+Converted["_Volume2"].Parent = Converted["_VControls1"]
+
+Converted["_UICorner473"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner473"].Parent = Converted["_Volume2"]
+
+Converted["_UICorner474"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner474"].Parent = Converted["_VControls1"]
+
+Converted["_Volume3"].Font = Enum.Font.SourceSans
+Converted["_Volume3"].Text = "Volume"
+Converted["_Volume3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Volume3"].TextScaled = true
+Converted["_Volume3"].TextSize = 14
+Converted["_Volume3"].TextWrapped = true
+Converted["_Volume3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Volume3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Volume3"].BackgroundTransparency = 0.25
+Converted["_Volume3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Volume3"].BorderSizePixel = 0
+Converted["_Volume3"].Position = UDim2.new(0.150000006, 0, 0.625, 0)
+Converted["_Volume3"].Size = UDim2.new(0.150000006, 0, 0.5, 0)
+Converted["_Volume3"].Name = "Volume"
+Converted["_Volume3"].Parent = Converted["_Actions1"]
+
+Converted["_UICorner475"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner475"].Parent = Converted["_Volume3"]
+
+Converted["_Preview2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Preview2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Preview2"].BackgroundTransparency = 1
+Converted["_Preview2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Preview2"].BorderSizePixel = 0
+Converted["_Preview2"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Preview2"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Preview2"].ZIndex = 0
+Converted["_Preview2"].Name = "Preview"
+Converted["_Preview2"].Parent = Converted["_Video"]
+
+Converted["_Background3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Background3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Background3"].BackgroundTransparency = 1
+Converted["_Background3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Background3"].BorderSizePixel = 0
+Converted["_Background3"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Background3"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Background3"].ZIndex = 2
+Converted["_Background3"].Name = "Background"
+Converted["_Background3"].Parent = Converted["_Video"]
+
+Converted["_Image"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Image"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Image"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Image"].BorderSizePixel = 0
+Converted["_Image"].Position = UDim2.new(0.5, 0, 0.425000012, 0)
+Converted["_Image"].Size = UDim2.new(1, 0, 0.850000024, 0)
+Converted["_Image"].Visible = false
+Converted["_Image"].ZIndex = 0
+Converted["_Image"].Name = "Image"
+Converted["_Image"].Parent = Converted["_Types"]
+
+Converted["_Preview3"].ScaleType = Enum.ScaleType.Fit
+Converted["_Preview3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Preview3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Preview3"].BackgroundTransparency = 1
+Converted["_Preview3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Preview3"].BorderSizePixel = 0
+Converted["_Preview3"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Preview3"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Preview3"].Name = "Preview"
+Converted["_Preview3"].Parent = Converted["_Image"]
+
+Converted["_Background4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Background4"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Background4"].BackgroundTransparency = 1
+Converted["_Background4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Background4"].BorderSizePixel = 0
+Converted["_Background4"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Background4"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Background4"].ZIndex = 2
+Converted["_Background4"].Name = "Background"
+Converted["_Background4"].Parent = Converted["_Image"]
+
+Converted["_Bottom"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["_Bottom"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Bottom"].BorderSizePixel = 0
+Converted["_Bottom"].Position = UDim2.new(0, 0, 0.850000024, 0)
+Converted["_Bottom"].Size = UDim2.new(1, 0, 0.150000006, 0)
+Converted["_Bottom"].ZIndex = 2
+Converted["_Bottom"].Name = "Bottom"
+Converted["_Bottom"].Parent = Converted["_MediaPlayer"]
+
+Converted["_Save5"].Font = Enum.Font.TitilliumWeb
+Converted["_Save5"].Text = "Save"
+Converted["_Save5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Save5"].TextScaled = true
+Converted["_Save5"].TextSize = 14
+Converted["_Save5"].TextWrapped = true
+Converted["_Save5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Save5"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Save5"].BackgroundTransparency = 0.25
+Converted["_Save5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Save5"].BorderSizePixel = 0
+Converted["_Save5"].Position = UDim2.new(0.875, 0, 0.5, 0)
+Converted["_Save5"].Size = UDim2.new(0.185000002, 0, 0.699999988, 0)
+Converted["_Save5"].Name = "Save"
+Converted["_Save5"].Parent = Converted["_Bottom"]
+
+Converted["_UICorner476"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner476"].Parent = Converted["_Save5"]
+
+Converted["_Bindable313"].Value = true
+Converted["_Bindable313"].Name = "Bindable"
+Converted["_Bindable313"].Parent = Converted["_Save5"]
+
+Converted["_Cancel2"].Font = Enum.Font.TitilliumWeb
+Converted["_Cancel2"].Text = "Cancel"
+Converted["_Cancel2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Cancel2"].TextScaled = true
+Converted["_Cancel2"].TextSize = 14
+Converted["_Cancel2"].TextWrapped = true
+Converted["_Cancel2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Cancel2"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Cancel2"].BackgroundTransparency = 0.25
+Converted["_Cancel2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Cancel2"].BorderSizePixel = 0
+Converted["_Cancel2"].Position = UDim2.new(0.649999976, 0, 0.5, 0)
+Converted["_Cancel2"].Size = UDim2.new(0.185000002, 0, 0.699999988, 0)
+Converted["_Cancel2"].Name = "Cancel"
+Converted["_Cancel2"].Parent = Converted["_Bottom"]
+
+Converted["_UICorner477"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner477"].Parent = Converted["_Cancel2"]
+
+Converted["_Bindable314"].Value = true
+Converted["_Bindable314"].Name = "Bindable"
+Converted["_Bindable314"].Parent = Converted["_Cancel2"]
+
+Converted["_Path3"].Font = Enum.Font.SciFi
+Converted["_Path3"].Text = "Workspace"
+Converted["_Path3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Path3"].TextScaled = true
+Converted["_Path3"].TextSize = 14
+Converted["_Path3"].TextWrapped = true
+Converted["_Path3"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Path3"].Active = true
+Converted["_Path3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Path3"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Path3"].BackgroundTransparency = 0.25
+Converted["_Path3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Path3"].BorderSizePixel = 0
+Converted["_Path3"].Position = UDim2.new(0.275000006, 0, 0.5, 0)
+Converted["_Path3"].Size = UDim2.new(0.5, 0, 0.699999988, 0)
+Converted["_Path3"].Name = "Path"
+Converted["_Path3"].Parent = Converted["_Bottom"]
+
+Converted["_UICorner478"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner478"].Parent = Converted["_Path3"]
+
+Converted["_Bindable315"].Value = true
+Converted["_Bindable315"].Name = "Bindable"
+Converted["_Bindable315"].Parent = Converted["_Path3"]
+
+Converted["_CPath"].Name = "CPath"
+Converted["_CPath"].Parent = Converted["_MediaPlayer"]
 
 Converted["_Keybinds3"].Active = true
-Converted["_Keybinds3"].AnchorPoint = Vector2.new(0, 0.25)
-Converted["_Keybinds3"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
+Converted["_Keybinds3"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Keybinds3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_Keybinds3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Keybinds3"].BorderSizePixel = 0
-Converted["_Keybinds3"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Keybinds3"].Size = UDim2.new(0.25, 0, 0.5, 0)
+Converted["_Keybinds3"].Position = UDim2.new(0.5, 0, 0.550000012, 0)
+Converted["_Keybinds3"].Size = UDim2.new(1, 0, 0.899999976, 0)
 Converted["_Keybinds3"].Visible = false
-Converted["_Keybinds3"].ZIndex = 2
 Converted["_Keybinds3"].Name = "Keybinds"
-Converted["_Keybinds3"].Parent = Converted["_AntiHub"]
+Converted["_Keybinds3"].Parent = Converted["_AHMenus"]
 
-Converted["_UICorner362"].CornerRadius = UDim.new(0.0250000004, 0)
-Converted["_UICorner362"].Parent = Converted["_Keybinds3"]
+Converted["_Current5"].Font = Enum.Font.TitilliumWeb
+Converted["_Current5"].Text = "None Set"
+Converted["_Current5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Current5"].TextScaled = true
+Converted["_Current5"].TextSize = 14
+Converted["_Current5"].TextWrapped = true
+Converted["_Current5"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Current5"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
+Converted["_Current5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Current5"].BorderSizePixel = 0
+Converted["_Current5"].Position = UDim2.new(0.5, 0, 0.100000001, 0)
+Converted["_Current5"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Current5"].Name = "Current"
+Converted["_Current5"].Parent = Converted["_Keybinds3"]
 
-Converted["_Container7"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Container7"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Container7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Container7"].BorderSizePixel = 0
-Converted["_Container7"].Position = UDim2.new(0.5, 0, 0.550000012, 0)
-Converted["_Container7"].Size = UDim2.new(1, 0, 0.899999976, 0)
-Converted["_Container7"].Name = "Container"
-Converted["_Container7"].Parent = Converted["_Keybinds3"]
-
-Converted["_Current2"].Font = Enum.Font.TitilliumWeb
-Converted["_Current2"].Text = "None Set"
-Converted["_Current2"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Current2"].TextScaled = true
-Converted["_Current2"].TextSize = 14
-Converted["_Current2"].TextWrapped = true
-Converted["_Current2"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Current2"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
-Converted["_Current2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Current2"].BorderSizePixel = 0
-Converted["_Current2"].Position = UDim2.new(0.5, 0, 0.100000001, 0)
-Converted["_Current2"].Size = UDim2.new(0.75, 0, 0.125, 0)
-Converted["_Current2"].Name = "Current"
-Converted["_Current2"].Parent = Converted["_Container7"]
-
-Converted["_UICorner363"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner363"].Parent = Converted["_Current2"]
+Converted["_UICorner479"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner479"].Parent = Converted["_Current5"]
 
 Converted["_Set2"].Font = Enum.Font.TitilliumWeb
 Converted["_Set2"].Text = "Set Keybind"
@@ -11529,33 +15085,31 @@ Converted["_Set2"].BackgroundTransparency = 0.25
 Converted["_Set2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Set2"].BorderSizePixel = 0
 Converted["_Set2"].Position = UDim2.new(0.5, 0, 0.75, 0)
-Converted["_Set2"].Selectable = false
 Converted["_Set2"].Size = UDim2.new(0.649999976, 0, 0.125, 0)
 Converted["_Set2"].Name = "Set"
-Converted["_Set2"].Parent = Converted["_Container7"]
+Converted["_Set2"].Parent = Converted["_Keybinds3"]
 
-Converted["_UICorner364"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner364"].Parent = Converted["_Set2"]
+Converted["_UICorner480"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner480"].Parent = Converted["_Set2"]
 
-Converted["_Delete1"].Font = Enum.Font.TitilliumWeb
-Converted["_Delete1"].Text = "Remove Keybind"
-Converted["_Delete1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Delete1"].TextScaled = true
-Converted["_Delete1"].TextSize = 14
-Converted["_Delete1"].TextWrapped = true
-Converted["_Delete1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Delete1"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
-Converted["_Delete1"].BackgroundTransparency = 0.25
-Converted["_Delete1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Delete1"].BorderSizePixel = 0
-Converted["_Delete1"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
-Converted["_Delete1"].Selectable = false
-Converted["_Delete1"].Size = UDim2.new(0.75, 0, 0.125, 0)
-Converted["_Delete1"].Name = "Delete"
-Converted["_Delete1"].Parent = Converted["_Container7"]
+Converted["_Delete4"].Font = Enum.Font.TitilliumWeb
+Converted["_Delete4"].Text = "Remove Keybind"
+Converted["_Delete4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Delete4"].TextScaled = true
+Converted["_Delete4"].TextSize = 14
+Converted["_Delete4"].TextWrapped = true
+Converted["_Delete4"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Delete4"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
+Converted["_Delete4"].BackgroundTransparency = 0.25
+Converted["_Delete4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Delete4"].BorderSizePixel = 0
+Converted["_Delete4"].Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Converted["_Delete4"].Size = UDim2.new(0.75, 0, 0.125, 0)
+Converted["_Delete4"].Name = "Delete"
+Converted["_Delete4"].Parent = Converted["_Keybinds3"]
 
-Converted["_UICorner365"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner365"].Parent = Converted["_Delete1"]
+Converted["_UICorner481"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner481"].Parent = Converted["_Delete4"]
 
 Converted["_Custom"].Font = Enum.Font.TitilliumWeb
 Converted["_Custom"].PlaceholderText = "None"
@@ -11573,10 +15127,10 @@ Converted["_Custom"].Position = UDim2.new(0.5, 0, 0.25, 0)
 Converted["_Custom"].Selectable = false
 Converted["_Custom"].Size = UDim2.new(0.5, 0, 0.125, 0)
 Converted["_Custom"].Name = "Custom"
-Converted["_Custom"].Parent = Converted["_Container7"]
+Converted["_Custom"].Parent = Converted["_Keybinds3"]
 
-Converted["_UICorner366"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner366"].Parent = Converted["_Custom"]
+Converted["_UICorner482"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner482"].Parent = Converted["_Custom"]
 
 Converted["_Read"].Font = Enum.Font.TitilliumWeb
 Converted["_Read"].Text = "Read Input"
@@ -11590,238 +15144,99 @@ Converted["_Read"].BackgroundTransparency = 0.25
 Converted["_Read"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Read"].BorderSizePixel = 0
 Converted["_Read"].Position = UDim2.new(0.5, 0, 0.625, 0)
-Converted["_Read"].Selectable = false
 Converted["_Read"].Size = UDim2.new(0.550000012, 0, 0.075000003, 0)
 Converted["_Read"].Name = "Read"
-Converted["_Read"].Parent = Converted["_Container7"]
+Converted["_Read"].Parent = Converted["_Keybinds3"]
 
-Converted["_UICorner367"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner367"].Parent = Converted["_Read"]
-
-Converted["_Close15"].Font = Enum.Font.Nunito
-Converted["_Close15"].Text = "X"
-Converted["_Close15"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close15"].TextScaled = true
-Converted["_Close15"].TextSize = 14
-Converted["_Close15"].TextWrapped = true
-Converted["_Close15"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close15"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Close15"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close15"].BorderSizePixel = 0
-Converted["_Close15"].Position = UDim2.new(0.925000012, 0, 0.0500000007, 0)
-Converted["_Close15"].Size = UDim2.new(0.0932557136, 0, 0.0818606019, 0)
-Converted["_Close15"].Name = "Close"
-Converted["_Close15"].Parent = Converted["_Keybinds3"]
-
-Converted["_UICorner368"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner368"].Parent = Converted["_Close15"]
-
-Converted["_UIAspectRatioConstraint4"].AspectRatio = 0.9887532591819763
-Converted["_UIAspectRatioConstraint4"].Parent = Converted["_Close15"]
-
-Converted["_Title2"].Font = Enum.Font.Sarpanch
-Converted["_Title2"].Text = "Keybinds"
-Converted["_Title2"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Title2"].TextScaled = true
-Converted["_Title2"].TextSize = 14
-Converted["_Title2"].TextWrapped = true
-Converted["_Title2"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Title2"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Title2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Title2"].BorderSizePixel = 0
-Converted["_Title2"].Position = UDim2.new(0.425000012, 0, 0.0500000007, 0)
-Converted["_Title2"].Size = UDim2.new(0.650000036, 0, 0.0819999948, 0)
-Converted["_Title2"].Name = "Title"
-Converted["_Title2"].Parent = Converted["_Keybinds3"]
-
-Converted["_UICorner369"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner369"].Parent = Converted["_Title2"]
-
-Converted["_CommandBar"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_CommandBar"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_CommandBar"].BackgroundTransparency = 0.5
-Converted["_CommandBar"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_CommandBar"].BorderSizePixel = 0
-Converted["_CommandBar"].Position = UDim2.new(-0.25, 0, 0.850000024, 0)
-Converted["_CommandBar"].Size = UDim2.new(0.449999988, 0, 0.075000003, 0)
-Converted["_CommandBar"].Name = "CommandBar"
-Converted["_CommandBar"].Parent = Converted["_AntiHub"]
-
-Converted["_Input12"].Font = Enum.Font.TitilliumWeb
-Converted["_Input12"].PlaceholderColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
-Converted["_Input12"].PlaceholderText = "AntiHub Admin"
-Converted["_Input12"].Text = ""
-Converted["_Input12"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Input12"].TextScaled = true
-Converted["_Input12"].TextSize = 30
-Converted["_Input12"].TextWrapped = true
-Converted["_Input12"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Input12"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Input12"].BackgroundTransparency = 1
-Converted["_Input12"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Input12"].BorderSizePixel = 0
-Converted["_Input12"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Input12"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Input12"].Name = "Input"
-Converted["_Input12"].Parent = Converted["_CommandBar"]
-
-Converted["_UIStroke2"].BorderOffset = UDim.new(0.100000001, 0)
-Converted["_UIStroke2"].BorderStrokePosition = Enum.BorderStrokePosition.Inner
-Converted["_UIStroke2"].Color = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
-Converted["_UIStroke2"].Thickness = 2
-Converted["_UIStroke2"].Parent = Converted["_CommandBar"]
-
-Converted["_UICorner370"].CornerRadius = UDim.new(0.215000004, 0)
-Converted["_UICorner370"].Parent = Converted["_CommandBar"]
+Converted["_UICorner483"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner483"].Parent = Converted["_Read"]
 
 Converted["_CommandList"].Active = true
 Converted["_CommandList"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_CommandList"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
-Converted["_CommandList"].BackgroundTransparency = 1
+Converted["_CommandList"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
 Converted["_CommandList"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_CommandList"].BorderSizePixel = 0
 Converted["_CommandList"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_CommandList"].Size = UDim2.new(0.25, 0, 0.5, 0)
+Converted["_CommandList"].Size = UDim2.new(1, 0, 1, 0)
 Converted["_CommandList"].Visible = false
-Converted["_CommandList"].ZIndex = 2
+Converted["_CommandList"].ZIndex = 0
 Converted["_CommandList"].Name = "CommandList"
-Converted["_CommandList"].Parent = Converted["_AntiHub"]
+Converted["_CommandList"].Parent = Converted["_AHMenus"]
 
-Converted["_Container8"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Container8"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Container8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Container8"].BorderSizePixel = 0
-Converted["_Container8"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Container8"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Container8"].ZIndex = 0
-Converted["_Container8"].Name = "Container"
-Converted["_Container8"].Parent = Converted["_CommandList"]
+Converted["_Scroll9"].AutomaticCanvasSize = Enum.AutomaticSize.Y
+Converted["_Scroll9"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_Scroll9"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Scroll9"].ScrollBarThickness = 6
+Converted["_Scroll9"].ScrollingDirection = Enum.ScrollingDirection.Y
+Converted["_Scroll9"].VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+Converted["_Scroll9"].Active = true
+Converted["_Scroll9"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Scroll9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Scroll9"].BackgroundTransparency = 1
+Converted["_Scroll9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Scroll9"].BorderSizePixel = 0
+Converted["_Scroll9"].Position = UDim2.new(0.5, 0, 0.449999988, 0)
+Converted["_Scroll9"].Size = UDim2.new(0.949999988, 0, 0.899999976, 0)
+Converted["_Scroll9"].Name = "Scroll"
+Converted["_Scroll9"].Parent = Converted["_CommandList"]
 
-Converted["_Scroll6"].AutomaticCanvasSize = Enum.AutomaticSize.Y
-Converted["_Scroll6"].CanvasSize = UDim2.new(0, 0, 0, 0)
-Converted["_Scroll6"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Scroll6"].ScrollBarThickness = 6
-Converted["_Scroll6"].ScrollingDirection = Enum.ScrollingDirection.Y
-Converted["_Scroll6"].VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
-Converted["_Scroll6"].Active = true
-Converted["_Scroll6"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Scroll6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Scroll6"].BackgroundTransparency = 1
-Converted["_Scroll6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Scroll6"].BorderSizePixel = 0
-Converted["_Scroll6"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Scroll6"].Size = UDim2.new(0.949999988, 0, 0.800000012, 0)
-Converted["_Scroll6"].Name = "Scroll"
-Converted["_Scroll6"].Parent = Converted["_Container8"]
+Converted["_UIListLayout3"].HorizontalFlex = Enum.UIFlexAlignment.Fill
+Converted["_UIListLayout3"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout3"].Parent = Converted["_Scroll9"]
 
-Converted["_UIListLayout1"].HorizontalFlex = Enum.UIFlexAlignment.Fill
-Converted["_UIListLayout1"].SortOrder = Enum.SortOrder.LayoutOrder
-Converted["_UIListLayout1"].Parent = Converted["_Scroll6"]
+Converted["_Template10"].Active = true
+Converted["_Template10"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Template10"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
+Converted["_Template10"].BackgroundTransparency = 1
+Converted["_Template10"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Template10"].BorderSizePixel = 0
+Converted["_Template10"].ClipsDescendants = true
+Converted["_Template10"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Template10"].Size = UDim2.new(1, 0, 0.150000006, 0)
+Converted["_Template10"].Visible = false
+Converted["_Template10"].Name = "Template"
+Converted["_Template10"].Parent = Converted["_CommandList"]
 
-Converted["_Template2"].Active = true
-Converted["_Template2"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Template2"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
-Converted["_Template2"].BackgroundTransparency = 1
-Converted["_Template2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Template2"].BorderSizePixel = 0
-Converted["_Template2"].ClipsDescendants = true
-Converted["_Template2"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Template2"].Size = UDim2.new(1, 0, 0.150000006, 0)
-Converted["_Template2"].Visible = false
-Converted["_Template2"].Name = "Template"
-Converted["_Template2"].Parent = Converted["_Container8"]
+Converted["_Text1"].Font = Enum.Font.SciFi
+Converted["_Text1"].Text = ".sigma"
+Converted["_Text1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Text1"].TextScaled = true
+Converted["_Text1"].TextWrapped = true
+Converted["_Text1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Text1"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
+Converted["_Text1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Text1"].BorderSizePixel = 0
+Converted["_Text1"].ClipsDescendants = true
+Converted["_Text1"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Text1"].Size = UDim2.new(1, 0, 0.800000012, 0)
+Converted["_Text1"].Name = "Text"
+Converted["_Text1"].Parent = Converted["_Template10"]
 
-Converted["_Text"].Font = Enum.Font.SciFi
-Converted["_Text"].Text = ".sigma"
-Converted["_Text"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Text"].TextScaled = true
-Converted["_Text"].TextWrapped = true
-Converted["_Text"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Text"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 49.00000087916851, 46.000001057982445)
-Converted["_Text"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Text"].BorderSizePixel = 0
-Converted["_Text"].ClipsDescendants = true
-Converted["_Text"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Converted["_Text"].Size = UDim2.new(1, 0, 0.800000012, 0)
-Converted["_Text"].Name = "Text"
-Converted["_Text"].Parent = Converted["_Template2"]
+Converted["_UICorner484"].CornerRadius = UDim.new(0.125, 0)
+Converted["_UICorner484"].Parent = Converted["_Text1"]
 
-Converted["_UICorner371"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner371"].Parent = Converted["_Text"]
+Converted["_Tooltip28"].Value = "[Tooltip Not Found]"
+Converted["_Tooltip28"].Name = "Tooltip"
+Converted["_Tooltip28"].Parent = Converted["_Template10"]
 
-Converted["_Tooltip25"].Value = "[Tooltip Not Found]"
-Converted["_Tooltip25"].Name = "Tooltip"
-Converted["_Tooltip25"].Parent = Converted["_Template2"]
+Converted["_UICorner485"].CornerRadius = UDim.new(0.0250000004, 0)
+Converted["_UICorner485"].Parent = Converted["_CommandList"]
 
-Converted["_UICorner372"].CornerRadius = UDim.new(0.0250000004, 0)
-Converted["_UICorner372"].Parent = Converted["_Container8"]
-
-Converted["_Tooltip26"].Font = Enum.Font.TitilliumWeb
-Converted["_Tooltip26"].Text = ""
-Converted["_Tooltip26"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Tooltip26"].TextScaled = true
-Converted["_Tooltip26"].TextSize = 14
-Converted["_Tooltip26"].TextWrapped = true
-Converted["_Tooltip26"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Tooltip26"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
-Converted["_Tooltip26"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Tooltip26"].BorderSizePixel = 0
-Converted["_Tooltip26"].Position = UDim2.new(0.5, 0, 0.949827015, 0)
-Converted["_Tooltip26"].Size = UDim2.new(1, 0, 0.100000001, 0)
-Converted["_Tooltip26"].ZIndex = 0
-Converted["_Tooltip26"].Name = "Tooltip"
-Converted["_Tooltip26"].Parent = Converted["_Container8"]
-
-Converted["_Close16"].Font = Enum.Font.Nunito
-Converted["_Close16"].Text = "X"
-Converted["_Close16"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Close16"].TextScaled = true
-Converted["_Close16"].TextSize = 14
-Converted["_Close16"].TextWrapped = true
-Converted["_Close16"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Close16"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Close16"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Close16"].BorderSizePixel = 0
-Converted["_Close16"].Position = UDim2.new(0.925000012, 0, 0.0500000007, 0)
-Converted["_Close16"].Size = UDim2.new(0.0932557136, 0, 0.0818606019, 0)
-Converted["_Close16"].ZIndex = 2
-Converted["_Close16"].Name = "Close"
-Converted["_Close16"].Parent = Converted["_CommandList"]
-
-Converted["_UICorner373"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner373"].Parent = Converted["_Close16"]
-
-Converted["_UIAspectRatioConstraint5"].AspectRatio = 0.9887532591819763
-Converted["_UIAspectRatioConstraint5"].Parent = Converted["_Close16"]
-
-Converted["_Title3"].Font = Enum.Font.Sarpanch
-Converted["_Title3"].Text = "Commands"
-Converted["_Title3"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Title3"].TextScaled = true
-Converted["_Title3"].TextSize = 14
-Converted["_Title3"].TextWrapped = true
-Converted["_Title3"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_Title3"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
-Converted["_Title3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Title3"].BorderSizePixel = 0
-Converted["_Title3"].Position = UDim2.new(0.425000012, 0, 0.0500000007, 0)
-Converted["_Title3"].Size = UDim2.new(0.650000036, 0, 0.0819999948, 0)
-Converted["_Title3"].ZIndex = 2
-Converted["_Title3"].Name = "Title"
-Converted["_Title3"].Parent = Converted["_CommandList"]
-
-Converted["_UICorner374"].CornerRadius = UDim.new(0.125, 0)
-Converted["_UICorner374"].Parent = Converted["_Title3"]
-
-Converted["_TitleBar1"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_TitleBar1"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 31.000000052154064, 34.00000177323818)
-Converted["_TitleBar1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TitleBar1"].BorderSizePixel = 0
-Converted["_TitleBar1"].Position = UDim2.new(0.5, 0, 0.0500000007, 0)
-Converted["_TitleBar1"].Size = UDim2.new(1, 0, 0.100000001, 0)
-Converted["_TitleBar1"].ZIndex = 0
-Converted["_TitleBar1"].Name = "TitleBar"
-Converted["_TitleBar1"].Parent = Converted["_CommandList"]
+Converted["_Tooltip29"].Font = Enum.Font.TitilliumWeb
+Converted["_Tooltip29"].Text = ""
+Converted["_Tooltip29"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Tooltip29"].TextScaled = true
+Converted["_Tooltip29"].TextSize = 14
+Converted["_Tooltip29"].TextWrapped = true
+Converted["_Tooltip29"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Tooltip29"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_Tooltip29"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Tooltip29"].BorderSizePixel = 0
+Converted["_Tooltip29"].Position = UDim2.new(0.5, 0, 0.949827015, 0)
+Converted["_Tooltip29"].Size = UDim2.new(1, 0, 0.100000001, 0)
+Converted["_Tooltip29"].ZIndex = 0
+Converted["_Tooltip29"].Name = "Tooltip"
+Converted["_Tooltip29"].Parent = Converted["_CommandList"]
 -- Please leave these comments in and leave credit, it took me a while to make this
 
 --local Converted = {["_AntiHub"] = game.StarterGui.AntiHub}
@@ -11846,8 +15261,10 @@ end
 getgenv().AHNCC = false
 getgenv().AHL = true
 getgenv().AH = Converted["_AntiHub"]
-local SVersion = "1.6.1"
+local TVersion = 1.7
+local SVersion = tostring(TVersion).. ""
 getgenv().AHSV = SVersion
+local RBXConnections = {}
 local GSPlayers = game:GetService("Players")
 local LocalPlayer = GSPlayers.LocalPlayer
 local LocalCharacter = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
@@ -11866,11 +15283,17 @@ local GSLighting = game:GetService("Lighting")
 local GSHTTP = game:GetService("HttpService")
 local GSProximityPrompt = game:GetService("ProximityPromptService")
 local GSMarketPlace = game:GetService("MarketplaceService")
+local GSGP = game:GetService("GamepadService")
+local GSSound = game:GetService("SoundService")
+local GSCapture = game:GetService("CaptureService")
 local SaveLogs = ""
 local DebugLogs = ""
 local AntiHub = Converted["_AntiHub"]
 local AHContainer = AntiHub.TitleBar.Container.Container
 local PlaceId = game.PlaceId
+local Events = AntiHub.Events
+local Config = {}
+local PoppedMenus = {}
 local Menus = {}
 Menus.Main = {}
 Menus.Main.Visible = true
@@ -11906,7 +15329,6 @@ local Expanded = true
 local Menu = "Places"
 local CurrentKey = nil
 local Chat = AHContainer.Menus.Chat
-local Keybind = AntiHub.Keybinds
 local Debug = AHContainer.Menus.Debug
 local ScriptBlox = AHContainer.Menus.ScriptBlox
 local Miscellaneous = AHContainer.Menus.Misc
@@ -11927,12 +15349,256 @@ local AntiCheat = AHContainer.Menus.AntiCheat
 local Players = AHContainer.Menus.Players
 local Utility = AHContainer.Menus.Utility
 local SCallSim = AHContainer.Menus.SCCSimulator
+local AimbotFFA = AHContainer.Menus.AimbotFFA
+local PluginMenu = AHContainer.Menus.Plugins
+local FileSystemMenu = AHContainer.Menus.FileSystem
+local ExplorerMenu = AHContainer.Parent.Explorer
 local AntiKick = false
 local Unread = 0
 local TLogs = {["ChatLogs"] = {}, ["JoinLogs"] = {}, ["Debug"] = {}, ["AntiCheat"] = {}, ["Commands"] = {}}
-local PlaceIDs = {155615604, 135564683255158, 6764533218,  6868593153, 13824270489, 6884042552, 84881892786857, 11667312371, 142823291, 636649648, 335132309}
-local Supported = {"PrisonLife", "PrisonLife", "Washiez", "WashiezTC", "WashiezOGTC", "WashiezRank",	 "OilUp", "SCCSimulator", "MM2", "MM2", "MM2"}
+local PlaceIDs = {155615604, 135564683255158, 6764533218, 6868593153, 13824270489, 6884042552, 84881892786857, 11667312371, 142823291, 636649648, 335132309, 97986109236479}
+local Supported = {"PrisonLife", "PrisonLife", "Washiez", "WashiezTC", "WashiezOGTC", "WashiezRank", "OilUp", "SCCSimulator", "MM2", "MM2", "MM2", "AimbotFFA"}
 local CurrentGame = Supported[table.find(PlaceIDs, PlaceId)] or ""
+AHContainer.Visible = true
+ExplorerMenu.Visible = false
+local KeyBlacklist = {Enum.KeyCode.Unknown, Enum.KeyCode.ButtonSelect, Enum.KeyCode.ButtonStart, Enum.KeyCode.Touch, Enum.KeyCode.Escape}
+local Images = {}
+Images.Folder = "rbxassetid://127176907878906"
+Images.File = "rbxassetid://92385211198339"
+Images.Image = "rbxassetid://127002235194413"
+Images.Video = "rbxassetid://132295370250955"
+Images.Sound = "rbxassetid://129878211493908"
+Images.Plugin = "rbxassetid://110041508678133"
+Images.Table = "rbxassetid://132467874746724"
+Images.Error = "rbxassetid://103835775911947"
+Images.Home = "rbxassetid://102384750306029"
+Images.Settings = "rbxassetid://1257503133"
+Images.Background = "rbxassetid://104665872377436"
+Images.AHIcon = "rbxassetid://87007807442209"
+Images.DriftButton = "rbxassetid://136758574816289"
+Images.CarSpawner = "rbxassetid://12338080417"
+Images.Grid = "rbxassetid://129268621703210"
+Images.Refresh = "rbxassetid://114496992333593"
+
+local function RegisterSubMenu(Button, Frame, Menu)
+	task.spawn(function()
+		Button.Activated:Connect(function()
+			if Menus.Teleports.Waiting then return end
+			pcall(function()
+				Menus.Teleports.Waiting = true
+				for i, v in Menu:GetDescendants() do
+					if v == Frame or Frame:IsAncestorOf(v) then continue end
+					if v:IsA("TextButton") then
+						v.Active = false
+						v:AddTag("Active")
+						if v.AutoButtonColor then
+							v.AutoButtonColor = false
+							v:AddTag("AutoButtonColor")
+						end
+					elseif v:IsA("TextBox") then
+						v.TextEditable = false
+						v:AddTag("TextEditable")
+					end
+				end
+			end)
+			Frame.GroupTransparency = 1
+			Frame.Visible = true
+			GSTween:Create(Frame, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
+			task.wait(0.1)
+			Menus.Teleports.Waiting = false
+		end)
+
+		Frame.Close.Activated:Connect(function()
+			if Menus.Teleports.Waiting then return end
+			pcall(function()
+				Menus.Teleports.Waiting = true
+				for i, v in Menu:GetDescendants() do
+					if v == Frame or Frame:IsAncestorOf(v) then continue end
+					if v:HasTag("Active") then
+						v.Active = true
+						v:RemoveTag("Active")
+					elseif v:HasTag("TextEditable") then
+						v.TextEditable = true
+						v:RemoveTag("TextEditable")
+					end
+					if v:HasTag("AutoButtonColor") then
+						v.AutoButtonColor = true
+					end
+				end
+			end)
+			GSTween:Create(Frame, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
+			task.wait(0.1)
+			Frame.GroupTransparency = 1
+			Frame.Visible = false
+			Menus.Teleports.Waiting = false
+		end)
+		Frame.Visible = false
+		Frame.GroupTransparency = 1
+	end)
+end
+local function Popout(Frame, Visible, Name, Orientation, ApplyDefaultEvents)
+	if Frame == nil then return "Arugment 1 is nil" end
+	if Name == "Template" then
+		Name = nil
+	end
+	local PresetName = Name == nil
+	Name = Name or "Untitled Menu ".. tostring(#AntiHub.CustomMenus:GetChildren() + 1)
+	Orientation = Orientation or "Landscape"
+	local NMenu = AntiHub.CustomMenus.Template:Clone()
+	if Orientation:lower() == "portrait" then
+		NMenu.Size = UDim2.new(0.25, 0, 0.5, 0)
+	elseif Orientation:lower() == "landscape" then
+		NMenu.Size = UDim2.new(0.5, 0, 0.5, 0)
+	else
+		return "Invalid Orientation: \"Landscape\" or \"Portrait\" only."
+	end
+	if ApplyDefaultEvents == nil then
+		ApplyDefaultEvents = true
+	end
+	if AntiHub.CustomMenus:FindFirstChild(Name) ~= nil and not PresetName then
+		AntiHub.CustomMenus:FindFirstChild(Name):Destroy()
+	end
+	NMenu.Parent = AntiHub.CustomMenus
+
+	NMenu.Name = Name
+	NMenu.Title.Text = Name
+	Frame.Parent = NMenu.Container
+	if ApplyDefaultEvents then
+		NMenu.Events.Open.Open.Value = Visible
+		NMenu.Close.Activated:Connect(function()
+			NMenu.Events.Open:Fire(false)
+		end)
+		NMenu.Events.Open.Event:Connect(function(Open)
+			if NMenu.Events.Open.Open.Value == Open then return end
+			if Open then
+				NMenu.Size = UDim2.new(NMenu.Size.X.Scale, NMenu.Size.X.Offset, 0, 0)
+				NMenu.Visible = true
+				GSTween:Create(NMenu, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {["Size"] = UDim2.new(NMenu.Size.X.Scale, NMenu.Size.X.Offset, 0.5, NMenu.Size.Y.Offset)}):Play()
+			else
+				GSTween:Create(NMenu, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {["Size"] = UDim2.new(NMenu.Size.X.Scale, NMenu.Size.X.Offset, 0, 0)}):Play()
+				task.wait(0.5)
+				NMenu.Visible = false
+			end
+			NMenu.Events.Open.Open.Value = Open
+		end)
+	end
+
+	NMenu.Visible = Visible
+	return {["UI"] = NMenu, ["Container"] = NMenu.Container, ["Title"] = NMenu.Title, ["DragDetector"] = NMenu.Drag, ["Events"] = NMenu.Events}
+end
+pcall(function()
+	PoppedMenus.MediaPlayer = Popout(AntiHub.AHMenus.MediaPlayer, false, "Media Player", "Landscape", true)
+	PoppedMenus.MediaPlayer.Container = PoppedMenus.MediaPlayer.Container.MediaPlayer
+	PoppedMenus.MediaPlayer.Container.Visible = true
+	PoppedMenus.Keybind = Popout(AntiHub.AHMenus.Keybinds, false, "Keybinds", "Portrait", true)
+	PoppedMenus.Keybind.Container = PoppedMenus.Keybind.Container.Keybinds
+	PoppedMenus.Keybind.Container.Visible = true
+	PoppedMenus.CommandList = Popout(AntiHub.AHMenus.CommandList, false, "Commands", "Portrait", true)
+	PoppedMenus.CommandList.Container = PoppedMenus.CommandList.Container.CommandList
+	PoppedMenus.CommandList.Container.Visible = true
+	pcall(function()
+		for i, v in AHContainer.List:GetChildren() do
+			if v.Tooltip.Value:find("\\\"") then
+				repeat v.Tooltip.Value = string.gsub(v.Tooltip.Value, "\\\"", "\"") until not v.Tooltip.Value:find("\\\"")
+			end
+		end
+	end)
+	task.spawn(function()
+		local suc = false
+		repeat
+			suc = pcall(function()
+				AHContainer.Player.Settings.Image = Images.Settings
+				AntiHub.TitleBar.Container.Background.Image = Images.Background
+				ExplorerMenu.Controls.Home.Image = Images.Home
+				ExplorerMenu.Controls.Refresh.Image = Images.Refresh
+				PoppedMenus.MediaPlayer.Container.Types.Audio.Background.Fade.Image = Images.Grid
+				AHContainer.Player.Profile.Image = GSPlayers:GetUserThumbnailAsync(LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+			end)
+			task.wait(0.25)
+		until suc
+	end)
+	local A = 0
+	table.insert(RBXConnections, GSRun.RenderStepped:Connect(function(DT)
+		A += DT / 25
+		AntiHub.TitleBar.Container.Background.Position = UDim2.new(0.5 + (math.cos(A) / 2), 0, 0.5 + (math.sin(A) / 2), 0)
+	end))
+	local In = GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Background.Fade, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {["ImageTransparency"] = 0})
+	local Out = GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Background.Fade, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {["ImageTransparency"] = 0.9})
+	table.insert(RBXConnections, In.Completed:Connect(function()
+		task.wait(0.1)
+		Out:Play()
+	end))
+	table.insert(RBXConnections, Out.Completed:Connect(function()
+		task.wait(0.1)
+		In:Play()
+	end))
+	In:Play()
+end)
+PoppedMenus.MediaPlayer.Container.Types.Audio.Background.MouseEnter:Connect(function()
+	PoppedMenus.MediaPlayer.Container.Types.Audio:AddTag("MouseEntered")
+	GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Stats, TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {["Position"] = UDim2.new(0.5, 0, 0.875, 0), ["Size"] = UDim2.new(0.95, 0, 0.225, 0)}):Play()
+	GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions, TweenInfo.new(0.25, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {["Position"] = UDim2.new(0.5, 0, 0.125, 0), ["Size"] = UDim2.new(0.95, 0, 0.225, 0)}):Play()
+end)
+PoppedMenus.MediaPlayer.Container.Types.Audio.Background.MouseLeave:Connect(function()
+	PoppedMenus.MediaPlayer.Container.Types.Audio:RemoveTag("MouseEntered")
+	if PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.SInput.Visible then return end
+	if PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Visible then return end
+	GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Stats, TweenInfo.new(0.25, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out), {["Position"] = UDim2.new(0.5, 0, 1.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+	GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions, TweenInfo.new(0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, -0.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+end)
+PoppedMenus.MediaPlayer.Container.Types.Video.Background.MouseEnter:Connect(function()
+	PoppedMenus.MediaPlayer.Container.Types.Video:AddTag("MouseEntered")
+	GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Stats, TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {["Position"] = UDim2.new(0.5, 0, 0.875, 0), ["Size"] = UDim2.new(0.95, 0, 0.225, 0)}):Play()
+	GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Actions, TweenInfo.new(0.25, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {["Position"] = UDim2.new(0.5, 0, 0.125, 0), ["Size"] = UDim2.new(0.95, 0, 0.225, 0)}):Play()
+end)
+PoppedMenus.MediaPlayer.Container.Types.Video.Background.MouseLeave:Connect(function()
+	PoppedMenus.MediaPlayer.Container.Types.Video:RemoveTag("MouseEntered")
+	if PoppedMenus.MediaPlayer.Container.Types.Video.Actions.SInput.Visible then return end
+	if PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Visible then return end
+	GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Stats, TweenInfo.new(0.25, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out), {["Position"] = UDim2.new(0.5, 0, 1.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+	GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Actions, TweenInfo.new(0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, -0.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+end)
+local WarningList = {}
+local ShortWarnings = {}
+local StartupMessage = ""
+pcall(function()
+	StartupMessage = game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Assets/StartupMessage.json")
+	StartupMessage = GSHTTP:JSONDecode(StartupMessage)
+	if SVersion:find("Pre") and not SVersion:find("Studio") then
+		StartupMessage = StartupMessage.PreRelease
+	elseif not SVersion:find("Studio") then
+		StartupMessage = StartupMessage.Main
+	end
+end)
+local function AddWarning(Add, Text, Short)
+	if table.find(WarningList, Text) or not Add then return end
+	table.insert(WarningList, "Loading Paused: Warning.\n".. Text.. "\nClick To Continue.")
+	table.insert(ShortWarnings, Short)
+end
+pcall(function()
+	AHContainer.Warning.Visible = false
+	AddWarning(SVersion:find("Pre") and not SVersion:find("Studio"), "This Is The Pre-Release Version Of AntiHub. There May Be Bugs Or Unintended Behaviour.", "Pre-Release Warning")
+	AddWarning(type(readfile) ~= "function", "FileSystem Had An Error. Some Features May Be Limited.", "FileSystem")
+	AddWarning(type(writefile) ~= "function", "FileSystem Had An Error. Some Features May Be Limited.", "FileSystem")
+	AddWarning(type(listfiles) ~= "function", "FileSystem Had An Error. Some Features May Be Limited.", "FileSystem")
+	AddWarning(type(delfile) ~= "function", "FileSystem Had An Error. Some Features May Be Limited.", "FileSystem")
+	AddWarning(type(delfolder) ~= "function", "FileSystem Had An Error. Some Features May Be Limited.", "FileSystem")
+	AddWarning(type(isfile) ~= "function", "FileSystem Had An Error. Some Features May Be Limited.", "FileSystem")
+	AddWarning(type(isfolder) ~= "function", "FileSystem Had An Error. Some Features May Be Limited.", "FileSystem")
+	AddWarning(type(getcustomasset) ~= "function", "Function getcustomasset Had An Error. Some Features May Be Limited.", "getcustomasset")
+	AddWarning(not pcall(function() writefile("Test.txt", "true") end), "FileSystem Had An Error. Some Features May Be Limited.", "FileSystem")
+	AddWarning(not pcall(function() readfile("Test.txt") end), "FileSystem Had An Error. Some Features May Be Limited.", "FileSystem")
+	AddWarning(not pcall(function() getcustomasset("") end), "Function getcustomasset Had An Error. Some Features May Be Limited.", "getcustomasset")
+	AddWarning(CurrentGame == "PrisonLife", "Enable TweenTP In Settings Or You May Be Caught By The AntiCheat.", "Prison Life Warning")
+	AddWarning(StartupMessage ~= "nil", StartupMessage, "Startup Warning")
+	for i, v in WarningList do
+		AHContainer.Warning.Visible = true
+		AHContainer.Warning.Text = v
+		AHContainer.Warning.Activated:Wait()
+	end
+	AHContainer.Warning:Destroy()
+end)
+local FileTypes = {}
 local function Say()
 	warn("AntiHub> This Exploit Is Not Supported | Say")
 end
@@ -11943,9 +15609,13 @@ local function NotifLib()
 	warn("AntiHub> This Exploit Is Not Supported | NotifLib")
 end
 pcall(function()
+	FileTypes = GSHTTP:JSONDecode(game:HttpGet("https://github.com/J0BB0T/TNE/raw/refs/heads/main/Assets/FileTypes.json"))
 	Say = loadstring(game:HttpGet("https://gist.githubusercontent.com/devguy100/6a49aa32164143be3ac90f2d705c4583/raw"))()
 	SyntHigh = loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/SyntaxHighlight.lua"))()
-	NotifLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/RealNotify.lua"))()("rbxassetid://110362083969529")
+	NotifLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/RealNotify.lua"))()(Images.AHIcon)
+end)
+pcall(function()
+
 end)
 local BDecode = base64decode or base64_decode
 local function UIOpen(Toggle)
@@ -11953,7 +15623,13 @@ local function UIOpen(Toggle)
 	if Menus.Main.Visible == Toggle then return end
 	Menus.Main.Waiting = true
 	Menus.Main.Visible = Toggle
+	if AntiHub.TitleBar.Buttons.Hints.Close.Visible then
+		AntiHub.TitleBar.Buttons.Hints.Help.Visible = true
+	end
+	AntiHub.TitleBar.Buttons.Hints.Stats.Visible = false
+	AntiHub.TitleBar.Buttons.Hints.Close.Visible = false
 	if Toggle then
+		GSGP:EnableGamepadCursor(nil)
 		AntiHub.TitleBar.Visible = true
 		if Menu == "Chat" then
 			Unread = 0
@@ -11964,6 +15640,7 @@ local function UIOpen(Toggle)
 			GSTween:Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 5.125, 0), ["Size"] = UDim2.new(1, 0, 8.75, 0)}):Play()
 		end
 	else
+		GSGP:DisableGamepadCursor()
 		UIPos = AntiHub.TitleBar.Position
 		if Expanded then
 			GSTween:Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 0.5, 0), ["Size"] = UDim2.new(1, 0, 1, 0)}):Play()
@@ -11976,6 +15653,20 @@ local function UIOpen(Toggle)
 	Menus.Main.Waiting = false
 end
 local function MenuOpen(Name)
+	if Name == "FileSystem" then
+		AHContainer.Visible = false
+		ExplorerMenu.Visible = true
+		Events.MenuOpened:Fire(Name, Menu, false)
+		Events.MenuOpened:Fire(Name, Menu, true)
+		return
+	end
+	if Name == "ResetMenu" then
+		AHContainer.Visible = true
+		ExplorerMenu.Visible = false
+		Events.MenuOpened:Fire(Name, Menu, false)
+		Events.MenuOpened:Fire(Name, Menu, true)
+		return
+	end
 	pcall(function()
 		if Menu == Name then return end
 		if Menus.List.Waiting then return end
@@ -11983,6 +15674,7 @@ local function MenuOpen(Name)
 			Unread = 0
 		end
 		local TempMenu = Menu
+		Events.MenuOpened:Fire(Name, Menu, false)
 		Menu = Name
 		Menus.List.Waiting = true
 		AHContainer.Menus[Name].Visible = true
@@ -11994,9 +15686,12 @@ local function MenuOpen(Name)
 		GSTween:Create(AHContainer.Menus[Name], TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0, ["Position"] = UDim2.new(0.575, 0, 0.5, 0)}):Play()
 		task.wait(0.25)
 		AHContainer.Menus[TempMenu].Visible = false
-		ScriptBlox.Options.Visible = false
-		Menus.List.Waiting = false
+		Events.MenuOpened:Fire(Name, TempMenu, true)
 	end)
+	AHContainer.Visible = true
+	ExplorerMenu.Visible = false
+	ScriptBlox.Options.Visible = false
+	Menus.List.Waiting = false
 end
 local function Merge(Default, Custom)
 	for i, v in pairs(Custom) do
@@ -12007,8 +15702,6 @@ local function Merge(Default, Custom)
 		end
 	end
 end
-local RBXConnections = {}
-local Config = {}
 local function GetCurrentTime()
 	--[[local Hour = DateTime.now():ToLocalTime().Hour
 	local Minute = DateTime.now():ToLocalTime().Minute
@@ -12031,6 +15724,14 @@ local function GetCurrentDate()
 	return string.format("%02d/%02d/%04d", DateTime.now():ToLocalTime().Day, DateTime.now():ToLocalTime().Month, DateTime.now():ToLocalTime().Year)
 end
 
+local function GetBoolean(Boolean, Space)
+	if Space then
+		return " [".. tostring(Boolean):sub(1, 1):upper().. "]"
+	else
+		return "[".. tostring(Boolean):sub(1, 1):upper().. "]"
+	end
+end
+
 local function GetUnshortened(inp)
 	if inp == "" or inp == " " then return nil end
 	local Found = {}
@@ -12047,6 +15748,9 @@ local function GetUnshortened(inp)
 		return GSPlayers:GetPlayerFromCharacter(Found[1])
 	end
 	for i, v in GSPlayers:GetPlayers() do
+		if v.Name == inp then
+			return v
+		end
 		if v.Name:lower():sub(1, #inp) == inp:lower() or v.DisplayName:lower():sub(1, #inp) == inp:lower() then
 			table.insert(Found,v)
 		end
@@ -12089,7 +15793,6 @@ local function GetHumanoid(Character)
 		return Character:FindFirstChildOfClass("Humanoid")
 	end
 end
-
 -- The reason why this exists is to stop random items in players in FindFirstChild (GetPlayer)
 local function GetPlayer(Name)
 	for i, v in GSPlayers:GetPlayers() do
@@ -12108,6 +15811,9 @@ local function AddUnshortener(TextBox)
 	end)
 end
 local function Notify(Text, Duration, Title)
+	Text = tostring(Text)
+	Duration = tonumber(Duration) or 3
+	Title = tostring(Title) or "AntiHub"
 	DebugLogs ..= GetCurrentTime().. ": *".. Title.. "* | ".. Text.. " | ".. tostring(Duration).. "\n"
 	if Config.Debug.NToast then
 		GSStarterGui:SetCore("SendNotification", {["Title"] = Title, ["Text"] = Text, ["Duration"] = Duration})
@@ -12122,7 +15828,7 @@ local function MoveCharacter(Position, ForceTP)
 		GetHumanoid(LocalCharacter):ChangeState(Enum.HumanoidStateType.Jumping)
 		task.wait(0.05)
 	end
-	if not ForceTP and Config.TweenTP then
+	if not ForceTP and (Config.TweenTP or ForceTP == false) then
 		if typeof(Position) == "CFrame" then
 			GSTween:Create(LocalCharacter.HumanoidRootPart, TweenInfo.new(math.abs(LocalCharacter:GetPivot().Position.Magnitude - Position.Position.Magnitude) / Config.Universal.TSPS, Enum.EasingStyle.Linear), {["CFrame"] = Position}):Play()
 		elseif typeof(Position) == "Vector3" then
@@ -12145,18 +15851,25 @@ local function LogDebug(String, NF)
 	if Config.Debug.Enabled then
 		task.spawn(function()
 			table.insert(TLogs.Debug, GetCurrentTime().. ": ".. String)
-			if string.len(table.concat(TLogs.Debug, "\n")) > 2000 then
-				repeat
-					table.remove(TLogs.Debug, 1)
-					task.wait()
-				until string.len(table.concat(TLogs.Debug, "\n")) <= 2000
+			local Clone = Debug.Template:Clone()
+			if Debug.Logs.CanvasPosition.Y >= Debug.Logs.CanvasSize.Y.Offset - Debug.Logs.AbsoluteWindowSize.Y then
+				Clone:AddTag("Downwards")
 			end
-			Debug.Logs.Log.Text = table.concat(TLogs.Debug, "\n")
-			Debug.Logs.CanvasSize = UDim2.new(0, Debug.Logs.Log.TextBounds.X, 0, Debug.Logs.Log.TextBounds.Y)
-			Debug.Logs.CanvasPosition = Vector2.new(0, Debug.Logs.CanvasSize.Y.Offset - Debug.Logs.AbsoluteWindowSize.Y)
+			Clone.Parent = Debug.Logs
+			Clone.Log.Text = GetCurrentTime().. ": ".. String
+			Clone.Name = "Log_".. tostring(#Debug.Logs:GetChildren())
+			Clone.Visible = true
+			Clone.Log.Activated:Connect(function()
+				setclipboard(Clone.Log.Text)
+				Notify("Copied Log To Clipboard.", 5, "Debug")
+			end)
+
+			if Clone:HasTag("Downwards") and false then
+				Debug.Logs.CanvasPosition = Vector2.new(Debug.Logs.CanvasPosition.X, Debug.Logs.CanvasSize.Y.Offset - Debug.Logs.AbsoluteWindowSize.Y)
+			end
 		end)
 		if NF and Config.Debug.Toast then
-			Notify(String, 5, "AntiHub Debug")
+			Notify(String, 5, "Debug")
 		end
 		return "Completed"
 	end
@@ -12168,18 +15881,25 @@ local function LoadConfig()
 	end
 	Config.Active = true
 	Config.PauseLoop = false
+	Config.LoopCooldown = 0.1
+	Config.ECount = 0
 	Config.TweenTP = false
+	Config.Plugins = {}
 	Config.Debug = {}
 	Config.Debug.LoopS = 0
 	Config.Debug.LoopE = 0
 	Config.Debug.Enabled = getgenv().AHDebug or type(string.find(SVersion, "Studio")) == "number"
 	Config.Debug.Toast = true
 	Config.Debug.NToast = false
+	Config.Debug.OldVersion = TVersion
+	Config.Debug.OldSVersion = SVersion
+	Config.Debug.FSType = "Unix"
+	Config.FSSeperator = "/"
 	Config.ChatLogs = ""
 	Config.AC = {}
 	Config.AC.AutoWhiteList = true
-	Config.AC.Toast = false
-	Config.AC.Enabled = true
+	Config.AC.Toast = true
+	Config.AC.Enabled = false
 	Config.Ping = 0
 	Config.FPS = 0
 	Config.Universal = {}
@@ -12204,6 +15924,7 @@ local function LoadConfig()
 	Config.Universal.Banging = false
 	Config.Universal.Orbiting = false
 	Config.Universal.Flinging = false
+	Config.Universal.FPos = nil
 	Config.Utility = {}
 	Config.Utility.Menu = "Exploits"
 	Config.Utility.MenuWait = false
@@ -12216,13 +15937,11 @@ local function LoadConfig()
 	Config.PrisonLife.Crashing = false
 	Config.PrisonLife.Killing = false
 	Config.PrisonLife.AntiShield = false
+	Config.PrisonLife.Indicators = false
 	Config.PrisonLife.IA = false
 	Config.PrisonLife.LK = false
 	Config.PrisonLife.Setups = 0
 	Config.PrisonLife.Cooldown = 0
-	pcall(function()
-		Config.PrisonLife.RegModule = require(GSRS["Modules_client"]["RegionModule_client"])
-	end)
 	Config.MM2 = {}
 	Config.MM2.Murderer = nil
 	Config.MM2.Sheriff = nil
@@ -12230,6 +15949,7 @@ local function LoadConfig()
 	Config.MM2.Spawn = nil
 	Config.MM2.NotifyRole = false
 	Config.MM2.NotifyDrop = false
+	Config.MM2.HidStab = false
 	Config.Washiez = {}
 	Config.Washiez.AllTickets = false
 	Config.Washiez.NoTickets = false
@@ -12242,6 +15962,7 @@ local function LoadConfig()
 	Config.Washiez.Gates = {}
 	Config.Washiez.Collider = false
 	Config.Washiez.CarPads = false
+	Config.Washiez.LoopDoors = false
 	if CurrentGame == "Washiez" then
 		task.spawn(function()
 			Config.Washiez.DefaultRank = LocalPlayer:FindFirstChild("GroupInfo"):FindFirstChild("Rank").Value
@@ -12271,6 +15992,7 @@ local function LoadConfig()
 	Config.OilUp = {}
 	Config.OilUp.AutoFarm = false
 	Config.OilUp.Sound = nil
+	Config.OilUp.MuteNPCs = false
 	Config.SCallSim = {}
 	Config.SCallSim.HCC = false
 	Config.SCallSim.SCC = false
@@ -12279,6 +16001,12 @@ local function LoadConfig()
 	Config.SCallSim.Delay = 10
 	Config.SCallSim.Amount = 100
 	Config.SCallSim.Call = true
+	Config.AimbotFFA = {}
+	Config.AimbotFFA.KillAll = false
+	Config.AimbotFFA.GunMods = false
+	Config.AimbotFFA.AllowAimbot = true
+	Config.AimbotFFA.SuperCrash = false
+	Config.AimbotFFA.Thorns = false
 	if isfile("AHConfig.cfg") then
 		local TempConfig = GSHTTP:JSONDecode(readfile("AHConfig.cfg")).Config
 		local TempKeybinds = GSHTTP:JSONDecode(readfile("AHConfig.cfg")).Keybinds
@@ -12299,6 +16027,7 @@ local function LoadConfig()
 		Config.PauseLoop = false
 		Config.Debug.LoopS = 0
 		Config.Debug.LoopE = 0
+		Config.Debug.CurrentVersion = SVersion
 		Config.AC = {}
 		Config.AC.AutoWhiteList = true
 		Config.Ping = 0
@@ -12319,6 +16048,7 @@ local function LoadConfig()
 		Config.Universal.Banging = false
 		Config.Universal.Orbiting = false
 		Config.Universal.Flinging = false
+		Config.Universal.FPos = nil
 		Config.Utility.Menu = "Exploits"
 		Config.Utility.MenuWait = false
 		Config.Utility.WalkFling = false
@@ -12332,9 +16062,6 @@ local function LoadConfig()
 		Config.PrisonLife.LK = false
 		Config.PrisonLife.Setups = 0
 		Config.PrisonLife.Cooldown = 0
-		pcall(function()
-			Config.PrisonLife.RegModule = require(GSRS["Modules_client"]["RegionModule_client"])
-		end)
 		Config.MM2.Murderer = nil
 		Config.MM2.Sheriff = nil
 		Config.MM2.Map = ""
@@ -12350,6 +16077,7 @@ local function LoadConfig()
 		Config.Washiez.Gates = {}
 		Config.Washiez.Collider = false
 		Config.Washiez.CarPads = false
+		Config.Washiez.LoopDoors = false
 		if CurrentGame == "Washiez" then
 			task.spawn(function()
 				Config.Washiez.DefaultRank = LocalPlayer:FindFirstChild("GroupInfo"):FindFirstChild("Rank").Value
@@ -12372,15 +16100,19 @@ local function LoadConfig()
 			end)
 		end
 		Config.OilUp.AutoFarm = false
-		Config.OilUp.Sound = Instance.new("Sound", AntiHub)
 		Config.SCallSim.HCC = false
 		Config.SCallSim.SCC = false
 		Config.SCallSim.Audio = false
 		Config.SCallSim.AutoFarm = false
+		Config.AimbotFFA.KillAll = false
+		Config.AimbotFFA.GunMods = false
+		Config.AimbotFFA.AllowAimbot = true
 	else
 		Config.Universal.Animation = Instance.new("Animation", AntiHub)
 		Config.Universal.AnimTrack = nil
 	end
+	Config.OilUp.Sound = Instance.new("Sound", AntiHub)
+
 	Config.Universal.Animation.Name = "InvisAnim"
 	Config.Universal.Animation.AnimationId = "rbxassetid://70504673206726"
 	Notify("Loaded Config.", 3, "Success")
@@ -12449,7 +16181,9 @@ local function Unload()
 	Loop(Config)
 	pcall(function()
 		for i, v in RBXConnections do
-			v:Disconnect()
+			pcall(function()
+				v:Disconnect()
+			end)
 		end
 	end)
 	Config.AC.Enabled = false
@@ -12462,37 +16196,6 @@ local function Unload()
 	Notify("AntiHub Unloaded.", 10, "Success")
 end
 AHContainer.Settings.Unload.Activated:Once(Unload)
-
-Keybind.Visible = false
-AHContainer.Warning.Visible = false
-
-task.spawn(function()
-	AHContainer.Warning.Text = "Warning\nFileSystem Had An Error. Some Features May Be Limited.\nClick To Continue."
-	if type(readfile) ~= "function" then
-		AHContainer.Warning.Visible = true
-	end
-	if type(writefile) ~= "function" then
-		AHContainer.Warning.Visible = true
-	end
-	if type(getcustomasset) ~= "function" then
-		AHContainer.Warning.Visible = true
-	end
-	local Test = pcall(function()
-		writefile("Test.txt", "true")
-	end)
-	if not Test then
-		AHContainer.Warning.Visible = true
-	end
-	Test = pcall(function()
-		readfile("Test.txt")
-	end)
-	if not Test then
-		AHContainer.Warning.Visible = true
-	end
-end)
-AHContainer.Warning.Activated:Connect(function()
-	AHContainer.Warning:Destroy()
-end)
 
 table.insert(RBXConnections, LocalPlayer.CharacterAdded:Connect(function(mod)
 	pcall(function()
@@ -12510,7 +16213,6 @@ table.insert(RBXConnections, LocalPlayer.CharacterAdded:Connect(function(mod)
 	PrisonLife.MKill.Text = "MKill"
 	PrisonLife.Arrest.Text = "Arrest"
 	LocalCharacter = mod
-	GetHumanoid(mod).UseJumpPower = true
 	if CurrentGame == "Washiez" then
 		GetHumanoid(mod).Jumping:Connect(function()
 			if Config.Washiez.Seat ~= nil then
@@ -12543,6 +16245,26 @@ table.insert(RBXConnections, LocalPlayer.CharacterAdded:Connect(function(mod)
 				workspace.CurrentCamera.CameraSubject = GetHumanoid(LocalCharacter)
 			end
 			workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
+		end)
+	elseif CurrentGame == "AimbotFFA" then
+		task.spawn(function()
+			LocalPlayer.PlayerGui:WaitForChild("MyModGui")
+			task.wait(0.5)
+			local Panel = LocalPlayer.PlayerGui.MyModGui:WaitForChild("ModPanel")
+			local Button = LocalPlayer.PlayerGui.MyModGui:WaitForChild("ModsButton")
+			task.wait(0.25)
+			Button.Archivable = true
+			task.wait(0.25)
+			local NewButton = Button:Clone()
+			task.wait(0.5)
+			pcall(function()
+				NewButton:FindFirstChild("LocalScript2"):Destroy()
+			end)
+			NewButton.Parent = Button.Parent
+			NewButton.Activated:Connect(function()
+				Panel.Visible = not Panel.Visible
+			end)
+			Button:Destroy()
 		end)
 	end
 	GetHumanoid(mod).Died:Connect(function()
@@ -12618,15 +16340,22 @@ local function ACTrigger(plr, Reason, Respawn, Jumped)
 	if GetHumanoid(plr.Character).Health == 0 then return end
 	if table.find(Config.AC.CanSend, plr.Name.. " ".. Reason) then return end
 	table.insert(TLogs.AntiCheat, GetCurrentTime().. ": \"".. plr.Name.. "\" Triggered: ".. Reason)
-	if string.len(table.concat(TLogs.AntiCheat, "\n")) > 2000 then
-		repeat
-			table.remove(TLogs.AntiCheat, 1)
-			task.wait(0.05)
-		until string.len(table.concat(TLogs.AntiCheat, "\n")) <= 2000
+	local Clone = AntiCheat.Template:Clone()
+	if AntiCheat.Logs.CanvasPosition.Y >= AntiCheat.Logs.CanvasSize.Y.Offset - AntiCheat.Logs.AbsoluteWindowSize.Y then
+		Clone:AddTag("Downwards")
 	end
-	AntiCheat.Logs.Log.Text = table.concat(TLogs.AntiCheat, "\n")
-	AntiCheat.Logs.CanvasSize = UDim2.new(0, AntiCheat.Logs.Log.TextBounds.X, 0, AntiCheat.Logs.Log.TextBounds.Y)
-	AntiCheat.Logs.CanvasPosition = Vector2.new(0, AntiCheat.Logs.CanvasSize.Y.Offset - AntiCheat.Logs.AbsoluteWindowSize.Y)
+	Clone.Parent = AntiCheat.Logs
+	Clone.Log.Text = GetCurrentTime().. ": \"".. plr.Name.. "\" Triggered: ".. Reason
+	Clone.Name = "Log_".. tostring(#AntiCheat.Logs:GetChildren())
+	Clone.Visible = true
+	Clone.Log.Activated:Connect(function()
+		setclipboard(Clone.Log.Text)
+		Notify("Copied Log To Clipboard.", 5, "AntiCheat")
+	end)
+	if Clone:HasTag("Downwards") and false then
+		AntiCheat.Logs.CanvasPosition = Vector2.new(AntiCheat.Logs.CanvasPosition.X, AntiCheat.Logs.CanvasSize.Y.Offset - AntiCheat.Logs.AbsoluteWindowSize.Y)
+	end
+
 	SaveLogs ..= GetCurrentTime().. ": \"".. plr.Name.. "\" Triggered: ".. Reason.. "\n"
 	--print("\"".. plr.Name.. "\" Triggered: ".. Reason)
 	if Config.AC.Toast then
@@ -12640,7 +16369,9 @@ local function FireTouch(Part, Touch, Time, Toggle, Log)
 	if Log == nil then
 		Log = true
 	end
-	LogDebug("FireTouch *game.".. Part:GetFullName().. "* | *game.".. Touch:GetFullName().. "* | *".. tostring(Time).. "* | *".. tostring(Toggle).. "*", Log)
+	pcall(function()
+		LogDebug("FireTouch *game.".. Part:GetFullName().. "* | *game.".. Touch:GetFullName().. "* | *".. tostring(Time).. "* | *".. tostring(Toggle).. "*", Log)
+	end)
 	if firetouchinterest then
 		if Time == nil then
 			pcall(firetouchinterest, Part, Touch, Toggle)
@@ -12661,8 +16392,8 @@ local function FireTouch(Part, Touch, Time, Toggle, Log)
 		Part.CFrame = CF
 	end
 end
-local function FireProximity(Prompt:ProximityPrompt, Teleport)
-	LogDebug("FireProximity *game.".. Prompt:GetFullName().. "* | *".. tostring(Teleport).. "*")
+local function FireProximity(Prompt:ProximityPrompt, Teleport, Log)
+	LogDebug("FireProximity *game.".. Prompt:GetFullName().. "* | *".. tostring(Teleport).. "*", Log)
 	if fireproximityprompt then
 		if Teleport then
 			local CF = LocalCharacter:GetPivot()
@@ -12734,17 +16465,30 @@ end
 local function UpdateWhitelist()
 	if not Config.Active then return end
 	local String = ""
-	for i, v in Config.AC.Whitelist do
-		if type(v) ~= "userdata" then continue end
-		if i == #Config.AC.Whitelist then
-			String ..= tostring(i).. ". ".. v.Name
-		else
-			String ..= tostring(i).. ". ".. v.Name.. "\n"
+	for i, v in AntiCheat.Whitelist:GetChildren() do
+		if v:IsA("Frame") then
+			v:Destroy()
 		end
 	end
-	AntiCheat.Whitelist.Players.Text = String
-	AntiCheat.Whitelist.CanvasSize = UDim2.new(0, AntiCheat.Whitelist.Players.TextBounds.X, 0, AntiCheat.Whitelist.Players.TextBounds.Y)
-	AntiCheat.Whitelist.CanvasPosition = Vector2.new(0, AntiCheat.Whitelist.CanvasSize.Y.Offset - AntiCheat.Whitelist.AbsoluteWindowSize.Y)
+	for i, v in Config.AC.Whitelist do
+		if type(v) ~= "userdata" then continue end
+		local Clone = AntiCheat.WLTemplate:Clone()
+		if AntiCheat.Whitelist.CanvasPosition.Y >= AntiCheat.Whitelist.CanvasSize.Y.Offset - AntiCheat.Whitelist.AbsoluteWindowSize.Y then
+			Clone:AddTag("Downwards")
+		end
+		Clone.Parent = AntiCheat.Whitelist
+		Clone.Log.Text = tostring(i).. ". ".. v.Name
+		Clone.Name = "Log_".. tostring(#AntiCheat.Whitelist:GetChildren())
+		Clone.Visible = true
+		Clone.Log.Activated:Connect(function()
+			setclipboard(Clone.Log.Text)
+			Notify("Copied Whitelist To Clipboard.", 5, "AntiCheat")
+		end)
+
+		if Clone:HasTag("Downwards") and false then
+			AntiCheat.Whitelist.CanvasPosition = Vector2.new(AntiCheat.Whitelist.CanvasPosition.X, AntiCheat.Whitelist.CanvasSize.Y.Offset - AntiCheat.Whitelist.AbsoluteWindowSize.Y)
+		end
+	end
 end
 
 local function UpdatePlayerList()
@@ -12759,8 +16503,10 @@ local function UpdatePlayerList()
 			TeamName = v.Team.Name
 			TeamColor = "rgb(".. tostring(math.round(255 * v.TeamColor.Color.R)).. ",".. tostring(math.round(255 * v.TeamColor.Color.G)).. ",".. tostring(math.round(255 * v.TeamColor.Color.B)).. ")"
 		end
-		if v.Name == Players.Input.Text or table.find(Team, v) or v == LocalPlayer then
+		if v.Name == Players.Input.Text or (table.find(Team, v) and false) then
 			table.insert(List, tostring(i).. ". <font color=\"rgb(0,178,0)\">@".. v.Name.. "</font> (".. v.DisplayName.. ")".. `<font color=\"{TeamColor}\"> ({TeamName})</font>`)
+		elseif v == LocalPlayer then
+			table.insert(List, tostring(i).. ". <font color=\"rgb(200,200,200)\">@".. v.Name.. "</font> (".. v.DisplayName.. ")".. `<font color=\"{TeamColor}\"> ({TeamName})</font>`)
 		elseif table.find(Config.AC.Whitelist, v) then
 			table.insert(List, tostring(i).. ". <font color=\"rgb(0,0,178)\">@".. v.Name.. "</font> (".. v.DisplayName.. ")".. `<font color=\"{TeamColor}\"> ({TeamName})</font>`)
 		else
@@ -12774,82 +16520,743 @@ end
 
 UpdatePlayerList()
 
+local function SetupExplorer(Frame)
+	Frame.Controls.Home.Activated:Connect(function()
+		Frame.Values.ManualPath.Value = ""
+		Frame.Values.UseFile.Value = false
+		Frame.Values.Found.Value = true
+	end)
+	Frame.Controls.Back.Activated:Connect(function()
+		if Frame.Values.Path.Value == "" then return end
+		local Path = ""
+		local Split = Frame.Values.Path.Value:split(Config.FSSeperator)
+		table.remove(Split, #Split)
+		Path = table.concat(Split)
+		Frame.Values.ManualPath.Value = Path
+		Frame.Values.UseFile.Value = false
+		Frame.Values.Found.Value = true
+	end)
+	Frame.Close.Activated:Connect(function()
+		Frame.Values.Current.Value = Frame.Template
+		Frame.Values.Found.Value = true
+		if Frame.Parent.Parent:FindFirstChild("Events") then
+			Frame.Parent.Parent.Events.Open:Fire(false)
+		end
+		--MenuOpen("ResetMenu")
+	end)
+	Frame.MainControls.Open.Activated:Connect(function()
+		if Frame.Values.Current.Value.Name == "Template" then
+			Frame.Values.UsePath.Value = true
+			Frame.Values.UseFile.Value = false
+		else
+			--Frame.Values.UseFile.Value = Frame.Values.Current.Value.Container.FileType.Value ~= "1Folder"
+			Frame.Values.UseFile.Value = true
+		end
+		Frame.Values.Found.Value = true
+	end)
+	Frame.MainControls.Delete.Activated:Connect(function()
+		if Frame.Values.Current.Value.Name == "Template" then return end
+		local Success, Output = pcall(function()
+			if Frame.Values.Current.Value.Container.FileType.Value == "1Folder" then
+				delfolder(Frame.Values.Current.Value.Container.Path.Value)
+			end
+			if Frame.Values.Current.Value.Container.FileType.Value == "2File" then
+				delfile(Frame.Values.Current.Value.Container.Path.Value)
+			end
+			Frame.Values.ManualPath.Value = Frame.Values.Path.Value
+			Frame.Values.UseFile.Value = false
+			Frame.Values.Found.Value = true
+		end)
+	end)
+	Frame.MainControls.Copy.Activated:Connect(function()
+		if Frame.Values.Current.Value.Name == "Template" then return end
+		Frame.Values.Copy.Value = Frame.Values.Current.Value.Container.Path.Value
+		Frame.Values.Copied.Value = true
+		Frame.Values.UseCut.Value = false
+	end)
+	Frame.MainControls.Cut.Activated:Connect(function()
+		if Frame.Values.Current.Value.Name == "Template" then return end
+		Frame.Values.Copy.Value = Frame.Values.Current.Value.Container.Path.Value
+		Frame.Values.Copied.Value = true
+		Frame.Values.UseCut.Value = true
+	end)
+	Frame.MainControls.Paste.Activated:Connect(function()
+		--if Frame.Values.Copy.Value == "Template" then return end
+		local FileName = Frame.Values.Copy.Value
+		local FileContents = "Failed To Copy."
+		if isfile(FileName) then
+			FileContents = readfile(FileName)
+			if Frame.Values.UseCut.Value then
+				delfile(FileName)
+			end
+			writefile(Frame.Values.Path.Value.. Config.FSSeperator.. FileName:split(Config.FSSeperator)[#FileName:split(Config.FSSeperator)], FileContents)
+		else
+			if Frame.Values.UseCut.Value then
+				delfolder(FileName)
+			end
+			makefolder(Frame.Values.Path.Value.. Config.FSSeperator.. FileName:split(Config.FSSeperator)[#FileName:split(Config.FSSeperator)])
+		end
+		Frame.Values.Copy.Value = ""
+		Frame.Values.Copied.Value = false
+		Frame.Values.UseCut.Value = false
+		Frame.Values.ManualPath.Value = Frame.Values.Path.Value
+		Frame.Values.UseFile.Value = false
+		Frame.Values.Found.Value = true
+	end)
+	Frame.MainControls.RInput.FocusLost:Connect(function(EP)
+		if not EP then return end
+		if Frame.Values.Current.Value.Name == "Template" then return end
+		if Frame.MainControls.RInput.Text == "" or Frame.MainControls.RInput.Text == " " then
+			Frame.Values.ManualPath.Value = Frame.Values.Path.Value
+			Frame.Values.UseFile.Value = false
+			Frame.Values.Found.Value = true
+			return
+		end
+		Frame.MainControls.RInput.Visible = false
+		Frame.MainControls.Rename.Visible = true
+		if isfile(Frame.MainControls.RInput.Text) or isfolder(Frame.MainControls.RInput.Text) then
+			Notify("\"".. Frame.MainControls.RInput.Text.. "\" Already Exists.", 5, "Error")
+			return
+		end
+		if isfile(Frame.Values.Current.Value.Container.Path.Value) then
+			local Path = Frame.Values.Current.Value.Container.Path.Value:split(Config.FSSeperator)
+			table.remove(Path, #Path)
+			Path = table.concat(Path, Config.FSSeperator)
+			writefile(Path.. Config.FSSeperator.. Frame.MainControls.RInput.Text, readfile(Frame.Values.Current.Value.Container.Path.Value))
+			delfile(Frame.Values.Current.Value.Container.Path.Value)
+			Notify("Renamed File To: ".. tostring(Path.. Config.FSSeperator.. Frame.MainControls.RInput.Text), 10, "Success")
+		elseif isfolder(Frame.Values.Current.Value.Container.Path.Value) then
+		--[[
+		makefolder(Frame.MainControls.RInput.Text)
+		delfolder(Frame.Values.Current.Value.Container.Path.Value)
+		--]]
+			Notify("Folders Are Not Currently Renamable.", 5, "Error")
+		end
+		Frame.Values.Copy.Value = ""
+		Frame.Values.Copied.Value = false
+		Frame.Values.UseCut.Value = false
+		Frame.Values.ManualPath.Value = Frame.Values.Path.Value
+		Frame.Values.UseFile.Value = false
+		Frame.Values.Found.Value = true
+	end)
+	Frame.MainControls.Rename.Activated:Connect(function()
+		Frame.MainControls.RInput.Visible = true
+		Frame.MainControls.Rename.Visible = false
+		Frame.MainControls.RInput:CaptureFocus()
+	end)
+	Frame.MainControls.New.Activated:Connect(function()
+		Frame.New.RInput.Text = ""
+		Frame.MainControls.New.Visible = false
+		Frame.New.Visible = true
+	end)
+	Frame.New.File.Activated:Connect(function()
+		local Suc, Out = pcall(function()
+			if Frame.New.RInput.Text == "" or Frame.New.RInput.Text == " " then
+				Frame.Values.ManualPath.Value = Frame.Values.Path.Value
+				Frame.Values.UseFile.Value = false
+				Frame.Values.Found.Value = true
+			end
+			if isfile(Frame.Values.Path.Value.. Config.FSSeperator.. Frame.New.RInput.Text) or isfolder(Frame.Values.Path.Value.. Config.FSSeperator.. Frame.New.RInput.Text) then
+				Notify("File Or Folder \"".. Frame.Values.Path.Value.. Config.FSSeperator.. Frame.New.RInput.Text.. "\" Already Exists.", 10, "Error")
+				return
+			end
+			LogDebug(Frame.Values.Path.Value.. Config.FSSeperator.. Frame.New.RInput.Text)
+			writefile(Frame.Values.Path.Value.. Config.FSSeperator.. Frame.New.RInput.Text, "")
+			Frame.Values.ManualPath.Value = Frame.Values.Path.Value
+			Frame.Values.UseFile.Value = false
+			Frame.Values.Found.Value = true
+		end)
+		if not Suc then
+			LogDebug("New File Error: ".. tostring(Out), false)
+			Notify("Unable To Make File.", 8, "Error")
+			Frame.Values.ManualPath.Value = Frame.Values.Path.Value
+			Frame.Values.UseFile.Value = false
+			Frame.Values.Found.Value = true
+		end
+	end)
+	Frame.New.Folder.Activated:Connect(function()
+		local Suc, Out = pcall(function()
+			if Frame.New.RInput.Text == "" or Frame.New.RInput.Text == " " then
+				Frame.Values.ManualPath.Value = Frame.Values.Path.Value
+				Frame.Values.UseFile.Value = false
+				Frame.Values.Found.Value = true
+			end
+			if isfile(Frame.Values.Path.Value.. Config.FSSeperator.. Frame.New.RInput.Text) or isfolder(Frame.Values.Path.Value.. Config.FSSeperator.. Frame.New.RInput.Text) then
+				Notify("File Or Folder \"".. Frame.Values.Path.Value.. Config.FSSeperator.. Frame.New.RInput.Text.. "\" Already Exists.", 10, "Error")
+				return
+			end
+			LogDebug(Frame.Values.Path.Value.. Config.FSSeperator.. Frame.New.RInput.Text)
+			makefolder(Frame.Values.Path.Value.. Config.FSSeperator.. Frame.New.RInput.Text)
+			Frame.Values.ManualPath.Value = Frame.Values.Path.Value
+			Frame.Values.UseFile.Value = false
+			Frame.Values.Found.Value = true
+		end)
+		if not Suc then
+			LogDebug("New Folder Error: ".. tostring(Out), false)
+			Notify("Unable To Make Folder.", 8, "Error")
+			Frame.Values.ManualPath.Value = Frame.Values.Path.Value
+			Frame.Values.UseFile.Value = false
+			Frame.Values.Found.Value = true
+		end
+	end)
+	Frame.New.Cancel.Activated:Connect(function()
+		Frame.Values.ManualPath.Value = Frame.Values.Path.Value
+		Frame.Values.UseFile.Value = false
+		Frame.Values.Found.Value = true
+	end)
+	Frame.Controls.Refresh.Activated:Connect(function()
+		Frame.Values.ManualPath.Value = Frame.Values.Path.Value
+		Frame.Values.UseFile.Value = false
+		Frame.Values.Found.Value = true
+	end)
+end
+
+local function SpawnFiles(Path, Frame)
+	local LoadedFiles = listfiles(Path)
+	for i, v in LoadedFiles do
+		local Clone = Frame.Template:Clone()
+		Clone.Container.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+		Clone.Container.Path.Value = v
+		Clone.Container.Title.Text = v:split(Config.FSSeperator)[#v:split(Config.FSSeperator)]
+		local Type = v:split(Config.FSSeperator)
+		Type = Type[#Type]:split(".")
+		Type = Type[#Type]:lower()
+		if isfile(v) then
+			Clone.Container.Type.Image = Images.File
+			if table.find(FileTypes.Image, Type) then
+				Clone.Container.Type.Image = Images.Image
+			elseif table.find(FileTypes.Video, Type) then
+				Clone.Container.Type.Image = Images.Video
+			elseif table.find(FileTypes.Audio, Type) then
+				Clone.Container.Type.Image = Images.Sound
+			elseif table.find(FileTypes.Plugin, Type) then
+				Clone.Container.Type.Image = Images.Plugin
+			elseif table.find(FileTypes.Table, Type) then
+				Clone.Container.Type.Image = Images.Table
+			else
+				Clone.Container.Type.Image = Images.File
+			end
+			Clone.Container.FileType.Value = "2File"
+		elseif isfolder(v) then
+			Clone.Container.Type.Image = Images.Folder
+			Clone.Container.FileType.Value = "1Folder"
+		else
+			Clone.Container.Type.Image = Images.Error
+			Clone.Container.FileType.Value = "3Error"
+		end
+		Clone.Container.Activated:Connect(function()
+			if Clone.Parent == nil then return end
+			if Clone.Container.Clicked.Value and Frame.Values.Current.Value == Clone then
+				Frame.Values.UseFile.Value = true
+				Frame.Values.Found.Value = true
+				return v
+			end
+			if Clone.Parent == nil then return end
+			Clone.Container.Clicked.Value = true
+			Frame.Values.Current.Value.Container.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+			Frame.Values.Current.Value = Clone
+			Clone.Container.BackgroundColor3 = Color3.fromRGB(0, 128, 200)
+			task.wait(0.375)
+			if Clone.Parent == nil then return end
+			Clone.Container.Clicked.Value = false
+		end)
+		Clone.Name = Clone.Container.FileType.Value.. "_".. v:split(Config.FSSeperator)[#v:split(Config.FSSeperator)]
+		Clone.Parent = Frame.Scroll
+		Clone.Visible = true
+	end
+	if #LoadedFiles == 0 then
+		local Clone = Frame.Template:Clone()
+		Clone.Container.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+		Clone.Container.Title.Text = "FileSystem Error Or Empty."
+		Clone.Container.Type.Image = Images.Error
+		Clone.Name = "Error_0"
+		Clone.Parent = Frame.Scroll
+		Clone.Visible = true
+	end
+end
+
+local function RequestFile(Path, Requested, Action, Pop)
+	Path = Path or ""
+	local Exists, Out = pcall(function()
+		isfile(Path)
+	end)
+	if not Exists then return Out end
+	local Return = nil
+	local Frame = ExplorerMenu
+	local Success, Out = pcall(function()
+		if Pop == true then
+			Frame = ExplorerMenu:Clone()
+			local Popped = Popout(Frame, true, "File Explorer", "Landscape", true)
+			Frame.Visible = true
+			Frame:WaitForChild("Values")
+			Popped.UI.Visible = true
+			SetupExplorer(Frame)
+		elseif Pop then
+			Frame = Pop
+		else
+			Frame:WaitForChild("Values")
+			MenuOpen("FileSystem")
+		end
+		for i, v in Frame.Scroll:GetChildren() do
+			if v:IsA("Frame") then v:Destroy() end
+		end
+		Frame.Scroll.CanvasPosition = Vector2.zero
+		Frame.New.Visible = false
+		Frame.MainControls.New.Visible = true
+		Frame.New.RInput.Text = ""
+		Frame.Values.Current.Value = Frame.Template
+		Frame.Values.Path.Value = Path
+		Frame.Values.ManualPath.Value = "_NOTHING_"
+		Frame.Controls.Current.Text = "Workspace".. Config.FSSeperator.. Path
+		Frame.Values.Found.Value = false
+		Frame.Values.UseFile.Value = false
+		Frame.Values.UsePath.Value = false
+		Frame.Values.Requested.Value = Requested
+		if Requested then
+			Frame.MainControls.Open.Text = "Use File"
+		else
+			Frame.MainControls.Open.Text = "Open File"
+		end
+		if Action ~= nil then
+			Frame.MainControls.Open.Text = Action
+		end
+		task.spawn(SpawnFiles, Path, Frame)
+	end)
+	if not Success then warn(Out) return Out end
+	repeat task.wait() until Frame.Values.Found.Value
+	if not Config.Active then return end
+	if Frame.Values.ManualPath.Value ~= "_NOTHING_" then
+		Return = RequestFile(Frame.Values.ManualPath.Value, true, Frame.MainControls.Open.Text, Frame)
+		for i, v in Frame.Scroll:GetChildren() do
+			if v:IsA("Frame") then v:Destroy() end
+		end
+		MenuOpen("ResetMenu")
+		if not Pop then Frame = nil end
+		return Return, Frame
+	end
+	--	ExplorerMenu.Values.UseFile.Value = ExplorerMenu.Values.Current.Value.Name ~= "Template" and ExplorerMenu.Values.Current.Value.Container.FileType.Value ~= "2File"
+	if Frame.Values.UseFile.Value and Frame.Values.Current.Value ~= nil and Frame.Values.Current.Value:FindFirstChild("Container") ~= nil then
+		Return = Frame.Values.Current.Value.Container.Path.Value
+	end
+	if Frame.Values.Current.Value.Name == "Template" then Return = nil end
+	--	if Return == nil then return "" end
+	if Frame.Values.Current.Value == nil then return end
+	if Frame.Values.Current.Value.Container.FileType.Value == "1Folder" and Frame.Values.Current.Value:FindFirstChild("Container") ~= nil then
+		Return = RequestFile(Return, true, Frame.MainControls.Open.Text, Frame)
+	end
+	if Frame.Values.UsePath.Value then
+		Return = Frame.Values.Path.Value
+	end
+	for i, v in Frame.Scroll:GetChildren() do
+		if v:IsA("Frame") then v:Destroy() end
+	end
+	if not Requested then
+		pcall(function()
+			if isfile(Return) then
+				Return = Return:split(Config.FSSeperator)
+				table.remove(Return, #Return)
+				Return = table.concat(Return, Config.FSSeperator)
+			end
+		end)
+	end
+	MenuOpen("ResetMenu")
+	if not Pop then Frame = nil end
+	return Return, Frame
+end
+
+SetupExplorer(ExplorerMenu)
+PoppedMenus.MediaPlayer.Events.Open.Event:Connect(function(Open)
+	if not Open then
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Preview:Stop()
+		PoppedMenus.MediaPlayer.Container.Types.Video.Preview:Pause()
+	end
+end)
+PoppedMenus.MediaPlayer.Container.Bottom.Cancel.Activated:Connect(function()
+	PoppedMenus.MediaPlayer.Events.Open:Fire(false)
+end)
+PoppedMenus.MediaPlayer.Container.Bottom.Save.Activated:Connect(function()
+	local Type = PoppedMenus.MediaPlayer.Container.CPath.Value:split(".")
+	Type = Type[#Type]:lower()
+	if table.find(FileTypes.Text, Type) then
+		writefile(PoppedMenus.MediaPlayer.Container.CPath.Value, PoppedMenus.MediaPlayer.Container.Types.Text.Scroll.Input.Text)
+	end
+	PoppedMenus.MediaPlayer.Events.Open:Fire(false)
+end)
+
+
+local function OpenFViewer(Path)
+	if Path == nil or Path == "" then return end
+	local Type = Path:split(".")
+	Type = Type[#Type]:lower()
+	PoppedMenus.MediaPlayer.Container.CPath.Value = Path
+	for i, v in PoppedMenus.MediaPlayer.Container.Types:GetChildren() do
+		v.Visible = false
+	end
+	PoppedMenus.MediaPlayer.Container.Position = UDim2.new(0.5, 0, 0.5, 0)
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Preview:Stop()
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Preview:SetAttribute("DVolume", nil)
+	PoppedMenus.MediaPlayer.Container.Types.Video.Preview:SetAttribute("DVolume", nil)
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Volume = 0.5
+	PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Volume = 0.5
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.PlaceholderText = "Volume (50%)"
+	PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.PlaceholderText = "Volume (50%)"
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Visible = false
+	PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Visible = false
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Volume.Visible = true
+	PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Volume.Visible = true
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.SInput.Visible = false
+	PoppedMenus.MediaPlayer.Container.Types.Video.Actions.SInput.Visible = false
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Seek.Visible = true
+	PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Seek.Visible = true
+	PoppedMenus.MediaPlayer.Container.Types.Video.Preview:Pause()
+	PoppedMenus.MediaPlayer.Container.Bottom.Path.Text = "Workspace".. Config.FSSeperator.. Path
+	PoppedMenus.MediaPlayer.Title.Text = Path:split(Config.FSSeperator)[#Path:split(Config.FSSeperator)]
+	if table.find(FileTypes.Image, Type) then
+		PoppedMenus.MediaPlayer.Container.Types.Image.Preview.Image = ""
+		PoppedMenus.MediaPlayer.Container.Types.Image.Preview.Image = getcustomasset(Path)
+		PoppedMenus.MediaPlayer.Container.Types.Image.Visible = true
+	elseif table.find(FileTypes.Audio, Type) then
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.SoundId = ""
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.SoundId = getcustomasset(Path)
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Visible = true
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Preview:Play()
+		GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Continue, TweenInfo.new(0.125, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundColor3"] = Color3.fromRGB(30, 60, 30)}):Play()
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Stats.Status.Text = "Playing"
+	elseif table.find(FileTypes.Video, Type) then
+		PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Video = ""
+		PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Video = getcustomasset(Path)
+		PoppedMenus.MediaPlayer.Container.Types.Video.Visible = true
+		PoppedMenus.MediaPlayer.Container.Types.Video.Preview:Play()
+		GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Continue, TweenInfo.new(0.125, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundColor3"] = Color3.fromRGB(30, 60, 30)}):Play()
+		PoppedMenus.MediaPlayer.Container.Types.Video.Stats.Status.Text = "Playing"
+	else
+		local Suc, Out = pcall(function()
+			PoppedMenus.MediaPlayer.Container.Types.Text.Scroll.Input.Text = readfile(Path)
+		end)
+		if not Suc then
+			PoppedMenus.MediaPlayer.Container.Types.Text.Scroll.Input.Text = "Error Showing File:\n".. tostring(Out)
+		end
+		if not (table.find(FileTypes.Text, Type) or table.find(FileTypes.Plugin, Type) or table.find(FileTypes.Table, Type)) then
+			PoppedMenus.MediaPlayer.Title.Text ..= " (?)"
+		end
+		PoppedMenus.MediaPlayer.Container.Types.Text.Visible = true
+		PoppedMenus.MediaPlayer.Container.Types.Text.Scroll.CanvasSize = UDim2.new(0, PoppedMenus.MediaPlayer.Container.Types.Text.Scroll.Input.TextBounds.X, 0, PoppedMenus.MediaPlayer.Container.Types.Text.Scroll.Input.TextBounds.Y)
+		PoppedMenus.MediaPlayer.Container.Types.Text.Scroll.CanvasPosition = Vector2.zero
+	end
+	PoppedMenus.MediaPlayer.Events.Open:Fire(true)
+end
+
+table.insert(RBXConnections, PoppedMenus.MediaPlayer.Container.Types.Text.Scroll.Input:GetPropertyChangedSignal("Text"):Connect(function()
+	PoppedMenus.MediaPlayer.Container.Types.Text.Scroll.CanvasSize = UDim2.new(0, PoppedMenus.MediaPlayer.Container.Types.Text.Scroll.Input.TextBounds.X, 0, PoppedMenus.MediaPlayer.Container.Types.Text.Scroll.Input.TextBounds.Y)
+end))
+
+PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Ended:Connect(function()
+	if PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Looped then return end
+	GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Continue, TweenInfo.new(0.125, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundColor3"] = Color3.fromRGB(60, 30, 30)}):Play()
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Stats.Status.Text = "Stopped"
+end)
+PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Ended:Connect(function()
+	if PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Looped then return end
+	GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Continue, TweenInfo.new(0.125, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundColor3"] = Color3.fromRGB(60, 30, 30)}):Play()
+	PoppedMenus.MediaPlayer.Container.Types.Video.Stats.Status.Text = "Stopped"
+end)
+
+PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Continue.Activated:Connect(function()
+	if PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Playing then
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Preview:Pause()
+		GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Continue, TweenInfo.new(0.125, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundColor3"] = Color3.fromRGB(60, 30, 30)}):Play()
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Stats.Status.Text = "Paused"
+	else
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Preview:Resume()
+		GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Continue, TweenInfo.new(0.125, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundColor3"] = Color3.fromRGB(30, 60, 30)}):Play()
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Stats.Status.Text = "Playing"
+	end
+end)
+PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Stop.Activated:Connect(function()
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Preview:Stop()
+	GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Continue, TweenInfo.new(0.125, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundColor3"] = Color3.fromRGB(60, 30, 30)}):Play()
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Stats.Status.Text = "Stopped"
+end)
+PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Loop.Activated:Connect(function()
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Looped = not PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Looped
+	if PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Looped then
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Loop.Text = "Unloop"
+	else
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Loop.Text = "Loop"
+	end
+end)
+PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Seek.Activated:Connect(function()
+	if PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Visible then return end
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Seek.Visible = false
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.SInput.Visible = true
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.SInput:CaptureFocus()
+end)
+PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.SInput.FocusLost:Connect(function(EP)
+	if not EP then return end
+	local Text = PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.SInput.Text
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.SInput.Visible = false
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Seek.Visible = true
+	if not PoppedMenus.MediaPlayer.Container.Types.Audio:HasTag("MouseEntered") then
+		GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Stats, TweenInfo.new(0.25, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out), {["Position"] = UDim2.new(0.5, 0, 1.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+		GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions, TweenInfo.new(0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, -0.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+	end
+	if Text ~= "" and Text ~= " " then
+		if Text:sub(string.len(Text)) == "s" then
+			PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.TimePosition = tonumber(Text:sub(1, string.len(Text) - 1))
+		else
+			PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.TimePosition = (tonumber(Text) * 0.01) * PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.TimeLength
+		end
+	end
+end)
+PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Mute.Activated:Connect(function()
+	if not PoppedMenus.MediaPlayer.Container.Types.Audio.Preview:GetAttribute("DVolume") then
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Preview:SetAttribute("DVolume", PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Volume)
+		LogDebug("Set Audio DVolume: ".. tostring(PoppedMenus.MediaPlayer.Container.Types.Audio.Preview:GetAttribute("DVolume")))
+	end
+	if PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Volume == 0 then
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Volume = PoppedMenus.MediaPlayer.Container.Types.Audio.Preview:GetAttribute("DVolume")
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Mute.Text = "Mute"
+	else
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Volume = 0
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Mute.Text = "Unmute"
+	end
+end)
+PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Volume.Activated:Connect(function()
+	if PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.SInput.Visible then return end
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Volume.Visible = PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Visible
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Visible = not PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Visible
+	if PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Visible then
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume:CaptureFocus()
+	end
+end)
+PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.FocusLost:Connect(function(EP)
+	if not EP then return end
+	if not PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.TextEditable then return end
+	if tonumber(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.Text) == nil or PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.Text == "" or PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.Text == " " then
+		if not PoppedMenus.MediaPlayer.Container.Types.Audio:HasTag("MouseEntered") then
+			GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Stats, TweenInfo.new(0.25, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out), {["Position"] = UDim2.new(0.5, 0, 1.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+			GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions, TweenInfo.new(0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, -0.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+		end
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Visible = false
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Volume.Visible = true
+		return
+	end
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.Text = tostring(math.floor(tonumber(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.Text)))
+	if math.clamp(tonumber(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.Text), 1, 100) ~= tonumber(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.Text) then
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.TextEditable = false
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.Text = "Invalid Number (1 - 100)"
+		task.wait(2.5)
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.Text = ""
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.TextEditable = true
+	else
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Preview:SetAttribute("DVolume", nil)
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Volume = tonumber(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.Text) / 100
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.PlaceholderText = "Volume (".. tostring(math.round(PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.Volume * 100)).. "%)"
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Volume.Text = ""
+		if not PoppedMenus.MediaPlayer.Container.Types.Audio:HasTag("MouseEntered") then
+			GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Stats, TweenInfo.new(0.25, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out), {["Position"] = UDim2.new(0.5, 0, 1.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+			GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Audio.Actions, TweenInfo.new(0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, -0.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+		end
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.VControls.Visible = false
+		PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Volume.Visible = true
+	end
+end)
+
+PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Continue.Activated:Connect(function()
+	if PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Playing then
+		PoppedMenus.MediaPlayer.Container.Types.Video.Preview:Pause()
+		GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Continue, TweenInfo.new(0.125, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundColor3"] = Color3.fromRGB(60, 30, 30)}):Play()
+		PoppedMenus.MediaPlayer.Container.Types.Video.Stats.Status.Text = "Paused"
+	else
+		PoppedMenus.MediaPlayer.Container.Types.Video.Preview:Play()
+		GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Continue, TweenInfo.new(0.125, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundColor3"] = Color3.fromRGB(30, 60, 30)}):Play()
+		PoppedMenus.MediaPlayer.Container.Types.Video.Stats.Status.Text = "Playing"
+	end
+end)
+PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Stop.Activated:Connect(function()
+	PoppedMenus.MediaPlayer.Container.Types.Video.Preview:Pause()
+	PoppedMenus.MediaPlayer.Container.Types.Video.Preview.TimePosition = 0
+	GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Continue, TweenInfo.new(0.125, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["BackgroundColor3"] = Color3.fromRGB(60, 30, 30)}):Play()
+	PoppedMenus.MediaPlayer.Container.Types.Video.Stats.Status.Text = "Stopped"
+end)
+PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Loop.Activated:Connect(function()
+	PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Looped = not PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Looped
+	if PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Looped then
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Loop.Text = "Unloop"
+	else
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Loop.Text = "Loop"
+	end
+end)
+PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Seek.Activated:Connect(function()
+	if PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Visible then return end
+	PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Seek.Visible = false
+	PoppedMenus.MediaPlayer.Container.Types.Video.Actions.SInput.Visible = true
+	PoppedMenus.MediaPlayer.Container.Types.Video.Actions.SInput:CaptureFocus()
+end)
+PoppedMenus.MediaPlayer.Container.Types.Video.Actions.SInput.FocusLost:Connect(function(EP)
+	if not EP then return end
+	local Text = PoppedMenus.MediaPlayer.Container.Types.Video.Actions.SInput.Text
+	PoppedMenus.MediaPlayer.Container.Types.Video.Actions.SInput.Visible = false
+	PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Seek.Visible = true
+	if not PoppedMenus.MediaPlayer.Container.Types.Video:HasTag("MouseEntered") then
+		GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Stats, TweenInfo.new(0.25, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out), {["Position"] = UDim2.new(0.5, 0, 1.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+		GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Actions, TweenInfo.new(0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, -0.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+	end
+	if Text ~= "" and Text ~= " " then
+		if Text:sub(string.len(Text)) == "s" then
+			PoppedMenus.MediaPlayer.Container.Types.Video.Preview.TimePosition = tonumber(Text:sub(1, string.len(Text) - 1))
+		else
+			PoppedMenus.MediaPlayer.Container.Types.Video.Preview.TimePosition = (tonumber(Text) * 0.01) * PoppedMenus.MediaPlayer.Container.Types.Video.Preview.TimeLength
+		end
+	end
+end)
+PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Mute.Activated:Connect(function()
+	if not PoppedMenus.MediaPlayer.Container.Types.Video.Preview:GetAttribute("DVolume") then
+		PoppedMenus.MediaPlayer.Container.Types.Video.Preview:SetAttribute("DVolume", PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Volume)
+		LogDebug("Set Video DVolume: ".. tostring(PoppedMenus.MediaPlayer.Container.Types.Video.Preview:GetAttribute("DVolume")))
+	end
+	if PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Volume == 0 then
+		PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Volume = PoppedMenus.MediaPlayer.Container.Types.Video.Preview:GetAttribute("DVolume")
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Mute.Text = "Mute"
+	else
+		PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Volume = 0
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Mute.Text = "Unmute"
+	end
+end)
+PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Volume.Activated:Connect(function()
+	if PoppedMenus.MediaPlayer.Container.Types.Video.Actions.SInput.Visible then return end
+	PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Visible = not PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Visible
+	if PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Visible then
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume:CaptureFocus()
+	end
+end)
+PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.FocusLost:Connect(function(EP)
+	if not EP then return end
+	if not PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.TextEditable then return end
+	if tonumber(PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.Text) == nil or PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.Text == "" or PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.Text == " " then
+		if not PoppedMenus.MediaPlayer.Container.Types.Video:HasTag("MouseEntered") then
+			GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Stats, TweenInfo.new(0.25, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out), {["Position"] = UDim2.new(0.5, 0, 1.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+			GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Actions, TweenInfo.new(0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, -0.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+		end
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Visible = false
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Volume.Visible = true
+		return
+	end
+	PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.Text = tostring(math.floor(tonumber(PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.Text)))
+	if math.clamp(tonumber(PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.Text), 1, 100) ~= tonumber(PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.Text) then
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.TextEditable = false
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.Text = "Invalid Number (1 - 100)"
+		task.wait(2.5)
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.Text = ""
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.TextEditable = true
+	else
+		PoppedMenus.MediaPlayer.Container.Types.Video.Preview:SetAttribute("DVolume", nil)
+		PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Volume = tonumber(PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.Text) / 100
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.PlaceholderText = "Volume (".. tostring(math.round(PoppedMenus.MediaPlayer.Container.Types.Video.Preview.Volume * 100)).. "%)"
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Volume.Text = ""
+		if not PoppedMenus.MediaPlayer.Container.Types.Video:HasTag("MouseEntered") then
+			GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Stats, TweenInfo.new(0.25, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out), {["Position"] = UDim2.new(0.5, 0, 1.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+			GSTween:Create(PoppedMenus.MediaPlayer.Container.Types.Video.Actions, TweenInfo.new(0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, -0.25, 0), ["Size"] = UDim2.new(0.25, 0, 0, 0)}):Play()
+		end
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.VControls.Visible = false
+		PoppedMenus.MediaPlayer.Container.Types.Video.Actions.Volume.Visible = true
+	end
+end)
+
+
+local function OpenExplorer(Pop, Path)
+	Path = Path or ""
+	local Output, Popped = RequestFile(Path, false, "Preview File", Pop)
+	if Popped then
+		Popped.Parent.Parent.Events.Open:Fire(false)
+	end
+	if Output == "" then return end
+	OpenFViewer(Output)
+end
+
 local function CommandLog(String)
 	table.insert(TLogs.Commands, String)
-	if string.len(table.concat(TLogs.Commands, "\n")) > 2000 then
-		repeat
-			table.remove(TLogs.Commands, 1)
-			task.wait()
-		until string.len(table.concat(TLogs.Commands, "\n")) <= 2000
+	local Clone = Commands.Template:Clone()
+	if Commands.Scroll.CanvasPosition.Y >= Commands.Scroll.CanvasSize.Y.Offset - Commands.Scroll.AbsoluteWindowSize.Y then
+		Clone:AddTag("Downwards")
 	end
-	Commands.Scroll.Scroll.Text = table.concat(TLogs.Commands, "\n")
-	Commands.Scroll.CanvasSize = UDim2.new(0, Commands.Scroll.Scroll.TextBounds.X, 0, Commands.Scroll.Scroll.TextBounds.Y)
-	Commands.Scroll.CanvasPosition = Vector2.new(0, Commands.Scroll.CanvasSize.Y.Offset - Commands.Scroll.AbsoluteWindowSize.Y)
+	Clone.Parent = Commands.Scroll
+	Clone.Log.Text =  GetCurrentTime().. ": ".. String
+	Clone.Name = "Log_".. tostring(#Commands.Scroll:GetChildren())
+	Clone.Visible = true
+	Clone.Log.Activated:Connect(function()
+		setclipboard(Clone.Log.Text)
+		Notify("Copied Message To Clipboard.", 5, "Commands")
+	end)
+
+	if Clone:HasTag("Downwards") and false then
+		Commands.Scroll.CanvasPosition = Vector2.new(Commands.Scroll.CanvasPosition.X, Commands.Scroll.CanvasSize.Y.Offset - Commands.Scroll.AbsoluteWindowSize.Y)
+	end
 end
 local ChatCommands = {".commands", ".keys", ".prefix", ".goto", ".gotocam", ".view",".unview", ".copyname", ".fixcam", ".reset", ".gravity", ".sit", ".trip", ".revert", ".void", ".unload", ".menu", ".ui", ".menus", ".echo", ".clear", ".nccam", ".dex", ".dexpp"}
-local ChatUsage = {"| Opens Command Menu", "| Opens A List Of KeyCodes", "<KeyCode> | Changes The Keybind To Open Commands", "<Player> | Teleports To A Player", "| Teleports To Your Camera", "<Player> | Views A Player", "| Disables View", "<Player> | Copies A Player's Name", "<Boolean> | Resets Your Camera", "| Resets Your Character", "<Number> | Sets Gravity To <A> or 196.2", "| Makes You Sit", "| Makes You Trip", "| Reverts The UI To The Original Position", "<Boolean> | Teleports To The Void", "| Unloads AntiHub", "<Menu> <Boolean> | Opens Menu <A> In AntiHub With Debug <B>", "<Boolean> | Sets AntiHub Open To <A>", "| Opens A List Of All Menus", "<String> | Sends <A> To The AntiHub Command Console", "| Clears The AntiHub Command Console", "| Toggles Noclip-Camera", "| Runs DEX Explorer", "| Runs DEX++ Explorer"}
+local ChatUsage = {"| Opens Command Menu", "| Opens A List Of KeyCodes", "<KeyCode> | Changes The Keybind To Open Commands", "<Player> <Boolean> | Teleports To A Player", "<Boolean> | Teleports To Your Camera", "<Player> | Views A Player", "| Disables View", "<Player> | Copies A Player's Name", "<Boolean> | Resets Your Camera", "| Resets Your Character", "<Number> | Sets Gravity To <A> or 196.2", "| Makes You Sit", "| Makes You Trip", "| Reverts The UI To The Original Position", "<Boolean> | Teleports To The Void", "| Unloads AntiHub", "<Menu> <Boolean> | Opens Menu <A> In AntiHub With Debug <B>", "<Boolean> | Sets AntiHub Open To <A>", "| Opens A List Of All Menus", "<String> | Sends <A> To The AntiHub Command Console", "| Clears The AntiHub Command Console", "| Toggles Noclip-Camera", "| Runs DEX Explorer", "| Runs DEX++ Explorer"}
 local CommandHistory = {}
 local CommandCount = 0
 local ChatFunctions = nil
 local ListTooltip = nil
 ChatFunctions = {
 	function()
-		for i, v in AntiHub.CommandList.Container.Scroll:GetChildren() do
+		for i, v in PoppedMenus.CommandList.Container.Scroll:GetChildren() do
 			if v:IsA("Frame") then
 				v:Destroy()
 			end
 		end
 		local Clone = nil
 		for i, v in ipairs(ChatCommands) do
-			Clone = AntiHub.CommandList.Container.Template:Clone()
-			Clone.Parent = AntiHub.CommandList.Container.Scroll
+			Clone = PoppedMenus.CommandList.Container.Template:Clone()
+			Clone.Parent = PoppedMenus.CommandList.Container.Scroll
 			Clone.Text.Text = v
-			Clone.Tooltip.Value = v.. " "..  ChatUsage[i]
+			Clone.Tooltip.Value = v.. " ".. ChatUsage[i]
 			Clone.Visible = true
 			Clone.MouseEnter:Connect(function()
 				ListTooltip = Clone
-				AntiHub.CommandList.Container.Tooltip.Text = v.. " "..  ChatUsage[table.find(ChatCommands, v)]
+				PoppedMenus.CommandList.Container.Tooltip.Text = v.. " ".. ChatUsage[table.find(ChatCommands, v)]
 			end)
 			Clone.MouseLeave:Connect(function()
 				if ListTooltip == Clone then
 					ListTooltip = nil
-					AntiHub.CommandList.Container.Tooltip.Text = ""
+					PoppedMenus.CommandList.Container.Tooltip.Text = ""
 				end
 			end)
 		end
-		AntiHub.CommandList.Container.Scroll.CanvasPosition = Vector2.new(0, 0)
-		AntiHub.CommandList.Position = UDim2.new(0.5, 0, 0.5, 0)
-		AntiHub.CommandList.Title.Text = "Commands"
-		AntiHub.CommandList.Visible = true
+		PoppedMenus.CommandList.Container.Scroll.CanvasPosition = Vector2.new(0, 0)
+		PoppedMenus.CommandList.Position = UDim2.new(0.5, 0, 0.5, 0)
+		PoppedMenus.CommandList.Title.Text = "Commands"
+		PoppedMenus.CommandList.Events.Open:Fire(true)
 	end,
 	function()
-		for i, v in AntiHub.CommandList.Container.Scroll:GetChildren() do
+		for i, v in PoppedMenus.CommandList.Container.Scroll:GetChildren() do
 			if v:IsA("Frame") then
 				v:Destroy()
 			end
 		end
 		local Clone = nil
 		for i, v in ipairs(Enum.KeyCode:GetEnumItems()) do
-			Clone = AntiHub.CommandList.Container.Template:Clone()
-			Clone.Parent = AntiHub.CommandList.Container.Scroll
+			Clone = PoppedMenus.CommandList.Container.Template:Clone()
+			Clone.Parent = PoppedMenus.CommandList.Container.Scroll
 			Clone.Text.Text = v.Name
 			Clone.Tooltip.Value = "The KeyCode Is: ".. v.Name
 			Clone.Visible = true
 			Clone.MouseEnter:Connect(function()
 				ListTooltip = Clone
-				AntiHub.CommandList.Container.Tooltip.Text = "The KeyCode Is: ".. v.Name
+				PoppedMenus.CommandList.Container.Tooltip.Text = "The KeyCode Is: ".. v.Name
 			end)
 			Clone.MouseLeave:Connect(function()
 				if ListTooltip == Clone then
 					ListTooltip = nil
-					AntiHub.CommandList.Container.Tooltip.Text = ""
+					PoppedMenus.CommandList.Container.Tooltip.Text = ""
 				end
 			end)
 		end
-		AntiHub.CommandList.Container.Scroll.CanvasPosition = Vector2.new(0, 0)
-		AntiHub.CommandList.Position = UDim2.new(0.5, 0, 0.5, 0)
-		AntiHub.CommandList.Title.Text = "KeyCodes"
-		AntiHub.CommandList.Visible = true
+		PoppedMenus.CommandList.Container.Scroll.CanvasPosition = Vector2.new(0, 0)
+		PoppedMenus.CommandList.UI.Position = UDim2.new(0.5, 0, 0.5, 0)
+		PoppedMenus.CommandList.Title.Text = "KeyCodes"
+		PoppedMenus.CommandList.Events.Open:Fire(true)
 	end,
 	function(KeyCode)
 		if KeyCode == "" or KeyCode == " " then
@@ -12869,7 +17276,7 @@ ChatFunctions = {
 		Notify("Set Keybind To \"".. KeyCode.. "\".", 3, "Commands")
 		CommandLog("Set Keybind To \"".. KeyCode.. "\".")
 	end,
-	function(Target)
+	function(Target, Boolean)
 		local TName = Target
 		Target = GetUnshortened(Target)
 		if Target == nil then
@@ -12882,13 +17289,25 @@ ChatFunctions = {
 			Notify("Error At &gt;".. TName.. "&lt;", 3, "Commands")
 			return
 		end
-		LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-		MoveCharacter(Target.Character:GetPivot())
+		if Boolean == "" or Boolean == " " then
+			Boolean = nil
+		end
+		if Boolean ~= nil then
+			Boolean = not toboolean(Boolean)
+		end
+		LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+		MoveCharacter(Target.Character:GetPivot(), Boolean)
 		Notify("Teleported To \"".. Target.Name.. "\".", 3, "Commands")
 	end,
-	function()
-		LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-		MoveCharacter(workspace.CurrentCamera:GetPivot())
+	function(Boolean)
+		if Boolean == "" or Boolean == " " then
+			Boolean = nil
+		end
+		if Boolean ~= nil then
+			Boolean = not toboolean(Boolean)
+		end
+		LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+		MoveCharacter(workspace.CurrentCamera:GetPivot(), Boolean)
 	end,
 	function(Target)
 		local TName = Target
@@ -12924,7 +17343,7 @@ ChatFunctions = {
 			return
 		end
 		setclipboard(Target.Name)
-		Notify("Set Clipboard To \"".. Target.Name.. "\"", 3, "Command")
+		Notify("Set Clipboard To \"".. Target.Name.. "\"", 3, "Commands")
 	end,
 	function(Boolean)
 		Boolean = toboolean(Boolean)
@@ -12976,9 +17395,9 @@ ChatFunctions = {
 	function(Boolean)
 		Boolean = toboolean(Boolean)
 		if Boolean then
-			MoveCharacter(Vector3.new(0, tonumber("-inf"), 0))
+			MoveCharacter(Vector3.new(0, tonumber("-inf"), 0), true)
 		else
-			MoveCharacter(Vector3.new(0, -1000, 0))
+			MoveCharacter(Vector3.new(0, -1000, 0), true)
 		end
 	end,
 	function()
@@ -12998,7 +17417,7 @@ ChatFunctions = {
 		end
 		if Boolean then
 			Menu = MenuName
-			Notify("Changed Current Menu To \"".. MenuName.. "\"")
+			Notify("Changed Current Menu To \"".. MenuName.. "\"", 3, "Commands")
 		else
 			UIOpen(true)
 			MenuOpen(MenuName)
@@ -13012,33 +17431,33 @@ ChatFunctions = {
 		for i, v in AHContainer.List:GetChildren() do
 			table.insert(MenuList, v.Name)
 		end
-		for i, v in AntiHub.CommandList.Container.Scroll:GetChildren() do
+		for i, v in PoppedMenus.CommandList.Container.Scroll:GetChildren() do
 			if v:IsA("Frame") then
 				v:Destroy()
 			end
 		end
 		local Clone = nil
 		for i, v in MenuList do
-			Clone = AntiHub.CommandList.Container.Template:Clone()
-			Clone.Parent = AntiHub.CommandList.Container.Scroll
+			Clone = PoppedMenus.CommandList.Container.Template:Clone()
+			Clone.Parent = PoppedMenus.CommandList.Container.Scroll
 			Clone.Text.Text = v
 			Clone.Tooltip.Value = v.. " | ".. AHContainer.List:FindFirstChild(v).Tooltip.Value
 			Clone.Visible = true
 			Clone.MouseEnter:Connect(function()
 				ListTooltip = Clone
-				AntiHub.CommandList.Container.Tooltip.Text = v.. " | ".. AHContainer.List:FindFirstChild(v).Tooltip.Value
+				PoppedMenus.CommandList.Container.Tooltip.Text = v.. " | ".. AHContainer.List:FindFirstChild(v).Tooltip.Value
 			end)
 			Clone.MouseLeave:Connect(function()
 				if ListTooltip == Clone then
 					ListTooltip = nil
-					AntiHub.CommandList.Container.Tooltip.Text = ""
+					PoppedMenus.CommandList.Container.Tooltip.Text = ""
 				end
 			end)
 		end
-		AntiHub.CommandList.Container.Scroll.CanvasPosition = Vector2.new(0, 0)
-		AntiHub.CommandList.Position = UDim2.new(0.5, 0, 0.5, 0)
-		AntiHub.CommandList.Title.Text = "Menus"
-		AntiHub.CommandList.Visible = true
+		PoppedMenus.CommandList.Container.Scroll.CanvasPosition = Vector2.new(0, 0)
+		PoppedMenus.CommandList.UI.Position = UDim2.new(0.5, 0, 0.5, 0)
+		PoppedMenus.CommandList.Title.Text = "Menus"
+		PoppedMenus.CommandList.Events.Open:Fire(true)
 	end,
 	function(...)
 		local String = table.pack(...) or ""
@@ -13049,9 +17468,11 @@ ChatFunctions = {
 	end,
 	function()
 		TLogs.Commands = {}
-		Commands.Scroll.Scroll.Text = ""
-		Commands.Scroll.CanvasSize = UDim2.new(0, Commands.Scroll.Scroll.TextBounds.X, 0, Commands.Scroll.Scroll.TextBounds.Y)
-		Commands.Scroll.CanvasPosition = Vector2.new(0, Commands.Scroll.CanvasSize.Y.Offset - Commands.Scroll.AbsoluteWindowSize.Y)
+		for i, v in Commands.Scroll:GetChildren() do
+			if v:IsA("Frame") then
+				v:Destroy()
+			end
+		end
 	end,
 	function()
 		local sc = (debug and debug.setconstant) or setconstant
@@ -13059,7 +17480,7 @@ ChatFunctions = {
 		if not sc or not getgc or not gc then return end
 		local pop = LocalPlayer.PlayerScripts.PlayerModule.CameraModule.ZoomController.Popper
 		for i, v in pairs(getgc()) do
-			if type(v) == 'function' and getfenv(v).script == pop then
+			if type(v) == "function" and getfenv(v).script == pop then
 				for i, vv in pairs(gc(v)) do
 					if tonumber(vv) == 0.25 then
 						sc(v, i, 0)
@@ -13199,15 +17620,22 @@ local function OnMessage(plr, msg, Status)
 	--	end
 	--	Logs.Chat.Log.Text ..= GetCurrentTime().. " <b>".. plr.DisplayName.. ":</b> ".. msg.. "\n"
 	table.insert(TLogs.ChatLogs, GetCurrentTime().. " ".. plr.DisplayName.. ": ".. msg)
-	if string.len(table.concat(TLogs.ChatLogs, "\n")) > 2000 then
-		repeat
-			table.remove(TLogs.ChatLogs, 1)
-			task.wait()
-		until string.len(table.concat(TLogs.ChatLogs, "\n")) <= 2000
+	local Clone = Logs.ChatTemplate:Clone()
+	if Logs.Chat.CanvasPosition.Y >= Logs.Chat.CanvasSize.Y.Offset - Logs.Chat.AbsoluteWindowSize.Y then
+		Clone:AddTag("Downwards")
 	end
-	Logs.Chat.Log.Text = table.concat(TLogs.ChatLogs, "\n")
-	Logs.Chat.CanvasSize = UDim2.new(0, Logs.Chat.Log.TextBounds.X, 0, Logs.Chat.Log.TextBounds.Y)
-	Logs.Chat.CanvasPosition = Vector2.new(0, Logs.Chat.CanvasSize.Y.Offset - Logs.Chat.AbsoluteWindowSize.Y)
+	Clone.Parent = Logs.Chat
+	Clone.Log.Text = GetCurrentTime().. " ".. plr.DisplayName.. ": ".. msg
+	Clone.Name = "Log_".. tostring(#Logs.Chat:GetChildren())
+	Clone.Visible = true
+	Clone.Log.Activated:Connect(function()
+		setclipboard(Clone.Log.Text)
+		Notify("Copied Chat Log To Clipboard.", 5, "Chat")
+	end)
+
+	if Clone:HasTag("Downwards") and false then
+		Logs.Chat.CanvasPosition = Vector2.new(Logs.Chat.CanvasPosition.X, Logs.Chat.CanvasSize.Y.Offset - Logs.Chat.AbsoluteWindowSize.Y)
+	end
 end	
 
 
@@ -13225,7 +17653,7 @@ local function Bang(Target, Enabled)
 		Universal.Bang.Text = "Stop Banging"
 		local humanoid = LocalCharacter:FindFirstChildWhichIsA("Humanoid")
 		bangAnim = Instance.new("Animation")
-		bangAnim.AnimationId = LocalCharacter:FindFirstChildOfClass('Humanoid').RigType ~= Enum.HumanoidRigType.R15 and "rbxassetid://148840371" or "rbxassetid://5918726674"
+		bangAnim.AnimationId = LocalCharacter:FindFirstChildOfClass("Humanoid").RigType ~= Enum.HumanoidRigType.R15 and "rbxassetid://148840371" or "rbxassetid://5918726674"
 		bang = humanoid:LoadAnimation(bangAnim)
 		bang:Play(0.1, 1, 1)
 		bang:AdjustSpeed(3)
@@ -13244,6 +17672,7 @@ local function Bang(Target, Enabled)
 			pcall(function()
 				local otherRoot = bangplr.Character:FindFirstChild("Torso") or bangplr.Character:FindFirstChild("UpperTorso") or bangplr.Character:FindFirstChild("LowerTorso") or bangplr.Character:FindFirstChild("HumanoidRootPart")
 				LocalCharacter.PrimaryPart.CFrame = otherRoot.CFrame * bangOffset
+				LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 			end)
 		end)
 	else
@@ -13283,6 +17712,7 @@ local function Orbit(Target, Enabled)
 				pcall(function()
 					rotation = rotation + speed
 					root.CFrame = CFrame.new(target.Character.HumanoidRootPart.Position) * CFrame.Angles(0, math.rad(rotation), 0) * CFrame.new(distance, 0, 0)
+					LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 				end)
 			end)
 			orbit2 = GSRun.RenderStepped:Connect(function()
@@ -13454,7 +17884,7 @@ if CurrentGame == "PrisonLife" then
 			repeat
 				FireTouch(LC.PrimaryPart, Target, 0.05)
 				MoveCharacter(LC.PrimaryPart.Position + Vector3.new(0, -7.5, 0), true)
-				LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+				LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 				task.wait(0.05)
 			until LC.Parent == nil or LC:FindFirstChild(Tool) ~= nil or LocalPlayer.Backpack:FindFirstChild(Tool) ~= nil or not Config.Active
 		else
@@ -13463,19 +17893,19 @@ if CurrentGame == "PrisonLife" then
 				if Tool == "Riot Police" then
 					repeat
 						MoveCharacter(Pick.Position + Vector3.new(0, -10, 0), true)
-						LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+						LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 						task.wait()
 					until LC.Parent == nil or LocalCharacter:FindFirstChild("vest") or not Config.Active
 				elseif Tool == "Riot helmet" then
 					repeat
 						MoveCharacter(Pick.Position + Vector3.new(0, -10, 0), true)
-						LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+						LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 						task.wait()
 					until LC.Parent == nil or LocalCharacter:FindFirstChild("Riot helmet") or not Config.Active
 				else
 					repeat
 						MoveCharacter(Pick.Position + Vector3.new(0, -10, 0), true)
-						LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+						LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 						task.wait()
 					until LC.Parent == nil or LC:FindFirstChild(Target.Name) ~= nil or LocalPlayer.Backpack:FindFirstChild(Target.Name) ~= nil or not Config.Active
 				end
@@ -13534,10 +17964,10 @@ if CurrentGame == "PrisonLife" then
 	function PLTeam(Team)
 		local Char = LocalCharacter
 		repeat
-			workspace.Remote.TeamEvent:FireServer(Team)
+			GSRS.Remotes.RequestTeamChange:InvokeServer(Team)
 			task.wait(0.1)
 		until Char ~= LocalCharacter or LocalPlayer.Team == Team
-		LocalPlayer.PlayerGui.Home.intro.Visible = false
+		LocalPlayer.PlayerGui.Home.IntroFrame.Visible = false
 		LocalPlayer.PlayerGui.Home.hud.Visible = true
 		workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
 		workspace.CurrentCamera.CameraSubject = GetHumanoid(LocalCharacter)	
@@ -13556,7 +17986,7 @@ if CurrentGame == "PrisonLife" then
 		Config.PrisonLife.Killing = true
 		PrisonLife.MKill.Text = "MKilling"
 		local Pos = LocalCharacter:GetPivot().Position
-		local TPPos = Vector3.new(0, 0, 0)
+		local TPPos = Vector3.zero
 		local Knife = PLTool("Crude Knife", false)
 		LogDebug("MKill Start *".. TName.. "*")
 		if Target.Character:FindFirstChild("ForceField") ~= nil then
@@ -13577,7 +18007,7 @@ if CurrentGame == "PrisonLife" then
 						TPPos = Vector3.new(870, 40, 2345) + Vector3.new(35, -35, 0)
 					end
 					MoveCharacter(TPPos, true)
-					LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+					LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 					Knife.Parent = LocalCharacter
 				end)
 				task.wait()
@@ -13642,7 +18072,7 @@ if CurrentGame == "PrisonLife" then
 		local TName = Target.Name
 		PrisonLife.Arrest.Text = "Arresting"
 		local Pos = LocalCharacter:GetPivot().Position
-		local TPPos = Vector3.new(0, 0, 0)
+		local TPPos = Vector3.zero
 		local Stop = false
 		LogDebug("Arrest Start *".. TName.. "*")
 		task.spawn(function()
@@ -13660,7 +18090,7 @@ if CurrentGame == "PrisonLife" then
 						TPPos = Vector3.new(870, 40, 2345) + Vector3.new(35, -35, 0)
 					end
 					MoveCharacter(TPPos, true)
-					LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+					LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 				end)
 				task.wait()
 			until Stop
@@ -13734,8 +18164,8 @@ elseif CurrentGame == "WashiezTC" then
 			task.wait(0.5)
 			Seat.Anchored = false
 		elseif CF == "Velocity" then
-			Seat.Parent.Parent.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-			Seat.Parent.Parent.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+			Seat.Parent.Parent.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+			Seat.Parent.Parent.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 		else
 			Seat.Parent.Parent:PivotTo(CF)
 		end
@@ -13759,35 +18189,101 @@ elseif CurrentGame == "MM2" then
 		Config.MM2.Map = Map.Parent.Parent.Name
 		Config.MM2.Spawn = Map
 	end))
-	workspace.DescendantAdded:Connect(function(inst)
-		if inst.Name == "GunDrop" then
+	table.insert(RBXConnections, workspace.DescendantAdded:Connect(function(inst)
+		if inst.Name == "GunDrop" and Config.MM2.NotifyDrop then
 			Notify("A Gun Has Dropped In The Map.", 6, "Gun Drop")
 		end
-	end)
+	end))
+	function MM2Stab(Players)
+		local Knife = LocalCharacter:FindFirstChild("Knife")
+		if Knife == nil then
+			Knife = LocalPlayer.Backpack:FindFirstChild("Knife")
+			if Knife == nil then
+				Notify("Knife Not Found.", 3, "Error")
+				return
+			end
+			LocalCharacter:FindFirstChildWhichIsA("Humanoid"):UnequipTools()
+			Knife.Parent = LocalCharacter
+		end
+		Knife.Events.KnifeSStabbed:FireServer("Down")
+		if Config.MM2.HidStab then
+			for i, v in Players do
+				if v == LocalPlayer then continue end
+				if v.Character == nil then continue end
+				task.spawn(FireTouch, Knife.Handle, v.Character.PrimaryPart, 1.5)
+			end
+		else
+			for i, v in Players do
+				if v == LocalPlayer then continue end
+				if v.Character == nil then continue end
+				v.Character.PrimaryPart.Anchored = true
+				v.Character:PivotTo(Knife:GetPivot())
+			end
+			task.wait(2)
+			for i, v in Players do
+				if v == LocalPlayer then continue end
+				if v.Character == nil then continue end
+				v.Character.PrimaryPart.Anchored = false
+				v.Character:PivotTo(Knife:GetPivot())
+			end
+		end
+	end
+elseif CurrentGame == "AimbotFFA" then
+	function AFFACharacters(PlayersOnly, BotsOnly)
+		local Characters = {}
+		if PlayersOnly then
+			for i, v in GSPlayers:GetPlayers() do
+				if v == LocalPlayer then continue end
+				if v.Character == nil then continue end
+				if v.Character:FindFirstChild("Humanoid") == nil then continue end
+				if v.Character:FindFirstChild("GodModeIcon") ~= nil then continue end
+				if AimbotFFA.Whitelist.Whitelist:FindFirstChild(v.Name) then continue end
+				table.insert(Characters, v.Character)
+			end
+			return Characters
+		end
+		for i, v in workspace:GetChildren() do
+			if v == LocalCharacter then continue end
+			if v:FindFirstChild("Humanoid") == nil then continue end
+			if v:FindFirstChild("GodModeIcon") ~= nil then continue end
+			if BotsOnly and GSPlayers:GetPlayerFromCharacter(v) ~= nil then continue end
+			if AimbotFFA.Whitelist.Whitelist:FindFirstChild(v.Name) then continue end
+			table.insert(Characters, v)
+		end
+		return Characters
+	end
 end
 
 task.spawn(function()
 	pcall(function()
-		writefile("AH-BabyBabyOil.mp3", BDecode(game:HttpGet("https://github.com/J0BB0T/TNE/raw/refs/heads/main/Assets/BabyBabyOil.txt")))
+		Config.OilUp.Sound.SoundId = "rbxassetid://78554325106207"
+		if CurrentGame == "OilUp" then
+			if not isfile("AH-BabyBabyOil.mp3") then
+				writefile("AH-BabyBabyOil.mp3", BDecode(game:HttpGet("https://github.com/J0BB0T/TNE/raw/refs/heads/main/Assets/BabyBabyOil.txt")))
+			end
+			Config.OilUp.Sound.SoundId = getcustomasset("AH-BabyBabyOil.mp3")
+		end
 		Config.OilUp.Sound.Looped = true
 		Config.OilUp.Sound.Name = "BabyOil"
-		Config.OilUp.Sound.SoundId = getcustomasset("AH-BabyBabyOil.mp3")
 		Config.OilUp.Sound.Volume = 1
 	end)
 end)
 
 AntiHub:WaitForChild("TitleBar").Active = true
+--[[
 AntiHub.TitleBar.Draggable = true
 Keybind.Draggable = true
-AntiHub.CommandList.Draggable = true
+PoppedMenus.CommandList.Draggable = true
+PoppedMenus.MediaPlayer.Container.Draggable = true
+--]]
 
 AHContainer.Overflow.SHop.Activated:Connect(function()
 	pcall(function()
 		if SVersion:find("Studio") then return end
 		if SVersion:find("Pre") then
-			queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHubPre.lua"))()')
+			queue_on_teleport("loadstring(game:HttpGet(\"https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHubPre.lua\"))()")
 		else
-			queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHub.lua"))()')
+			queue_on_teleport("loadstring(game:HttpGet(\"https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHub.lua\"))()")
 		end
 	end)
 	local Servers = {}
@@ -13815,9 +18311,9 @@ AHContainer.Overflow.Rejoin.Activated:Connect(function()
 	pcall(function()
 		if SVersion:find("Studio") then return end
 		if SVersion:find("Pre") then
-			queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHubPre.lua"))()')
+			queue_on_teleport("loadstring(game:HttpGet(\"https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHubPre.lua\"))()")
 		else
-			queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHub.lua"))()')
+			queue_on_teleport("loadstring(game:HttpGet(\"https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiHub.lua\"))()")
 		end
 	end)
 	Notify("Rejoining", 10, "Loading")
@@ -13852,6 +18348,7 @@ table.insert(RBXConnections, GSUIP.InputBegan:Connect(function(inp, proc)
 	if proc then return end
 	for i, v in Keybinds.Custom do
 		if v.KeyCode == inp.KeyCode.Name then
+			if v.Instance == nil or v.Instance.Parent == nil then continue end
 			if table.find(Supported, v.Instance.Parent.Name) then
 				if CurrentGame == v.Instance.Parent.Name or (Menu == v.Instance.Parent.Name or Menu == v.Instance.Parent.Parent.Name) then
 					firesignal(v.Instance.Activated)
@@ -13914,7 +18411,7 @@ end
 
 for i, v in AHContainer.Overflow.List:GetChildren() do
 	v.Activated:Connect(function()
-		if Menu == v.Name then return end
+		--if Menu == v.Name then return end
 		if Menus.List.Waiting then return end
 		if Menus.Overflow.Waiting then return end
 		AHContainer.List.Visible = true
@@ -13945,8 +18442,8 @@ function KeyEvent(Button)
 	if not Button:FindFirstChild("Bindable"):IsA("BoolValue") then return end
 	if not Button:FindFirstChild("Bindable").Value then return end
 	Button.MouseButton2Click:Connect(function()
-		Keybind.Position = UDim2.fromOffset(LocalMouse.X, LocalMouse.Y)
-		Keybind.Visible = true
+		PoppedMenus.Keybind.UI.Position = UDim2.fromOffset(LocalMouse.X, LocalMouse.Y)
+		PoppedMenus.Keybind.Events.Open:Fire(true)
 		CurrentKey = Button
 	end)
 end
@@ -13957,6 +18454,11 @@ task.spawn(function()
 			KeyEvent(v)
 		end
 	end
+	AntiHub.DescendantAdded:Connect(function(Inst)
+		if Inst:IsA("TextButton") or Inst:IsA("ImageButton") then
+			KeyEvent(Inst)
+		end
+	end)
 end)
 
 for i, v in GSPlayers:GetPlayers() do
@@ -13976,13 +18478,6 @@ for i, v in GSPlayers:GetPlayers() do
 			mod.Head.Inspector.Enabled = true
 			mod.Head.Inspector.Box.TextColor3 = Color3.fromRGB(math.floor(255 * v.TeamColor.r), math.floor(255 * v.TeamColor.g), math.floor(255 * v.TeamColor.b))
 		end
-		if Config.Utility.WalkFling then
-			for i, v in mod:GetDescendants() do
-				if v:IsA("BasePart") then
-					v.CanCollide = false
-				end
-			end
-		end
 	end))
 end
 
@@ -13993,20 +18488,27 @@ GSTextChat.MessageReceived:Connect(function(msg)
 end)
 
 table.insert(RBXConnections, GSPlayers.PlayerAdded:Connect(function(plr)
-	--	if string.len(Logs.Player.Log.Text) + string.len(GetCurrentTime().. "<font color=\"rgb(0,128,0)\">: ".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>\n") >= 2000 then
-	--		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len(GetCurrentTime().. "<font color=\"rgb(0,128,0)\">: ".. plr.Name.. " (".. plr.DisplayName..  ") Joined!</font>\n"))
+	--	if string.len(Logs.Player.Log.Text) + string.len(GetCurrentTime().. "<font color=\"rgb(0,128,0)\">: ".. plr.Name.. " (".. plr.DisplayName.. ") Joined!</font>\n") >= 2000 then
+	--		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len(GetCurrentTime().. "<font color=\"rgb(0,128,0)\">: ".. plr.Name.. " (".. plr.DisplayName.. ") Joined!</font>\n"))
 	--	end
-	table.insert(TLogs.JoinLogs, GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName..  ") Joined!")
-	if string.len(table.concat(TLogs.JoinLogs, "\n")) > 2000 then
-		repeat
-			table.remove(TLogs.JoinLogs, 1)
-			task.wait()
-		until string.len(table.concat(TLogs.JoinLogs, "\n")) <= 2000
+	table.insert(TLogs.JoinLogs, GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName.. ") Joined!")
+	local Clone = Logs.PlayerTemplate:Clone()
+	if Logs.Player.CanvasPosition.Y >= Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y then
+		Clone:AddTag("Downwards")
 	end
-	Logs.Player.Log.Text = table.concat(TLogs.JoinLogs, "\n")
-	SaveLogs ..= GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName..  ") Joined!\n"
-	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
-	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
+	Clone.Parent = Logs.Player
+	Clone.Log.Text = GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName.. ") Joined!"
+	Clone.Log.TextColor3 = Color3.fromRGB(128, 255, 128)
+	Clone.Name = "Log_".. tostring(#Logs.Player:GetChildren())
+	Clone.Visible = true
+	Clone.Log.Activated:Connect(function()
+		setclipboard(Clone.Log.Text)
+		Notify("Copied Join Log To Clipboard.", 5, "Logs")
+	end)
+	if Clone:HasTag("Downwards") and false then
+		Logs.Player.CanvasPosition = Vector2.new(Logs.Player.CanvasPosition.X, Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
+	end
+	SaveLogs ..= GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName.. ") Joined!\n"
 	if Players.Input.Text == plr.Name then
 		Notify("Player \"".. plr.Name.. "\" Has Joined.", 3, "Players")
 	end
@@ -14021,16 +18523,9 @@ table.insert(RBXConnections, GSPlayers.PlayerAdded:Connect(function(plr)
 			Instance.new("Highlight", mod).Name = "InspectHighlight"
 			mod.InspectHighlight.FillColor = Color3.fromRGB(0, 0, 0)
 			Inspector:Clone().Parent = mod:WaitForChild("Head")
-			mod.Head.Inspector:WaitForChild("Box").Text = v.Name
+			mod.Head.Inspector:WaitForChild("Box").Text = plr.Name
 			mod.Head.Inspector.Enabled = true
-			mod.Head.Inspector.Box.TextColor3 = Color3.fromRGB(math.floor(255 * v.TeamColor.r), math.floor(255 * v.TeamColor.g), math.floor(255 * v.TeamColor.b))
-		end
-		if Config.Utility.WalkFling then
-			for i, v in mod:GetDescendants() do
-				if v:IsA("BasePart") then
-					v.CanCollide = false
-				end
-			end
+			mod.Head.Inspector.Box.TextColor3 = Color3.fromRGB(math.floor(255 * plr.TeamColor.r), math.floor(255 * plr.TeamColor.g), math.floor(255 * plr.TeamColor.b))
 		end
 	end))
 	if CurrentGame == "Washiez" or CurrentGame == "WashiezTC" then
@@ -14046,20 +18541,27 @@ table.insert(RBXConnections, GSPlayers.PlayerAdded:Connect(function(plr)
 	end
 end))
 table.insert(RBXConnections, GSPlayers.PlayerRemoving:Connect(function(plr)
-	--	if string.len(Logs.Player.Log.Text) + string.len(GetCurrentTime().. "<font color=\"rgb(128,0,0)\">: ".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>\n") >= 2000 then
-	--		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len(GetCurrentTime().. "<font color=\"rgb(128,0,0)\">: ".. plr.Name.. " (".. plr.DisplayName..  ") Left.</font>\n"))
+	--	if string.len(Logs.Player.Log.Text) + string.len(GetCurrentTime().. "<font color=\"rgb(128,0,0)\">: ".. plr.Name.. " (".. plr.DisplayName.. ") Left.</font>\n") >= 2000 then
+	--		Logs.Player.Log.Text = Logs.Player.Log.Text:sub(1, string.len(Logs.Player.Log.Text) - string.len(GetCurrentTime().. "<font color=\"rgb(128,0,0)\">: ".. plr.Name.. " (".. plr.DisplayName.. ") Left.</font>\n"))
 	--	end
-	table.insert(TLogs.JoinLogs, GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName..  ") Left.")
-	if string.len(table.concat(TLogs.JoinLogs, "\n")) > 2000 then
-		repeat
-			table.remove(TLogs.JoinLogs, 1)
-			task.wait()
-		until string.len(table.concat(TLogs.JoinLogs, "\n")) <= 2000
+	table.insert(TLogs.JoinLogs, GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName.. ") Left.")
+	local Clone = Logs.PlayerTemplate:Clone()
+	if Logs.Player.CanvasPosition.Y >=  Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y then
+		Clone:AddTag("Downwards")
 	end
-	Logs.Player.Log.Text = table.concat(TLogs.JoinLogs, "\n")
-	SaveLogs ..= GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName..  ") Left. \n"
-	Logs.Player.CanvasSize = UDim2.new(0, 0, 0, Logs.Player.Log.TextBounds.Y)
-	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
+	Clone.Parent = Logs.Player
+	Clone.Log.Text = GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName.. ") Left."
+	Clone.Log.TextColor3 = Color3.fromRGB(255, 128, 128)
+	Clone.Name = "Log_".. tostring(#Logs.Player:GetChildren())
+	Clone.Visible = true
+	Clone.Log.Activated:Connect(function()
+		setclipboard(Clone.Log.Text)
+		Notify("Copied Leave Log To Clipboard.", 5, "Logs")
+	end)
+	if Clone:HasTag("Downwards") and false then
+		Logs.Player.CanvasPosition = Vector2.new(Logs.Player.CanvasPosition.X, Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
+	end
+	SaveLogs ..= GetCurrentTime().. ": ".. plr.Name.. " (".. plr.DisplayName.. ") Left. \n"
 	if table.find(Config.AC.Whitelist, plr) then
 		table.remove(Config.AC.Whitelist, table.find(Config.AC.Whitelist, plr))
 	end
@@ -14068,7 +18570,15 @@ table.insert(RBXConnections, GSPlayers.PlayerRemoving:Connect(function(plr)
 		Players.View.Text = "View"
 		workspace.CurrentCamera.CameraSubject = GetHumanoid(LocalCharacter)
 		Notify("Player Has Left: Unviewing", 5, "View")
-
+	end
+	if GetPlayer(Universal.Input.Text) == nil then
+		Config.Universal.Flinging = false
+		Universal.Fling.Text = "Fling"
+		LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+		if Config.Universal.FPos ~= nil then
+			MoveCharacter(Config.Universal.FPos, true)
+		end
+		Config.Universal.FPos = nil
 	end
 end))
 
@@ -14079,9 +18589,6 @@ local function AddScript(Output, Name, GName, Key, Patched, Verified)
 	else
 		Key = "<b>Free</b>"
 	end
-	--elseif Key == "Paid" then
-	--	Key = "<font color=\"rgb(255, 0, 0)\"><u>Paid</u></font>"
-	--end
 	if Patched then
 		Patched = "<font color=\"rgb(255, 0, 0)\"><b>PATCHED</b></font>"
 	else
@@ -14104,8 +18611,6 @@ local function AddScript(Output, Name, GName, Key, Patched, Verified)
 	end)
 end
 
---AddScript("game.Players.LocalPlayer:Kick()", "Fortnite Hub", "Steal A Pornstar", true, false, true)
-
 local function AddKeybind(KB)
 	local Clone = KeybindMenu.Template:Clone()
 	local Name = "AntiHub.".. KB.Instance:GetFullName():split("AntiHub.")[2]
@@ -14114,8 +18619,8 @@ local function AddKeybind(KB)
 	Clone.Visible = true
 	Clone.Index.Value = table.find(Keybinds.Custom, KB)
 	Clone.Container.Open.Activated:Connect(function()
-		Keybind.Position = UDim2.fromOffset(KeybindMenu.OP.AbsolutePosition.X, KeybindMenu.OP.AbsolutePosition.Y)
-		Keybind.Visible = true
+		PoppedMenus.Keybind.UI.Position = UDim2.fromOffset(KeybindMenu.OP.AbsolutePosition.X, KeybindMenu.OP.AbsolutePosition.Y)
+		PoppedMenus.Keybind.Events.Open:Fire(true)
 		CurrentKey = KB.Instance
 	end)
 end
@@ -14196,7 +18701,7 @@ task.spawn(function()
 			Changes = math.clamp(Changes - 1, 0, 5)
 
 			--<[Movement]>--
-			if (Char:GetPivot().Position - Pos).Magnitude >= (GSStarterPlayer.CharacterWalkSpeed / 5) + 5 then
+			if (Char:GetPivot().Position - Pos).Magnitude >= (GetHumanoid(Char).WalkSpeed / 5) + 5 then
 				if GetHumanoid(Char).MoveDirection.Magnitude > 0 then
 					ACTrigger(plr, "Speed", Respawn, Jumped)
 					LogDebug("ACMove - ".. plr.Name.. " *Speed* | ".. tostring(Respawn).. " | ".. tostring(Jumped), false)
@@ -14234,7 +18739,7 @@ local function LoadAK(Load)
 	pcall(function()
 		LogDebug("Starting AntiKick")
 		if Load then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AHAntiKick.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/AntiKick.lua"))()
 		end
 		LogDebug("Ended AntiKick - ".. getgenv().AHAKE)
 		getgenv().AHCL(Config.ChatLogs)
@@ -14318,7 +18823,7 @@ Debug.Pause.Activated:Connect(function()
 	if Config.PauseLoop then
 		Debug.Pause.Text = "Resume Loop"
 		repeat
-			Debug.Loops.Text = "Loops: ".. tostring(Config.Debug.Loops).. " | ".. tostring(Config.Debug.LoopE)
+			Debug.Loops.Text = "Loops: ".. tostring(Config.Debug.LoopS).. " | ".. tostring(Config.Debug.LoopE)
 			task.wait()
 		until not Config.PauseLoop
 	else
@@ -14361,9 +18866,11 @@ end)
 
 AntiCheat.Clear.Logs.Activated:Connect(function()
 	TLogs.AntiCheat = {}
-	AntiCheat.Logs.Log.Text = ""
-	AntiCheat.Logs.CanvasSize = UDim2.new(0, 0, 0, AntiCheat.Logs.Log.TextBounds.Y)
-	AntiCheat.Logs.CanvasPosition = Vector2.new(0, AntiCheat.Logs.CanvasSize.Y.Offset - AntiCheat.Logs.AbsoluteWindowSize.Y)
+	for i, v in AntiCheat.Logs:GetChildren() do
+		if v:IsA("Frame") then
+			v:Destroy()
+		end
+	end
 end)
 
 AntiCheat.AWL.Activated:Connect(function()
@@ -14406,7 +18913,8 @@ end)
 Utility.Container.Menus.Exploits.JumpPower.FocusLost:Connect(function(EP)
 	if not EP then return end
 	if Utility.Container.Menus.Exploits.JumpPower.Text == "" then
-		Notify("Set JumpPower To Default (".. tostring(GSStarterPlayer.CharacterJumpPower).. ")", 3)
+		Notify("Set JumpPower To Default (".. tostring(GSStarterPlayer.CharacterJumpPower).. ")", 3, "Utility")
+		GetHumanoid(LocalCharacter).UseJumpPower = true
 		GetHumanoid(LocalCharacter).JumpPower = GSStarterPlayer.CharacterJumpPower
 		return
 	end
@@ -14415,9 +18923,29 @@ Utility.Container.Menus.Exploits.JumpPower.FocusLost:Connect(function(EP)
 		Utility.Container.Menus.Exploits.JumpPower.Text = ""
 		return
 	end
+	GetHumanoid(LocalCharacter).UseJumpPower = true
 	GetHumanoid(LocalCharacter).JumpPower = tonumber(Utility.Container.Menus.Exploits.JumpPower.Text)
 	Notify("Set JumpPower To \"".. tostring(Utility.Container.Menus.Exploits.JumpPower.Text).. "\"", 3, "Utility")
 	Utility.Container.Menus.Exploits.JumpPower.Text = ""
+end)
+Utility.Container.Menus.Exploits.Gravity.FocusLost:Connect(function(EP)
+	if not EP then return end
+	if Utility.Container.Menus.Exploits.Gravity.Text == "" then
+		Notify("Set Gravity To Default (196.2)", 3, "Utility")
+		workspace.Gravity = 196.2
+		return
+	end
+	if tonumber(Utility.Container.Menus.Exploits.Gravity.Text) == nil then
+		Notify("Invalid Number.", 3, "Error")
+		Utility.Container.Menus.Exploits.Gravity.Text = ""
+		return
+	end
+	workspace.Gravity = tonumber(Utility.Container.Menus.Exploits.Gravity.Text)
+	Notify("Set Gravity To \"".. tostring(Utility.Container.Menus.Exploits.Gravity.Text).. "\"", 3, "Utility")
+	Utility.Container.Menus.Exploits.Gravity.Text = ""
+end)
+Utility.Container.Menus.Exploits.Stun.Activated:Connect(function()
+	GetHumanoid(LocalCharacter).PlatformStand = not GetHumanoid(LocalCharacter).PlatformStand
 end)
 Utility.Container.Menus.Exploits.Reset.Activated:Connect(function()
 	GetHumanoid(LocalCharacter).Health = 0
@@ -14439,7 +18967,7 @@ Utility.Container.Menus.Exploits.WalkFling.Activated:Connect(function()
 			LocalCharacter.PrimaryPart.Velocity = Velocity + Vector3.new(0, Move, 0)
 			Move = Move * -1
 			GSRun.Heartbeat:Wait()
-		until not Config.Utility.WalkFling
+		until (not Config.Utility.WalkFling) or not Config.Active
 	else
 		Utility.Container.Menus.Exploits.WalkFling.Text = "Walkfling"
 	end
@@ -14473,7 +19001,7 @@ Utility.Container.Menus.Exploits.Fullbright.Activated:Connect(function()
 			GSLighting.GlobalShadows = false
 			GSLighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
 			task.wait()
-		until not Config.Utility.FullBright
+		until (not Config.Utility.FullBright) or not Config.Active
 	else
 		Utility.Container.Menus.Exploits.Fullbright.Text = "Fullbright"
 	end
@@ -14490,7 +19018,7 @@ Utility.Container.Menus.Exploits.Nosit.Activated:Connect(function()
 				end
 			end)
 			task.wait()
-		until not Config.Utility.Nosit
+		until (not Config.Utility.Nosit) or not Config.Active
 	else
 		Utility.Container.Menus.Exploits.Nosit.Text = "Nosit"
 		pcall(function()
@@ -14510,7 +19038,7 @@ Utility.Container.Menus.Exploits.ESP.Activated:Connect(function()
 				GetHumanoid(LocalCharacter).NameOcclusion = Enum.NameOcclusion.NoOcclusion
 			end)
 			task.wait(0.1)
-		until not Config.Utility.ESP
+		until (not Config.Utility.ESP) or not Config.Active
 	else
 		Utility.Container.Menus.Exploits.ESP.Text = "ESP"
 		pcall(function()
@@ -14626,6 +19154,23 @@ for i, v in Utility.Container.Menus:GetChildren() do
 	v.Size = UDim2.new(0.2, 0, 0, 0)
 end
 Utility.Container.List.Exploits.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+--[[
+for i, v in Utility.Container.Menus.Files:GetChildren() do
+	if not v:IsA("TextButton") then continue end
+	v.Activated:Connect(function()
+		MenuOpen(v.Name)
+	end)
+end
+--]]
+Utility.Container.Menus.Files.Explorer.Activated:Connect(function()
+	MenuOpen("Explorer")
+end)
+Utility.Container.Menus.Files.FileSystem.Activated:Connect(function()
+	OpenExplorer()
+end)
+Utility.Container.Menus.Files.Plugins.Activated:Connect(function()
+	MenuOpen("Plugins")
+end)
 
 Players.View.Activated:Connect(function()
 	if Config.Players.Viewing then
@@ -14657,6 +19202,7 @@ Players.Bodycam.Activated:Connect(function()
 		Players.Bodycam.Text = "Exit Bodycam"
 		repeat
 			if Config.Players.Target ~= nil and Config.Players.Target.Character ~= nil then
+				Config.Players.Target.Character:WaitForChild("Head")
 				workspace.CurrentCamera.CameraType = Enum.CameraType.Scriptable
 				workspace.CurrentCamera.CameraSubject = nil
 				workspace.CurrentCamera.CFrame = Config.Players.Target.Character.Head.CFrame * CFrame.new(0, 0, -0.5)
@@ -14724,24 +19270,31 @@ Players.Pisswater.Activated:Connect(function()
 end)
 
 PrisonLife.Prizz.Activated:Connect(function()
+	Notify("This script may be outdated.", 3, "Warning")
+	Notify("This was made by a dumbass skid, use with caution.", 3, "Warning")
+	task.wait(2)
 	if AntiKick then
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/devguy100/PrizzLife/main/pladmin.lua'))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/devguy100/PrizzLife/main/pladmin.lua"))()
 	else
-		Execution_Runtime = tick()
-		loadstring(game:HttpGet("https://paste.c-net.org/MailboxScurry",true))()
+		loadstring(game:HttpGet("https://paste.c-net.org/MailboxScurry", true))()
 	end
 end)
 
 PrisonLife.H4X.Activated:Connect(function()
+	Notify("This script may be outdated.", 3, "Warning")
 	pcall(function()
 		getgenv().FavoriteColor = Color3.fromRGB(80, 0, 10)
 	end)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/yTevezz1/SCRIPTADMINPRISONLIFE/main/H4X-ADMIN-V1"))()
 end)
 PrisonLife.PA.Activated:Connect(function()
+	Notify("This script may be outdated. (SkidMaster999 My Beloved)", 3, "Warning")
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/SkidMaster999/RobloxScript/refs/heads/main/Game/PrisonLife/PissAdmin.lua"))()
 end)
 PrisonLife.Tiger.Activated:Connect(function()
+	Notify("This script may be outdated.", 3, "Warning")
+	Notify("This was made by a dumbass skid, use with caution.", 3, "Warning")
+	task.wait(2)
 	if AntiKick then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/Scripts/refs/heads/main/TigerNew.lua"))()
 	else
@@ -14749,12 +19302,16 @@ PrisonLife.Tiger.Activated:Connect(function()
 	end
 end)
 PrisonLife.PWare.Activated:Connect(function()
+	Notify("This script may be outdated.", 3, "Warning")
+	task.wait(2)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
 end)
 PrisonLife.Panther.Activated:Connect(function()
-	Notify("This was made by a dumbass skid, use with caution.", 3, "Warning")
-	task.wait(2)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/zmwtf1/Panther-Admin/refs/heads/main/PantherAdmin.lua",true))()
+	Notify("This script may be outdated.", 3, "Warning")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/zmwtf1/Panther-Admin/refs/heads/main/PantherAdmin.lua"))()
+end)
+PrisonLife.FunnyHub.Activated:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/PlutomasterAccount/Funny-Hub-V2/main/Prison%20Life"))()
 end)
 PrisonLife.TCrash.Activated:Connect(function()
 	if LocalPlayer.Team == GSTeams.Guards or LocalPlayer.Team == GSTeams.Neutral then
@@ -14787,7 +19344,7 @@ PrisonLife.TCrash.Activated:Connect(function()
 					if Toilet == nil then return end
 					for i=1, 1250 do
 						if not Config.PrisonLife.Crashing then return end
-						GSRS.meleeEvent:FireServer(Toilet,  Hammer)
+						GSRS.meleeEvent:FireServer(Toilet, Hammer)
 					end
 				end)
 			end
@@ -14802,7 +19359,7 @@ PrisonLife.TCrash.Activated:Connect(function()
 					if Toilet == nil then return end
 					for i=1, 1250 do
 						if not Config.PrisonLife.Crashing then return end
-						GSRS.meleeEvent:FireServer(Toilet,  Hammer)
+						GSRS.meleeEvent:FireServer(Toilet, Hammer)
 					end
 				end)
 			end
@@ -14854,7 +19411,7 @@ PrisonLife.TLag.Activated:Connect(function()
 				for i=1, 1250 do
 					if not Config.PrisonLife.Crashing then return end
 					Complete += 1
-					GSRS.meleeEvent:FireServer(Toilet,  Hammer)
+					GSRS.meleeEvent:FireServer(Toilet, Hammer)
 					Completions += 1
 					Complete -= 1
 				end
@@ -14871,7 +19428,7 @@ PrisonLife.TLag.Activated:Connect(function()
 				for i=1, 1250 do
 					if Hammer.Parent == nil then return end
 					Complete += 1
-					GSRS.meleeEvent:FireServer(Toilet,  Hammer)
+					GSRS.meleeEvent:FireServer(Toilet, Hammer)
 					Completions += 1
 					Complete -= 1
 				end
@@ -14885,7 +19442,7 @@ PrisonLife.TLag.Activated:Connect(function()
 	LogDebug("TLag - Complete <= 0")
 	LogDebug("TLag - Completed in *".. tostring(DateTime.now().UnixTimestamp - Start).. "*", false)
 	if Hammer.Parent == nil then
-		Notify("Hammer Not Found (".. tostring(DateTime.now().UnixTimestamp - Start).. "s)")
+		Notify("Hammer Not Found (".. tostring(DateTime.now().UnixTimestamp - Start).. "s)", 5, "Error")
 	else
 		Notify("Finished In ".. tostring(DateTime.now().UnixTimestamp - Start).. "s.", 15, "Toilet Lag")
 	end
@@ -14952,6 +19509,13 @@ PrisonLife.AntiShield.Activated:Connect(function()
 				v.Character:FindFirstChild("Riot Shield").Handle.CanQuery = true
 			end
 		end
+	end
+end)
+PrisonLife.Indicators.Activated:Connect(function()
+	Config.PrisonLife.Indicators = not Config.PrisonLife.Indicators
+	task.wait(Config.LoopCooldown * 1.25)
+	for i, v in workspace.TeamIndicators:GetChildren() do
+		v.Enabled = false
 	end
 end)
 
@@ -15218,7 +19782,7 @@ PrisonLife.Criminals.Activated:Connect(function()
 	end
 	repeat
 		MoveCharacter(CFrame.new(-950, 95, 1980), true)
-		LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+		LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 		task.wait(0.1)
 	until LocalPlayer.Team ~= GSTeams.Inmates
 	task.wait(0.25)
@@ -15245,7 +19809,7 @@ PrisonLife.Refresh.Activated:Connect(function()
 		--[[
 		repeat
 			MoveCharacter(CFrame.new(-950, 95, 1980))
-			LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+			LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 			task.wait(0.1)
 		until LocalPlayer.Team ~= GSTeams.Inmates
 		task.wait(0.25)
@@ -15259,7 +19823,7 @@ PrisonLife.Refresh.Activated:Connect(function()
 	task.delay(0.5, function()
 		repeat
 			MoveCharacter(CF + Vector3.new(0, 1, 0), true)
-			LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+			LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 			task.wait(0.1)
 		until math.abs((LocalCharacter:GetPivot().Position - (CF.Position + Vector3.new(0, 1, 0))).Magnitude) <= 3.5 or not Config.Active
 	end)
@@ -15297,7 +19861,7 @@ PrisonLife.Guards.Activated:Connect(function()
 		task.delay(0.5, function()
 			repeat
 				MoveCharacter(CF + Vector3.new(0, 1, 0), true)
-				LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+				LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 				task.wait(0.1)
 			until math.abs((LocalCharacter:GetPivot().Position - (CF.Position + Vector3.new(0, 1, 0))).Magnitude) <= 3.5 or not Config.Active
 		end)
@@ -15326,7 +19890,7 @@ PrisonLife.Inmates.Activated:Connect(function()
 		task.delay(0.5, function()
 			repeat
 				MoveCharacter(CF + Vector3.new(0, 1, 0), true)
-				LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+				LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 				task.wait(0.1)
 			until math.abs((LocalCharacter:GetPivot().Position - (CF.Position + Vector3.new(0, 1, 0))).Magnitude) <= 3.5 or not Config.Active
 		end)
@@ -15390,173 +19954,81 @@ PrisonLife.Neutral.Activated:Connect(function()
 end)
 
 PrisonLife.Teleports.Crimbase.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(-945, 95, 2065))
 end)
 PrisonLife.Teleports.Yard.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(CFrame.new(788, 98, 2468))
 end)
 PrisonLife.Teleports.Guards.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(CFrame.new(836, 100, 2285))
 end)
 PrisonLife.Teleports.Mansion.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(CFrame.new(-316, 65, 1841))
 end)
 PrisonLife.Teleports.Cafe.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(CFrame.new(884, 100, 2294))
 end)
 PrisonLife.Teleports.Gate.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(505, 102, 2250))
 end)
 PrisonLife.Teleports.Platform.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Platform.Position + Vector3.new(0, 15, 0))
 end)
 PrisonLife.Teleports.Trap.Activated:Connect(function()
 	MoveCharacter(CFrame.new(-307, 84, 1984))
 end)
 PrisonLife.Teleports.Car.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(workspace.Prison_ITEMS.buttons["Car Spawner"]["Car Spawner"]:GetPivot().Position + Vector3.new(0, 10, 0))
 end)
 PrisonLife.Teleports.Neutral.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(CFrame.new(870, 40, 2345))
 end)
 PrisonLife.Teleports.Nexus.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(CFrame.new(878, 100, 2374))
 end)
 PrisonLife.Teleports.YTower.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(CFrame.new(787, 125, 2588))
 end)
 PrisonLife.Teleports.Sewer.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(CFrame.new(916, 79, 2432))
 end)
 PrisonLife.Teleports.Cells.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(CFrame.new(915, 105, 2485))
 end)
 PrisonLife.Teleports.Office.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(CFrame.new(702, 100, 2344))
 end)
 
-PrisonLife.TP.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in PrisonLife:GetChildren() do
-		if v:IsA("TextButton") then
-			v.Active = false
-			v:AddTag("Active")
-			if v.AutoButtonColor then
-				v.AutoButtonColor = false
-				v:AddTag("AutoButtonColor")
-			end
-		elseif v:IsA("TextBox") then
-			v.TextEditable = false
-			v:AddTag("TextEditable")
-		end
-	end
-	PrisonLife.Teleports.GroupTransparency = 1
-	PrisonLife.Teleports.Visible = true
-	GSTween:Create(PrisonLife.Teleports, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
-	task.wait(0.1)
-	Menus.Teleports.Waiting = false
-end)
-
-PrisonLife.Teleports.Close.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in PrisonLife:GetChildren() do
-		if v:HasTag("Active") then
-			v.Active = true
-			v:RemoveTag("Active")
-		elseif v:HasTag("TextEditable") then
-			v.TextEditable = true
-			v:RemoveTag("TextEditable")
-		end
-		if v:HasTag("AutoButtonColor") then
-			v.AutoButtonColor = true
-		end
-	end
-	GSTween:Create(PrisonLife.Teleports, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
-	task.wait(0.1)
-	PrisonLife.Teleports.Visible = false
-	Menus.Teleports.Waiting = false
-end)
-
-PrisonLife.WP.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	PrisonLife.Weapons.GroupTransparency = 1
-	PrisonLife.Weapons.Visible = true
-	GSTween:Create(PrisonLife.Weapons, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
-	for i, v in PrisonLife:GetChildren() do
-		if v:IsA("TextButton") then
-			v.Active = false
-			v:AddTag("Active")
-			if v.AutoButtonColor then
-				v.AutoButtonColor = false
-				v:AddTag("AutoButtonColor")
-			end
-			if v.AutoButtonColor then
-				v.AutoButtonColor = false
-				v:AddTag("AutoButtonColor")
-			end
-		elseif v:IsA("TextBox") then
-			v.TextEditable = false
-			v:AddTag("TextEditable")
-		end
-	end
-	task.wait(0.1)
-	Menus.Teleports.Waiting = false
-end)
-
-PrisonLife.Weapons.Close.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in PrisonLife:GetChildren() do
-		if v:HasTag("Active") then
-			v.Active = true
-			v:RemoveTag("Active")
-		elseif v:HasTag("TextEditable") then
-			v.TextEditable = true
-			v:RemoveTag("TextEditable")
-		end
-		if v:HasTag("AutoButtonColor") then
-			v.AutoButtonColor = true
-		end
-	end
-	GSTween:Create(PrisonLife.Weapons, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
-	task.wait(0.1)
-	PrisonLife.Weapons.Visible = false
-	Menus.Teleports.Waiting = false
-end)
-
 Universal.IY.Activated:Connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
 Universal.DEX.Activated:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
@@ -15570,7 +20042,7 @@ end)
 Universal.Respawn.Activated:Connect(function()
 	local rcdEnabled, wasHidden = false, false
 	if gethidden then
-		rcdEnabled, wasHidden = gethidden(workspace, "RejectCharacterDeletions") ~= Enum.RejectCharacterDeletions.Disabled
+		rcdEnabled, wasHidden = gethidden(workspace, "RejectCharacterDeletions") ~= Enum.RejectCharacterDeletions.Disabled, nil
 	end
 	if rcdEnabled and replicatesignal then
 		replicatesignal(LocalPlayer.ConnectDiedSignalBackend)
@@ -15628,7 +20100,7 @@ Miscellaneous.NCCam.Activated:Connect(function()
 	if not sc or not getgc or not gc then return end
 	local pop = LocalPlayer.PlayerScripts.PlayerModule.CameraModule.ZoomController.Popper
 	for i, v in pairs(getgc()) do
-		if type(v) == 'function' and getfenv(v).script == pop then
+		if type(v) == "function" and getfenv(v).script == pop then
 			for i, vv in pairs(gc(v)) do
 				if tonumber(vv) == 0.25 then
 					sc(v, i, 0)
@@ -15667,22 +20139,7 @@ MM2.GrabGun.Activated:Connect(function()
 	until (LocalPlayer.Backpack:FindFirstChild("Gun") or LocalCharacter:FindFirstChild("Gun")) or not Config.Active
 end)
 MM2.StabAll.Activated:Connect(function()
-	local Knife = LocalCharacter:FindFirstChild("Knife")
-	if Knife == nil then
-		Knife = LocalPlayer.Backpack:FindFirstChild("Knife")
-		if Knife == nil then
-			Notify("Knife Not Found.", 3, "Error")
-			return
-		end
-		LocalCharacter:FindFirstChildWhichIsA("Humanoid"):UnequipTools()
-		Knife.Parent = LocalCharacter
-	end
-	Knife.Stab:FireServer("Down")
-	for i, v in GSPlayers:GetPlayers() do
-		if v == LocalPlayer then continue end
-		if v.Character == nil then continue end
-		task.spawn(FireTouch, Knife.Handle, v.Character.PrimaryPart, 1.5)
-	end
+	MM2Stab(GSPlayers:GetPlayers())
 end)
 MM2.Stab.Activated:Connect(function()
 	if GetPlayer(MM2.Input.Text) == nil then
@@ -15693,38 +20150,14 @@ MM2.Stab.Activated:Connect(function()
 		Notify("Player \"".. GetPlayer(MM2.Input.Text).Name.. "\"'s Character' Does Not Exist.", 3, "Error")
 		return
 	end
-	local Knife = LocalCharacter:FindFirstChild("Knife")
-	if Knife == nil then
-		Knife = LocalPlayer.Backpack:FindFirstChild("Knife")
-		if Knife == nil then
-			Notify("Knife Not Found.", 3, "Error")
-			return
-		end
-		LocalCharacter:FindFirstChildWhichIsA("Humanoid"):UnequipTools()
-		Knife.Parent = LocalCharacter
-		task.wait(0.5)
-	end
-	Knife.Stab:FireServer("Down")
-	task.spawn(FireTouch, Knife.Handle, GetPlayer(MM2.Input.Text).Character.PrimaryPart, 1.5)
+	MM2Stab(GetPlayer(MM2.Input.Text))
 end)
 MM2.StabSheriff.Activated:Connect(function()
 	if Config.MM2.Sheriff == nil then
 		Notify("Sheriff Not Found.", 3, "Error")
 		return
 	end
-	local Knife = LocalCharacter:FindFirstChild("Knife")
-	if Knife == nil then
-		Knife = LocalPlayer.Backpack:FindFirstChild("Knife")
-		if Knife == nil then
-			Notify("Knife Not Found.", 3, "Error")
-			return
-		end
-		LocalCharacter:FindFirstChildWhichIsA("Humanoid"):UnequipTools()
-		Knife.Parent = LocalCharacter
-		task.wait(0.5)
-	end
-	Knife.Stab:FireServer("Down")
-	task.spawn(FireTouch, Knife.Handle, Config.MM2.Sheriff.Character.PrimaryPart, 1.5)
+	MM2Stab(Config.MM2.Sheriff)
 end)
 MM2.Throw.Activated:Connect(function()
 	if GetPlayer(MM2.Input.Text) == nil then
@@ -15746,7 +20179,7 @@ MM2.Throw.Activated:Connect(function()
 		Knife.Parent = LocalCharacter
 		task.wait(0.5)
 	end
-	Knife.Throw:FireServer(GetPlayer(MM2.Input.Text).Character:GetPivot(), GetPlayer(MM2.Input.Text).Character:GetPivot().Position + Vector3.new(0, 2.5, 0))
+	Knife.Events.KnifeThrown:FireServer(GetPlayer(MM2.Input.Text).Character:GetPivot(), GetPlayer(MM2.Input.Text).Character:GetPivot().CFrame + CFrame.new(0, 2.25, 0))
 end)
 MM2.Shoot.Activated:Connect(function()
 	if GetPlayer(MM2.Input.Text) == nil then
@@ -15772,7 +20205,7 @@ MM2.Shoot.Activated:Connect(function()
 	MoveCharacter(GetPlayer(MM2.Input.Text).Character:GetPivot() * CFrame.new(0, 0, 4))
 	task.wait(Config.Ping / 500)
 	task.spawn(function()
-		Gun.KnifeLocal.CreateBeam.RemoteFunction:InvokeServer(1, GetPlayer(MM2.Input.Text).Character.PrimaryPart.Position, "AH2")
+		Gun.Shoot:FireServer(LocalCharacter:GetPivot(), GetPlayer(MM2.Input.Text).Character:GetPivot())
 	end)
 	task.wait(0.25)
 	MoveCharacter(CF)
@@ -15803,22 +20236,29 @@ MM2.ShootM.Activated:Connect(function()
 	MoveCharacter(CF)
 end)
 MM2.TVoid.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	MoveCharacter(Vector3.new(0, -1000, 0))
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	MoveCharacter(Vector3.new(0, -1000, 0), true)
 end)
 MM2.TMap.Activated:Connect(function()
 	if Config.MM2.Spawn == nil or Config.MM2.Spawn.Parent == nil then
 		Notify("Map Not Loaded.", 3, "Error")
 		return
 	end
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	MoveCharacter(Config.MM2.Spawn.CFrame)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	MoveCharacter(Config.MM2.Spawn.CFrame, true)
+end)
+MM2.TLobby.Activated:Connect(function()
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	MoveCharacter(workspace.Lobby.Spawns:GetChildren()[1].CFrame * CFrame.new(0, 5, 0), true)
 end)
 MM2.NRole.Activated:Connect(function()
 	Config.MM2.NotifyRole = not Config.MM2.NotifyRole
 end)
 MM2.NDrop.Activated:Connect(function()
 	Config.MM2.NotifyDrop = not Config.MM2.NotifyDrop
+end)
+MM2.HidStab.Activated:Connect(function()
+	Config.MM2.HidStab = not Config.MM2.HidStab
 end)
 MM2.Expose.Activated:Connect(function()
 	if Config.MM2.Murderer == nil then
@@ -15840,14 +20280,20 @@ OilUp.AutoFarm.Activated:Connect(function()
 		repeat
 			for i, v in workspace:GetDescendants() do
 				if v:IsA("ProximityPrompt") then
-					FireProximity(v)
+					FireProximity(v, nil, false)
 				end
 			end
 			task.wait(0.5)
-		until not Config.OilUp.AutoFarm
+		until (not Config.OilUp.AutoFarm) or not Config.Active
 	else
 		OilUp.AutoFarm.Text = "Enable AutoFarm"
 	end
+end)
+OilUp.Mute.Activated:Connect(function()
+	Config.OilUp.MuteNPCs = not Config.OilUp.MuteNPCs
+end)
+OilUp.FView.Activated:Connect(function()
+	OpenFViewer("AH-BabyBabyOil.mp3")
 end)
 
 OilUp.Set.Activated:Connect(function()
@@ -15885,24 +20331,45 @@ Chat.Send.Activated:Connect(function()
 	local Message = Chat.Input.Text
 	Message = string.gsub(Message, "<", "&lt;")
 	Message = string.gsub(Message, ">", "&gt;")
-	if string.len(Chat.Logs.Chat.Text) + string.len("<b>You:</b> ".. Message.. "\n") >= 2000 then
-		Chat.Logs.Chat.Text = Chat.Logs.Chat.Text:sub(1, string.len(Chat.Logs.Chat.Text) - string.len("<b>You:</b> ".. Message.. "\n"))
+	local Clone = Chat.LogsTemplate:Clone()
+	if Chat.Logs.CanvasPosition.Y >= Chat.Logs.CanvasSize.Y.Offset - Chat.Logs.AbsoluteWindowSize.Y then
+		Clone:AddTag("Downwards")
 	end
-	Chat.Logs.Chat.Text ..= "<b>You:</b> ".. Message.. "\n"
-	Chat.Logs.CanvasSize = UDim2.new(0, Chat.Logs.Chat.TextBounds.X, 0, Chat.Logs.Chat.TextBounds.Y)
-	Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y.Offset - Chat.Logs.AbsoluteWindowSize.Y)
+	Clone.Parent = Chat.Logs
+	Clone.Log.Text = "<b>You:</b> ".. Message.. "\n"
+	Clone.Name = "Log_".. tostring(#Chat.Logs:GetChildren())
+	Clone.Visible = true
+	Clone.Log.Activated:Connect(function()
+		setclipboard(Clone.Log.Text)
+		Notify("Copied Message To Clipboard.", 5, "Chat")
+	end)
+	if Clone:HasTag("Downwards") and false then
+		Chat.Logs.CanvasPosition = Vector2.new(Chat.Logs.CanvasPosition.X, Chat.Logs.CanvasSize.Y.Offset - Chat.Logs.AbsoluteWindowSize.Y)
+	end
 	HubChat(Chat.Input.Text)
 end)
 
 Chat.Input.FocusLost:Connect(function(EP)
 	if EP then
-		if string.len(Chat.Logs.Chat.Text) + string.len("<b>You:</b> ".. Chat.Input.Text.. "\n") >= 2000 then
-			Chat.Logs.Chat.Text = Chat.Logs.Chat.Text:sub(1, string.len(Chat.Logs.Chat.Text) - string.len("<b>You:</b> ".. Chat.Input.Text.. "\n"))
+		local Message = Chat.Input.Text
+		Message = string.gsub(Message, "<", "&lt;")
+		Message = string.gsub(Message, ">", "&gt;")
+		local Clone = Chat.LogsTemplate:Clone()
+		if Chat.Logs.CanvasPosition.Y >= Chat.Logs.CanvasSize.Y.Offset - Chat.Logs.AbsoluteWindowSize.Y then
+			Clone:AddTag("Downwards")
 		end
-		Chat.Logs.Chat.Text ..= "<b>You:</b> ".. Chat.Input.Text.. "\n"
-		Chat.Logs.CanvasSize = UDim2.new(0, Chat.Logs.Chat.TextBounds.X, 0, Chat.Logs.Chat.TextBounds.Y)
-		Chat.Logs.CanvasPosition = Vector2.new(0, Chat.Logs.CanvasSize.Y.Offset - Chat.Logs.AbsoluteWindowSize.Y)
-		HubChat(Chat.Input.Text)
+		Clone.Parent = Chat.Logs
+		Clone.Log.Text = "<b>You:</b> ".. Message.. "\n"
+		Clone.Name = "Log_".. tostring(#Chat.Logs:GetChildren())
+		Clone.Visible = true
+		Clone.Log.Activated:Connect(function()
+			setclipboard(Clone.Log.Text)
+			Notify("Copied Message To Clipboard.", 5, "Chat")
+		end)
+		if Clone:HasTag("Downwards") and false then
+			Chat.Logs.CanvasPosition = Vector2.new(Chat.Logs.CanvasPosition.X, Chat.Logs.CanvasSize.Y.Offset - Chat.Logs.AbsoluteWindowSize.Y)
+		end
+		HubChat(Message)
 		Chat.Input.Text = ""
 		Chat.Input:CaptureFocus()
 	end
@@ -15921,79 +20388,57 @@ end)
 
 Logs.CClear.Activated:Connect(function()
 	TLogs.ChatLogs = {}
-	Logs.Chat.Log.Text = ""
-	Logs.Chat.CanvasSize = UDim2.new(0, Logs.Chat.Log.TextBounds.X, 0, Logs.Chat.Log.TextBounds.Y)
-	Logs.Chat.CanvasPosition = Vector2.new(0, Logs.Chat.CanvasSize.Y.Offset - Logs.Chat.AbsoluteWindowSize.Y)
+	for i, v in Logs.Chat:GetChildren() do
+		if v:IsA("Frame") then
+			v:Destroy()
+		end
+	end
 	LogDebug("Cleared ChatLogs")
 end)
 Logs.PClear.Activated:Connect(function()
 	TLogs.JoinLogs = {}
-	Logs.Player.Log.Text = ""
-	Logs.Player.CanvasSize = UDim2.new(0, Logs.Player.Log.TextBounds.X, 0, Logs.Player.Log.TextBounds.Y)
-	Logs.Player.CanvasPosition = Vector2.new(0, Logs.Player.CanvasSize.Y.Offset - Logs.Player.AbsoluteWindowSize.Y)
+	for i, v in Logs.Player:GetChildren() do
+		if v:IsA("Frame") then
+			v:Destroy()
+		end
+	end
 	LogDebug("Cleared PlayerLogs")
 end)
 Debug.Clear.Activated:Connect(function()
 	TLogs.Debug = {}
-	Debug.Logs.Log.Text = ""
-	Debug.Logs.CanvasSize = UDim2.new(0, Debug.Logs.Log.TextBounds.X, 0, Debug.Logs.Log.TextBounds.Y)
-	Debug.Logs.CanvasPosition = Vector2.new(0, Debug.Logs.CanvasSize.Y.Offset - Debug.Logs.AbsoluteWindowSize.Y)
+	for i, v in Debug.Logs:GetChildren() do
+		if v:IsA("Frame") then
+			v:Destroy()
+		end
+	end
 end)
 Debug.Copy.Activated:Connect(function()
-	setclipboard(Debug.Logs.Log.Text)
+	--[[
+	local ToCopy = ""
+	local ToLoop = Debug.Logs:GetChildren()
+	table.sort(ToLoop, function(a, b)
+		return a < b
+	end)
+	
+	for i, v in ToLoop do
+		ToCopy ..= v.Text.. "\n"
+	end
+	
+	setclipboard(ToCopy)
 	Notify("Copied Text To Clipboard.", 5, "Debug")
-end)
-Debug.MMenu.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in Debug:GetChildren() do
-		if v:IsA("TextButton") then
-			v.Active = false
-			v:AddTag("Active")
-			if v.AutoButtonColor then
-				v.AutoButtonColor = false
-				v:AddTag("AutoButtonColor")
-			end
-		elseif v:IsA("TextBox") then
-			v.TextEditable = false
-			v:AddTag("TextEditable")
-		end
-	end
-	Debug.More.GroupTransparency = 1
-	Debug.More.Visible = true
-	GSTween:Create(Debug.More, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
-	task.wait(0.1)
-	Menus.Teleports.Waiting = false
-end)
-Debug.More.Close.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in Debug:GetChildren() do
-		if v:HasTag("Active") then
-			v.Active = true
-			v:RemoveTag("Active")
-		elseif v:HasTag("TextEditable") then
-			v.TextEditable = true
-			v:RemoveTag("TextEditable")
-		end
-		if v:HasTag("AutoButtonColor") then
-			v.AutoButtonColor = true
-		end
-	end
-	GSTween:Create(Debug.More, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
-	task.wait(0.1)
-	Debug.More.Visible = false
-	Menus.Teleports.Waiting = false
+	--]]
+	setclipboard(table.concat(TLogs.Debug, "\n"))
+	Notify("Copied Full Text To Clipboard.", 5, "Debug")
 end)
 Debug.More.GSet.Activated:Connect(function()
 	CurrentGame = Debug.More.GInput.Text
 	Debug.More.GInput.Text = ""
-	Notify("Changed Current Game To \"".. CurrentGame.. "\"")
+	Notify("Changed Current Game To \"".. CurrentGame.. "\"", 6, "Debug")
 end)
 Debug.More.MSet.Activated:Connect(function()
 	Menu = Debug.More.MInput.Text
 	Debug.More.MInput.Text = ""
-	Notify("Changed Current Menu To \"".. Menu.. "\"")
+	Notify("Changed Current Menu To \"".. Menu.. "\"", 6, "Debug")
 end)
 Debug.More.Hide.Activated:Connect(function()
 	Debug.Visible = false
@@ -16002,7 +20447,12 @@ end)
 Debug.More.RAK.Activated:Connect(function()
 	LoadAK(true)
 end)
-
+Debug.More.Reparent.Activated:Connect(function()
+	LogDebug("Reparent Start", false)
+	AntiHub.Parent = LocalPlayer.PlayerGui
+	Notify("Reparented AntiHub", 5, "Debug")
+	LogDebug("Reparent End", false)
+end)
 Trolling.CopyJID.Activated:Connect(function()
 	setclipboard(game.JobId)
 	Notify("Copied JobId To Clipboard.", 5, "Trolling")
@@ -16047,7 +20497,7 @@ Trolling.Send.Activated:Connect(function()
 	end
 	if TUser ~= "" then
 		if GetPlayer(TUser) ~= nil then
-			TUser = GetPlayer(TUser).DisplayName
+			TUser = GetPlayer(TUser).DisplayName.. ": "
 		end
 	end
 	if TTag ~= "" then
@@ -16055,7 +20505,7 @@ Trolling.Send.Activated:Connect(function()
 	end
 	LogDebug(Trolling.Disguise.Text.. "\n".. TPrefix.. TTag.. TUser.. TMessage)
 	local TSend = TDisguise..
-		"                                                                                                                             " ..
+		"                                                               " ..
 		"".. TPrefix.. TTag.. TUser.. TMessage
 	GSTextChat.TextChannels.RBXGeneral:SendAsync(TSend)
 end)
@@ -16104,7 +20554,7 @@ Washiez.Tickets.TicketSpam.Activated:Connect(function()
 				end)
 			end
 			task.wait(#GSPlayers:GetPlayers() / 100)
-		until not Config.Washiez.AllTickets
+		until (not Config.Washiez.AllTickets) or not Config.Active
 	else
 		Washiez.Tickets.TicketSpam.Text = "Spam All Tickets"
 	end
@@ -16130,7 +20580,7 @@ Washiez.Tickets.SpamTarget.Activated:Connect(function()
 				GSRS.CarWashSystem.TicketSystem:InvokeServer("Ticket Type", {Washiez.Tickets.Input.Text, Types[Current]})
 			end)
 			task.wait(0.05)
-		until not Config.Washiez.SpamTarget
+		until (not Config.Washiez.SpamTarget) or not Config.Active
 	else
 		Washiez.Tickets.SpamTarget.Text = "Spam Target"
 	end
@@ -16186,7 +20636,7 @@ Washiez.Tickets.DTickets.Activated:Connect(function()
 				end
 			end
 			task.wait(0.05)
-		until not Config.Washiez.NoTickets
+		until (not Config.Washiez.NoTickets) or not Config.Active
 	else
 		Washiez.Tickets.DTickets.Text = "Disable Tickets"
 	end
@@ -16230,53 +20680,27 @@ Washiez.Radio.FocusLost:Connect(function(EP)
 		Washiez.Radio.Text = ""
 	end
 end)
-Washiez.RMenu.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	Washiez.Ranks.GroupTransparency = 1
-	Washiez.Ranks.Visible = true
-	for i, v in Washiez:GetChildren() do
-		if v:IsA("TextButton") then
-			v.Active = false
-			v:AddTag("Active")
-			if v.AutoButtonColor then
-				v.AutoButtonColor = false
-				v:AddTag("AutoButtonColor")
-			end
-		elseif v:IsA("TextBox") then
-			v.TextEditable = false
-			v:AddTag("TextEditable")
-		end
-	end
-	GSTween:Create(Washiez.Ranks, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
-	task.wait(0.1)
-	Menus.Teleports.Waiting = false
-end)
-Washiez.Ranks.Close.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in Washiez:GetChildren() do
-		if v:HasTag("Active") then
-			v.Active = true
-			v:RemoveTag("Active")
-		elseif v:HasTag("TextEditable") then
-			v.TextEditable = true
-			v:RemoveTag("TextEditable")
-		end
-		if v:HasTag("AutoButtonColor") then
-			v.AutoButtonColor = true
-		end
-	end
-	GSTween:Create(Washiez.Ranks, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
-	task.wait(0.1)
-	Washiez.Ranks.Visible = false
-	Menus.Teleports.Waiting = false
-end)
 Washiez.Ranks.NotifyST.Activated:Connect(function()
 	Config.Washiez.NotifyST = not Config.Washiez.NotifyST
 end)
 Washiez.Ranks.NotifyMGMT.Activated:Connect(function()
 	Config.Washiez.NotifyMGMT = not Config.Washiez.NotifyMGMT
+end)
+Washiez.Event.Activated:Connect(function()
+	local Candy = workspace.CandyLocations:GetChildren()
+	table.sort(Candy, function(a, b)
+		return a:GetAttribute("ID") < b:GetAttribute("ID")
+	end)
+	local n = 0
+	for i, v in Candy do
+		n = 0
+		repeat
+			n += 1
+			MoveCharacter(v:GetPivot())
+			FireProximity(v.PositionPart.Halloween2025)
+			task.wait()
+		until v.Parent == nil or n >= 10
+	end
 end)
 Washiez.ObbyL.Activated:Connect(function()
 	if Config.Washiez.AutoObby then return end
@@ -16308,12 +20732,12 @@ Washiez.AutoObby.Activated:Connect(function()
 				for i, v in Checkpoints do
 					FireTouch(LocalCharacter.PrimaryPart, v.Cylinder, 0.1)
 					--MoveCharacter(v:GetPivot())
-					LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-					repeat LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0) task.wait() until v.Cylinder.Color.R ~= 255
+					LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+					repeat LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero task.wait() until v.Cylinder.Color.R ~= 255
 				end
 			until Checkpoints[#Checkpoints].Cylinder.Color.R == 52 or not Config.Washiez.AutoObby
 			task.wait(1)
-		until not Config.Washiez.AutoObby
+		until (not Config.Washiez.AutoObby) or not Config.Active
 	else
 		Washiez.AutoObby.Text = "AutoFarm Obby"
 		workspace.Gravity = 196.2
@@ -16349,150 +20773,65 @@ Washiez.Tickets.Deluxe.Activated:Connect(function()
 	GSRS.CarWashSystem.TicketSystem:InvokeServer("Ticket Type", {Washiez.Tickets.Input.Text, "Deluxe"})
 end)
 Washiez.Teleports.Spawn.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(-110, 4, 105))
 end)
 Washiez.Teleports.Staff.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(290, 4, -195))
 end)
 Washiez.Teleports.Store.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(545, 4, -200))
 end)
 Washiez.Teleports.Key.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(-155, -5, -210))
 end)
 Washiez.Teleports.Kitchen.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(569, 4, 206))
 end)
 Washiez.Teleports.Jail.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(275, 4, -535))
 end)
 Washiez.Teleports.Warehouse.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(495, 4, 20))
 end)
 Washiez.Teleports.CarWash.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(350, 4, 160))
 end)
 Washiez.Teleports.VIP.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(270, 4, 55))
 end)
 Washiez.Teleports.Obbies.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(340, 4, -130))
 end)
 Washiez.Teleports.Raceway.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(300, 4, 480))
 end)
 Washiez.Teleports.Campsite.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(-750, 4, -2060))
 end)
-Washiez.Teleports.Close.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in Washiez:GetChildren() do
-		if v:HasTag("Active") then
-			v.Active = true
-			v:RemoveTag("Active")
-		elseif v:HasTag("TextEditable") then
-			v.TextEditable = true
-			v:RemoveTag("TextEditable")
-		end
-		if v:HasTag("AutoButtonColor") then
-			v.AutoButtonColor = true
-		end
-	end
-	GSTween:Create(Washiez.Teleports, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
-	task.wait(0.1)
-	Washiez.Teleports.Visible = false
-	Menus.Teleports.Waiting = false
-end)
-Washiez.TP.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	Washiez.Teleports.GroupTransparency = 1
-	Washiez.Teleports.Visible = true
-	for i, v in Washiez:GetChildren() do
-		if v:IsA("TextButton") then
-			v.Active = false
-			v:AddTag("Active")
-			if v.AutoButtonColor then
-				v.AutoButtonColor = false
-				v:AddTag("AutoButtonColor")
-			end
-		elseif v:IsA("TextBox") then
-			v.TextEditable = false
-			v:AddTag("TextEditable")
-		end
-	end
-	GSTween:Create(Washiez.Teleports, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
-	task.wait(0.1)
-	Menus.Teleports.Waiting = false
-end)
-Washiez.TCK.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	Washiez.Tickets.GroupTransparency = 1
-	Washiez.Tickets.Visible = true
-	for i, v in Washiez:GetChildren() do
-		if v:IsA("TextButton") then
-			v.Active = false
-			v:AddTag("Active")
-			if v.AutoButtonColor then
-				v.AutoButtonColor = false
-				v:AddTag("AutoButtonColor")
-			end
-		elseif v:IsA("TextBox") then
-			v.TextEditable = false
-			v:AddTag("TextEditable")
-		end
-	end
-	GSTween:Create(Washiez.Tickets, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
-	task.wait(0.1)
-	Menus.Teleports.Waiting = false
-end)
-Washiez.Tickets.Close.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in Washiez:GetChildren() do
-		if v:HasTag("Active") then
-			v.Active = true
-			v:RemoveTag("Active")
-		elseif v:HasTag("TextEditable") then
-			v.TextEditable = true
-			v:RemoveTag("TextEditable")
-		end
-		if v:HasTag("AutoButtonColor") then
-			v.AutoButtonColor = true
-		end
-	end
-	GSTween:Create(Washiez.Tickets, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
-	task.wait(0.1)
-	Washiez.Tickets.Visible = false
-	Menus.Teleports.Waiting = false
-end)
-
 Washiez.FF.Activated:Connect(function()
 	if not replicatesignal then
 		Notify("Missing replicatesignal", 3, "Error")
@@ -16536,7 +20875,7 @@ Washiez.FF.Activated:Connect(function()
 				end
 			end)
 			task.wait(4)
-		until not Config.Washiez.FF
+		until (not Config.Washiez.FF) or not Config.Active
 		Config.Washiez.FFE = false
 	else
 		Washiez.FF.Text = "Stopping FF"
@@ -16550,9 +20889,9 @@ Washiez.Key.Activated:Connect(function()
 	local CF = LocalCharacter:GetPivot()
 	repeat
 		MoveCharacter(workspace.UndergroundKeys:FindFirstChildWhichIsA("ProximityPrompt", true).Parent.CFrame)
-		FireProximity(workspace.UndergroundKeys:FindFirstChildWhichIsA("ProximityPrompt", true))
+		FireProximity(workspace.UndergroundKeys:FindFirstChildWhichIsA("ProximityPrompt", true), nil, false)
 		task.wait(0.25)
-	until LocalPlayer.Backpack:FindFirstChild("Underground Key") or LocalCharacter:FindFirstChild("Underground Key")
+	until (LocalPlayer.Backpack:FindFirstChild("Underground Key") or LocalCharacter:FindFirstChild("Underground Key")) or not Config.Active
 	MoveCharacter(CF)
 end)
 Washiez.Gates.Activated:Connect(function()
@@ -16624,6 +20963,21 @@ Washiez.OpenDoors.Activated:Connect(function()
 	Notify("Opened All Doors", 3, "Success")
 end)
 
+Washiez.LOD.Activated:Connect(function()
+	Config.Washiez.LoopDoors = not Config.Washiez.LoopDoors
+	if Config.Washiez.LoopDoors then
+		Washiez.LOD.Text = "Stop Opening Doors"
+		repeat
+			for i, v in Config.Washiez.KD do
+				FireTouch(LocalCharacter.PrimaryPart, v.Instance.Union, 0.05, nil, false)
+			end
+			task.wait(0.1)
+		until not Config.Washiez.LoopDoors
+	else
+		Washiez.LOD.Text = "Loop Open Doors"
+	end
+end)
+
 Washiez.Doors.Activated:Connect(function()
 	Config.Washiez.KDE = not Config.Washiez.KDE
 	if Config.Washiez.KDE then
@@ -16640,201 +20994,54 @@ Washiez.Doors.Activated:Connect(function()
 end)
 
 Washiez.WLOL.Activated:Connect(function()
-	Notify("Check Out\nburntribs.space/washiez.lol", 6, "Loading")
-	loadstring(game:HttpGet('https://burntribs.space/washiez.lol/script.lua'))()
+	Notify("Check Out\nwashiez.xyz", 6, "Loading")
+	loadstring(game:HttpGet("https://washiez.xyz/script"))()
 end)
 
 WashiezTC.Teleports.Spawn.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(469, 6, -115))
 end)
 WashiezTC.Teleports.Staff.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(305, 6, -115))
 end)
 WashiezTC.Teleports.Upstairs.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(330, 23, -115))
 end)
 WashiezTC.Teleports.Trainee.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(228, 4, 0))
 end)
 WashiezTC.Teleports.SO.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(200, 4, -105))
 end)
 WashiezTC.Teleports.JO.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(230, 4, -230))
 end)
 WashiezTC.Teleports.Chair.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(426, -41, -134))
 end)
 WashiezTC.Teleports.Entrance.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(560, 4, -115))
 end)
 WashiezTC.Teleports.Test.Activated:Connect(function()
-	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+	LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+	LocalCharacter.PrimaryPart.AssemblyAngularVelocity = Vector3.zero
 	MoveCharacter(Vector3.new(829, -284, -10))
-end)
-WashiezTC.Teleports.Close.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in WashiezTC:GetChildren() do
-		if v:HasTag("Active") then
-			v.Active = true
-			v:RemoveTag("Active")
-		elseif v:HasTag("TextEditable") then
-			v.TextEditable = true
-			v:RemoveTag("TextEditable")
-		end
-		if v:HasTag("AutoButtonColor") then
-			v.AutoButtonColor = true
-		end
-	end
-	GSTween:Create(WashiezTC.Teleports, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
-	task.wait(0.1)
-	WashiezTC.Teleports.Visible = false
-	Menus.Teleports.Waiting = false
-end)
-WashiezTC.TP.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	WashiezTC.Teleports.GroupTransparency = 1
-	WashiezTC.Teleports.Visible = true
-	for i, v in WashiezTC:GetChildren() do
-		if v:IsA("TextButton") then
-			v.Active = false
-			v:AddTag("Active")
-			if v.AutoButtonColor then
-				v.AutoButtonColor = false
-				v:AddTag("AutoButtonColor")
-			end
-		elseif v:IsA("TextBox") then
-			v.TextEditable = false
-			v:AddTag("TextEditable")
-		end
-	end
-	GSTween:Create(WashiezTC.Teleports, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
-	task.wait(0.1)
-	Menus.Teleports.Waiting = false
-end)
-
-WashiezTC.Teleports.Close.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in WashiezTC:GetChildren() do
-		if v:HasTag("Active") then
-			v.Active = true
-			v:RemoveTag("Active")
-		elseif v:HasTag("TextEditable") then
-			v.TextEditable = true
-			v:RemoveTag("TextEditable")
-		end
-		if v:HasTag("AutoButtonColor") then
-			v.AutoButtonColor = true
-		end
-	end
-	GSTween:Create(WashiezTC.Teleports, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
-	task.wait(0.1)
-	WashiezTC.Teleports.Visible = false
-	Menus.Teleports.Waiting = false
-end)
-WashiezTC.RMenu.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	WashiezTC.Ranks.GroupTransparency = 1
-	WashiezTC.Ranks.Visible = true
-	for i, v in WashiezTC:GetChildren() do
-		if v:IsA("TextButton") then
-			v.Active = false
-			v:AddTag("Active")
-			if v.AutoButtonColor then
-				v.AutoButtonColor = false
-				v:AddTag("AutoButtonColor")
-			end
-		elseif v:IsA("TextBox") then
-			v.TextEditable = false
-			v:AddTag("TextEditable")
-		end
-	end
-	GSTween:Create(WashiezTC.Ranks, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
-	task.wait(0.1)
-	Menus.Teleports.Waiting = false
-end)
-WashiezTC.Ranks.Close.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in WashiezTC:GetChildren() do
-		if v:HasTag("Active") then
-			v.Active = true
-			v:RemoveTag("Active")
-		elseif v:HasTag("TextEditable") then
-			v.TextEditable = true
-			v:RemoveTag("TextEditable")
-		end
-		if v:HasTag("AutoButtonColor") then
-			v.AutoButtonColor = true
-		end
-	end
-	GSTween:Create(WashiezTC.Ranks, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
-	task.wait(0.1)
-	WashiezTC.Ranks.Visible = false
-	Menus.Teleports.Waiting = false
-end)
-WashiezTC.Cars.Close.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in WashiezTC:GetChildren() do
-		if v:HasTag("Active") then
-			v.Active = true
-			v:RemoveTag("Active")
-		elseif v:HasTag("TextEditable") then
-			v.TextEditable = true
-			v:RemoveTag("TextEditable")
-		end
-		if v:HasTag("AutoButtonColor") then
-			v.AutoButtonColor = true
-		end
-	end
-	GSTween:Create(WashiezTC.Cars, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
-	task.wait(0.1)
-	WashiezTC.Cars.Visible = false
-	Menus.Teleports.Waiting = false
-end)
-WashiezTC.CM.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	WashiezTC.Cars.GroupTransparency = 1
-	WashiezTC.Cars.Visible = true
-	for i, v in WashiezTC:GetChildren() do
-		if v:IsA("TextButton") then
-			v.Active = false
-			v:AddTag("Active")
-			if v.AutoButtonColor then
-				v.AutoButtonColor = false
-				v:AddTag("AutoButtonColor")
-			end
-		elseif v:IsA("TextBox") then
-			v.TextEditable = false
-			v:AddTag("TextEditable")
-		end
-	end
-	GSTween:Create(WashiezTC.Cars, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
-	task.wait(0.1)
-	Menus.Teleports.Waiting = false
 end)
 WashiezTC.CarAdded.Activated:Connect(function()
 	Config.WashiezTC.CarAdded = not Config.WashiezTC.CarAdded
@@ -16847,9 +21054,6 @@ WashiezTC.Ranks.NotifyST.Activated:Connect(function()
 end)
 WashiezTC.Ranks.NotifyMGMT.Activated:Connect(function()
 	Config.Washiez.NotifyMGMT = not Config.Washiez.NotifyMGMT
-end)
-WashiezTC.Spark.Activated:Connect(function()
-	loadstring(game:HttpGet("https://www.fentanyl.wtf/spark/beta/.lua", true))()
 end)
 WashiezTC.VSeat.Activated:Connect(function()
 	local Seats = {}
@@ -16956,7 +21160,7 @@ WashiezTC.Cars.FlingAll.Activated:Connect(function()
 			Seat.Parent.Parent.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 10000, 0)
 			WashiezTP(v.Character:GetPivot(), false)
 			task.wait()
-		until GetHumanoid(LocalCharacter).SeatPart == nil or GetHumanoid(v.Character).SeatPart ~= nil or v.Character:GetPivot().Y >= 1000 or math.abs(DateTime.now().UnixTimestampMillis - Time) >= 2500
+		until (GetHumanoid(LocalCharacter).SeatPart == nil or GetHumanoid(v.Character).SeatPart ~= nil or v.Character:GetPivot().Y >= 1000 or math.abs(DateTime.now().UnixTimestampMillis - Time) >= 2500) or not Config.Active
 	end
 	WashiezTP("Velocity")
 	WashiezTP(CF, false)
@@ -16987,7 +21191,7 @@ WashiezTC.Cars.Fling.Activated:Connect(function()
 		Seat.Parent.Parent.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 10000, 0)
 		WashiezTP(Target.Character:GetPivot(), false)
 		task.wait()
-	until GetHumanoid(LocalCharacter).SeatPart == nil or GetHumanoid(Target.Character).SeatPart ~= nil or Target.Character:GetPivot().Y >= 1000 or math.abs(DateTime.now().UnixTimestampMillis - Time) >= 2500
+	until (GetHumanoid(LocalCharacter).SeatPart == nil or GetHumanoid(Target.Character).SeatPart ~= nil or Target.Character:GetPivot().Y >= 1000 or math.abs(DateTime.now().UnixTimestampMillis - Time) >= 2500) or not Config.Active
 	WashiezTP("Velocity")
 	WashiezTP(CF, false)
 	Config.WashiezTC.Flinging = false
@@ -17018,6 +21222,22 @@ WashiezTC.OpenDoors.Activated:Connect(function()
 		task.wait()
 	end
 	Notify("Opened All Doors", 3, "Success")
+end)
+WashiezTC.LOD.Activated:Connect(function()
+	Config.Washiez.LoopDoors = not Config.Washiez.LoopDoors
+	if Config.Washiez.LoopDoors then
+		Washiez.LOD.Text = "Stop Opening Doors"
+		repeat
+			for i, v in Config.WashiezTC.KD do
+				if v == nil then continue end
+				if v.Name ~= "KeycardDoor" then continue end
+				FireTouch(LocalCharacter.PrimaryPart, v.Instance.Union, 0.05, nil, false)
+			end
+			task.wait(0.1)
+		until not Config.Washiez.LoopDoors
+	else
+		WashiezTC.LOD.Text = "Loop Open Doors"
+	end
 end)
 WashiezTC.FF.Activated:Connect(function()
 	if not replicatesignal then
@@ -17058,7 +21278,7 @@ WashiezTC.FF.Activated:Connect(function()
 				end
 			end)
 			task.wait(4)
-		until not Config.WashiezTC.FF
+		until (not Config.WashiezTC.FF) or not Config.Active
 		Config.WashiezTC.FFE = false
 	else
 		WashiezTC.FF.Text = "Stopping FF"
@@ -17080,12 +21300,12 @@ SCallSim.Audio.Activated:Connect(function()
 					task.wait()
 				end
 				task.wait(5)
-			until not Config.SCallSim.Audio
+			until (not Config.SCallSim.Audio) or not Config.Active
 		end)
 		repeat
 			GSRS.LinePlayer:FireServer("Option1", "Dialogue1", "Call1")
 			task.wait()
-		until not Config.SCallSim.Audio
+		until (not Config.SCallSim.Audio) or not Config.Active
 	else
 		SCallSim.Audio.Text = "Start Audio"
 		GSRS.ClearSounds:FireServer()
@@ -17098,12 +21318,12 @@ end)
 AHContainer.Menus.WashiezRank.Complete.Activated:Connect(function()
 	if AHContainer.Menus.WashiezRank.Complete.Text == "You Have Been Ranked." then return end
 	Notify("Starting Ranker.", 3, "Starting")
-	game:GetService("ReplicatedStorage"):WaitForChild("Application"):InvokeServer({[2] = 0})
-	game:GetService("ReplicatedStorage"):WaitForChild("Application"):InvokeServer({"Answer4", 1})
-	game:GetService("ReplicatedStorage"):WaitForChild("Application"):InvokeServer({"Answer2", 2})
-	game:GetService("ReplicatedStorage"):WaitForChild("Application"):InvokeServer({"Answer1", 3})
-	game:GetService("ReplicatedStorage"):WaitForChild("Application"):InvokeServer({"Answer4", 4})
-	game:GetService("ReplicatedStorage"):WaitForChild("Application"):InvokeServer({"Answer2", 5})
+	GSRS.Application:InvokeServer({[2] = 0})
+	GSRS.Application:InvokeServer({"Answer4", 1})
+	GSRS.Application:InvokeServer({"Answer2", 2})
+	GSRS.Application:InvokeServer({"Answer1", 3})
+	GSRS.Application:InvokeServer({"Answer4", 4})
+	GSRS.Application:InvokeServer({"Answer2", 5})
 	Notify("You Have Been Ranked!", 10, "Success")
 	AHContainer.Menus.WashiezRank.Complete.Text = "You Have Been Ranked."
 end)
@@ -17124,7 +21344,7 @@ SCallSim.AutoFarm.Activated:Connect(function()
 			end
 			GSMarketPlace:SignalPromptProductPurchaseFinished(LocalPlayer.UserId, 1647689543, true)
 			task.wait(0.5)
-		until not Config.SCallSim.AutoFarm
+		until (not Config.SCallSim.AutoFarm) or not Config.Active
 	else
 		SCallSim.AutoFarm.Text = "Enable AutoFarm"
 	end
@@ -17141,7 +21361,7 @@ SCallSim.SCC.Activated:Connect(function()
 		repeat
 			GSRS.Chatroom.UserConnected:FireServer()
 			task.wait(0.1)
-		until not Config.SCallSim.SCC
+		until (not Config.SCallSim.SCC) or not Config.Active
 	else
 		SCallSim.SCC.Text = "Spam Chat Connections"
 	end
@@ -17159,7 +21379,7 @@ SCallSim.HCC.Activated:Connect(function()
 		repeat
 			GSRS.Chatroom.UserDisconnected:FireServer()
 			task.wait(0.1)
-		until not Config.SCallSim.HCC
+		until (not Config.SCallSim.HCC) or not Config.Active
 	else
 		SCallSim.HCC.Text = "Spam Chat Disconnect"
 	end
@@ -17237,7 +21457,7 @@ SCallSim.Amount.FocusLost:Connect(function(EP)
 	if not EP then return end
 	if SCallSim.Amount.Text == "" or SCallSim.Amount.Text == " " then
 		Config.SCallSim.Amount = 100
-		Notify("Set To Amount Default (10)", 5)
+		Notify("Set To Amount Default (10)", 5, "Success")
 		SCallSim.Amount.Text = ""
 		return
 	end
@@ -17256,7 +21476,7 @@ SCallSim.Delay.FocusLost:Connect(function(EP)
 	if not EP then return end
 	if SCallSim.Delay.Text == "" or SCallSim.Delay.Text == " " then
 		Config.SCallSim.Delay = 10
-		Notify("Set To Delay Default (10)", 5)
+		Notify("Set To Delay Default (10)", 5, "Success")
 		SCallSim.Delay.Text = ""
 		return
 	end
@@ -17272,6 +21492,177 @@ SCallSim.Delay.FocusLost:Connect(function(EP)
 	SCallSim.Delay.Text = ""
 end)
 
+AimbotFFA.Kill.Activated:Connect(function()
+	if GetPlayer(AimbotFFA.Input.Text) == nil then
+		Notify("Player \"".. AimbotFFA.Input.Text.. "\" Does Not Exist.", 3, "Error")
+		return
+	end
+	GSRS.PlayerHitEvent:FireServer(GetPlayer(AimbotFFA.Input.Text).Character, tonumber("inf"))
+	Notify("Killed Player", 3, "Success")
+end)
+AimbotFFA.KillAll.Activated:Connect(function()
+	for i, v in AFFACharacters() do
+		pcall(function()
+			GSRS.PlayerHitEvent:FireServer(v, tonumber("inf"))
+		end)
+	end
+end)
+AimbotFFA.LKAll.Activated:Connect(function()
+	Config.AimbotFFA.KillAll = not Config.AimbotFFA.KillAll
+	if Config.AimbotFFA.KillAll then
+		AimbotFFA.LKAll.Text = "Unloopkill All"
+		repeat
+			for i, v in AFFACharacters() do
+				pcall(function()
+					GSRS.PlayerHitEvent:FireServer(v, tonumber("inf"))
+				end)
+			end
+			task.wait(0.1)
+		until (not Config.AimbotFFA.KillAll) or not Config.Active
+	else
+		AimbotFFA.LKAll.Text = "Loopkill All"
+	end
+end)
+AimbotFFA.GunMods.Activated:Connect(function()
+	Config.AimbotFFA.GunMods = not Config.AimbotFFA.GunMods
+end)
+AimbotFFA.Aimbot.Activated:Connect(function()
+	Config.AimbotFFA.AllowAimbot = not Config.AimbotFFA.AllowAimbot
+end)
+AimbotFFA.SuperCrash.Activated:Connect(function()
+	Config.AimbotFFA.SuperCrash = not Config.AimbotFFA.SuperCrash
+end)
+AimbotFFA.Mute.Activated:Connect(function()
+	if AimbotFFA.Mute:HasTag("Waiting") then return end
+	AimbotFFA.Mute:AddTag("Waiting")
+	if LocalPlayer.PlayerGui.MainMenu.Sound:HasTag("Muted") then
+		LocalPlayer.PlayerGui.MainMenu.Sound:RemoveTag("Muted")
+		LocalPlayer.PlayerGui.MainMenu.Sound.Volume = 0.5
+		GSSound:FindFirstChild("Day Ambience").Volume = 0.5
+		AimbotFFA.Mute.Text = "Mute Music"
+	else
+		LocalPlayer.PlayerGui.MainMenu.Sound:AddTag("Muted")
+		LocalPlayer.PlayerGui.MainMenu.Sound.Volume = 0
+		GSSound:FindFirstChild("Day Ambience").Volume = 0
+		AimbotFFA.Mute.Text = "Unmute Music"
+	end
+	AimbotFFA.Mute:RemoveTag("Waiting")
+end)
+AimbotFFA.Thorns.Activated:Connect(function()
+	Config.AimbotFFA.Thorns = not Config.AimbotFFA.Thorns
+	if Config.AimbotFFA.Thorns then
+		repeat
+			for i, v in AFFACharacters(false, true) do
+				pcall(function()
+					GSRS.PlayerHitEvent:FireServer(v, tonumber("inf"))
+				end)
+			end
+			task.wait(0.25)
+		until (not Config.AimbotFFA.Thorns) or not Config.Active
+	end
+end)
+AimbotFFA.NoGun.Activated:Connect(function()
+	if LocalCharacter == nil then
+		Notify("Character Not Found.", 5, "Error")
+		return
+	end
+	if LocalCharacter:FindFirstChildWhichIsA("Tool") == nil then
+		Notify("Gun Not Found.", 5, "Error")
+		return
+	end
+	LocalCharacter:FindFirstChildWhichIsA("Tool"):Destroy()
+	Notify("Removed Gun.", 3, "Success")
+end)
+AimbotFFA.Crash.Activated:Connect(function()
+	local Buy = GSRS.GunPurchaseEvent
+	AimbotFFA.Crash.Text = "Crashing"
+	LogDebug("AimbotFFA Crash Started *".. tostring(Config.AimbotFFA.SuperCrash).. "*")
+	if Config.AimbotFFA.SuperCrash then
+		while task.wait() do
+			for i=1, 1000 do
+				Buy:FireServer("Nebula")
+				Buy:FireServer("GodlyGun")
+			end
+			LocalPlayer.Backpack:ClearAllChildren()
+		end
+	else
+		while task.wait() do
+			for i=1, 1000 do
+				Buy:FireServer("PhoenixGun")
+				Buy:FireServer("BatGun")
+			end
+			LocalPlayer.Backpack:ClearAllChildren()
+		end
+	end
+end)
+AimbotFFA.MMenu.Activated:Connect(function()
+	LocalPlayer.PlayerGui.MyModGui:WaitForChild("ModPanel").Visible = true
+end)
+AimbotFFA.NMenu.Activated:Connect(function()
+	LocalPlayer.PlayerGui.MyModGui:WaitForChild("ModPanel").Visible = false
+end)
+AimbotFFA.Whitelist.Add.Activated:Connect(function()
+	if AimbotFFA.Whitelist.Whitelist:FindFirstChild(AimbotFFA.Whitelist.Input.Text) then
+		Notify("Already Whitelisted.", 5, "Error")
+		return
+	end
+	local Value = Instance.new("StringValue", AimbotFFA.Whitelist.Whitelist)
+	Value.Name = AimbotFFA.Whitelist.Input.Text
+	Value.Value = Value.Name
+	Notify("Added Whitelist.", 5, "Success")
+
+	local Text = ""
+	local Whitelisted = AimbotFFA.Whitelist.Whitelist:GetChildren()
+	table.sort(Whitelisted, function(a, b) return a.Name:lower() < b.Name:lower() end)
+	for i, v in Whitelisted do
+		local Clone = AimbotFFA.Whitelist.Template:Clone()
+		if AimbotFFA.Whitelist.Scroll.CanvasPosition.Y >= AimbotFFA.Whitelist.Scroll.CanvasSize.Y.Offset - AimbotFFA.Whitelist.Scroll.AbsoluteWindowSize.Y then
+			Clone:AddTag("Downwards")
+		end
+		Clone.Parent = AimbotFFA.Whitelist.Scroll
+		Clone.Log.Text = tostring(i).. ". ".. v.Value
+		Clone.Name = "Log_".. tostring(#AimbotFFA.Whitelist.Scroll:GetChildren())
+		Clone.Visible = true
+		Clone.Log.Activated:Connect(function()
+			setclipboard(Clone.Log.Text)
+			Notify("Copied Whitelist To Clipboard.", 5, "Aimbot FFA")
+		end)
+		if Clone:HasTag("Downwards") and false then
+			AimbotFFA.Whitelist.Scroll.CanvasPosition = Vector2.new(AimbotFFA.Whitelist.Scroll.CanvasPosition.X, AimbotFFA.Whitelist.Scroll.CanvasSize.Y.Offset - AimbotFFA.Whitelist.Scroll.AbsoluteWindowSize.Y)
+		end
+	end
+end)
+AimbotFFA.Whitelist.Delete.Activated:Connect(function()
+	if AimbotFFA.Whitelist.Whitelist:FindFirstChild(AimbotFFA.Whitelist.Input.Text) == nil then
+		Notify("Whitelist Not Found.", 5, "Error")
+		return
+	end
+	AimbotFFA.Whitelist.Whitelist:FindFirstChild(AimbotFFA.Whitelist.Input.Text):Destroy()
+	Notify("Removed Whitelist.", 5, "Success")
+
+	local Text = ""
+	local Whitelisted = AimbotFFA.Whitelist.Whitelist:GetChildren()
+	table.sort(Whitelisted, function(a, b) return a.Name:lower() < b.Name:lower() end)
+	for i, v in Whitelisted do
+		local Clone = AimbotFFA.Whitelist.Template:Clone()	
+		if AimbotFFA.Whitelist.Scroll.CanvasPosition.Y >= AimbotFFA.Whitelist.Scroll.CanvasSize.Y.Offset - AimbotFFA.Whitelist.Scroll.AbsoluteWindowSize.Y then
+			Clone:AddTag("Downwards")
+		end
+		Clone.Parent = AimbotFFA.Whitelist.Scroll
+		Clone.Log.Text = tostring(i).. ". ".. v.Value
+		Clone.Name = "Log_".. tostring(#AimbotFFA.Whitelist.Scroll:GetChildren())
+		Clone.Visible = true
+		Clone.Log.Activated:Connect(function()
+			setclipboard(Clone.Log.Text)
+			Notify("Copied Whitelist To Clipboard.", 5, "Aimbot FFA")
+		end)
+
+		if Clone:HasTag("Downwards") and false then
+			AimbotFFA.Whitelist.Scroll.CanvasPosition = Vector2.new(AimbotFFA.Whitelist.Scroll.CanvasPosition.X, AimbotFFA.Whitelist.Scroll.CanvasSize.Y.Offset - AimbotFFA.Whitelist.Scroll.AbsoluteWindowSize.Y)
+		end
+	end
+end)
+
 AHContainer.Player.Profile.Activated:Connect(function()
 	if Menus.Overflow.Waiting then return end
 	if Menus.Overflow.Visible then return end
@@ -17279,6 +21670,7 @@ AHContainer.Player.Profile.Activated:Connect(function()
 	if Menus.Help.Visible then return end
 	Menus.Overflow.Waiting = true
 	Menus.Overflow.Visible = true
+	AntiHub.TitleBar.Buttons.Hints.Overflow.Visible = false
 	AHContainer.Overflow.Size = UDim2.new(1, 0, 1, 0)
 	AHContainer.Overflow.Position = UDim2.new(1.5, 0, 0.5, 0)
 	AHContainer.Overflow.Visible = true
@@ -17308,6 +21700,8 @@ AHContainer.Overflow.Close.Activated:Connect(function()
 end)
 AntiHub.TitleBar.Buttons.Help.Activated:Connect(function()
 	if Menus.Help.Waiting then return end
+	AntiHub.TitleBar.Buttons.Hints.Help.Visible = false
+	AntiHub.TitleBar.Buttons.Hints.Overflow.Visible = true
 	if Menus.Help.Visible then
 		AHContainer.List.Visible = true
 		Menus.Help.Waiting = true
@@ -17359,15 +21753,13 @@ AHContainer.Overflow.Position = UDim2.new(-0.5, 0, 0.5, 0)
 AHContainer.Help.Position = UDim2.new(-0.5, 0, 0.5, 0)
 
 AHContainer.Settings.Keybind.Activated:Connect(function()
-	if not GSUIP.KeyboardEnabled then return end
+	if not (GSUIP.KeyboardEnabled or GSUIP.GamepadEnabled) then return end
 	Menus.Main.Waiting = true
 	local Old = Keybinds.Main
 	AHContainer.Settings.Keybind.Text = "Press Any Key"
-	Keybinds.Main = GSUIP.InputBegan:Wait().KeyCode.Name
-	if Keybinds.Main == "Unknown" then
-		Keybinds.Main = Old
-		Notify("Invalid KeyCode.", 3, "Error")
-	end
+	local Key = GSUIP.InputBegan:Wait().KeyCode
+	if table.find(KeyBlacklist, Key) then Notify("Button \"".. Key.Name.. "\" Is Not Allowed.", 5, "Error") return end
+	Keybinds.Main = Key.Name
 	AHContainer.Settings.Keybind.Text = "Keybind [".. Keybinds.Main.. "]"
 	task.wait(0.5)
 	Menus.Main.Waiting = false
@@ -17379,30 +21771,26 @@ AHContainer.Menus.AntiKick.Set.Activated:Connect(function()
 	AHContainer.Menus.AntiKick.Input.Text = ""
 end)
 
-Keybind.Container.Read.Activated:Connect(function()
+PoppedMenus.Keybind.Container.Read.Activated:Connect(function()
 	Menus.Keybinds.Waiting = true
-	Keybind.Container.Read.Text = "Press Any Key"
-	local Key = GSUIP.InputBegan:Wait().KeyCode.Name
-	if Key == "Unknown" then
-		Notify("Invalid KeyCode.", 3, "Error")
-	else
-		Keybind.Container.Custom.Text = Key
-	end
-	Keybind.Container.Read.Text = "Read"
+	PoppedMenus.Keybind.Container.Read.Text = "Press Any Key"
+	local Key = GSUIP.InputBegan:Wait().KeyCode
+	if table.find(KeyBlacklist, Key) then Notify("Button \"".. Key.Name.. "\" Is Not Allowed.", 5, "Error") return end
+	PoppedMenus.Keybind.Container.Custom.Text = Key.Name
+	PoppedMenus.Keybind.Container.Read.Text = "Read"
 	task.wait(0.5)
 	Menus.Keybinds.Waiting = false
 end)
-
-Keybind.Container.Set.Activated:Connect(function()
-	if Enum.KeyCode:FromName(Keybind.Container.Custom.Text) == nil then
+PoppedMenus.Keybind.Container.Set.Activated:Connect(function()
+	if Enum.KeyCode:FromName(PoppedMenus.Keybind.Container.Custom.Text) == nil then
 		Notify("Invalid KeyCode.", 3, "Error")
 		return
 	end
-	Keybinds.Custom[CurrentKey:GetFullName()] = {["Instance"] = CurrentKey, ["KeyCode"] = Keybind.Container.Custom.Text}
-	Keybind.Container.Current.Text = Keybind.Container.Custom.Text
+	Keybinds.Custom[CurrentKey:GetFullName()] = {["Instance"] = CurrentKey, ["KeyCode"] = PoppedMenus.Keybind.Container.Custom.Text}
+	PoppedMenus.Keybind.Container.Current.Text = PoppedMenus.Keybind.Container.Custom.Text
 	CurrentKey = nil
-	Keybind.Visible = false
-	Keybind.Container.Custom.Text = ""
+	PoppedMenus.Keybind.Events.Open:Fire(false)
+	PoppedMenus.Keybind.Container.Custom.Text = ""
 	for i, v in KeybindMenu.Scroll:GetChildren() do
 		if v:IsA("Frame") then v:Destroy() end
 	end
@@ -17410,8 +21798,7 @@ Keybind.Container.Set.Activated:Connect(function()
 		AddKeybind(v)
 	end
 end)
-
-Keybind.Container.Delete.Activated:Connect(function()
+PoppedMenus.Keybind.Container.Delete.Activated:Connect(function()
 	if Keybinds.Custom[CurrentKey:GetFullName()] ~= nil then
 		Keybinds.Custom[CurrentKey:GetFullName()] = nil
 		for i, v in Keybinds.Custom do
@@ -17421,8 +21808,8 @@ Keybind.Container.Delete.Activated:Connect(function()
 			end
 		end
 		CurrentKey = nil
-		Keybind.Visible = false
-		Keybind.Container.Custom.Text = ""
+		PoppedMenus.Keybind.Events.Open:Fire(false)
+		PoppedMenus.Keybind.Container.Custom.Text = ""
 		for i, v in KeybindMenu.Scroll:GetChildren() do
 			if v:IsA("Frame") then v:Destroy() end
 		end
@@ -17430,6 +21817,158 @@ Keybind.Container.Delete.Activated:Connect(function()
 			AddKeybind(v)
 		end
 	end
+end)
+
+PluginMenu.Options.Close.Activated:Connect(function()
+	PluginMenu.Options.Visible = false
+	PluginMenu.Scroll.Visible = true
+	PluginMenu.Featured.Visible = false
+	PluginMenu.Bar.AddPlugin.Visible = true
+	PluginMenu.Bar.Featured.Visible = true
+	PluginMenu.Bar.Saved.Visible = false
+	PluginMenu.Options.Current.Value = nil
+end)
+PluginMenu.Options.Edit.Activated:Connect(function()
+	OpenFViewer(PluginMenu.Options.Current.Value.Container.Path.Value)
+	PluginMenu.Options.Visible = false
+	PluginMenu.Scroll.Visible = true
+	PluginMenu.Featured.Visible = false
+	PluginMenu.Bar.AddPlugin.Visible = true
+	PluginMenu.Bar.Featured.Visible = true
+	PluginMenu.Bar.Saved.Visible = false
+	PluginMenu.Options.Current.Value = nil
+end)
+PluginMenu.Options.Delete.Activated:Connect(function()
+	local Target = PluginMenu.Options.Current.Value.Container.Path.Value
+	if table.find(Config.Plugins, Target) then
+		table.remove(Config.Plugins, table.find(Config.Plugins, Target))
+		Notify("Removed Plugin. Restart Required.", 3, "Success")
+	else
+		Notify("Plugin Not Found.", 3, "Error")
+	end
+	PluginMenu.Options.Visible = false
+	PluginMenu.Scroll.Visible = true
+	PluginMenu.Featured.Visible = false
+	PluginMenu.Bar.AddPlugin.Visible = true
+	PluginMenu.Bar.Featured.Visible = true
+	PluginMenu.Bar.Saved.Visible = false
+	PluginMenu.Options.Current.Value = nil
+end)
+PluginMenu.Options.Reload.Activated:Connect(function()
+	local Start = DateTime.now().UnixTimestampMillis
+	loadstring(readfile(PluginMenu.Options.Current.Value.Container.Path.Value))()
+	Notify("Loaded Plugin in ".. tostring(DateTime.now().UnixTimestampMillis - Start).. "ms", 8, "Loading")
+	PluginMenu.Options.Visible = false
+	PluginMenu.Scroll.Visible = true
+	PluginMenu.Featured.Visible = false
+	PluginMenu.Bar.AddPlugin.Visible = true
+	PluginMenu.Bar.Featured.Visible = true
+	PluginMenu.Bar.Saved.Visible = false
+	PluginMenu.Options.Current.Value = nil
+end)
+PluginMenu.Options.Menu.Activated:Connect(function()
+	MenuOpen(PluginMenu.Options.Current.Value.Container.Menu.Value.Name)
+	PluginMenu.Options.Visible = false
+	PluginMenu.Scroll.Visible = true
+	PluginMenu.Featured.Visible = false
+	PluginMenu.Bar.AddPlugin.Visible = true
+	PluginMenu.Bar.Featured.Visible = true
+	PluginMenu.Bar.Saved.Visible = false
+	PluginMenu.Options.Current.Value = nil
+end)
+PluginMenu.Bar.AddPlugin.Activated:Connect(function()
+	PluginMenu.Scroll.Visible = true
+	PluginMenu.Featured.Visible = false
+	PluginMenu.Bar.AddPlugin.Visible = true
+	PluginMenu.Bar.Featured.Visible = true
+	PluginMenu.Bar.Saved.Visible = false
+	local Requested = RequestFile(nil, true, "Open Plugin")
+	if Requested == "" or not Requested then return end
+	local Start = DateTime.now().UnixTimestampMillis
+	table.insert(Config.Plugins, Requested)
+	local List = #getgenv().AHLib.Plugins
+	loadstring(readfile(Requested))()
+	Notify("Loaded Plugin in ".. tostring(DateTime.now().UnixTimestampMillis - Start).. "ms", 8, "Loading")
+	task.wait(1)
+	if #getgenv().AHLib.Plugins == List then
+		Notify("Failed to load plugin.", 3, "Error")
+		LogDebug("Error: #List == #AHLib Plugins")
+	else
+		getgenv().AHLib.Plugins[List + 1].Function()
+	end
+	for i, v in PluginMenu.Scroll:GetChildren() do
+		if v:IsA("Frame") then
+			v:Destroy()
+		end
+	end
+	for i, v in getgenv().AHLib.Plugins do
+		task.spawn(function()
+			pcall(function()
+				local Clone = PluginMenu.Template:Clone()
+				Clone.Name = v.Name
+				Clone.Container.Title.Text = v.Name
+				Clone.Container.Description.Value = v.Description
+				Clone.Container.Menu.Value = v.Menu
+				Clone.Container.Open.Activated:Connect(function()
+					if v.Menu == nil then
+						PluginMenu.Options.Menu.Text = "Menu Unavailable"
+						PluginMenu.Options.Menu.Active = false
+					else
+						PluginMenu.Options.Menu.Text = "Open Menu"
+						PluginMenu.Options.Menu.Active = true
+					end
+					PluginMenu.Options.Visible = true
+					PluginMenu.Scroll.Visible = false
+					PluginMenu.Options.Current.Value = Clone
+					PluginMenu.Options.PName.Text = v.Name
+					PluginMenu.Options.Description.Text = Clone.Container.Description.Value
+				end)
+				Clone.Parent = PluginMenu.Scroll
+				Clone.Visible = true
+			end)
+		end)
+	end
+	--Notify("Loaded Plugin in ".. tostring(DateTime.now().UnixTimestampMillis - Start).. "ms", 8, "Success")
+end)
+PluginMenu.Bar.Featured.Activated:Connect(function()
+	PluginMenu.Scroll.Visible = false
+	PluginMenu.Featured.Visible = true
+	PluginMenu.Bar.AddPlugin.Visible = false
+	PluginMenu.Bar.Featured.Visible = false
+	PluginMenu.Bar.Saved.Visible = true
+	if PluginMenu.Featured.Visible then
+		for i, v in PluginMenu.Featured:GetChildren() do
+			if v:IsA("Frame") then
+				v:Destroy()
+			end
+		end
+		local Featured = GSHTTP:JSONDecode(game:HttpGet("https://raw.githubusercontent.com/J0BB0T/TNE/refs/heads/main/Assets/FeaturedPlugins.json"))
+		for i, v in Featured do
+			task.spawn(function()
+				pcall(function()
+					local Clone = PluginMenu.FTemplate:Clone()
+					Clone.Name = v.Name
+					Clone.Container.Title.Text = v.Name
+					Clone.Container.URL.Value = v.URL
+					Clone.Container.Save.Activated:Connect(function()
+						local Save = RequestFile(nil, false, "Use Folder")
+						if not Save then return end
+						writefile(Save.. Config.FSSeperator.. v.Name.. ".ah", game:HttpGet(v.URL))
+						Notify("Saved As ".. Save.. Config.FSSeperator.. v.Name.. ".ah", 5, "Plugins")
+					end)
+					Clone.Parent = PluginMenu.Featured
+					Clone.Visible = true
+				end)
+			end)
+		end
+	end
+end)
+PluginMenu.Bar.Saved.Activated:Connect(function()
+	PluginMenu.Scroll.Visible = true
+	PluginMenu.Featured.Visible = false
+	PluginMenu.Bar.AddPlugin.Visible = true
+	PluginMenu.Bar.Featured.Visible = true
+	PluginMenu.Bar.Saved.Visible = false
 end)
 
 AHContainer.Settings.ResetKeybind.Activated:Connect(function()
@@ -17448,9 +21987,20 @@ end)
 AHContainer.Settings.Tween.Activated:Connect(function()
 	Config.TweenTP = not Config.TweenTP
 end)
+AHContainer.Settings.FSType.Activated:Connect(function()
+	if Config.Debug.FSType == "Unix" then
+		Config.Debug.FSType = "Windows"
+	else
+		Config.Debug.FSType = "Unix"
+	end
+end)
 AHContainer.Settings.TSPS.FocusLost:Connect(function(EP)
 	if EP then
-		if tonumber(AHContainer.Settings.TSPS.Text) == nil then
+		if AHContainer.Settings.TSPS.Text == "" or AHContainer.Settings.TSPS.Text == " " then
+			Notify("Set Tween Speed To Default (25)", 5, "Settings")
+			Config.Universal.TSPS  = 25
+			return
+		elseif tonumber(AHContainer.Settings.TSPS.Text) == nil then
 			Notify("Not A Number.", 3, "Error")
 			return
 		end
@@ -17458,56 +22008,25 @@ AHContainer.Settings.TSPS.FocusLost:Connect(function(EP)
 	end
 	AHContainer.Settings.TSPS.Text = ""
 end)
+AHContainer.Settings.LSpeed.FocusLost:Connect(function(EP)
+	if EP then
+		if AHContainer.Settings.LSpeed.Text == "" or AHContainer.Settings.LSpeed.Text == " " then
+			Notify("Set Loop Cooldowwn To Default (0.1)", 5, "Settings")
+			Config.LoopCooldown = 0.1
+			return
+		elseif tonumber(AHContainer.Settings.LSpeed.Text) == nil then
+			Notify("Not A Number.", 3, "Error")
+			return
+		end
+		Config.LoopCooldown = tonumber(AHContainer.Settings.LSpeed.Text)
+	end
+	AHContainer.Settings.LSpeed.Text = ""
+end)
 
 Credits.Discord.Activated:Connect(function()
 	setclipboard("https://discord.gg/tycEcab2QN")
 	Notify("Copied Invite To Clipboard", 5, "Discord")
 end)
-
-Credits.Donate.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in Credits:GetChildren() do
-		if v:IsA("TextButton") then
-			v.Active = false
-			v:AddTag("Active")
-			if v.AutoButtonColor then
-				v.AutoButtonColor = false
-				v:AddTag("AutoButtonColor")
-			end
-		elseif v:IsA("TextBox") then
-			v.TextEditable = false
-			v:AddTag("TextEditable")
-		end
-	end
-	Credits.Donations.GroupTransparency = 1
-	Credits.Donations.Visible = true
-	GSTween:Create(Credits.Donations, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 0}):Play()
-	task.wait(0.1)
-	Menus.Teleports.Waiting = false
-end)
-
-Credits.Donations.Close.Activated:Connect(function()
-	if Menus.Teleports.Waiting then return end
-	Menus.Teleports.Waiting = true
-	for i, v in Credits:GetChildren() do
-		if v:HasTag("Active") then
-			v.Active = true
-			v:RemoveTag("Active")
-		elseif v:HasTag("TextEditable") then
-			v.TextEditable = true
-			v:RemoveTag("TextEditable")
-		end
-		if v:HasTag("AutoButtonColor") then
-			v.AutoButtonColor = true
-		end
-	end
-	GSTween:Create(Credits.Donations, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["GroupTransparency"] = 1}):Play()
-	task.wait(0.1)
-	Credits.Donations.Visible = false
-	Menus.Teleports.Waiting = false
-end)
-
 Credits.Donations.Copy.Activated:Connect(function()
 	setclipboard("https://roblox.com/games/88497480589825/Anti-Testing")
 	Notify("Copied Place URL To Clipboard", 5, "Donations")
@@ -17628,7 +22147,7 @@ Universal.Inspect.Activated:Connect(function()
 						end)
 					end
 					task.wait()
-				until Config.Universal.Clone == nil
+				until (Config.Universal.Clone == nil) or not Config.Active
 			end)
 		end)
 		GetHumanoid(Config.Universal.Clone).DisplayName = "Inspector"
@@ -17697,6 +22216,7 @@ end)
 Universal.Fling.Activated:Connect(function()
 	Config.Universal.Flinging = not Config.Universal.Flinging
 	if Config.Universal.Flinging then
+		Config.Universal.FPos = LocalCharacter:GetPivot()
 		Universal.Fling.Text = "Stop Flinging"
 		if GetPlayer(Universal.Input.Text) == nil then
 			Notify("Player \"".. Universal.Input.Text.. "\" Does Not Exist", 3, "Error")
@@ -17712,19 +22232,29 @@ Universal.Fling.Activated:Connect(function()
 		end
 		local Target = GetPlayer(Universal.Input.Text)
 
-		local Thrust = Instance.new('BodyThrust', LocalCharacter.PrimaryPart)
-		Thrust.Force = Vector3.new(9999,9999,9999)
-		Thrust.Name = "YeetForce"
+		local FForce = 10^5
 		repeat
-			LocalCharacter.PrimaryPart.CFrame = Target.Character.HumanoidRootPart.CFrame
-			Thrust.Location = Target.Character.HumanoidRootPart.Position
-			GSRS.Heartbeat:wait()
-		until not Target.Character:FindFirstChild("Head")
+			pcall(function()
+				MoveCharacter(Target.Character.HumanoidRootPart.CFrame, true)
+				LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(FForce, FForce, FForce)
+			end)
+			task.wait()
+		until LocalCharacter == nil or LocalCharacter.Parent == nil or Target == nil or Target.Parent == nil or (not Config.Universal.Flinging) or not Config.Active
 		LocalCharacter.PrimaryPart.FlingForce:Destroy()
 		Universal.Fling.Text = "Fling"
+		LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+		if Config.Universal.FPos ~= nil then
+			MoveCharacter(Config.Universal.FPos, true)
+		end
+		Config.Universal.FPos = nil
 	else
 		Config.Universal.Flinging = false
 		Universal.Fling.Text = "Fling"
+		LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
+		if Config.Universal.FPos ~= nil then
+			MoveCharacter(Config.Universal.FPos, true)
+		end
+		Config.Universal.FPos = nil
 	end
 end)
 
@@ -17780,10 +22310,10 @@ Universal.UAFling.Activated:Connect(function()
 			Part.AssemblyAngularVelocity = Vector3.new(1000000000, 0, 0)
 			Part.CanCollide = false
 			task.wait()
-		until Rep or GetPlayer(Universal.Input.Text) == nil or not Config.Universal.UAFlinging
+		until (Rep or GetPlayer(Universal.Input.Text) == nil or not Config.Universal.UAFlinging) or not Config.Active
 		Part.CanCollide = true
-		Part.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
-		Part.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+		Part.AssemblyLinearVelocity = Vector3.zero
+		Part.AssemblyAngularVelocity = Vector3.zero
 		Part.CFrame = Start
 		Universal.UAFling.Text = "Part Fling"
 	else
@@ -17799,16 +22329,18 @@ Universal.Orbit.Activated:Connect(function()
 	Orbit()
 end)
 
-Keybind.Close.Activated:Connect(function()
-	CurrentKey = nil
-	Keybind.Visible = false
-	Keybind.Container.Custom.Text = ""
+PoppedMenus.Keybind.Events.Open.Event:Connect(function(Open)
+	if not Open then
+		CurrentKey = nil
+		PoppedMenus.Keybind.Container.Custom.Text = ""
+	end
 end)
-AntiHub.CommandList.Close.Activated:Connect(function()
-	AntiHub.CommandList.Visible = false
-	for i, v in AntiHub.CommandList.Container.Scroll:GetChildren() do
-		if v:IsA("Frame") then
-			v:Destroy()
+PoppedMenus.CommandList.Events.Open.Event:Connect(function(Open)
+	if not Open then
+		for i, v in PoppedMenus.CommandList.Container.Scroll:GetChildren() do
+			if v:IsA("Frame") then
+				v:Destroy()
+			end
 		end
 	end
 end)
@@ -17830,7 +22362,10 @@ ScriptBlox.Options.Container.Container.Copy.Activated:Connect(function()
 end)
 
 ScriptBlox.Options.Container.Container.Open.Activated:Connect(function()
-	firesignal(Utility.Container.List.Exploits.Activated)
+	Utility.Container.Menus.Executor.Scroll.TextBox.Text = Config.ScriptBlox.Current.Output.Value
+	pcall(function()
+		firesignal(Utility.Container.List.Exploits.Activated)
+	end)
 	MenuOpen("Utility")
 	ScriptBlox.Options.Visible = false
 end)
@@ -17849,6 +22384,7 @@ if table.find(PlaceIDs, PlaceId) then
 else
 	Menu = "Places"
 	AHContainer.List.Places.Visible = true
+	AHContainer.List.Places.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 	AHContainer.Menus.Places.Visible = true
 	AHContainer.Menus.Places.GroupTransparency = 0
 end
@@ -17861,10 +22397,23 @@ AddUnshortener(Universal.Input)
 AddUnshortener(WashiezTC.Cars.Input)
 AddUnshortener(Trolling.User)
 AddUnshortener(MM2.Input)
+AddUnshortener(AimbotFFA.Input)
+AddUnshortener(AimbotFFA.Whitelist.Input)
+RegisterSubMenu(PrisonLife.TP, PrisonLife.Teleports, PrisonLife)
+RegisterSubMenu(PrisonLife.WP, PrisonLife.Weapons, PrisonLife)
+RegisterSubMenu(Debug.MMenu, Debug.More, Debug)
+RegisterSubMenu(Washiez.RMenu, Washiez.Ranks, Washiez)
+RegisterSubMenu(Washiez.TP, Washiez.Teleports, Washiez)
+RegisterSubMenu(Washiez.TCK, Washiez.Tickets, Washiez)
+RegisterSubMenu(WashiezTC.TP, WashiezTC.Teleports, WashiezTC)
+RegisterSubMenu(WashiezTC.RMenu, WashiezTC.Ranks, WashiezTC)
+RegisterSubMenu(WashiezTC.CM, WashiezTC.Cars, WashiezTC)
+RegisterSubMenu(Credits.Donate, Credits.Donations, Credits)
+RegisterSubMenu(AimbotFFA.WL, AimbotFFA.Whitelist, AimbotFFA)
 
 task.spawn(function()
 	if CurrentGame == "PrisonLife" then
-		Notify("TELEPORTING CAN GET YOU BANNED IF IT'S ACROSS THE MAP", 15, "<font color=\"rgb(255, 0, 0)\">WARNING</font>")
+		--Notify("TELEPORTING CAN GET YOU BANNED IF IT'S ACROSS THE MAP", 15, "<font color=\"rgb(255, 0, 0)\">WARNING</font>")
 		for i, v in PrisonLife.Weapons:GetChildren() do
 			if v.Name == "Close" then continue end
 			v.Activated:Connect(function()
@@ -17875,7 +22424,7 @@ task.spawn(function()
 			repeat
 				workspace:FindFirstChild("AHPlatform"):Destroy()
 				task.wait()
-			until workspace:FindFirstChild("AHPlatform") == nil
+			until (workspace:FindFirstChild("AHPlatform") == nil) or not Config.Active
 		end
 		Platform = Instance.new("Part")
 		Platform.Name = "AHPlatform"
@@ -17909,7 +22458,7 @@ task.spawn(function()
 		LocalPlayer.PlayerGui.MainUI.SideMenu.List.StaffMenu.Visible = true
 		for i, v in workspace.QuestVisit:GetChildren() do
 			pcall(function()
-				FireTouch(LocalCharacter.PrimaryPart, v, 0.1)
+				FireTouch(LocalCharacter.PrimaryPart, v, 0.1, nil, false)
 			end)
 		end
 		local VName = ""
@@ -17946,7 +22495,7 @@ task.spawn(function()
 		Container.UIPadding.PaddingRight = UDim.new(0, 2)
 		Container.UIPadding.PaddingTop = UDim.new(0, 2)
 		local Open = Instance.new("ImageButton", Container)
-		Open.Image = "rbxassetid://12338080417"
+		Open.Image = Images.CarSpawner
 		Open.Position = UDim2.new(0.5, 0, 0.5, 0)
 		Open.Size = UDim2.new(1, 0, 1, 0)
 		Open.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -17965,12 +22514,12 @@ task.spawn(function()
 			local Target = workspace:FindFirstChild("CarSystem", true)
 			repeat
 				MoveCharacter(Target.Parent.Position + Vector3.new(0, -10, 0))
-				LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+				LocalCharacter.PrimaryPart.AssemblyLinearVelocity = Vector3.zero
 				pcall(function()
-					FireProximity(Target, false)
+					FireProximity(Target, false, false)
 				end)
 				task.wait(0.05)
-			until LocalPlayer.PlayerGui.CarSelection.MainFrame.Position.X.Scale <= 1.1
+			until (LocalPlayer.PlayerGui.CarSelection.MainFrame.Position.X.Scale <= 1.1) or not Config.Active
 			MoveCharacter(CF)
 		end)
 		Config.Washiez.Open = Container
@@ -18044,14 +22593,14 @@ task.spawn(function()
 			if table.find(Names, v.Name:lower()) or string.find(v.Name:lower(), "plant") then 
 				pcall(function()
 					v.CanCollide = false
-					v.Transparency = 0.5
+					v.Transparency = math.clamp(v.Transparency, 0.75, 0.9)
 				end)
 				for ii, vv in v:GetDescendants() do
 					pcall(function()
 						vv.CanCollide = false
 					end)
 					pcall(function()
-						vv.Transparency = 0.5
+						vv.Transparency = math.clamp(vv.Transparency, 0.75, 0.9)
 					end)
 				end
 			end
@@ -18067,7 +22616,7 @@ task.spawn(function()
 						vv.CanCollide = false
 					end)
 					pcall(function()
-						vv.Transparency = 0.5
+						vv.Transparency = math.clamp(vv.Transparency, 0.75, 0.9)
 					end)
 				end
 			end
@@ -18118,7 +22667,7 @@ task.spawn(function()
 			Converted["_DriftButton"].Position = UDim2.new(0.865, 0, 0.8, 0)
 			Converted["_DriftButton"].Size = UDim2.new(0, 44, 0, 44)
 			Converted["_DriftButton"].Name = "DriftButton"
-			Converted["_DriftButton"].Image = "rbxassetid://136758574816289"
+			Converted["_DriftButton"].Image = Images.DriftButton
 
 			Converted["_UICorner"].Parent = Converted["_DriftButton"]
 			Converted["_UICorner"].CornerRadius = UDim.new(1, 1)
@@ -18161,7 +22710,7 @@ task.spawn(function()
 					end
 				end)
 				task.wait(0.1)
-			until UI.Parent ~= LocalPlayer.PlayerGui
+			until (UI.Parent ~= LocalPlayer.PlayerGui) or not Config.Active
 		end))
 
 		local function AddCar(Car)
@@ -18191,7 +22740,7 @@ task.spawn(function()
 					repeat
 						Car:SetAttribute("FreezeCar", false)
 						task.wait()
-					until Car == nil
+					until (Car == nil) or not Config.Active
 				end)
 			end
 			if Config.Washiez.Collider and Car.Name:split("-")[1] ~= LocalPlayer.Name then
@@ -18233,7 +22782,7 @@ task.spawn(function()
 			task.spawn(AddCar, v)
 		end
 		table.insert(RBXConnections, GSProximityPrompt.PromptButtonHoldBegan:Connect(function(prompt)
-			FireProximity(prompt)
+			FireProximity(prompt, nil, false)
 		end))
 	elseif CurrentGame == "WashiezTC" then
 		for i, v in workspace:GetDescendants() do
@@ -18252,11 +22801,11 @@ task.spawn(function()
 		LocalPlayer.PlayerGui.MainUI.SideMenu.List.Roles.Visible = true
 		pcall(function()
 			workspace.InvisibleWalls:Destroy()
-			workspace.OtherDoors:Destroy()
+			--workspace.OtherDoors:Destroy()
 			LocalPlayer.PlayerScripts.ReAdminClient:Destroy()
 		end)
 		table.insert(RBXConnections, GSProximityPrompt.PromptButtonHoldBegan:Connect(function(prompt)
-			FireProximity(prompt)
+			FireProximity(prompt, nil, false)
 		end))
 		local function AddCar(Car)
 			if Config.WashiezTC.CarAdded then
@@ -18307,7 +22856,7 @@ task.spawn(function()
 		end
 	elseif CurrentGame == "SCCSimulator" then
 		table.insert(RBXConnections, GSProximityPrompt.PromptButtonHoldBegan:Connect(function(prompt)
-			FireProximity(prompt)
+			FireProximity(prompt, nil, false)
 		end))
 		pcall(function()
 			GSRS:FindFirstChild("Remote"):FindFirstChild("Idled"):FireServer(0)
@@ -18317,6 +22866,35 @@ task.spawn(function()
 			GSRS:FindFirstChild("FreezePlr"):FireServer(false)
 			GSRS:FindFirstChild("FreezePlr"):Destroy()
 		end)
+	elseif CurrentGame == "AimbotFFA" then
+		table.insert(RBXConnections, GSRS.DamageEvent.OnClientEvent:Connect(function(Position)
+			if Config.AimbotFFA.Thorns then
+				local Characters = AFFACharacters(true)
+				table.sort(Characters, function(a, b) return math.abs((a.HumanoidRootPart.Position - Position).Magnitude) < math.abs((b.HumanoidRootPart.Position - Position).Magnitude) end)
+				for i=1, 10 do
+					pcall(function()
+						GSRS.PlayerHitEvent:FireServer(Characters[1], tonumber("inf"))
+					end)
+					task.wait(0.05)
+				end
+			end
+		end))
+		LocalPlayer.PlayerGui:WaitForChild("MyModGui")
+		local Panel = LocalPlayer.PlayerGui.MyModGui:WaitForChild("ModPanel")
+		local Button = LocalPlayer.PlayerGui.MyModGui:WaitForChild("ModsButton")
+		task.wait(0.25)
+		Button.Archivable = true
+		task.wait(0.25)
+		local NewButton = Button:Clone()
+		task.wait(0.5)
+		pcall(function()
+			NewButton:FindFirstChild("LocalScript2"):Destroy()
+		end)
+		NewButton.Parent = Button.Parent
+		NewButton.Activated:Connect(function()
+			Panel.Visible = not Panel.Visible
+		end)
+		Button:Destroy()
 	end
 end)
 
@@ -18370,20 +22948,130 @@ for i, v in Places.Teleports:GetChildren() do
 end
 
 task.spawn(function()
-	pcall(function()
-		AntiHub.Parent = gethui()
-	end)
-	task.wait(0.75)
+	Config.ECount += 1
+
+	getgenv().AHLib = {}
+	getgenv().AHLib.GetUnshortened = GetUnshortened
+	getgenv().AHLib.GetPlayer = GetPlayer
+	getgenv().AHLib.GetClosest = GetClosest
+	getgenv().AHLib.GetCurrentTime = GetCurrentTime
+	getgenv().AHLib.GetCurrentDate = GetCurrentDate
+	getgenv().AHLib.GetHumanoid = GetHumanoid
+	getgenv().AHLib.MoveCharacter = MoveCharacter
+	getgenv().AHLib.FireTouch = FireTouch
+	getgenv().AHLib.FireProximity = FireProximity
+	getgenv().AHLib.KeyEvent = KeyEvent
+	getgenv().AHLib.toboolean = toboolean
+	getgenv().AHLib.Merge = Merge
+	getgenv().AHLib.UIOpen = UIOpen
+	getgenv().AHLib.MenuOpen = MenuOpen
+	getgenv().AHLib.AddUnshortener = AddUnshortener
+	getgenv().AHLib.Notify = Notify
+	getgenv().AHLib.LogDebug = LogDebug
+	getgenv().AHLib.RegisterSubMenu = RegisterSubMenu
+	getgenv().AHLib.Say = Say
+	getgenv().AHLib.SyntHigh = SyntHigh
+	getgenv().AHLib.NotifLib = NotifLib
+	getgenv().AHLib.LoadConfig = LoadConfig
+	getgenv().AHLib.Unload = Unload
+	getgenv().AHLib.HubChat = HubChat
+	getgenv().AHLib.ACTrigger = ACTrigger
+	getgenv().AHLib.UpdateWhitelist = UpdateWhitelist
+	getgenv().AHLib.UpdatePlayerList = UpdatePlayerList
+	getgenv().AHLib.CommandLog = CommandLog
+	getgenv().AHLib.CommandBarLost = CommandBarLost
+	getgenv().AHLib.OnMessage = OnMessage
+	getgenv().AHLib.Bang = Bang
+	getgenv().AHLib.Orbit = Orbit
+	getgenv().AHLib.AddScript = AddScript
+	getgenv().AHLib.AddKeybind = AddKeybind
+	getgenv().AHLib.LoadAK = LoadAK
+	getgenv().AHLib.RequestFile = RequestFile
+	getgenv().AHLib.SpawnFiles = SpawnFiles
+	getgenv().AHLib.Config = Config
+	getgenv().AHLib.Keybinds = Keybinds
+	getgenv().AHLib.Events = Events
+	getgenv().AHLib.OpenExplorer = OpenExplorer
+	getgenv().AHLib.OpemFViewer = OpenFViewer
+	getgenv().AHLib.GameFuncs = {}
+	getgenv().AHLib.GameFuncs.PLTool = PLTool
+	getgenv().AHLib.GameFuncs.PLCooldown = PLCooldown
+	getgenv().AHLib.GameFuncs.PLTeam = PLTeam
+	getgenv().AHLib.GameFuncs.PLMKill = PLMKill
+	getgenv().AHLib.GameFuncs.PLArrest = PLArrest
+	getgenv().AHLib.GameFuncs.WashiezSound = WashiezSound
+	getgenv().AHLib.GameFuncs.WashiezTP = WashiezTP
+	getgenv().AHLib.GameFuncs.MM2Stab = MM2Stab
+	getgenv().AHLib.CMDS = {}
+	getgenv().AHLib.CMDS.ChatCommands = ChatCommands
+	getgenv().AHLib.CMDS.ChatUsage = ChatUsage
+	getgenv().AHLib.CMDS.ChatCommands = ChatFunctions
+	getgenv().AHLib.InternalVars = {}
+	getgenv().AHLib.InternalVars.LocalPlayer = LocalPlayer
+	getgenv().AHLib.InternalVars.LocalMouse = LocalMouse
+	getgenv().AHLib.InternalVars.RBXConnections = RBXConnections
+	getgenv().AHLib.InternalVars.Images = table.clone(Images)
+	getgenv().AHLib.InternalVars.Menus = Menus
+	getgenv().AHLib.InternalVars.TLogs = TLogs
+	getgenv().AHLib.InternalVars.PlaceId = PlaceId
+	getgenv().AHLib.InternalVars.PlaceIDs = PlaceIDs
+	getgenv().AHLib.InternalVars.Supported = Supported
+	getgenv().AHLib.InternalVars.CurrentGame = CurrentGame
+	getgenv().AHLib.InternalVars.AHContainer = AHContainer
+	getgenv().AHLib.InternalVars.Menu = Menu
+	getgenv().AHLib.InternalVars.Expanded = Expanded
+	getgenv().AHLib.InternalVars.UIPos = UIPos
+	getgenv().AHLib.Plugins = {}
+	getgenv().AHLib.LoopFuncs = {}
+	getgenv().AHLib.AddTab = function(Name, Inst, Override, Tooltip)
+		if AHContainer.List:FindFirstChild(tostring(Override)) == nil then
+			local Target = nil
+			for i, v in AHContainer.Overflow.List:GetChildren() do
+				if v.Name == "None" then
+					Target = v
+					break
+				end
+			end
+			if Target == nil then return "Error: Unable To Find Space" end
+			Target.Name = Inst.Name
+			Target.Text = Name
+			local Clone = AHContainer.List.None:Clone()
+			Clone.Parent = AHContainer.List
+			Clone.Name = Inst.Name
+			Clone.Text = Name
+			Clone.Tooltip.Value = Tooltip or "None."
+			Inst.Visible = false
+			Inst.Parent = AHContainer.Menus
+			Inst.Size = AHContainer.Menus.None.Size
+			Inst.Position = AHContainer.Menus.None.Position
+		else
+			if AHContainer.List:FindFirstChild(tostring(Override)).Overflow.Value then
+				AHContainer.Overflow.List:FindFirstChild(tostring(Override)).Text = Name
+				AHContainer.Overflow.List:FindFirstChild(tostring(Override)).Name = Name
+			else
+				AHContainer.Overflow.List:FindFirstChild(tostring(Override)).Text = Name
+				AHContainer.Overflow.List:FindFirstChild(tostring(Override)).Name = Name
+			end
+			Inst.Visible = false
+			Inst.Parent = AHContainer.Menus
+			Inst.Size = AHContainer.Menus.None.Size
+			Inst.Position = AHContainer.Menus.None.Position
+		end
+	end
 	task.spawn(function()
-		local suc = false
-		repeat
-			suc = pcall(function()
-				AHContainer.Player.Settings.Image = "rbxassetid://1257503133"
-				AntiHub.TitleBar.Container.Background.Image = "rbxassetid://116157108386991"
-				AHContainer.Player.Profile.Image = GSPlayers:GetUserThumbnailAsync(LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+		local Suc = pcall(function()
+			AntiHub.Parent = gethui()
+		end)
+		if not Suc then
+			Suc = pcall(function()
+				AntiHub.Parent = game:GetService("CoreGui")
 			end)
-			task.wait(0.25)
-		until suc
+			if not Suc then
+				Suc = pcall(function()
+					AntiHub.Parent = LocalPlayer.PlayerGui
+				end)
+			end
+		end
 	end)
 	pcall(function()
 		for i, v in KeybindMenu.Scroll:GetChildren() do
@@ -18393,22 +23081,117 @@ task.spawn(function()
 			AddKeybind(v)
 		end
 	end)
-	local A = 0
-	table.insert(RBXConnections, GSRun.RenderStepped:Connect(function(DT)
-		A += DT / 25
-		AntiHub.TitleBar.Container.Background.Position = UDim2.new(0.5 + (math.cos(A) / 2), 0, 0.5 + (math.sin(A) / 2), 0)
-	end))
-	Keybind.AnchorPoint = Vector2.new(0, 0.25)
+	PoppedMenus.Keybind.UI.AnchorPoint = Vector2.new(0, 0.25)
 	AntiHub.TitleBar.Buttons.Version.Text = "v".. SVersion
 	AHContainer.Overflow.Version.Text = "Version ".. SVersion
 	AHContainer.Settings.Version.Text = "Version ".. SVersion
+
+	pcall(function()
+		local Time = os.date("*t")
+		if Time.Month == 12 and Time.Day < 30 then
+			AntiHub.TitleBar.Buttons.Title = "🎄AntiHub"
+		elseif Time.Month == 10 then
+			AntiHub.TitleBar.Buttons.Title = "🎃AntiHub"
+		elseif (Time.Month == 12 and Time.Day >= 30) or (Time.Month == 1 and Time.Day == 1) then
+			AntiHub.TitleBar.Buttons.Title = "🎆AntiHub"
+		end
+		GSGP:EnableGamepadCursor(nil)
+	end)
 	Commands.Input.FontFace = Font.new("rbxasset://fonts/families/TitilliumWeb.json", Enum.FontWeight.Light)
 	AHContainer.Overflow.Welcome.Text = "Welcome To AntiHub, ".. LocalPlayer.Name.. "."
-	AHContainer.Help.Info.Text = "Welcome to AntiHub, ".. LocalPlayer.Name.. ".\n\n<b><u>The Guide:</u></b>\n\nOn the Left, you have <i>6</i> menus.\nTo open Settings, press the Gear icon at the bottom left.\nTo see more menus, press the Player icon at the bottom left.\n\nThe default Keybind is G.\nPressing the stats windows in the top right corner also toggles the UI.\n\nCommands:\nTo change the Command Bar's keybind, type the <i>name</i> of the button, such as \"Quote\".\n\nFor config saving and loading, open <i>Settings</i> and press Save, Delete or Load.\nTo unload AntiHub, open <i>Settings</i> and press Unload.\n\nTo join the <b>Discord</b> server or donate, open the <i>Overflow</i> menu and open <i>Credits</i>."
+	AHContainer.Help.Info.Text = "Welcome to AntiHub, ".. LocalPlayer.Name.. ".\n\n<b><u>The Guide:</u></b>\n\nOn the Left, you have <i>6</i> menus.\nTo open Settings, press the Gear icon at the bottom left.\nTo see more menus/open Overflow, press the Player icon at the bottom left.\nTo create a keybind, right click on a button.\n\nThe default Keybind is G.\nPressing the stats windows in the top right corner also toggles the UI.\n\nCommands:\nTo change the Command Bar's keybind, type the <b>name</b> of the button, such as \"Quote\".\n\nFor config saving and loading, open <i>Settings</i> and press Save, Delete or Load.\nTo unload AntiHub, open <i>Settings</i> and press Unload.\n\nTo join the <b>Discord</b> server or donate, open the <i>Overflow</i> menu and open <i>Credits</i>."
 	pcall(function()
 		workspace.FallenPartsDestroyHeight = tonumber("nan")
 	end)
-	Credits.Credits.Text = "Credits To:\n<b>Usernamenotfound</b> For Making AntiHub.\n<b>SkidMaster999</b> For Skidding AntiHub.\n<b>KhCrash & Top Shagger</b> For Existing.\n<b>ROBLOX</b> For Hating Me."
+	Credits.Credits.Text = "Credits To:\n<b>Usernamenotfound</b> For Making AntiHub.\n<b>Road2Glory</b> For The UI Converter.\n<b>KhCrash & Top Shagger</b> For Existing.\n<b>ROBLOX</b> For Hating Me"
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Stats.Position = UDim2.new(0.5, 0, 1.25, 0)
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Stats.Size = UDim2.new(0.25, 0, 0, 0)
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Position = UDim2.new(0.5, 0, -0.25, 0)
+	PoppedMenus.MediaPlayer.Container.Types.Audio.Actions.Size = UDim2.new(0.25, 0, 0, 0)
+	pcall(function()
+		local GPButtons = {Enum.KeyCode.ButtonB, Enum.KeyCode.ButtonY, Enum.KeyCode.ButtonX, Enum.KeyCode.ButtonA, Enum.KeyCode.ButtonL1, Enum.KeyCode.ButtonL2, Enum.KeyCode.ButtonL3, Enum.KeyCode.ButtonR1, Enum.KeyCode.ButtonR2, Enum.KeyCode.ButtonR3}
+		if GSUIP.GamepadEnabled and not GSUIP.KeyboardEnabled then
+			if not table.find(GPButtons, Keybinds.Main) then
+				if not GSUIP.KeyboardEnabled then return end
+				Keybinds.Main = Enum.KeyCode.ButtonL1
+				AHContainer.Settings.Keybind.Text = "Keybind [".. Keybinds.Main.. "]"
+				Notify("Set Keybind To Button Y", 10, "Gamepad Detected")
+			end
+		end
+	end)
+
+	table.insert(RBXConnections, Events.MenuOpened.Event:Connect(function(New, Old, Completed)
+		if Completed then return end
+		--[[
+		ADD SHIT HERE
+		--]]
+	end))
+
+	for i, v in Config.Plugins do
+		task.spawn(function()
+			pcall(function()
+				loadstring(readfile(v))()
+			end)
+		end)
+	end
+	for i, v in getgenv().AHLib.Plugins do
+		task.spawn(function()
+			pcall(function()
+				local Clone = PluginMenu.Template:Clone()
+				Clone.Name = v.Name
+				Clone.Container.Title.Text = v.Name
+				Clone.Container.Description.Value = v.Description
+				Clone.Container.Open.Activated:Connect(function()
+					PluginMenu.Options.Visible = true
+					PluginMenu.Scroll.Visible = false
+					PluginMenu.Options.Current.Value = Clone
+					PluginMenu.Options.PName.Text = v.Name
+					PluginMenu.Options.Description.Text = Clone.Container.Description.Value
+				end)
+				Clone.Parent = PluginMenu.Scroll
+				Clone.Visible = true
+				v.Function()
+			end)
+		end)
+	end
+
+	GSCapture.CaptureBegan:Connect(function()
+		getgenv().AH.Enabled = false
+	end)
+
+	GSCapture.CaptureEnded:Connect(function()
+		task.wait(0.1)
+		AntiHub.Enabled = true
+	end)
+
+	for i, v in AntiHub.TitleBar.Buttons.Hints:GetChildren() do
+		v.Visible = false
+	end
+
+	if Config.ECount >= 1 then
+		task.spawn(function()
+			AntiHub.TitleBar.Buttons.Hints.Stats.Activated:Connect(function()
+				AntiHub.TitleBar.Buttons.Hints.Stats.Visible = false
+				AntiHub.TitleBar.Buttons.Hints.Close.Visible = false
+				AntiHub.TitleBar.Buttons.Hints.Help.Visible = true
+			end)
+			AntiHub.TitleBar.Buttons.Hints.Close.Activated:Connect(function()
+				AntiHub.TitleBar.Buttons.Hints.Stats.Visible = false
+				AntiHub.TitleBar.Buttons.Hints.Close.Visible = false
+				AntiHub.TitleBar.Buttons.Hints.Help.Visible = true
+			end)
+			AntiHub.TitleBar.Buttons.Hints.Help.Activated:Connect(function()
+				AntiHub.TitleBar.Buttons.Hints.Help.Visible = false
+				AntiHub.TitleBar.Buttons.Hints.Overflow.Visible = true
+			end)
+			AntiHub.TitleBar.Buttons.Hints.Overflow.Activated:Connect(function()
+				AntiHub.TitleBar.Buttons.Hints.Overflow.Visible = false
+			end)
+			AntiHub.TitleBar.Buttons.Hints.Stats.Visible = true
+			AntiHub.TitleBar.Buttons.Hints.Close.Visible = true
+		end)
+	end
+
 	if Config.AC.Enabled then
 		LogDebug("AH Loaded - AC Enabled", false)
 		SaveLogs ..= GetCurrentTime().. ": AntiHub Loaded - ".. GetCurrentDate().. " - AntiCheat Enabled\n"
@@ -18433,11 +23216,12 @@ local Fourth = 0
 local Fifth = 0
 local Sixth = 0
 local Seventh = 0
-while task.wait(0.1) do
+while task.wait() do
 	if not Config.Active then return end
 	if Config.PauseLoop then
 		repeat task.wait() until not Config.PauseLoop
 	end
+	task.wait(Config.LoopCooldown)
 	pcall(function()
 		Config.Debug.LoopS += 1
 		task.spawn(UpdatePlayerList)
@@ -18454,6 +23238,40 @@ while task.wait(0.1) do
 		else
 			AntiHub.TitleBar.Buttons.Version.Text = "v".. SVersion
 		end
+		if Config.Debug.FSType == "Unix" then
+			Config.FSSeperator = "/"
+		else
+			Config.FSSeperator = "\\"
+		end
+		AHContainer.Settings.FSType.Text = "FileSystem: ".. Config.Debug.FSType.. " (".. Config.FSSeperator.. ")"
+		getgenv().AHLib.InternalVars.CurrentGame = CurrentGame
+		getgenv().AHLib.InternalVars.Menu = Menu
+		getgenv().AHLib.InternalVars.Expanded = Expanded
+		getgenv().AHLib.InternalVars.UIPos = UIPos
+		pcall(function()
+			OilUp.MDisabled.Visible = table.find(ShortWarnings, "getcustomasset") ~= nil or Config.OilUp.Sound == nil
+			if table.find(ShortWarnings, "FileSystem") == nil then
+				Utility.Container.Menus.Files.Status.Text = "Feature: <font color=\"rgb(128,255,128)\">Supported</font>"
+			else
+				Utility.Container.Menus.Files.Status.Text = "Feature: <font color=\"rgb(255,128,128)\">Not Supported</font>"
+			end
+			pcall(function()
+				Utility.Container.Menus.Files.PCount.Text = "Plugins: <b><font color=\"rgb(255,255,255)\">".. tostring(#getgenv().AHLib.Plugins).. "</font></b>"
+			end)
+			Miscellaneous.PlayerCount.Text = tostring(#GSPlayers:GetPlayers()).. "/".. tostring(GSPlayers.MaxPlayers).. " Players"
+			pcall(function()
+				OilUp.Length.Text = tostring(math.round((Config.OilUp.Sound.TimePosition / Config.OilUp.Sound.TimeLength) * 100)).. "%"
+			end)
+			pcall(function()
+				PoppedMenus.MediaPlayer.Container.Types.Audio.Stats.Length.Text = tostring(math.round(PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.TimePosition)).. "/".. tostring(math.round(PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.TimeLength)).. "s"
+				PoppedMenus.MediaPlayer.Container.Types.Video.Stats.Length.Text = tostring(math.round(PoppedMenus.MediaPlayer.Container.Types.Video.Preview.TimePosition)).. "/".. tostring(math.round(PoppedMenus.MediaPlayer.Container.Types.Video.Preview.TimeLength)).. "s"
+				pcall(function()
+					PoppedMenus.MediaPlayer.Container.Types.Audio.Stats.CPos.Text = tostring(math.round((PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.TimePosition / PoppedMenus.MediaPlayer.Container.Types.Audio.Preview.TimeLength) * 100)).. "%"
+				end)
+				PoppedMenus.MediaPlayer.Container.Types.Video.Stats.CPos.Text = tostring(math.round((PoppedMenus.MediaPlayer.Container.Types.Video.Preview.TimePosition / PoppedMenus.MediaPlayer.Container.Types.Video.Preview.TimeLength) * 100)).. "%"
+			end)
+			Miscellaneous.Expn.Text = table.pack(identifyexecutor())[1]
+		end)
 		if Menu == "Utility" then
 			Utility.Container.Menus.Executor.Scroll.Overlay.Text = Utility.Container.Menus.Executor.Scroll.TextBox.ContentText
 		elseif Menu == "Trolling" then
@@ -18510,61 +23328,32 @@ while task.wait(0.1) do
 		if GSUIP.TouchEnabled then
 			Utility.Container.Menus.Executor.Scroll.TextBox.TextSize = 15
 			Utility.Container.Menus.Executor.Scroll.Overlay.TextSize = 15
-			Utility.Container.Menus.Notepad.Scroll.TextBox.TextSize = 15
-			AntiCheat.Logs.Log.TextSize = 14
-			AntiCheat.Whitelist.Players.TextSize = 14
-			Commands.Scroll.Scroll.TextSize = 24
-			Logs.Player.Log.TextSize = 12
-			Logs.Chat.Log.TextSize = 12
 			Players.List.Players.TextSize = 16
-			Chat.Logs.Chat.TextSize = 16
 			AHContainer.Menus.AntiKick.Logs.Log.TextSize = 12
 		else
 			Utility.Container.Menus.Executor.Scroll.TextBox.TextSize = 25
 			Utility.Container.Menus.Executor.Scroll.Overlay.TextSize = 25
 			Utility.Container.Menus.Notepad.Scroll.TextBox.TextSize = 25
-			AntiCheat.Logs.Log.TextSize = 20
-			AntiCheat.Whitelist.Players.TextSize = 20
-			Commands.Scroll.Scroll.TextSize = 26
-			Logs.Player.Log.TextSize = 14
-			Logs.Chat.Log.TextSize = 14
 			Players.List.Players.TextSize = 24
-			Chat.Logs.Chat.TextSize = 20
 			AHContainer.Menus.AntiKick.Logs.Log.TextSize = 16
 		end
 		if Config.ScriptBlox.Current == nil then
-			ScriptBlox.Options.Container.Container.Current.Text = "Unkown Name"
-			ScriptBlox.Options.Container.Container.GCurrent.Text = "Unkown Game"
+			ScriptBlox.Options.Container.Container.Current.Text = "Unknown Name"
+			ScriptBlox.Options.Container.Container.GCurrent.Text = "Unknown Game"
 		else
 			ScriptBlox.Options.Container.Container.Current.Text = Config.ScriptBlox.Current.SName.Value
 			ScriptBlox.Options.Container.Container.GCurrent.Text = Config.ScriptBlox.Current.GName.Value
 		end
+		pcall(function()
+			Debug.More.AKS.Text = (getgenv().AHAKE and tostring(getgenv().AHAKE)) or "Nothing - nil"
+		end)
 		AHContainer.Settings.TSPS.PlaceholderText = "Tween SPS (".. tostring(Config.Universal.TSPS).. ")"
-		if Config.NotifyJoin then
-			AHContainer.Settings.NotifyJoin.Text = "Notify AntiHub Join [T]"
-		else
-			AHContainer.Settings.NotifyJoin.Text = "Notify AntiHub Join [F]"
-		end
-		if Config.Utility.Toast then
-			Utility.Container.Menus.Executor.Toast.Text = "Toast [T]"
-		else
-			Utility.Container.Menus.Executor.Toast.Text = "Toast [F]"
-		end
-		if Config.Debug.NToast then
-			AHContainer.Settings.Toast.Text = "Notify Via Toast [T]"
-		else
-			AHContainer.Settings.Toast.Text = "Notify Via Toast [F]"
-		end
-		if Config.TweenTP then
-			AHContainer.Settings.Tween.Text = "Tween TP [T]"
-		else
-			AHContainer.Settings.Tween.Text = "Tween TP [F]"
-		end
-		if Config.NotifyUnread then
-			AHContainer.Settings.NotifyUnread.Text = "Notify Unread [T]"
-		else
-			AHContainer.Settings.NotifyUnread.Text = "Notify Unread [F]"
-		end
+		AHContainer.Settings.LSpeed.PlaceholderText = "Loop Cooldown (".. tostring(Config.LoopCooldown).. ")"
+		AHContainer.Settings.NotifyJoin.Text = "Notify AntiHub Join".. GetBoolean(Config.NotifyJoin, true)
+		Utility.Container.Menus.Executor.Toast.Text = "Toast".. GetBoolean(Config.Utility.Toast, true)
+		AHContainer.Settings.Toast.Text = "Notify Via Toast".. GetBoolean(Config.Debug.NToast, true)
+		AHContainer.Settings.Tween.Text = "Tween TP".. GetBoolean(Config.TweenTP, true)
+		AHContainer.Settings.NotifyUnread.Text = "Notify Unread".. GetBoolean(Config.NotifyUnread, true)
 		if Config.AC.AutoWhiteList then
 			AntiCheat.AWL.Text = "Disable Auto WL"
 		else
@@ -18591,26 +23380,21 @@ while task.wait(0.1) do
 			Debug.ToastToggle.Text = "Enable Toast"
 		end
 		if CurrentKey == nil then
-			Keybind.Container.Current.Text = "None"
+			PoppedMenus.Keybind.Container.Current.Text = "None"
 		else
 			if Keybinds.Custom[CurrentKey:GetFullName()] == nil then
-				Keybind.Container.Current.Text = "None"
+				PoppedMenus.Keybind.Container.Current.Text = "None"
 			else
-				Keybind.Container.Current.Text = Keybinds.Custom[CurrentKey:GetFullName()].KeyCode
+				PoppedMenus.Keybind.Container.Current.Text = Keybinds.Custom[CurrentKey:GetFullName()].KeyCode
 			end
 		end
-		pcall(function()
-			Miscellaneous.PlayerCount.Text = tostring(#GSPlayers:GetPlayers()).. " Players"
-			Miscellaneous.Expn.Text = table.pack(identifyexecutor())[1]
-			OilUp.Length.Text = tostring(math.round((Config.OilUp.Sound.TimePosition / Config.OilUp.Sound.TimeLength) * 100)).. "%"
-		end)
 		if CurrentGame == "Washiez" then
 			pcall(function()
 				GSPlayers.LocalPlayer.PlayerGui.Fade.TextLabel.BackgroundTransparency = 0.8
 			end)
 			Washiez.OStats.Text = "Stage ".. tostring(GSPlayers.LocalPlayer.plrStats.Obbies[Config.Washiez.Obbies[Config.Washiez.Obby].. "Obby"].Progress.Value).. " | ".. tostring(GSPlayers.LocalPlayer.plrStats.Obbies[Config.Washiez.Obbies[Config.Washiez.Obby].. "Obby"].Completions.Value).. " Completions"
-			Washiez.Tickets.CTicket.Text = "Current Ticket: ".. Config.Washiez.TTicket
-			Washiez.Rank.Text = tostring(LocalPlayer.Groupinfo.Rank.Value)
+			Washiez.Tickets.CTicket.Text = "Current Ticket: ".. Config.Washiez.TTicket	
+			Washiez.Rank.Text = "Current Rank: ".. tostring(LocalPlayer.GroupInfo.Rank.Value)
 			if GetPlayer(Washiez.Tickets.Input.Text) == nil then
 				Config.Washiez.TTicket = "None"
 			else
@@ -18624,16 +23408,8 @@ while task.wait(0.1) do
 					Config.Washiez.TTicket = "Deluxe"
 				end
 			end
-			if Config.Washiez.NotifyST then
-				Washiez.Ranks.NotifyST.Text = "Notify ST [T]"
-			else
-				Washiez.Ranks.NotifyST.Text = "Notify ST [F]"
-			end
-			if Config.Washiez.NotifyMGMT then
-				Washiez.Ranks.NotifyMGMT.Text = "Notify MGMT [T]"
-			else
-				Washiez.Ranks.NotifyMGMT.Text = "Notify MGMT [F]"
-			end
+			Washiez.Ranks.NotifyST.Text = "Notify ST".. GetBoolean(Config.Washiez.NotifyST, true)
+			Washiez.Ranks.NotifyMGMT.Text = "Notify MGMT".. GetBoolean(Config.Washiez.NotifyMGMT, true)
 			First = 0
 			Second = 0
 			Third = 0
@@ -18677,7 +23453,7 @@ while task.wait(0.1) do
 				--Seventh[1] = LocalPlayer
 			end
 			Seventh = Seventh[1]
-			Washiez.Ranks.Info.Text = "Players: ".. tostring(#GSPlayers:GetPlayers()).. "\nGuests: ".. tostring(Sixth).. "\nEntry Team: ".. tostring(Fifth).. "\nSupervision Team: ".. tostring(Fourth).. "\nManagement: ".. tostring(Third).. "\nCorporate: ".. tostring(Second).. "\nCorporate+: ".. tostring(First).. "\nHighest Rank: ".. Seventh.Name
+			Washiez.Ranks.Info.Text = "Players: ".. tostring(#GSPlayers:GetPlayers()).. "\nGuests: ".. tostring(Sixth).. "\nEntry Team: ".. tostring(Fifth).. "\nSupervision Team: ".. tostring(Fourth).. "\nManagement: ".. tostring(Third).. "\nCorporate: ".. tostring(Second).. "\nLeadership Team: ".. tostring(First).. "\nHighest Rank: ".. Seventh.Name
 		elseif CurrentGame == "WashiezTC" then
 			First = 0
 			Second = 0
@@ -18689,32 +23465,16 @@ while task.wait(0.1) do
 					Second += 1
 				end
 				task.wait(0.05)
-			end
+			end	
 			if First == 0 then
 				WashiezTC.CarInfo.Text = "No Cars Spawned :("
 			else
 				WashiezTC.CarInfo.Text = tostring(First).. " Cars | ".. tostring(Second).. " Available"
 			end
-			if Config.WashiezTC.CarAdded then
-				WashiezTC.CarAdded.Text = "Notify Car Added [T]"
-			else
-				WashiezTC.CarAdded.Text = "Notify Car Added [F]"
-			end
-			if Config.WashiezTC.CarDeleted then
-				WashiezTC.CarDeleted.Text = "Notify Car Deleted [T]"
-			else
-				WashiezTC.CarDeleted.Text = "Notify Car Deleted [F]"
-			end
-			if Config.Washiez.NotifyST then
-				WashiezTC.Ranks.NotifyST.Text = "Notify ST [T]"
-			else
-				WashiezTC.Ranks.NotifyST.Text = "Notify ST [F]"
-			end
-			if Config.Washiez.NotifyMGMT then
-				WashiezTC.Ranks.NotifyMGMT.Text = "Notify MGMT [T]"
-			else
-				WashiezTC.Ranks.NotifyMGMT.Text = "Notify MGMT [F]"
-			end
+			WashiezTC.CarAdded.Text = "Notify Car Added".. GetBoolean(Config.WashiezTC.CarAdded, true)
+			WashiezTC.CarDeleted.Text = "Notify Car Deleted".. GetBoolean(Config.WashiezTC.CarDeleted, true)
+			WashiezTC.Ranks.NotifyST.Text = "Notify ST".. GetBoolean(Config.Washiez.NotifyST, true)
+			WashiezTC.Ranks.NotifyMGMT.Text = "Notify MGMT".. GetBoolean(Config.Washiez.NotifyMGMT, true)
 			First = 0
 			Second = 0
 			Third = 0
@@ -18758,15 +23518,11 @@ while task.wait(0.1) do
 				--	Seventh[1] = LocalPlayer
 			end
 			Seventh = Seventh[1]
-			WashiezTC.Ranks.Info.Text = "Players: ".. tostring(#GSPlayers:GetPlayers()).. "\nGuests: ".. tostring(Sixth).. "\nEntry Team: ".. tostring(Fifth).. "\nSupervision Team: ".. tostring(Fourth).. "\nManagement: ".. tostring(Third).. "\nCorporate: ".. tostring(Second).. "\nCorporate+: ".. tostring(First).. "\nHighest Rank: ".. Seventh.Name
+			WashiezTC.Ranks.Info.Text = "Players: ".. tostring(#GSPlayers:GetPlayers()).. "\nGuests: ".. tostring(Sixth).. "\nEntry Team: ".. tostring(Fifth).. "\nSupervision Team: ".. tostring(Fourth).. "\nManagement: ".. tostring(Third).. "\nCorporate: ".. tostring(Second).. "\nLeadership Team: ".. tostring(First).. "\nHighest Rank: ".. Seventh.Name
 		elseif CurrentGame == "SCCSimulator" then
 			SCallSim.Amount.PlaceholderText = "Bag Amount (".. tostring(Config.SCallSim.Amount).. ")"
 			SCallSim.Delay.PlaceholderText = "Delay Amount (".. tostring(Config.SCallSim.Delay).. "s)"
-			if Config.SCallSim.Call then
-				SCallSim.Call.Text = "Call [T]"
-			else
-				Config.Call.Text = "Call [F]"
-			end
+			SCallSim.UseCall.Text = "Call".. GetBoolean(Config.SCallSim.Call, true)
 		elseif CurrentGame == "PrisonLife" then
 			PrisonLife.Counter.Text = "Setup: ".. tostring(Config.PrisonLife.Setups)
 			if Config.PrisonLife.AntiShield then
@@ -18790,7 +23546,14 @@ while task.wait(0.1) do
 			if Config.PrisonLife.Cooldown == 0 then
 				PrisonLife.Cooldown.Text = "Team Change Ready"
 			else
-				PrisonLife.Cooldown.Text = tostring(Config.PrisonLife.Cooldown)..  "s"
+				PrisonLife.Cooldown.Text = tostring(Config.PrisonLife.Cooldown).. "s"
+			end
+			PrisonLife.Indicators.Text = "Force Indicators".. GetBoolean(Config.PrisonLife.Indicators, true)
+			GSRS.Scripts.TeamIndicators.Enabled = not Config.PrisonLife.Indicators
+			if Config.PrisonLife.Indicators then
+				for i, v in workspace.TeamIndicators:GetChildren() do
+					v.Enabled = true
+				end
 			end
 		elseif CurrentGame == "MM2" then
 			Config.MM2.Murderer = nil
@@ -18813,16 +23576,63 @@ while task.wait(0.1) do
 			else
 				MM2.Sheriff.Text = "<font color=\"rgb(0,128,255)\">".. Config.MM2.Sheriff.Name.. "</font>"
 			end
-			if Config.MM2.NotifyRole then
-				MM2.NRole.Text = "Notify Role [T]"
-			else
-				MM2.NRole.Text = "Notify Role [F]"
+			MM2.NRole.Text = "Notify Role".. GetBoolean(Config.MM2.NotifyRole, true)
+			MM2.NDrop.Text = "Notify Gun Drop".. GetBoolean(Config.MM2.NotifyDrop, true)
+			MM2.HidStab.Text = "New Stab".. GetBoolean(Config.MM2.HidStab, true)
+			if GSRS:FindFirstChild("Remotes") and GSRS.Remotes:FindFirstChild("Extras") and GSRS.Remotes.Extras:FindFirstChild("GetChance") then
+				MM2.MChance = "Murderer Chance: ".. tostring(GSRS.Remotes.Extras.GetChance:InvokeServer()).. "%"
 			end
-			if Config.MM2.NotifyDrop then
-				MM2.NDrop.Text = "Notify Gun Drop [T]"
-			else
-				MM2.NDrop.Text = "Notify Gun Drop [F]"
+		elseif CurrentGame == "AimbotFFA" then
+			if LocalCharacter ~= nil then
+				if LocalCharacter:FindFirstChild("Aimbot") ~= nil then
+					LocalCharacter.Aimbot.Enabled = Config.AimbotFFA.AllowAimbot
+				end
 			end
+			if Config.AimbotFFA.AllowAimbot then
+				AimbotFFA.Aimbot.Text = "Disable Aimbot"
+			else
+				AimbotFFA.Aimbot.Text = "Allow Aimbot"
+			end
+			AimbotFFA.GunMods.Text = "Gun Mods".. GetBoolean(Config.AimbotFFA.GunMods, true)
+			AimbotFFA.SuperCrash.Text = "Super Crash".. GetBoolean(Config.AimbotFFA.SuperCrash, true)
+			AimbotFFA.Thorns.Text = "Thorns (God)".. GetBoolean(Config.AimbotFFA.Thorns, true)
+			if Config.AimbotFFA.GunMods then
+				if LocalCharacter ~= nil then
+					First = LocalCharacter:FindFirstChildWhichIsA("Tool")
+					if First ~= nil then
+						First:SetAttribute("_ammo", tonumber("inf"))
+						First:SetAttribute("magazineSize", tonumber("inf"))
+						First:SetAttribute("reloadTime", 0)
+						First:SetAttribute("fireMode", "Auto")
+						First:SetAttribute("damage", tonumber("inf"))
+						First:SetAttribute("rateOfFire", tonumber("inf"))
+					end
+				end
+			end
+		elseif CurrentGame == "OilUp" then
+			OilUp.Mute.Text = "Mute NPCs".. GetBoolean(Config.OilUp.MuteNPCs, true)
+			if Config.OilUp.MuteNPCs then
+				if workspace.NPC:FindFirstChild("Granny NPC Working") and workspace.NPC:FindFirstChild("Granny NPC Working"):FindFirstChild("Head") then
+					workspace.NPC:FindFirstChild("Granny NPC Working").Head:FindFirstChild("1").Volume = 0
+					workspace.NPC:FindFirstChild("Granny NPC Working").Head:FindFirstChild("2").Volume = 0
+					workspace.NPC:FindFirstChild("Granny NPC Working").Head:FindFirstChild("3").Volume = 0
+				end
+				if workspace.NPC:FindFirstChild("jj") and workspace.NPC.jj:FindFirstChild("Torso") then
+					workspace.NPC.jj.Torso:FindFirstChild("insert sound here").Volume = 0
+				end
+			else
+				if workspace.NPC:FindFirstChild("Granny NPC Working") and workspace.NPC:FindFirstChild("Granny NPC Working"):FindFirstChild("Head") then
+					workspace.NPC:FindFirstChild("Granny NPC Working").Head:FindFirstChild("1").Volume = 0.5
+					workspace.NPC:FindFirstChild("Granny NPC Working").Head:FindFirstChild("2").Volume = 0.5
+					workspace.NPC:FindFirstChild("Granny NPC Working").Head:FindFirstChild("3").Volume = 0.5
+				end
+				if workspace.NPC:FindFirstChild("jj") and workspace.NPC.jj:FindFirstChild("Torso") then
+					workspace.NPC.jj.Torso:FindFirstChild("insert sound here").Volume = 10
+				end
+			end
+		end
+		for i, v in getgenv().AHLib.LoopFuncs do
+			v()
 		end
 		Config.Debug.LoopE += 1
 	end)
