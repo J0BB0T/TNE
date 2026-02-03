@@ -15262,7 +15262,7 @@ getgenv().AHNCC = false
 getgenv().AHL = true
 getgenv().AH = Converted["_AntiHub"]
 local TVersion = 1.7
-local SVersion = tostring(TVersion).. ""
+local SVersion = tostring(TVersion).. "T"
 getgenv().AHSV = SVersion
 local RBXConnections = {}
 local GSPlayers = game:GetService("Players")
@@ -15629,7 +15629,9 @@ local function UIOpen(Toggle)
 	AntiHub.TitleBar.Buttons.Hints.Stats.Visible = false
 	AntiHub.TitleBar.Buttons.Hints.Close.Visible = false
 	if Toggle then
-		GSGP:EnableGamepadCursor(nil)
+		pcall(function()
+			GSGP:EnableGamepadCursor(nil)
+		end)
 		AntiHub.TitleBar.Visible = true
 		if Menu == "Chat" then
 			Unread = 0
@@ -15640,7 +15642,9 @@ local function UIOpen(Toggle)
 			GSTween:Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 5.125, 0), ["Size"] = UDim2.new(1, 0, 8.75, 0)}):Play()
 		end
 	else
-		GSGP:DisableGamepadCursor()
+		pcall(function()
+			GSGP:DisableGamepadCursor()
+		end)
 		UIPos = AntiHub.TitleBar.Position
 		if Expanded then
 			GSTween:Create(AntiHub.TitleBar.Container, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 0.5, 0), ["Size"] = UDim2.new(1, 0, 1, 0)}):Play()
