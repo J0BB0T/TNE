@@ -17968,7 +17968,7 @@ if CurrentGame == "PrisonLife" then
 	function PLTeam(Team)
 		local Char = LocalCharacter
 		repeat
-			GSRS.Remotes.RequestTeamChange:InvokeServer(Team)
+			GSRS.Remotes.RequestTeamChange:InvokeServer(Team, 1)
 			task.wait(0.1)
 		until Char ~= LocalCharacter or LocalPlayer.Team == Team
 		LocalPlayer.PlayerGui.Home.IntroFrame.Visible = false
