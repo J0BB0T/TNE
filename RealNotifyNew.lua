@@ -218,7 +218,7 @@ local function Notify(Text, Title, Duration, Image)
 	Toast.Parent = Notifications
 	Toast.Name = tostring(Count)
 	Toast.Visible = true
-	GSTween:Create(Toast, TweenInfo.new(0.125, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, 0.5, 0)}):Play()
+	GSTween:Create(Toast, TweenInfo.new(0.125, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {["Position"] = UDim2.new(0.5, 0, Toast.NotifPos.Value, 0)}):Play()
 	GSTween:Create(Toast.Timer, TweenInfo.new(Duration, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {["Position"] = UDim2.new(-0.5, 0, 0.975, 0)}):Play()
 	task.wait(Duration)
 	GSTween:Create(Toast, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {["Position"] = UDim2.new(1.5, 0, Toast.NotifPos.Value, 0)}):Play()
