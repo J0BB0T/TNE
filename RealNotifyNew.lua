@@ -235,8 +235,8 @@ local function Notify(Text, Title, Duration, Image)
 	task.wait(Duration)
 	GSTween:Create(Toast, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {["Position"] = UDim2.new(1.5, 0, Toast.NotifPos.Value, 0)}):Play()
 	for i, v in Notifications:GetChildren() do
-		if v:IsA("CanvasGroup") then
-			if tonumber(v.Name) > tonumber(Toast.Name) then continue end
+		if v:IsA("CanvasGroup") and v ~= Toast then
+			if tonumber(v.Name) < tonumber(Toast.Name) then continue end
 			v.NotifPos.Value += 0.125
 			GSTween:Create(v, TweenInfo.new(0.25, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {["Position"] = UDim2.new(0.5, 0, v.NotifPos.Value, 0)}):Play()
 		end
