@@ -14,18 +14,19 @@ local Converted = {
 	["_Message"] = Instance.new("TextLabel");
 	["_Corner1"] = Instance.new("UICorner");
 	["_Corner2"] = Instance.new("UICorner");
-	["_Profile"] = Instance.new("ImageLabel");
+	["_NotifPos"] = Instance.new("NumberValue");
+	["_Profile"] = Instance.new("CanvasGroup");
+	["_Label"] = Instance.new("ImageLabel");
+	["_AspectRatio"] = Instance.new("UIAspectRatioConstraint");
 	["_Corner3"] = Instance.new("UICorner");
 	["_Outline1"] = Instance.new("UIStroke");
-	["_AspectRatio"] = Instance.new("UIAspectRatioConstraint");
-	["_NotifPos"] = Instance.new("NumberValue");
 }
 
 -- Properties:
 
 Converted["_RealNotify"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_RealNotify"].Name = "RealNotify"
-Converted["_RealNotify"].Parent = nil
+Converted["_RealNotify"].Parent = game:GetService("CoreGui")
 
 Converted["_Container"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Container"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -62,6 +63,7 @@ Converted["_Timer"].Name = "Timer"
 Converted["_Timer"].Parent = Converted["_None"]
 
 Converted["_Title"].Font = Enum.Font.TitilliumWeb
+Converted["_Title"].RichText = true
 Converted["_Title"].Text = "AntiHub - Test Notif"
 Converted["_Title"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Title"].TextScaled = true
@@ -114,16 +116,33 @@ Converted["_Corner2"].CornerRadius = UDim.new(0.0500000007, 0)
 Converted["_Corner2"].Name = "Corner"
 Converted["_Corner2"].Parent = Converted["_None"]
 
+Converted["_NotifPos"].Name = "NotifPos"
+Converted["_NotifPos"].Parent = Converted["_None"]
+
 Converted["_Profile"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_Profile"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Profile"].BackgroundTransparency = 0.5
+Converted["_Profile"].BackgroundTransparency = 0.75
 Converted["_Profile"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Profile"].BorderSizePixel = 0
 Converted["_Profile"].Position = UDim2.new(0.109999999, 0, 0.600000024, 0)
-Converted["_Profile"].Size = UDim2.new(0.170955777, 0, 0.577246606, 0)
-Converted["_Profile"].ScaleType = Enum.ScaleType.Fit
+Converted["_Profile"].Size = UDim2.new(0.171000004, 0, 0.577000022, 0)
 Converted["_Profile"].Name = "Profile"
 Converted["_Profile"].Parent = Converted["_None"]
+
+Converted["_Label"].ScaleType = Enum.ScaleType.Fit
+Converted["_Label"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Label"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Label"].BackgroundTransparency = 1
+Converted["_Label"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Label"].BorderSizePixel = 0
+Converted["_Label"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Label"].Size = UDim2.new(0.75, 0, 0.75, 0)
+Converted["_Label"].Name = "Label"
+Converted["_Label"].Parent = Converted["_Profile"]
+
+Converted["_AspectRatio"].AspectRatio = 0.9974837303161621
+Converted["_AspectRatio"].Name = "AspectRatio"
+Converted["_AspectRatio"].Parent = Converted["_Profile"]
 
 Converted["_Corner3"].CornerRadius = UDim.new(1, 0)
 Converted["_Corner3"].Name = "Corner"
@@ -134,13 +153,6 @@ Converted["_Outline1"].StrokeSizingMode = Enum.StrokeSizingMode.ScaledSize
 Converted["_Outline1"].Thickness = 0.05000000074505806
 Converted["_Outline1"].Name = "Outline"
 Converted["_Outline1"].Parent = Converted["_Profile"]
-
-Converted["_AspectRatio"].AspectRatio = 0.9974837303161621
-Converted["_AspectRatio"].Name = "AspectRatio"
-Converted["_AspectRatio"].Parent = Converted["_Profile"]
-
-Converted["_NotifPos"].Name = "NotifPos"
-Converted["_NotifPos"].Parent = Converted["_None"]
 
 if not getgenv then
 	function getgenv()
@@ -237,7 +249,7 @@ return function(Image)
 	if Templates:FindFirstChild(Image) == nil then
 		local Template = Templates.None:Clone()
 		Template.Name = Image
-		Template.Profile.Image = Image
+		Template.Profile.Label.Image = Image
 		Template.Parent = Templates
 	end
 	return function(Text, Duration, Title)
