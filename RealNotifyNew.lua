@@ -146,10 +146,13 @@ if not getgenv then
 		return _G.RNGGV
 	end
 end
+print("start")
 local UI = Converted["_RealNotify"]
 print(UI)
-UI = Converted[1]
-print(UI)
+print("end")
+for i, v in UI:GetDescendants() do
+	print(v)
+end
 if getgenv().RNotifLoaded then
 	UI:Destroy()
 	UI = getgenv().RNotifUI
