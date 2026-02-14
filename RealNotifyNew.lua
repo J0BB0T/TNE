@@ -147,7 +147,7 @@ if not getgenv then
 	end
 end
 local UI = Converted["_RealNotify"]
-if getgenv().Loaded then
+if getgenv().RNotifLoaded then
 	UI:Destroy()
 	UI = getgenv().RNotifUI
 else
