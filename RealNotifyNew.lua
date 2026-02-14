@@ -121,6 +121,7 @@ Converted["_Profile"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Profile"].BorderSizePixel = 0
 Converted["_Profile"].Position = UDim2.new(0.109999999, 0, 0.600000024, 0)
 Converted["_Profile"].Size = UDim2.new(0.170955777, 0, 0.577246606, 0)
+Converted["_Profile"].ScaleType = Enum.ScaleType.Fit
 Converted["_Profile"].Name = "Profile"
 Converted["_Profile"].Parent = Converted["_None"]
 
@@ -146,13 +147,7 @@ if not getgenv then
 		return _G.RNGGV
 	end
 end
-print("start")
 local UI = Converted["_RealNotify"]
-print(UI)
-print("end")
-for i, v in UI:GetDescendants() do
-	print(v)
-end
 if getgenv().RNotifLoaded then
 	UI:Destroy()
 	UI = getgenv().RNotifUI
@@ -246,6 +241,6 @@ return function(Image)
 		Template.Parent = Templates
 	end
 	return function(Text, Duration, Title)
-		Notify(Text, Duration, Title, Image)
+		Notify(Text, Title, Duration, Image)
 	end
 end
