@@ -62,9 +62,9 @@ Converted["_Timer"].Size = UDim2.new(1, 0, 0.0500000007, 0)
 Converted["_Timer"].Name = "Timer"
 Converted["_Timer"].Parent = Converted["_None"]
 
-Converted["_Title"].Font = Enum.Font.TitilliumWeb
+Converted["_Title"].Font = Enum.Font.SciFi
 Converted["_Title"].RichText = true
-Converted["_Title"].Text = "AntiHub - Test Notif"
+Converted["_Title"].Text = "Title"
 Converted["_Title"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Title"].TextScaled = true
 Converted["_Title"].TextSize = 14
@@ -76,7 +76,7 @@ Converted["_Title"].BackgroundTransparency = 0.5
 Converted["_Title"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Title"].BorderSizePixel = 0
 Converted["_Title"].Position = UDim2.new(0.5, 0, 0.125, 0)
-Converted["_Title"].Size = UDim2.new(1, 0, 0.25, 0)
+Converted["_Title"].Size = UDim2.new(0.975000024, 0, 0.25, 0)
 Converted["_Title"].Name = "Title"
 Converted["_Title"].Parent = Converted["_None"]
 
@@ -92,7 +92,7 @@ Converted["_Outline"].Name = "Outline"
 Converted["_Outline"].Parent = Converted["_None"]
 
 Converted["_Message"].Font = Enum.Font.TitilliumWeb
-Converted["_Message"].Text = "AntiHub - Test Notif"
+Converted["_Message"].Text = "Message"
 Converted["_Message"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Message"].TextScaled = true
 Converted["_Message"].TextSize = 14
