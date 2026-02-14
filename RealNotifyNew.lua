@@ -253,6 +253,6 @@ return function(Image)
 		Template.Parent = Templates
 	end
 	return function(Text, Duration, Title)
-		Notify(Text, Title, Duration, Image)
+		task.spawn(Notify, Text, Title, Duration, Image)
 	end
 end
